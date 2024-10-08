@@ -63,7 +63,7 @@
       "birthDate": "1960-12-01"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Patient/e549da32-8565-45cb-b432-3d1bcc560cf2"
     }
   }, {
@@ -104,7 +104,7 @@
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/5c953f97b848462de0ae40e3"
     }
   }, {
@@ -120,11 +120,11 @@
         "start": "1960-12-01T08:00:00.000Z"
       },
       "payor": [ {
-        "reference": "Organization/Org-123456"
+        "reference": "Organization/123456"
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Coverage/5f2c53cd1c76ba5c99605762"
     }
   }, {
@@ -169,14 +169,14 @@
       "recordedDate": "2025-10-13T08:00:00.000+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Condition/hemorrhagic-stroke-198a"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Organization/123456",
     "resource": {
       "resourceType": "Organization",
-      "id": "Org-123456",
+      "id": "123456",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization" ]
       },
@@ -209,8 +209,8 @@
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "Organization/Org-123456"
+      "method": "POST",
+      "url": "Organization/123456"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Practitioner/practitioner-123456",
@@ -227,20 +227,20 @@
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Practitioner/practitioner-123456"
     }
   }, {
-    "fullUrl": "https://madie.cms.gov/MeasureReport/31c2c8ea-0a2b-4647-8fd5-31a0088622ed",
+    "fullUrl": "https://madie.cms.gov/MeasureReport/37e66dc8-540b-4be7-a12d-f837e1ef9d92",
     "resource": {
       "resourceType": "MeasureReport",
-      "id": "31c2c8ea-0a2b-4647-8fd5-31a0088622ed",
+      "id": "37e66dc8-540b-4be7-a12d-f837e1ef9d92",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm" ]
       },
       "contained": [ {
         "resourceType": "Parameters",
-        "id": "02298bf8-2eb1-46c5-ba42-507f29b4c077-parameters",
+        "id": "c1464aac-f6f7-48c4-ae51-881167b108e9-parameters",
         "parameter": [ {
           "name": "subject",
           "valueString": "e549da32-8565-45cb-b432-3d1bcc560cf2"
@@ -249,7 +249,7 @@
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
         "valueReference": {
-          "reference": "#02298bf8-2eb1-46c5-ba42-507f29b4c077-parameters"
+          "reference": "#c1464aac-f6f7-48c4-ae51-881167b108e9-parameters"
         }
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
@@ -315,22 +315,22 @@
         } ]
       } ],
       "evaluatedResource": [ {
-        "reference": "Patient/e549da32-8565-45cb-b432-3d1bcc560cf2"
+        "reference": "https://madie.cms.gov/Patient/e549da32-8565-45cb-b432-3d1bcc560cf2"
       }, {
-        "reference": "Encounter/5c953f97b848462de0ae40e3"
+        "reference": "https://madie.cms.gov/Encounter/5c953f97b848462de0ae40e3"
       }, {
-        "reference": "Coverage/5f2c53cd1c76ba5c99605762"
+        "reference": "https://madie.cms.gov/Coverage/5f2c53cd1c76ba5c99605762"
       }, {
-        "reference": "Condition/hemorrhagic-stroke-198a"
+        "reference": "https://madie.cms.gov/Condition/hemorrhagic-stroke-198a"
       }, {
-        "reference": "Organization/Org-123456"
+        "reference": "https://madie.cms.gov/Organization/123456"
       }, {
-        "reference": "Practitioner/practitioner-123456"
+        "reference": "https://madie.cms.gov/Practitioner/practitioner-123456"
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "MeasureReport/31c2c8ea-0a2b-4647-8fd5-31a0088622ed"
+      "method": "POST",
+      "url": "MeasureReport/37e66dc8-540b-4be7-a12d-f837e1ef9d92"
     }
   } ]
 }

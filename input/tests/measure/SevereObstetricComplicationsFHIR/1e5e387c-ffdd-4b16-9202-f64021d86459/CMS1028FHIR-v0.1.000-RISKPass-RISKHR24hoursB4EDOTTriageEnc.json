@@ -63,7 +63,7 @@
       "birthDate": "2004-02-01"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
     }
   }, {
@@ -96,7 +96,7 @@
       "valueDateTime": "2025-02-01T08:00:00+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/5f29baa26f0b7100008d8af1"
     }
   }, {
@@ -133,7 +133,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/5f32bf4551476200007ab6d3"
     }
   }, {
@@ -165,7 +165,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/5f21e66daca3e40000cb86cf"
     }
   }, {
@@ -197,7 +197,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/6001e814bd87590000ceb183"
     }
   }, {
@@ -228,7 +228,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Procedure/5f21e716aca3e40000cb87ee"
     }
   }, {
@@ -268,20 +268,20 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/heart-rate-adb7"
     }
   }, {
-    "fullUrl": "https://madie.cms.gov/MeasureReport/7ab57609-6bcb-4c11-81f1-060523d2021c",
+    "fullUrl": "https://madie.cms.gov/MeasureReport/fa6f2821-ae4f-45d8-9b7f-c76b6e4797c9",
     "resource": {
       "resourceType": "MeasureReport",
-      "id": "7ab57609-6bcb-4c11-81f1-060523d2021c",
+      "id": "fa6f2821-ae4f-45d8-9b7f-c76b6e4797c9",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm" ]
       },
       "contained": [ {
         "resourceType": "Parameters",
-        "id": "826ec864-b35f-49f9-97a5-2d7ab4c5efe2-parameters",
+        "id": "1acd4b4b-6836-4f1b-a03e-3ccda81275ee-parameters",
         "parameter": [ {
           "name": "subject",
           "valueString": "1e5e387c-ffdd-4b16-9202-f64021d86459"
@@ -290,7 +290,7 @@
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
         "valueReference": {
-          "reference": "#826ec864-b35f-49f9-97a5-2d7ab4c5efe2-parameters"
+          "reference": "#1acd4b4b-6836-4f1b-a03e-3ccda81275ee-parameters"
         }
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
@@ -344,27 +344,36 @@
             } ]
           },
           "count": 0
+        }, {
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "numerator-exclusion",
+              "display": "Numerator Exclusion"
+            } ]
+          },
+          "count": 0
         } ]
       } ],
       "evaluatedResource": [ {
-        "reference": "Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
+        "reference": "https://madie.cms.gov/Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
       }, {
-        "reference": "Observation/5f29baa26f0b7100008d8af1"
+        "reference": "https://madie.cms.gov/Observation/5f29baa26f0b7100008d8af1"
       }, {
-        "reference": "Observation/5f32bf4551476200007ab6d3"
+        "reference": "https://madie.cms.gov/Observation/5f32bf4551476200007ab6d3"
       }, {
-        "reference": "Encounter/5f21e66daca3e40000cb86cf"
+        "reference": "https://madie.cms.gov/Encounter/5f21e66daca3e40000cb86cf"
       }, {
-        "reference": "Encounter/6001e814bd87590000ceb183"
+        "reference": "https://madie.cms.gov/Encounter/6001e814bd87590000ceb183"
       }, {
-        "reference": "Procedure/5f21e716aca3e40000cb87ee"
+        "reference": "https://madie.cms.gov/Procedure/5f21e716aca3e40000cb87ee"
       }, {
-        "reference": "Observation/heart-rate-adb7"
+        "reference": "https://madie.cms.gov/Observation/heart-rate-adb7"
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "MeasureReport/7ab57609-6bcb-4c11-81f1-060523d2021c"
+      "method": "POST",
+      "url": "MeasureReport/fa6f2821-ae4f-45d8-9b7f-c76b6e4797c9"
     }
   } ]
 }

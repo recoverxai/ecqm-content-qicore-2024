@@ -63,7 +63,7 @@
       "birthDate": "1954-05-23"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Patient/4580e833-7432-4f02-8742-8beceaac18e8"
     }
   }, {
@@ -87,7 +87,7 @@
         } ]
       } ],
       "subject": {
-        "reference": "Patient/f07b7d1a-b0da-4d44-acc6-eb2a6dfa0da3"
+        "reference": "Patient/4580e833-7432-4f02-8742-8beceaac18e8"
       },
       "period": {
         "start": "2025-11-20T08:00:00.000Z",
@@ -101,11 +101,18 @@
         "condition": {
           "reference": "Condition/ischemic-stroke-19a0"
         },
+        "use": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+            "code": "billing",
+            "display": "Billing"
+          } ]
+        },
         "rank": 1
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/5c953f96b848462de0ae406d"
     }
   }, {
@@ -137,7 +144,7 @@
         } ]
       },
       "subject": {
-        "reference": "Patient/f07b7d1a-b0da-4d44-acc6-eb2a6dfa0da3"
+        "reference": "Patient/4580e833-7432-4f02-8742-8beceaac18e8"
       },
       "authoredOn": "2025-11-24T08:00:00.000+00:00",
       "requester": {
@@ -145,7 +152,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "MedicationRequest/5c953f96b848462de0ae406f"
     }
   }, {
@@ -155,17 +162,17 @@
       "id": "5f2c53c81c76ba5c996056d2",
       "status": "active",
       "beneficiary": {
-        "reference": "Patient/f07b7d1a-b0da-4d44-acc6-eb2a6dfa0da3"
+        "reference": "Patient/4580e833-7432-4f02-8742-8beceaac18e8"
       },
       "period": {
         "start": "1954-05-23T08:00:00.000Z"
       },
       "payor": [ {
-        "reference": "Organization/Org-123456"
+        "reference": "Organization/123456"
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Coverage/5f2c53c81c76ba5c996056d2"
     }
   }, {
@@ -191,7 +198,7 @@
         } ]
       },
       "subject": {
-        "reference": "Patient/f07b7d1a-b0da-4d44-acc6-eb2a6dfa0da3"
+        "reference": "Patient/4580e833-7432-4f02-8742-8beceaac18e8"
       },
       "performedPeriod": {
         "start": "2025-11-20T06:00:00.000Z",
@@ -199,7 +206,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Procedure/5c953f96b848462de0ae4070"
     }
   }, {
@@ -239,19 +246,19 @@
         } ]
       },
       "subject": {
-        "reference": "Patient/f07b7d1a-b0da-4d44-acc6-eb2a6dfa0da3"
+        "reference": "Patient/4580e833-7432-4f02-8742-8beceaac18e8"
       },
       "recordedDate": "2025-10-13T08:00:00.000+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Condition/ischemic-stroke-19a0"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Organization/123456",
     "resource": {
       "resourceType": "Organization",
-      "id": "Org-123456",
+      "id": "123456",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization" ]
       },
@@ -284,8 +291,8 @@
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "Organization/Org-123456"
+      "method": "POST",
+      "url": "Organization/123456"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Practitioner/practitioner-123456",
@@ -302,20 +309,20 @@
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Practitioner/practitioner-123456"
     }
   }, {
-    "fullUrl": "https://madie.cms.gov/MeasureReport/15f7172e-1f13-4789-9d33-e50f24f5f922",
+    "fullUrl": "https://madie.cms.gov/MeasureReport/07feec1f-b842-462a-880a-7c8560fee7d1",
     "resource": {
       "resourceType": "MeasureReport",
-      "id": "15f7172e-1f13-4789-9d33-e50f24f5f922",
+      "id": "07feec1f-b842-462a-880a-7c8560fee7d1",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm" ]
       },
       "contained": [ {
         "resourceType": "Parameters",
-        "id": "dce2f000-eb38-408e-bfce-8689c00429bc-parameters",
+        "id": "c3b4f10b-a45c-4b4b-8442-db94784becb4-parameters",
         "parameter": [ {
           "name": "subject",
           "valueString": "4580e833-7432-4f02-8742-8beceaac18e8"
@@ -324,7 +331,7 @@
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
         "valueReference": {
-          "reference": "#dce2f000-eb38-408e-bfce-8689c00429bc-parameters"
+          "reference": "#c3b4f10b-a45c-4b4b-8442-db94784becb4-parameters"
         }
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
@@ -390,26 +397,26 @@
         } ]
       } ],
       "evaluatedResource": [ {
-        "reference": "Patient/4580e833-7432-4f02-8742-8beceaac18e8"
+        "reference": "https://madie.cms.gov/Patient/4580e833-7432-4f02-8742-8beceaac18e8"
       }, {
-        "reference": "Encounter/5c953f96b848462de0ae406d"
+        "reference": "https://madie.cms.gov/Encounter/5c953f96b848462de0ae406d"
       }, {
-        "reference": "MedicationRequest/5c953f96b848462de0ae406f"
+        "reference": "https://madie.cms.gov/MedicationRequest/5c953f96b848462de0ae406f"
       }, {
-        "reference": "Coverage/5f2c53c81c76ba5c996056d2"
+        "reference": "https://madie.cms.gov/Coverage/5f2c53c81c76ba5c996056d2"
       }, {
-        "reference": "Procedure/5c953f96b848462de0ae4070"
+        "reference": "https://madie.cms.gov/Procedure/5c953f96b848462de0ae4070"
       }, {
-        "reference": "Condition/ischemic-stroke-19a0"
+        "reference": "https://madie.cms.gov/Condition/ischemic-stroke-19a0"
       }, {
-        "reference": "Organization/Org-123456"
+        "reference": "https://madie.cms.gov/Organization/123456"
       }, {
-        "reference": "Practitioner/practitioner-123456"
+        "reference": "https://madie.cms.gov/Practitioner/practitioner-123456"
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "MeasureReport/15f7172e-1f13-4789-9d33-e50f24f5f922"
+      "method": "POST",
+      "url": "MeasureReport/07feec1f-b842-462a-880a-7c8560fee7d1"
     }
   } ]
 }

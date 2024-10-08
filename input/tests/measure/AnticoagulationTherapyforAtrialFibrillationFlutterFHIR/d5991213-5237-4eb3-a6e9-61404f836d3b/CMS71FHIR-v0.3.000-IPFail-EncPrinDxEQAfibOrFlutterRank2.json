@@ -63,7 +63,7 @@
       "birthDate": "1960-12-01"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Patient/d5991213-5237-4eb3-a6e9-61404f836d3b"
     }
   }, {
@@ -105,7 +105,7 @@
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/5c953f96b848462de0ae40ba"
     }
   }, {
@@ -121,11 +121,11 @@
         "start": "1960-12-01T01:00:00.000Z"
       },
       "payor": [ {
-        "reference": "Organization/Org-123456"
+        "reference": "Organization/123456"
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Coverage/5f2c53d01c76ba5c996057a1"
     }
   }, {
@@ -170,14 +170,14 @@
       "recordedDate": "2025-10-13T08:00:00.000+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Condition/atrial-fibrillation-flutter-1987"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Organization/123456",
     "resource": {
       "resourceType": "Organization",
-      "id": "Org-123456",
+      "id": "123456",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization" ]
       },
@@ -210,8 +210,8 @@
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "Organization/Org-123456"
+      "method": "POST",
+      "url": "Organization/123456"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Practitioner/practitioner-123456",
@@ -228,20 +228,20 @@
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Practitioner/practitioner-123456"
     }
   }, {
-    "fullUrl": "https://madie.cms.gov/MeasureReport/81d2f5c9-a74c-4b47-b79d-9d3b4ea4d8da",
+    "fullUrl": "https://madie.cms.gov/MeasureReport/e3a15119-1d32-4dc5-b159-8d67c606f78b",
     "resource": {
       "resourceType": "MeasureReport",
-      "id": "81d2f5c9-a74c-4b47-b79d-9d3b4ea4d8da",
+      "id": "e3a15119-1d32-4dc5-b159-8d67c606f78b",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm" ]
       },
       "contained": [ {
         "resourceType": "Parameters",
-        "id": "2ac8ae25-e834-41d9-892e-fcb3275fa93b-parameters",
+        "id": "3bc7f808-8bac-4004-9060-4d59ce2d7d07-parameters",
         "parameter": [ {
           "name": "subject",
           "valueString": "d5991213-5237-4eb3-a6e9-61404f836d3b"
@@ -250,7 +250,7 @@
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
         "valueReference": {
-          "reference": "#2ac8ae25-e834-41d9-892e-fcb3275fa93b-parameters"
+          "reference": "#3bc7f808-8bac-4004-9060-4d59ce2d7d07-parameters"
         }
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
@@ -316,22 +316,22 @@
         } ]
       } ],
       "evaluatedResource": [ {
-        "reference": "Patient/d5991213-5237-4eb3-a6e9-61404f836d3b"
+        "reference": "https://madie.cms.gov/Patient/d5991213-5237-4eb3-a6e9-61404f836d3b"
       }, {
-        "reference": "Encounter/5c953f96b848462de0ae40ba"
+        "reference": "https://madie.cms.gov/Encounter/5c953f96b848462de0ae40ba"
       }, {
-        "reference": "Coverage/5f2c53d01c76ba5c996057a1"
+        "reference": "https://madie.cms.gov/Coverage/5f2c53d01c76ba5c996057a1"
       }, {
-        "reference": "Condition/atrial-fibrillation-flutter-1987"
+        "reference": "https://madie.cms.gov/Condition/atrial-fibrillation-flutter-1987"
       }, {
-        "reference": "Organization/Org-123456"
+        "reference": "https://madie.cms.gov/Organization/123456"
       }, {
-        "reference": "Practitioner/practitioner-123456"
+        "reference": "https://madie.cms.gov/Practitioner/practitioner-123456"
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "MeasureReport/81d2f5c9-a74c-4b47-b79d-9d3b4ea4d8da"
+      "method": "POST",
+      "url": "MeasureReport/e3a15119-1d32-4dc5-b159-8d67c606f78b"
     }
   } ]
 }

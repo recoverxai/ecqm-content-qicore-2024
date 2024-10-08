@@ -63,7 +63,7 @@
       "birthDate": "2004-02-01"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Patient/e0935b52-8ecc-4269-a87c-20055b6fd9e3"
     }
   }, {
@@ -96,7 +96,7 @@
       "valueDateTime": "2025-02-01T08:00:00+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/5f29baa26f0b7100008d8af1"
     }
   }, {
@@ -133,7 +133,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/5f32bf4551476200007ab6d3"
     }
   }, {
@@ -165,7 +165,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/5f21e66daca3e40000cb86cg"
     }
   }, {
@@ -197,7 +197,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/6001e814bd87590000ceb183"
     }
   }, {
@@ -228,7 +228,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Procedure/5f21e716aca3e40000cb87ee"
     }
   }, {
@@ -268,7 +268,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/heart-rate-adb72"
     }
   }, {
@@ -301,7 +301,7 @@
       "valueDateTime": "2025-12-01T08:00:00+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/5f29baa26f0b7100008d8af1a"
     }
   }, {
@@ -338,7 +338,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/5f32bf4551476200007ab6d3a"
     }
   }, {
@@ -370,7 +370,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/5f21e66daca3e40000cb86cga"
     }
   }, {
@@ -402,7 +402,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/6001e814bd87590000ceb183a"
     }
   }, {
@@ -433,7 +433,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Procedure/5f21e716aca3e40000cb87eea"
     }
   }, {
@@ -473,20 +473,20 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/heart-rate-adb72a"
     }
   }, {
-    "fullUrl": "https://madie.cms.gov/MeasureReport/421172c1-765e-4813-83a5-40b577853958",
+    "fullUrl": "https://madie.cms.gov/MeasureReport/50ec76bb-c995-4c32-9786-76f534dd1de4",
     "resource": {
       "resourceType": "MeasureReport",
-      "id": "421172c1-765e-4813-83a5-40b577853958",
+      "id": "50ec76bb-c995-4c32-9786-76f534dd1de4",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm" ]
       },
       "contained": [ {
         "resourceType": "Parameters",
-        "id": "c044bdd5-aae9-4301-9901-1eba3d7ed223-parameters",
+        "id": "90538aa2-673f-45cb-9728-10e06e0070d1-parameters",
         "parameter": [ {
           "name": "subject",
           "valueString": "e0935b52-8ecc-4269-a87c-20055b6fd9e3"
@@ -495,7 +495,7 @@
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
         "valueReference": {
-          "reference": "#c044bdd5-aae9-4301-9901-1eba3d7ed223-parameters"
+          "reference": "#90538aa2-673f-45cb-9728-10e06e0070d1-parameters"
         }
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
@@ -549,39 +549,48 @@
             } ]
           },
           "count": 0
+        }, {
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "numerator-exclusion",
+              "display": "Numerator Exclusion"
+            } ]
+          },
+          "count": 0
         } ]
       } ],
       "evaluatedResource": [ {
-        "reference": "Patient/e0935b52-8ecc-4269-a87c-20055b6fd9e3"
+        "reference": "https://madie.cms.gov/Patient/e0935b52-8ecc-4269-a87c-20055b6fd9e3"
       }, {
-        "reference": "Observation/5f29baa26f0b7100008d8af1"
+        "reference": "https://madie.cms.gov/Observation/5f29baa26f0b7100008d8af1"
       }, {
-        "reference": "Observation/5f32bf4551476200007ab6d3"
+        "reference": "https://madie.cms.gov/Observation/5f32bf4551476200007ab6d3"
       }, {
-        "reference": "Encounter/5f21e66daca3e40000cb86cg"
+        "reference": "https://madie.cms.gov/Encounter/5f21e66daca3e40000cb86cg"
       }, {
-        "reference": "Encounter/6001e814bd87590000ceb183"
+        "reference": "https://madie.cms.gov/Encounter/6001e814bd87590000ceb183"
       }, {
-        "reference": "Procedure/5f21e716aca3e40000cb87ee"
+        "reference": "https://madie.cms.gov/Procedure/5f21e716aca3e40000cb87ee"
       }, {
-        "reference": "Observation/heart-rate-adb72"
+        "reference": "https://madie.cms.gov/Observation/heart-rate-adb72"
       }, {
-        "reference": "Observation/5f29baa26f0b7100008d8af1a"
+        "reference": "https://madie.cms.gov/Observation/5f29baa26f0b7100008d8af1a"
       }, {
-        "reference": "Observation/5f32bf4551476200007ab6d3a"
+        "reference": "https://madie.cms.gov/Observation/5f32bf4551476200007ab6d3a"
       }, {
-        "reference": "Encounter/5f21e66daca3e40000cb86cga"
+        "reference": "https://madie.cms.gov/Encounter/5f21e66daca3e40000cb86cga"
       }, {
-        "reference": "Encounter/6001e814bd87590000ceb183a"
+        "reference": "https://madie.cms.gov/Encounter/6001e814bd87590000ceb183a"
       }, {
-        "reference": "Procedure/5f21e716aca3e40000cb87eea"
+        "reference": "https://madie.cms.gov/Procedure/5f21e716aca3e40000cb87eea"
       }, {
-        "reference": "Observation/heart-rate-adb72a"
+        "reference": "https://madie.cms.gov/Observation/heart-rate-adb72a"
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "MeasureReport/421172c1-765e-4813-83a5-40b577853958"
+      "method": "POST",
+      "url": "MeasureReport/50ec76bb-c995-4c32-9786-76f534dd1de4"
     }
   } ]
 }

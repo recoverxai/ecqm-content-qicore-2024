@@ -1,10 +1,10 @@
-library PalliativeCare version '1.9.000'
+library PalliativeCare version '1.11.000'
 
 using QICore version '4.1.1'
 
-include FHIRHelpers version '4.3.000' called FHIRHelpers
-include QICoreCommon version '2.0.000' called QICoreCommon
-include Status version '1.6.000' called Status
+include FHIRHelpers version '4.4.000' called FHIRHelpers
+include QICoreCommon version '2.1.000' called QICoreCommon
+include Status version '1.8.000' called Status
 
 codesystem "LOINC": 'http://loinc.org'
 
@@ -29,5 +29,19 @@ define "Has Palliative Care in the Measurement Period":
         where PalliativeEncounter.period.toInterval() overlaps day of "Measurement Period"
     )
     or exists ((([Procedure: "Palliative Care Intervention"]).isInterventionPerformed()) PalliativeIntervention
+        where PalliativeIntervention.performed.toInterval() overlaps day of "Measurement Period"
+    )
+
+define "Palliative Care in the Measurement Period":
+  ((([Observation: "Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)"]).isAssessmentPerformed()) PalliativeAssessment
+      where PalliativeAssessment.effective.toInterval() overlaps day of "Measurement Period"
+  )
+    union ([Condition: "Palliative Care Diagnosis"] PalliativeDiagnosis
+        where PalliativeDiagnosis.prevalenceInterval() overlaps day of "Measurement Period"
+    )
+    union ((([Encounter: "Palliative Care Encounter"]).isEncounterPerformed()) PalliativeEncounter
+        where PalliativeEncounter.period.toInterval() overlaps day of "Measurement Period"
+    )
+    union ((([Procedure: "Palliative Care Intervention"]).isInterventionPerformed()) PalliativeIntervention
         where PalliativeIntervention.performed.toInterval() overlaps day of "Measurement Period"
     )

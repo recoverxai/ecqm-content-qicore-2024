@@ -63,7 +63,7 @@
       "birthDate": "2004-02-01"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Patient/942af6cd-68bb-42a9-90f0-337477ea1e3f"
     }
   }, {
@@ -95,7 +95,7 @@
       "effectiveDateTime": "2025-02-01T08:00:00.000+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/5f29baa26f0b7100008d8af1"
     }
   }, {
@@ -127,7 +127,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/5f21e66daca3e40000cb86cf"
     }
   }, {
@@ -158,7 +158,7 @@
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Procedure/5f21e716aca3e40000cb87ee"
     }
   }, {
@@ -193,14 +193,14 @@
       "valueDateTime": "2025-02-01T08:00:00.000+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Observation/delivery-date-estimated-759a"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Coverage/1",
     "resource": {
       "resourceType": "Coverage",
-      "id": "Coverage-1",
+      "id": "1",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ]
       },
@@ -209,18 +209,18 @@
         "reference": "Patient/942af6cd-68bb-42a9-90f0-337477ea1e3f"
       },
       "payor": [ {
-        "reference": "Organization/Org-123456"
+        "reference": "Organization/123456"
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "Coverage/Coverage-1"
+      "method": "POST",
+      "url": "Coverage/1"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Organization/123456",
     "resource": {
       "resourceType": "Organization",
-      "id": "Org-123456",
+      "id": "123456",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization" ]
       },
@@ -253,8 +253,8 @@
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "Organization/Org-123456"
+      "method": "POST",
+      "url": "Organization/123456"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Practitioner/practitioner-123456",
@@ -271,20 +271,20 @@
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Practitioner/practitioner-123456"
     }
   }, {
-    "fullUrl": "https://madie.cms.gov/MeasureReport/6285d250-94ad-45a8-81a5-fb8f2477b2a3",
+    "fullUrl": "https://madie.cms.gov/MeasureReport/8aa71097-994c-4b37-bd5f-75ddc614f334",
     "resource": {
       "resourceType": "MeasureReport",
-      "id": "6285d250-94ad-45a8-81a5-fb8f2477b2a3",
+      "id": "8aa71097-994c-4b37-bd5f-75ddc614f334",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm" ]
       },
       "contained": [ {
         "resourceType": "Parameters",
-        "id": "ef9e406c-8993-42e4-a24f-85800d6d9e13-parameters",
+        "id": "fceebbaf-2a26-4f72-81d8-dfb288730f83-parameters",
         "parameter": [ {
           "name": "subject",
           "valueString": "942af6cd-68bb-42a9-90f0-337477ea1e3f"
@@ -293,7 +293,7 @@
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
         "valueReference": {
-          "reference": "#ef9e406c-8993-42e4-a24f-85800d6d9e13-parameters"
+          "reference": "#fceebbaf-2a26-4f72-81d8-dfb288730f83-parameters"
         }
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
@@ -347,29 +347,38 @@
             } ]
           },
           "count": 0
+        }, {
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "numerator-exclusion",
+              "display": "Numerator Exclusion"
+            } ]
+          },
+          "count": 0
         } ]
       } ],
       "evaluatedResource": [ {
-        "reference": "Patient/942af6cd-68bb-42a9-90f0-337477ea1e3f"
+        "reference": "https://madie.cms.gov/Patient/942af6cd-68bb-42a9-90f0-337477ea1e3f"
       }, {
-        "reference": "Observation/5f29baa26f0b7100008d8af1"
+        "reference": "https://madie.cms.gov/Observation/5f29baa26f0b7100008d8af1"
       }, {
-        "reference": "Encounter/5f21e66daca3e40000cb86cf"
+        "reference": "https://madie.cms.gov/Encounter/5f21e66daca3e40000cb86cf"
       }, {
-        "reference": "Procedure/5f21e716aca3e40000cb87ee"
+        "reference": "https://madie.cms.gov/Procedure/5f21e716aca3e40000cb87ee"
       }, {
-        "reference": "Observation/delivery-date-estimated-759a"
+        "reference": "https://madie.cms.gov/Observation/delivery-date-estimated-759a"
       }, {
-        "reference": "Coverage/Coverage-1"
+        "reference": "https://madie.cms.gov/Coverage/1"
       }, {
-        "reference": "Organization/Org-123456"
+        "reference": "https://madie.cms.gov/Organization/123456"
       }, {
-        "reference": "Practitioner/practitioner-123456"
+        "reference": "https://madie.cms.gov/Practitioner/practitioner-123456"
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "MeasureReport/6285d250-94ad-45a8-81a5-fb8f2477b2a3"
+      "method": "POST",
+      "url": "MeasureReport/8aa71097-994c-4b37-bd5f-75ddc614f334"
     }
   } ]
 }

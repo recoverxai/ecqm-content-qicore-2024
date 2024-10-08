@@ -63,7 +63,7 @@
       "birthDate": "1985-09-18"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Patient/2ed389dd-10d2-49b1-966b-f8bada7df530"
     }
   }, {
@@ -112,7 +112,7 @@
       "abatementDateTime": "2025-10-12T00:15:00.000Z"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Condition/5c953f97b848462de0ae410e"
     }
   }, {
@@ -143,12 +143,12 @@
         "end": "2025-10-01T09:00:00.000Z"
       },
       "length": {
-        "value": 0.0,
+        "value": 0,
         "unit": "days"
       }
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/5c953f97b848462de0ae410f"
     }
   }, {
@@ -179,7 +179,7 @@
         "end": "2025-10-12T00:15:00.000Z"
       },
       "length": {
-        "value": 11.0,
+        "value": 11,
         "unit": "days"
       },
       "diagnosis": [ {
@@ -188,18 +188,16 @@
         },
         "use": {
           "coding": [ {
-            "system": "http://hl7.org/fhir/sid/icd-10-cm",
-            "version": "2022",
-            "code": "I63.019",
-            "display": "Cerebral infarction due to thrombosis of unspecified vertebral artery",
-            "userSelected": true
+            "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+            "code": "billing",
+            "display": "Billing"
           } ]
         },
         "rank": 1
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Encounter/5c953f97b848462de0ae4110"
     }
   }, {
@@ -224,7 +222,7 @@
       "authoredOn": "2025-10-01T09:15:00.000+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "ServiceRequest/5c953f97b848462de0ae4112"
     }
   }, {
@@ -240,11 +238,11 @@
         "start": "1985-09-18T08:00:00.000Z"
       },
       "payor": [ {
-        "reference": "Organization/Org-123456"
+        "reference": "Organization/123456"
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Coverage/5f2c53cb1c76ba5c99605729"
     }
   }, {
@@ -289,14 +287,14 @@
       "recordedDate": "2025-10-13T08:00:00.000+00:00"
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Condition/ischemic-stroke-1966"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Organization/123456",
     "resource": {
       "resourceType": "Organization",
-      "id": "Org-123456",
+      "id": "123456",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization" ]
       },
@@ -329,8 +327,8 @@
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "Organization/Org-123456"
+      "method": "POST",
+      "url": "Organization/123456"
     }
   }, {
     "fullUrl": "https://madie.cms.gov/Practitioner/practitioner-123456",
@@ -347,20 +345,20 @@
       } ]
     },
     "request": {
-      "method": "PUT",
+      "method": "POST",
       "url": "Practitioner/practitioner-123456"
     }
   }, {
-    "fullUrl": "https://madie.cms.gov/MeasureReport/bf2f72cd-99dd-45a9-90da-e5c94bdc7372",
+    "fullUrl": "https://madie.cms.gov/MeasureReport/22091fc8-d33d-4fd2-b8bb-a5dfc3223db5",
     "resource": {
       "resourceType": "MeasureReport",
-      "id": "bf2f72cd-99dd-45a9-90da-e5c94bdc7372",
+      "id": "22091fc8-d33d-4fd2-b8bb-a5dfc3223db5",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm" ]
       },
       "contained": [ {
         "resourceType": "Parameters",
-        "id": "8a70bf3f-b83f-4e6b-bec9-94c0d09a56ae-parameters",
+        "id": "0e47cb08-ff0a-4fd9-9e49-3f6d5a8032d0-parameters",
         "parameter": [ {
           "name": "subject",
           "valueString": "2ed389dd-10d2-49b1-966b-f8bada7df530"
@@ -369,7 +367,7 @@
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
         "valueReference": {
-          "reference": "#8a70bf3f-b83f-4e6b-bec9-94c0d09a56ae-parameters"
+          "reference": "#0e47cb08-ff0a-4fd9-9e49-3f6d5a8032d0-parameters"
         }
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
@@ -435,28 +433,28 @@
         } ]
       } ],
       "evaluatedResource": [ {
-        "reference": "Patient/2ed389dd-10d2-49b1-966b-f8bada7df530"
+        "reference": "https://madie.cms.gov/Patient/2ed389dd-10d2-49b1-966b-f8bada7df530"
       }, {
-        "reference": "Condition/5c953f97b848462de0ae410e"
+        "reference": "https://madie.cms.gov/Condition/5c953f97b848462de0ae410e"
       }, {
-        "reference": "Encounter/5c953f97b848462de0ae410f"
+        "reference": "https://madie.cms.gov/Encounter/5c953f97b848462de0ae410f"
       }, {
-        "reference": "Encounter/5c953f97b848462de0ae4110"
+        "reference": "https://madie.cms.gov/Encounter/5c953f97b848462de0ae4110"
       }, {
-        "reference": "ServiceRequest/5c953f97b848462de0ae4112"
+        "reference": "https://madie.cms.gov/ServiceRequest/5c953f97b848462de0ae4112"
       }, {
-        "reference": "Coverage/5f2c53cb1c76ba5c99605729"
+        "reference": "https://madie.cms.gov/Coverage/5f2c53cb1c76ba5c99605729"
       }, {
-        "reference": "Condition/ischemic-stroke-1966"
+        "reference": "https://madie.cms.gov/Condition/ischemic-stroke-1966"
       }, {
-        "reference": "Organization/Org-123456"
+        "reference": "https://madie.cms.gov/Organization/123456"
       }, {
-        "reference": "Practitioner/practitioner-123456"
+        "reference": "https://madie.cms.gov/Practitioner/practitioner-123456"
       } ]
     },
     "request": {
-      "method": "PUT",
-      "url": "MeasureReport/bf2f72cd-99dd-45a9-90da-e5c94bdc7372"
+      "method": "POST",
+      "url": "MeasureReport/22091fc8-d33d-4fd2-b8bb-a5dfc3223db5"
     }
   } ]
 }
