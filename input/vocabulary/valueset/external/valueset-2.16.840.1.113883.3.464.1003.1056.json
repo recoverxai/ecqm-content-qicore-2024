@@ -1,35 +1,56 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1056",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-01-23T09:02:28.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-17"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1056",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.1056"
-  } ],
-  "version": "20210909",
-  "name": "Centralnervoussystem,vasodilators",
-  "title": "Central nervous system, vasodilators",
-  "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1056"
+    }
+  ],
+  "version": "20240117",
+  "name": "ErgoloidMesylatesMedications",
+  "title": "Ergoloid Mesylates Medications",
+  "status": "retired",
+  "date": "2024-01-17T01:08:53-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:54-06:00",
-    "contains": [ {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1298799",
-      "display": "isoxsuprine hydrochloride 20 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1298834",
-      "display": "isoxsuprine hydrochloride 10 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "318179",
-      "display": "ergoloid mesylates, USP 1 MG Oral Tablet"
-    } ]
+    "identifier": "urn:uuid:7f9f0ca6-3cf6-420a-90d8-974cdb5411e4",
+    "timestamp": "2024-10-02T12:34:51-04:00",
+    "total": 1,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "318179",
+        "display": "ergoloid mesylates, USP 1 MG Oral Tablet"
+      }
+    ]
   }
 }

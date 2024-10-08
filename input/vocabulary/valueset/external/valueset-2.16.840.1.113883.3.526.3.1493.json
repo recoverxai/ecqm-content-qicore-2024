@@ -1,190 +1,153 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1493",
+  "meta": {
+    "versionId": "16",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1493",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.1493"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1493"
+    }
+  ],
   "version": "20170504",
   "name": "BetaBlockerTherapyIngredient",
   "title": "Beta Blocker Therapy Ingredient",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "AHA Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:26-06:00",
-    "contains": [ {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "10600",
-      "display": "timolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "10824",
-      "display": "metipranolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "1202",
-      "display": "atenolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "149",
-      "display": "acebutolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "1520",
-      "display": "betaxolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "1813",
-      "display": "levobunolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "19484",
-      "display": "bisoprolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "20352",
-      "display": "carvedilol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "2116",
-      "display": "carteolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "31555",
-      "display": "nebivolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "49737",
-      "display": "esmolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "6185",
-      "display": "labetalol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "6918",
-      "display": "metoprolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "7226",
-      "display": "nadolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "8332",
-      "display": "pindolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "8787",
-      "display": "propranolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "9947",
-      "display": "sotalol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "10600",
-      "display": "timolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "10824",
-      "display": "metipranolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "1202",
-      "display": "atenolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "149",
-      "display": "acebutolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "1520",
-      "display": "betaxolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "1813",
-      "display": "levobunolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "19484",
-      "display": "bisoprolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "20352",
-      "display": "carvedilol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "2116",
-      "display": "carteolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "31555",
-      "display": "nebivolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "49737",
-      "display": "esmolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "6185",
-      "display": "labetalol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "6918",
-      "display": "metoprolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "7226",
-      "display": "nadolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "8332",
-      "display": "pindolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "8787",
-      "display": "propranolol"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "9947",
-      "display": "sotalol"
-    } ]
+    "identifier": "urn:uuid:30ef75f6-a1b3-40ee-8234-0b3d25be4f99",
+    "timestamp": "2024-10-02T12:29:27-04:00",
+    "total": 17,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "10600",
+        "display": "timolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "10824",
+        "display": "metipranolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "1202",
+        "display": "atenolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "149",
+        "display": "acebutolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "1520",
+        "display": "betaxolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "1813",
+        "display": "levobunolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "19484",
+        "display": "bisoprolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "20352",
+        "display": "carvedilol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "2116",
+        "display": "carteolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "31555",
+        "display": "nebivolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "49737",
+        "display": "esmolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "6185",
+        "display": "labetalol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "6918",
+        "display": "metoprolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "7226",
+        "display": "nadolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "8332",
+        "display": "pindolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "8787",
+        "display": "propranolol"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "9947",
+        "display": "sotalol"
+      }
+    ]
   }
 }

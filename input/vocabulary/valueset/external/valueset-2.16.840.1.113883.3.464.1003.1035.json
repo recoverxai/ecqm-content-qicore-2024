@@ -1,55 +1,92 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1035",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-08-12T12:57:20.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1035",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.1035"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1035"
+    }
+  ],
   "version": "20240112",
-  "name": "UnilateralOophorectomy,UnspecifiedLaterality",
+  "name": "UnilateralOophorectomyUnspecifiedLaterality",
   "title": "Unilateral Oophorectomy, Unspecified Laterality",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "116028008",
-      "display": "Salpingo-oophorectomy (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "446598002",
-      "display": "Laparoscopic salpingo-oophorectomy (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "446960007",
-      "display": "Laparoscopic salpingo-oophorectomy with conversion to laparotomy (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "450487000",
-      "display": "Laparoscopic excision of ovary (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "61893009",
-      "display": "Laparoscopic treatment of ectopic pregnancy with oophorectomy (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "713285002",
-      "display": "Prophylactic oophorectomy (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "83152002",
-      "display": "Oophorectomy (procedure)"
-    } ]
+    "identifier": "urn:uuid:a2c5a779-8837-4d05-9c42-9ad61b074246",
+    "timestamp": "2024-10-02T12:31:37-04:00",
+    "total": 7,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "116028008",
+        "display": "Salpingo-oophorectomy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "446598002",
+        "display": "Laparoscopic salpingo-oophorectomy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "446960007",
+        "display": "Laparoscopic salpingo-oophorectomy with conversion to laparotomy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "450487000",
+        "display": "Laparoscopic excision of ovary (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "61893009",
+        "display": "Laparoscopic treatment of ectopic pregnancy with oophorectomy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "713285002",
+        "display": "Prophylactic oophorectomy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "83152002",
+        "display": "Oophorectomy (procedure)"
+      }
+    ]
   }
 }

@@ -1,30 +1,63 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.106.12.1018",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2018-03-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.106.12.1018",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.106.12.1018"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.106.12.1018"
+    }
+  ],
   "version": "20180310",
-  "name": "AverageNumberofDrinksperDrinkingDay",
+  "name": "AverageNumberOfDrinksPerDrinkingDay",
   "title": "Average Number of Drinks per Drinking Day",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:54-06:00",
-    "contains": [ {
-      "system": "http://loinc.org",
-      "version": "2.73",
-      "code": "11287-0",
-      "display": "Alcoholic drinks per drinking day - Reported"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.73",
-      "code": "74013-4",
-      "display": "Alcoholic drinks per day"
-    } ]
+    "identifier": "urn:uuid:a8aa8ac4-4acf-480c-9feb-bcde2cb41b6a",
+    "timestamp": "2024-10-02T12:37:06-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "11287-0",
+        "display": "Alcoholic drinks per drinking day - Reported"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "74013-4",
+        "display": "Alcoholic drinks per day"
+      }
+    ]
   }
 }

@@ -1,45 +1,81 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1283",
+  "meta": {
+    "versionId": "27",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-09"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1283",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.1283"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1283"
+    }
+  ],
   "version": "20210209",
-  "name": "LevelofSeverityofRetinopathyFindings",
+  "name": "LevelOfSeverityOfRetinopathyFindings",
   "title": "Level of Severity of Retinopathy Findings",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:26-06:00",
-    "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "312903003",
-      "display": "Mild nonproliferative retinopathy due to diabetes mellitus (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "312904009",
-      "display": "Moderate nonproliferative retinopathy due to diabetes mellitus (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "312905005",
-      "display": "Severe nonproliferative retinopathy due to diabetes mellitus (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "399876000",
-      "display": "Very severe nonproliferative retinopathy due to diabetes mellitus (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "59276001",
-      "display": "Proliferative retinopathy due to diabetes mellitus (disorder)"
-    } ]
+    "identifier": "urn:uuid:e204ffdb-f59a-4f55-a03e-d38a3daec0f1",
+    "timestamp": "2024-10-02T12:29:17-04:00",
+    "total": 5,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "312903003",
+        "display": "Mild nonproliferative retinopathy due to diabetes mellitus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "312904009",
+        "display": "Moderate nonproliferative retinopathy due to diabetes mellitus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "312905005",
+        "display": "Severe nonproliferative retinopathy due to diabetes mellitus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "399876000",
+        "display": "Very severe nonproliferative retinopathy due to diabetes mellitus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "59276001",
+        "display": "Proliferative retinopathy due to diabetes mellitus (disorder)"
+      }
+    ]
   }
 }

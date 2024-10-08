@@ -1,65 +1,105 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.600.1518",
+  "meta": {
+    "versionId": "30",
+    "lastUpdated": "2024-08-09T12:31:18.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2019-03-13"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1518",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.600.1518"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.600.1518"
+    }
+  ],
   "version": "20190313",
-  "name": "RecommendationtoIncreasePhysicalActivity",
+  "name": "RecommendationToIncreasePhysicalActivity",
   "title": "Recommendation to Increase Physical Activity",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:24-06:00",
-    "contains": [ {
-      "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
-      "version": "2024",
-      "code": "S9451",
-      "display": "Exercise classes, non-physician provider, per session"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "281090004",
-      "display": "Recommendation to exercise (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "304507003",
-      "display": "Exercise education (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "304549008",
-      "display": "Giving encouragement to exercise (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "386291006",
-      "display": "Exercise promotion: strength training (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "386292004",
-      "display": "Exercise promotion: stretching (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "386373004",
-      "display": "Nutrition therapy (regime/therapy)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "386463000",
-      "display": "Prescribed activity/exercise education (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "410289001",
-      "display": "Exercises education, guidance, and counseling (procedure)"
-    } ]
+    "identifier": "urn:uuid:2ebb4c05-9b62-4f92-9da8-4525b5422433",
+    "timestamp": "2024-10-02T12:29:25-04:00",
+    "total": 9,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "281090004",
+        "display": "Recommendation to exercise (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "304507003",
+        "display": "Exercise education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "304549008",
+        "display": "Giving encouragement to exercise (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "386291006",
+        "display": "Exercise promotion: strength training (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "386292004",
+        "display": "Exercise promotion: stretching (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "386373004",
+        "display": "Nutrition therapy (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "386463000",
+        "display": "Prescribed activity/exercise education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "410289001",
+        "display": "Exercises education, guidance, and counseling (procedure)"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "version": "2024",
+        "code": "S9451",
+        "display": "Exercise classes, non-physician provider, per session"
+      }
+    ]
   }
 }

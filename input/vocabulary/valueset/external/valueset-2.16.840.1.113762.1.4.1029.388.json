@@ -1,50 +1,86 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.388",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-02-23T01:11:24.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-23"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.388",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1029.388"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.388"
+    }
+  ],
   "version": "20240223",
-  "name": "PlacentaIncretaorPercreta",
+  "name": "PlacentaIncretaOrPercreta",
   "title": "Placenta Increta or Percreta",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-23T01:11:24-05:00",
+  "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:29-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O43.222",
-      "display": "Placenta increta, second trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O43.223",
-      "display": "Placenta increta, third trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O43.229",
-      "display": "Placenta increta, unspecified trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O43.232",
-      "display": "Placenta percreta, second trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O43.233",
-      "display": "Placenta percreta, third trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O43.239",
-      "display": "Placenta percreta, unspecified trimester"
-    } ]
+    "identifier": "urn:uuid:29083d9c-6e97-4c36-9ce3-98b1cba2f619",
+    "timestamp": "2024-10-02T12:29:34-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O43.222",
+        "display": "Placenta increta, second trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O43.223",
+        "display": "Placenta increta, third trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O43.229",
+        "display": "Placenta increta, unspecified trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O43.232",
+        "display": "Placenta percreta, second trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O43.233",
+        "display": "Placenta percreta, third trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O43.239",
+        "display": "Placenta percreta, unspecified trimester"
+      }
+    ]
   }
 }

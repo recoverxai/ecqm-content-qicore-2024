@@ -1,40 +1,74 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1248.85",
+  "meta": {
+    "versionId": "13",
+    "lastUpdated": "2024-02-22T14:54:22.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-05-18"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.85",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1248.85"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1248.85"
+    }
+  ],
   "version": "20230518",
   "name": "ElectiveInpatientEncounter",
   "title": "Elective Inpatient Encounter",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-05-18T01:12:46-04:00",
+  "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:29-06:00",
-    "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "112689000",
-      "display": "Hospital admission, elective, with complete pre-admission work-up (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "15584006",
-      "display": "Hospital admission, elective, with partial pre-admission work-up (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "81672003",
-      "display": "Hospital admission, elective, without pre-admission work-up (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "8715000",
-      "display": "Hospital admission, elective (procedure)"
-    } ]
+    "identifier": "urn:uuid:96a6c0de-21d3-437b-85ef-454c39e061d4",
+    "timestamp": "2024-10-02T12:28:02-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "112689000",
+        "display": "Hospital admission, elective, with complete pre-admission work-up (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "15584006",
+        "display": "Hospital admission, elective, with partial pre-admission work-up (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "81672003",
+        "display": "Hospital admission, elective, without pre-admission work-up (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "8715000",
+        "display": "Hospital admission, elective (procedure)"
+      }
+    ]
   }
 }

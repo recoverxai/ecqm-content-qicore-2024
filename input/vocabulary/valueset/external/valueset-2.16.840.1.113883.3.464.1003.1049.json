@@ -1,50 +1,86 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1049",
+  "meta": {
+    "versionId": "15",
+    "lastUpdated": "2024-01-23T15:46:53.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-23"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1049",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.1049"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1049"
+    }
+  ],
   "version": "20240123",
-  "name": "PotentiallyHarmfulAntiparkinsonianAgentsforOlderAdults",
+  "name": "PotentiallyHarmfulAntiparkinsonianAgentsForOlderAdults",
   "title": "Potentially Harmful Antiparkinsonian Agents for Older Adults",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-23T01:10:32-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:27-06:00",
-    "contains": [ {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "885209",
-      "display": "benztropine mesylate 2 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "885213",
-      "display": "benztropine mesylate 1 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "885219",
-      "display": "benztropine mesylate 0.5 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "905269",
-      "display": "trihexyphenidyl hydrochloride 2 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "905273",
-      "display": "trihexyphenidyl hydrochloride 0.4 MG/ML Oral Solution"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "905283",
-      "display": "trihexyphenidyl hydrochloride 5 MG Oral Tablet"
-    } ]
+    "identifier": "urn:uuid:2fd155c5-7953-4164-9169-e59b6715d614",
+    "timestamp": "2024-10-02T12:27:26-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "885209",
+        "display": "benztropine mesylate 2 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "885213",
+        "display": "benztropine mesylate 1 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "885219",
+        "display": "benztropine mesylate 0.5 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "905269",
+        "display": "trihexyphenidyl hydrochloride 2 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "905273",
+        "display": "trihexyphenidyl hydrochloride 0.4 MG/ML Oral Solution"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "905283",
+        "display": "trihexyphenidyl hydrochloride 5 MG Oral Tablet"
+      }
+    ]
   }
 }

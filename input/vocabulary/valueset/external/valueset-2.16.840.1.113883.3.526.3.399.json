@@ -1,50 +1,87 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.399",
+  "meta": {
+    "versionId": "22",
+    "lastUpdated": "2024-08-09T13:21:28.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.399",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.399"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.399"
+    }
+  ],
   "version": "20170504",
   "name": "SalvageTherapy",
   "title": "Salvage Therapy",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "51597",
-      "display": "Pelvic exenteration, complete, for vesical, prostatic or urethral malignancy, with removal of bladder and ureteral transplantations, with or without hysterectomy and/or abdominoperineal resection of rectum and colon and colostomy, or any combination thereof"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "55860",
-      "display": "Exposure of prostate, any approach, for insertion of radioactive substance"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "55862",
-      "display": "Exposure of prostate, any approach, for insertion of radioactive substance; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "55865",
-      "display": "Exposure of prostate, any approach, for insertion of radioactive substance; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric and obturator nodes"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "236209003",
-      "display": "Salvage cystoprostatourethrectomy (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "236211007",
-      "display": "Salvage cystoprostatectomy (procedure)"
-    } ]
+    "identifier": "urn:uuid:6da86947-dc54-42b1-a3da-ec64da00e114",
+    "timestamp": "2024-10-02T12:29:50-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "236209003",
+        "display": "Salvage cystoprostatourethrectomy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "236211007",
+        "display": "Salvage cystoprostatectomy (procedure)"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "51597",
+        "display": "Pelvic exenteration, complete, for vesical, prostatic or urethral malignancy, with removal of bladder and ureteral transplantations, with or without hysterectomy and/or abdominoperineal resection of rectum and colon and colostomy, or any combination thereof"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "55860",
+        "display": "Exposure of prostate, any approach, for insertion of radioactive substance"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "55862",
+        "display": "Exposure of prostate, any approach, for insertion of radioactive substance; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "55865",
+        "display": "Exposure of prostate, any approach, for insertion of radioactive substance; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric and obturator nodes"
+      }
+    ]
   }
 }

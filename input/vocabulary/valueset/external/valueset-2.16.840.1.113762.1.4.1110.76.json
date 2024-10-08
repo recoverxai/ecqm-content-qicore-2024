@@ -1,35 +1,69 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1110.76",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-11-15"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.76",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1110.76"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1110.76"
+    }
+  ],
   "version": "20221115",
-  "name": "HistoryofAtrialAblation",
+  "name": "HistoryOfAtrialAblation",
   "title": "History of Atrial Ablation",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-11-15T01:03:33-05:00",
+  "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "427951003",
-      "display": "History of radiofrequency ablation operation for arrhythmia (situation)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "429508000",
-      "display": "History of ablation of atrioventricular node (situation)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "429756009",
-      "display": "History of radiofrequency ablation operation on left atrium for arrhythmia (situation)"
-    } ]
+    "identifier": "urn:uuid:18dded9b-64cb-49ec-b509-6b8902594c66",
+    "timestamp": "2024-10-02T12:31:13-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "427951003",
+        "display": "History of radiofrequency ablation operation for arrhythmia (situation)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "429508000",
+        "display": "History of ablation of atrioventricular node (situation)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "429756009",
+        "display": "History of radiofrequency ablation operation on left atrium for arrhythmia (situation)"
+      }
+    ]
   }
 }

@@ -1,110 +1,159 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1254",
+  "meta": {
+    "versionId": "20",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-09-08"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1254",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.1254"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1254"
+    }
+  ],
   "version": "20170908",
   "name": "InfluenzaImmunizationAdministered",
   "title": "Influenza Immunization Administered",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-09-08T01:00:04-04:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:53-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "135",
-      "display": "influenza, high dose seasonal, preservative-free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "140",
-      "display": "Influenza, seasonal, injectable, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "141",
-      "display": "Influenza, seasonal, injectable"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "144",
-      "display": "seasonal influenza, intradermal, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "149",
-      "display": "influenza, live, intranasal, quadrivalent"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "150",
-      "display": "Influenza, injectable, quadrivalent, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "153",
-      "display": "Influenza, injectable, Madin Darby Canine Kidney, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "155",
-      "display": "Seasonal, trivalent, recombinant, injectable influenza vaccine, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "158",
-      "display": "influenza, injectable, quadrivalent, contains preservative"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "161",
-      "display": "Influenza, injectable,quadrivalent, preservative free, pediatric"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "166",
-      "display": "influenza, intradermal, quadrivalent, preservative free, injectable"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "168",
-      "display": "Seasonal trivalent influenza vaccine, adjuvanted, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "171",
-      "display": "Influenza, injectable, Madin Darby Canine Kidney, preservative free, quadrivalent"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "185",
-      "display": "Seasonal, quadrivalent, recombinant, injectable influenza vaccine, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "186",
-      "display": "Influenza, injectable, Madin Darby Canine Kidney,  quadrivalent with preservative"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "197",
-      "display": "influenza, high-dose seasonal, quadrivalent, .7mL dose, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "205",
-      "display": "influenza, seasonal vaccine, quadrivalent, adjuvanted, .5mL dose, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "88",
-      "display": "influenza virus vaccine, unspecified formulation"
-    } ]
+    "identifier": "urn:uuid:46b3b7d8-4c9f-4f20-8307-d8b4c1a2147a",
+    "timestamp": "2024-10-02T12:37:04-04:00",
+    "total": 18,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "135",
+        "display": "Influenza, high-dose, split virus, trivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "140",
+        "display": "Influenza, split virus, trivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "141",
+        "display": "Influenza, split virus, trivalent, injectable, contains preservative"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "144",
+        "display": "seasonal influenza, intradermal, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "149",
+        "display": "Influenza, live, quadrivalent, intranasal"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "150",
+        "display": "Influenza, split virus, quadrivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "153",
+        "display": "Influenza, Madin Darby Canine Kidney, subunit, trivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "155",
+        "display": "Influenza, recombinant, trivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "158",
+        "display": "Influenza, split virus, quadrivalent, injectable, contains preservative"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "161",
+        "display": "Influenza, injectable,quadrivalent, preservative free, pediatric"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "166",
+        "display": "influenza, intradermal, quadrivalent, preservative free, injectable"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "168",
+        "display": "Influenza, adjuvanted, inactivated, trivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "171",
+        "display": "Influenza, Madin Darby Canine Kidney, subunit, quadrivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "185",
+        "display": "Influenza, recombinant, quadrivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "186",
+        "display": "Influenza, Madin Darby Canine Kidney, subunit, quadrivalent, injectable, contains preservative"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "197",
+        "display": "Influenza, high-dose, split virus, quadrivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "205",
+        "display": "Influenza, adjuvanted, inactivated, quadrivalent, injectable, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "88",
+        "display": "influenza virus vaccine, unspecified formulation"
+      }
+    ]
   }
 }

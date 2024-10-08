@@ -1,60 +1,99 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1110.35",
+  "meta": {
+    "versionId": "24",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-06-11"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.35",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1110.35"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1110.35"
+    }
+  ],
   "version": "20210611",
   "name": "PlacentaPrevia",
   "title": "Placenta Previa",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-06-11T01:01:24-04:00",
+  "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:55-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O44.00",
-      "display": "Complete placenta previa NOS or without hemorrhage, unspecified trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O44.03",
-      "display": "Complete placenta previa NOS or without hemorrhage, third trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O44.10",
-      "display": "Complete placenta previa with hemorrhage, unspecified trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O44.13",
-      "display": "Complete placenta previa with hemorrhage, third trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O44.20",
-      "display": "Partial placenta previa NOS or without hemorrhage, unspecified trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O44.23",
-      "display": "Partial placenta previa NOS or without hemorrhage, third trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O44.30",
-      "display": "Partial placenta previa with hemorrhage, unspecified trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O44.33",
-      "display": "Partial placenta previa with hemorrhage, third trimester"
-    } ]
+    "identifier": "urn:uuid:6bf474d9-d572-4cbc-a6bd-617a32d0d8b9",
+    "timestamp": "2024-10-02T12:34:14-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O44.00",
+        "display": "Complete placenta previa NOS or without hemorrhage, unspecified trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O44.03",
+        "display": "Complete placenta previa NOS or without hemorrhage, third trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O44.10",
+        "display": "Complete placenta previa with hemorrhage, unspecified trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O44.13",
+        "display": "Complete placenta previa with hemorrhage, third trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O44.20",
+        "display": "Partial placenta previa NOS or without hemorrhage, unspecified trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O44.23",
+        "display": "Partial placenta previa NOS or without hemorrhage, third trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O44.30",
+        "display": "Partial placenta previa with hemorrhage, unspecified trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O44.33",
+        "display": "Partial placenta previa with hemorrhage, third trimester"
+      }
+    ]
   }
 }

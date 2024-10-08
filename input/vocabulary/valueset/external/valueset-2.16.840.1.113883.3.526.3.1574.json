@@ -1,80 +1,123 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1574",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2024-08-09T12:22:34.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-20"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1574",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.1574"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1574"
+    }
+  ],
   "version": "20210220",
   "name": "LowIntensityStatinTherapy",
   "title": "Low Intensity Statin Therapy",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-20T01:02:00-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "1790679",
-      "display": "simvastatin 4 MG/ML Oral Suspension"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "197903",
-      "display": "lovastatin 10 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "197904",
-      "display": "lovastatin 20 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "2001254",
-      "display": "pitavastatin magnesium 1 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "310404",
-      "display": "fluvastatin 20 MG Oral Capsule"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "312962",
-      "display": "simvastatin 5 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "314231",
-      "display": "simvastatin 10 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "433849",
-      "display": "24 HR lovastatin 20 MG Extended Release Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "476345",
-      "display": "ezetimibe 10 MG / simvastatin 10 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "861643",
-      "display": "pitavastatin calcium 1 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "904458",
-      "display": "pravastatin sodium 10 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "904467",
-      "display": "pravastatin sodium 20 MG Oral Tablet"
-    } ]
+    "identifier": "urn:uuid:8ac49c1d-d60f-4ae2-8f5c-c7885c01fd85",
+    "timestamp": "2024-10-02T12:29:02-04:00",
+    "total": 12,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "1790679",
+        "display": "simvastatin 4 MG/ML Oral Suspension"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "197903",
+        "display": "lovastatin 10 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "197904",
+        "display": "lovastatin 20 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "2001254",
+        "display": "pitavastatin magnesium 1 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "310404",
+        "display": "fluvastatin 20 MG Oral Capsule"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "312962",
+        "display": "simvastatin 5 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "314231",
+        "display": "simvastatin 10 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "433849",
+        "display": "24 HR lovastatin 20 MG Extended Release Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "476345",
+        "display": "ezetimibe 10 MG / simvastatin 10 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "861643",
+        "display": "pitavastatin calcium 1 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "904458",
+        "display": "pravastatin sodium 10 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "904467",
+        "display": "pravastatin sodium 20 MG Oral Tablet"
+      }
+    ]
   }
 }

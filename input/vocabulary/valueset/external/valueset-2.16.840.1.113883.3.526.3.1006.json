@@ -1,60 +1,99 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1006",
+  "meta": {
+    "versionId": "22",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1006",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.1006"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1006"
+    }
+  ],
   "version": "20170504",
-  "name": "StandardizedToolsScoreforAssessmentofCognition",
+  "name": "StandardizedToolsScoreForAssessmentOfCognition",
   "title": "Standardized Tools Score for Assessment of Cognition",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "American Academy of Neurology Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:26-06:00",
-    "contains": [ {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "58151-2",
-      "display": "Prior assessment Brief Interview for Mental Status (BIMS) summary score [MDSv3]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "71492-3",
-      "display": "Total score [SLUMS]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "71493-1",
-      "display": "Total score [IQCODE]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "71722-3",
-      "display": "Total score [AD8]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "72106-8",
-      "display": "Total score [MMSE]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "72172-0",
-      "display": "Total score [MoCA]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "72173-8",
-      "display": "Total score [BOMC]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "72233-0",
-      "display": "Total score [Mini-Cog]"
-    } ]
+    "identifier": "urn:uuid:d6ccc888-ad11-4dbc-a584-596cc7dbf9e2",
+    "timestamp": "2024-10-02T12:31:21-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "58151-2",
+        "display": "Prior assessment Brief Interview for Mental Status (BIMS) summary score [MDSv3]"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "71492-3",
+        "display": "Total score [SLUMS]"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "71493-1",
+        "display": "Total score [IQCODE]"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "71722-3",
+        "display": "Total score [AD8]"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "72106-8",
+        "display": "Total score [MMSE]"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "72172-0",
+        "display": "Total score [MoCA]"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "72173-8",
+        "display": "Total score [BOMC]"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "72233-0",
+        "display": "Total score [Mini-Cog]"
+      }
+    ]
   }
 }

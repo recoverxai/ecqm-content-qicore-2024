@@ -1,70 +1,63 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.101.12.1027",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1027",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.101.12.1027"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.101.12.1027"
+    }
+  ],
   "version": "20170504",
   "name": "PreventiveCareServicesGroupCounseling",
   "title": "Preventive Care Services Group Counseling",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:26-06:00",
-    "contains": [ {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99411",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 30 minutes"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99412",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 60 minutes"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99411",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 30 minutes"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99412",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 60 minutes"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99411",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 30 minutes"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99412",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 60 minutes"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99411",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 30 minutes"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99412",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 60 minutes"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99411",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 30 minutes"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "99412",
-      "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 60 minutes"
-    } ]
+    "identifier": "urn:uuid:a0072cd8-e9d6-4e3d-9788-f5645b4c72aa",
+    "timestamp": "2024-10-02T12:30:46-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "99411",
+        "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 30 minutes"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "99412",
+        "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to individuals in a group setting (separate procedure); approximately 60 minutes"
+      }
+    ]
   }
 }

@@ -1,35 +1,69 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.198.12.1069",
+  "meta": {
+    "versionId": "13",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-12-16"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1069",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.198.12.1069"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.198.12.1069"
+    }
+  ],
   "version": "20171216",
   "name": "StatusPostLeftMastectomy",
   "title": "Status Post Left Mastectomy",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-12-16T01:00:04-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Z90.12",
-      "display": "Acquired absence of left breast and nipple"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "137671000119105",
-      "display": "History of prophylactic mastectomy of left breast (situation)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "429009003",
-      "display": "History of left mastectomy (situation)"
-    } ]
+    "identifier": "urn:uuid:ab2ee14b-4d55-44a9-a3fe-dbee29dbf9cc",
+    "timestamp": "2024-10-02T12:29:45-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "137671000119105",
+        "display": "History of prophylactic mastectomy of left breast (situation)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "429009003",
+        "display": "History of left mastectomy (situation)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Z90.12",
+        "display": "Acquired absence of left breast and nipple"
+      }
+    ]
   }
 }

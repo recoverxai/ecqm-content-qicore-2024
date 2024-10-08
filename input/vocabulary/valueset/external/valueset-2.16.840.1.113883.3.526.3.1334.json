@@ -1,30 +1,63 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1334",
+  "meta": {
+    "versionId": "26",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-09"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1334",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.1334"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1334"
+    }
+  ],
   "version": "20210209",
-  "name": "OpticDiscExamforStructuralAbnormalities",
+  "name": "OpticDiscExamForStructuralAbnormalities",
   "title": "Optic Disc Exam for Structural Abnormalities",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:26-06:00",
-    "contains": [ {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "71486-5",
-      "display": "Left eye Optic disc or retinal nerve fiber layer structural abnormalities by Ophthalmoscopy"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "71487-3",
-      "display": "Right eye Optic disc or retinal nerve fiber layer structural abnormalities by Ophthalmoscopy"
-    } ]
+    "identifier": "urn:uuid:70705dc6-e687-4d18-9f85-5c17a4472732",
+    "timestamp": "2024-10-02T12:30:18-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "71486-5",
+        "display": "Left eye Optic disc or retinal nerve fiber layer structural abnormalities by Ophthalmoscopy"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "71487-3",
+        "display": "Right eye Optic disc or retinal nerve fiber layer structural abnormalities by Ophthalmoscopy"
+      }
+    ]
   }
 }

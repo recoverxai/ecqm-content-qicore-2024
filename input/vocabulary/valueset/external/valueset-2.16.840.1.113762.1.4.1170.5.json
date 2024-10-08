@@ -1,40 +1,75 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1170.5",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2024-09-06T09:09:59.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-10-07"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1170.5",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1170.5"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1170.5"
+    }
+  ],
   "version": "20211007",
-  "name": "Allergytothrombolytics",
+  "name": "AllergyToThrombolytics",
   "title": "Allergy to thrombolytics",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-10-07T01:00:28-04:00",
+  "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "295108008",
-      "display": "Allergy to streptokinase (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "295109000",
-      "display": "Allergy to urokinase (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "295110005",
-      "display": "Allergy to alteplase (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "295111009",
-      "display": "Allergy to anistreplase (finding)"
-    } ]
+    "identifier": "urn:uuid:035ff6ba-89ef-4fe2-b204-d5fef6848b29",
+    "timestamp": "2024-10-02T12:33:30-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "295108008",
+        "display": "Allergy to streptokinase (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "295109000",
+        "display": "Allergy to urokinase (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "295110005",
+        "display": "Allergy to alteplase (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "295111009",
+        "display": "Allergy to anistreplase (finding)"
+      }
+    ]
   }
 }

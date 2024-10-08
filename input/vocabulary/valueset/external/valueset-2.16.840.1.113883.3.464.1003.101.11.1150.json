@@ -3,41 +3,55 @@
   "id": "2.16.840.1.113883.3.464.1003.101.11.1150",
   "meta": {
     "versionId": "20",
-    "lastUpdated": "2021-09-13T15:20:36.000-04:00",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
   },
-  "extension": [ {
-    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-    "valueDate": "2021-09-13"
-  } ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-08-26"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.11.1150",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "urn:oid:2.16.840.1.113883.3.464.1003.101.11.1150"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.101.11.1150"
+    }
+  ],
   "version": "20170826",
-  "name": "Preventive Care Services Other",
+  "name": "PreventiveCareServicesOther",
   "title": "Preventive Care Services Other",
-  "status": "active",
+  "status": "retired",
+  "experimental": false,
   "date": "2017-08-26T01:00:05-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:65cbaa78-76b0-4012-a208-675da0be4166",
-    "timestamp": "2023-08-15T16:23:09-04:00",
+    "identifier": "urn:uuid:a274ebf5-bd8e-40f2-9394-95469d6bcc65",
+    "timestamp": "2024-10-02T12:27:36-04:00",
     "total": 1,
     "offset": 0,
-    "parameter": [ {
-      "name": "count",
-      "valueInteger": 1000
-    }, {
-      "name": "offset",
-      "valueInteger": 0
-    } ],
-    "contains": [ {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2023",
-      "code": "99429",
-      "display": "Unlisted preventive medicine service"
-    } ]
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "99429",
+        "display": "Unlisted preventive medicine service"
+      }
+    ]
   }
 }

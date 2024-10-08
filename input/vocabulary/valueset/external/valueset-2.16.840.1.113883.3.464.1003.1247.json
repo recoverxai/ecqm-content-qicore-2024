@@ -1,40 +1,74 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1247",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-01-23T15:25:41.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1247",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.1247"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1247"
+    }
+  ],
   "version": "20240110",
   "name": "MegestrolMedications",
   "title": "Megestrol Medications",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-10T01:09:31-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:27-06:00",
-    "contains": [ {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "577154",
-      "display": "megestrol acetate 125 MG/ML Oral Suspension"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "860215",
-      "display": "megestrol acetate 20 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "860221",
-      "display": "megestrol acetate 40 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "860225",
-      "display": "megestrol acetate 40 MG/ML Oral Suspension"
-    } ]
+    "identifier": "urn:uuid:c37e05b3-b17c-4436-a630-0c6341ed6235",
+    "timestamp": "2024-10-02T12:36:29-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "577154",
+        "display": "megestrol acetate 125 MG/ML Oral Suspension"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "860215",
+        "display": "megestrol acetate 20 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "860221",
+        "display": "megestrol acetate 40 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "860225",
+        "display": "megestrol acetate 40 MG/ML Oral Suspension"
+      }
+    ]
   }
 }

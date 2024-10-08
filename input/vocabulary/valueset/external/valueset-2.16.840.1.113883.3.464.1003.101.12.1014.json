@@ -1,100 +1,62 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.101.12.1014",
+  "meta": {
+    "versionId": "39",
+    "lastUpdated": "2024-02-03T01:09:29.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-03"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.101.12.1014"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.101.12.1014"
+    }
+  ],
   "version": "20240203",
-  "name": "CareServicesinLongTermResidentialFacility",
+  "name": "CareServicesInLongTermResidentialFacility",
   "title": "Care Services in Long Term Residential Facility",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-03T01:09:29-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:26-06:00",
-    "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "209099002",
-      "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "210098006",
-      "display": "Domiciliary or rest home patient evaluation and management (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "209099002",
-      "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "210098006",
-      "display": "Domiciliary or rest home patient evaluation and management (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "209099002",
-      "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "210098006",
-      "display": "Domiciliary or rest home patient evaluation and management (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "209099002",
-      "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "210098006",
-      "display": "Domiciliary or rest home patient evaluation and management (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "209099002",
-      "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "210098006",
-      "display": "Domiciliary or rest home patient evaluation and management (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "209099002",
-      "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "210098006",
-      "display": "Domiciliary or rest home patient evaluation and management (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "209099002",
-      "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "210098006",
-      "display": "Domiciliary or rest home patient evaluation and management (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "209099002",
-      "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "210098006",
-      "display": "Domiciliary or rest home patient evaluation and management (procedure)"
-    } ]
+    "identifier": "urn:uuid:8b96a76c-69ab-4662-8e64-a3f5c2c3401e",
+    "timestamp": "2024-10-02T12:36:15-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "209099002",
+        "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "210098006",
+        "display": "Domiciliary or rest home patient evaluation and management (procedure)"
+      }
+    ]
   }
 }

@@ -1,35 +1,69 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.110.12.1083",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2019-03-15"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1083",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.110.12.1083"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.110.12.1083"
+    }
+  ],
   "version": "20190315",
-  "name": "HibVaccine(3doseschedule)",
+  "name": "HibVaccine3DoseSchedule",
   "title": "Hib Vaccine (3 dose schedule)",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2019-03-15T01:00:14-04:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2023-11-02",
-      "code": "17",
-      "display": "Haemophilus influenzae type b vaccine, conjugate unspecified formulation"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2023-11-02",
-      "code": "49",
-      "display": "Haemophilus influenzae type b vaccine, PRP-OMP conjugate"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2023-11-02",
-      "code": "51",
-      "display": "Haemophilus influenzae type b conjugate and Hepatitis B vaccine"
-    } ]
+    "identifier": "urn:uuid:1c013c5c-fce9-47bd-8533-cc03e81d70aa",
+    "timestamp": "2024-10-02T12:35:57-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "17",
+        "display": "Haemophilus influenzae type b vaccine, conjugate unspecified formulation"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "49",
+        "display": "Haemophilus influenzae type b vaccine, PRP-OMP conjugate"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "51",
+        "display": "Haemophilus influenzae type b conjugate and Hepatitis B vaccine"
+      }
+    ]
   }
 }

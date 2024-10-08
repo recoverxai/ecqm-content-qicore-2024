@@ -1,95 +1,140 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1011",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2024-08-12T12:39:37.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1011",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.1011"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1011"
+    }
+  ],
   "version": "20240112",
   "name": "MultipleMyeloma",
   "title": "Multiple Myeloma",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "C90.00",
-      "display": "Multiple myeloma not having achieved remission"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "C90.01",
-      "display": "Multiple myeloma in remission"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "C90.02",
-      "display": "Multiple myeloma in relapse"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "109989006",
-      "display": "Multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "127911000119105",
-      "display": "Light chain nephropathy due to multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "16318001000119107",
-      "display": "Hypogammaglobulinemia due to multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "16894711000119103",
-      "display": "Immunoglobulin G deficiency due to multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "230586003",
-      "display": "Neuropathy due to multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "402453006",
-      "display": "Amyloid light chain amyloidosis due to multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "413587002",
-      "display": "Smoldering myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "440422002",
-      "display": "Asymptomatic multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "441313008",
-      "display": "Indolent multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "452291000124109",
-      "display": "Relapse multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "739301006",
-      "display": "Osteoporosis co-occurrent and due to multiple myeloma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "94704006",
-      "display": "Multiple myeloma in remission (disorder)"
-    } ]
+    "identifier": "urn:uuid:2ece695a-b78a-47ae-a53f-1dddfeab1872",
+    "timestamp": "2024-10-02T12:36:50-04:00",
+    "total": 15,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "109989006",
+        "display": "Multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "127911000119105",
+        "display": "Light chain nephropathy due to multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "16318001000119107",
+        "display": "Hypogammaglobulinemia due to multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "16894711000119103",
+        "display": "Immunoglobulin G deficiency due to multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "230586003",
+        "display": "Neuropathy due to multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "402453006",
+        "display": "Amyloid light chain amyloidosis due to multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "413587002",
+        "display": "Smoldering myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "440422002",
+        "display": "Asymptomatic multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "441313008",
+        "display": "Indolent multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "452291000124109",
+        "display": "Relapse multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "739301006",
+        "display": "Osteoporosis co-occurrent and due to multiple myeloma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "94704006",
+        "display": "Multiple myeloma in remission (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C90.00",
+        "display": "Multiple myeloma not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C90.01",
+        "display": "Multiple myeloma in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C90.02",
+        "display": "Multiple myeloma in relapse"
+      }
+    ]
   }
 }

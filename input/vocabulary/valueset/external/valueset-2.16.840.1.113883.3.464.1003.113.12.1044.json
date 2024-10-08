@@ -1,105 +1,152 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.113.12.1044",
+  "meta": {
+    "versionId": "13",
+    "lastUpdated": "2024-08-12T12:40:14.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.113.12.1044",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.113.12.1044"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.113.12.1044"
+    }
+  ],
   "version": "20240112",
   "name": "OsteogenesisImperfecta",
   "title": "Osteogenesis Imperfecta",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Q78.0",
-      "display": "Osteogenesis imperfecta"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "1003379004",
-      "display": "Osteogenesis imperfecta type 5 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "15552004",
-      "display": "Osteogenesis imperfecta, recessive perinatal lethal, with microcephaly AND cataracts (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "205496008",
-      "display": "Osteogenesis imperfecta type II (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "205497004",
-      "display": "Osteogenesis imperfecta type IV (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "254110009",
-      "display": "Osteogenesis imperfecta type IIA (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "254111008",
-      "display": "Osteogenesis imperfecta type IIB (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "254112001",
-      "display": "Osteoporosis with pseudoglioma (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "279309008",
-      "display": "Osteogenesis imperfecta, type IV B (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "280159008",
-      "display": "Osteogenesis imperfecta, type IV A (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "385482004",
-      "display": "Osteogenesis imperfecta type I (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "385483009",
-      "display": "Osteogenesis imperfecta type III (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "63890001",
-      "display": "Osteogenesis imperfecta with blue sclerae AND dentinogenesis imperfecta (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "64404003",
-      "display": "Osteogenesis imperfecta with blue sclerae AND normal teeth (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "7134007",
-      "display": "Osteogenesis imperfecta, dominant perinatal lethal (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "78314001",
-      "display": "Osteogenesis imperfecta (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "86470003",
-      "display": "Osteogenesis imperfecta, recessive perinatal lethal (disorder)"
-    } ]
+    "identifier": "urn:uuid:de1902f6-13be-4656-baf8-e85fff605982",
+    "timestamp": "2024-10-02T12:32:24-04:00",
+    "total": 17,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "1003379004",
+        "display": "Osteogenesis imperfecta type 5 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "15552004",
+        "display": "Osteogenesis imperfecta, recessive perinatal lethal, with microcephaly AND cataracts (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "205496008",
+        "display": "Osteogenesis imperfecta type II (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "205497004",
+        "display": "Osteogenesis imperfecta type IV (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "254110009",
+        "display": "Osteogenesis imperfecta type IIA (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "254111008",
+        "display": "Osteogenesis imperfecta type IIB (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "254112001",
+        "display": "Osteoporosis with pseudoglioma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "279309008",
+        "display": "Osteogenesis imperfecta, type IV B (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "280159008",
+        "display": "Osteogenesis imperfecta, type IV A (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "385482004",
+        "display": "Osteogenesis imperfecta type I (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "385483009",
+        "display": "Osteogenesis imperfecta type III (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "63890001",
+        "display": "Osteogenesis imperfecta with blue sclerae AND dentinogenesis imperfecta (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "64404003",
+        "display": "Osteogenesis imperfecta with blue sclerae AND normal teeth (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "7134007",
+        "display": "Osteogenesis imperfecta, dominant perinatal lethal (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "78314001",
+        "display": "Osteogenesis imperfecta (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "86470003",
+        "display": "Osteogenesis imperfecta, recessive perinatal lethal (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q78.0",
+        "display": "Osteogenesis imperfecta"
+      }
+    ]
   }
 }

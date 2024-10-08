@@ -1,50 +1,87 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1161",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-02-02"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1161",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.1161"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1161"
+    }
+  ],
   "version": "20220202",
   "name": "AdultPneumococcalVaccine",
   "title": "Adult Pneumococcal Vaccine",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-02-02T01:02:05-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:52-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "109",
-      "display": "pneumococcal vaccine, unspecified formulation"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "133",
-      "display": "pneumococcal conjugate vaccine, 13 valent"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "152",
-      "display": "Pneumococcal Conjugate, unspecified formulation"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "215",
-      "display": "Pneumococcal conjugate vaccine 15-valent (PCV15), polysaccharide CRM197 conjugate, adjuvant, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "216",
-      "display": "Pneumococcal conjugate vaccine 20-valent (PCV20), polysaccharide CRM197 conjugate, adjuvant, preservative free"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2022-12-19",
-      "code": "33",
-      "display": "pneumococcal polysaccharide vaccine, 23 valent"
-    } ]
+    "identifier": "urn:uuid:24a04359-0a88-48d1-aa83-1ee427194006",
+    "timestamp": "2024-10-02T12:27:06-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "109",
+        "display": "pneumococcal vaccine, unspecified formulation"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "133",
+        "display": "pneumococcal conjugate vaccine, 13 valent"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "152",
+        "display": "Pneumococcal Conjugate, unspecified formulation"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "215",
+        "display": "Pneumococcal conjugate vaccine 15-valent (PCV15), polysaccharide CRM197 conjugate, adjuvant, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "216",
+        "display": "Pneumococcal conjugate vaccine 20-valent (PCV20), polysaccharide CRM197 conjugate, adjuvant, preservative free"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "33",
+        "display": "pneumococcal polysaccharide vaccine, 23 valent"
+      }
+    ]
   }
 }

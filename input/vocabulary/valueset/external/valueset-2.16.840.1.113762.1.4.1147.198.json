@@ -1,40 +1,63 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1147.198",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2024-02-22T15:25:56.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-04-15"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1147.198",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1147.198"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1147.198"
+    }
+  ],
   "version": "20220415",
-  "name": "NotPresentOnAdmissionorDocumentationInsufficienttoDetermine",
+  "name": "NotPresentOnAdmissionOrDocumentationInsufficientToDetermine",
   "title": "Not Present On Admission or Documentation Insufficient to Determine",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-04-15T01:02:23-04:00",
+  "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding",
-      "version": "2021",
-      "code": "N",
-      "display": "Diagnosis was not present at time of inpatient admission"
-    }, {
-      "system": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding",
-      "version": "2021",
-      "code": "U",
-      "display": "Documentation insufficient to determine if the condition was present at the time of inpatient admission"
-    }, {
-      "system": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding",
-      "version": "2021",
-      "code": "N",
-      "display": "Diagnosis was not present at time of inpatient admission"
-    }, {
-      "system": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding",
-      "version": "2021",
-      "code": "U",
-      "display": "Documentation insufficient to determine if the condition was present at the time of inpatient admission"
-    } ]
+    "identifier": "urn:uuid:e84fc209-7491-43ae-9282-d174bc474468",
+    "timestamp": "2024-10-02T12:27:55-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding",
+        "version": "2021",
+        "code": "N",
+        "display": "Diagnosis was not present at time of inpatient admission"
+      },
+      {
+        "system": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding",
+        "version": "2021",
+        "code": "U",
+        "display": "Documentation insufficient to determine if the condition was present at the time of inpatient admission"
+      }
+    ]
   }
 }

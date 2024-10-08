@@ -1,70 +1,80 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.2.1341",
+  "meta": {
+    "versionId": "30",
+    "lastUpdated": "2024-02-02T01:09:11.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-02"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1341",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.2.1341"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.2.1341"
+    }
+  ],
   "version": "20240202",
   "name": "HeartRate",
   "title": "Heart Rate",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-02T01:09:11-05:00",
+  "publisher": "AHA Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "11328-2",
-      "display": "Heart rate at First encounter"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "68999-2",
-      "display": "Heart rate --supine"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "69000-8",
-      "display": "Heart rate --sitting"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "69001-6",
-      "display": "Heart rate --standing"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "8867-4",
-      "display": "Heart rate"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "11328-2",
-      "display": "Heart rate at First encounter"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "68999-2",
-      "display": "Heart rate --supine"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "69000-8",
-      "display": "Heart rate --sitting"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "69001-6",
-      "display": "Heart rate --standing"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "8867-4",
-      "display": "Heart rate"
-    } ]
+    "identifier": "urn:uuid:f1f29bc1-9ba5-42ec-b1c2-3608d37d2633",
+    "timestamp": "2024-10-02T12:35:54-04:00",
+    "total": 5,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "11328-2",
+        "display": "Heart rate at First encounter"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "68999-2",
+        "display": "Heart rate --supine"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "69000-8",
+        "display": "Heart rate --sitting"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "69001-6",
+        "display": "Heart rate --standing"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "8867-4",
+        "display": "Heart rate"
+      }
+    ]
   }
 }

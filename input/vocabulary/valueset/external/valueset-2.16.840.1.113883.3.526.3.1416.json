@@ -1,60 +1,99 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1416",
+  "meta": {
+    "versionId": "29",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1416",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.1416"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1416"
+    }
+  ],
   "version": "20210210",
   "name": "ChronicIridocyclitis",
   "title": "Chronic Iridocyclitis",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-10T01:02:26-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:26-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "A18.54",
-      "display": "Tuberculous iridocyclitis"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "H20.11",
-      "display": "Chronic iridocyclitis, right eye"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "H20.12",
-      "display": "Chronic iridocyclitis, left eye"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "H20.13",
-      "display": "Chronic iridocyclitis, bilateral"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "H20.9",
-      "display": "Unspecified iridocyclitis"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "186266008",
-      "display": "Tuberculous chronic iridocyclitis (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "416449002",
-      "display": "Chronic iridocyclitis in young girls (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "6869001",
-      "display": "Recurrent iridocyclitis (disorder)"
-    } ]
+    "identifier": "urn:uuid:7b53cb24-e5ac-4f11-9260-707f827fcbd5",
+    "timestamp": "2024-10-02T12:30:48-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "186266008",
+        "display": "Tuberculous chronic iridocyclitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "416449002",
+        "display": "Chronic iridocyclitis in young girls (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "6869001",
+        "display": "Recurrent iridocyclitis (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "A18.54",
+        "display": "Tuberculous iridocyclitis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "H20.11",
+        "display": "Chronic iridocyclitis, right eye"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "H20.12",
+        "display": "Chronic iridocyclitis, left eye"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "H20.13",
+        "display": "Chronic iridocyclitis, bilateral"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "H20.9",
+        "display": "Unspecified iridocyclitis"
+      }
+    ]
   }
 }

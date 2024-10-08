@@ -1,45 +1,80 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1151.39",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-02-18"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1151.39",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1151.39"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1151.39"
+    }
+  ],
   "version": "20230218",
-  "name": "MixedhistologyurothelialcellcarcinomaforUrologyCare",
+  "name": "MixedHistologyUrothelialCellCarcinomaForUrologyCare",
   "title": "Mixed histology urothelial cell carcinoma for Urology Care",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-02-18T01:03:13-05:00",
+  "publisher": "Oregon Urology Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "1187332001",
-      "display": "Adenocarcinoma (morphologic abnormality)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "128639004",
-      "display": "Micropapillary urothelial carcinoma (morphologic abnormality)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "255111004",
-      "display": "Squamous cell carcinoma of bladder (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "278046008",
-      "display": "Sarcoma of bladder (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "59509005",
-      "display": "Plasmacytoid cell (morphologic abnormality)"
-    } ]
+    "identifier": "urn:uuid:87e311cd-be7a-45b1-931c-87f5211dfbc8",
+    "timestamp": "2024-10-02T12:30:59-04:00",
+    "total": 5,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "1187332001",
+        "display": "Adenocarcinoma (morphologic abnormality)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "128639004",
+        "display": "Micropapillary urothelial carcinoma (morphologic abnormality)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "255111004",
+        "display": "Squamous cell carcinoma of urinary bladder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "278046008",
+        "display": "Sarcoma of urinary bladder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "59509005",
+        "display": "Plasmacytoid cell (morphologic abnormality)"
+      }
+    ]
   }
 }

@@ -1,105 +1,152 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.104.12.1011",
+  "meta": {
+    "versionId": "25",
+    "lastUpdated": "2024-01-06T01:09:12.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-06"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.104.12.1011",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.104.12.1011"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.104.12.1011"
+    }
+  ],
   "version": "20240106",
   "name": "EssentialHypertension",
   "title": "Essential Hypertension",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-06T01:09:12-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:27-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "I10",
-      "display": "Essential (primary) hypertension"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "1201005",
-      "display": "Benign essential hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "18416000",
-      "display": "Essential hypertension complicating AND/OR reason for care during childbirth (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "19769006",
-      "display": "High-renin essential hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "23717007",
-      "display": "Benign essential hypertension complicating AND/OR reason for care during pregnancy (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "35303009",
-      "display": "Benign essential hypertension complicating AND/OR reason for care during puerperium (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "371125006",
-      "display": "Labile essential hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "40511000119107",
-      "display": "Postpartum pre-existing essential hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "429457004",
-      "display": "Systolic essential hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "46481004",
-      "display": "Low-renin essential hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "59621000",
-      "display": "Essential hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "63287004",
-      "display": "Benign essential hypertension in obstetric context (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "71874008",
-      "display": "Benign essential hypertension complicating AND/OR reason for care during childbirth (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "72022006",
-      "display": "Essential hypertension in obstetric context (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "78808002",
-      "display": "Essential hypertension complicating AND/OR reason for care during pregnancy (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "78975002",
-      "display": "Malignant essential hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "9901000",
-      "display": "Essential hypertension complicating AND/OR reason for care during puerperium (disorder)"
-    } ]
+    "identifier": "urn:uuid:d1eb3085-af34-4bc1-9a93-8c5273ade662",
+    "timestamp": "2024-10-02T12:33:54-04:00",
+    "total": 17,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "1201005",
+        "display": "Benign essential hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "18416000",
+        "display": "Essential hypertension complicating AND/OR reason for care during childbirth (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "19769006",
+        "display": "High-renin essential hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "23717007",
+        "display": "Benign essential hypertension complicating AND/OR reason for care during pregnancy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "35303009",
+        "display": "Benign essential hypertension complicating AND/OR reason for care during puerperium (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "371125006",
+        "display": "Labile essential hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "40511000119107",
+        "display": "Postpartum pre-existing essential hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "429457004",
+        "display": "Systolic essential hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "46481004",
+        "display": "Low-renin essential hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "59621000",
+        "display": "Essential hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "63287004",
+        "display": "Benign essential hypertension in obstetric context (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "71874008",
+        "display": "Benign essential hypertension complicating AND/OR reason for care during childbirth (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "72022006",
+        "display": "Essential hypertension in obstetric context (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "78808002",
+        "display": "Essential hypertension complicating AND/OR reason for care during pregnancy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "78975002",
+        "display": "Malignant essential hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "9901000",
+        "display": "Essential hypertension complicating AND/OR reason for care during puerperium (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "I10",
+        "display": "Essential (primary) hypertension"
+      }
+    ]
   }
 }

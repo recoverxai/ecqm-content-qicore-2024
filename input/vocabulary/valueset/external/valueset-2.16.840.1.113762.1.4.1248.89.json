@@ -1,60 +1,99 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1248.89",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-02-22T14:54:21.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-07-19"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.89",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1248.89"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1248.89"
+    }
+  ],
   "version": "20220719",
   "name": "TracheostomyDiagnoses",
   "title": "Tracheostomy Diagnoses",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-07-19T01:10:30-04:00",
+  "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:29-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J95.00",
-      "display": "Unspecified tracheostomy complication"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J95.01",
-      "display": "Hemorrhage from tracheostomy stoma"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J95.02",
-      "display": "Infection of tracheostomy stoma"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J95.03",
-      "display": "Malfunction of tracheostomy stoma"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J95.04",
-      "display": "Tracheo-esophageal fistula following tracheostomy"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J95.09",
-      "display": "Other tracheostomy complication"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Z43.0",
-      "display": "Encounter for attention to tracheostomy"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Z93.0",
-      "display": "Tracheostomy status"
-    } ]
+    "identifier": "urn:uuid:26f416f9-2c5d-4f11-a05a-f5a0a56da48c",
+    "timestamp": "2024-10-02T12:27:22-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.00",
+        "display": "Unspecified tracheostomy complication"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.01",
+        "display": "Hemorrhage from tracheostomy stoma"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.02",
+        "display": "Infection of tracheostomy stoma"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.03",
+        "display": "Malfunction of tracheostomy stoma"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.04",
+        "display": "Tracheo-esophageal fistula following tracheostomy"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.09",
+        "display": "Other tracheostomy complication"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Z43.0",
+        "display": "Encounter for attention to tracheostomy"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Z93.0",
+        "display": "Tracheostomy status"
+      }
+    ]
   }
 }

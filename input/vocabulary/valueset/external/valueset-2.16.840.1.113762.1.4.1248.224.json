@@ -1,35 +1,68 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1248.224",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2024-02-22T15:12:53.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-05-20"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.224",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1248.224"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1248.224"
+    }
+  ],
   "version": "20230520",
-  "name": "Aspartatetransaminaselabtest",
+  "name": "AspartateTransaminaseLabTest",
   "title": "Aspartate transaminase lab test",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-05-20T01:01:02-04:00",
+  "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:29-06:00",
-    "contains": [ {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "1920-8",
-      "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "30239-8",
-      "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "88112-8",
-      "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P"
-    } ]
+    "identifier": "urn:uuid:28969960-63ec-4ae8-8782-23f1cced26aa",
+    "timestamp": "2024-10-02T12:27:30-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "1920-8",
+        "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "30239-8",
+        "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "88112-8",
+        "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P"
+      }
+    ]
   }
 }

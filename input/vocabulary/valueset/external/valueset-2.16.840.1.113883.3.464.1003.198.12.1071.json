@@ -1,55 +1,62 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.198.12.1071",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2024-01-12T01:09:53.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1071",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.198.12.1071"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.198.12.1071"
+    }
+  ],
   "version": "20240112",
-  "name": "UnilateralMastectomy,UnspecifiedLaterality",
+  "name": "UnilateralMastectomyUnspecifiedLaterality",
   "title": "Unilateral Mastectomy, Unspecified Laterality",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Z90.10",
-      "display": "Acquired absence of unspecified breast and nipple"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2017-09",
-      "code": "22964006",
-      "display": "Unilateral simple mastectomy (situation)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2017-09",
-      "code": "72269009",
-      "display": "Unilateral modified radical mastectomy (situation)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2017-09",
-      "code": "73359007",
-      "display": "Unilateral mastectomy (situation)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2017-09",
-      "code": "8115005",
-      "display": "Unilateral radical mastectomy (situation)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2017-09",
-      "code": "88764002",
-      "display": "Unilateral extended simple mastectomy (situation)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "248802009",
-      "display": "Absence of breast (finding)"
-    } ]
+    "identifier": "urn:uuid:843ee033-e598-4afb-920a-4d3a6ec0bfe7",
+    "timestamp": "2024-10-02T12:33:18-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "248802009",
+        "display": "Absence of breast (finding)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Z90.10",
+        "display": "Acquired absence of unspecified breast and nipple"
+      }
+    ]
   }
 }

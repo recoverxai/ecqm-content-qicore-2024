@@ -1,70 +1,111 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1047.514",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-08-09T10:31:39.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2019-03-13"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.514",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1047.514"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1047.514"
+    }
+  ],
   "version": "20190313",
-  "name": "FindingofElevatedBloodPressureorHypertension",
+  "name": "FindingOfElevatedBloodPressureOrHypertension",
   "title": "Finding of Elevated Blood Pressure or Hypertension",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2019-03-13T01:00:10-04:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:24-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "R03.0",
-      "display": "Elevated blood-pressure reading, without diagnosis of hypertension"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "198941007",
-      "display": "Hypertension complicating pregnancy, childbirth and the puerperium (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "24184005",
-      "display": "Finding of increased blood pressure (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "31992008",
-      "display": "Secondary hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "371622005",
-      "display": "Elevated blood pressure reading without diagnosis of hypertension (situation)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "38341003",
-      "display": "Hypertensive disorder, systemic arterial (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "443482000",
-      "display": "Hypertensive urgency (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "48146000",
-      "display": "Diastolic hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "48194001",
-      "display": "Pregnancy-induced hypertension (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "56218007",
-      "display": "Systolic hypertension (disorder)"
-    } ]
+    "identifier": "urn:uuid:dd2428d0-d869-4b47-aecd-f6c647ac2b37",
+    "timestamp": "2024-10-02T12:27:19-04:00",
+    "total": 10,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "198941007",
+        "display": "Hypertension complicating pregnancy, childbirth and the puerperium (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "24184005",
+        "display": "Increased blood pressure (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "31992008",
+        "display": "Secondary hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "371622005",
+        "display": "Elevated blood pressure reading without diagnosis of hypertension (situation)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "38341003",
+        "display": "Hypertensive disorder, systemic arterial (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "443482000",
+        "display": "Hypertensive urgency (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "48146000",
+        "display": "Diastolic hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "48194001",
+        "display": "Pregnancy-induced hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "56218007",
+        "display": "Systolic hypertension (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "R03.0",
+        "display": "Elevated blood-pressure reading, without diagnosis of hypertension"
+      }
+    ]
   }
 }

@@ -1,30 +1,63 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1170",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1170",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.196.12.1170"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1170"
+    }
+  ],
   "version": "20170504",
-  "name": "VaricellaZosterVaccine(VZV)",
+  "name": "VaricellaZosterVaccineVZV",
   "title": "Varicella Zoster Vaccine (VZV)",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2023-11-02",
-      "code": "21",
-      "display": "varicella virus vaccine"
-    }, {
-      "system": "http://hl7.org/fhir/sid/cvx",
-      "version": "2023-11-02",
-      "code": "94",
-      "display": "measles, mumps, rubella, and varicella virus vaccine"
-    } ]
+    "identifier": "urn:uuid:2c5bf17c-d033-49ab-b97f-044c2cd0935e",
+    "timestamp": "2024-10-02T12:32:32-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "21",
+        "display": "varicella virus vaccine"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "version": "20240903",
+        "code": "94",
+        "display": "measles, mumps, rubella, and varicella virus vaccine"
+      }
+    ]
   }
 }

@@ -1,40 +1,63 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1110.52",
+  "meta": {
+    "versionId": "14",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-02-19"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.52",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1110.52"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1110.52"
+    }
+  ],
   "version": "20220219",
   "name": "PharmacologicalContraindicationsForAntithromboticTherapy",
   "title": "Pharmacological Contraindications For Antithrombotic Therapy",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-02-19T01:06:51-05:00",
+  "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "855812",
-      "display": "prasugrel 10 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "855818",
-      "display": "prasugrel 5 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "855812",
-      "display": "prasugrel 10 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2024-01",
-      "code": "855818",
-      "display": "prasugrel 5 MG Oral Tablet"
-    } ]
+    "identifier": "urn:uuid:acca858d-29bd-4ee0-aa13-72b2a972ecb1",
+    "timestamp": "2024-10-02T12:36:37-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "855812",
+        "display": "prasugrel 10 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "09032024",
+        "code": "855818",
+        "display": "prasugrel 5 MG Oral Tablet"
+      }
+    ]
   }
 }

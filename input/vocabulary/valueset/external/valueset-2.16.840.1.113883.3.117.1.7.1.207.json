@@ -1,35 +1,57 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.207",
+  "meta": {
+    "versionId": "37",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-06-11"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.207",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.117.1.7.1.207"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.207"
+    }
+  ],
   "version": "20210611",
-  "name": "DischargedtoHealthCareFacilityforHospiceCare",
+  "name": "DischargedToHealthCareFacilityForHospiceCare",
   "title": "Discharged to Health Care Facility for Hospice Care",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-06-11T01:01:24-04:00",
+  "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "428371000124100",
-      "display": "Discharge to healthcare facility for hospice care (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "428371000124100",
-      "display": "Discharge to healthcare facility for hospice care (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "428371000124100",
-      "display": "Discharge to healthcare facility for hospice care (procedure)"
-    } ]
+    "identifier": "urn:uuid:c9c357d7-baeb-4b47-80db-207eb7c232f7",
+    "timestamp": "2024-10-02T12:33:04-04:00",
+    "total": 1,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "428371000124100",
+        "display": "Discharge to healthcare facility for hospice care (procedure)"
+      }
+    ]
   }
 }

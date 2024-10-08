@@ -1,60 +1,98 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1022",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2024-08-12T09:25:23.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-12-21"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1022",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.1022"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1022"
+    }
+  ],
   "version": "20231221",
   "name": "Amenorrhea",
   "title": "Amenorrhea",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-12-21T01:08:37-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "N91.0",
-      "display": "Primary amenorrhea"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "N91.1",
-      "display": "Secondary amenorrhea"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "N91.2",
-      "display": "Amenorrhea, unspecified"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "237120002",
-      "display": "Hypothalamic amenorrhea (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "39931000",
-      "display": "Postpill amenorrhea (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "426780009",
-      "display": "Hypergonadotropic amenorrhea (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "64678009",
-      "display": "Non-pregnancy related A-G syndrome (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "85039006",
-      "display": "Postpartum amenorrhea-galactorrhea syndrome (disorder)"
-    } ]
+    "identifier": "urn:uuid:d7d9746b-20c7-443b-98b0-23e445b136d1",
+    "timestamp": "2024-10-02T12:30:33-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "237120002",
+        "display": "Hypothalamic amenorrhea (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "39931000",
+        "display": "Postpill amenorrhea (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "426780009",
+        "display": "Hypergonadotropic amenorrhea (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "64678009",
+        "display": "Non-pregnancy related A-G syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "85039006",
+        "display": "Postpartum amenorrhea-galactorrhea syndrome (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "N91.0",
+        "display": "Primary amenorrhea"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "N91.1",
+        "display": "Secondary amenorrhea"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "N91.2",
+        "display": "Amenorrhea, unspecified"
+      }
+    ]
   }
 }

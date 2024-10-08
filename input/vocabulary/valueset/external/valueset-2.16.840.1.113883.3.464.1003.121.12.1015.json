@@ -1,60 +1,99 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.121.12.1015",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.121.12.1015",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.121.12.1015"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.121.12.1015"
+    }
+  ],
   "version": "20170504",
   "name": "Weight",
   "title": "Weight",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:27-06:00",
-    "contains": [ {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "18833-4",
-      "display": "First Body weight"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "29463-7",
-      "display": "Body weight"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "3141-9",
-      "display": "Body weight Measured"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "3142-7",
-      "display": "Body weight Stated"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "8341-0",
-      "display": "Dry body weight Measured"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "8349-3",
-      "display": "Body weight Measured --preoperative"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "8350-1",
-      "display": "Body weight Measured --with clothes"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "8351-9",
-      "display": "Body weight Measured --without clothes"
-    } ]
+    "identifier": "urn:uuid:33b2cb2b-f5aa-4645-83fa-a54cd90f29ce",
+    "timestamp": "2024-10-02T12:27:03-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "18833-4",
+        "display": "First Body weight"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "29463-7",
+        "display": "Body weight"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "3141-9",
+        "display": "Body weight Measured"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "3142-7",
+        "display": "Body weight Stated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "8341-0",
+        "display": "Dry body weight Measured"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "8349-3",
+        "display": "Body weight Measured --preoperative"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "8350-1",
+        "display": "Body weight Measured --with clothes"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "8351-9",
+        "display": "Body weight Measured --without clothes"
+      }
+    ]
   }
 }

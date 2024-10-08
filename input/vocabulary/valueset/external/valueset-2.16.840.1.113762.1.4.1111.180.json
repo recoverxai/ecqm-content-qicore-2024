@@ -1,55 +1,92 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1111.180",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-02-15T01:10:30.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-15"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.180",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1111.180"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1111.180"
+    }
+  ],
   "version": "20240215",
   "name": "CancerRelatedPain",
   "title": "Cancer Related Pain",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-15T01:10:30-05:00",
+  "publisher": "Mathematica",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "G89.3",
-      "display": "Neoplasm related pain (acute) (chronic)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "315241008",
-      "display": "Pain from metastases (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "735935009",
-      "display": "Chronic pain due to malignant neoplastic disease (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "762594002",
-      "display": "Chronic pain following surgical procedure for cancer (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "788891004",
-      "display": "Chronic pain after cancer treatment (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "879973007",
-      "display": "Breakthrough cancer pain (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "98921000119102",
-      "display": "Pain due to neoplastic disease (finding)"
-    } ]
+    "identifier": "urn:uuid:a02889a1-b213-484c-bbe6-76408a2b526a",
+    "timestamp": "2024-10-02T12:30:07-04:00",
+    "total": 7,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "315241008",
+        "display": "Pain from metastases (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "735935009",
+        "display": "Chronic pain due to malignant neoplastic disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "762594002",
+        "display": "Chronic pain following surgical procedure for cancer (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "788891004",
+        "display": "Chronic pain after cancer treatment (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "879973007",
+        "display": "Breakthrough cancer pain (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "98921000119102",
+        "display": "Pain due to neoplastic disease (finding)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "G89.3",
+        "display": "Neoplasm related pain (acute) (chronic)"
+      }
+    ]
   }
 }

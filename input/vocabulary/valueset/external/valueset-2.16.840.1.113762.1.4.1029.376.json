@@ -1,75 +1,117 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.376",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-01-27"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.376",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1029.376"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.376"
+    }
+  ],
   "version": "20220127",
-  "name": "RespiratoryConditionsRelatedtoCOVID19",
+  "name": "RespiratoryConditionsRelatedToCOVID19",
   "title": "Respiratory Conditions Related to COVID 19",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-01-27T01:02:12-05:00",
+  "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:29-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J12.82",
-      "display": "Pneumonia due to coronavirus disease 2019"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J12.89",
-      "display": "Other viral pneumonia"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J20.8",
-      "display": "Acute bronchitis due to other specified organisms"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J22",
-      "display": "Unspecified acute lower respiratory infection"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J40",
-      "display": "Bronchitis, not specified as acute or chronic"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J80",
-      "display": "Acute respiratory distress syndrome"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "J98.8",
-      "display": "Other specified respiratory disorders"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "1119302008",
-      "display": "Acute disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "138389411000119105",
-      "display": "Acute bronchitis caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "880529761000119102",
-      "display": "Infection of lower respiratory tract caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "882784691000119100",
-      "display": "Pneumonia caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
-    } ]
+    "identifier": "urn:uuid:cc40d546-e2c0-45e0-87cc-6ce8e4a6f60f",
+    "timestamp": "2024-10-02T12:30:34-04:00",
+    "total": 11,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "1119302008",
+        "display": "Acute disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "138389411000119105",
+        "display": "Acute bronchitis caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "880529761000119102",
+        "display": "Infection of lower respiratory tract caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "882784691000119100",
+        "display": "Pneumonia caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J12.82",
+        "display": "Pneumonia due to coronavirus disease 2019"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J12.89",
+        "display": "Other viral pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J20.8",
+        "display": "Acute bronchitis due to other specified organisms"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J22",
+        "display": "Unspecified acute lower respiratory infection"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J40",
+        "display": "Bronchitis, not specified as acute or chronic"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J80",
+        "display": "Acute respiratory distress syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J98.8",
+        "display": "Other specified respiratory disorders"
+      }
+    ]
   }
 }

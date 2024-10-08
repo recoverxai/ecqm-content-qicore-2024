@@ -1,80 +1,122 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1047.47",
+  "meta": {
+    "versionId": "18",
+    "lastUpdated": "2024-08-09T13:22:00.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-08"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.47",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1047.47"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1047.47"
+    }
+  ],
   "version": "20240208",
-  "name": "StableandUnstableAngina",
+  "name": "StableAndUnstableAngina",
   "title": "Stable and Unstable Angina",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-08T01:10:25-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "I20.0",
-      "display": "Unstable angina"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "I20.1",
-      "display": "Angina pectoris with documented spasm"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "I20.8",
-      "display": "Other forms of angina pectoris"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "I20.89",
-      "display": "Other forms of angina pectoris"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "I20.9",
-      "display": "Angina pectoris, unspecified"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "I23.7",
-      "display": "Postinfarction angina"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "194828000",
-      "display": "Angina (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "233819005",
-      "display": "Stable angina (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "233821000",
-      "display": "New onset angina (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "314116003",
-      "display": "Post infarct angina (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "4557003",
-      "display": "Preinfarction syndrome (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "59021001",
-      "display": "Angina decubitus (disorder)"
-    } ]
+    "identifier": "urn:uuid:c0733fed-9756-453e-8d6b-5c4bc1d5a8f6",
+    "timestamp": "2024-10-02T12:28:02-04:00",
+    "total": 12,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "194828000",
+        "display": "Angina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "233819005",
+        "display": "Stable angina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "233821000",
+        "display": "New onset angina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "314116003",
+        "display": "Post infarct angina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "4557003",
+        "display": "Preinfarction syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "59021001",
+        "display": "Angina decubitus (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "I20.0",
+        "display": "Unstable angina"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "I20.1",
+        "display": "Angina pectoris with documented spasm"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "I20.8",
+        "display": "Other forms of angina pectoris"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "I20.89",
+        "display": "Other forms of angina pectoris"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "I20.9",
+        "display": "Angina pectoris, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "I23.7",
+        "display": "Postinfarction angina"
+      }
+    ]
   }
 }

@@ -1,40 +1,74 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1111.177",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2024-02-15T01:10:30.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-15"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.177",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1111.177"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1111.177"
+    }
+  ],
   "version": "20240215",
-  "name": "OpioidMedicationAssistedTreatment(MAT)",
+  "name": "OpioidMedicationAssistedTreatmentMAT",
   "title": "Opioid Medication Assisted Treatment (MAT)",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-15T01:10:30-05:00",
+  "publisher": "Mathematica",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "HG",
-      "display": "Opioid addiction treatment program"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "310653000",
-      "display": "Drug addiction therapy using methadone (regime/therapy)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "792901003",
-      "display": "Drug addiction therapy using buprenorphine (regime/therapy)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "792902005",
-      "display": "Drug addiction therapy using buprenorphine and naloxone (regime/therapy)"
-    } ]
+    "identifier": "urn:uuid:acfd4e1a-139e-4106-81c1-7150a56c9d6f",
+    "timestamp": "2024-10-02T12:32:54-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "310653000",
+        "display": "Drug addiction therapy using methadone (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "792901003",
+        "display": "Drug addiction therapy using buprenorphine (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "792902005",
+        "display": "Drug addiction therapy using buprenorphine and naloxone (regime/therapy)"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "HG",
+        "display": "Opioid addiction treatment program"
+      }
+    ]
   }
 }

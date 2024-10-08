@@ -1,50 +1,86 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1108.85",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2024-08-09T13:22:30.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-08"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.85",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1108.85"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1108.85"
+    }
+  ],
   "version": "20240208",
   "name": "StatinAssociatedMuscleSymptoms",
   "title": "Statin Associated Muscle Symptoms",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-08T01:10:25-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "G72.0",
-      "display": "Drug-induced myopathy"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "G72.9",
-      "display": "Myopathy, unspecified"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "M60.9",
-      "display": "Myositis, unspecified"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "M79.10",
-      "display": "Myalgia, unspecified site"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "16462851000119106",
-      "display": "Myalgia caused by statin (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "240101000",
-      "display": "Drug-induced myopathy (disorder)"
-    } ]
+    "identifier": "urn:uuid:9c58f103-45c6-4d10-9af6-c2c0c962c2b9",
+    "timestamp": "2024-10-02T12:27:09-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "16462851000119106",
+        "display": "Myalgia caused by statin (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "240101000",
+        "display": "Drug-induced myopathy (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "G72.0",
+        "display": "Drug-induced myopathy"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "G72.9",
+        "display": "Myopathy, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M60.9",
+        "display": "Myositis, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M79.10",
+        "display": "Myalgia, unspecified site"
+      }
+    ]
   }
 }

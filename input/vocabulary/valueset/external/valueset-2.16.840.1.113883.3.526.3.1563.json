@@ -1,40 +1,75 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1563",
+  "meta": {
+    "versionId": "14",
+    "lastUpdated": "2024-08-09T13:23:00.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-03-02"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1563",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.1563"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1563"
+    }
+  ],
   "version": "20220302",
   "name": "Underweight",
   "title": "Underweight",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-02T01:02:11-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "R63.6",
-      "display": "Underweight"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "248342006",
-      "display": "Underweight (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "427090001",
-      "display": "Body mass index less than 16.5 (finding)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "717933005",
-      "display": "Severe thinness in adulthood (finding)"
-    } ]
+    "identifier": "urn:uuid:c0d93293-712b-4990-9e4a-cb3d79d9530a",
+    "timestamp": "2024-10-02T12:27:53-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "248342006",
+        "display": "Underweight (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "427090001",
+        "display": "Body mass index less than 16.5 (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "717933005",
+        "display": "Severe thinness in adulthood (finding)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "R63.6",
+        "display": "Underweight"
+      }
+    ]
   }
 }

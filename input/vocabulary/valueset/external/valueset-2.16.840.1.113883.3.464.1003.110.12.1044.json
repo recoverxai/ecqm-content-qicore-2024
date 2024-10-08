@@ -1,80 +1,123 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.110.12.1044",
+  "meta": {
+    "versionId": "20",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1044",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.110.12.1044"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.110.12.1044"
+    }
+  ],
   "version": "20170504",
   "name": "ChildInfluenzaVaccineAdministered",
   "title": "Child Influenza Vaccine Administered",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:25-06:00",
-    "contains": [ {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90655",
-      "display": "Influenza virus vaccine, trivalent (IIV3), split virus, preservative free, 0.25 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90657",
-      "display": "Influenza virus vaccine, trivalent (IIV3), split virus, 0.25 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90661",
-      "display": "Influenza virus vaccine, trivalent (ccIIV3), derived from cell cultures, subunit, preservative and antibiotic free, 0.5 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90673",
-      "display": "Influenza virus vaccine, trivalent (RIV3), derived from recombinant DNA, hemagglutinin (HA) protein only, preservative and antibiotic free, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90674",
-      "display": "Influenza virus vaccine, quadrivalent (ccIIV4), derived from cell cultures, subunit, preservative and antibiotic free, 0.5 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90685",
-      "display": "Influenza virus vaccine, quadrivalent (IIV4), split virus, preservative free, 0.25 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90686",
-      "display": "Influenza virus vaccine, quadrivalent (IIV4), split virus, preservative free, 0.5 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90687",
-      "display": "Influenza virus vaccine, quadrivalent (IIV4), split virus, 0.25 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90688",
-      "display": "Influenza virus vaccine, quadrivalent (IIV4), split virus, 0.5 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90689",
-      "display": "Influenza virus vaccine, quadrivalent (IIV4), inactivated, adjuvanted, preservative free, 0.25 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2024",
-      "code": "90756",
-      "display": "Influenza virus vaccine, quadrivalent (ccIIV4), derived from cell cultures, subunit, antibiotic free, 0.5 mL dosage, for intramuscular use"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "86198006",
-      "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)"
-    } ]
+    "identifier": "urn:uuid:ecb059f2-e443-4f99-bd27-036d35e02f61",
+    "timestamp": "2024-10-02T12:30:03-04:00",
+    "total": 12,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "86198006",
+        "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90655",
+        "display": "Influenza virus vaccine, trivalent (IIV3), split virus, preservative free, 0.25 mL dosage, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90657",
+        "display": "Influenza virus vaccine, trivalent (IIV3), split virus, 0.25 mL dosage, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90661",
+        "display": "Influenza virus vaccine, trivalent (ccIIV3), derived from cell cultures, subunit, preservative and antibiotic free, 0.5 mL dosage, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90673",
+        "display": "Influenza virus vaccine, trivalent (RIV3), derived from recombinant DNA, hemagglutinin (HA) protein only, preservative and antibiotic free, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90674",
+        "display": "Influenza virus vaccine, quadrivalent (ccIIV4), derived from cell cultures, subunit, preservative and antibiotic free, 0.5 mL dosage, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90685",
+        "display": "Influenza virus vaccine, quadrivalent (IIV4), split virus, preservative free, 0.25 mL dosage, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90686",
+        "display": "Influenza virus vaccine, quadrivalent (IIV4), split virus, preservative free, 0.5 mL dosage, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90687",
+        "display": "Influenza virus vaccine, quadrivalent (IIV4), split virus, 0.25 mL dosage, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90688",
+        "display": "Influenza virus vaccine, quadrivalent (IIV4), split virus, 0.5 mL dosage, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90689",
+        "display": "Influenza virus vaccine, quadrivalent (IIV4), inactivated, adjuvanted, preservative free, 0.25 mL dosage, for intramuscular use"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2024",
+        "code": "90756",
+        "display": "Influenza virus vaccine, quadrivalent (ccIIV4), derived from cell cultures, subunit, antibiotic free, 0.5 mL dosage, for intramuscular use"
+      }
+    ]
   }
 }

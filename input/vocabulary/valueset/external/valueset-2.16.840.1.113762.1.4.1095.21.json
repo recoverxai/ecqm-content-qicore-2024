@@ -1,70 +1,80 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1095.21",
+  "meta": {
+    "versionId": "26",
+    "lastUpdated": "2024-01-17T01:08:53.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-17"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.21",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1095.21"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1095.21"
+    }
+  ],
   "version": "20240117",
   "name": "NutritionAssessment",
   "title": "Nutrition Assessment",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-17T01:08:53-05:00",
+  "publisher": "AND Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "101819-1",
-      "display": "Nutritional assessment for malnutrition status"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "75282-4",
-      "display": "Nutrition assessment panel"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "75285-7",
-      "display": "Comparative nutrition assessment standards panel"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "75303-8",
-      "display": "Nutrition assessment Narrative"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "75304-6",
-      "display": "Nutrition status observation panel"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "101819-1",
-      "display": "Nutritional assessment for malnutrition status"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "75282-4",
-      "display": "Nutrition assessment panel"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "75285-7",
-      "display": "Comparative nutrition assessment standards panel"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "75303-8",
-      "display": "Nutrition assessment Narrative"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "75304-6",
-      "display": "Nutrition status observation panel"
-    } ]
+    "identifier": "urn:uuid:8ed942fd-7bd2-441b-b983-78e49cbfd7f6",
+    "timestamp": "2024-10-02T12:32:09-04:00",
+    "total": 5,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "101819-1",
+        "display": "Nutritional assessment for malnutrition status"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "75282-4",
+        "display": "Nutrition assessment panel"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "75285-7",
+        "display": "Comparative nutrition assessment standards panel"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "75303-8",
+        "display": "Nutrition assessment Narrative"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "75304-6",
+        "display": "Nutrition status observation panel"
+      }
+    ]
   }
 }

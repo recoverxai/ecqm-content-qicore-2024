@@ -1,100 +1,140 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.117.12.1016",
+  "meta": {
+    "versionId": "16",
+    "lastUpdated": "2024-08-12T12:09:13.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.117.12.1016",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.117.12.1016"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.117.12.1016"
+    }
+  ],
   "version": "20240112",
   "name": "Hyperparathyroidism",
   "title": "Hyperparathyroidism",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "E21.0",
-      "display": "Primary hyperparathyroidism"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "E21.1",
-      "display": "Secondary hyperparathyroidism, not elsewhere classified"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "E21.2",
-      "display": "Other hyperparathyroidism"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "E21.3",
-      "display": "Hyperparathyroidism, unspecified"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "190045361000119101",
-      "display": "Normocalcemic primary hyperparathyroidism (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "19034001",
-      "display": "Hyperparathyroidism due to renal insufficiency (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "237653008",
-      "display": "Familial primary hyperparathyroidism (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "361128007",
-      "display": "Hyperparathyroidism caused by lithium therapy (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "36348003",
-      "display": "Primary hyperparathyroidism (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "363627009",
-      "display": "Parathyromatosis (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "47445009",
-      "display": "Hyperparathyroidism due to vitamin D deficiency (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "66999008",
-      "display": "Hyperparathyroidism (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "78200003",
-      "display": "Tertiary hyperparathyroidism (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "78625002",
-      "display": "Hyperparathyroidism due to intestinal malabsorption (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "9092004",
-      "display": "Parathyroid hyperplasia (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "91478007",
-      "display": "Secondary hyperparathyroidism (disorder)"
-    } ]
+    "identifier": "urn:uuid:54383aa0-c9cb-4fb2-b90d-5d7c93474230",
+    "timestamp": "2024-10-02T12:36:41-04:00",
+    "total": 15,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "190045361000119101",
+        "display": "Normocalcemic primary hyperparathyroidism (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "19034001",
+        "display": "Hyperparathyroidism due to renal insufficiency (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "237653008",
+        "display": "Familial primary hyperparathyroidism (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "36348003",
+        "display": "Primary hyperparathyroidism (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "363627009",
+        "display": "Parathyromatosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "47445009",
+        "display": "Hyperparathyroidism due to vitamin D deficiency (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "66999008",
+        "display": "Hyperparathyroidism (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "78200003",
+        "display": "Tertiary hyperparathyroidism (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "78625002",
+        "display": "Hyperparathyroidism due to intestinal malabsorption (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "9092004",
+        "display": "Parathyroid hyperplasia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "91478007",
+        "display": "Secondary hyperparathyroidism (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E21.0",
+        "display": "Primary hyperparathyroidism"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E21.1",
+        "display": "Secondary hyperparathyroidism, not elsewhere classified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E21.2",
+        "display": "Other hyperparathyroidism"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E21.3",
+        "display": "Hyperparathyroidism, unspecified"
+      }
+    ]
   }
 }

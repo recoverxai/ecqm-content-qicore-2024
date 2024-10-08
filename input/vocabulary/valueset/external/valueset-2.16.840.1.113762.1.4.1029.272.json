@@ -1,55 +1,93 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.272",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-01-27"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.272",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1029.272"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.272"
+    }
+  ],
   "version": "20220127",
-  "name": "HIVinPregnancyChildbirthandPuerperium",
+  "name": "HIVInPregnancyChildbirthAndPuerperium",
   "title": "HIV in Pregnancy Childbirth and Puerperium",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-01-27T01:02:40-05:00",
+  "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:29-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "B20",
-      "display": "Human immunodeficiency virus [HIV] disease"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O98.711",
-      "display": "Human immunodeficiency virus [HIV] disease complicating pregnancy, first trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O98.712",
-      "display": "Human immunodeficiency virus [HIV] disease complicating pregnancy, second trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O98.713",
-      "display": "Human immunodeficiency virus [HIV] disease complicating pregnancy, third trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O98.719",
-      "display": "Human immunodeficiency virus [HIV] disease complicating pregnancy, unspecified trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O98.72",
-      "display": "Human immunodeficiency virus [HIV] disease complicating childbirth"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "O98.73",
-      "display": "Human immunodeficiency virus [HIV] disease complicating the puerperium"
-    } ]
+    "identifier": "urn:uuid:0a78e85e-769f-440c-aae7-47cdb79988cc",
+    "timestamp": "2024-10-02T12:30:21-04:00",
+    "total": 7,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "B20",
+        "display": "Human immunodeficiency virus [HIV] disease"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.711",
+        "display": "Human immunodeficiency virus [HIV] disease complicating pregnancy, first trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.712",
+        "display": "Human immunodeficiency virus [HIV] disease complicating pregnancy, second trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.713",
+        "display": "Human immunodeficiency virus [HIV] disease complicating pregnancy, third trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.719",
+        "display": "Human immunodeficiency virus [HIV] disease complicating pregnancy, unspecified trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.72",
+        "display": "Human immunodeficiency virus [HIV] disease complicating childbirth"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.73",
+        "display": "Human immunodeficiency virus [HIV] disease complicating the puerperium"
+      }
+    ]
   }
 }

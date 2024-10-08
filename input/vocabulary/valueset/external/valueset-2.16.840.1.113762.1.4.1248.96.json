@@ -1,30 +1,62 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1248.96",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-02-22T14:54:20.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-09"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.96",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1248.96"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1248.96"
+    }
+  ],
   "version": "20240109",
-  "name": "ArterialBloodpH",
+  "name": "ArterialBloodPH",
   "title": "Arterial Blood pH",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-09T01:09:01-05:00",
+  "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:29-06:00",
-    "contains": [ {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "2744-1",
-      "display": "pH of Arterial blood"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.76",
-      "code": "33254-4",
-      "display": "pH of Arterial blood adjusted to patient's actual temperature"
-    } ]
+    "identifier": "urn:uuid:7163baa0-a6d2-4240-8fcf-ec24193ee566",
+    "timestamp": "2024-10-02T12:34:54-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "2744-1",
+        "display": "pH of Arterial blood"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "33254-4",
+        "display": "pH of Arterial blood adjusted to patient's actual temperature"
+      }
+    ]
   }
 }

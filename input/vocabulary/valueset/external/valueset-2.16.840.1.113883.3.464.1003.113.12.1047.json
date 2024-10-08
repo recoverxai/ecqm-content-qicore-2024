@@ -1,130 +1,140 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.113.12.1047",
+  "meta": {
+    "versionId": "13",
+    "lastUpdated": "2024-08-12T10:14:59.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-06"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.113.12.1047",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.113.12.1047"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.113.12.1047"
+    }
+  ],
   "version": "20240106",
   "name": "EhlersDanlosSyndrome",
   "title": "Ehlers Danlos Syndrome",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-06T01:09:12-05:00",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:28-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Q79.60",
-      "display": "Ehlers-Danlos syndrome, unspecified"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Q79.61",
-      "display": "Classical Ehlers-Danlos syndrome"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Q79.62",
-      "display": "Hypermobile Ehlers-Danlos syndrome"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Q79.63",
-      "display": "Vascular Ehlers-Danlos syndrome"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "Q79.69",
-      "display": "Other Ehlers-Danlos syndromes"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2021-09",
-      "code": "31798004",
-      "display": "Corneal fragility keratoglobus, blue sclerae AND joint hypermobility (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2021-09",
-      "code": "70610001",
-      "display": "Ehlers-Danlos syndrome, recessive type 4 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2021-09",
-      "code": "86667008",
-      "display": "Ehlers-Danlos syndrome, dominant type 4 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "10033001",
-      "display": "Ehlers-Danlos syndrome, non hydroxylysine deficient ocular type (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "17025000",
-      "display": "Ehlers-Danlos syndrome, type 4 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "20766005",
-      "display": "Ehlers-Danlos syndrome, type 2 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "25606004",
-      "display": "Ehlers-Danlos syndrome, hydroxylysine-deficient (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "30652003",
-      "display": "Hypermobile Ehlers-Danlos syndrome (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "398114001",
-      "display": "Ehlers-Danlos syndrome (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "4170004",
-      "display": "Ehlers-Danlos syndrome, procollagen proteinase resistant (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "50869007",
-      "display": "Ehlers-Danlos syndrome, type 8 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "55711009",
-      "display": "Ehlers-Danlos syndrome, procollagen proteinase deficient (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "59399004",
-      "display": "Cutis laxa, x-linked (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "67202007",
-      "display": "Ehlers-Danlos syndrome, type 5 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "71322004",
-      "display": "Ehlers-Danlos syndrome, familial joint laxity type (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "83470009",
-      "display": "Ehlers-Danlos syndrome, type 1 (disorder)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "83586000",
-      "display": "Ehlers-Danlos syndrome, dysfibronectinemic (disorder)"
-    } ]
+    "identifier": "urn:uuid:447ffd3c-69c9-4855-ac86-dc82f20f2e13",
+    "timestamp": "2024-10-02T12:31:51-04:00",
+    "total": 15,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "17025000",
+        "display": "Vascular Ehlers-Danlos syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "25606004",
+        "display": "Ehlers-Danlos syndrome, hydroxylysine-deficient (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "30652003",
+        "display": "Hypermobile Ehlers-Danlos syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "398114001",
+        "display": "Ehlers-Danlos syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "50869007",
+        "display": "Periodontal Ehlers-Danlos syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "55711009",
+        "display": "Arthrochalasia Ehlers-Danlos syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "59399004",
+        "display": "Cutis laxa, x-linked (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "67202007",
+        "display": "X-linked Ehlers-Danlos syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "71322004",
+        "display": "Familial articular hypermobility syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "83586000",
+        "display": "Ehlers-Danlos syndrome, dysfibronectinemic (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q79.60",
+        "display": "Ehlers-Danlos syndrome, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q79.61",
+        "display": "Classical Ehlers-Danlos syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q79.62",
+        "display": "Hypermobile Ehlers-Danlos syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q79.63",
+        "display": "Vascular Ehlers-Danlos syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q79.69",
+        "display": "Other Ehlers-Danlos syndromes"
+      }
+    ]
   }
 }

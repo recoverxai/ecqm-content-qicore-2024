@@ -1,40 +1,63 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1002",
+  "meta": {
+    "versionId": "25",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2020-03-07"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1002",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.526.3.1002"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1002"
+    }
+  ],
   "version": "20200307",
-  "name": "ChronicKidneyDisease,Stage5",
+  "name": "ChronicKidneyDiseaseStage5",
   "title": "Chronic Kidney Disease, Stage 5",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2020-03-07T01:00:21-05:00",
+  "publisher": "American Society of Clinical Oncology Steward",
   "expansion": {
-    "identifier": "20240502",
-    "timestamp": "2024-05-06T09:32:27-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "N18.5",
-      "display": "Chronic kidney disease, stage 5"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "433146000",
-      "display": "Chronic kidney disease stage 5 (disorder)"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2024",
-      "code": "N18.5",
-      "display": "Chronic kidney disease, stage 5"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2023-09",
-      "code": "433146000",
-      "display": "Chronic kidney disease stage 5 (disorder)"
-    } ]
+    "identifier": "urn:uuid:0e8f8b8c-19e0-4115-93f7-75cc01418634",
+    "timestamp": "2024-10-02T12:37:18-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240301",
+        "code": "433146000",
+        "display": "Chronic kidney disease stage 5 (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "N18.5",
+        "display": "Chronic kidney disease, stage 5"
+      }
+    ]
   }
 }
