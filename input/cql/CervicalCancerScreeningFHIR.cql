@@ -21,6 +21,7 @@ valueset "Pap Test": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.4
 valueset "Preventive Care Services Established Office Visit, 18 and Up": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025'
 valueset "Preventive Care Services Initial Office Visit, 18 and Up": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023'
 valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080'
+valueset "Hysterectomy": 'ValueSet/evdm-hysterectomy'
 
 code "Clinic": '22282402' from "CERNER" display 'Clinic'
 
@@ -61,11 +62,18 @@ define "Denominator Exclusions":
     or PalliativeCare."Has Palliative Care in the Measurement Period"
 
 define "Potential Denominator Exclusion":
-  exists "Absence of Cervix ignoring dates"
+  (exists "Absence of Cervix ignoring dates"
+  or exists "Generic Hysterectomy")
+  and not "Denominator Exclusions"
+
 
 define "Numerator":
   exists "Cervical Cytology Within 3 Years"
     or exists "HPV Test Within 5 Years for Women Age 30 and Older"
+
+define "Potential Numerator":
+  exists "Pap ThinPrep Ordered"
+  and not "Numerator"
 
 define "Absence of Cervix":
   ( ( ( ["Procedure": "Hysterectomy with No Residual Cervix"] ).isProcedurePerformed ( ) ) NoCervixProcedure
@@ -76,10 +84,17 @@ define "Absence of Cervix":
     )
 
 define "Absence of Cervix ignoring dates":
-  ((["Procedure": "Hysterectomy with No Residual Cervix"] ).isProcedurePerformed ( ) ) NoCervixProcedure
-  union ( ["Condition": "Congenital or Acquired Absence of Cervix"] NoCervixDiagnosis)
+  (((["Procedure": "Hysterectomy with No Residual Cervix"] ).isProcedurePerformed ( ) ) NoCervixProcedure
+    where NoCervixProcedure.performed is null)
+  union ( ["Condition": "Congenital or Acquired Absence of Cervix"] NoCervixDiagnosis
+    where NoCervixDiagnosis.prevalenceInterval ( ) is null)
 
+define "Generic Hysterectomy":
+  ((["Procedure": "Hysterectomy"] ).isProcedurePerformed ( ) ) HysterectomyProcedure
 
+define "Pap ThinPrep Ordered":
+  (Status."Completed or Ongoing Service Request" ( [ServiceRequest: "Pap Test"])) PapOrder
+    where QICoreCommon."ToInterval" ( PapOrder.authoredOn ) during day  of Interval[start of "Measurement Period" - 2 years, end of "Measurement Period"]
 
 define "Cervical Cytology Within 3 Years":
   ( ( ["Observation": "Pap Test"] ).isLaboratoryTestPerformed ( ) ) CervicalCytology
