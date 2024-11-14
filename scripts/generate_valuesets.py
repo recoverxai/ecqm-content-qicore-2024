@@ -7,7 +7,7 @@ from fhirclient.models import fhirdatetime
 from fhirclient.models import identifier as id
 from fhirclient.models import valueset as vs
 
-PROJECT_ROOT = "/Users/Abhi/Documents/rx-dev"
+PROJECT_ROOT = "/Users/matt/dev/recoverx"
 VALUESETS_CSV_PATH = PROJECT_ROOT + "/ecqm-content-qicore-2024/input/vocabulary/valueset/valueset-csvs/Hysterectomy_9_22_SNOMED_list_Hysterectomy_Reviewed.csv"
 VALUESETS_OUTPUT_DIR = PROJECT_ROOT + "/ecqm-content-qicore-2024/input/vocabulary/valueset/external/"
 

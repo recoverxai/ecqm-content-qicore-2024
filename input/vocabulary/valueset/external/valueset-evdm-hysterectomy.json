@@ -8,11 +8,6 @@
         "system": "http://snomed.info/sct"
       },
       {
-        "code": "447771005",
-        "display": "Abdominal hysterectomy and excision of periuterine tissue (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
         "code": "302191001",
         "display": "Abdominal hysterectomy and left salpingo-oophorectomy (procedure)",
         "system": "http://snomed.info/sct"
@@ -40,16 +35,6 @@
       {
         "code": "309879006",
         "display": "Abdominal hysterocolpectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "387626007",
-        "display": "Amputation of cervix (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "46226009",
-        "display": "Cervicectomy with synchronous colporrhaphy (procedure)",
         "system": "http://snomed.info/sct"
       },
       {
@@ -83,23 +68,8 @@
         "system": "http://snomed.info/sct"
       },
       {
-        "code": "24293001",
-        "display": "Excision of cervical stump by abdominal approach (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "41566006",
-        "display": "Excision of cervical stump by vaginal approach (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
         "code": "647000",
         "display": "Excision of cervix by electroconization (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "287924009",
-        "display": "Excision of cervix stump (procedure)",
         "system": "http://snomed.info/sct"
       },
       {
@@ -163,38 +133,8 @@
         "system": "http://snomed.info/sct"
       },
       {
-        "code": "1163275000",
-        "display": "Laparoscopic radical amputation of cervix uteri (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "236891001",
-        "display": "Laparoscopic radical hysterectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "708878003",
-        "display": "Laparoscopic radical hysterectomy using robotic assistance (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
         "code": "431316002",
         "display": "Laparoscopic subtotal hysterectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "414575003",
-        "display": "Laparoscopic total abdominal hysterectomy and bilateral salpingo-oophorectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "236888001",
-        "display": "Laparoscopic total hysterectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "708877008",
-        "display": "Laparoscopic total hysterectomy using robotic assistance (procedure)",
         "system": "http://snomed.info/sct"
       },
       {
@@ -213,16 +153,6 @@
         "system": "http://snomed.info/sct"
       },
       {
-        "code": "82418001",
-        "display": "Manchester operation on uterus (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "28301000",
-        "display": "Manchester-Fothergill operation on uterus (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
         "code": "359977003",
         "display": "Mayo operation for vaginal hysterectomy (procedure)",
         "system": "http://snomed.info/sct"
@@ -235,36 +165,6 @@
       {
         "code": "860602007",
         "display": "Postpartum excision of uterus (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "307771009",
-        "display": "Radical abdominal hysterectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "440383008",
-        "display": "Radical amputation of cervix with bilateral total pelvic lymphadenectomy and paraaortic lymph node biopsy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "116142003",
-        "display": "Radical hysterectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "35955002",
-        "display": "Radical vaginal hysterectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "88144003",
-        "display": "Removal of ectopic interstitial uterine pregnancy requiring total hysterectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "176697007",
-        "display": "Repair of vaginal prolapse and amputation of cervix uteri (procedure)",
         "system": "http://snomed.info/sct"
       },
       {
@@ -285,81 +185,6 @@
       {
         "code": "1187630003",
         "display": "Subtotal hysterectomy via vaginal approach (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "116143008",
-        "display": "Total abdominal hysterectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "446446002",
-        "display": "Total abdominal hysterectomy and removal of vaginal cuff (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "767611008",
-        "display": "Total abdominal hysterectomy using intrafascial technique (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "116144002",
-        "display": "Total abdominal hysterectomy with bilateral salpingo-oophorectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "116140006",
-        "display": "Total hysterectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "767610009",
-        "display": "Total hysterectomy via vaginal approach (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "767612001",
-        "display": "Total hysterectomy via vaginal approach using intrafascial technique (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "739671004",
-        "display": "Total hysterectomy with left oophorectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "740515000",
-        "display": "Total hysterectomy with left salpingectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "739673001",
-        "display": "Total hysterectomy with left salpingo-oophorectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "86477000",
-        "display": "Total hysterectomy with removal of both tubes and ovaries (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "739672006",
-        "display": "Total hysterectomy with right oophorectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "740514001",
-        "display": "Total hysterectomy with right salpingectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "739674007",
-        "display": "Total hysterectomy with right salpingo-oophorectomy (procedure)",
-        "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "446679008",
-        "display": "Total laparoscopic excision of uterus by abdominal approach (procedure)",
         "system": "http://snomed.info/sct"
       },
       {
@@ -443,18 +268,23 @@
         "system": "http://snomed.info/sct"
       },
       {
-        "code": "361223008",
-        "display": "Wertheim operation (procedure)",
+        "code": "309287004",
+        "display": "Hysterectomy and bilateral salpingo-oophorectomy sample (specimen)",
         "system": "http://snomed.info/sct"
       },
       {
-        "code": "361222003",
-        "display": "Wertheim-Meigs abdominal hysterectomy (procedure)",
+        "code": "429763009",
+        "display": "History of total hysterectomy with bilateral salpingo-oophorectomy (situation)",
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "code": "161800001",
+        "display": "History of hysterectomy (situation)",
         "system": "http://snomed.info/sct"
       }
     ],
-    "identifier": "20241024",
-    "timestamp": "2024-10-24T13:16:44-06:00"
+    "identifier": "20241029",
+    "timestamp": "2024-10-29T20:10:17-06:00"
   },
   "experimental": false,
   "identifier": [
@@ -468,6 +298,6 @@
   "status": "active",
   "title": "Hysterectomy",
   "url": "ValueSet/evdm-hysterectomy",
-  "version": "20241024",
+  "version": "20241029",
   "resourceType": "ValueSet"
 }

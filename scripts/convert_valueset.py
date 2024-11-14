@@ -5,8 +5,8 @@ from tqdm import tqdm
 
 FHIR_SERVER_URL = "http://localhost:8089/fhir/ValueSet"
 
-VALUESET_DIRECTORY = "input/vocabulary/valueset/external"
-VALUESET_OUTPUT_DIRECTORY = "input/vocabulary/valueset/external/converted"
+VALUESET_DIRECTORY = "/Users/matt/dev/recoverx/ecqm-content-qicore-2024/input/vocabulary/valueset/external"
+VALUESET_OUTPUT_DIRECTORY = "/Users/matt/dev/recoverx/ecqm-content-qicore-2024/input/vocabulary/valueset/external/converted"
 
 
 def convert_valuesets():

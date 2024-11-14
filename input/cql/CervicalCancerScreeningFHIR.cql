@@ -10,6 +10,7 @@ include PalliativeCare version '1.9.000' called PalliativeCare
 include Status version '1.6.000' called Status
 
 codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
+codesystem "CERNER-72": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/72'
 
 valueset "Congenital or Acquired Absence of Cervix": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.111.12.1016'
 valueset "Home Healthcare Services": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016'
@@ -24,6 +25,15 @@ valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.11
 valueset "Hysterectomy": 'ValueSet/evdm-hysterectomy'
 
 code "Clinic": '22282402' from "CERNER" display 'Clinic'
+code "Last Pap Result, Pt Stated": '3819002389' from "CERNER-72" display 'Last Pap Result, Pt Stated'
+code "Last Pap Result Comment": '3819002413' from "CERNER-72" display 'Last Pap Result Comment'
+code "Pap Smear Abnormal Result Comment": '2556342625' from "CERNER-72" display 'Pap Smear Abnormal Result Comment'
+code "Date of Last Pap Smear": '704864' from "CERNER-72" display 'Date of Last Pap Smear'
+code "Pap Smear Date Performed": '2556342649' from "CERNER-72" display 'Pap Smear Date Performed'
+code "Pap Smear, Transcribed": '2556342601' from "CERNER-72" display 'Pap Smear, Transcribed'
+code "Date of Last HPV Exam, Pt Stated": '14256783065' from "CERNER-72" display 'Date of Last HPV Exam, Pt Stated'
+code "Last HPV Result Comments": '14256783147' from "CERNER-72" display 'Last HPV Result Comments'
+code "Last HPV Result, Pt Stated": '14256783109' from "CERNER-72" display 'Last HPV Result, Pt Stated'
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -62,8 +72,8 @@ define "Denominator Exclusions":
     or PalliativeCare."Has Palliative Care in the Measurement Period"
 
 define "Potential Denominator Exclusion":
-  (exists "Absence of Cervix ignoring dates"
-  or exists "Generic Hysterectomy")
+  (exists "No Cervix No Date"
+  or exists "Other Hyst Review for Absence of Cervix")
   and not "Denominator Exclusions"
 
 
@@ -72,7 +82,10 @@ define "Numerator":
     or exists "HPV Test Within 5 Years for Women Age 30 and Older"
 
 define "Potential Numerator":
-  exists "Pap ThinPrep Ordered"
+  (exists "Pap Test Ordered"
+  or exists "HPV Test Ordered"
+  or exists "Non compliant Cervical Cytology Within 3 Years"
+  or exists "Non compliant HPV Test Within 5 Years for Women Age 30 and Older")
   and not "Numerator"
 
 define "Absence of Cervix":
@@ -83,18 +96,42 @@ define "Absence of Cervix":
         where NoCervixDiagnosis.prevalenceInterval ( ) starts on or before end of "Measurement Period"
     )
 
-define "Absence of Cervix ignoring dates":
+define "No Cervix No Date":
   (((["Procedure": "Hysterectomy with No Residual Cervix"] ).isProcedurePerformed ( ) ) NoCervixProcedure
     where NoCervixProcedure.performed is null)
   union ( ["Condition": "Congenital or Acquired Absence of Cervix"] NoCervixDiagnosis
     where NoCervixDiagnosis.prevalenceInterval ( ) is null)
 
-define "Generic Hysterectomy":
+define "Other Hyst Review for Absence of Cervix":
   ((["Procedure": "Hysterectomy"] ).isProcedurePerformed ( ) ) HysterectomyProcedure
 
-define "Pap ThinPrep Ordered":
-  (Status."Completed or Ongoing Service Request" ( [ServiceRequest: "Pap Test"])) PapOrder
+define "Pap Test Ordered":
+  ( [ServiceRequest: "Pap Test"]) PapOrder
     where QICoreCommon."ToInterval" ( PapOrder.authoredOn ) during day  of Interval[start of "Measurement Period" - 2 years, end of "Measurement Period"]
+
+define "HPV Test Ordered":
+  ( [ServiceRequest: "HPV Test"]) HPVOrder
+    where AgeInYearsAt(date from HPVOrder.authoredOn.latest()) >= 30
+      and HPVOrder.authoredOn.latest ( ) during day of Interval[start of "Measurement Period" - 4 years, end of "Measurement Period"]
+
+define "Non compliant Cervical Cytology Within 3 Years":
+   ( ( ["Observation": "Last Pap Result, Pt Stated"]
+      union ["Observation": "Last Pap Result Comment"]
+      union ["Observation": "Pap Smear Abnormal Result Comment"]
+      union ["Observation": "Date of Last Pap Smear"]
+      union ["Observation": "Pap Smear Date Performed"]
+      union ["Observation": "Pap Smear, Transcribed"] ) ) CervicalCytology
+    where CervicalCytology.effective.latest ( ) during day of Interval[start of "Measurement Period" - 2 years, end of "Measurement Period"]
+      and CervicalCytology.value is not null
+
+define "Non compliant HPV Test Within 5 Years for Women Age 30 and Older":
+  (( ["Observation": "Date of Last HPV Exam, Pt Stated"] 
+      union ["Observation": "Last HPV Result, Pt Stated"]
+      union ["Observation": "Last HPV Result Comments"]
+      union ["Observation": "Last HPV Result, Pt Stated"]) ) HPVTest
+    where AgeInYearsAt(date from HPVTest.effective.latest()) >= 30
+      and HPVTest.effective.latest ( ) during day of Interval[start of "Measurement Period" - 4 years, end of "Measurement Period"]
+      and HPVTest.value is not null
 
 define "Cervical Cytology Within 3 Years":
   ( ( ["Observation": "Pap Test"] ).isLaboratoryTestPerformed ( ) ) CervicalCytology
