@@ -1,6 +1,8 @@
 import re
 
 import loguru
+import matplotlib.pyplot as plt
+import networkx as nx
 
 logger = loguru.logger
 
@@ -37,6 +39,17 @@ def extract_dependencies(library_definitions: dict[str, str]) -> dict[str, set[s
     return dependency_map
 
 
+def build_dependency_graph(dependency_map: dict[str, set[str]]) -> nx.DiGraph:
+    """
+    Build a directed graph from the dependency map
+    """
+    G = nx.DiGraph()
+    for def_name, deps in dependency_map.items():
+        for dep in deps:
+            G.add_edge(dep, def_name)
+    return G
+
+
 if __name__ == "__main__":
     CQL_FILE_PATH = "/Users/Abhi/Documents/rx-dev/ecqm-content-qicore-2024/input/cql/ChlamydiaScreeninginWomenFHIR.cql"
     with open(CQL_FILE_PATH, "r") as file:
@@ -45,6 +58,25 @@ if __name__ == "__main__":
     library_definitions = parse_cql_definition(cql_content)
     for name, expr in library_definitions.items():
         logger.info(f"Definition: {name}\nExpression:\n{expr}\n")
+
     dependency_map = extract_dependencies(library_definitions)
     for def_name, deps in dependency_map.items():
         logger.info(f"Definition: {def_name}\nDependencies: {deps}\n")
+
+    dependency_graph = build_dependency_graph(dependency_map)
+    try:
+        plt.figure(figsize=(12, 8))
+        pos = nx.spring_layout(dependency_graph, k=0.5)
+        nx.draw(
+            dependency_graph,
+            pos,
+            with_labels=True,
+            node_size=3000,
+            node_color="lightblue",
+            font_size=10,
+            arrowsize=20,
+        )
+        plt.title("CQL Definitions Dependency Graph")
+        plt.show()
+    except ImportError:
+        print("Matplotlib not installed. Skipping graph visualization.")

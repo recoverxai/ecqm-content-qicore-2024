@@ -45,8 +45,8 @@ class LibraryEvaluator:
 
     def evaluate_library(self, query_params: QueryParams) -> None:
         request: str = make_nova_performance_request(query_params)
-        payload = {}
-        headers = {}
+        payload: dict[str, str] = {}
+        headers: dict[str, str] = {}
         response = requests.request("GET", request, headers=headers, data=payload)
         logger.info(f"Request URL: {request}")
         logger.info(response.text)
@@ -60,7 +60,7 @@ if __name__ == "__main__":
         periodStart="2024-01-01",
         periodEnd="2025-01-01",
         clearCache="true",
-        patientIds="test-patient",
+        patientIds="14f50c031d6764952ab559e54182bf1314b4233fc1fea3e2fa087ebf8a96cdb7",
         libraryId="ChlamydiaScreeninginWomenFHIR",
         expressions="Initial Population",
     )
