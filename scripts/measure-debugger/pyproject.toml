@@ -12,6 +12,7 @@ pydantic = "^2.9.2"
 loguru = "^0.7.2"
 networkx = "^3.4.2"
 matplotlib = "^3.9.2"
+fhirclient = "^4.3.0"
 
 
 [tool.poetry.group.dev.dependencies]

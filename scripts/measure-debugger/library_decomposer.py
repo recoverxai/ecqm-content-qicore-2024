@@ -4,6 +4,8 @@ import loguru
 import matplotlib.pyplot as plt
 import networkx as nx
 
+import constants as constants
+
 logger = loguru.logger
 
 
@@ -51,7 +53,7 @@ def build_dependency_graph(dependency_map: dict[str, set[str]]) -> nx.DiGraph:
 
 
 if __name__ == "__main__":
-    CQL_FILE_PATH = "/Users/Abhi/Documents/rx-dev/ecqm-content-qicore-2024/input/cql/ChlamydiaScreeninginWomenFHIR.cql"
+    CQL_FILE_PATH = constants.CQL_DIR_BASEPATH + "ChlamydiaScreeninginWomenFHIR.cql"
     with open(CQL_FILE_PATH, "r") as file:
         cql_content = file.read()
 

@@ -4,13 +4,11 @@ import loguru
 import pydantic as pydantic
 import requests
 
+import constants as constants
+
 # Constants
-SCHEME: str = "http"
-NOVA_PERFORMNCE_HOST: str = "localhost"
-NOVA_PERFORMNCE_PORT: str = "8051"
-NOVA_PERFORMNCE_PATH: str = "library/evaluation"
 BASE_URL: str = (
-    f"{SCHEME}://{NOVA_PERFORMNCE_HOST}:{NOVA_PERFORMNCE_PORT}/{NOVA_PERFORMNCE_PATH}"
+    f"{constants.SCHEME}://{constants.NOVA_PERFORMNCE_HOST}:{constants.NOVA_PERFORMNCE_PORT}/{constants.NOVA_PERFORMNCE_PATH}"
 )
 
 logger = loguru.logger
