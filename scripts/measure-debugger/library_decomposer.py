@@ -52,6 +52,19 @@ def build_dependency_graph(dependency_map: dict[str, set[str]]) -> nx.DiGraph:
     return G
 
 
+def get_evaluation_order(dependency_graph: nx.DiGraph) -> list[str]:
+    """
+    Returns a list of definitions in the order they should be evaluated.
+    Raises an error if a cycle is detected.
+    """
+    try:
+        order = list(nx.topological_sort(dependency_graph))
+        return order
+    except nx.NetworkXUnfeasible:
+        raise Exception("Cycle detected in dependencies. Cannot perform topological sort.")
+
+
+
 if __name__ == "__main__":
     CQL_FILE_PATH = constants.CQL_DIR_BASEPATH + "ChlamydiaScreeninginWomenFHIR.cql"
     with open(CQL_FILE_PATH, "r") as file:
@@ -81,4 +94,13 @@ if __name__ == "__main__":
         plt.title("CQL Definitions Dependency Graph")
         plt.show()
     except ImportError:
-        print("Matplotlib not installed. Skipping graph visualization.")
+        logger.info("Matplotlib not installed. Skipping graph visualization.")
+    # Determine evaluation order
+    try:
+        evaluation_order = get_evaluation_order(dependency_graph)
+        logger.info("Evaluation Order:")
+        for idx, def_name in enumerate(evaluation_order, 1):
+            logger.info(f"{idx}. {def_name}")
+    except Exception as e:
+        print(str(e))
+        
