@@ -61,8 +61,9 @@ def get_evaluation_order(dependency_graph: nx.DiGraph) -> list[str]:
         order = list(nx.topological_sort(dependency_graph))
         return order
     except nx.NetworkXUnfeasible:
-        raise Exception("Cycle detected in dependencies. Cannot perform topological sort.")
-
+        raise Exception(
+            "Cycle detected in dependencies. Cannot perform topological sort."
+        )
 
 
 if __name__ == "__main__":
@@ -103,4 +104,3 @@ if __name__ == "__main__":
             logger.info(f"{idx}. {def_name}")
     except Exception as e:
         print(str(e))
-        
