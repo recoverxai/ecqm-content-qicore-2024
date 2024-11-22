@@ -25,11 +25,58 @@ Workflow -
 """
 
 import loguru
+from fhirclient.models import (
+    condition,
+    domainresource,
+    encounter,
+    medicationrequest,
+    observation,
+    procedure,
+    servicerequest,
+)
 
 import constants
+import expression_decomposer
 import library_decomposer
 
 logger = loguru.logger
+
+
+class MeasureFhirResource:
+    type: domainresource.DomainResource
+    value: str
+    value_set: str
+
+
+CMS153_IP_Mapping: list[str] = [
+    "Age In Measurement Period",
+    "Patient Gender",
+    "Qualifying Encounters",
+    "Assessments Identifying Sexual Activity",
+    "Diagnoses Identifying Sexual Activity",
+    "Active Contraceptive Medications",
+    "Ordered Contraceptive Medications",
+    "Laboratory Tests Identifying Sexual Activity",
+    "Laboratory Tests Identifying Sexual Activity But Not Pregnancy",
+    "Diagnostic Studies Identifying Sexual Activity",
+    "Procedures Identifying Sexual Activity",
+]
+
+LIBRARY_TO_FHIR_RESOURCE_TYPE_MAPPING: dict[str, list[str]] = {
+    "Age In Measurement Period": [],
+    "Patient Gender": [],
+    "Qualifying Encounters": [encounter.Encounter],
+    "Assessments Identifying Sexual Activity": [observation.Observation],
+    "Diagnoses Identifying Sexual Activity": [condition.Condition],
+    "Active Contraceptive Medications": [medicationrequest.MedicationRequest],
+    "Ordered Contraceptive Medications": [medicationrequest.MedicationRequest],
+    "Laboratory Tests Identifying Sexual Activity": [servicerequest.ServiceRequest],
+    "Laboratory Tests Identifying Sexual Activity But Not Pregnancy": [
+        servicerequest.ServiceRequest
+    ],
+    "Diagnostic Studies Identifying Sexual Activity": [servicerequest.ServiceRequest],
+    "Procedures Identifying Sexual Activity": [procedure.Procedure],
+}
 
 
 def main():
@@ -39,16 +86,8 @@ def main():
     with open(CQL_FILE_PATH, "r") as file:
         cql_content = file.read()
 
+    # mapping from library expression name to its definition
     library_definitions = library_decomposer.parse_cql_definition(cql_content)
-
-    for name, expr in library_definitions.items():
-        logger.info(f"Definition: {name}\nExpression:\n{expr}\n")
-
-    dependency_map = library_decomposer.extract_dependencies(library_definitions)
-    for def_name, deps in dependency_map.items():
-        logger.info(f"Definition: {def_name}\nDependencies: {deps}\n")
-
-    dependency_graph = library_decomposer.build_dependency_graph(dependency_map)
 
 
 if __name__ == "__main__":
