@@ -1,3 +1,4 @@
+import pprint
 from typing import NamedTuple, TypedDict
 
 import loguru
@@ -27,7 +28,7 @@ def build_query_param_string(query_params: QueryParams) -> str:
     query_params_str = "&".join(
         [f"{key}={value}" for key, value in query_params.items()]
     )
-    logger.info(f"Query Params: {query_params_str}")
+    # logger.info(f"Query Params: {query_params_str}")
     return query_params_str
 
 
@@ -46,8 +47,39 @@ class LibraryEvaluator:
         payload: dict[str, str] = {}
         headers: dict[str, str] = {}
         response = requests.request("GET", request, headers=headers, data=payload)
-        logger.info(f"Request URL: {request}")
-        logger.info(response.text)
+        # logger.info(f"Request URL: {request}")
+        # logger.info(pprint.pprint(response.json()))
+        return self.parse_library_eval_result_value(response.json())
+
+    def parse_library_eval_result_value(self, response: dict) -> str | list:
+        results: list[str] = []
+        if not response:
+            return response
+
+        if type(response) == dict:
+            return self.parse_result(response)
+
+        if type(response) == list:
+            for item in response:
+                results.append(self.parse_library_eval_result_value(item))
+
+        return results
+
+    def parse_result(self, response: dict[str, any]) -> str:
+        result: dict[str, any] = response.get("result")
+        if not result:
+            return "EMPTY"
+        if result.get("valueInteger"):
+            return result.get("name") + ": " + result.get("valueInteger")
+        elif result.get("valueString"):
+            return result.get("name") + ": " + result.get("valueString")
+        elif result.get("valueBoolean"):
+            return result.get("name") + ": " + result.get("valueBoolean")
+        elif result.get("resource"):
+            resource: dict[str, any] = result.get("resource")
+            return result.get("name") + ": " + resource.get("resourceType")
+        else:
+            return "Result type not known"
 
 
 if __name__ == "__main__":
@@ -60,7 +92,7 @@ if __name__ == "__main__":
         clearCache="true",
         patientIds="14f50c031d6764952ab559e54182bf1314b4233fc1fea3e2fa087ebf8a96cdb7",
         libraryId="ChlamydiaScreeninginWomenFHIR",
-        expressions="Initial Population",
+        expressions="Active Contraceptive Medications",
     )
     evaluator = LibraryEvaluator()
-    evaluator.evaluate_library(query_params)
+    print(evaluator.evaluate_library(query_params))
