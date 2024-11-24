@@ -38,6 +38,7 @@ from fhirclient.models import (
 import constants
 import expression_decomposer
 import library_decomposer
+import library_evaluator as lib_eval
 
 logger = loguru.logger
 
@@ -80,14 +81,30 @@ LIBRARY_TO_FHIR_RESOURCE_TYPE_MAPPING: dict[str, list[str]] = {
 
 
 def main():
-    ...
+    library_evaluator = lib_eval.LibraryEvaluator()
+    
     # Decompose the CQL
     CQL_FILE_PATH = constants.CQL_DIR_BASEPATH + "ChlamydiaScreeninginWomenFHIR.cql"
     with open(CQL_FILE_PATH, "r") as file:
         cql_content = file.read()
 
     # mapping from library expression name to its definition
-    library_definitions = library_decomposer.parse_cql_definition(cql_content)
+    library_definitions: dict[str, str] = library_decomposer.parse_cql_definition(cql_content)
+
+    for library_definition in library_definitions:
+        # for initial population
+        if library_definition in CMS153_IP_Mapping:
+            nova_perf_query_params = lib_eval.QueryParams(
+                periodStart="2024-01-01",
+                periodEnd="2025-01-01",
+                clearCache="true",
+                patientIds="14f50c031d6764952ab559e54182bf1314b4233fc1fea3e2fa087ebf8a96cdb7",
+                libraryId="ChlamydiaScreeninginWomenFHIR",
+                expressions=library_definition,
+            )
+            nova_perf_result = library_evaluator.evaluate_library(query_params=nova_perf_query_params)
+
+
 
 
 if __name__ == "__main__":
