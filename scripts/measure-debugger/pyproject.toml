@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "measure-debugger"
+version = "0.1.0"
+description = "scripts to debug ecqm measure library expressions run on recoverxai/nova-performance"
+authors = ["Abhishek Singh <abhishek.singh@evidium.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+pydantic = "^2.9.2"
+loguru = "^0.7.2"
+networkx = "^3.4.2"
+matplotlib = "^3.9.2"
+fhirclient = "^4.3.0"
+pyparsing = "^3.2.0"
+pandas = "^2.2.3"
+tqdm = "^4.67.0"
+tenacity = "^9.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+pytest = "^8.3.3"
+mypy = "^1.13.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
