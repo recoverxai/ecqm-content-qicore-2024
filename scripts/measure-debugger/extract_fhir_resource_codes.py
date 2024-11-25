@@ -417,31 +417,31 @@ def print_result(result: Dict, patient: str):
 
 def main():
     patients: list[str] = [
-        "14f50c031d6764952ab559e54182bf1314b4233fc1fea3e2fa087ebf8a96cdb7"
+        "test-patient-1"
     ]
     for patient in patients:
-        # results = get_codes_for_procedures(patient)
-        # for result in results:
-        #     print_result(result)
-        # results: List[Dict] = get_codes_for_observations(patient)
-        # for result in results:
-        #     print(result)
-        # print_result(result, patient)
+        results = get_codes_for_procedures(patient)
+        for result in results:
+            print_result(result)
+        results: List[Dict] = get_codes_for_observations(patient)
+        for result in results:
+            print(result)
+        print_result(result, patient)
         results = get_codes_for_service_requests(patient)
         for result in results:
             print(result)
-            # print_result(result, patient)
-        # results = get_codes_for_conditions(patient)
-        # for result in results:
-        #     print(result)
-        # print_result(result, patient)
-        # print(patient)
-        # results = get_document_references(patient)
-        # for result in results:
-        #     print(result)
-        # results = get_diagnostic_reports(patient)
-        # for result in results:
-        #     print(result)
+            print_result(result, patient)
+        results = get_codes_for_conditions(patient)
+        for result in results:
+            print(result)
+        print_result(result, patient)
+        print(patient)
+        results = get_document_references(patient)
+        for result in results:
+            print(result)
+        results = get_diagnostic_reports(patient)
+        for result in results:
+            print(result)
 
 
 if __name__ == "__main__":
