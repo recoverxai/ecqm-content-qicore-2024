@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.308",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-01-27"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.308",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1029.308"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.308"
     }
   ],
   "version": "20220127",
@@ -13,7 +28,8 @@
   "title": "Neuromuscular Disease",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-01-27T01:02:46-05:00",
+  "publisher": "Joint Commission",
   "compose": {
     "include": [
       {
@@ -98,6 +114,10 @@
           {
             "code": "G40.419",
             "display": "Other generalized epilepsy and epileptic syndromes, intractable, without status epilepticus"
+          },
+          {
+            "code": "G40.42",
+            "display": "Cyclin-Dependent Kinase-Like 5 Deficiency Disorder"
           },
           {
             "code": "G40.501",
@@ -214,6 +234,22 @@
           {
             "code": "G40.B19",
             "display": "Juvenile myoclonic epilepsy, intractable, without status epilepticus"
+          },
+          {
+            "code": "G40.C01",
+            "display": "Lafora progressive myoclonus epilepsy, not intractable, with status epilepticus"
+          },
+          {
+            "code": "G40.C09",
+            "display": "Lafora progressive myoclonus epilepsy, not intractable, without status epilepticus"
+          },
+          {
+            "code": "G40.C11",
+            "display": "Lafora progressive myoclonus epilepsy, intractable, with status epilepticus"
+          },
+          {
+            "code": "G40.C19",
+            "display": "Lafora progressive myoclonus epilepsy, intractable, without status epilepticus"
           },
           {
             "code": "G70.00",

@@ -3,16 +3,17 @@
   "id": "2.16.840.1.113883.3.3157.4020",
   "meta": {
     "versionId": "14",
-    "lastUpdated": "2022-03-08T01:01:59.000-05:00",
+    "lastUpdated": "2024-09-06T09:14:11.000-04:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
     ]
   },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2022-03-08"
+      "valueDate": "2020-08-21"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4020",
@@ -23,11 +24,12 @@
     }
   ],
   "version": "20200821",
-  "name": "Fibrinolytic Therapy",
+  "name": "FibrinolyticTherapy",
   "title": "Fibrinolytic Therapy",
-  "status": "active",
+  "status": "retired",
+  "experimental": false,
   "date": "2022-03-08T01:02:00-05:00",
-  "publisher": "Yale",
+  "publisher": "Acumen OP Steward",
   "compose": {
     "include": [
       {

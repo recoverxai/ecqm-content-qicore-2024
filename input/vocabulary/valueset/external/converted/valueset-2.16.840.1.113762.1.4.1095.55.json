@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1095.55",
+  "meta": {
+    "versionId": "13",
+    "lastUpdated": "2024-01-04T11:58:10.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2018-06-16"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.55",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1095.55"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1095.55"
     }
   ],
   "version": "20180616",
@@ -13,45 +28,25 @@
   "title": "Malnutrition Diagnosis",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "AND Steward",
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "E43",
-            "display": "Unspecified severe protein-calorie malnutrition"
-          },
-          {
-            "code": "E44.0",
-            "display": "Moderate protein-calorie malnutrition"
-          },
-          {
-            "code": "E45",
-            "display": "Retarded development following protein-calorie malnutrition"
-          },
-          {
-            "code": "E46",
-            "display": "Unspecified protein-calorie malnutrition"
-          },
-          {
-            "code": "T73.0XXA",
-            "display": "Starvation, initial encounter"
-          },
-          {
-            "code": "T73.0XXD",
-            "display": "Starvation, subsequent encounter"
-          },
-          {
-            "code": "T73.0XXS",
-            "display": "Starvation, sequela"
-          }
-        ]
-      },
-      {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "102635008",
+            "display": "Acute nutritional deficiency (finding)"
+          },
+          {
+            "code": "102636009",
+            "display": "Chronic nutritional deficiency (finding)"
+          },
+          {
+            "code": "129588001",
+            "display": "Adult failure to thrive syndrome (disorder)"
+          },
           {
             "code": "190606006",
             "display": "Moderate protein energy malnutrition (disorder)"
@@ -61,16 +56,36 @@
             "display": "Deficiency of macronutrients (disorder)"
           },
           {
+            "code": "238108007",
+            "display": "Cachexia (finding)"
+          },
+          {
             "code": "238111008",
             "display": "Deficiency of micronutrients (disorder)"
+          },
+          {
+            "code": "2492009",
+            "display": "Nutritional disorder (disorder)"
           },
           {
             "code": "272588001",
             "display": "Malnutrition (calorie) (disorder)"
           },
           {
-            "code": "302872003",
-            "display": "Disorder of hyperalimentation (disorder)"
+            "code": "281583001",
+            "display": "Nutritional wasting (disorder)"
+          },
+          {
+            "code": "285588004",
+            "display": "Nutrition deficiency due to insufficient food (disorder)"
+          },
+          {
+            "code": "288517002",
+            "display": "Wasting disease (disorder)"
+          },
+          {
+            "code": "371597004",
+            "display": "Emaciated (finding)"
           },
           {
             "code": "441951000124102",
@@ -85,12 +100,93 @@
             "display": "Chronic disease-related malnutrition (disorder)"
           },
           {
+            "code": "54840006",
+            "display": "Failure to thrive (disorder)"
+          },
+          {
+            "code": "56882008",
+            "display": "Anorexia nervosa (disorder)"
+          },
+          {
             "code": "65404009",
             "display": "Undernutrition (disorder)"
           },
           {
             "code": "70241007",
             "display": "Nutritional deficiency disorder (disorder)"
+          },
+          {
+            "code": "722959000",
+            "display": "Anorexia nervosa co-occurrent with dangerously low body weight (disorder)"
+          },
+          {
+            "code": "722960005",
+            "display": "Anorexia nervosa co-occurrent with significantly low body weight (disorder)"
+          },
+          {
+            "code": "723917005",
+            "display": "Dangerously low body weight co-occurrent and due to anorexia nervosa of restricting type (disorder)"
+          },
+          {
+            "code": "723919008",
+            "display": "Significantly low body weight co-occurrent and due to anorexia nervosa of restricting type (disorder)"
+          },
+          {
+            "code": "772791006",
+            "display": "Sarcopenia (disorder)"
+          },
+          {
+            "code": "77675002",
+            "display": "Anorexia nervosa, restricting type (disorder)"
+          },
+          {
+            "code": "788876001",
+            "display": "Cachexia due to malignant neoplastic disease (finding)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "E43",
+            "display": "Unspecified severe protein-calorie malnutrition"
+          },
+          {
+            "code": "E44.0",
+            "display": "Moderate protein-calorie malnutrition"
+          },
+          {
+            "code": "E46",
+            "display": "Unspecified protein-calorie malnutrition"
+          },
+          {
+            "code": "E63.9",
+            "display": "Nutritional deficiency, unspecified"
+          },
+          {
+            "code": "M62.84",
+            "display": "Sarcopenia"
+          },
+          {
+            "code": "R62.7",
+            "display": "Adult failure to thrive"
+          },
+          {
+            "code": "R64",
+            "display": "Cachexia"
+          },
+          {
+            "code": "T73.0XXA",
+            "display": "Starvation, initial encounter"
+          },
+          {
+            "code": "T73.0XXD",
+            "display": "Starvation, subsequent encounter"
+          },
+          {
+            "code": "T73.0XXS",
+            "display": "Starvation, sequela"
           }
         ]
       }

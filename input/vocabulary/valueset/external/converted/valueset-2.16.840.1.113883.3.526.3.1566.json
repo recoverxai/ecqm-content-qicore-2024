@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1566",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-08-09T09:53:46.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-20"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1566",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1566"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1566"
     }
   ],
   "version": "20210220",
@@ -13,7 +28,8 @@
   "title": "Adult Depression Medications",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-20T01:02:00-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
@@ -62,10 +78,6 @@
           {
             "code": "1086784",
             "display": "vilazodone hydrochloride 40 MG Oral Tablet"
-          },
-          {
-            "code": "1086789",
-            "display": "{7 (vilazodone hydrochloride 10 MG Oral Tablet) / 7 (vilazodone hydrochloride 20 MG Oral Tablet) / 16 (vilazodone hydrochloride 40 MG Oral Tablet) } Pack"
           },
           {
             "code": "1098608",
@@ -126,10 +138,6 @@
           {
             "code": "1232585",
             "display": "24 HR bupropion hydrochloride 450 MG Extended Release Oral Tablet"
-          },
-          {
-            "code": "1298857",
-            "display": "maprotiline hydrochloride 25 MG Oral Tablet"
           },
           {
             "code": "1298861",
@@ -300,8 +308,8 @@
             "display": "citalopram 30 MG Oral Capsule"
           },
           {
-            "code": "2605719",
-            "display": "12 HR 5-hydroxytryptophan 100 MG Extended Release Oral Tablet"
+            "code": "2605720",
+            "display": "5-hydroxytryptophan 100 MG Extended Release Oral Tablet"
           },
           {
             "code": "2605950",

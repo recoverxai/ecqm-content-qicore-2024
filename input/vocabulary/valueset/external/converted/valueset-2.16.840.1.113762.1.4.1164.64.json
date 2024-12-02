@@ -6,16 +6,17 @@
     "lastUpdated": "2023-12-21T17:43:03.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
     ]
   },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2023-12-21"
+      "valueDate": "2017-10-25"
     }
   ],
-  "url": "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1164.64",
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1164.64",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
@@ -25,7 +26,7 @@
   "version": "20171025",
   "name": "HospitalServicesForUrologyCare",
   "title": "Hospital Services for urology care",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2017-10-25T01:00:03-04:00",
   "publisher": "LUGPA Steward",

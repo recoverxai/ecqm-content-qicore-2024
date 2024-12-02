@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1147.112",
+  "meta": {
+    "versionId": "25",
+    "lastUpdated": "2024-02-22T15:51:00.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1147.112",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1147.112"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1147.112"
     }
   ],
-  "version": "20230204",
+  "version": "20240112",
   "name": "PressureInjuryDeepTissue",
   "title": "Pressure Injury Deep Tissue",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "Mathematica PSI Steward",
   "compose": {
     "include": [
       {
@@ -44,8 +59,16 @@
             "display": "Pressure injury of deep tissue of sacral region of back (disorder)"
           },
           {
+            "code": "480837841000119108",
+            "display": "Pressure injury of deep tissue of left elbow (disorder)"
+          },
+          {
             "code": "561885931000119106",
             "display": "Deep tissue pressure injury of right heel (disorder)"
+          },
+          {
+            "code": "585603201000119101",
+            "display": "Pressure injury of deep tissue of right elbow (disorder)"
           },
           {
             "code": "705220971000119104",

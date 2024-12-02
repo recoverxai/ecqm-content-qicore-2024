@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.108.12.1020",
+  "meta": {
+    "versionId": "25",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-12-19"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.108.12.1020",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.108.12.1020"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.108.12.1020"
     }
   ],
   "version": "20171219",
@@ -13,32 +28,38 @@
   "title": "Colonoscopy",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
-        "system": "http://www.ama-assn.org/go/cpt",
+        "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "44393",
-            "display": "Colonoscopy through stoma; with ablation of tumor(s), polyp(s), or other lesion(s) not amenable to removal by hot biopsy forceps, bipolar cautery or snare technique"
+            "code": "1209098000",
+            "display": "Fiberoptic colonoscopy with biopsy of lesion of colon (procedure)"
           },
           {
-            "code": "44397",
-            "display": "Colonoscopy through stoma; with transendoscopic stent placement (includes predilation)"
+            "code": "12350003",
+            "display": "Colonoscopy with rigid sigmoidoscope through colotomy (procedure)"
           },
           {
-            "code": "45355",
-            "display": "Colonoscopy, rigid or flexible, transabdominal via colotomy, single or multiple"
+            "code": "174158000",
+            "display": "Open colonoscopy (procedure)"
           },
           {
-            "code": "45383",
-            "display": "Colonoscopy, flexible, proximal to splenic flexure; with ablation of tumor(s), polyp(s), or other lesion(s) not amenable to removal by hot biopsy forceps, bipolar cautery or snare technique"
+            "code": "235150006",
+            "display": "Total colonoscopy (procedure)"
           },
           {
-            "code": "45387",
-            "display": "Colonoscopy, flexible, proximal to splenic flexure; with transendoscopic stent placement (includes predilation)"
-          },
+            "code": "302052009",
+            "display": "Endoscopic biopsy of lesion of colon (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
           {
             "code": "44388",
             "display": "Colonoscopy through stoma; diagnostic, including collection of specimen(s) by brushing or washing, when performed (separate procedure)"
@@ -62,7 +83,21 @@
           {
             "code": "44394",
             "display": "Colonoscopy through stoma; with removal of tumor(s), polyp(s), or other lesion(s) by snare technique"
-          },
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "443998000",
+            "display": "Colonoscopy through colostomy with endoscopic biopsy of colon (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
           {
             "code": "44401",
             "display": "Colonoscopy through stoma; with ablation of tumor(s), polyp(s), or other lesion(s) (includes pre-and post-dilation and guide wire passage, when performed)"
@@ -94,7 +129,33 @@
           {
             "code": "44408",
             "display": "Colonoscopy through stoma; with decompression (for pathologic distention) (eg, volvulus, megacolon), including placement of decompression tube, when performed"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "444783004",
+            "display": "Screening colonoscopy (procedure)"
           },
+          {
+            "code": "446521004",
+            "display": "Colonoscopy and excision of mucosa of colon (procedure)"
+          },
+          {
+            "code": "446745002",
+            "display": "Colonoscopy and biopsy of colon (procedure)"
+          },
+          {
+            "code": "447021001",
+            "display": "Colonoscopy and tattooing (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
           {
             "code": "45378",
             "display": "Colonoscopy, flexible; diagnostic, including collection of specimen(s) by brushing or washing, when performed (separate procedure)"
@@ -158,7 +219,44 @@
         ]
       },
       {
-        "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "48021000087103",
+            "display": "Colonoscopy using cecal retroflexion technique (procedure)"
+          },
+          {
+            "code": "48031000087101",
+            "display": "Colonoscopy using rectal retroflexion technique (procedure)"
+          },
+          {
+            "code": "709421007",
+            "display": "Colonoscopy and dilation of stricture of colon (procedure)"
+          },
+          {
+            "code": "710293001",
+            "display": "Colonoscopy using fluoroscopic guidance (procedure)"
+          },
+          {
+            "code": "711307001",
+            "display": "Colonoscopy using plain X-ray guidance (procedure)"
+          },
+          {
+            "code": "73761001",
+            "display": "Colonoscopy (procedure)"
+          },
+          {
+            "code": "789778002",
+            "display": "Colonoscopy and fecal microbiota transplantation (procedure)"
+          },
+          {
+            "code": "8180007",
+            "display": "Fiberoptic colonoscopy through colostomy (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
         "concept": [
           {
             "code": "G0105",
@@ -167,103 +265,6 @@
           {
             "code": "G0121",
             "display": "Colorectal cancer screening; colonoscopy on individual not meeting criteria for high risk"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "174185007",
-            "display": "Diagnostic fiberoptic endoscopic examination of colon and biopsy of lesion of colon (procedure)"
-          },
-          {
-            "code": "25732003",
-            "display": "Fiberoptic colonoscopy with biopsy (procedure)"
-          },
-          {
-            "code": "275251008",
-            "display": "Diagnostic endoscopic examination of colon using fiberoptic sigmoidoscope (procedure)"
-          },
-          {
-            "code": "367535003",
-            "display": "Fiberoptic colonoscopy (procedure)"
-          },
-          {
-            "code": "1209098000",
-            "display": "Fiberoptic colonoscopy with biopsy of lesion of colon (procedure)"
-          },
-          {
-            "code": "12350003",
-            "display": "Colonoscopy with rigid sigmoidoscope through colotomy (procedure)"
-          },
-          {
-            "code": "174158000",
-            "display": "Open colonoscopy (procedure)"
-          },
-          {
-            "code": "235150006",
-            "display": "Total colonoscopy (procedure)"
-          },
-          {
-            "code": "235151005",
-            "display": "Limited colonoscopy (procedure)"
-          },
-          {
-            "code": "302052009",
-            "display": "Endoscopic biopsy of lesion of colon (procedure)"
-          },
-          {
-            "code": "34264006",
-            "display": "Intraoperative colonoscopy (procedure)"
-          },
-          {
-            "code": "443998000",
-            "display": "Colonoscopy through colostomy with endoscopic biopsy of colon (procedure)"
-          },
-          {
-            "code": "444783004",
-            "display": "Screening colonoscopy (procedure)"
-          },
-          {
-            "code": "446521004",
-            "display": "Colonoscopy and excision of mucosa of colon (procedure)"
-          },
-          {
-            "code": "446745002",
-            "display": "Colonoscopy and biopsy of colon (procedure)"
-          },
-          {
-            "code": "447021001",
-            "display": "Colonoscopy and tattooing (procedure)"
-          },
-          {
-            "code": "709421007",
-            "display": "Colonoscopy and dilatation of stricture of colon (procedure)"
-          },
-          {
-            "code": "710293001",
-            "display": "Colonoscopy using fluoroscopic guidance (procedure)"
-          },
-          {
-            "code": "711307001",
-            "display": "Colonoscopy using X-ray guidance (procedure)"
-          },
-          {
-            "code": "713154003",
-            "display": "Endoscopic submucosal dissection of rectum using colonoscope (procedure)"
-          },
-          {
-            "code": "73761001",
-            "display": "Colonoscopy (procedure)"
-          },
-          {
-            "code": "8180007",
-            "display": "Fiberoptic colonoscopy through colostomy (procedure)"
-          },
-          {
-            "code": "851000119109",
-            "display": "History of colonoscopy (situation)"
           }
         ]
       }

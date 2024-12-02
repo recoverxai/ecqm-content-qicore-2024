@@ -1,31 +1,43 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1522",
+  "meta": {
+    "versionId": "20",
+    "lastUpdated": "2024-01-24T08:50:36.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-02-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1522",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.196.12.1522"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1522"
     }
   ],
   "version": "20220212",
-  "name": "Benzodiazepine",
-  "title": "Benzodiazepine",
+  "name": "PotentiallyHarmfulBenzodiazepinesForOlderAdults",
+  "title": "Potentially Harmful Benzodiazepines for Older Adults",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-02-12T01:02:11-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
         "concept": [
           {
-            "code": "1298088",
-            "display": "flurazepam hydrochloride 15 MG Oral Capsule"
-          },
-          {
-            "code": "1298091",
-            "display": "flurazepam hydrochloride 30 MG Oral Capsule"
+            "code": "1366192",
+            "display": "clobazam 2.5 MG/ML Oral Suspension"
           },
           {
             "code": "1551393",
@@ -148,10 +160,6 @@
             "display": "oxazepam 30 MG Oral Capsule"
           },
           {
-            "code": "198183",
-            "display": "quazepam 15 MG Oral Tablet"
-          },
-          {
             "code": "198241",
             "display": "temazepam 15 MG Oral Capsule"
           },
@@ -172,6 +180,10 @@
             "display": "triazolam 0.25 MG Oral Tablet"
           },
           {
+            "code": "199450",
+            "display": "clobazam 10 MG Oral Tablet"
+          },
+          {
             "code": "2120550",
             "display": "2 ML diazepam 5 MG/ML Prefilled Syringe"
           },
@@ -182,6 +194,10 @@
           {
             "code": "238101",
             "display": "lorazepam 4 MG/ML Injectable Solution"
+          },
+          {
+            "code": "246172",
+            "display": "clobazam 20 MG Oral Tablet"
           },
           {
             "code": "2541170",
@@ -276,6 +292,10 @@
             "display": "midazolam 2 MG/ML Oral Solution"
           },
           {
+            "code": "427538",
+            "display": "clobazam 5 MG Oral Tablet"
+          },
+          {
             "code": "433798",
             "display": "24 HR alprazolam 0.5 MG Extended Release Oral Tablet"
           },
@@ -314,10 +334,6 @@
           {
             "code": "763028",
             "display": "1 ML lorazepam 2 MG/ML Cartridge"
-          },
-          {
-            "code": "763029",
-            "display": "1 ML lorazepam 4 MG/ML Cartridge"
           },
           {
             "code": "801957",

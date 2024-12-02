@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1218",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2024-01-30T10:49:21.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1218",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.196.12.1218"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1218"
     }
   ],
   "version": "20170504",
-  "name": "ChildInfluenzaImmunizationAdministered",
-  "title": "Child Influenza Immunization Administered",
+  "name": "ChildInfluenzaVaccine",
+  "title": "Child Influenza Vaccine",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -21,27 +37,27 @@
         "concept": [
           {
             "code": "140",
-            "display": "Influenza, seasonal, injectable, preservative free"
+            "display": "Influenza, split virus, trivalent, injectable, preservative free"
           },
           {
             "code": "141",
-            "display": "Influenza, seasonal, injectable"
+            "display": "Influenza, split virus, trivalent, injectable, contains preservative"
           },
           {
             "code": "150",
-            "display": "Influenza, injectable, quadrivalent, preservative free"
+            "display": "Influenza, split virus, quadrivalent, injectable, preservative free"
           },
           {
             "code": "153",
-            "display": "Influenza, injectable, Madin Darby Canine Kidney, preservative free"
+            "display": "Influenza, Madin Darby Canine Kidney, subunit, trivalent, injectable, preservative free"
           },
           {
             "code": "155",
-            "display": "Seasonal, trivalent, recombinant, injectable influenza vaccine, preservative free"
+            "display": "Influenza, recombinant, trivalent, injectable, preservative free"
           },
           {
             "code": "158",
-            "display": "influenza, injectable, quadrivalent, contains preservative"
+            "display": "Influenza, split virus, quadrivalent, injectable, contains preservative"
           },
           {
             "code": "161",
@@ -49,11 +65,11 @@
           },
           {
             "code": "171",
-            "display": "Influenza, injectable, Madin Darby Canine Kidney, preservative free, quadrivalent"
+            "display": "Influenza, Madin Darby Canine Kidney, subunit, quadrivalent, injectable, preservative free"
           },
           {
             "code": "186",
-            "display": "Influenza, injectable, Madin Darby Canine Kidney,  quadrivalent with preservative"
+            "display": "Influenza, Madin Darby Canine Kidney, subunit, quadrivalent, injectable, contains preservative"
           },
           {
             "code": "88",

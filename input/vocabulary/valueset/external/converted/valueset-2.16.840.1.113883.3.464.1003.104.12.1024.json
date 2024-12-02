@@ -1,21 +1,102 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.104.12.1024",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-09-06T09:16:38.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-21"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.104.12.1024",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.104.12.1024"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.104.12.1024"
     }
   ],
-  "version": "20170613",
+  "version": "20240221",
   "name": "IschemicStroke",
   "title": "Ischemic Stroke",
-  "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "status": "retired",
+  "date": "2024-02-21T01:24:22-05:00",
+  "publisher": "Acumen OP Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "195186005",
+            "display": "Cerebral infarction due to embolism of precerebral arteries (disorder)"
+          },
+          {
+            "code": "195190007",
+            "display": "Cerebral infarction due to embolism of cerebral arteries (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "concept": [
+          {
+            "code": "433.01",
+            "display": "Occlusion and stenosis of basilar artery with cerebral infarction"
+          },
+          {
+            "code": "433.10",
+            "display": "Occlusion and stenosis of carotid artery without mention of cerebral infarction"
+          },
+          {
+            "code": "433.11",
+            "display": "Occlusion and stenosis of carotid artery with cerebral infarction"
+          },
+          {
+            "code": "433.21",
+            "display": "Occlusion and stenosis of vertebral artery with cerebral infarction"
+          },
+          {
+            "code": "433.31",
+            "display": "Occlusion and stenosis of multiple and bilateral precerebral arteries with cerebral infarction"
+          },
+          {
+            "code": "433.81",
+            "display": "Occlusion and stenosis of other specified precerebral artery with cerebral infarction"
+          },
+          {
+            "code": "433.91",
+            "display": "Occlusion and stenosis of unspecified precerebral artery with cerebral infarction"
+          },
+          {
+            "code": "434.00",
+            "display": "Cerebral thrombosis without mention of cerebral infarction"
+          },
+          {
+            "code": "434.01",
+            "display": "Cerebral thrombosis with cerebral infarction"
+          },
+          {
+            "code": "434.11",
+            "display": "Cerebral embolism with cerebral infarction"
+          },
+          {
+            "code": "434.91",
+            "display": "Cerebral artery occlusion, unspecified with cerebral infarction"
+          },
+          {
+            "code": "436",
+            "display": "Acute, but ill-defined, cerebrovascular disease"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -134,72 +215,6 @@
           {
             "code": "I63.49",
             "display": "Cerebral infarction due to embolism of other cerebral artery"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
-        "concept": [
-          {
-            "code": "433.01",
-            "display": "Occlusion and stenosis of basilar artery with cerebral infarction"
-          },
-          {
-            "code": "433.10",
-            "display": "Occlusion and stenosis of carotid artery without mention of cerebral infarction"
-          },
-          {
-            "code": "433.11",
-            "display": "Occlusion and stenosis of carotid artery with cerebral infarction"
-          },
-          {
-            "code": "433.21",
-            "display": "Occlusion and stenosis of vertebral artery with cerebral infarction"
-          },
-          {
-            "code": "433.31",
-            "display": "Occlusion and stenosis of multiple and bilateral precerebral arteries with cerebral infarction"
-          },
-          {
-            "code": "433.81",
-            "display": "Occlusion and stenosis of other specified precerebral artery with cerebral infarction"
-          },
-          {
-            "code": "433.91",
-            "display": "Occlusion and stenosis of unspecified precerebral artery with cerebral infarction"
-          },
-          {
-            "code": "434.00",
-            "display": "Cerebral thrombosis without mention of cerebral infarction"
-          },
-          {
-            "code": "434.01",
-            "display": "Cerebral thrombosis with cerebral infarction"
-          },
-          {
-            "code": "434.11",
-            "display": "Cerebral embolism with cerebral infarction"
-          },
-          {
-            "code": "434.91",
-            "display": "Cerebral artery occlusion, unspecified with cerebral infarction"
-          },
-          {
-            "code": "436",
-            "display": "Acute, but ill-defined, cerebrovascular disease"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "195186005",
-            "display": "Cerebral infarction due to embolism of precerebral arteries (disorder)"
-          },
-          {
-            "code": "195190007",
-            "display": "Cerebral infarction due to embolism of cerebral arteries (disorder)"
           }
         ]
       }

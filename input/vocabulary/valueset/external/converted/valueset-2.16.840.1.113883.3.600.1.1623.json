@@ -1,21 +1,394 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.600.1.1623",
+  "meta": {
+    "versionId": "40",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-20"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1.1623",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.600.1.1623"
+      "value": "urn:oid:2.16.840.1.113883.3.600.1.1623"
     }
   ],
   "version": "20210220",
-  "name": "PregnancyObstetricorMaternalDiagnoses",
+  "name": "PregnancyObstetricOrMaternalDiagnoses",
   "title": "Pregnancy Obstetric or Maternal Diagnoses",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "Mathematica",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10231000132102",
+            "display": "In-vitro fertilization pregnancy (finding)"
+          },
+          {
+            "code": "102872000",
+            "display": "Pregnancy on oral contraceptive (finding)"
+          },
+          {
+            "code": "102875003",
+            "display": "Surrogate pregnancy (finding)"
+          },
+          {
+            "code": "11082009",
+            "display": "Abnormal pregnancy (finding)"
+          },
+          {
+            "code": "127364007",
+            "display": "Primigravida (finding)"
+          },
+          {
+            "code": "134781000119106",
+            "display": "High risk pregnancy due to recurrent miscarriage (finding)"
+          },
+          {
+            "code": "14080002",
+            "display": "Illegitimate pregnancy, life event (finding)"
+          },
+          {
+            "code": "14418008",
+            "display": "Precocious pregnancy (finding)"
+          },
+          {
+            "code": "16356006",
+            "display": "Multiple pregnancy (finding)"
+          },
+          {
+            "code": "16836261000119107",
+            "display": "Ectopic pregnancy of left ovary (disorder)"
+          },
+          {
+            "code": "16836351000119100",
+            "display": "Ectopic pregnancy of right ovary (disorder)"
+          },
+          {
+            "code": "16836391000119105",
+            "display": "Pregnancy of left fallopian tube (disorder)"
+          },
+          {
+            "code": "16836891000119104",
+            "display": "Pregnancy of right fallopian tube (disorder)"
+          },
+          {
+            "code": "169488004",
+            "display": "Contraceptive intrauterine device failure - pregnant (finding)"
+          },
+          {
+            "code": "169560008",
+            "display": "Pregnant - urine test confirms (finding)"
+          },
+          {
+            "code": "169561007",
+            "display": "Pregnant - blood test confirms (finding)"
+          },
+          {
+            "code": "169562000",
+            "display": "Pregnant - vaginal examination confirms (finding)"
+          },
+          {
+            "code": "169563005",
+            "display": "Pregnant - on history (finding)"
+          },
+          {
+            "code": "169564004",
+            "display": "Pregnant - on abdominal palpation (finding)"
+          },
+          {
+            "code": "169565003",
+            "display": "Pregnant - planned (finding)"
+          },
+          {
+            "code": "169566002",
+            "display": "Pregnancy unplanned but wanted (finding)"
+          },
+          {
+            "code": "169567006",
+            "display": "Pregnancy unplanned and unwanted (finding)"
+          },
+          {
+            "code": "169568001",
+            "display": "Unplanned pregnancy unknown if child is wanted (finding)"
+          },
+          {
+            "code": "17285009",
+            "display": "Intraperitoneal pregnancy (disorder)"
+          },
+          {
+            "code": "198624007",
+            "display": "Membranous pregnancy (disorder)"
+          },
+          {
+            "code": "198626009",
+            "display": "Mesenteric pregnancy (disorder)"
+          },
+          {
+            "code": "198627000",
+            "display": "Angular pregnancy (disorder)"
+          },
+          {
+            "code": "199306007",
+            "display": "Continuing pregnancy after abortion of one fetus or more (disorder)"
+          },
+          {
+            "code": "199715003",
+            "display": "Grand multiparity with antenatal problem (finding)"
+          },
+          {
+            "code": "22281000119101",
+            "display": "Post-term pregnancy of 40 to 42 weeks (finding)"
+          },
+          {
+            "code": "237233002",
+            "display": "Concealed pregnancy (finding)"
+          },
+          {
+            "code": "237238006",
+            "display": "Pregnancy with uncertain dates (finding)"
+          },
+          {
+            "code": "237239003",
+            "display": "Low risk pregnancy (finding)"
+          },
+          {
+            "code": "237240001",
+            "display": "Teenage pregnancy (finding)"
+          },
+          {
+            "code": "237241002",
+            "display": "Viable pregnancy (finding)"
+          },
+          {
+            "code": "237242009",
+            "display": "Non-viable pregnancy (finding)"
+          },
+          {
+            "code": "237254009",
+            "display": "Unruptured tubal pregnancy (disorder)"
+          },
+          {
+            "code": "239101008",
+            "display": "Pregnancy eruption (disorder)"
+          },
+          {
+            "code": "248985009",
+            "display": "Presentation of pregnancy (finding)"
+          },
+          {
+            "code": "276367008",
+            "display": "Wanted pregnancy (finding)"
+          },
+          {
+            "code": "276881003",
+            "display": "Secondary abdominal pregnancy (disorder)"
+          },
+          {
+            "code": "281307002",
+            "display": "Uncertain viability of pregnancy (finding)"
+          },
+          {
+            "code": "29399001",
+            "display": "Elderly primigravida (finding)"
+          },
+          {
+            "code": "314204000",
+            "display": "Early stage of pregnancy (finding)"
+          },
+          {
+            "code": "31601007",
+            "display": "Combined pregnancy (disorder)"
+          },
+          {
+            "code": "34801009",
+            "display": "Ectopic pregnancy (disorder)"
+          },
+          {
+            "code": "35381000119101",
+            "display": "Quadruplet pregnancy with loss of one or more fetuses (disorder)"
+          },
+          {
+            "code": "35656003",
+            "display": "Intraligamentous pregnancy (disorder)"
+          },
+          {
+            "code": "36801000119105",
+            "display": "Continuing triplet pregnancy after spontaneous abortion of one or more fetuses (disorder)"
+          },
+          {
+            "code": "38720006",
+            "display": "Septuplet pregnancy (finding)"
+          },
+          {
+            "code": "41587001",
+            "display": "Third trimester pregnancy (finding)"
+          },
+          {
+            "code": "417044008",
+            "display": "Hydatidiform mole, benign (disorder)"
+          },
+          {
+            "code": "41991004",
+            "display": "Angiectasis pregnancy (disorder)"
+          },
+          {
+            "code": "429187001",
+            "display": "Continuing pregnancy after intrauterine death of twin fetus (disorder)"
+          },
+          {
+            "code": "43990006",
+            "display": "Sextuplet pregnancy (finding)"
+          },
+          {
+            "code": "442478007",
+            "display": "Multiple pregnancy involving intrauterine pregnancy and tubal pregnancy (disorder)"
+          },
+          {
+            "code": "444661007",
+            "display": "High risk pregnancy due to history of preterm labor (finding)"
+          },
+          {
+            "code": "45307008",
+            "display": "Extrachorial pregnancy (finding)"
+          },
+          {
+            "code": "457811000124103",
+            "display": "Normal pregnancy in primigravida (finding)"
+          },
+          {
+            "code": "457821000124106",
+            "display": "Normal pregnancy in multigravida (finding)"
+          },
+          {
+            "code": "459167000",
+            "display": "Monochorionic twin pregnancy (finding)"
+          },
+          {
+            "code": "459169002",
+            "display": "Monochorionic diamniotic twin pregnancy with similar amniotic fluid volumes (finding)"
+          },
+          {
+            "code": "459170001",
+            "display": "Monochorionic diamniotic twin pregnancy with dissimilar amniotic fluid volumes (disorder)"
+          },
+          {
+            "code": "47200007",
+            "display": "High risk pregnancy (finding)"
+          },
+          {
+            "code": "472321009",
+            "display": "Continuing pregnancy after intrauterine death of one twin with intrauterine retention of dead twin (disorder)"
+          },
+          {
+            "code": "57630001",
+            "display": "First trimester pregnancy (finding)"
+          },
+          {
+            "code": "58532003",
+            "display": "Unwanted pregnancy (finding)"
+          },
+          {
+            "code": "59466002",
+            "display": "Second trimester pregnancy (finding)"
+          },
+          {
+            "code": "60000008",
+            "display": "Mesometric pregnancy (disorder)"
+          },
+          {
+            "code": "60810003",
+            "display": "Quadruplet pregnancy (finding)"
+          },
+          {
+            "code": "64254006",
+            "display": "Triplet pregnancy (finding)"
+          },
+          {
+            "code": "65147003",
+            "display": "Twin pregnancy (finding)"
+          },
+          {
+            "code": "65727000",
+            "display": "Intrauterine pregnancy (finding)"
+          },
+          {
+            "code": "713575004",
+            "display": "Dizygotic twin pregnancy (finding)"
+          },
+          {
+            "code": "713576003",
+            "display": "Monozygotic twin pregnancy (finding)"
+          },
+          {
+            "code": "72892002",
+            "display": "Normal pregnancy (finding)"
+          },
+          {
+            "code": "77386006",
+            "display": "Pregnancy (finding)"
+          },
+          {
+            "code": "786067000",
+            "display": "Intramural ectopic pregnancy of myometrium (disorder)"
+          },
+          {
+            "code": "79290002",
+            "display": "Cervical pregnancy (disorder)"
+          },
+          {
+            "code": "79586000",
+            "display": "Tubal pregnancy (disorder)"
+          },
+          {
+            "code": "80997009",
+            "display": "Quintuplet pregnancy (finding)"
+          },
+          {
+            "code": "82661006",
+            "display": "Abdominal pregnancy (disorder)"
+          },
+          {
+            "code": "83074005",
+            "display": "Unplanned pregnancy (finding)"
+          },
+          {
+            "code": "87527008",
+            "display": "Term pregnancy (finding)"
+          },
+          {
+            "code": "87605005",
+            "display": "Cornual pregnancy (disorder)"
+          },
+          {
+            "code": "90968009",
+            "display": "Prolonged pregnancy (disorder)"
+          },
+          {
+            "code": "9279009",
+            "display": "Extra-amniotic pregnancy (finding)"
+          },
+          {
+            "code": "9899009",
+            "display": "Ovarian pregnancy (disorder)"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -3666,1255 +4039,6 @@
           {
             "code": "O88.111",
             "display": "Amniotic fluid embolism in pregnancy, first trimester"
-          },
-          {
-            "code": "O88.112",
-            "display": "Amniotic fluid embolism in pregnancy, second trimester"
-          },
-          {
-            "code": "O88.113",
-            "display": "Amniotic fluid embolism in pregnancy, third trimester"
-          },
-          {
-            "code": "O88.119",
-            "display": "Amniotic fluid embolism in pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O88.12",
-            "display": "Amniotic fluid embolism in childbirth"
-          },
-          {
-            "code": "O88.13",
-            "display": "Amniotic fluid embolism in the puerperium"
-          },
-          {
-            "code": "O88.211",
-            "display": "Thromboembolism in pregnancy, first trimester"
-          },
-          {
-            "code": "O88.212",
-            "display": "Thromboembolism in pregnancy, second trimester"
-          },
-          {
-            "code": "O88.213",
-            "display": "Thromboembolism in pregnancy, third trimester"
-          },
-          {
-            "code": "O88.219",
-            "display": "Thromboembolism in pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O88.22",
-            "display": "Thromboembolism in childbirth"
-          },
-          {
-            "code": "O88.23",
-            "display": "Thromboembolism in the puerperium"
-          },
-          {
-            "code": "O88.311",
-            "display": "Pyemic and septic embolism in pregnancy, first trimester"
-          },
-          {
-            "code": "O88.312",
-            "display": "Pyemic and septic embolism in pregnancy, second trimester"
-          },
-          {
-            "code": "O88.313",
-            "display": "Pyemic and septic embolism in pregnancy, third trimester"
-          },
-          {
-            "code": "O88.319",
-            "display": "Pyemic and septic embolism in pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O88.32",
-            "display": "Pyemic and septic embolism in childbirth"
-          },
-          {
-            "code": "O88.33",
-            "display": "Pyemic and septic embolism in the puerperium"
-          },
-          {
-            "code": "O88.811",
-            "display": "Other embolism in pregnancy, first trimester"
-          },
-          {
-            "code": "O88.812",
-            "display": "Other embolism in pregnancy, second trimester"
-          },
-          {
-            "code": "O88.813",
-            "display": "Other embolism in pregnancy, third trimester"
-          },
-          {
-            "code": "O88.819",
-            "display": "Other embolism in pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O88.82",
-            "display": "Other embolism in childbirth"
-          },
-          {
-            "code": "O88.83",
-            "display": "Other embolism in the puerperium"
-          },
-          {
-            "code": "O89.09",
-            "display": "Other pulmonary complications of anesthesia during the puerperium"
-          },
-          {
-            "code": "O89.1",
-            "display": "Cardiac complications of anesthesia during the puerperium"
-          },
-          {
-            "code": "O89.2",
-            "display": "Central nervous system complications of anesthesia during the puerperium"
-          },
-          {
-            "code": "O89.8",
-            "display": "Other complications of anesthesia during the puerperium"
-          },
-          {
-            "code": "O89.9",
-            "display": "Complication of anesthesia during the puerperium, unspecified"
-          },
-          {
-            "code": "O90.0",
-            "display": "Disruption of cesarean delivery wound"
-          },
-          {
-            "code": "O90.1",
-            "display": "Disruption of perineal obstetric wound"
-          },
-          {
-            "code": "O90.2",
-            "display": "Hematoma of obstetric wound"
-          },
-          {
-            "code": "O90.3",
-            "display": "Peripartum cardiomyopathy"
-          },
-          {
-            "code": "O90.4",
-            "display": "Postpartum acute kidney failure"
-          },
-          {
-            "code": "O90.5",
-            "display": "Postpartum thyroiditis"
-          },
-          {
-            "code": "O90.6",
-            "display": "Postpartum mood disturbance"
-          },
-          {
-            "code": "O90.81",
-            "display": "Anemia of the puerperium"
-          },
-          {
-            "code": "O90.89",
-            "display": "Other complications of the puerperium, not elsewhere classified"
-          },
-          {
-            "code": "O90.9",
-            "display": "Complication of the puerperium, unspecified"
-          },
-          {
-            "code": "O91.011",
-            "display": "Infection of nipple associated with pregnancy, first trimester"
-          },
-          {
-            "code": "O91.012",
-            "display": "Infection of nipple associated with pregnancy, second trimester"
-          },
-          {
-            "code": "O91.013",
-            "display": "Infection of nipple associated with pregnancy, third trimester"
-          },
-          {
-            "code": "O91.019",
-            "display": "Infection of nipple associated with pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O91.02",
-            "display": "Infection of nipple associated with the puerperium"
-          },
-          {
-            "code": "O91.111",
-            "display": "Abscess of breast associated with pregnancy, first trimester"
-          },
-          {
-            "code": "O91.112",
-            "display": "Abscess of breast associated with pregnancy, second trimester"
-          },
-          {
-            "code": "O91.113",
-            "display": "Abscess of breast associated with pregnancy, third trimester"
-          },
-          {
-            "code": "O91.119",
-            "display": "Abscess of breast associated with pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O91.12",
-            "display": "Abscess of breast associated with the puerperium"
-          },
-          {
-            "code": "O91.211",
-            "display": "Nonpurulent mastitis associated with pregnancy, first trimester"
-          },
-          {
-            "code": "O91.212",
-            "display": "Nonpurulent mastitis associated with pregnancy, second trimester"
-          },
-          {
-            "code": "O91.213",
-            "display": "Nonpurulent mastitis associated with pregnancy, third trimester"
-          },
-          {
-            "code": "O91.219",
-            "display": "Nonpurulent mastitis associated with pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O91.22",
-            "display": "Nonpurulent mastitis associated with the puerperium"
-          },
-          {
-            "code": "O91.23",
-            "display": "Nonpurulent mastitis associated with lactation"
-          },
-          {
-            "code": "O92.011",
-            "display": "Retracted nipple associated with pregnancy, first trimester"
-          },
-          {
-            "code": "O92.012",
-            "display": "Retracted nipple associated with pregnancy, second trimester"
-          },
-          {
-            "code": "O92.013",
-            "display": "Retracted nipple associated with pregnancy, third trimester"
-          },
-          {
-            "code": "O92.019",
-            "display": "Retracted nipple associated with pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O92.03",
-            "display": "Retracted nipple associated with lactation"
-          },
-          {
-            "code": "O92.111",
-            "display": "Cracked nipple associated with pregnancy, first trimester"
-          },
-          {
-            "code": "O92.112",
-            "display": "Cracked nipple associated with pregnancy, second trimester"
-          },
-          {
-            "code": "O92.113",
-            "display": "Cracked nipple associated with pregnancy, third trimester"
-          },
-          {
-            "code": "O92.119",
-            "display": "Cracked nipple associated with pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O92.13",
-            "display": "Cracked nipple associated with lactation"
-          },
-          {
-            "code": "O92.20",
-            "display": "Unspecified disorder of breast associated with pregnancy and the puerperium"
-          },
-          {
-            "code": "O92.29",
-            "display": "Other disorders of breast associated with pregnancy and the puerperium"
-          },
-          {
-            "code": "O92.3",
-            "display": "Agalactia"
-          },
-          {
-            "code": "O92.5",
-            "display": "Suppressed lactation"
-          },
-          {
-            "code": "O92.6",
-            "display": "Galactorrhea"
-          },
-          {
-            "code": "O92.70",
-            "display": "Unspecified disorders of lactation"
-          },
-          {
-            "code": "O92.79",
-            "display": "Other disorders of lactation"
-          },
-          {
-            "code": "O94",
-            "display": "Sequelae of complication of pregnancy, childbirth, and the puerperium"
-          },
-          {
-            "code": "O98.011",
-            "display": "Tuberculosis complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O98.012",
-            "display": "Tuberculosis complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O98.013",
-            "display": "Tuberculosis complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O98.019",
-            "display": "Tuberculosis complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O98.02",
-            "display": "Tuberculosis complicating childbirth"
-          },
-          {
-            "code": "O98.03",
-            "display": "Tuberculosis complicating the puerperium"
-          },
-          {
-            "code": "O98.111",
-            "display": "Syphilis complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O98.112",
-            "display": "Syphilis complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O98.113",
-            "display": "Syphilis complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O98.119",
-            "display": "Syphilis complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O98.12",
-            "display": "Syphilis complicating childbirth"
-          },
-          {
-            "code": "O98.13",
-            "display": "Syphilis complicating the puerperium"
-          },
-          {
-            "code": "O98.211",
-            "display": "Gonorrhea complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O98.212",
-            "display": "Gonorrhea complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O98.213",
-            "display": "Gonorrhea complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O98.219",
-            "display": "Gonorrhea complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O98.22",
-            "display": "Gonorrhea complicating childbirth"
-          },
-          {
-            "code": "O98.23",
-            "display": "Gonorrhea complicating the puerperium"
-          },
-          {
-            "code": "O98.311",
-            "display": "Other infections with a predominantly sexual mode of transmission complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O98.312",
-            "display": "Other infections with a predominantly sexual mode of transmission complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O98.313",
-            "display": "Other infections with a predominantly sexual mode of transmission complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O98.319",
-            "display": "Other infections with a predominantly sexual mode of transmission complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O98.32",
-            "display": "Other infections with a predominantly sexual mode of transmission complicating childbirth"
-          },
-          {
-            "code": "O98.33",
-            "display": "Other infections with a predominantly sexual mode of transmission complicating the puerperium"
-          },
-          {
-            "code": "O98.42",
-            "display": "Viral hepatitis complicating childbirth"
-          },
-          {
-            "code": "O98.43",
-            "display": "Viral hepatitis complicating the puerperium"
-          },
-          {
-            "code": "O98.511",
-            "display": "Other viral diseases complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O98.512",
-            "display": "Other viral diseases complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O98.513",
-            "display": "Other viral diseases complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O98.519",
-            "display": "Other viral diseases complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O98.52",
-            "display": "Other viral diseases complicating childbirth"
-          },
-          {
-            "code": "O98.53",
-            "display": "Other viral diseases complicating the puerperium"
-          },
-          {
-            "code": "O98.611",
-            "display": "Protozoal diseases complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O98.612",
-            "display": "Protozoal diseases complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O98.613",
-            "display": "Protozoal diseases complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O98.619",
-            "display": "Protozoal diseases complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O98.62",
-            "display": "Protozoal diseases complicating childbirth"
-          },
-          {
-            "code": "O98.63",
-            "display": "Protozoal diseases complicating the puerperium"
-          },
-          {
-            "code": "O98.811",
-            "display": "Other maternal infectious and parasitic diseases complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O98.812",
-            "display": "Other maternal infectious and parasitic diseases complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O98.813",
-            "display": "Other maternal infectious and parasitic diseases complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O98.819",
-            "display": "Other maternal infectious and parasitic diseases complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O98.82",
-            "display": "Other maternal infectious and parasitic diseases complicating childbirth"
-          },
-          {
-            "code": "O98.83",
-            "display": "Other maternal infectious and parasitic diseases complicating the puerperium"
-          },
-          {
-            "code": "O98.911",
-            "display": "Unspecified maternal infectious and parasitic disease complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O98.912",
-            "display": "Unspecified maternal infectious and parasitic disease complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O98.913",
-            "display": "Unspecified maternal infectious and parasitic disease complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O98.919",
-            "display": "Unspecified maternal infectious and parasitic disease complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O98.92",
-            "display": "Unspecified maternal infectious and parasitic disease complicating childbirth"
-          },
-          {
-            "code": "O98.93",
-            "display": "Unspecified maternal infectious and parasitic disease complicating the puerperium"
-          },
-          {
-            "code": "O99.011",
-            "display": "Anemia complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.012",
-            "display": "Anemia complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.013",
-            "display": "Anemia complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.019",
-            "display": "Anemia complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.02",
-            "display": "Anemia complicating childbirth"
-          },
-          {
-            "code": "O99.03",
-            "display": "Anemia complicating the puerperium"
-          },
-          {
-            "code": "O99.111",
-            "display": "Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.112",
-            "display": "Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.113",
-            "display": "Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.119",
-            "display": "Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.12",
-            "display": "Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating childbirth"
-          },
-          {
-            "code": "O99.13",
-            "display": "Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating the puerperium"
-          },
-          {
-            "code": "O99.210",
-            "display": "Obesity complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.211",
-            "display": "Obesity complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.212",
-            "display": "Obesity complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.213",
-            "display": "Obesity complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.214",
-            "display": "Obesity complicating childbirth"
-          },
-          {
-            "code": "O99.215",
-            "display": "Obesity complicating the puerperium"
-          },
-          {
-            "code": "O99.280",
-            "display": "Endocrine, nutritional and metabolic diseases complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.281",
-            "display": "Endocrine, nutritional and metabolic diseases complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.282",
-            "display": "Endocrine, nutritional and metabolic diseases complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.283",
-            "display": "Endocrine, nutritional and metabolic diseases complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.284",
-            "display": "Endocrine, nutritional and metabolic diseases complicating childbirth"
-          },
-          {
-            "code": "O99.285",
-            "display": "Endocrine, nutritional and metabolic diseases complicating the puerperium"
-          },
-          {
-            "code": "O99.320",
-            "display": "Drug use complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.321",
-            "display": "Drug use complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.322",
-            "display": "Drug use complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.323",
-            "display": "Drug use complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.324",
-            "display": "Drug use complicating childbirth"
-          },
-          {
-            "code": "O99.325",
-            "display": "Drug use complicating the puerperium"
-          },
-          {
-            "code": "O99.330",
-            "display": "Smoking (tobacco) complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.331",
-            "display": "Smoking (tobacco) complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.332",
-            "display": "Smoking (tobacco) complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.333",
-            "display": "Smoking (tobacco) complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.334",
-            "display": "Smoking (tobacco) complicating childbirth"
-          },
-          {
-            "code": "O99.335",
-            "display": "Smoking (tobacco) complicating the puerperium"
-          },
-          {
-            "code": "O99.340",
-            "display": "Other mental disorders complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.341",
-            "display": "Other mental disorders complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.342",
-            "display": "Other mental disorders complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.343",
-            "display": "Other mental disorders complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.344",
-            "display": "Other mental disorders complicating childbirth"
-          },
-          {
-            "code": "O99.345",
-            "display": "Other mental disorders complicating the puerperium"
-          },
-          {
-            "code": "O99.350",
-            "display": "Diseases of the nervous system complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.351",
-            "display": "Diseases of the nervous system complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.352",
-            "display": "Diseases of the nervous system complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.353",
-            "display": "Diseases of the nervous system complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.354",
-            "display": "Diseases of the nervous system complicating childbirth"
-          },
-          {
-            "code": "O99.355",
-            "display": "Diseases of the nervous system complicating the puerperium"
-          },
-          {
-            "code": "O99.411",
-            "display": "Diseases of the circulatory system complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.412",
-            "display": "Diseases of the circulatory system complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.413",
-            "display": "Diseases of the circulatory system complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.419",
-            "display": "Diseases of the circulatory system complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.42",
-            "display": "Diseases of the circulatory system complicating childbirth"
-          },
-          {
-            "code": "O99.43",
-            "display": "Diseases of the circulatory system complicating the puerperium"
-          },
-          {
-            "code": "O99.810",
-            "display": "Abnormal glucose complicating pregnancy"
-          },
-          {
-            "code": "O99.814",
-            "display": "Abnormal glucose complicating childbirth"
-          },
-          {
-            "code": "O99.815",
-            "display": "Abnormal glucose complicating the puerperium"
-          },
-          {
-            "code": "O99.834",
-            "display": "Other infection carrier state complicating childbirth"
-          },
-          {
-            "code": "O99.835",
-            "display": "Other infection carrier state complicating the puerperium"
-          },
-          {
-            "code": "O99.840",
-            "display": "Bariatric surgery status complicating pregnancy, unspecified trimester"
-          },
-          {
-            "code": "O99.841",
-            "display": "Bariatric surgery status complicating pregnancy, first trimester"
-          },
-          {
-            "code": "O99.842",
-            "display": "Bariatric surgery status complicating pregnancy, second trimester"
-          },
-          {
-            "code": "O99.843",
-            "display": "Bariatric surgery status complicating pregnancy, third trimester"
-          },
-          {
-            "code": "O99.844",
-            "display": "Bariatric surgery status complicating childbirth"
-          },
-          {
-            "code": "O99.845",
-            "display": "Bariatric surgery status complicating the puerperium"
-          },
-          {
-            "code": "O99.891",
-            "display": "Other specified diseases and conditions complicating pregnancy"
-          },
-          {
-            "code": "O99.892",
-            "display": "Other specified diseases and conditions complicating childbirth"
-          },
-          {
-            "code": "O99.893",
-            "display": "Other specified diseases and conditions complicating puerperium"
-          },
-          {
-            "code": "Z33.1",
-            "display": "Pregnant state, incidental"
-          },
-          {
-            "code": "Z33.2",
-            "display": "Encounter for elective termination of pregnancy"
-          },
-          {
-            "code": "Z33.3",
-            "display": "Pregnant state, gestational carrier"
-          },
-          {
-            "code": "Z34.00",
-            "display": "Encounter for supervision of normal first pregnancy, unspecified trimester"
-          },
-          {
-            "code": "Z34.01",
-            "display": "Encounter for supervision of normal first pregnancy, first trimester"
-          },
-          {
-            "code": "Z34.02",
-            "display": "Encounter for supervision of normal first pregnancy, second trimester"
-          },
-          {
-            "code": "Z34.03",
-            "display": "Encounter for supervision of normal first pregnancy, third trimester"
-          },
-          {
-            "code": "Z34.80",
-            "display": "Encounter for supervision of other normal pregnancy, unspecified trimester"
-          },
-          {
-            "code": "Z34.81",
-            "display": "Encounter for supervision of other normal pregnancy, first trimester"
-          },
-          {
-            "code": "Z34.82",
-            "display": "Encounter for supervision of other normal pregnancy, second trimester"
-          },
-          {
-            "code": "Z34.83",
-            "display": "Encounter for supervision of other normal pregnancy, third trimester"
-          },
-          {
-            "code": "Z34.90",
-            "display": "Encounter for supervision of normal pregnancy, unspecified, unspecified trimester"
-          },
-          {
-            "code": "Z34.91",
-            "display": "Encounter for supervision of normal pregnancy, unspecified, first trimester"
-          },
-          {
-            "code": "Z34.92",
-            "display": "Encounter for supervision of normal pregnancy, unspecified, second trimester"
-          },
-          {
-            "code": "Z34.93",
-            "display": "Encounter for supervision of normal pregnancy, unspecified, third trimester"
-          },
-          {
-            "code": "Z36.0",
-            "display": "Encounter for antenatal screening for chromosomal anomalies"
-          },
-          {
-            "code": "Z36.1",
-            "display": "Encounter for antenatal screening for raised alphafetoprotein level"
-          },
-          {
-            "code": "Z36.2",
-            "display": "Encounter for other antenatal screening follow-up"
-          },
-          {
-            "code": "Z36.3",
-            "display": "Encounter for antenatal screening for malformations"
-          },
-          {
-            "code": "Z36.4",
-            "display": "Encounter for antenatal screening for fetal growth retardation"
-          },
-          {
-            "code": "Z36.5",
-            "display": "Encounter for antenatal screening for isoimmunization"
-          },
-          {
-            "code": "Z36.81",
-            "display": "Encounter for antenatal screening for hydrops fetalis"
-          },
-          {
-            "code": "Z36.82",
-            "display": "Encounter for antenatal screening for nuchal translucency"
-          },
-          {
-            "code": "Z36.84",
-            "display": "Encounter for antenatal screening for fetal lung maturity"
-          },
-          {
-            "code": "Z36.85",
-            "display": "Encounter for antenatal screening for Streptococcus B"
-          },
-          {
-            "code": "Z36.86",
-            "display": "Encounter for antenatal screening for cervical length"
-          },
-          {
-            "code": "Z36.87",
-            "display": "Encounter for antenatal screening for uncertain dates"
-          },
-          {
-            "code": "Z36.88",
-            "display": "Encounter for antenatal screening for fetal macrosomia"
-          },
-          {
-            "code": "Z36.89",
-            "display": "Encounter for other specified antenatal screening"
-          },
-          {
-            "code": "Z36.8A",
-            "display": "Encounter for antenatal screening for other genetic defects"
-          },
-          {
-            "code": "Z36.9",
-            "display": "Encounter for antenatal screening, unspecified"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "10231000132102",
-            "display": "In-vitro fertilization pregnancy (finding)"
-          },
-          {
-            "code": "102872000",
-            "display": "Pregnancy on oral contraceptive (finding)"
-          },
-          {
-            "code": "102875003",
-            "display": "Surrogate pregnancy (finding)"
-          },
-          {
-            "code": "11082009",
-            "display": "Abnormal pregnancy (finding)"
-          },
-          {
-            "code": "127364007",
-            "display": "Primigravida (finding)"
-          },
-          {
-            "code": "134781000119106",
-            "display": "High risk pregnancy due to recurrent miscarriage (finding)"
-          },
-          {
-            "code": "14080002",
-            "display": "Illegitimate pregnancy, life event (finding)"
-          },
-          {
-            "code": "14418008",
-            "display": "Precocious pregnancy (finding)"
-          },
-          {
-            "code": "16356006",
-            "display": "Multiple pregnancy (disorder)"
-          },
-          {
-            "code": "16836261000119107",
-            "display": "Ectopic pregnancy of left ovary (disorder)"
-          },
-          {
-            "code": "16836351000119100",
-            "display": "Ectopic pregnancy of right ovary (disorder)"
-          },
-          {
-            "code": "16836391000119105",
-            "display": "Pregnancy of left fallopian tube (disorder)"
-          },
-          {
-            "code": "16836891000119104",
-            "display": "Pregnancy of right fallopian tube (disorder)"
-          },
-          {
-            "code": "169488004",
-            "display": "Contraceptive intrauterine device failure - pregnant (finding)"
-          },
-          {
-            "code": "169560008",
-            "display": "Pregnant - urine test confirms (finding)"
-          },
-          {
-            "code": "169561007",
-            "display": "Pregnant - blood test confirms (finding)"
-          },
-          {
-            "code": "169562000",
-            "display": "Pregnant - vaginal examination confirms (finding)"
-          },
-          {
-            "code": "169563005",
-            "display": "Pregnant - on history (finding)"
-          },
-          {
-            "code": "169564004",
-            "display": "Pregnant - on abdominal palpation (finding)"
-          },
-          {
-            "code": "169565003",
-            "display": "Pregnant - planned (finding)"
-          },
-          {
-            "code": "169566002",
-            "display": "Pregnancy unplanned but wanted (finding)"
-          },
-          {
-            "code": "169567006",
-            "display": "Pregnancy unplanned and unwanted (finding)"
-          },
-          {
-            "code": "169568001",
-            "display": "Unplanned pregnancy unknown if child is wanted (finding)"
-          },
-          {
-            "code": "17285009",
-            "display": "Intraperitoneal pregnancy (disorder)"
-          },
-          {
-            "code": "198624007",
-            "display": "Membranous pregnancy (disorder)"
-          },
-          {
-            "code": "198626009",
-            "display": "Mesenteric pregnancy (disorder)"
-          },
-          {
-            "code": "198627000",
-            "display": "Angular pregnancy (disorder)"
-          },
-          {
-            "code": "199064003",
-            "display": "Post-term pregnancy - not delivered (disorder)"
-          },
-          {
-            "code": "199306007",
-            "display": "Continuing pregnancy after abortion of one fetus or more (disorder)"
-          },
-          {
-            "code": "199715003",
-            "display": "Grand multiparity with antenatal problem (finding)"
-          },
-          {
-            "code": "22281000119101",
-            "display": "Post-term pregnancy of 40 to 42 weeks (finding)"
-          },
-          {
-            "code": "237233002",
-            "display": "Concealed pregnancy (finding)"
-          },
-          {
-            "code": "237238006",
-            "display": "Pregnancy with uncertain dates (finding)"
-          },
-          {
-            "code": "237239003",
-            "display": "Low risk pregnancy (finding)"
-          },
-          {
-            "code": "237240001",
-            "display": "Teenage pregnancy (finding)"
-          },
-          {
-            "code": "237241002",
-            "display": "Viable pregnancy (finding)"
-          },
-          {
-            "code": "237242009",
-            "display": "Non-viable pregnancy (finding)"
-          },
-          {
-            "code": "237244005",
-            "display": "Single pregnancy (finding)"
-          },
-          {
-            "code": "237254009",
-            "display": "Unruptured tubal pregnancy (disorder)"
-          },
-          {
-            "code": "239101008",
-            "display": "Pregnancy eruption (disorder)"
-          },
-          {
-            "code": "248985009",
-            "display": "Presentation of pregnancy (finding)"
-          },
-          {
-            "code": "276367008",
-            "display": "Wanted pregnancy (finding)"
-          },
-          {
-            "code": "276881003",
-            "display": "Secondary abdominal pregnancy (disorder)"
-          },
-          {
-            "code": "281307002",
-            "display": "Uncertain viability of pregnancy (finding)"
-          },
-          {
-            "code": "29399001",
-            "display": "Elderly primigravida (finding)"
-          },
-          {
-            "code": "314204000",
-            "display": "Early stage of pregnancy (finding)"
-          },
-          {
-            "code": "31601007",
-            "display": "Combined pregnancy (disorder)"
-          },
-          {
-            "code": "34801009",
-            "display": "Ectopic pregnancy (disorder)"
-          },
-          {
-            "code": "35381000119101",
-            "display": "Quadruplet pregnancy with loss of one or more fetuses (disorder)"
-          },
-          {
-            "code": "35656003",
-            "display": "Intraligamentous pregnancy (disorder)"
-          },
-          {
-            "code": "36801000119105",
-            "display": "Continuing triplet pregnancy after spontaneous abortion of one or more fetuses (disorder)"
-          },
-          {
-            "code": "38720006",
-            "display": "Septuplet pregnancy (disorder)"
-          },
-          {
-            "code": "41587001",
-            "display": "Third trimester pregnancy (finding)"
-          },
-          {
-            "code": "417044008",
-            "display": "Hydatidiform mole, benign (disorder)"
-          },
-          {
-            "code": "41991004",
-            "display": "Angiectasis pregnancy (disorder)"
-          },
-          {
-            "code": "429187001",
-            "display": "Continuing pregnancy after intrauterine death of twin fetus (disorder)"
-          },
-          {
-            "code": "43990006",
-            "display": "Sextuplet pregnancy (disorder)"
-          },
-          {
-            "code": "442478007",
-            "display": "Multiple pregnancy involving intrauterine pregnancy and tubal pregnancy (disorder)"
-          },
-          {
-            "code": "444661007",
-            "display": "High risk pregnancy due to history of preterm labor (finding)"
-          },
-          {
-            "code": "45307008",
-            "display": "Extrachorial pregnancy (finding)"
-          },
-          {
-            "code": "457811000124103",
-            "display": "Normal pregnancy in primigravida (finding)"
-          },
-          {
-            "code": "457821000124106",
-            "display": "Normal pregnancy in multigravida (finding)"
-          },
-          {
-            "code": "459167000",
-            "display": "Monochorionic twin pregnancy (disorder)"
-          },
-          {
-            "code": "459169002",
-            "display": "Monochorionic diamniotic twin pregnancy with similar amniotic fluid volumes (disorder)"
-          },
-          {
-            "code": "459170001",
-            "display": "Monochorionic diamniotic twin pregnancy with dissimilar amniotic fluid volumes (disorder)"
-          },
-          {
-            "code": "47200007",
-            "display": "High risk pregnancy (finding)"
-          },
-          {
-            "code": "472321009",
-            "display": "Continuing pregnancy after intrauterine death of one twin with intrauterine retention of dead twin (disorder)"
-          },
-          {
-            "code": "57630001",
-            "display": "First trimester pregnancy (finding)"
-          },
-          {
-            "code": "58532003",
-            "display": "Unwanted pregnancy (finding)"
-          },
-          {
-            "code": "59466002",
-            "display": "Second trimester pregnancy (finding)"
-          },
-          {
-            "code": "60000008",
-            "display": "Mesometric pregnancy (disorder)"
-          },
-          {
-            "code": "60810003",
-            "display": "Quadruplet pregnancy (disorder)"
-          },
-          {
-            "code": "64254006",
-            "display": "Triplet pregnancy (disorder)"
-          },
-          {
-            "code": "65147003",
-            "display": "Twin pregnancy (disorder)"
-          },
-          {
-            "code": "65727000",
-            "display": "Intrauterine pregnancy (finding)"
-          },
-          {
-            "code": "713575004",
-            "display": "Dizygotic twin pregnancy (disorder)"
-          },
-          {
-            "code": "713576003",
-            "display": "Monozygotic twin pregnancy (disorder)"
-          },
-          {
-            "code": "72892002",
-            "display": "Normal pregnancy (finding)"
-          },
-          {
-            "code": "77386006",
-            "display": "Pregnancy (finding)"
-          },
-          {
-            "code": "786067000",
-            "display": "Intramural ectopic pregnancy of myometrium (disorder)"
-          },
-          {
-            "code": "79290002",
-            "display": "Cervical pregnancy (disorder)"
-          },
-          {
-            "code": "79586000",
-            "display": "Tubal pregnancy (disorder)"
-          },
-          {
-            "code": "80997009",
-            "display": "Quintuplet pregnancy (disorder)"
-          },
-          {
-            "code": "82661006",
-            "display": "Abdominal pregnancy (disorder)"
-          },
-          {
-            "code": "83074005",
-            "display": "Unplanned pregnancy (finding)"
-          },
-          {
-            "code": "87527008",
-            "display": "Term pregnancy (finding)"
-          },
-          {
-            "code": "87605005",
-            "display": "Cornual pregnancy (disorder)"
-          },
-          {
-            "code": "90968009",
-            "display": "Prolonged pregnancy (disorder)"
-          },
-          {
-            "code": "9279009",
-            "display": "Extra-amniotic pregnancy (finding)"
-          },
-          {
-            "code": "9899009",
-            "display": "Ovarian pregnancy (disorder)"
           }
         ]
       }

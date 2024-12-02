@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1448",
+  "meta": {
+    "versionId": "29",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1448",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1448"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1448"
     }
   ],
   "version": "20210210",
@@ -13,74 +28,10 @@
   "title": "Amblyopia",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-10T01:02:26-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "H53.001",
-            "display": "Unspecified amblyopia, right eye"
-          },
-          {
-            "code": "H53.002",
-            "display": "Unspecified amblyopia, left eye"
-          },
-          {
-            "code": "H53.003",
-            "display": "Unspecified amblyopia, bilateral"
-          },
-          {
-            "code": "H53.011",
-            "display": "Deprivation amblyopia, right eye"
-          },
-          {
-            "code": "H53.012",
-            "display": "Deprivation amblyopia, left eye"
-          },
-          {
-            "code": "H53.013",
-            "display": "Deprivation amblyopia, bilateral"
-          },
-          {
-            "code": "H53.021",
-            "display": "Refractive amblyopia, right eye"
-          },
-          {
-            "code": "H53.022",
-            "display": "Refractive amblyopia, left eye"
-          },
-          {
-            "code": "H53.023",
-            "display": "Refractive amblyopia, bilateral"
-          },
-          {
-            "code": "H53.031",
-            "display": "Strabismic amblyopia, right eye"
-          },
-          {
-            "code": "H53.032",
-            "display": "Strabismic amblyopia, left eye"
-          },
-          {
-            "code": "H53.033",
-            "display": "Strabismic amblyopia, bilateral"
-          },
-          {
-            "code": "H53.041",
-            "display": "Amblyopia suspect, right eye"
-          },
-          {
-            "code": "H53.042",
-            "display": "Amblyopia suspect, left eye"
-          },
-          {
-            "code": "H53.043",
-            "display": "Amblyopia suspect, bilateral"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -179,6 +130,71 @@
           {
             "code": "965003",
             "display": "Toxic amblyopia (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "H53.001",
+            "display": "Unspecified amblyopia, right eye"
+          },
+          {
+            "code": "H53.002",
+            "display": "Unspecified amblyopia, left eye"
+          },
+          {
+            "code": "H53.003",
+            "display": "Unspecified amblyopia, bilateral"
+          },
+          {
+            "code": "H53.011",
+            "display": "Deprivation amblyopia, right eye"
+          },
+          {
+            "code": "H53.012",
+            "display": "Deprivation amblyopia, left eye"
+          },
+          {
+            "code": "H53.013",
+            "display": "Deprivation amblyopia, bilateral"
+          },
+          {
+            "code": "H53.021",
+            "display": "Refractive amblyopia, right eye"
+          },
+          {
+            "code": "H53.022",
+            "display": "Refractive amblyopia, left eye"
+          },
+          {
+            "code": "H53.023",
+            "display": "Refractive amblyopia, bilateral"
+          },
+          {
+            "code": "H53.031",
+            "display": "Strabismic amblyopia, right eye"
+          },
+          {
+            "code": "H53.032",
+            "display": "Strabismic amblyopia, left eye"
+          },
+          {
+            "code": "H53.033",
+            "display": "Strabismic amblyopia, bilateral"
+          },
+          {
+            "code": "H53.041",
+            "display": "Amblyopia suspect, right eye"
+          },
+          {
+            "code": "H53.042",
+            "display": "Amblyopia suspect, left eye"
+          },
+          {
+            "code": "H53.043",
+            "display": "Amblyopia suspect, bilateral"
           }
         ]
       }

@@ -1,32 +1,153 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.198.12.1014",
+  "meta": {
+    "versionId": "38",
+    "lastUpdated": "2024-01-12T01:09:53.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1014",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.198.12.1014"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.198.12.1014"
     }
   ],
-  "version": "20210220",
-  "name": "HysterectomywithNoResidualCervix",
+  "version": "20240112",
+  "name": "HysterectomyWithNoResidualCervix",
   "title": "Hysterectomy with No Residual Cervix",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
-        "system": "http://www.ama-assn.org/go/cpt",
+        "system": "http://www.cms.gov/Medicare/Coding/ICD10",
         "concept": [
           {
-            "code": "58293",
-            "display": "Vaginal hysterectomy, for uterus greater than 250 g; with colpo-urethrocystopexy (Marshall-Marchetti-Krantz type, Pereyra type) with or without endoscopic control"
+            "code": "0UTC0ZZ",
+            "display": "Resection of Cervix, Open Approach"
           },
           {
-            "code": "59135",
-            "display": "Surgical treatment of ectopic pregnancy; interstitial, uterine pregnancy requiring total hysterectomy"
+            "code": "0UTC4ZZ",
+            "display": "Resection of Cervix, Percutaneous Endoscopic Approach"
           },
+          {
+            "code": "0UTC7ZZ",
+            "display": "Resection of Cervix, Via Natural or Artificial Opening"
+          },
+          {
+            "code": "0UTC8ZZ",
+            "display": "Resection of Cervix, Via Natural or Artificial Opening Endoscopic"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "116140006",
+            "display": "Total hysterectomy (procedure)"
+          },
+          {
+            "code": "116142003",
+            "display": "Radical hysterectomy (procedure)"
+          },
+          {
+            "code": "116143008",
+            "display": "Total abdominal hysterectomy (procedure)"
+          },
+          {
+            "code": "116144002",
+            "display": "Total abdominal hysterectomy with bilateral salpingo-oophorectomy (procedure)"
+          },
+          {
+            "code": "1163275000",
+            "display": "Laparoscopic radical amputation of cervix uteri (procedure)"
+          },
+          {
+            "code": "1287897002",
+            "display": "Radical amputation of cervix uteri (procedure)"
+          },
+          {
+            "code": "176697007",
+            "display": "Repair of vaginal prolapse and amputation of cervix uteri (procedure)"
+          },
+          {
+            "code": "236888001",
+            "display": "Laparoscopic total hysterectomy (procedure)"
+          },
+          {
+            "code": "236891001",
+            "display": "Laparoscopic radical hysterectomy (procedure)"
+          },
+          {
+            "code": "24293001",
+            "display": "Excision of cervical stump by abdominal approach (procedure)"
+          },
+          {
+            "code": "287924009",
+            "display": "Excision of cervix stump (procedure)"
+          },
+          {
+            "code": "307771009",
+            "display": "Radical abdominal hysterectomy (procedure)"
+          },
+          {
+            "code": "35955002",
+            "display": "Radical vaginal hysterectomy (procedure)"
+          },
+          {
+            "code": "361222003",
+            "display": "Wertheim-Meigs abdominal hysterectomy (procedure)"
+          },
+          {
+            "code": "361223008",
+            "display": "Wertheim operation (procedure)"
+          },
+          {
+            "code": "387626007",
+            "display": "Amputation of cervix (procedure)"
+          },
+          {
+            "code": "414575003",
+            "display": "Laparoscopic total abdominal hysterectomy and bilateral salpingo-oophorectomy (procedure)"
+          },
+          {
+            "code": "41566006",
+            "display": "Excision of cervical stump by vaginal approach (procedure)"
+          },
+          {
+            "code": "440383008",
+            "display": "Radical amputation of cervix with bilateral total pelvic lymphadenectomy and paraaortic lymph node biopsy (procedure)"
+          },
+          {
+            "code": "446446002",
+            "display": "Total abdominal hysterectomy and removal of vaginal cuff (procedure)"
+          },
+          {
+            "code": "446679008",
+            "display": "Total laparoscopic excision of uterus by abdominal approach (procedure)"
+          },
+          {
+            "code": "46226009",
+            "display": "Cervicectomy with synchronous colporrhaphy (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
           {
             "code": "57530",
             "display": "Trachelectomy (cervicectomy), amputation of cervix (separate procedure)"
@@ -182,177 +303,19 @@
         ]
       },
       {
-        "system": "http://www.cms.gov/Medicare/Coding/ICD10",
-        "concept": [
-          {
-            "code": "0UTC0ZZ",
-            "display": "Resection of Cervix, Open Approach"
-          },
-          {
-            "code": "0UTC4ZZ",
-            "display": "Resection of Cervix, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "0UTC7ZZ",
-            "display": "Resection of Cervix, Via Natural or Artificial Opening"
-          },
-          {
-            "code": "0UTC8ZZ",
-            "display": "Resection of Cervix, Via Natural or Artificial Opening Endoscopic"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
-        "concept": [
-          {
-            "code": "618.5",
-            "display": "Prolapse of vaginal vault after hysterectomy"
-          },
-          {
-            "code": "68.41",
-            "display": "Laparoscopic total abdominal hysterectomy"
-          },
-          {
-            "code": "68.49",
-            "display": "Other and unspecified total abdominal hysterectomy"
-          },
-          {
-            "code": "68.51",
-            "display": "Laparoscopically assisted vaginal hysterectomy (LAVH)"
-          },
-          {
-            "code": "68.59",
-            "display": "Other and unspecified vaginal hysterectomy"
-          },
-          {
-            "code": "68.61",
-            "display": "Laparoscopic radical abdominal hysterectomy"
-          },
-          {
-            "code": "68.69",
-            "display": "Other and unspecified radical abdominal hysterectomy"
-          },
-          {
-            "code": "68.71",
-            "display": "Laparoscopic radical vaginal hysterectomy [LRVH]"
-          },
-          {
-            "code": "68.79",
-            "display": "Other and unspecified radical vaginal hysterectomy"
-          },
-          {
-            "code": "68.8",
-            "display": "Pelvic evisceration"
-          }
-        ]
-      },
-      {
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "27950001",
-            "display": "Total hysterectomy with unilateral removal of ovary (procedure)"
+            "code": "608805000",
+            "display": "Laparoscopic assisted vaginal hysterectomy with repair of cystocele (procedure)"
           },
           {
-            "code": "31545000",
-            "display": "Total hysterectomy with unilateral removal of tube (procedure)"
+            "code": "608806004",
+            "display": "Laparoscopic assisted vaginal hysterectomy with repair of rectocele (procedure)"
           },
           {
-            "code": "59750000",
-            "display": "Total hysterectomy with unilateral removal of tube and ovary (procedure)"
-          },
-          {
-            "code": "116140006",
-            "display": "Total hysterectomy (procedure)"
-          },
-          {
-            "code": "116142003",
-            "display": "Radical hysterectomy (procedure)"
-          },
-          {
-            "code": "116143008",
-            "display": "Total abdominal hysterectomy (procedure)"
-          },
-          {
-            "code": "116144002",
-            "display": "Total abdominal hysterectomy with bilateral salpingo-oophorectomy (procedure)"
-          },
-          {
-            "code": "1163275000",
-            "display": "Laparoscopic radical amputation of cervix uteri (procedure)"
-          },
-          {
-            "code": "176697007",
-            "display": "Repair of vaginal prolapse and amputation of cervix uteri (procedure)"
-          },
-          {
-            "code": "236888001",
-            "display": "Laparoscopic total hysterectomy (procedure)"
-          },
-          {
-            "code": "236891001",
-            "display": "Laparoscopic radical hysterectomy (procedure)"
-          },
-          {
-            "code": "24293001",
-            "display": "Excision of cervical stump by abdominal approach (procedure)"
-          },
-          {
-            "code": "28301000",
-            "display": "Manchester-Fothergill operation on uterus (procedure)"
-          },
-          {
-            "code": "287924009",
-            "display": "Excision of cervix stump (procedure)"
-          },
-          {
-            "code": "307771009",
-            "display": "Radical abdominal hysterectomy (procedure)"
-          },
-          {
-            "code": "35955002",
-            "display": "Radical vaginal hysterectomy (procedure)"
-          },
-          {
-            "code": "361222003",
-            "display": "Wertheim-Meigs abdominal hysterectomy (procedure)"
-          },
-          {
-            "code": "361223008",
-            "display": "Wertheim operation (procedure)"
-          },
-          {
-            "code": "387626007",
-            "display": "Amputation of cervix (procedure)"
-          },
-          {
-            "code": "414575003",
-            "display": "Laparoscopic total abdominal hysterectomy and bilateral salpingo-oophorectomy (procedure)"
-          },
-          {
-            "code": "41566006",
-            "display": "Excision of cervical stump by vaginal approach (procedure)"
-          },
-          {
-            "code": "440383008",
-            "display": "Radical amputation of cervix with bilateral total pelvic lymphadenectomy and paraaortic lymph node biopsy (procedure)"
-          },
-          {
-            "code": "446446002",
-            "display": "Total abdominal hysterectomy and removal of vaginal cuff (procedure)"
-          },
-          {
-            "code": "446679008",
-            "display": "Total laparoscopic excision of uterus by abdominal approach (procedure)"
-          },
-          {
-            "code": "447771005",
-            "display": "Abdominal hysterectomy and excision of periuterine tissue (procedure)"
-          },
-          {
-            "code": "46226009",
-            "display": "Cervicectomy with synchronous colporrhaphy (procedure)"
+            "code": "608807008",
+            "display": "Laparoscopic assisted vaginal hysterectomy with repair of cystocele and rectocele (procedure)"
           },
           {
             "code": "708877008",
@@ -397,10 +360,6 @@
           {
             "code": "767612001",
             "display": "Total hysterectomy via vaginal approach using intrafascial technique (procedure)"
-          },
-          {
-            "code": "82418001",
-            "display": "Manchester operation on uterus (procedure)"
           },
           {
             "code": "86477000",

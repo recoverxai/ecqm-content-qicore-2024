@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1050",
+  "meta": {
+    "versionId": "16",
+    "lastUpdated": "2024-01-24T09:18:12.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-23"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1050",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1050"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1050"
     }
   ],
-  "version": "20210909",
-  "name": "Antispasmodics",
-  "title": "Antispasmodics",
+  "version": "20240123",
+  "name": "PotentiallyHarmfulGastrointestinalAntispasmodicsForOlderAdults",
+  "title": "Potentially Harmful Gastrointestinal Antispasmodics for Older Adults",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-23T01:10:32-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -88,10 +103,6 @@
             "display": "hyoscyamine sulfate 0.12 MG / methenamine 118 MG / methylene blue 10 MG / phenyl salicylate 36 MG / sodium phosphate, monobasic 40.8 MG Oral Capsule"
           },
           {
-            "code": "1111171",
-            "display": "12 HR belladonna alkaloids 0.24 MG / chlorpheniramine maleate 8 MG / pseudoephedrine hydrochloride 90 MG Extended Release Oral Tablet"
-          },
-          {
             "code": "1190538",
             "display": "0.7 ML atropine sulfate 0.714 MG/ML Auto-Injector"
           },
@@ -136,10 +147,6 @@
             "display": "atropine sulfate 0.4 MG/ML Injectable Solution"
           },
           {
-            "code": "1190793",
-            "display": "0.5 ML atropine sulfate 0.8 MG/ML Injection"
-          },
-          {
             "code": "1190795",
             "display": "1 ML atropine sulfate 1 MG/ML Injection"
           },
@@ -156,32 +163,12 @@
             "display": "Biphasic 12 HR hyoscyamine sulfate 0.375 MG Extended Release Oral Tablet"
           },
           {
-            "code": "198165",
-            "display": "propantheline 15 MG Oral Tablet"
-          },
-          {
-            "code": "198207",
-            "display": "scopolamine 0.4 MG/ML Injectable Solution"
-          },
-          {
             "code": "226552",
             "display": "72 HR scopolamine 0.0139 MG/HR Transdermal System"
           },
           {
-            "code": "312104",
-            "display": "belladonna alkaloids 16.2 MG / opium 30 MG Rectal Suppository"
-          },
-          {
-            "code": "312107",
-            "display": "belladonna alkaloids 16.2 MG / opium 60 MG Rectal Suppository"
-          },
-          {
-            "code": "314088",
-            "display": "methscopolamine bromide 2.5 MG Oral Tablet"
-          },
-          {
-            "code": "403914",
-            "display": "methscopolamine bromide 5 MG Oral Tablet"
+            "code": "2637557",
+            "display": "hyoscyamine sulfate 0.12 MG / methenamine 120 MG / methylene blue 10.8 MG / phenyl salicylate 36.2 MG / sodium phosphate, monobasic 40.8 MG Oral Capsule"
           },
           {
             "code": "727415",

@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.200",
+  "meta": {
+    "versionId": "67",
+    "lastUpdated": "2024-02-06T01:09:28.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-06"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.200",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.117.1.7.1.200"
+      "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.200"
     }
   ],
-  "version": "20230215",
+  "version": "20240206",
   "name": "AnticoagulantTherapy",
   "title": "Anticoagulant Therapy",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-06T01:09:28-05:00",
+  "publisher": "TJC EH Steward",
   "compose": {
     "include": [
       {
@@ -94,10 +109,6 @@
           {
             "code": "1804737",
             "display": "125 ML argatroban 1 MG/ML Injection"
-          },
-          {
-            "code": "1804738",
-            "display": "250 ML argatroban 1 MG/ML Injection"
           },
           {
             "code": "1992427",

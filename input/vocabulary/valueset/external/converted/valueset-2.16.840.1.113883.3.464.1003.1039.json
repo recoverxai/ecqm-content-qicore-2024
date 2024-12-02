@@ -1,91 +1,36 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1039",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-08-12T10:14:25.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-06"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1039",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1039"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1039"
     }
   ],
-  "version": "20210902",
+  "version": "20240106",
   "name": "EatingDisorders",
   "title": "Eating Disorders",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-06T01:09:12-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "F50.00",
-            "display": "Anorexia nervosa, unspecified"
-          },
-          {
-            "code": "F50.01",
-            "display": "Anorexia nervosa, restricting type"
-          },
-          {
-            "code": "F50.02",
-            "display": "Anorexia nervosa, binge eating/purging type"
-          },
-          {
-            "code": "F50.2",
-            "display": "Bulimia nervosa"
-          },
-          {
-            "code": "F50.81",
-            "display": "Binge eating disorder"
-          },
-          {
-            "code": "F50.82",
-            "display": "Avoidant/restrictive food intake disorder"
-          },
-          {
-            "code": "F50.89",
-            "display": "Other specified eating disorder"
-          },
-          {
-            "code": "F50.9",
-            "display": "Eating disorder, unspecified"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
-        "concept": [
-          {
-            "code": "307.1",
-            "display": "Anorexia nervosa"
-          },
-          {
-            "code": "307.50",
-            "display": "Eating disorder, unspecified"
-          },
-          {
-            "code": "307.51",
-            "display": "Bulimia nervosa"
-          },
-          {
-            "code": "307.52",
-            "display": "Pica"
-          },
-          {
-            "code": "307.53",
-            "display": "Rumination disorder"
-          },
-          {
-            "code": "307.54",
-            "display": "Psychogenic vomiting"
-          },
-          {
-            "code": "307.59",
-            "display": "Other disorders of eating"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -104,6 +49,10 @@
           {
             "code": "16270871000119105",
             "display": "Bulimia nervosa in full remission (disorder)"
+          },
+          {
+            "code": "192630004",
+            "display": "Psychogenic feeding disorder of infancy and childhood (disorder)"
           },
           {
             "code": "231521002",
@@ -126,10 +75,6 @@
             "display": "Self-induced purging (disorder)"
           },
           {
-            "code": "270902002",
-            "display": "Overeating associated with other psychological disturbances (disorder)"
-          },
-          {
             "code": "275474009",
             "display": "Psychogenic overeating (disorder)"
           },
@@ -138,16 +83,16 @@
             "display": "Bulimia nervosa, purging type (disorder)"
           },
           {
-            "code": "34923007",
-            "display": "Self-induced vomiting (disorder)"
-          },
-          {
             "code": "37941009",
             "display": "Rumination disorder (disorder)"
           },
           {
             "code": "403313001",
             "display": "Hypertrichosis in anorexia nervosa (disorder)"
+          },
+          {
+            "code": "405788002",
+            "display": "Psychogenic loss of appetite (disorder)"
           },
           {
             "code": "427469003",
@@ -224,6 +169,43 @@
           {
             "code": "870568002",
             "display": "Orthorexia nervosa (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "F50.00",
+            "display": "Anorexia nervosa, unspecified"
+          },
+          {
+            "code": "F50.01",
+            "display": "Anorexia nervosa, restricting type"
+          },
+          {
+            "code": "F50.02",
+            "display": "Anorexia nervosa, binge eating/purging type"
+          },
+          {
+            "code": "F50.2",
+            "display": "Bulimia nervosa"
+          },
+          {
+            "code": "F50.81",
+            "display": "Binge eating disorder"
+          },
+          {
+            "code": "F50.82",
+            "display": "Avoidant/restrictive food intake disorder"
+          },
+          {
+            "code": "F50.89",
+            "display": "Other specified eating disorder"
+          },
+          {
+            "code": "F50.9",
+            "display": "Eating disorder, unspecified"
           }
         ]
       }

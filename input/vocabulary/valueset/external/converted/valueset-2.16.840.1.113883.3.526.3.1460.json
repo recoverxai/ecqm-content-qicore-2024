@@ -1,21 +1,94 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1460",
+  "meta": {
+    "versionId": "30",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-14"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1460",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1460"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1460"
     }
   ],
   "version": "20210214",
-  "name": "FocalChorioretinitisandFocalRetinochoroiditis",
+  "name": "FocalChorioretinitisAndFocalRetinochoroiditis",
   "title": "Focal Chorioretinitis and Focal Retinochoroiditis",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "15847003",
+            "display": "Focal chorioretinitis (disorder)"
+          },
+          {
+            "code": "193434008",
+            "display": "Focal juxtapapillary choroiditis (disorder)"
+          },
+          {
+            "code": "193436005",
+            "display": "Juxtapapillary focal chorioretinitis (disorder)"
+          },
+          {
+            "code": "193438006",
+            "display": "Peripheral focal retinochoroiditis (disorder)"
+          },
+          {
+            "code": "36535003",
+            "display": "Peripheral focal retinitis AND retinochoroiditis (disorder)"
+          },
+          {
+            "code": "373667006",
+            "display": "Focal chorioretinitis of posterior pole of eye (disorder)"
+          },
+          {
+            "code": "42031001",
+            "display": "Macular focal retinitis AND retinochoroiditis (disorder)"
+          },
+          {
+            "code": "46497009",
+            "display": "Juxtapapillary focal retinitis AND retinochoroiditis (disorder)"
+          },
+          {
+            "code": "56787009",
+            "display": "Peripheral focal choroiditis AND chorioretinitis (disorder)"
+          },
+          {
+            "code": "6313001",
+            "display": "Juxtapapillary focal choroiditis AND chorioretinitis (disorder)"
+          },
+          {
+            "code": "699515009",
+            "display": "Focal retinitis of posterior pole of eye (disorder)"
+          },
+          {
+            "code": "699763005",
+            "display": "Focal choroiditis of posterior pole of eye (disorder)"
+          },
+          {
+            "code": "88290000",
+            "display": "Focal chorioretinitis due to acquired disseminated toxoplasmosis (disorder)"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -78,63 +151,6 @@
           {
             "code": "H30.043",
             "display": "Focal chorioretinal inflammation, macular or paramacular, bilateral"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "15847003",
-            "display": "Focal chorioretinitis (disorder)"
-          },
-          {
-            "code": "193434008",
-            "display": "Focal juxtapapillary choroiditis (disorder)"
-          },
-          {
-            "code": "193436005",
-            "display": "Juxtapapillary focal chorioretinitis (disorder)"
-          },
-          {
-            "code": "193438006",
-            "display": "Peripheral focal retinochoroiditis (disorder)"
-          },
-          {
-            "code": "36535003",
-            "display": "Peripheral focal retinitis AND retinochoroiditis (disorder)"
-          },
-          {
-            "code": "373667006",
-            "display": "Posterior pole focal chorioretinitis (disorder)"
-          },
-          {
-            "code": "42031001",
-            "display": "Macular focal retinitis AND retinochoroiditis (disorder)"
-          },
-          {
-            "code": "46497009",
-            "display": "Juxtapapillary focal retinitis AND retinochoroiditis (disorder)"
-          },
-          {
-            "code": "56787009",
-            "display": "Peripheral focal choroiditis AND chorioretinitis (disorder)"
-          },
-          {
-            "code": "6313001",
-            "display": "Juxtapapillary focal choroiditis AND chorioretinitis (disorder)"
-          },
-          {
-            "code": "699515009",
-            "display": "Focal retinitis of posterior pole of eye (disorder)"
-          },
-          {
-            "code": "699763005",
-            "display": "Focal choroiditis of posterior pole of eye (disorder)"
-          },
-          {
-            "code": "88290000",
-            "display": "Focal chorioretinitis caused by acquired toxoplasmosis (disorder)"
           }
         ]
       }

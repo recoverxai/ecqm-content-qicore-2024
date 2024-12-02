@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.320",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-01-27"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.320",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1029.320"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.320"
     }
   ],
   "version": "20220127",
@@ -13,7 +28,8 @@
   "title": "Substance Abuse",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-01-27T01:02:52-05:00",
+  "publisher": "Joint Commission",
   "compose": {
     "include": [
       {
@@ -170,6 +186,10 @@
           {
             "code": "F10.29",
             "display": "Alcohol dependence with unspecified alcohol-induced disorder"
+          },
+          {
+            "code": "F10.91",
+            "display": "Alcohol use, unspecified, in remission"
           },
           {
             "code": "F10.920",
@@ -368,6 +388,10 @@
             "display": "Opioid use, unspecified, uncomplicated"
           },
           {
+            "code": "F11.91",
+            "display": "Opioid use, unspecified, in remission"
+          },
+          {
             "code": "F11.920",
             "display": "Opioid use, unspecified with intoxication, uncomplicated"
           },
@@ -526,6 +550,10 @@
           {
             "code": "F12.90",
             "display": "Cannabis use, unspecified, uncomplicated"
+          },
+          {
+            "code": "F12.91",
+            "display": "Cannabis use, unspecified, in remission"
           },
           {
             "code": "F12.920",
@@ -726,6 +754,10 @@
           {
             "code": "F13.90",
             "display": "Sedative, hypnotic, or anxiolytic use, unspecified, uncomplicated"
+          },
+          {
+            "code": "F13.91",
+            "display": "Sedative, hypnotic or anxiolytic use, unspecified, in remission"
           },
           {
             "code": "F13.920",
@@ -932,6 +964,10 @@
             "display": "Cocaine use, unspecified, uncomplicated"
           },
           {
+            "code": "F14.91",
+            "display": "Cocaine use, unspecified, in remission"
+          },
+          {
             "code": "F14.920",
             "display": "Cocaine use, unspecified with intoxication, uncomplicated"
           },
@@ -1120,6 +1156,10 @@
             "display": "Other stimulant use, unspecified, uncomplicated"
           },
           {
+            "code": "F15.91",
+            "display": "Other stimulant use, unspecified, in remission"
+          },
+          {
             "code": "F15.920",
             "display": "Other stimulant use, unspecified with intoxication, uncomplicated"
           },
@@ -1286,6 +1326,10 @@
           {
             "code": "F16.90",
             "display": "Hallucinogen use, unspecified, uncomplicated"
+          },
+          {
+            "code": "F16.91",
+            "display": "Hallucinogen use, unspecified, in remission"
           },
           {
             "code": "F16.920",
@@ -1520,6 +1564,10 @@
             "display": "Inhalant use, unspecified, uncomplicated"
           },
           {
+            "code": "F18.91",
+            "display": "Inhalant use, unspecified, in remission"
+          },
+          {
             "code": "F18.920",
             "display": "Inhalant use, unspecified with intoxication, uncomplicated"
           },
@@ -1734,6 +1782,10 @@
           {
             "code": "F19.90",
             "display": "Other psychoactive substance use, unspecified, uncomplicated"
+          },
+          {
+            "code": "F19.91",
+            "display": "Other psychoactive substance use, unspecified, in remission"
           },
           {
             "code": "F19.920",

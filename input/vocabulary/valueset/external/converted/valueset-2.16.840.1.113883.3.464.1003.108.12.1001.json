@@ -1,166 +1,39 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.108.12.1001",
+  "meta": {
+    "versionId": "34",
+    "lastUpdated": "2024-01-12T01:09:53.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.108.12.1001",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.108.12.1001"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.108.12.1001"
     }
   ],
-  "version": "20171222",
-  "name": "MalignantNeoplasmofColon",
+  "version": "20240112",
+  "name": "MalignantNeoplasmOfColon",
   "title": "Malignant Neoplasm of Colon",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "C18.0",
-            "display": "Malignant neoplasm of cecum"
-          },
-          {
-            "code": "C18.1",
-            "display": "Malignant neoplasm of appendix"
-          },
-          {
-            "code": "C18.2",
-            "display": "Malignant neoplasm of ascending colon"
-          },
-          {
-            "code": "C18.3",
-            "display": "Malignant neoplasm of hepatic flexure"
-          },
-          {
-            "code": "C18.4",
-            "display": "Malignant neoplasm of transverse colon"
-          },
-          {
-            "code": "C18.5",
-            "display": "Malignant neoplasm of splenic flexure"
-          },
-          {
-            "code": "C18.6",
-            "display": "Malignant neoplasm of descending colon"
-          },
-          {
-            "code": "C18.7",
-            "display": "Malignant neoplasm of sigmoid colon"
-          },
-          {
-            "code": "C18.8",
-            "display": "Malignant neoplasm of overlapping sites of colon"
-          },
-          {
-            "code": "C18.9",
-            "display": "Malignant neoplasm of colon, unspecified"
-          },
-          {
-            "code": "C19",
-            "display": "Malignant neoplasm of rectosigmoid junction"
-          },
-          {
-            "code": "C20",
-            "display": "Malignant neoplasm of rectum"
-          },
-          {
-            "code": "C21.2",
-            "display": "Malignant neoplasm of cloacogenic zone"
-          },
-          {
-            "code": "C21.8",
-            "display": "Malignant neoplasm of overlapping sites of rectum, anus and anal canal"
-          },
-          {
-            "code": "C78.5",
-            "display": "Secondary malignant neoplasm of large intestine and rectum"
-          },
-          {
-            "code": "Z85.038",
-            "display": "Personal history of other malignant neoplasm of large intestine"
-          },
-          {
-            "code": "Z85.048",
-            "display": "Personal history of other malignant neoplasm of rectum, rectosigmoid junction, and anus"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
-        "concept": [
-          {
-            "code": "153.0",
-            "display": "Malignant neoplasm of hepatic flexure"
-          },
-          {
-            "code": "153.1",
-            "display": "Malignant neoplasm of transverse colon"
-          },
-          {
-            "code": "153.2",
-            "display": "Malignant neoplasm of descending colon"
-          },
-          {
-            "code": "153.3",
-            "display": "Malignant neoplasm of sigmoid colon"
-          },
-          {
-            "code": "153.4",
-            "display": "Malignant neoplasm of cecum"
-          },
-          {
-            "code": "153.5",
-            "display": "Malignant neoplasm of appendix vermiformis"
-          },
-          {
-            "code": "153.6",
-            "display": "Malignant neoplasm of ascending colon"
-          },
-          {
-            "code": "153.7",
-            "display": "Malignant neoplasm of splenic flexure"
-          },
-          {
-            "code": "153.8",
-            "display": "Malignant neoplasm of other specified sites of large intestine"
-          },
-          {
-            "code": "153.9",
-            "display": "Malignant neoplasm of colon, unspecified site"
-          },
-          {
-            "code": "154.0",
-            "display": "Malignant neoplasm of rectosigmoid junction"
-          },
-          {
-            "code": "154.1",
-            "display": "Malignant neoplasm of rectum"
-          },
-          {
-            "code": "197.5",
-            "display": "Secondary malignant neoplasm of large intestine and rectum"
-          },
-          {
-            "code": "V10.05",
-            "display": "Personal history of malignant neoplasm of large intestine"
-          },
-          {
-            "code": "V10.06",
-            "display": "Personal history of malignant neoplasm of rectum, rectosigmoid junction, and anus"
-          }
-        ]
-      },
-      {
         "system": "http://snomed.info/sct",
         "concept": [
-          {
-            "code": "187757001",
-            "display": "Malignant neoplasm, overlapping lesion of colon (disorder)"
-          },
           {
             "code": "109838007",
             "display": "Overlapping malignant neoplasm of colon (disorder)"
@@ -168,6 +41,10 @@
           {
             "code": "109839004",
             "display": "Overlapping malignant neoplasm of rectum, anus and anal canal (disorder)"
+          },
+          {
+            "code": "109840002",
+            "display": "Primary malignant neoplasm of cloacogenic zone (disorder)"
           },
           {
             "code": "10987871000119109",
@@ -210,16 +87,88 @@
             "display": "History of carcinoma of rectosigmoid junction (situation)"
           },
           {
-            "code": "123691000119104",
-            "display": "Malignant carcinoid tumor of sigmoid colon (disorder)"
-          },
-          {
             "code": "123701000119104",
             "display": "Malignant carcinoid tumor of descending colon (disorder)"
           },
           {
             "code": "123721000119108",
             "display": "Malignant carcinoid tumor of ascending colon (disorder)"
+          },
+          {
+            "code": "1237454003",
+            "display": "Metastatic carcinoma to splenic flexure (disorder)"
+          },
+          {
+            "code": "1237455002",
+            "display": "Metastatic carcinoma to descending colon (disorder)"
+          },
+          {
+            "code": "1237456001",
+            "display": "Metastatic carcinoma to hepatic flexure (disorder)"
+          },
+          {
+            "code": "1237458000",
+            "display": "Metastatic carcinoma to transverse colon (disorder)"
+          },
+          {
+            "code": "1237460003",
+            "display": "Metastatic carcinoma to ascending colon (disorder)"
+          },
+          {
+            "code": "1237480002",
+            "display": "Metastatic carcinoma to sigmoid colon (disorder)"
+          },
+          {
+            "code": "1237484006",
+            "display": "Metastatic carcinoma to colon (disorder)"
+          },
+          {
+            "code": "1237485007",
+            "display": "Metastatic carcinoma to rectosigmoid junction (disorder)"
+          },
+          {
+            "code": "1259403004",
+            "display": "Primary carcinoma of ascending colon (disorder)"
+          },
+          {
+            "code": "1259404005",
+            "display": "Primary carcinoma of transverse colon (disorder)"
+          },
+          {
+            "code": "1259405006",
+            "display": "Primary carcinoma of descending colon (disorder)"
+          },
+          {
+            "code": "1259406007",
+            "display": "Primary carcinoma of hepatic flexure (disorder)"
+          },
+          {
+            "code": "1259407003",
+            "display": "Primary carcinoma of splenic flexure (disorder)"
+          },
+          {
+            "code": "1259432001",
+            "display": "Primary carcinoma of sigmoid colon (disorder)"
+          },
+          {
+            "code": "1259436003",
+            "display": "Primary carcinoma of colon (disorder)"
+          },
+          {
+            "code": "1259437007",
+            "display": "Primary carcinoma of rectosigmoid junction (disorder)"
+          },
+          {
+            "code": "1268633007",
+            "display": "Primary squamous cell carcinoma of rectum (disorder)"
+          },
+          {
+            "code": "1268635000",
+            "display": "Primary squamous cell carcinoma of colon (disorder)"
+          },
+          {
+            "code": "1269123008",
+            "display": "Metastatic squamous cell carcinoma to rectum (disorder)"
           },
           {
             "code": "130381000119103",
@@ -263,7 +212,7 @@
           },
           {
             "code": "269544008",
-            "display": "Carcinoma of the rectosigmoid junction (disorder)"
+            "display": "Carcinoma of rectosigmoid junction (disorder)"
           },
           {
             "code": "276822007",
@@ -272,22 +221,6 @@
           {
             "code": "285312008",
             "display": "Carcinoma of sigmoid colon (disorder)"
-          },
-          {
-            "code": "285611007",
-            "display": "Metastasis to colon of unknown primary (disorder)"
-          },
-          {
-            "code": "285612000",
-            "display": "Metastasis to rectum of unknown primary (disorder)"
-          },
-          {
-            "code": "286771000119106",
-            "display": "History of malignant carcinoid tumor of colon (situation)"
-          },
-          {
-            "code": "286791000119107",
-            "display": "History of malignant carcinoid tumor of rectum (situation)"
           },
           {
             "code": "301756000",
@@ -362,6 +295,10 @@
             "display": "Malignant tumor of rectosigmoid junction (disorder)"
           },
           {
+            "code": "363491008",
+            "display": "Malignant tumor of cloacogenic zone (disorder)"
+          },
+          {
             "code": "363510005",
             "display": "Malignant tumor of large intestine (disorder)"
           },
@@ -392,38 +329,6 @@
           {
             "code": "369454008",
             "display": "Malignant tumor involving rectum by direct extension from vagina (disorder)"
-          },
-          {
-            "code": "369455009",
-            "display": "Malignant tumor involving rectum by separate metastasis from endometrium (disorder)"
-          },
-          {
-            "code": "369456005",
-            "display": "Malignant tumor involving rectum by separate metastasis from fallopian tube (disorder)"
-          },
-          {
-            "code": "369457001",
-            "display": "Malignant tumor involving rectum by separate metastasis from ovary (disorder)"
-          },
-          {
-            "code": "369458006",
-            "display": "Malignant tumor involving rectum by separate metastasis from prostate (disorder)"
-          },
-          {
-            "code": "369459003",
-            "display": "Malignant tumor involving rectum by separate metastasis from uterine cervix (disorder)"
-          },
-          {
-            "code": "369460008",
-            "display": "Malignant tumor involving rectum by separate metastasis from uterus (disorder)"
-          },
-          {
-            "code": "369461007",
-            "display": "Malignant tumor involving rectum by separate metastasis from vagina (disorder)"
-          },
-          {
-            "code": "395705003",
-            "display": "pTis: Carcinoma in situ, intraepithelial (colon/rectum) (finding)"
           },
           {
             "code": "422375001",
@@ -478,10 +383,6 @@
             "display": "Primary adenocarcinoma of descending colon (disorder)"
           },
           {
-            "code": "713573006",
-            "display": "Malignant carcinoid tumor of rectum (disorder)"
-          },
-          {
             "code": "721695008",
             "display": "Primary adenocarcinoma of ascending colon and right flexure (disorder)"
           },
@@ -508,10 +409,6 @@
           {
             "code": "721701002",
             "display": "Primary neuroendocrine carcinoma of rectum (disorder)"
-          },
-          {
-            "code": "726654006",
-            "display": "Malignant carcinoid tumor of colon (disorder)"
           },
           {
             "code": "737058005",
@@ -563,47 +460,116 @@
           },
           {
             "code": "94179005",
-            "display": "Secondary malignant neoplasm of ascending colon (disorder)"
+            "display": "Metastatic malignant neoplasm to ascending colon (disorder)"
           },
           {
             "code": "94260004",
-            "display": "Secondary malignant neoplasm of colon (disorder)"
+            "display": "Metastatic malignant neoplasm to colon (disorder)"
           },
           {
             "code": "94271003",
-            "display": "Secondary malignant neoplasm of descending colon (disorder)"
+            "display": "Metastatic malignant neoplasm to descending colon (disorder)"
           },
           {
             "code": "94328005",
-            "display": "Secondary malignant neoplasm of hepatic flexure of colon (disorder)"
+            "display": "Metastatic malignant neoplasm to hepatic flexure of colon (disorder)"
           },
           {
             "code": "94509004",
-            "display": "Secondary malignant neoplasm of rectosigmoid junction (disorder)"
+            "display": "Metastatic malignant neoplasm to rectosigmoid junction (disorder)"
           },
           {
             "code": "94513006",
-            "display": "Secondary malignant neoplasm of rectum (disorder)"
+            "display": "Metastatic malignant neoplasm to rectum (disorder)"
           },
           {
             "code": "94538001",
-            "display": "Secondary malignant neoplasm of sigmoid colon (disorder)"
+            "display": "Metastatic malignant neoplasm to sigmoid colon (disorder)"
           },
           {
             "code": "94604000",
-            "display": "Secondary malignant neoplasm of splenic flexure of colon (disorder)"
+            "display": "Metastatic malignant neoplasm to splenic flexure of colon (disorder)"
           },
           {
             "code": "94643001",
-            "display": "Secondary malignant neoplasm of transverse colon (disorder)"
+            "display": "Metastatic malignant neoplasm to transverse colon (disorder)"
           },
           {
             "code": "96281000119107",
             "display": "Overlapping malignant neoplasm of colon and rectum (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "C18.0",
+            "display": "Malignant neoplasm of cecum"
           },
           {
-            "code": "96981000119102",
-            "display": "Malignant neoplasm of rectosigmoid junction metastatic to brain (disorder)"
+            "code": "C18.1",
+            "display": "Malignant neoplasm of appendix"
+          },
+          {
+            "code": "C18.2",
+            "display": "Malignant neoplasm of ascending colon"
+          },
+          {
+            "code": "C18.3",
+            "display": "Malignant neoplasm of hepatic flexure"
+          },
+          {
+            "code": "C18.4",
+            "display": "Malignant neoplasm of transverse colon"
+          },
+          {
+            "code": "C18.5",
+            "display": "Malignant neoplasm of splenic flexure"
+          },
+          {
+            "code": "C18.6",
+            "display": "Malignant neoplasm of descending colon"
+          },
+          {
+            "code": "C18.7",
+            "display": "Malignant neoplasm of sigmoid colon"
+          },
+          {
+            "code": "C18.8",
+            "display": "Malignant neoplasm of overlapping sites of colon"
+          },
+          {
+            "code": "C18.9",
+            "display": "Malignant neoplasm of colon, unspecified"
+          },
+          {
+            "code": "C19",
+            "display": "Malignant neoplasm of rectosigmoid junction"
+          },
+          {
+            "code": "C20",
+            "display": "Malignant neoplasm of rectum"
+          },
+          {
+            "code": "C21.2",
+            "display": "Malignant neoplasm of cloacogenic zone"
+          },
+          {
+            "code": "C21.8",
+            "display": "Malignant neoplasm of overlapping sites of rectum, anus and anal canal"
+          },
+          {
+            "code": "C78.5",
+            "display": "Secondary malignant neoplasm of large intestine and rectum"
+          },
+          {
+            "code": "Z85.038",
+            "display": "Personal history of other malignant neoplasm of large intestine"
+          },
+          {
+            "code": "Z85.048",
+            "display": "Personal history of other malignant neoplasm of rectum, rectosigmoid junction, and anus"
           }
         ]
       }

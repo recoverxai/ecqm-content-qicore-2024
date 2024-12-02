@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1095.38",
+  "meta": {
+    "versionId": "24",
+    "lastUpdated": "2024-02-21T01:24:22.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-21"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.38",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1095.38"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1095.38"
     }
   ],
-  "version": "20230211",
-  "name": "MalnutritionScreeningAtRiskResult",
-  "title": "Malnutrition Screening At Risk Result",
+  "version": "20240221",
+  "name": "MalnutritionScreeningFindingOfAtRiskResult",
+  "title": "Malnutrition Screening Finding of At Risk Result",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-21T01:24:22-05:00",
+  "publisher": "AND Steward",
   "compose": {
     "include": [
       {
@@ -21,23 +36,19 @@
         "concept": [
           {
             "code": "129689002",
-            "display": "At risk for nutritional problem (finding)"
+            "display": "At increased risk for nutritional problem (finding)"
           },
           {
             "code": "129845004",
-            "display": "At risk for imbalanced nutrition, less than body requirements (finding)"
+            "display": "At increased risk for imbalanced nutrition, less than body requirements (finding)"
           },
           {
-            "code": "445421000124101",
-            "display": "At risk for inadequate intake of multiple nutrients (finding)"
-          },
-          {
-            "code": "704358009",
-            "display": "At risk of nutritional deficit (finding)"
+            "code": "700361001",
+            "display": "Predicted inadequate nutrient intake (finding)"
           },
           {
             "code": "704361005",
-            "display": "At risk of deficient food intake (finding)"
+            "display": "At increased risk of deficient food intake (finding)"
           }
         ]
       }

@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1110.42",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2024-08-27T16:00:19.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-20"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.42",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1110.42"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1110.42"
     }
   ],
   "version": "20210220",
@@ -13,7 +28,8 @@
   "title": "Statin Allergen",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-20T01:02:00-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
@@ -26,7 +42,21 @@
           {
             "code": "36567",
             "display": "simvastatin"
-          },
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "372912004",
+            "display": "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
           {
             "code": "41127",
             "display": "fluvastatin"
@@ -52,10 +82,6 @@
       {
         "system": "http://snomed.info/sct",
         "concept": [
-          {
-            "code": "372912004",
-            "display": "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
-          },
           {
             "code": "96302009",
             "display": "Product containing 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor (product)"

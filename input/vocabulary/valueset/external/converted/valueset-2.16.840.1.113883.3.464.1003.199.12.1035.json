@@ -1,306 +1,39 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.199.12.1035",
+  "meta": {
+    "versionId": "15",
+    "lastUpdated": "2024-08-12T10:39:11.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-05"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.199.12.1035",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.199.12.1035"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.199.12.1035"
     }
   ],
-  "version": "20180310",
+  "version": "20240105",
   "name": "ChronicLiverDisease",
   "title": "Chronic Liver Disease",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-05T01:08:45-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "K70.0",
-            "display": "Alcoholic fatty liver"
-          },
-          {
-            "code": "K70.2",
-            "display": "Alcoholic fibrosis and sclerosis of liver"
-          },
-          {
-            "code": "K70.30",
-            "display": "Alcoholic cirrhosis of liver without ascites"
-          },
-          {
-            "code": "K70.31",
-            "display": "Alcoholic cirrhosis of liver with ascites"
-          },
-          {
-            "code": "K70.40",
-            "display": "Alcoholic hepatic failure without coma"
-          },
-          {
-            "code": "K70.41",
-            "display": "Alcoholic hepatic failure with coma"
-          },
-          {
-            "code": "K70.9",
-            "display": "Alcoholic liver disease, unspecified"
-          },
-          {
-            "code": "K71.0",
-            "display": "Toxic liver disease with cholestasis"
-          },
-          {
-            "code": "K71.10",
-            "display": "Toxic liver disease with hepatic necrosis, without coma"
-          },
-          {
-            "code": "K71.11",
-            "display": "Toxic liver disease with hepatic necrosis, with coma"
-          },
-          {
-            "code": "K71.3",
-            "display": "Toxic liver disease with chronic persistent hepatitis"
-          },
-          {
-            "code": "K71.4",
-            "display": "Toxic liver disease with chronic lobular hepatitis"
-          },
-          {
-            "code": "K71.50",
-            "display": "Toxic liver disease with chronic active hepatitis without ascites"
-          },
-          {
-            "code": "K71.51",
-            "display": "Toxic liver disease with chronic active hepatitis with ascites"
-          },
-          {
-            "code": "K71.7",
-            "display": "Toxic liver disease with fibrosis and cirrhosis of liver"
-          },
-          {
-            "code": "K72.10",
-            "display": "Chronic hepatic failure without coma"
-          },
-          {
-            "code": "K72.11",
-            "display": "Chronic hepatic failure with coma"
-          },
-          {
-            "code": "K73.0",
-            "display": "Chronic persistent hepatitis, not elsewhere classified"
-          },
-          {
-            "code": "K73.1",
-            "display": "Chronic lobular hepatitis, not elsewhere classified"
-          },
-          {
-            "code": "K73.2",
-            "display": "Chronic active hepatitis, not elsewhere classified"
-          },
-          {
-            "code": "K73.8",
-            "display": "Other chronic hepatitis, not elsewhere classified"
-          },
-          {
-            "code": "K73.9",
-            "display": "Chronic hepatitis, unspecified"
-          },
-          {
-            "code": "K74.00",
-            "display": "Hepatic fibrosis, unspecified"
-          },
-          {
-            "code": "K74.01",
-            "display": "Hepatic fibrosis, early fibrosis"
-          },
-          {
-            "code": "K74.02",
-            "display": "Hepatic fibrosis, advanced fibrosis"
-          },
-          {
-            "code": "K74.1",
-            "display": "Hepatic sclerosis"
-          },
-          {
-            "code": "K74.2",
-            "display": "Hepatic fibrosis with hepatic sclerosis"
-          },
-          {
-            "code": "K74.3",
-            "display": "Primary biliary cirrhosis"
-          },
-          {
-            "code": "K74.4",
-            "display": "Secondary biliary cirrhosis"
-          },
-          {
-            "code": "K74.5",
-            "display": "Biliary cirrhosis, unspecified"
-          },
-          {
-            "code": "K74.60",
-            "display": "Unspecified cirrhosis of liver"
-          },
-          {
-            "code": "K74.69",
-            "display": "Other cirrhosis of liver"
-          },
-          {
-            "code": "K76.1",
-            "display": "Chronic passive congestion of liver"
-          },
-          {
-            "code": "K76.2",
-            "display": "Central hemorrhagic necrosis of liver"
-          },
-          {
-            "code": "K76.3",
-            "display": "Infarction of liver"
-          },
-          {
-            "code": "K76.5",
-            "display": "Hepatic veno-occlusive disease"
-          },
-          {
-            "code": "K76.6",
-            "display": "Portal hypertension"
-          },
-          {
-            "code": "K76.7",
-            "display": "Hepatorenal syndrome"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
-        "concept": [
-          {
-            "code": "571.0",
-            "display": "Alcoholic fatty liver"
-          },
-          {
-            "code": "571.1",
-            "display": "Acute alcoholic hepatitis"
-          },
-          {
-            "code": "571.2",
-            "display": "Alcoholic cirrhosis of liver"
-          },
-          {
-            "code": "571.3",
-            "display": "Alcoholic liver damage, unspecified"
-          },
-          {
-            "code": "571.40",
-            "display": "Chronic hepatitis, unspecified"
-          },
-          {
-            "code": "571.41",
-            "display": "Chronic persistent hepatitis"
-          },
-          {
-            "code": "571.42",
-            "display": "Autoimmune hepatitis"
-          },
-          {
-            "code": "571.49",
-            "display": "Other chronic hepatitis"
-          },
-          {
-            "code": "571.5",
-            "display": "Cirrhosis of liver without mention of alcohol"
-          },
-          {
-            "code": "571.6",
-            "display": "Biliary cirrhosis"
-          },
-          {
-            "code": "571.8",
-            "display": "Other chronic nonalcoholic liver disease"
-          },
-          {
-            "code": "571.9",
-            "display": "Unspecified chronic liver disease without mention of alcohol"
-          },
-          {
-            "code": "572.0",
-            "display": "Abscess of liver"
-          },
-          {
-            "code": "572.1",
-            "display": "Portal pyemia"
-          },
-          {
-            "code": "572.2",
-            "display": "Hepatic encephalopathy"
-          },
-          {
-            "code": "572.3",
-            "display": "Portal hypertension"
-          },
-          {
-            "code": "572.4",
-            "display": "Hepatorenal syndrome"
-          },
-          {
-            "code": "572.8",
-            "display": "Other sequelae of chronic liver disease"
-          },
-          {
-            "code": "573.0",
-            "display": "Chronic passive congestion of liver"
-          },
-          {
-            "code": "573.1",
-            "display": "Hepatitis in viral diseases classified elsewhere"
-          },
-          {
-            "code": "573.2",
-            "display": "Hepatitis in other infectious diseases classified elsewhere"
-          },
-          {
-            "code": "573.3",
-            "display": "Hepatitis, unspecified"
-          },
-          {
-            "code": "573.4",
-            "display": "Hepatic infarction"
-          },
-          {
-            "code": "573.5",
-            "display": "Hepatopulmonary syndrome"
-          },
-          {
-            "code": "573.8",
-            "display": "Other specified disorders of liver"
-          },
-          {
-            "code": "573.9",
-            "display": "Unspecified disorder of liver"
-          }
-        ]
-      },
-      {
         "system": "http://snomed.info/sct",
         "concept": [
-          {
-            "code": "235870003",
-            "display": "Chronic non-A non-B hepatitis (disorder)"
-          },
-          {
-            "code": "81675001",
-            "display": "Chronic yellow atrophy of liver (disorder)"
-          },
-          {
-            "code": "197279005",
-            "display": "Cirrhosis and chronic liver disease (disorder)"
-          },
-          {
-            "code": "235902006",
-            "display": "Intrahepatic phlebosclerosis and fibrosis (disorder)"
-          },
           {
             "code": "1010616001",
             "display": "Cirrhosis of liver due to classical cystic fibrosis (disorder)"
@@ -356,10 +89,6 @@
           {
             "code": "1761006",
             "display": "Biliary cirrhosis (disorder)"
-          },
-          {
-            "code": "186639003",
-            "display": "Chronic viral hepatitis B without delta-agent (disorder)"
           },
           {
             "code": "186698009",
@@ -616,6 +345,163 @@
           {
             "code": "89789003",
             "display": "Chronic aggressive viral hepatitis (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "K70.0",
+            "display": "Alcoholic fatty liver"
+          },
+          {
+            "code": "K70.2",
+            "display": "Alcoholic fibrosis and sclerosis of liver"
+          },
+          {
+            "code": "K70.30",
+            "display": "Alcoholic cirrhosis of liver without ascites"
+          },
+          {
+            "code": "K70.31",
+            "display": "Alcoholic cirrhosis of liver with ascites"
+          },
+          {
+            "code": "K70.40",
+            "display": "Alcoholic hepatic failure without coma"
+          },
+          {
+            "code": "K70.41",
+            "display": "Alcoholic hepatic failure with coma"
+          },
+          {
+            "code": "K70.9",
+            "display": "Alcoholic liver disease, unspecified"
+          },
+          {
+            "code": "K71.0",
+            "display": "Toxic liver disease with cholestasis"
+          },
+          {
+            "code": "K71.10",
+            "display": "Toxic liver disease with hepatic necrosis, without coma"
+          },
+          {
+            "code": "K71.11",
+            "display": "Toxic liver disease with hepatic necrosis, with coma"
+          },
+          {
+            "code": "K71.3",
+            "display": "Toxic liver disease with chronic persistent hepatitis"
+          },
+          {
+            "code": "K71.4",
+            "display": "Toxic liver disease with chronic lobular hepatitis"
+          },
+          {
+            "code": "K71.50",
+            "display": "Toxic liver disease with chronic active hepatitis without ascites"
+          },
+          {
+            "code": "K71.51",
+            "display": "Toxic liver disease with chronic active hepatitis with ascites"
+          },
+          {
+            "code": "K71.7",
+            "display": "Toxic liver disease with fibrosis and cirrhosis of liver"
+          },
+          {
+            "code": "K72.10",
+            "display": "Chronic hepatic failure without coma"
+          },
+          {
+            "code": "K72.11",
+            "display": "Chronic hepatic failure with coma"
+          },
+          {
+            "code": "K73.0",
+            "display": "Chronic persistent hepatitis, not elsewhere classified"
+          },
+          {
+            "code": "K73.1",
+            "display": "Chronic lobular hepatitis, not elsewhere classified"
+          },
+          {
+            "code": "K73.2",
+            "display": "Chronic active hepatitis, not elsewhere classified"
+          },
+          {
+            "code": "K73.8",
+            "display": "Other chronic hepatitis, not elsewhere classified"
+          },
+          {
+            "code": "K73.9",
+            "display": "Chronic hepatitis, unspecified"
+          },
+          {
+            "code": "K74.00",
+            "display": "Hepatic fibrosis, unspecified"
+          },
+          {
+            "code": "K74.01",
+            "display": "Hepatic fibrosis, early fibrosis"
+          },
+          {
+            "code": "K74.02",
+            "display": "Hepatic fibrosis, advanced fibrosis"
+          },
+          {
+            "code": "K74.1",
+            "display": "Hepatic sclerosis"
+          },
+          {
+            "code": "K74.2",
+            "display": "Hepatic fibrosis with hepatic sclerosis"
+          },
+          {
+            "code": "K74.3",
+            "display": "Primary biliary cirrhosis"
+          },
+          {
+            "code": "K74.4",
+            "display": "Secondary biliary cirrhosis"
+          },
+          {
+            "code": "K74.5",
+            "display": "Biliary cirrhosis, unspecified"
+          },
+          {
+            "code": "K74.60",
+            "display": "Unspecified cirrhosis of liver"
+          },
+          {
+            "code": "K74.69",
+            "display": "Other cirrhosis of liver"
+          },
+          {
+            "code": "K76.1",
+            "display": "Chronic passive congestion of liver"
+          },
+          {
+            "code": "K76.2",
+            "display": "Central hemorrhagic necrosis of liver"
+          },
+          {
+            "code": "K76.3",
+            "display": "Infarction of liver"
+          },
+          {
+            "code": "K76.5",
+            "display": "Hepatic veno-occlusive disease"
+          },
+          {
+            "code": "K76.6",
+            "display": "Portal hypertension"
+          },
+          {
+            "code": "K76.7",
+            "display": "Hepatorenal syndrome"
           }
         ]
       }

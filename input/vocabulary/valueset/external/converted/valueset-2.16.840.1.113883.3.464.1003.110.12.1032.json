@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.110.12.1032",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1032",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.110.12.1032"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.110.12.1032"
     }
   ],
   "version": "20170504",
@@ -13,64 +28,16 @@
   "title": "Mumps",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "B26.0",
-            "display": "Mumps orchitis"
-          },
-          {
-            "code": "B26.1",
-            "display": "Mumps meningitis"
-          },
-          {
-            "code": "B26.2",
-            "display": "Mumps encephalitis"
-          },
-          {
-            "code": "B26.3",
-            "display": "Mumps pancreatitis"
-          },
-          {
-            "code": "B26.81",
-            "display": "Mumps hepatitis"
-          },
-          {
-            "code": "B26.82",
-            "display": "Mumps myocarditis"
-          },
-          {
-            "code": "B26.83",
-            "display": "Mumps nephritis"
-          },
-          {
-            "code": "B26.84",
-            "display": "Mumps polyneuropathy"
-          },
-          {
-            "code": "B26.85",
-            "display": "Mumps arthritis"
-          },
-          {
-            "code": "B26.89",
-            "display": "Other mumps complications"
-          },
-          {
-            "code": "B26.9",
-            "display": "Mumps without complication"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
           {
             "code": "105821000119107",
-            "display": "Immunity to mumps by positive serology (finding)"
+            "display": "Immunity to mumps determined by serology (finding)"
           },
           {
             "code": "10665004",
@@ -134,11 +101,11 @@
           },
           {
             "code": "40099009",
-            "display": "Meningoencephalitis caused by mumps (disorder)"
+            "display": "Meningoencephalitis caused by mumps virus (disorder)"
           },
           {
             "code": "44201003",
-            "display": "Mumps meningitis (disorder)"
+            "display": "Meningitis caused by mumps virus (disorder)"
           },
           {
             "code": "63462008",
@@ -147,10 +114,6 @@
           {
             "code": "72071001",
             "display": "Mumps thyroiditis (disorder)"
-          },
-          {
-            "code": "74717002",
-            "display": "Mumps with complication (disorder)"
           },
           {
             "code": "75548002",
@@ -166,7 +129,56 @@
           },
           {
             "code": "89764009",
-            "display": "Mumps arthritis (disorder)"
+            "display": "Arthritis due to mumps (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "B26.0",
+            "display": "Mumps orchitis"
+          },
+          {
+            "code": "B26.1",
+            "display": "Mumps meningitis"
+          },
+          {
+            "code": "B26.2",
+            "display": "Mumps encephalitis"
+          },
+          {
+            "code": "B26.3",
+            "display": "Mumps pancreatitis"
+          },
+          {
+            "code": "B26.81",
+            "display": "Mumps hepatitis"
+          },
+          {
+            "code": "B26.82",
+            "display": "Mumps myocarditis"
+          },
+          {
+            "code": "B26.83",
+            "display": "Mumps nephritis"
+          },
+          {
+            "code": "B26.84",
+            "display": "Mumps polyneuropathy"
+          },
+          {
+            "code": "B26.85",
+            "display": "Mumps arthritis"
+          },
+          {
+            "code": "B26.89",
+            "display": "Other mumps complications"
+          },
+          {
+            "code": "B26.9",
+            "display": "Mumps without complication"
           }
         ]
       }

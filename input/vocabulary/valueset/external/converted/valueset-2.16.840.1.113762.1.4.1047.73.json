@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1047.73",
+  "meta": {
+    "versionId": "15",
+    "lastUpdated": "2024-08-09T09:58:31.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-20"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.73",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1047.73"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1047.73"
     }
   ],
   "version": "20210220",
@@ -13,53 +28,25 @@
   "title": "Breastfeeding",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-20T01:02:00-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "O91.03",
-            "display": "Infection of nipple associated with lactation"
-          },
-          {
-            "code": "O91.13",
-            "display": "Abscess of breast associated with lactation"
-          },
-          {
-            "code": "O91.23",
-            "display": "Nonpurulent mastitis associated with lactation"
-          },
-          {
-            "code": "O92.03",
-            "display": "Retracted nipple associated with lactation"
-          },
-          {
-            "code": "O92.13",
-            "display": "Cracked nipple associated with lactation"
-          },
-          {
-            "code": "O92.5",
-            "display": "Suppressed lactation"
-          },
-          {
-            "code": "O92.70",
-            "display": "Unspecified disorders of lactation"
-          },
-          {
-            "code": "O92.79",
-            "display": "Other disorders of lactation"
-          },
-          {
-            "code": "Z39.1",
-            "display": "Encounter for care and examination of lactating mother"
-          }
-        ]
-      },
-      {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "1258998001",
+            "display": "Partial maternal breastfeeding (finding)"
+          },
+          {
+            "code": "1258999009",
+            "display": "Maternal exclusive breastfeeding (finding)"
+          },
+          {
+            "code": "1260078007",
+            "display": "Maternal breastfeeding (finding)"
+          },
           {
             "code": "169643005",
             "display": "Feeding intention - breast (finding)"
@@ -75,14 +62,6 @@
           {
             "code": "200416006",
             "display": "Breast engorgement in pregnancy, the puerperium or lactation (finding)"
-          },
-          {
-            "code": "200418007",
-            "display": "Breast engorgement in pregnancy, the puerperium or lactation - delivered (finding)"
-          },
-          {
-            "code": "200419004",
-            "display": "Breast engorgement in pregnancy, the puerperium or lactation - delivered with postnatal complication (finding)"
           },
           {
             "code": "200420005",
@@ -131,6 +110,47 @@
           {
             "code": "866041003",
             "display": "Mother currently breastfeeding (situation)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "O91.03",
+            "display": "Infection of nipple associated with lactation"
+          },
+          {
+            "code": "O91.13",
+            "display": "Abscess of breast associated with lactation"
+          },
+          {
+            "code": "O91.23",
+            "display": "Nonpurulent mastitis associated with lactation"
+          },
+          {
+            "code": "O92.03",
+            "display": "Retracted nipple associated with lactation"
+          },
+          {
+            "code": "O92.13",
+            "display": "Cracked nipple associated with lactation"
+          },
+          {
+            "code": "O92.5",
+            "display": "Suppressed lactation"
+          },
+          {
+            "code": "O92.70",
+            "display": "Unspecified disorders of lactation"
+          },
+          {
+            "code": "O92.79",
+            "display": "Other disorders of lactation"
+          },
+          {
+            "code": "Z39.1",
+            "display": "Encounter for care and examination of lactating mother"
           }
         ]
       }

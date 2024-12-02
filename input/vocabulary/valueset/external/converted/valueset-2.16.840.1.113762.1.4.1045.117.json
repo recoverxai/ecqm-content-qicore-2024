@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1045.117",
+  "meta": {
+    "versionId": "39",
+    "lastUpdated": "2024-02-01T15:09:35.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-02-14"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.117",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1045.117"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1045.117"
     }
   ],
   "version": "20230214",
-  "name": "Potassiumlabtest",
-  "title": "Potassium lab test",
+  "name": "PotassiumLabTest",
+  "title": "Potassium Lab Test",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-02-14T01:02:32-05:00",
+  "publisher": "Yale",
   "compose": {
     "include": [
       {

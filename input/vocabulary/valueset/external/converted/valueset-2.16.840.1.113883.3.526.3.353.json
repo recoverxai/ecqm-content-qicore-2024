@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.353",
+  "meta": {
+    "versionId": "22",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2020-03-07"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.353",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.353"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.353"
     }
   ],
   "version": "20200307",
@@ -13,19 +28,11 @@
   "title": "End Stage Renal Disease",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2020-03-07T01:00:21-05:00",
+  "publisher": "Mathematica",
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "N18.6",
-            "display": "End stage renal disease"
-          }
-        ]
-      },
-      {
         "system": "http://snomed.info/sct",
         "concept": [
           {
@@ -52,87 +59,6 @@
           {
             "code": "N18.6",
             "display": "End stage renal disease"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "236434000",
-            "display": "End stage renal failure untreated by renal replacement therapy (disorder)"
-          },
-          {
-            "code": "236435004",
-            "display": "End stage renal failure on dialysis (disorder)"
-          },
-          {
-            "code": "236436003",
-            "display": "End stage renal failure with renal transplant (disorder)"
-          },
-          {
-            "code": "46177005",
-            "display": "End-stage renal disease (disorder)"
-          }
-        ]
-      },
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "N18.6",
-            "display": "End stage renal disease"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "236434000",
-            "display": "End stage renal failure untreated by renal replacement therapy (disorder)"
-          },
-          {
-            "code": "236435004",
-            "display": "End stage renal failure on dialysis (disorder)"
-          },
-          {
-            "code": "236436003",
-            "display": "End stage renal failure with renal transplant (disorder)"
-          },
-          {
-            "code": "46177005",
-            "display": "End-stage renal disease (disorder)"
-          }
-        ]
-      },
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "N18.6",
-            "display": "End stage renal disease"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "236434000",
-            "display": "End stage renal failure untreated by renal replacement therapy (disorder)"
-          },
-          {
-            "code": "236435004",
-            "display": "End stage renal failure on dialysis (disorder)"
-          },
-          {
-            "code": "236436003",
-            "display": "End stage renal failure with renal transplant (disorder)"
-          },
-          {
-            "code": "46177005",
-            "display": "End-stage renal disease (disorder)"
           }
         ]
       }

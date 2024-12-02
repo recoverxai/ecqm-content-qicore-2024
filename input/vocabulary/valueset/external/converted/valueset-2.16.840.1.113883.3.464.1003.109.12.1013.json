@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.109.12.1013",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.109.12.1013",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.109.12.1013"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.109.12.1013"
     }
   ],
   "version": "20170504",
@@ -13,55 +28,10 @@
   "title": "Dialysis Services",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
-      {
-        "system": "http://www.ama-assn.org/go/cpt",
-        "concept": [
-          {
-            "code": "90935",
-            "display": "Hemodialysis procedure with single evaluation by a physician or other qualified health care professional"
-          },
-          {
-            "code": "90937",
-            "display": "Hemodialysis procedure requiring repeated evaluation(s) with or without substantial revision of dialysis prescription"
-          },
-          {
-            "code": "90945",
-            "display": "Dialysis procedure other than hemodialysis (eg, peritoneal dialysis, hemofiltration, or other continuous renal replacement therapies), with single evaluation by a physician or other qualified health care professional"
-          },
-          {
-            "code": "90947",
-            "display": "Dialysis procedure other than hemodialysis (eg, peritoneal dialysis, hemofiltration, or other continuous renal replacement therapies) requiring repeated evaluations by a physician or other qualified health care professional, with or without substantial revision of dialysis prescription"
-          },
-          {
-            "code": "90997",
-            "display": "Hemoperfusion (eg, with activated charcoal or resin)"
-          },
-          {
-            "code": "90999",
-            "display": "Unlisted dialysis procedure, inpatient or outpatient"
-          },
-          {
-            "code": "99512",
-            "display": "Home visit for hemodialysis"
-          }
-        ]
-      },
-      {
-        "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
-        "concept": [
-          {
-            "code": "G0257",
-            "display": "Unscheduled or emergency dialysis treatment for an esrd patient in a hospital outpatient department that is not certified as an esrd facility"
-          },
-          {
-            "code": "S9339",
-            "display": "Home therapy; peritoneal dialysis, administrative services, professional pharmacy services, care coordination and all necessary supplies and equipment (drugs and nursing visits coded separately), per diem"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -240,6 +210,52 @@
           {
             "code": "714749008",
             "display": "Continuous renal replacement therapy (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "90935",
+            "display": "Hemodialysis procedure with single evaluation by a physician or other qualified health care professional"
+          },
+          {
+            "code": "90937",
+            "display": "Hemodialysis procedure requiring repeated evaluation(s) with or without substantial revision of dialysis prescription"
+          },
+          {
+            "code": "90945",
+            "display": "Dialysis procedure other than hemodialysis (eg, peritoneal dialysis, hemofiltration, or other continuous renal replacement therapies), with single evaluation by a physician or other qualified health care professional"
+          },
+          {
+            "code": "90947",
+            "display": "Dialysis procedure other than hemodialysis (eg, peritoneal dialysis, hemofiltration, or other continuous renal replacement therapies) requiring repeated evaluations by a physician or other qualified health care professional, with or without substantial revision of dialysis prescription"
+          },
+          {
+            "code": "90997",
+            "display": "Hemoperfusion (eg, with activated charcoal or resin)"
+          },
+          {
+            "code": "90999",
+            "display": "Unlisted dialysis procedure, inpatient or outpatient"
+          },
+          {
+            "code": "99512",
+            "display": "Home visit for hemodialysis"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "concept": [
+          {
+            "code": "G0257",
+            "display": "Unscheduled or emergency dialysis treatment for an esrd patient in a hospital outpatient department that is not certified as an esrd facility"
+          },
+          {
+            "code": "S9339",
+            "display": "Home therapy; peritoneal dialysis, administrative services, professional pharmacy services, care coordination and all necessary supplies and equipment (drugs and nursing visits coded separately), per diem"
           }
         ]
       }

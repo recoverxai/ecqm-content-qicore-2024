@@ -1,21 +1,142 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1478",
+  "meta": {
+    "versionId": "30",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-18"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1478",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1478"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1478"
     }
   ],
   "version": "20210218",
-  "name": "RetinalDetachmentwithRetinalDefect",
+  "name": "RetinalDetachmentWithRetinalDefect",
   "title": "Retinal Detachment with Retinal Defect",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1279848007",
+            "display": "Detachment of retina with break of retina (disorder)"
+          },
+          {
+            "code": "1281813008",
+            "display": "Partial detachment of retina with single break of retina (disorder)"
+          },
+          {
+            "code": "1281815001",
+            "display": "Partial detachment of retina with multiple breaks of retina (disorder)"
+          },
+          {
+            "code": "193319001",
+            "display": "New partial retinal detachment with single defect (disorder)"
+          },
+          {
+            "code": "193322004",
+            "display": "New partial retinal detachment with retinal dialysis (disorder)"
+          },
+          {
+            "code": "193323009",
+            "display": "Recent total retinal detachment (disorder)"
+          },
+          {
+            "code": "193324003",
+            "display": "Recent subtotal retinal detachment (disorder)"
+          },
+          {
+            "code": "193325002",
+            "display": "Old partial retinal detachment (disorder)"
+          },
+          {
+            "code": "193326001",
+            "display": "Old total retinal detachment (disorder)"
+          },
+          {
+            "code": "193327005",
+            "display": "Old subtotal retinal detachment (disorder)"
+          },
+          {
+            "code": "19620000",
+            "display": "Rhegmatogenous retinal detachment (disorder)"
+          },
+          {
+            "code": "232008001",
+            "display": "Rhegmatogenous retinal detachment - macula on (disorder)"
+          },
+          {
+            "code": "232009009",
+            "display": "Rhegmatogenous retinal detachment - macula off (disorder)"
+          },
+          {
+            "code": "232010004",
+            "display": "Traction retinal detachment involving macula (disorder)"
+          },
+          {
+            "code": "232011000",
+            "display": "Traction retinal detachment sparing macula (disorder)"
+          },
+          {
+            "code": "232023006",
+            "display": "Traction detachment of retina due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "247165009",
+            "display": "Retinal detachment - subretinal fluid (disorder)"
+          },
+          {
+            "code": "314494006",
+            "display": "Pseudophakic retinal detachment (disorder)"
+          },
+          {
+            "code": "331831000119109",
+            "display": "Total detachment of right retina (disorder)"
+          },
+          {
+            "code": "337451000119106",
+            "display": "Total detachment of left retina (disorder)"
+          },
+          {
+            "code": "34711008",
+            "display": "Traction detachment of retina (disorder)"
+          },
+          {
+            "code": "38579007",
+            "display": "Partial recent retinal detachment with retinal dialysis (disorder)"
+          },
+          {
+            "code": "38599001",
+            "display": "Serous retinal detachment (disorder)"
+          },
+          {
+            "code": "42059000",
+            "display": "Retinal detachment (disorder)"
+          },
+          {
+            "code": "7219007",
+            "display": "Traction detachment with vitreoretinal organization (disorder)"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -106,115 +227,6 @@
           {
             "code": "H33.8",
             "display": "Other retinal detachments"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "193319001",
-            "display": "New partial retinal detachment with single defect (disorder)"
-          },
-          {
-            "code": "193320007",
-            "display": "New partial retinal detachment with multiple defects (disorder)"
-          },
-          {
-            "code": "193322004",
-            "display": "New partial retinal detachment with retinal dialysis (disorder)"
-          },
-          {
-            "code": "193323009",
-            "display": "Recent total retinal detachment (disorder)"
-          },
-          {
-            "code": "193324003",
-            "display": "Recent subtotal retinal detachment (disorder)"
-          },
-          {
-            "code": "193325002",
-            "display": "Old partial retinal detachment (disorder)"
-          },
-          {
-            "code": "193326001",
-            "display": "Old total retinal detachment (disorder)"
-          },
-          {
-            "code": "193327005",
-            "display": "Old subtotal retinal detachment (disorder)"
-          },
-          {
-            "code": "19620000",
-            "display": "Rhegmatogenous retinal detachment (disorder)"
-          },
-          {
-            "code": "232008001",
-            "display": "Rhegmatogenous retinal detachment - macula on (disorder)"
-          },
-          {
-            "code": "232009009",
-            "display": "Rhegmatogenous retinal detachment - macula off (disorder)"
-          },
-          {
-            "code": "232010004",
-            "display": "Traction retinal detachment involving macula (disorder)"
-          },
-          {
-            "code": "232011000",
-            "display": "Traction retinal detachment sparing macula (disorder)"
-          },
-          {
-            "code": "232023006",
-            "display": "Traction detachment of retina due to diabetes mellitus (disorder)"
-          },
-          {
-            "code": "247165009",
-            "display": "Retinal detachment - subretinal fluid (disorder)"
-          },
-          {
-            "code": "314494006",
-            "display": "Pseudophakic retinal detachment (disorder)"
-          },
-          {
-            "code": "331831000119109",
-            "display": "Total detachment of right retina (disorder)"
-          },
-          {
-            "code": "337451000119106",
-            "display": "Total detachment of left retina (disorder)"
-          },
-          {
-            "code": "34711008",
-            "display": "Traction detachment of retina (disorder)"
-          },
-          {
-            "code": "3598000",
-            "display": "Partial recent retinal detachment with single defect (disorder)"
-          },
-          {
-            "code": "38579007",
-            "display": "Partial recent retinal detachment with retinal dialysis (disorder)"
-          },
-          {
-            "code": "38599001",
-            "display": "Serous retinal detachment (disorder)"
-          },
-          {
-            "code": "4178006",
-            "display": "Partial recent retinal detachment with multiple defects (disorder)"
-          },
-          {
-            "code": "42059000",
-            "display": "Retinal detachment (disorder)"
-          },
-          {
-            "code": "56202001",
-            "display": "Retinal detachment with retinal defect (disorder)"
-          },
-          {
-            "code": "7219007",
-            "display": "Traction detachment with vitreoretinal organization (disorder)"
           }
         ]
       }

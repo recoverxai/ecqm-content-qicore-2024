@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1058",
+  "meta": {
+    "versionId": "13",
+    "lastUpdated": "2024-01-24T09:08:16.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-23"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1058",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1058"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1058"
     }
   ],
-  "version": "20210910",
-  "name": "Endocrinesystem,estrogenswithorwithoutprogestins",
-  "title": "Endocrine system, estrogens with or without progestins",
+  "version": "20240123",
+  "name": "PotentiallyHarmfulEstrogensForOlderAdults",
+  "title": "Potentially Harmful Estrogens for Older Adults",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-23T01:10:32-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -202,6 +217,10 @@
           {
             "code": "2556799",
             "display": "estradiol 1 MG / norethindrone acetate 0.5 MG / relugolix 40 MG Oral Tablet"
+          },
+          {
+            "code": "2632844",
+            "display": "estradiol 0.5 MG / progesterone 100 MG Oral Capsule"
           },
           {
             "code": "310197",

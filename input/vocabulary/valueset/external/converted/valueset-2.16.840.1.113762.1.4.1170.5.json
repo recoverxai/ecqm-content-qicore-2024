@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1170.5",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2024-10-21T18:21:28.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-10-07"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1170.5",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1170.5"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1170.5"
     }
   ],
   "version": "20211007",
-  "name": "Allergytothrombolytics",
+  "name": "AllergyToThrombolytics",
   "title": "Allergy to thrombolytics",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-10-07T01:00:28-04:00",
+  "publisher": "Acumen OP Steward",
   "compose": {
     "include": [
       {

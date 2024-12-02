@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.110.12.1087",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2024-01-30T18:15:31.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-24"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1087",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.110.12.1087"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.110.12.1087"
     }
   ],
   "version": "20210224",
-  "name": "InfluenzaVirusLAIVImmunization",
-  "title": "Influenza Virus LAIV Immunization",
+  "name": "InfluenzaVirusLAIVVaccine",
+  "title": "Influenza Virus LAIV Vaccine",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-24T01:00:28-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -21,19 +37,11 @@
         "concept": [
           {
             "code": "111",
-            "display": "influenza virus vaccine, live, attenuated, for intranasal use"
+            "display": "Influenza, live, trivalent, intranasal"
           },
           {
             "code": "149",
-            "display": "influenza, live, intranasal, quadrivalent"
-          },
-          {
-            "code": "111",
-            "display": "influenza virus vaccine, live, attenuated, for intranasal use"
-          },
-          {
-            "code": "149",
-            "display": "influenza, live, intranasal, quadrivalent"
+            "display": "Influenza, live, quadrivalent, intranasal"
           }
         ]
       }

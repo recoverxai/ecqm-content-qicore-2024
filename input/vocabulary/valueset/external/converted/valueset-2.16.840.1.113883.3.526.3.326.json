@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.326",
+  "meta": {
+    "versionId": "41",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-09"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.326",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.326"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.326"
     }
   ],
   "version": "20210209",
@@ -13,9 +28,35 @@
   "title": "Primary Open Angle Glaucoma",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "111513000",
+            "display": "Advanced open-angle glaucoma (disorder)"
+          },
+          {
+            "code": "15633281000119103",
+            "display": "Bilateral primary open angle glaucoma (disorder)"
+          },
+          {
+            "code": "50485007",
+            "display": "Low tension glaucoma (disorder)"
+          },
+          {
+            "code": "77075001",
+            "display": "Primary open angle glaucoma (disorder)"
+          },
+          {
+            "code": "84494001",
+            "display": "Open-angle glaucoma (disorder)"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -170,39 +211,6 @@
           {
             "code": "H40.153",
             "display": "Residual stage of open-angle glaucoma, bilateral"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "111513000",
-            "display": "Advanced open-angle glaucoma (disorder)"
-          },
-          {
-            "code": "15633281000119103",
-            "display": "Bilateral primary open angle glaucoma (disorder)"
-          },
-          {
-            "code": "15633321000119108",
-            "display": "Primary open angle glaucoma of left eye (disorder)"
-          },
-          {
-            "code": "15640441000119104",
-            "display": "Primary open angle glaucoma of right eye (disorder)"
-          },
-          {
-            "code": "50485007",
-            "display": "Low tension glaucoma (disorder)"
-          },
-          {
-            "code": "77075001",
-            "display": "Primary open angle glaucoma (disorder)"
-          },
-          {
-            "code": "84494001",
-            "display": "Open-angle glaucoma (disorder)"
           }
         ]
       }

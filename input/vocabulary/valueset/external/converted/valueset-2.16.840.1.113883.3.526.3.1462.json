@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1462",
+  "meta": {
+    "versionId": "29",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-14"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1462",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1462"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1462"
     }
   ],
   "version": "20210214",
@@ -13,34 +28,10 @@
   "title": "Hereditary Choroidal Dystrophies",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-14T01:00:31-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "H31.20",
-            "display": "Hereditary choroidal dystrophy, unspecified"
-          },
-          {
-            "code": "H31.21",
-            "display": "Choroideremia"
-          },
-          {
-            "code": "H31.22",
-            "display": "Choroidal dystrophy (central areolar) (generalized) (peripapillary)"
-          },
-          {
-            "code": "H31.23",
-            "display": "Gyrate atrophy, choroid"
-          },
-          {
-            "code": "H31.29",
-            "display": "Other hereditary choroidal dystrophy"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -111,6 +102,31 @@
           {
             "code": "92820007",
             "display": "Circumpapillary dystrophy of choroid (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "H31.20",
+            "display": "Hereditary choroidal dystrophy, unspecified"
+          },
+          {
+            "code": "H31.21",
+            "display": "Choroideremia"
+          },
+          {
+            "code": "H31.22",
+            "display": "Choroidal dystrophy (central areolar) (generalized) (peripapillary)"
+          },
+          {
+            "code": "H31.23",
+            "display": "Gyrate atrophy, choroid"
+          },
+          {
+            "code": "H31.29",
+            "display": "Other hereditary choroidal dystrophy"
           }
         ]
       }

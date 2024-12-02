@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.335",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-01-27"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.335",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1029.335"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.335"
     }
   ],
   "version": "20220127",
@@ -13,7 +28,8 @@
   "title": "Renal Disease",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-01-27T01:02:14-05:00",
+  "publisher": "Joint Commission",
   "compose": {
     "include": [
       {
@@ -96,8 +112,20 @@
             "display": "Nephrotic syndrome with focal and segmental glomerular lesions"
           },
           {
-            "code": "N04.2",
-            "display": "Nephrotic syndrome with diffuse membranous glomerulonephritis"
+            "code": "N04.20",
+            "display": "Nephrotic syndrome with diffuse membranous glomerulonephritis, unspecified"
+          },
+          {
+            "code": "N04.21",
+            "display": "Primary membranous nephropathy with nephrotic syndrome"
+          },
+          {
+            "code": "N04.22",
+            "display": "Secondary membranous nephropathy with nephrotic syndrome"
+          },
+          {
+            "code": "N04.29",
+            "display": "Other nephrotic syndrome with diffuse membranous glomerulonephritis"
           },
           {
             "code": "N04.3",

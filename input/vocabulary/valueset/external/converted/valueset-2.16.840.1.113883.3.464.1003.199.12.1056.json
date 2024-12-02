@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.199.12.1056",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.199.12.1056",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.199.12.1056"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.199.12.1056"
     }
   ],
   "version": "20170504",
@@ -13,18 +28,10 @@
   "title": "Intussusception",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "K56.1",
-            "display": "Intussusception"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -98,7 +105,7 @@
           },
           {
             "code": "405558008",
-            "display": "Ileal intussusception (disorder)"
+            "display": "Intussusception of ileum (disorder)"
           },
           {
             "code": "49723003",
@@ -119,6 +126,15 @@
           {
             "code": "91446004",
             "display": "Intussusception of appendix (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "K56.1",
+            "display": "Intussusception"
           }
         ]
       }

@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1184",
+  "meta": {
+    "versionId": "15",
+    "lastUpdated": "2024-08-12T12:45:09.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-07-22"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1184",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1184"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1184"
     }
   ],
-  "version": "20220910",
-  "name": "PartialArthroplastyofHip",
+  "version": "20230722",
+  "name": "PartialArthroplastyOfHip",
   "title": "Partial Arthroplasty of Hip",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-07-22T01:12:36-04:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
@@ -218,6 +233,65 @@
           {
             "code": "0SRS0KZ",
             "display": "Replacement of Left Hip Joint, Femoral Surface with Nonautologous Tissue Substitute, Open Approach"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1217139005",
+            "display": "Partial replacement of joint of left hip with bipolar prosthesis (procedure)"
+          },
+          {
+            "code": "1217140007",
+            "display": "Partial replacement of joint of right hip with bipolar prosthesis (procedure)"
+          },
+          {
+            "code": "1217141006",
+            "display": "Partial replacement of joint of bilateral hips with bipolar prosthesis (procedure)"
+          },
+          {
+            "code": "265106004",
+            "display": "Insertion of Austin-Moore prosthesis (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "27125",
+            "display": "Hemiarthroplasty, hip, partial (eg, femoral stem prosthesis, bipolar arthroplasty)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "276178005",
+            "display": "Uncemented prosthetic hemiarthroplasty of hip joint (procedure)"
+          },
+          {
+            "code": "309458002",
+            "display": "Cemented Thompson hemiarthroplasty of hip joint (procedure)"
+          },
+          {
+            "code": "32581000",
+            "display": "Partial hip replacement by cup with acetabuloplasty (procedure)"
+          },
+          {
+            "code": "340922009",
+            "display": "Partial hip replacement by cup (procedure)"
+          },
+          {
+            "code": "386649003",
+            "display": "Partial hip replacement by prosthesis (procedure)"
+          },
+          {
+            "code": "713686009",
+            "display": "Partial hip replacement with bipolar prosthesis (procedure)"
           }
         ]
       }

@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1190",
+  "meta": {
+    "versionId": "25",
+    "lastUpdated": "2024-02-10T01:11:25.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1190",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1190"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1190"
     }
   ],
-  "version": "20220913",
-  "name": "AntibioticMedicationsforUpperRespiratoryInfection",
+  "version": "20240210",
+  "name": "AntibioticMedicationsForUpperRespiratoryInfection",
   "title": "Antibiotic Medications for Upper Respiratory Infection",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-10T01:11:25-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -380,6 +395,10 @@
             "display": "doxycycline hyclate 120 MG Delayed Release Oral Tablet"
           },
           {
+            "code": "1801142",
+            "display": "doxycycline hyclate 60 MG Delayed Release Oral Tablet"
+          },
+          {
             "code": "1807508",
             "display": "200 ML vancomycin 5 MG/ML Injection"
           },
@@ -422,18 +441,6 @@
           {
             "code": "1870676",
             "display": "2 ML gentamicin 10 MG/ML Injection"
-          },
-          {
-            "code": "1870681",
-            "display": "6 ML gentamicin 10 MG/ML Injection"
-          },
-          {
-            "code": "1870685",
-            "display": "8 ML gentamicin 10 MG/ML Injection"
-          },
-          {
-            "code": "1870686",
-            "display": "10 ML gentamicin 10 MG/ML Injection"
           },
           {
             "code": "197449",
@@ -692,16 +699,52 @@
             "display": "100 ML gentamicin 1 MG/ML Injection"
           },
           {
-            "code": "242825",
-            "display": "50 ML tobramycin 1.2 MG/ML Injection"
-          },
-          {
             "code": "248656",
             "display": "azithromycin 500 MG Oral Tablet"
           },
           {
             "code": "259290",
             "display": "dalfopristin 350 MG / quinupristin 150 MG Injection"
+          },
+          {
+            "code": "2604801",
+            "display": "{84 (amoxicillin 500 MG Oral Capsule) / 28 (vonoprazan 20 MG Oral Tablet) } Pack"
+          },
+          {
+            "code": "2604803",
+            "display": "{56 (amoxicillin 500 MG Oral Capsule) / 28 (clarithromycin 500 MG Oral Tablet) / 28 (vonoprazan 20 MG Oral Tablet) } Pack"
+          },
+          {
+            "code": "2630753",
+            "display": "cefazolin 3000 MG Injection"
+          },
+          {
+            "code": "2632127",
+            "display": "100 ML daptomycin 10 MG/ML Injection"
+          },
+          {
+            "code": "2632130",
+            "display": "50 ML daptomycin 7 MG/ML Injection"
+          },
+          {
+            "code": "2632132",
+            "display": "50 ML daptomycin 10 MG/ML Injection"
+          },
+          {
+            "code": "2632133",
+            "display": "100 ML daptomycin 7 MG/ML Injection"
+          },
+          {
+            "code": "2667642",
+            "display": "metronidazole 100 MG/ML Oral Suspension"
+          },
+          {
+            "code": "2671687",
+            "display": "penicillin G benzathine 1200000 UNT Injection"
+          },
+          {
+            "code": "2671695",
+            "display": "penicillin G benzathine 2400000 UNT Injection"
           },
           {
             "code": "283535",
@@ -932,14 +975,6 @@
             "display": "100 ML gentamicin 0.8 MG/ML Injection"
           },
           {
-            "code": "310474",
-            "display": "100 ML gentamicin 0.9 MG/ML Injection"
-          },
-          {
-            "code": "310476",
-            "display": "50 ML gentamicin 1.4 MG/ML Injection"
-          },
-          {
             "code": "310477",
             "display": "50 ML gentamicin 1.6 MG/ML Injection"
           },
@@ -1112,6 +1147,10 @@
             "display": "cefixime 40 MG/ML Oral Suspension"
           },
           {
+            "code": "422434",
+            "display": "nitrofurantoin 10 MG/ML Oral Suspension"
+          },
+          {
             "code": "434018",
             "display": "doxycycline hyclate 100 MG Delayed Release Oral Tablet"
           },
@@ -1278,18 +1317,6 @@
           {
             "code": "749783",
             "display": "{6 (azithromycin 250 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "757460",
-            "display": "{31 (doxycycline monohydrate 100 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "757464",
-            "display": "{31 (doxycycline monohydrate 75 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "757466",
-            "display": "{60 (doxycycline monohydrate 100 MG Oral Tablet) } Pack"
           },
           {
             "code": "757968",

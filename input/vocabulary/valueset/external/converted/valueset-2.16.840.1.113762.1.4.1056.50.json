@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1056.50",
+  "meta": {
+    "versionId": "31",
+    "lastUpdated": "2024-08-09T14:22:18.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-07"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1056.50",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1056.50"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1056.50"
     }
   ],
-  "version": "20220219",
+  "version": "20240207",
   "name": "HIVLabTests",
   "title": "HIV Lab Tests",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-07T01:03:02-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
@@ -496,16 +511,8 @@
             "display": "HIV 1 Ab [Presence] in Specimen by Rapid immunoassay"
           },
           {
-            "code": "49965-7",
-            "display": "Deprecated HIV 1 Ab/HIV 2 Ab Ab [Ratio] in Serum by Immunoblot (IB)"
-          },
-          {
             "code": "51786-2",
             "display": "HIV 2 Ab Signal/Cutoff in Serum or Plasma by Immunoassay"
-          },
-          {
-            "code": "51866-2",
-            "display": "Deprecated HIV 1 Ab+Ag [Presence] in Serum"
           },
           {
             "code": "5220-9",

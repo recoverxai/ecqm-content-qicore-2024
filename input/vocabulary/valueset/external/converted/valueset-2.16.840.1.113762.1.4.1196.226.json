@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1196.226",
+  "meta": {
+    "versionId": "36",
+    "lastUpdated": "2024-02-22T15:25:56.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-24"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1196.226",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1196.226"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1196.226"
     }
   ],
-  "version": "20230204",
-  "name": "Opioids,All",
+  "version": "20240124",
+  "name": "OpioidsAll",
   "title": "Opioids, All",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-24T01:11:59-05:00",
+  "publisher": "Mathematica PSI Steward",
   "compose": {
     "include": [
       {
@@ -224,14 +239,6 @@
             "display": "codeine phosphate 1.2 MG/ML / dexbrompheniramine maleate 0.133 MG/ML / pseudoephedrine hydrochloride 4 MG/ML Oral Solution"
           },
           {
-            "code": "1232113",
-            "display": "1 ML morphine sulfate 15 MG/ML Prefilled Syringe"
-          },
-          {
-            "code": "1234941",
-            "display": "chlorpheniramine maleate 0.4 MG/ML / dihydrocodeine bitartrate 0.6 MG/ML / phenylephrine hydrochloride 1.5 MG/ML Oral Solution"
-          },
-          {
             "code": "1235862",
             "display": "chlorcyclizine hydrochloride 2.5 MG/ML / codeine phosphate 1.8 MG/ML / pseudoephedrine hydrochloride 6 MG/ML Oral Solution"
           },
@@ -294,10 +301,6 @@
           {
             "code": "1366873",
             "display": "hydrocodone bitartrate 5 MG / pseudoephedrine hydrochloride 60 MG Oral Tablet"
-          },
-          {
-            "code": "1372265",
-            "display": "chlorpheniramine maleate 0.8 MG/ML / hydrocodone bitartrate 1 MG/ML Oral Solution"
           },
           {
             "code": "1431076",
@@ -424,10 +427,6 @@
             "display": "1 ML meperidine hydrochloride 100 MG/ML Injection"
           },
           {
-            "code": "1665690",
-            "display": "1.5 ML meperidine hydrochloride 50 MG/ML Injection"
-          },
-          {
             "code": "1665697",
             "display": "1 ML meperidine hydrochloride 50 MG/ML Injection"
           },
@@ -536,10 +535,6 @@
             "display": "10 ML morphine sulfate 1 MG/ML Injection"
           },
           {
-            "code": "1728805",
-            "display": "2 ML morphine sulfate 1 MG/ML Injection"
-          },
-          {
             "code": "1728999",
             "display": "30 ML morphine sulfate 1 MG/ML Injection"
           },
@@ -562,10 +557,6 @@
           {
             "code": "1729710",
             "display": "remifentanil 5 MG Injection"
-          },
-          {
-            "code": "1731517",
-            "display": "10 ML morphine sulfate 25 MG/ML Injection"
           },
           {
             "code": "1731520",
@@ -618,10 +609,6 @@
           {
             "code": "1732136",
             "display": "1 ML morphine sulfate 5 MG/ML Injection"
-          },
-          {
-            "code": "1732138",
-            "display": "30 ML morphine sulfate 5 MG/ML Injection"
           },
           {
             "code": "1733080",
@@ -776,10 +763,6 @@
             "display": "Abuse-Deterrent 12 HR morphine sulfate 60 MG Extended Release Oral Tablet"
           },
           {
-            "code": "1872234",
-            "display": "Abuse-Deterrent 12 HR morphine sulfate 100 MG Extended Release Oral Tablet"
-          },
-          {
             "code": "1872271",
             "display": "1 ML hydromorphone hydrochloride 4 MG/ML Prefilled Syringe"
           },
@@ -824,8 +807,8 @@
             "display": "1.5 ML buprenorphine 200 MG/ML Prefilled Syringe"
           },
           {
-            "code": "200240",
-            "display": "paregoric 0.4 MG/ML Oral Solution"
+            "code": "2001358",
+            "display": "acetaminophen 325 MG / benzhydrocodone 6.12 MG Oral Tablet"
           },
           {
             "code": "2003714",
@@ -846,6 +829,14 @@
           {
             "code": "2105822",
             "display": "acetaminophen 60 MG/ML / oxycodone hydrochloride 2 MG/ML Oral Solution"
+          },
+          {
+            "code": "2118728",
+            "display": "acetaminophen 325 MG / benzhydrocodone 4.08 MG Oral Tablet"
+          },
+          {
+            "code": "2118732",
+            "display": "acetaminophen 325 MG / benzhydrocodone 8.16 MG Oral Tablet"
           },
           {
             "code": "2168270",
@@ -914,6 +905,46 @@
           {
             "code": "2588478",
             "display": "celecoxib 56 MG / tramadol hydrochloride 44 MG Oral Tablet"
+          },
+          {
+            "code": "2629337",
+            "display": "0.5 ML fentanyl 0.05 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2635081",
+            "display": "100 ML fentanyl 0.05 MG/ML Injection"
+          },
+          {
+            "code": "2639021",
+            "display": "0.16 ML buprenorphine 50 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2639029",
+            "display": "0.32 ML buprenorphine 50 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2639031",
+            "display": "0.48 ML buprenorphine 50 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2639033",
+            "display": "0.64 ML buprenorphine 50 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2639036",
+            "display": "0.18 ML buprenorphine 356 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2639041",
+            "display": "0.27 ML buprenorphine 356 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2639043",
+            "display": "0.36 ML buprenorphine 356 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2670390",
+            "display": "tramadol hydrochloride 25 MG Oral Tablet"
           },
           {
             "code": "310293",
@@ -1088,10 +1119,6 @@
             "display": "acetaminophen 325 MG / hydrocodone bitartrate 2.5 MG Oral Tablet"
           },
           {
-            "code": "857510",
-            "display": "12 HR chlorpheniramine polistirex 4 MG / hydrocodone polistirex 5 MG Extended Release Oral Capsule"
-          },
-          {
             "code": "857512",
             "display": "12 HR chlorpheniramine polistirex 8 MG / hydrocodone polistirex 10 MG Extended Release Oral Capsule"
           },
@@ -1120,16 +1147,8 @@
             "display": "1 ML meperidine hydrochloride 75 MG/ML Cartridge"
           },
           {
-            "code": "861447",
-            "display": "meperidine hydrochloride 10 MG/ML Injectable Solution"
-          },
-          {
             "code": "861455",
             "display": "meperidine hydrochloride 100 MG Oral Tablet"
-          },
-          {
-            "code": "861459",
-            "display": "meperidine hydrochloride 100 MG/ML Injectable Solution"
           },
           {
             "code": "861463",

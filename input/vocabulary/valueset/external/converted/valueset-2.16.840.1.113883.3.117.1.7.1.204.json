@@ -1,744 +1,39 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.204",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2024-08-09T10:26:40.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-08"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.204",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.117.1.7.1.204"
+      "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.204"
     }
   ],
-  "version": "20170504",
+  "version": "20240208",
   "name": "CarotidIntervention",
   "title": "Carotid Intervention",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-08T01:10:25-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
         "concept": [
-          {
-            "code": "037H046",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037H056",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037H066",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037H076",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037H0D6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037H0E6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Two Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037H0F6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Three Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037H0G6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037H0Z6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "037H346",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037H356",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037H366",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037H376",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037H3D6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037H3E6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037H3F6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037H3G6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037H3Z6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "037H446",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037H456",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037H466",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037H476",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037H4D6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037H4E6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037H4F6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037H4G6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037H4Z6",
-            "display": "Dilation of Right Common Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037J046",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037J056",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037J066",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037J076",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037J0D6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037J0E6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Two Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037J0F6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Three Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037J0G6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037J0Z6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "037J346",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037J356",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037J366",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037J376",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037J3D6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037J3E6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037J3F6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037J3G6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037J3Z6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "037J446",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037J456",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037J466",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037J476",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037J4D6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037J4E6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037J4F6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037J4G6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037J4Z6",
-            "display": "Dilation of Left Common Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037K046",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037K056",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037K066",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037K076",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037K0D6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037K0E6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Two Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037K0F6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Three Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037K0G6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037K0Z6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "037K346",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037K356",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037K366",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037K376",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037K3D6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037K3E6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037K3F6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037K3G6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037K3Z6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "037K446",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037K456",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037K466",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037K476",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037K4D6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037K4E6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037K4F6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037K4G6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037K4Z6",
-            "display": "Dilation of Right Internal Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037L046",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037L056",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037L066",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037L076",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037L0D6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037L0E6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Two Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037L0F6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Three Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037L0G6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037L0Z6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "037L346",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037L356",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037L366",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037L376",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037L3D6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037L3E6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037L3F6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037L3G6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037L3Z6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "037L446",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037L456",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037L466",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037L476",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037L4D6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037L4E6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037L4F6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037L4G6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037L4Z6",
-            "display": "Dilation of Left Internal Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037M046",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037M056",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037M066",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037M076",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037M0D6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037M0E6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Two Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037M0F6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Three Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037M0G6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037M0Z6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "037M346",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037M356",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037M366",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037M376",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037M3D6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037M3E6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037M3F6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037M3G6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037M3Z6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "037M446",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037M456",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037M466",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037M476",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037M4D6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037M4E6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037M4F6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037M4G6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037M4Z6",
-            "display": "Dilation of Right External Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037N046",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037N056",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037N066",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037N076",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037N0D6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Intraluminal Device, Open Approach"
-          },
-          {
-            "code": "037N0E6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Two Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037N0F6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Three Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037N0G6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Open Approach"
-          },
-          {
-            "code": "037N0Z6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "037N346",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037N356",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037N366",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037N376",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037N3D6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Approach"
-          },
-          {
-            "code": "037N3E6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037N3F6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037N3G6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Approach"
-          },
-          {
-            "code": "037N3Z6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "037N446",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Drug-eluting Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037N456",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037N466",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037N476",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Four or More Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037N4D6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Intraluminal Device, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037N4E6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037N4F6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Three Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037N4G6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "037N4Z6",
-            "display": "Dilation of Left External Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "03CH0Z6",
-            "display": "Extirpation of Matter from Right Common Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "03CH3Z6",
-            "display": "Extirpation of Matter from Right Common Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "03CH4Z6",
-            "display": "Extirpation of Matter from Right Common Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "03CJ0Z6",
-            "display": "Extirpation of Matter from Left Common Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "03CJ3Z6",
-            "display": "Extirpation of Matter from Left Common Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "03CJ4Z6",
-            "display": "Extirpation of Matter from Left Common Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "03CK0Z6",
-            "display": "Extirpation of Matter from Right Internal Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "03CK3Z6",
-            "display": "Extirpation of Matter from Right Internal Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "03CK4Z6",
-            "display": "Extirpation of Matter from Right Internal Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "03CL0Z6",
-            "display": "Extirpation of Matter from Left Internal Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "03CL3Z6",
-            "display": "Extirpation of Matter from Left Internal Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "03CL4Z6",
-            "display": "Extirpation of Matter from Left Internal Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "03CM0Z6",
-            "display": "Extirpation of Matter from Right External Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "03CM3Z6",
-            "display": "Extirpation of Matter from Right External Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "03CM4Z6",
-            "display": "Extirpation of Matter from Right External Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "03CN0Z6",
-            "display": "Extirpation of Matter from Left External Carotid Artery, Bifurcation, Open Approach"
-          },
-          {
-            "code": "03CN3Z6",
-            "display": "Extirpation of Matter from Left External Carotid Artery, Bifurcation, Percutaneous Approach"
-          },
-          {
-            "code": "03CN4Z6",
-            "display": "Extirpation of Matter from Left External Carotid Artery, Bifurcation, Percutaneous Endoscopic Approach"
-          },
           {
             "code": "031H09G",
             "display": "Bypass Right Common Carotid Artery to Intracranial Artery with Autologous Venous Tissue, Open Approach"
@@ -3902,143 +3197,6 @@
           {
             "code": "0GT84ZZ",
             "display": "Resection of Bilateral Carotid Bodies, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "B3060ZZ",
-            "display": "Plain Radiography of Right Internal Carotid Artery using High Osmolar Contrast"
-          },
-          {
-            "code": "B3061ZZ",
-            "display": "Plain Radiography of Right Internal Carotid Artery using Low Osmolar Contrast"
-          },
-          {
-            "code": "B306YZZ",
-            "display": "Plain Radiography of Right Internal Carotid Artery using Other Contrast"
-          },
-          {
-            "code": "B3070ZZ",
-            "display": "Plain Radiography of Left Internal Carotid Artery using High Osmolar Contrast"
-          },
-          {
-            "code": "B3071ZZ",
-            "display": "Plain Radiography of Left Internal Carotid Artery using Low Osmolar Contrast"
-          },
-          {
-            "code": "B307YZZ",
-            "display": "Plain Radiography of Left Internal Carotid Artery using Other Contrast"
-          },
-          {
-            "code": "B3080ZZ",
-            "display": "Plain Radiography of Bilateral Internal Carotid Arteries using High Osmolar Contrast"
-          },
-          {
-            "code": "B3081ZZ",
-            "display": "Plain Radiography of Bilateral Internal Carotid Arteries using Low Osmolar Contrast"
-          },
-          {
-            "code": "B308YZZ",
-            "display": "Plain Radiography of Bilateral Internal Carotid Arteries using Other Contrast"
-          },
-          {
-            "code": "B3160ZZ",
-            "display": "Fluoroscopy of Right Internal Carotid Artery using High Osmolar Contrast"
-          },
-          {
-            "code": "B3161ZZ",
-            "display": "Fluoroscopy of Right Internal Carotid Artery using Low Osmolar Contrast"
-          },
-          {
-            "code": "B316YZZ",
-            "display": "Fluoroscopy of Right Internal Carotid Artery using Other Contrast"
-          },
-          {
-            "code": "B3170ZZ",
-            "display": "Fluoroscopy of Left Internal Carotid Artery using High Osmolar Contrast"
-          },
-          {
-            "code": "B3171ZZ",
-            "display": "Fluoroscopy of Left Internal Carotid Artery using Low Osmolar Contrast"
-          },
-          {
-            "code": "B317YZZ",
-            "display": "Fluoroscopy of Left Internal Carotid Artery using Other Contrast"
-          },
-          {
-            "code": "B3180ZZ",
-            "display": "Fluoroscopy of Bilateral Internal Carotid Arteries using High Osmolar Contrast"
-          },
-          {
-            "code": "B3181ZZ",
-            "display": "Fluoroscopy of Bilateral Internal Carotid Arteries using Low Osmolar Contrast"
-          },
-          {
-            "code": "B318YZZ",
-            "display": "Fluoroscopy of Bilateral Internal Carotid Arteries using Other Contrast"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
-        "concept": [
-          {
-            "code": "00.61",
-            "display": "Percutaneous angioplasty of extracranial vessel(s)"
-          },
-          {
-            "code": "00.62",
-            "display": "Percutaneous angioplasty of intracranial vessel(s)"
-          },
-          {
-            "code": "00.63",
-            "display": "Percutaneous insertion of carotid artery stent(s)"
-          },
-          {
-            "code": "00.64",
-            "display": "Percutaneous insertion of other extracranial artery stent(s)"
-          },
-          {
-            "code": "00.65",
-            "display": "Percutaneous insertion of intracranial vascular stent(s)"
-          },
-          {
-            "code": "38.02",
-            "display": "Incision of vessel, other vessels of head and neck"
-          },
-          {
-            "code": "38.12",
-            "display": "Endarterectomy, other vessels of head and neck"
-          },
-          {
-            "code": "38.22",
-            "display": "Percutaneous angioscopy"
-          },
-          {
-            "code": "38.30",
-            "display": "Resection of vessel with anastomosis, unspecified site"
-          },
-          {
-            "code": "38.31",
-            "display": "Resection of vessel with anastomosis, intracranial vessels"
-          },
-          {
-            "code": "38.32",
-            "display": "Resection of vessel with anastomosis, other vessels of head and neck"
-          },
-          {
-            "code": "38.42",
-            "display": "Resection of vessel with replacement, other vessels of head and neck"
-          },
-          {
-            "code": "39.22",
-            "display": "Aorta-subclavian-carotid bypass"
-          },
-          {
-            "code": "39.28",
-            "display": "Extracranial-intracranial (EC-IC) vascular bypass"
-          },
-          {
-            "code": "88.41",
-            "display": "Arteriography of cerebral arteries"
           }
         ]
       },
@@ -4355,7 +3513,7 @@
           },
           {
             "code": "74720005",
-            "display": "Embolectomy with catheter of carotid artery by neck incision (procedure)"
+            "display": "Percutaneous transluminal catheter embolectomy of carotid artery (procedure)"
           },
           {
             "code": "79507006",
@@ -4380,6 +3538,83 @@
           {
             "code": "9339002",
             "display": "Perfusion of carotid artery (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+        "concept": [
+          {
+            "code": "B3060ZZ",
+            "display": "Plain Radiography of Right Internal Carotid Artery using High Osmolar Contrast"
+          },
+          {
+            "code": "B3061ZZ",
+            "display": "Plain Radiography of Right Internal Carotid Artery using Low Osmolar Contrast"
+          },
+          {
+            "code": "B306YZZ",
+            "display": "Plain Radiography of Right Internal Carotid Artery using Other Contrast"
+          },
+          {
+            "code": "B3070ZZ",
+            "display": "Plain Radiography of Left Internal Carotid Artery using High Osmolar Contrast"
+          },
+          {
+            "code": "B3071ZZ",
+            "display": "Plain Radiography of Left Internal Carotid Artery using Low Osmolar Contrast"
+          },
+          {
+            "code": "B307YZZ",
+            "display": "Plain Radiography of Left Internal Carotid Artery using Other Contrast"
+          },
+          {
+            "code": "B3080ZZ",
+            "display": "Plain Radiography of Bilateral Internal Carotid Arteries using High Osmolar Contrast"
+          },
+          {
+            "code": "B3081ZZ",
+            "display": "Plain Radiography of Bilateral Internal Carotid Arteries using Low Osmolar Contrast"
+          },
+          {
+            "code": "B308YZZ",
+            "display": "Plain Radiography of Bilateral Internal Carotid Arteries using Other Contrast"
+          },
+          {
+            "code": "B3160ZZ",
+            "display": "Fluoroscopy of Right Internal Carotid Artery using High Osmolar Contrast"
+          },
+          {
+            "code": "B3161ZZ",
+            "display": "Fluoroscopy of Right Internal Carotid Artery using Low Osmolar Contrast"
+          },
+          {
+            "code": "B316YZZ",
+            "display": "Fluoroscopy of Right Internal Carotid Artery using Other Contrast"
+          },
+          {
+            "code": "B3170ZZ",
+            "display": "Fluoroscopy of Left Internal Carotid Artery using High Osmolar Contrast"
+          },
+          {
+            "code": "B3171ZZ",
+            "display": "Fluoroscopy of Left Internal Carotid Artery using Low Osmolar Contrast"
+          },
+          {
+            "code": "B317YZZ",
+            "display": "Fluoroscopy of Left Internal Carotid Artery using Other Contrast"
+          },
+          {
+            "code": "B3180ZZ",
+            "display": "Fluoroscopy of Bilateral Internal Carotid Arteries using High Osmolar Contrast"
+          },
+          {
+            "code": "B3181ZZ",
+            "display": "Fluoroscopy of Bilateral Internal Carotid Arteries using Low Osmolar Contrast"
+          },
+          {
+            "code": "B318YZZ",
+            "display": "Fluoroscopy of Bilateral Internal Carotid Arteries using Other Contrast"
           }
         ]
       }

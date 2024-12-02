@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1176",
+  "meta": {
+    "versionId": "22",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1176",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1176"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1176"
     }
   ],
   "version": "20170504",
@@ -13,27 +28,16 @@
   "title": "Heart Rate",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "AHA Steward",
   "compose": {
     "include": [
       {
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "68999-2",
-            "display": "Heart rate --supine"
-          },
-          {
-            "code": "69000-8",
-            "display": "Heart rate --sitting"
-          },
-          {
-            "code": "69001-6",
-            "display": "Heart rate --standing"
-          },
-          {
-            "code": "8867-4",
-            "display": "Heart rate"
+            "code": "11328-2",
+            "display": "Heart rate at First encounter"
           },
           {
             "code": "68999-2",

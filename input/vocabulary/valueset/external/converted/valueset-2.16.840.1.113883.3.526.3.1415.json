@@ -1,21 +1,122 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1415",
+  "meta": {
+    "versionId": "29",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1415",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1415"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1415"
     }
   ],
   "version": "20210210",
-  "name": "CertainTypesofIridocyclitis",
+  "name": "CertainTypesOfIridocyclitis",
   "title": "Certain Types of Iridocyclitis",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-10T01:03:00-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10698009",
+            "display": "Herpes zoster iridocyclitis (disorder)"
+          },
+          {
+            "code": "11226001",
+            "display": "Fuchs' heterochromic cyclitis (disorder)"
+          },
+          {
+            "code": "12630008",
+            "display": "Primary iridocyclitis (disorder)"
+          },
+          {
+            "code": "13608004",
+            "display": "Herpes simplex iridocyclitis (disorder)"
+          },
+          {
+            "code": "15678641000119101",
+            "display": "Iridocyclitis of right eye caused by human herpes simplex virus (disorder)"
+          },
+          {
+            "code": "15678681000119106",
+            "display": "Iridocyclitis of left eye caused by human herpes simplex virus (disorder)"
+          },
+          {
+            "code": "15678761000119105",
+            "display": "Iridocyclitis of right eye due to herpes zoster (disorder)"
+          },
+          {
+            "code": "15678801000119102",
+            "display": "Iridocyclitis of left eye due to herpes zoster (disorder)"
+          },
+          {
+            "code": "193487008",
+            "display": "Secondary infected iridocyclitis (disorder)"
+          },
+          {
+            "code": "23798003",
+            "display": "Translucency of iris (disorder)"
+          },
+          {
+            "code": "267619000",
+            "display": "Non-infectious anterior uveitis (disorder)"
+          },
+          {
+            "code": "29538005",
+            "display": "Glaucomatocyclitic crisis (disorder)"
+          },
+          {
+            "code": "30080002",
+            "display": "Secondary syphilitic iridocyclitis (disorder)"
+          },
+          {
+            "code": "420485005",
+            "display": "Herpetic iridocyclitis (disorder)"
+          },
+          {
+            "code": "46916006",
+            "display": "Secondary noninfectious iridocyclitis (disorder)"
+          },
+          {
+            "code": "6869001",
+            "display": "Recurrent iridocyclitis (disorder)"
+          },
+          {
+            "code": "70461003",
+            "display": "Lens-induced iridocyclitis (disorder)"
+          },
+          {
+            "code": "77971008",
+            "display": "Iridocyclitis (disorder)"
+          },
+          {
+            "code": "89114005",
+            "display": "Infectious secondary iridocyclitis (disorder)"
+          },
+          {
+            "code": "9091006",
+            "display": "Gonococcal iridocyclitis (disorder)"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -58,95 +159,6 @@
           {
             "code": "H20.9",
             "display": "Unspecified iridocyclitis"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "10698009",
-            "display": "Herpes zoster iridocyclitis (disorder)"
-          },
-          {
-            "code": "11226001",
-            "display": "Fuchs' heterochromic cyclitis (disorder)"
-          },
-          {
-            "code": "12630008",
-            "display": "Primary iridocyclitis (disorder)"
-          },
-          {
-            "code": "13608004",
-            "display": "Herpes simplex iridocyclitis (disorder)"
-          },
-          {
-            "code": "15678641000119101",
-            "display": "Iridocyclitis of right eye caused by human herpes simplex virus (disorder)"
-          },
-          {
-            "code": "15678681000119106",
-            "display": "Iridocyclitis of left eye caused by human herpes simplex virus (disorder)"
-          },
-          {
-            "code": "15678761000119105",
-            "display": "Iridocyclitis of right eye due to herpes zoster (disorder)"
-          },
-          {
-            "code": "15678801000119102",
-            "display": "Iridocyclitis of left eye due to herpes zoster (disorder)"
-          },
-          {
-            "code": "193487008",
-            "display": "Secondary infected iridocyclitis (disorder)"
-          },
-          {
-            "code": "193488003",
-            "display": "Secondary non-infected iridocyclitis (disorder)"
-          },
-          {
-            "code": "23798003",
-            "display": "Translucency of iris (disorder)"
-          },
-          {
-            "code": "267619000",
-            "display": "Non-infectious anterior uveitis (disorder)"
-          },
-          {
-            "code": "29538005",
-            "display": "Glaucomatocyclitic crisis (disorder)"
-          },
-          {
-            "code": "30080002",
-            "display": "Secondary syphilitic iridocyclitis (disorder)"
-          },
-          {
-            "code": "420485005",
-            "display": "Herpetic iridocyclitis (disorder)"
-          },
-          {
-            "code": "46916006",
-            "display": "Noninfectious secondary iridocyclitis (disorder)"
-          },
-          {
-            "code": "6869001",
-            "display": "Recurrent iridocyclitis (disorder)"
-          },
-          {
-            "code": "70461003",
-            "display": "Lens-induced iridocyclitis (disorder)"
-          },
-          {
-            "code": "77971008",
-            "display": "Iridocyclitis (disorder)"
-          },
-          {
-            "code": "89114005",
-            "display": "Infectious secondary iridocyclitis (disorder)"
-          },
-          {
-            "code": "9091006",
-            "display": "Gonococcal iridocyclitis (disorder)"
           }
         ]
       }

@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1477",
+  "meta": {
+    "versionId": "29",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-18"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1477",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1477"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1477"
     }
   ],
   "version": "20210218",
@@ -13,50 +28,10 @@
   "title": "Purulent Endophthalmitis",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-18T01:00:25-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "H44.001",
-            "display": "Unspecified purulent endophthalmitis, right eye"
-          },
-          {
-            "code": "H44.002",
-            "display": "Unspecified purulent endophthalmitis, left eye"
-          },
-          {
-            "code": "H44.003",
-            "display": "Unspecified purulent endophthalmitis, bilateral"
-          },
-          {
-            "code": "H44.011",
-            "display": "Panophthalmitis (acute), right eye"
-          },
-          {
-            "code": "H44.012",
-            "display": "Panophthalmitis (acute), left eye"
-          },
-          {
-            "code": "H44.013",
-            "display": "Panophthalmitis (acute), bilateral"
-          },
-          {
-            "code": "H44.021",
-            "display": "Vitreous abscess (chronic), right eye"
-          },
-          {
-            "code": "H44.022",
-            "display": "Vitreous abscess (chronic), left eye"
-          },
-          {
-            "code": "H44.023",
-            "display": "Vitreous abscess (chronic), bilateral"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -75,10 +50,6 @@
           {
             "code": "15678481000119108",
             "display": "Chronic endophthalmitis of right eye (disorder)"
-          },
-          {
-            "code": "1833005",
-            "display": "Phacoanaphylactic endophthalmitis (disorder)"
           },
           {
             "code": "1847009",
@@ -167,6 +138,47 @@
           {
             "code": "41720003",
             "display": "Purulent endophthalmitis (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "H44.001",
+            "display": "Unspecified purulent endophthalmitis, right eye"
+          },
+          {
+            "code": "H44.002",
+            "display": "Unspecified purulent endophthalmitis, left eye"
+          },
+          {
+            "code": "H44.003",
+            "display": "Unspecified purulent endophthalmitis, bilateral"
+          },
+          {
+            "code": "H44.011",
+            "display": "Panophthalmitis (acute), right eye"
+          },
+          {
+            "code": "H44.012",
+            "display": "Panophthalmitis (acute), left eye"
+          },
+          {
+            "code": "H44.013",
+            "display": "Panophthalmitis (acute), bilateral"
+          },
+          {
+            "code": "H44.021",
+            "display": "Vitreous abscess (chronic), right eye"
+          },
+          {
+            "code": "H44.022",
+            "display": "Vitreous abscess (chronic), left eye"
+          },
+          {
+            "code": "H44.023",
+            "display": "Vitreous abscess (chronic), bilateral"
           }
         ]
       }

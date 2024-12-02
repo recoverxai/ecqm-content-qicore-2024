@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.3157.2000.5",
+  "meta": {
+    "versionId": "14",
+    "lastUpdated": "2024-09-06T09:32:30.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2018-05-23"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.2000.5",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.3157.2000.5"
+      "value": "urn:oid:2.16.840.1.113883.3.3157.2000.5"
     }
   ],
   "version": "20180523",
@@ -13,59 +28,10 @@
   "title": "Percutaneous Coronary Intervention",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-16T01:02:14-04:00",
+  "publisher": "Acumen OP Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://www.ama-assn.org/go/cpt",
-        "concept": [
-          {
-            "code": "92920",
-            "display": "Percutaneous transluminal coronary angioplasty; single major coronary artery or branch"
-          },
-          {
-            "code": "92924",
-            "display": "Percutaneous transluminal coronary atherectomy, with coronary angioplasty when performed; single major coronary artery or branch"
-          },
-          {
-            "code": "92928",
-            "display": "Percutaneous transcatheter placement of intracoronary stent(s), with coronary angioplasty when performed; single major coronary artery or branch"
-          },
-          {
-            "code": "92933",
-            "display": "Percutaneous transluminal coronary atherectomy, with intracoronary stent, with coronary angioplasty when performed; single major coronary artery or branch"
-          },
-          {
-            "code": "92937",
-            "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of intracoronary stent, atherectomy and angioplasty, including distal protection when performed; single vessel"
-          },
-          {
-            "code": "92943",
-            "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of intracoronary stent, atherectomy and angioplasty; single vessel"
-          }
-        ]
-      },
-      {
-        "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
-        "concept": [
-          {
-            "code": "C9600",
-            "display": "Percutaneous transcatheter placement of drug eluting intracoronary stent(s), with coronary angioplasty when performed; single major coronary artery or branch"
-          },
-          {
-            "code": "C9602",
-            "display": "Percutaneous transluminal coronary atherectomy, with drug eluting intracoronary stent, with coronary angioplasty when performed; single major coronary artery or branch"
-          },
-          {
-            "code": "C9604",
-            "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of drug-eluting intracoronary stent, atherectomy and angioplasty, including distal protection when performed; single vessel"
-          },
-          {
-            "code": "C9607",
-            "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of drug-eluting intracoronary stent, atherectomy and angioplasty; single vessel"
-          }
-        ]
-      },
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
         "concept": [
@@ -791,6 +757,18 @@
             "display": "Percutaneous transluminal coronary angioplasty (procedure)"
           },
           {
+            "code": "1222571004",
+            "display": "Percutaneous transluminal insertion of bare metal stent into coronary artery using fluoroscopic guidance with contrast (procedure)"
+          },
+          {
+            "code": "1222673007",
+            "display": "Percutaneous transluminal insertion of drug eluting stent into left main coronary artery using fluoroscopic guidance with contrast (procedure)"
+          },
+          {
+            "code": "1222674001",
+            "display": "Percutaneous transluminal balloon angioplasty of left main coronary artery (procedure)"
+          },
+          {
             "code": "15256002",
             "display": "Transmyocardial revascularization by laser technique (procedure)"
           },
@@ -819,6 +797,10 @@
             "display": "Removal of coronary artery obstruction, percutaneous transluminal, multiple vessels (procedure)"
           },
           {
+            "code": "24088005",
+            "display": "Coronary artery atherectomy (procedure)"
+          },
+          {
             "code": "29843007",
             "display": "Coronary atherectomy by laser (procedure)"
           },
@@ -837,6 +819,14 @@
           {
             "code": "397431004",
             "display": "Percutaneous transluminal coronary angioplasty with rotoablation, single vessel (procedure)"
+          },
+          {
+            "code": "410023005",
+            "display": "Directional atherectomy (procedure)"
+          },
+          {
+            "code": "415069007",
+            "display": "Percutaneous atherectomy of artery (procedure)"
           },
           {
             "code": "415070008",
@@ -891,6 +881,10 @@
             "display": "Percutaneous transluminal cutting balloon angioplasty of coronary artery (procedure)"
           },
           {
+            "code": "709981002",
+            "display": "Coronary artery atherectomy using fluoroscopic guidance with contrast (procedure)"
+          },
+          {
             "code": "75761004",
             "display": "Infusion of intra-arterial thrombolytic agent with percutaneous transluminal coronary angioplasty (procedure)"
           },
@@ -905,6 +899,56 @@
           {
             "code": "91338001",
             "display": "Infusion of intra-arterial thrombolytic agent with percutaneous transluminal coronary angioplasty, single vessel (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "92920",
+            "display": "Percutaneous transluminal coronary angioplasty; single major coronary artery or branch"
+          },
+          {
+            "code": "92924",
+            "display": "Percutaneous transluminal coronary atherectomy, with coronary angioplasty when performed; single major coronary artery or branch"
+          },
+          {
+            "code": "92928",
+            "display": "Percutaneous transcatheter placement of intracoronary stent(s), with coronary angioplasty when performed; single major coronary artery or branch"
+          },
+          {
+            "code": "92933",
+            "display": "Percutaneous transluminal coronary atherectomy, with intracoronary stent, with coronary angioplasty when performed; single major coronary artery or branch"
+          },
+          {
+            "code": "92937",
+            "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of intracoronary stent, atherectomy and angioplasty, including distal protection when performed; single vessel"
+          },
+          {
+            "code": "92943",
+            "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of intracoronary stent, atherectomy and angioplasty; single vessel"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "concept": [
+          {
+            "code": "C9600",
+            "display": "Percutaneous transcatheter placement of drug eluting intracoronary stent(s), with coronary angioplasty when performed; single major coronary artery or branch"
+          },
+          {
+            "code": "C9602",
+            "display": "Percutaneous transluminal coronary atherectomy, with drug eluting intracoronary stent, with coronary angioplasty when performed; single major coronary artery or branch"
+          },
+          {
+            "code": "C9604",
+            "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of drug-eluting intracoronary stent, atherectomy and angioplasty, including distal protection when performed; single vessel"
+          },
+          {
+            "code": "C9607",
+            "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of drug-eluting intracoronary stent, atherectomy and angioplasty; single vessel"
           }
         ]
       }

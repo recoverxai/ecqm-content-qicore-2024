@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.341",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-01-27"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.341",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1029.341"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.341"
     }
   ],
   "version": "20220127",
@@ -13,7 +28,8 @@
   "title": "Cardiac Disease",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-01-27T01:02:46-05:00",
+  "publisher": "Joint Commission",
   "compose": {
     "include": [
       {
@@ -168,6 +184,10 @@
             "display": "Hypertensive crisis, unspecified"
           },
           {
+            "code": "I1A.0",
+            "display": "Resistant hypertension"
+          },
+          {
             "code": "I20.0",
             "display": "Unstable angina"
           },
@@ -180,7 +200,11 @@
             "display": "Refractory angina pectoris"
           },
           {
-            "code": "I20.8",
+            "code": "I20.81",
+            "display": "Angina pectoris with coronary microvascular dysfunction"
+          },
+          {
+            "code": "I20.89",
             "display": "Other forms of angina pectoris"
           },
           {
@@ -201,7 +225,7 @@
           },
           {
             "code": "I25.112",
-            "display": "Atherosclerosic heart disease of native coronary artery with refractory angina pectoris"
+            "display": "Atherosclerotic heart disease of native coronary artery with refractory angina pectoris"
           },
           {
             "code": "I25.118",
@@ -398,6 +422,10 @@
           {
             "code": "I25.84",
             "display": "Coronary atherosclerosis due to calcified coronary lesion"
+          },
+          {
+            "code": "I25.85",
+            "display": "Chronic coronary microvascular dysfunction"
           },
           {
             "code": "I25.89",
@@ -700,8 +728,16 @@
             "display": "Re-entry ventricular arrhythmia"
           },
           {
-            "code": "I47.1",
-            "display": "Supraventricular tachycardia"
+            "code": "I47.10",
+            "display": "Supraventricular tachycardia, unspecified"
+          },
+          {
+            "code": "I47.11",
+            "display": "Inappropriate sinus tachycardia, so stated"
+          },
+          {
+            "code": "I47.19",
+            "display": "Other supraventricular tachycardia"
           },
           {
             "code": "I47.20",

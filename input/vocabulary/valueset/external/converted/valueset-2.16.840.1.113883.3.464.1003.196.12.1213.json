@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1213",
+  "meta": {
+    "versionId": "30",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-03-06"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1213",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.196.12.1213"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1213"
     }
   ],
   "version": "20210306",
@@ -13,7 +28,8 @@
   "title": "Antidepressant Medication",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-03-06T01:00:27-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -62,10 +78,6 @@
           {
             "code": "1086784",
             "display": "vilazodone hydrochloride 40 MG Oral Tablet"
-          },
-          {
-            "code": "1086789",
-            "display": "{7 (vilazodone hydrochloride 10 MG Oral Tablet) / 7 (vilazodone hydrochloride 20 MG Oral Tablet) / 16 (vilazodone hydrochloride 40 MG Oral Tablet) } Pack"
           },
           {
             "code": "1098649",
@@ -118,10 +130,6 @@
           {
             "code": "1232585",
             "display": "24 HR bupropion hydrochloride 450 MG Extended Release Oral Tablet"
-          },
-          {
-            "code": "1298857",
-            "display": "maprotiline hydrochloride 25 MG Oral Tablet"
           },
           {
             "code": "1298861",
@@ -302,6 +310,10 @@
           {
             "code": "2605950",
             "display": "24 HR venlafaxine 112.5 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "2636817",
+            "display": "{2 (24 HR levomilnacipran 20 MG Extended Release Oral Capsule) / 5 (24 HR levomilnacipran 40 MG Extended Release Oral Capsule) } Pack"
           },
           {
             "code": "283406",

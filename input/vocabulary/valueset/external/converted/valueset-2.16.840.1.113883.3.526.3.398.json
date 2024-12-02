@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.398",
+  "meta": {
+    "versionId": "22",
+    "lastUpdated": "2024-08-09T12:28:16.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.398",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.398"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.398"
     }
   ],
   "version": "20170504",
@@ -13,66 +28,10 @@
   "title": "Prostate Cancer Treatment",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://www.ama-assn.org/go/cpt",
-        "concept": [
-          {
-            "code": "55810",
-            "display": "Prostatectomy, perineal radical"
-          },
-          {
-            "code": "55812",
-            "display": "Prostatectomy, perineal radical; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
-          },
-          {
-            "code": "55815",
-            "display": "Prostatectomy, perineal radical; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric and obturator nodes"
-          },
-          {
-            "code": "55840",
-            "display": "Prostatectomy, retropubic radical, with or without nerve sparing"
-          },
-          {
-            "code": "55842",
-            "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
-          },
-          {
-            "code": "55845",
-            "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric, and obturator nodes"
-          },
-          {
-            "code": "55866",
-            "display": "Laparoscopy, surgical prostatectomy, retropubic radical, including nerve sparing, includes robotic assistance, when performed"
-          },
-          {
-            "code": "55875",
-            "display": "Transperineal placement of needles or catheters into prostate for interstitial radioelement application, with or without cystoscopy"
-          },
-          {
-            "code": "77427",
-            "display": "Radiation treatment management, 5 treatments"
-          },
-          {
-            "code": "77435",
-            "display": "Stereotactic body radiation therapy, treatment management, per treatment course, to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
-          },
-          {
-            "code": "77772",
-            "display": "Remote afterloading high dose rate radionuclide interstitial or intracavitary brachytherapy, includes basic dosimetry, when performed; over 12 channels"
-          },
-          {
-            "code": "77778",
-            "display": "Interstitial radiation source application, complex, includes supervision, handling, loading of radiation source, when performed"
-          },
-          {
-            "code": "77799",
-            "display": "Unlisted procedure, clinical brachytherapy"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -105,10 +64,6 @@
             "display": "Surface brachytherapy (procedure)"
           },
           {
-            "code": "168922004",
-            "display": "Interstitial contrast radiology (procedure)"
-          },
-          {
             "code": "169327006",
             "display": "Radium contact therapy (procedure)"
           },
@@ -123,10 +78,6 @@
           {
             "code": "169340001",
             "display": "Internal metabolic radiotherapy (procedure)"
-          },
-          {
-            "code": "169349000",
-            "display": "Internal radiotherapy - unsealed source (procedure)"
           },
           {
             "code": "169359004",
@@ -301,10 +252,6 @@
             "display": "Iodine seed radiotherapy (procedure)"
           },
           {
-            "code": "399124002",
-            "display": "Unsealed radionuclide procedure (procedure)"
-          },
-          {
             "code": "399180008",
             "display": "Interstitial radioactive colloid therapy (procedure)"
           },
@@ -325,10 +272,6 @@
             "display": "Intravenous radionuclide therapy (procedure)"
           },
           {
-            "code": "427985002",
-            "display": "Endoscopic excision of prostate using laser (procedure)"
-          },
-          {
             "code": "433224001",
             "display": "Radionuclide rhenium 186 hydroxyethylidene diphosphonate therapy (procedure)"
           },
@@ -339,7 +282,53 @@
           {
             "code": "440094000",
             "display": "Insertion of radioactive implant into interstitial tissue of prostate with transperineal insertion of catheter (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "55810",
+            "display": "Prostatectomy, perineal radical"
           },
+          {
+            "code": "55812",
+            "display": "Prostatectomy, perineal radical; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+          },
+          {
+            "code": "55815",
+            "display": "Prostatectomy, perineal radical; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric and obturator nodes"
+          },
+          {
+            "code": "55840",
+            "display": "Prostatectomy, retropubic radical, with or without nerve sparing"
+          },
+          {
+            "code": "55842",
+            "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+          },
+          {
+            "code": "55845",
+            "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric, and obturator nodes"
+          },
+          {
+            "code": "55866",
+            "display": "Laparoscopy, surgical prostatectomy, retropubic radical, including nerve sparing, includes robotic assistance, when performed"
+          },
+          {
+            "code": "55875",
+            "display": "Transperineal placement of needles or catheters into prostate for interstitial radioelement application, with or without cystoscopy"
+          },
+          {
+            "code": "55880",
+            "display": "Ablation of malignant prostate tissue, transrectal, with high intensity-focused ultrasound (HIFU), including ultrasound guidance"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "57525009",
             "display": "Subtotal perineal prostatectomy (procedure)"
@@ -371,11 +360,51 @@
           {
             "code": "764675000",
             "display": "Radionuclide imaging using samarium (153-Sm) lexidronam (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "77427",
+            "display": "Radiation treatment management, 5 treatments"
           },
+          {
+            "code": "77435",
+            "display": "Stereotactic body radiation therapy, treatment management, per treatment course, to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "77613002",
             "display": "External beam radiation therapy with iodine-125 (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "77772",
+            "display": "Remote afterloading high dose rate radionuclide interstitial or intracavitary brachytherapy, includes basic dosimetry, when performed; over 12 channels"
           },
+          {
+            "code": "77778",
+            "display": "Interstitial radiation source application, complex, includes supervision, handling, loading of radiation source, when performed"
+          },
+          {
+            "code": "77799",
+            "display": "Unlisted procedure, clinical brachytherapy"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "81232004",
             "display": "Radical cystoprostatectomy (procedure)"

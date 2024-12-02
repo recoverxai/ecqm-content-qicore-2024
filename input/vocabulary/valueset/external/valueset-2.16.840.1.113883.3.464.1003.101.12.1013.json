@@ -1,60 +1,63 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.101.12.1013",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1013",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.101.12.1013"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.101.12.1013"
+    }
+  ],
   "version": "20170504",
   "name": "DischargeServicesNursingFacility",
   "title": "Discharge Services Nursing Facility",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:52-06:00",
-    "contains": [ {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2023",
-      "code": "99315",
-      "display": "Nursing facility discharge management; 30 minutes or less total time on the date of the encounter"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2023",
-      "code": "99316",
-      "display": "Nursing facility discharge management; more than 30 minutes total time on the date of the encounter"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2023",
-      "code": "99315",
-      "display": "Nursing facility discharge management; 30 minutes or less total time on the date of the encounter"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2023",
-      "code": "99316",
-      "display": "Nursing facility discharge management; more than 30 minutes total time on the date of the encounter"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2023",
-      "code": "99315",
-      "display": "Nursing facility discharge management; 30 minutes or less total time on the date of the encounter"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2023",
-      "code": "99316",
-      "display": "Nursing facility discharge management; more than 30 minutes total time on the date of the encounter"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2023",
-      "code": "99315",
-      "display": "Nursing facility discharge management; 30 minutes or less total time on the date of the encounter"
-    }, {
-      "system": "http://www.ama-assn.org/go/cpt",
-      "version": "2023",
-      "code": "99316",
-      "display": "Nursing facility discharge management; more than 30 minutes total time on the date of the encounter"
-    } ]
+    "identifier": "urn:uuid:64a8e9e6-5c66-4992-8424-959261be4f56",
+    "timestamp": "2024-12-01T19:47:33-05:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "99315",
+        "display": "Nursing facility discharge management; 30 minutes or less total time on the date of the encounter"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "99316",
+        "display": "Nursing facility discharge management; more than 30 minutes total time on the date of the encounter"
+      }
+    ]
   }
 }

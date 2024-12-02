@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.600.1515",
+  "meta": {
+    "versionId": "36",
+    "lastUpdated": "2024-08-09T10:28:43.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-20"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1515",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.600.1515"
+      "value": "urn:oid:2.16.840.1.113883.3.600.1515"
     }
   ],
   "version": "20210220",
@@ -13,37 +28,16 @@
   "title": "Dietary Recommendations",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
-      {
-        "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
-        "concept": [
-          {
-            "code": "S9452",
-            "display": "Nutrition classes, non-physician provider, per session"
-          },
-          {
-            "code": "S9470",
-            "display": "Nutritional counseling, dietitian visit"
-          }
-        ]
-      },
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "Z71.3",
-            "display": "Dietary counseling and surveillance"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
           {
             "code": "103699006",
-            "display": "Patient referral to dietitian (procedure)"
+            "display": "Referral to dietitian (procedure)"
           },
           {
             "code": "1151000175103",
@@ -176,6 +170,28 @@
           {
             "code": "770749002",
             "display": "Referral for combined healthy eating and physical education program (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "concept": [
+          {
+            "code": "S9452",
+            "display": "Nutrition classes, non-physician provider, per session"
+          },
+          {
+            "code": "S9470",
+            "display": "Nutritional counseling, dietitian visit"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "Z71.3",
+            "display": "Dietary counseling and surveillance"
           }
         ]
       }

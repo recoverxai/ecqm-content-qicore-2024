@@ -1,49 +1,40 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1162",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-02-02"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1162",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1162"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1162"
     }
   ],
   "version": "20220202",
   "name": "AdultPneumococcalVaccineAdministered",
   "title": "Adult Pneumococcal Vaccine Administered",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-16T01:02:20-04:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
-        "system": "http://www.ama-assn.org/go/cpt",
-        "concept": [
-          {
-            "code": "90670",
-            "display": "Pneumococcal conjugate vaccine, 13 valent (PCV13), for intramuscular use"
-          },
-          {
-            "code": "90671",
-            "display": "Pneumococcal conjugate vaccine, 15 valent (PCV15), for intramuscular use"
-          },
-          {
-            "code": "90677",
-            "display": "Pneumococcal conjugate vaccine, 20 valent (PCV20), for intramuscular use"
-          },
-          {
-            "code": "90732",
-            "display": "Pneumococcal polysaccharide vaccine, 23-valent (PPSV23), adult or immunosuppressed patient dosage, when administered to individuals 2 years or older, for subcutaneous or intramuscular use"
-          }
-        ]
-      },
-      {
         "system": "http://snomed.info/sct",
         "concept": [
-          {
-            "code": "1119366009",
-            "display": "Administration of vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens (procedure)"
-          },
           {
             "code": "1119367000",
             "display": "Administration of vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens (procedure)"
@@ -67,6 +58,27 @@
           {
             "code": "871833000",
             "display": "Subcutaneous injection of pneumococcal vaccine (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "90670",
+            "display": "Pneumococcal conjugate vaccine, 13 valent (PCV13), for intramuscular use"
+          },
+          {
+            "code": "90671",
+            "display": "Pneumococcal conjugate vaccine, 15 valent (PCV15), for intramuscular use"
+          },
+          {
+            "code": "90677",
+            "display": "Pneumococcal conjugate vaccine, 20 valent (PCV20), for intramuscular use"
+          },
+          {
+            "code": "90732",
+            "display": "Pneumococcal polysaccharide vaccine, 23-valent (PPSV23), adult or immunosuppressed patient dosage, when administered to individuals 2 years or older, for subcutaneous or intramuscular use"
           }
         ]
       }

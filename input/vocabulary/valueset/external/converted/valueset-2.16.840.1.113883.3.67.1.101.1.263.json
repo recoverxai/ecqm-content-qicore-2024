@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.67.1.101.1.263",
+  "meta": {
+    "versionId": "32",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-02-19"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.67.1.101.1.263",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.67.1.101.1.263"
+      "value": "urn:oid:2.16.840.1.113883.3.67.1.101.1.263"
     }
   ],
   "version": "20220219",
-  "name": "PHQ9andPHQ9MTools",
+  "name": "PHQ9AndPHQ9MTools",
   "title": "PHQ 9 and PHQ 9M Tools",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-02-19T01:07:29-05:00",
+  "publisher": "MNCM Steward",
   "compose": {
     "include": [
       {

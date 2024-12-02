@@ -3,16 +3,17 @@
   "id": "2.16.840.1.113883.3.464.1003.125.12.1003",
   "meta": {
     "versionId": "17",
-    "lastUpdated": "2021-01-18T14:37:38.000-05:00",
+    "lastUpdated": "2024-08-12T10:43:59.000-04:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
     ]
   },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2021-01-18"
+      "valueDate": "2017-05-04"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1003",
@@ -23,12 +24,12 @@
     }
   ],
   "version": "20170504",
-  "name": "Clinical Oral Evaluation",
+  "name": "ClinicalOralEvaluation",
   "title": "Clinical Oral Evaluation",
   "status": "active",
   "experimental": false,
   "date": "2017-05-04T01:00:13-04:00",
-  "publisher": "NCQA PHEMUR",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {

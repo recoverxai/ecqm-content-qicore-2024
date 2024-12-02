@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.198.12.1012",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1012",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.198.12.1012"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.198.12.1012"
     }
   ],
   "version": "20170504",
@@ -13,12 +28,21 @@
   "title": "Group A Streptococcus Test",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
         "system": "http://loinc.org",
         "concept": [
+          {
+            "code": "101300-2",
+            "display": "Streptococcus pyogenes DNA [Presence] in Throat by NAA with non-probe detection"
+          },
+          {
+            "code": "103627-6",
+            "display": "Streptococcus pyogenes DNA [Presence] in Specimen by NAA with probe detection"
+          },
           {
             "code": "11268-0",
             "display": "Streptococcus pyogenes [Presence] in Throat by Organism specific culture"

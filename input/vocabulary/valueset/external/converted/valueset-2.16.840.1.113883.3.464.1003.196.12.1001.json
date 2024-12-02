@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1001",
+  "meta": {
+    "versionId": "24",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1001",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.196.12.1001"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001"
     }
   ],
   "version": "20170504",
-  "name": "AntibioticMedicationsforPharyngitis",
+  "name": "AntibioticMedicationsForPharyngitis",
   "title": "Antibiotic Medications for Pharyngitis",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -402,6 +418,18 @@
           {
             "code": "2604803",
             "display": "{56 (amoxicillin 500 MG Oral Capsule) / 28 (clarithromycin 500 MG Oral Tablet) / 28 (vonoprazan 20 MG Oral Tablet) } Pack"
+          },
+          {
+            "code": "2630753",
+            "display": "cefazolin 3000 MG Injection"
+          },
+          {
+            "code": "2671687",
+            "display": "penicillin G benzathine 1200000 UNT Injection"
+          },
+          {
+            "code": "2671695",
+            "display": "penicillin G benzathine 2400000 UNT Injection"
           },
           {
             "code": "283535",
@@ -846,18 +874,6 @@
           {
             "code": "749783",
             "display": "{6 (azithromycin 250 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "757460",
-            "display": "{31 (doxycycline monohydrate 100 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "757464",
-            "display": "{31 (doxycycline monohydrate 75 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "757466",
-            "display": "{60 (doxycycline monohydrate 100 MG Oral Tablet) } Pack"
           },
           {
             "code": "757968",

@@ -1,70 +1,37 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.3157.4052",
+  "meta": {
+    "versionId": "14",
+    "lastUpdated": "2024-09-06T09:16:37.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-02-09"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4052",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.3157.4052"
+      "value": "urn:oid:2.16.840.1.113883.3.3157.4052"
     }
   ],
   "version": "20220209",
-  "name": "InsertionorReplacementofMechanicalCirculatoryAssistDevice",
-  "title": "Insertion or Replacement of Mechanical Circulatory Assist Device",
+  "name": "InsertionReplacementOrRemovalOfMechanicalCirculatoryAssistDevice",
+  "title": "Insertion, Replacement, or Removal of Mechanical Circulatory Assist Device",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "Acumen OP Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://www.ama-assn.org/go/cpt",
-        "concept": [
-          {
-            "code": "33970",
-            "display": "Insertion of intra-aortic balloon assist device through the femoral artery, open approach"
-          },
-          {
-            "code": "33975",
-            "display": "Insertion of ventricular assist device; extracorporeal, single ventricle"
-          },
-          {
-            "code": "33976",
-            "display": "Insertion of ventricular assist device; extracorporeal, biventricular"
-          },
-          {
-            "code": "33979",
-            "display": "Insertion of ventricular assist device, implantable intracorporeal, single ventricle"
-          },
-          {
-            "code": "33981",
-            "display": "Replacement of extracorporeal ventricular assist device, single or biventricular, pump(s), single or each pump"
-          },
-          {
-            "code": "33982",
-            "display": "Replacement of ventricular assist device pump(s); implantable intracorporeal, single ventricle, without cardiopulmonary bypass"
-          },
-          {
-            "code": "33983",
-            "display": "Replacement of ventricular assist device pump(s); implantable intracorporeal, single ventricle, with cardiopulmonary bypass"
-          },
-          {
-            "code": "33990",
-            "display": "Insertion of ventricular assist device, percutaneous, including radiological supervision and interpretation; left heart, arterial access only"
-          },
-          {
-            "code": "33991",
-            "display": "Insertion of ventricular assist device, percutaneous, including radiological supervision and interpretation; left heart, both arterial and venous access, with transseptal puncture"
-          },
-          {
-            "code": "33993",
-            "display": "Repositioning of percutaneous right or left heart ventricular assist device with imaging guidance at separate and distinct session from insertion"
-          },
-          {
-            "code": "33995",
-            "display": "Insertion of ventricular assist device, percutaneous, including radiological supervision and interpretation; right heart, venous access only"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -91,7 +58,93 @@
           {
             "code": "232968001",
             "display": "Implantation of cardiac biventricular assist device (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "33968",
+            "display": "Removal of intra-aortic balloon assist device, percutaneous"
           },
+          {
+            "code": "33970",
+            "display": "Insertion of intra-aortic balloon assist device through the femoral artery, open approach"
+          },
+          {
+            "code": "33971",
+            "display": "Removal of intra-aortic balloon assist device including repair of femoral artery, with or without graft"
+          },
+          {
+            "code": "33974",
+            "display": "Removal of intra-aortic balloon assist device from the ascending aorta, including repair of the ascending aorta, with or without graft"
+          },
+          {
+            "code": "33975",
+            "display": "Insertion of ventricular assist device; extracorporeal, single ventricle"
+          },
+          {
+            "code": "33976",
+            "display": "Insertion of ventricular assist device; extracorporeal, biventricular"
+          },
+          {
+            "code": "33977",
+            "display": "Removal of ventricular assist device; extracorporeal, single ventricle"
+          },
+          {
+            "code": "33978",
+            "display": "Removal of ventricular assist device; extracorporeal, biventricular"
+          },
+          {
+            "code": "33979",
+            "display": "Insertion of ventricular assist device, implantable intracorporeal, single ventricle"
+          },
+          {
+            "code": "33980",
+            "display": "Removal of ventricular assist device, implantable intracorporeal, single ventricle"
+          },
+          {
+            "code": "33981",
+            "display": "Replacement of extracorporeal ventricular assist device, single or biventricular, pump(s), single or each pump"
+          },
+          {
+            "code": "33982",
+            "display": "Replacement of ventricular assist device pump(s); implantable intracorporeal, single ventricle, without cardiopulmonary bypass"
+          },
+          {
+            "code": "33983",
+            "display": "Replacement of ventricular assist device pump(s); implantable intracorporeal, single ventricle, with cardiopulmonary bypass"
+          },
+          {
+            "code": "33990",
+            "display": "Insertion of ventricular assist device, percutaneous, including radiological supervision and interpretation; left heart, arterial access only"
+          },
+          {
+            "code": "33991",
+            "display": "Insertion of ventricular assist device, percutaneous, including radiological supervision and interpretation; left heart, both arterial and venous access, with transseptal puncture"
+          },
+          {
+            "code": "33992",
+            "display": "Removal of percutaneous left heart ventricular assist device, arterial or arterial and venous cannula(s), at separate and distinct session from insertion"
+          },
+          {
+            "code": "33993",
+            "display": "Repositioning of percutaneous right or left heart ventricular assist device with imaging guidance at separate and distinct session from insertion"
+          },
+          {
+            "code": "33995",
+            "display": "Insertion of ventricular assist device, percutaneous, including radiological supervision and interpretation; right heart, venous access only"
+          },
+          {
+            "code": "33997",
+            "display": "Removal of percutaneous right heart ventricular assist device, venous cannula, at separate and distinct session from insertion"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "399052009",
             "display": "Aortic balloon pump operation (procedure)"
@@ -101,8 +154,16 @@
             "display": "Cardioassist by aortic balloon pump (procedure)"
           },
           {
+            "code": "426410001",
+            "display": "Removal of ventricular assist device (procedure)"
+          },
+          {
             "code": "426568003",
             "display": "Open implantation of cardiac ventricular assist device (procedure)"
+          },
+          {
+            "code": "427198005",
+            "display": "Open removal of ventricular assist device (procedure)"
           },
           {
             "code": "432375008",

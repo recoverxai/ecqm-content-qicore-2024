@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1151.59",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-02-18"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1151.59",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1151.59"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1151.59"
     }
   ],
   "version": "20230218",
-  "name": "HospitalServicesforUrology",
+  "name": "HospitalServicesForUrology",
   "title": "Hospital Services for Urology",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-02-18T01:03:13-05:00",
+  "publisher": "Oregon Urology Steward",
   "compose": {
     "include": [
       {

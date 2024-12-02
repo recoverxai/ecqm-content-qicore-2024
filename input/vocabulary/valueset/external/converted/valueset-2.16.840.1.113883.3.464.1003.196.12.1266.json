@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1266",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-08-12T12:08:01.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2018-03-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1266",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.196.12.1266"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1266"
     }
   ],
   "version": "20180310",
-  "name": "Glucocorticoids(oralonly)",
+  "name": "GlucocorticoidsOralOnly",
   "title": "Glucocorticoids (oral only)",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2018-03-10T01:00:08-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
@@ -44,6 +60,14 @@
             "display": "prednisone 5 MG Delayed Release Oral Tablet"
           },
           {
+            "code": "1869595",
+            "display": "{27 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "code": "1943550",
+            "display": "{49 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
             "code": "197577",
             "display": "dexamethasone 0.5 MG Oral Tablet"
           },
@@ -66,6 +90,10 @@
           {
             "code": "197583",
             "display": "dexamethasone 6 MG Oral Tablet"
+          },
+          {
+            "code": "197782",
+            "display": "hydrocortisone 10 MG Oral Tablet"
           },
           {
             "code": "197783",
@@ -120,6 +148,26 @@
             "display": "dexamethasone 20 MG Oral Tablet"
           },
           {
+            "code": "2387355",
+            "display": "{25 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "code": "2399644",
+            "display": "hydrocortisone 0.5 MG Oral Granules"
+          },
+          {
+            "code": "2399652",
+            "display": "hydrocortisone 1 MG Oral Granules"
+          },
+          {
+            "code": "2399656",
+            "display": "hydrocortisone 2 MG Oral Granules"
+          },
+          {
+            "code": "2399659",
+            "display": "hydrocortisone 5 MG Oral Granules"
+          },
+          {
             "code": "249066",
             "display": "prednisolone 5 MG/ML Oral Solution"
           },
@@ -152,10 +200,6 @@
             "display": "prednisone 5 MG Oral Tablet"
           },
           {
-            "code": "313979",
-            "display": "fludrocortisone acetate 0.1 MG Oral Tablet"
-          },
-          {
             "code": "315187",
             "display": "prednisone 1 MG/ML Oral Solution"
           },
@@ -174,6 +218,10 @@
           {
             "code": "643123",
             "display": "prednisolone 10 MG Disintegrating Oral Tablet"
+          },
+          {
+            "code": "643125",
+            "display": "prednisolone 15 MG Disintegrating Oral Tablet"
           },
           {
             "code": "643127",
@@ -210,10 +258,6 @@
           {
             "code": "763185",
             "display": "{21 (prednisone 10 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "793099",
-            "display": "prednisolone 3 MG/ML Oral Suspension"
           },
           {
             "code": "794979",

@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1248.19",
+  "meta": {
+    "versionId": "14",
+    "lastUpdated": "2024-02-22T15:13:00.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-02-05"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.19",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1248.19"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1248.19"
     }
   ],
   "version": "20230205",
-  "name": "HighRiskProceduresforAKI",
+  "name": "HighRiskProceduresForAKI",
   "title": "High Risk Procedures for AKI",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-02-05T01:02:51-05:00",
+  "publisher": "Mathematica PSI Steward",
   "compose": {
     "include": [
       {
@@ -90,38 +105,6 @@
           {
             "code": "0TT24ZZ",
             "display": "Resection of Bilateral Kidneys, Percutaneous Endoscopic Approach"
-          },
-          {
-            "code": "5A02110",
-            "display": "Assistance with Cardiac Output using Balloon Pump, Intermittent"
-          },
-          {
-            "code": "5A02210",
-            "display": "Assistance with Cardiac Output using Balloon Pump, Continuous"
-          },
-          {
-            "code": "5A1522F",
-            "display": "Extracorporeal Oxygenation, Membrane, Central"
-          },
-          {
-            "code": "5A1522G",
-            "display": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-arterial"
-          },
-          {
-            "code": "5A1522H",
-            "display": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-venous"
-          },
-          {
-            "code": "5A15A2F",
-            "display": "Extracorporeal Oxygenation, Membrane, Central, Intraoperative"
-          },
-          {
-            "code": "5A15A2G",
-            "display": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-arterial, Intraoperative"
-          },
-          {
-            "code": "5A15A2H",
-            "display": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-venous, Intraoperative"
           }
         ]
       },
@@ -135,6 +118,10 @@
           {
             "code": "1017217001",
             "display": "Laparoscopic total excision of left kidney (procedure)"
+          },
+          {
+            "code": "108022006",
+            "display": "Kidney excision (procedure)"
           },
           {
             "code": "116033007",
@@ -185,6 +172,10 @@
             "display": "Extracorporeal carbon dioxide removal (procedure)"
           },
           {
+            "code": "265550007",
+            "display": "Transplant nephrectomy (procedure)"
+          },
+          {
             "code": "361249003",
             "display": "Nephrectomy with excision of perirenal tissue (procedure)"
           },
@@ -219,7 +210,49 @@
           {
             "code": "446296004",
             "display": "Laparoscopic total excision of kidney (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+        "concept": [
+          {
+            "code": "5A02110",
+            "display": "Assistance with Cardiac Output using Balloon Pump, Intermittent"
           },
+          {
+            "code": "5A02210",
+            "display": "Assistance with Cardiac Output using Balloon Pump, Continuous"
+          },
+          {
+            "code": "5A1522F",
+            "display": "Extracorporeal Oxygenation, Membrane, Central"
+          },
+          {
+            "code": "5A1522G",
+            "display": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-arterial"
+          },
+          {
+            "code": "5A1522H",
+            "display": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-venous"
+          },
+          {
+            "code": "5A15A2F",
+            "display": "Extracorporeal Oxygenation, Membrane, Central, Intraoperative"
+          },
+          {
+            "code": "5A15A2G",
+            "display": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-arterial, Intraoperative"
+          },
+          {
+            "code": "5A15A2H",
+            "display": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-venous, Intraoperative"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "6561000179108",
             "display": "Open nephrectomy from live donor (procedure)"

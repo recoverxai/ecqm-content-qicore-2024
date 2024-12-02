@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1063",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2024-01-24T09:28:13.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-23"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1063",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1063"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1063"
     }
   ],
-  "version": "20210910",
-  "name": "Painmedications,other",
-  "title": "Pain medications, other",
+  "version": "20240123",
+  "name": "PotentiallyHarmfulPainMedicationsForOlderAdults",
+  "title": "Potentially Harmful Pain Medications for Older Adults",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-23T01:10:32-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -48,26 +63,6 @@
             "display": "2 ML ketorolac tromethamine 30 MG/ML Cartridge"
           },
           {
-            "code": "1665685",
-            "display": "1 ML meperidine hydrochloride 100 MG/ML Injection"
-          },
-          {
-            "code": "1665690",
-            "display": "1.5 ML meperidine hydrochloride 50 MG/ML Injection"
-          },
-          {
-            "code": "1665697",
-            "display": "1 ML meperidine hydrochloride 50 MG/ML Injection"
-          },
-          {
-            "code": "1665699",
-            "display": "0.5 ML meperidine hydrochloride 50 MG/ML Injection"
-          },
-          {
-            "code": "1665701",
-            "display": "2 ML meperidine hydrochloride 50 MG/ML Injection"
-          },
-          {
             "code": "1797855",
             "display": "ketorolac tromethamine 15.8 MG/ACTUAT Metered Dose Nasal Spray"
           },
@@ -78,14 +73,6 @@
           {
             "code": "197818",
             "display": "indomethacin 50 MG Oral Capsule"
-          },
-          {
-            "code": "2539186",
-            "display": "1 ML meperidine hydrochloride 50 MG/ML Prefilled Syringe"
-          },
-          {
-            "code": "2539191",
-            "display": "1 ML meperidine hydrochloride 25 MG/ML Prefilled Syringe"
           },
           {
             "code": "310991",
@@ -118,50 +105,6 @@
           {
             "code": "860115",
             "display": "2 ML ketorolac tromethamine 30 MG/ML Prefilled Syringe"
-          },
-          {
-            "code": "860792",
-            "display": "1 ML meperidine hydrochloride 75 MG/ML Cartridge"
-          },
-          {
-            "code": "861447",
-            "display": "meperidine hydrochloride 10 MG/ML Injectable Solution"
-          },
-          {
-            "code": "861455",
-            "display": "meperidine hydrochloride 100 MG Oral Tablet"
-          },
-          {
-            "code": "861459",
-            "display": "meperidine hydrochloride 100 MG/ML Injectable Solution"
-          },
-          {
-            "code": "861463",
-            "display": "meperidine hydrochloride 50 MG/ML Injectable Solution"
-          },
-          {
-            "code": "861467",
-            "display": "meperidine hydrochloride 50 MG Oral Tablet"
-          },
-          {
-            "code": "861473",
-            "display": "1 ML meperidine hydrochloride 50 MG/ML Cartridge"
-          },
-          {
-            "code": "861476",
-            "display": "1 ML meperidine hydrochloride 25 MG/ML Injection"
-          },
-          {
-            "code": "861479",
-            "display": "meperidine hydrochloride 10 MG/ML Oral Solution"
-          },
-          {
-            "code": "861493",
-            "display": "1 ML meperidine hydrochloride 100 MG/ML Cartridge"
-          },
-          {
-            "code": "861494",
-            "display": "1 ML meperidine hydrochloride 25 MG/ML Cartridge"
           }
         ]
       }

@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1493",
+  "meta": {
+    "versionId": "16",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1493",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1493"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1493"
     }
   ],
   "version": "20170504",
@@ -13,7 +28,8 @@
   "title": "Beta Blocker Therapy Ingredient",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "AHA Steward",
   "compose": {
     "include": [
       {
@@ -24,6 +40,10 @@
             "display": "timolol"
           },
           {
+            "code": "10824",
+            "display": "metipranolol"
+          },
+          {
             "code": "1202",
             "display": "atenolol"
           },
@@ -34,6 +54,10 @@
           {
             "code": "1520",
             "display": "betaxolol"
+          },
+          {
+            "code": "1813",
+            "display": "levobunolol"
           },
           {
             "code": "19484",
@@ -52,60 +76,8 @@
             "display": "nebivolol"
           },
           {
-            "code": "6185",
-            "display": "labetalol"
-          },
-          {
-            "code": "6918",
-            "display": "metoprolol"
-          },
-          {
-            "code": "7226",
-            "display": "nadolol"
-          },
-          {
-            "code": "8332",
-            "display": "pindolol"
-          },
-          {
-            "code": "8787",
-            "display": "propranolol"
-          },
-          {
-            "code": "9947",
-            "display": "sotalol"
-          },
-          {
-            "code": "10600",
-            "display": "timolol"
-          },
-          {
-            "code": "1202",
-            "display": "atenolol"
-          },
-          {
-            "code": "149",
-            "display": "acebutolol"
-          },
-          {
-            "code": "1520",
-            "display": "betaxolol"
-          },
-          {
-            "code": "19484",
-            "display": "bisoprolol"
-          },
-          {
-            "code": "20352",
-            "display": "carvedilol"
-          },
-          {
-            "code": "2116",
-            "display": "carteolol"
-          },
-          {
-            "code": "31555",
-            "display": "nebivolol"
+            "code": "49737",
+            "display": "esmolol"
           },
           {
             "code": "6185",

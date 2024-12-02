@@ -1,45 +1,87 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1481",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-01-23T15:30:48.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1481",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.464.1003.196.12.1481"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1481"
+    }
+  ],
   "version": "20170504",
-  "name": "AntiInfectives,other",
-  "title": "Anti Infectives, other",
+  "name": "PotentiallyHarmfulAntiinfectivesForOlderAdults",
+  "title": "Potentially Harmful Antiinfectives for Older Adults",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:54-06:00",
-    "contains": [ {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1648755",
-      "display": "nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1648759",
-      "display": "nitrofurantoin, macrocrystals 100 MG Oral Capsule"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "311989",
-      "display": "nitrofurantoin 5 MG/ML Oral Suspension"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "311994",
-      "display": "nitrofurantoin, macrocrystals 25 MG Oral Capsule"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "311995",
-      "display": "nitrofurantoin, macrocrystals 50 MG Oral Capsule"
-    } ]
+    "identifier": "urn:uuid:284dea2c-0c41-4662-8096-f583a09acd4d",
+    "timestamp": "2024-12-01T19:50:42-05:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "1648755",
+        "display": "nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "1648759",
+        "display": "nitrofurantoin, macrocrystals 100 MG Oral Capsule"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "311989",
+        "display": "nitrofurantoin 5 MG/ML Oral Suspension"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "311994",
+        "display": "nitrofurantoin, macrocrystals 25 MG Oral Capsule"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "311995",
+        "display": "nitrofurantoin, macrocrystals 50 MG Oral Capsule"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "422434",
+        "display": "nitrofurantoin 10 MG/ML Oral Suspension"
+      }
+    ]
   }
 }

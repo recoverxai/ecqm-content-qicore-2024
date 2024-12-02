@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1080",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1080",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.196.12.1080"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1080"
     }
   ],
   "version": "20170504",
@@ -13,7 +28,8 @@
   "title": "Contraceptive Medications",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -22,10 +38,6 @@
           {
             "code": "1000126",
             "display": "1 ML medroxyprogesterone acetate 150 MG/ML Injection"
-          },
-          {
-            "code": "1000131",
-            "display": "medroxyprogesterone acetate 400 MG/ML Injectable Suspension"
           },
           {
             "code": "1000153",
@@ -158,14 +170,6 @@
           {
             "code": "1426600",
             "display": "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "1488616",
-            "display": "{1 (1.5 ML leuprolide acetate 7.5 MG/ML Prefilled Syringe) / 90 (norethindrone acetate 5 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "1488618",
-            "display": "{1 (1 ML leuprolide acetate 3.75 MG/ML Prefilled Syringe) / 30 (norethindrone acetate 5 MG Oral Tablet) } Pack"
           },
           {
             "code": "1534809",
@@ -450,10 +454,6 @@
           {
             "code": "759743",
             "display": "{21 (desogestrel 0.15 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 5 (ethinyl estradiol 0.01 MG Oral Tablet) / 2 (inert ingredients 1 MG Oral Tablet) } Pack"
-          },
-          {
-            "code": "763088",
-            "display": "{2 (levonorgestrel 0.75 MG Oral Tablet) } Pack"
           },
           {
             "code": "804156",

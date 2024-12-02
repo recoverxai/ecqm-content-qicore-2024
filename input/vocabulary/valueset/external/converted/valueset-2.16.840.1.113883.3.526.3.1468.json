@@ -1,74 +1,37 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1468",
+  "meta": {
+    "versionId": "31",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-19"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1468",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1468"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1468"
     }
   ],
   "version": "20210219",
-  "name": "OtherandUnspecifiedFormsofChorioretinitisandRetinochoroiditis",
+  "name": "OtherAndUnspecifiedFormsOfChorioretinitisAndRetinochoroiditis",
   "title": "Other and Unspecified Forms of Chorioretinitis and Retinochoroiditis",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "H30.21",
-            "display": "Posterior cyclitis, right eye"
-          },
-          {
-            "code": "H30.22",
-            "display": "Posterior cyclitis, left eye"
-          },
-          {
-            "code": "H30.23",
-            "display": "Posterior cyclitis, bilateral"
-          },
-          {
-            "code": "H30.811",
-            "display": "Harada's disease, right eye"
-          },
-          {
-            "code": "H30.812",
-            "display": "Harada's disease, left eye"
-          },
-          {
-            "code": "H30.813",
-            "display": "Harada's disease, bilateral"
-          },
-          {
-            "code": "H30.891",
-            "display": "Other chorioretinal inflammations, right eye"
-          },
-          {
-            "code": "H30.892",
-            "display": "Other chorioretinal inflammations, left eye"
-          },
-          {
-            "code": "H30.893",
-            "display": "Other chorioretinal inflammations, bilateral"
-          },
-          {
-            "code": "H30.91",
-            "display": "Unspecified chorioretinal inflammation, right eye"
-          },
-          {
-            "code": "H30.92",
-            "display": "Unspecified chorioretinal inflammation, left eye"
-          },
-          {
-            "code": "H30.93",
-            "display": "Unspecified chorioretinal inflammation, bilateral"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -78,11 +41,11 @@
           },
           {
             "code": "15677801000119103",
-            "display": "Chorioretinitis of right eye caused by secondary syphilis (disorder)"
+            "display": "Chorioretinitis of right eye due to secondary syphilis (disorder)"
           },
           {
             "code": "15677881000119106",
-            "display": "Chorioretinitis of left eye caused by secondary syphilis (disorder)"
+            "display": "Chorioretinitis of left eye due to secondary syphilis (disorder)"
           },
           {
             "code": "15685401000119104",
@@ -122,7 +85,7 @@
           },
           {
             "code": "15993391000119102",
-            "display": "Retinitis of bilateral eyes caused by secondary syphilis (disorder)"
+            "display": "Retinitis of bilateral eyes due to secondary syphilis (disorder)"
           },
           {
             "code": "186263000",
@@ -214,11 +177,19 @@
           },
           {
             "code": "314032002",
-            "display": "Inactive toxoplasmosis chorioretinitis (disorder)"
+            "display": "Inactive toxoplasmosis chorioretinitis (finding)"
           },
           {
             "code": "314428001",
             "display": "Posterior cyclitis (disorder)"
+          },
+          {
+            "code": "345241000119101",
+            "display": "Macular focal choroiditis of bilateral eyes (disorder)"
+          },
+          {
+            "code": "345251000119104",
+            "display": "Macular focal chorioretinitis of bilateral eyes (disorder)"
           },
           {
             "code": "346251000119106",
@@ -246,7 +217,7 @@
           },
           {
             "code": "373667006",
-            "display": "Posterior pole focal chorioretinitis (disorder)"
+            "display": "Focal chorioretinitis of posterior pole of eye (disorder)"
           },
           {
             "code": "399463004",
@@ -309,10 +280,6 @@
             "display": "Disseminated choroiditis AND chorioretinitis, posterior pole (disorder)"
           },
           {
-            "code": "51930008",
-            "display": "Focal retinitis AND retinochoroiditis of other posterior pole (disorder)"
-          },
-          {
             "code": "56787009",
             "display": "Peripheral focal choroiditis AND chorioretinitis (disorder)"
           },
@@ -330,7 +297,7 @@
           },
           {
             "code": "66281009",
-            "display": "Secondary syphilitic chorioretinitis (disorder)"
+            "display": "Chorioretinitis due to secondary syphilis (disorder)"
           },
           {
             "code": "69811008",
@@ -366,7 +333,7 @@
           },
           {
             "code": "88290000",
-            "display": "Focal chorioretinitis caused by acquired toxoplasmosis (disorder)"
+            "display": "Focal chorioretinitis due to acquired disseminated toxoplasmosis (disorder)"
           },
           {
             "code": "95682009",
@@ -379,6 +346,59 @@
           {
             "code": "9941009",
             "display": "Congenital syphilitic choroiditis (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "H30.21",
+            "display": "Posterior cyclitis, right eye"
+          },
+          {
+            "code": "H30.22",
+            "display": "Posterior cyclitis, left eye"
+          },
+          {
+            "code": "H30.23",
+            "display": "Posterior cyclitis, bilateral"
+          },
+          {
+            "code": "H30.811",
+            "display": "Harada's disease, right eye"
+          },
+          {
+            "code": "H30.812",
+            "display": "Harada's disease, left eye"
+          },
+          {
+            "code": "H30.813",
+            "display": "Harada's disease, bilateral"
+          },
+          {
+            "code": "H30.891",
+            "display": "Other chorioretinal inflammations, right eye"
+          },
+          {
+            "code": "H30.892",
+            "display": "Other chorioretinal inflammations, left eye"
+          },
+          {
+            "code": "H30.893",
+            "display": "Other chorioretinal inflammations, bilateral"
+          },
+          {
+            "code": "H30.91",
+            "display": "Unspecified chorioretinal inflammation, right eye"
+          },
+          {
+            "code": "H30.92",
+            "display": "Unspecified chorioretinal inflammation, left eye"
+          },
+          {
+            "code": "H30.93",
+            "display": "Unspecified chorioretinal inflammation, bilateral"
           }
         ]
       }

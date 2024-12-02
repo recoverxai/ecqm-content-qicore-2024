@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.256",
+  "meta": {
+    "versionId": "15",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-02-18"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.256",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1029.256"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.256"
     }
   ],
   "version": "20230218",
   "name": "SevereMaternalMorbidityProcedures",
   "title": "Severe Maternal Morbidity Procedures",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-02-18T01:03:13-05:00",
+  "publisher": "Joint Commission",
   "compose": {
     "include": [
       {
@@ -32,6 +47,10 @@
             "display": "Bypass Trachea to Cutaneous with Tracheostomy Device, Percutaneous Endoscopic Approach"
           },
           {
+            "code": "0UT90ZL",
+            "display": "Resection of Uterus, Supracervical, Open Approach"
+          },
+          {
             "code": "0UT90ZZ",
             "display": "Resection of Uterus, Open Approach"
           },
@@ -42,26 +61,6 @@
           {
             "code": "0UT97ZZ",
             "display": "Resection of Uterus, Via Natural or Artificial Opening"
-          },
-          {
-            "code": "5A12012",
-            "display": "Performance of Cardiac Output, Single, Manual"
-          },
-          {
-            "code": "5A1935Z",
-            "display": "Respiratory Ventilation, Less than 24 Consecutive Hours"
-          },
-          {
-            "code": "5A1945Z",
-            "display": "Respiratory Ventilation, 24-96 Consecutive Hours"
-          },
-          {
-            "code": "5A1955Z",
-            "display": "Respiratory Ventilation, Greater than 96 Consecutive Hours"
-          },
-          {
-            "code": "5A2204Z",
-            "display": "Restoration of Cardiac Rhythm, Single"
           }
         ]
       },
@@ -97,6 +96,14 @@
             "display": "Total abdominal hysterectomy with bilateral salpingo-oophorectomy (procedure)"
           },
           {
+            "code": "1186678006",
+            "display": "Continuous positive airway pressure with an assured constant airway pressure adjunct (regime/therapy)"
+          },
+          {
+            "code": "1187630003",
+            "display": "Subtotal hysterectomy via vaginal approach (procedure)"
+          },
+          {
             "code": "13254001",
             "display": "Abdominal hysterectomy with colpo-urethrocystopexy, Marshall-Marchetti-Krantz type (procedure)"
           },
@@ -115,6 +122,22 @@
           {
             "code": "236886002",
             "display": "Hysterectomy (procedure)"
+          },
+          {
+            "code": "236887006",
+            "display": "Laparoscopic hysterectomy (procedure)"
+          },
+          {
+            "code": "236888001",
+            "display": "Laparoscopic total hysterectomy (procedure)"
+          },
+          {
+            "code": "236889009",
+            "display": "Laparoscopic supracervical hysterectomy (procedure)"
+          },
+          {
+            "code": "236891001",
+            "display": "Laparoscopic radical hysterectomy (procedure)"
           },
           {
             "code": "236897002",
@@ -229,6 +252,10 @@
             "display": "Vaginal hysterectomy with conservation of ovaries (procedure)"
           },
           {
+            "code": "414575003",
+            "display": "Laparoscopic total abdominal hysterectomy and bilateral salpingo-oophorectomy (procedure)"
+          },
+          {
             "code": "431316002",
             "display": "Laparoscopic subtotal hysterectomy (procedure)"
           },
@@ -242,15 +269,23 @@
           },
           {
             "code": "441820006",
-            "display": "Laparoscopy assisted vaginal hysterectomy with bilateral salpingo-oophorectomy (procedure)"
+            "display": "Laparoscopic-assisted vaginal hysterectomy with bilateral salpingo-oophorectomy (procedure)"
           },
           {
             "code": "446446002",
             "display": "Total abdominal hysterectomy and removal of vaginal cuff (procedure)"
           },
           {
+            "code": "446679008",
+            "display": "Total laparoscopic excision of uterus by abdominal approach (procedure)"
+          },
+          {
             "code": "447771005",
             "display": "Abdominal hysterectomy and excision of periuterine tissue (procedure)"
+          },
+          {
+            "code": "448134000",
+            "display": "Continuous positive airway pressure to nonventilated lung (regime/therapy)"
           },
           {
             "code": "448539002",
@@ -271,7 +306,37 @@
           {
             "code": "54490004",
             "display": "Vaginal hysterectomy with repair of enterocele (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+        "concept": [
+          {
+            "code": "5A12012",
+            "display": "Performance of Cardiac Output, Single, Manual"
           },
+          {
+            "code": "5A1935Z",
+            "display": "Respiratory Ventilation, Less than 24 Consecutive Hours"
+          },
+          {
+            "code": "5A1945Z",
+            "display": "Respiratory Ventilation, 24-96 Consecutive Hours"
+          },
+          {
+            "code": "5A1955Z",
+            "display": "Respiratory Ventilation, Greater than 96 Consecutive Hours"
+          },
+          {
+            "code": "5A2204Z",
+            "display": "Restoration of Cardiac Rhythm, Single"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "608805000",
             "display": "Laparoscopic assisted vaginal hysterectomy with repair of cystocele (procedure)"
@@ -293,6 +358,14 @@
             "display": "Vaginal hysterectomy with repair of cystocele and rectocele (procedure)"
           },
           {
+            "code": "708877008",
+            "display": "Laparoscopic total hysterectomy using robotic assistance (procedure)"
+          },
+          {
+            "code": "708878003",
+            "display": "Laparoscopic radical hysterectomy using robotic assistance (procedure)"
+          },
+          {
             "code": "708985003",
             "display": "Laparoscopic vaginal hysterectomy using robotic assistance (procedure)"
           },
@@ -301,12 +374,68 @@
             "display": "Laparoscopic resection of uterine cornua (procedure)"
           },
           {
+            "code": "737099004",
+            "display": "Abdominal hysterectomy with sacrocolpopexy using mesh (procedure)"
+          },
+          {
+            "code": "739669004",
+            "display": "Supracervical hysterectomy with left salpingo-oophorectomy (procedure)"
+          },
+          {
+            "code": "739670003",
+            "display": "Supracervical hysterectomy with right salpingo-oophorectomy (procedure)"
+          },
+          {
+            "code": "739671004",
+            "display": "Total hysterectomy with left oophorectomy (procedure)"
+          },
+          {
+            "code": "739672006",
+            "display": "Total hysterectomy with right oophorectomy (procedure)"
+          },
+          {
+            "code": "739673001",
+            "display": "Total hysterectomy with left salpingo-oophorectomy (procedure)"
+          },
+          {
+            "code": "739674007",
+            "display": "Total hysterectomy with right salpingo-oophorectomy (procedure)"
+          },
+          {
+            "code": "740514001",
+            "display": "Total hysterectomy with right salpingectomy (procedure)"
+          },
+          {
+            "code": "740515000",
+            "display": "Total hysterectomy with left salpingectomy (procedure)"
+          },
+          {
             "code": "75835007",
             "display": "Laparoscopic-assisted vaginal hysterectomy (procedure)"
           },
           {
+            "code": "762625001",
+            "display": "Vaginal hysterectomy and pelvic floor repair (procedure)"
+          },
+          {
+            "code": "767610009",
+            "display": "Total hysterectomy via vaginal approach (procedure)"
+          },
+          {
+            "code": "767611008",
+            "display": "Total abdominal hysterectomy using intrafascial technique (procedure)"
+          },
+          {
+            "code": "767612001",
+            "display": "Total hysterectomy via vaginal approach using intrafascial technique (procedure)"
+          },
+          {
             "code": "77902002",
             "display": "Vaginal hysterectomy with partial colpectomy (procedure)"
+          },
+          {
+            "code": "860602007",
+            "display": "Postpartum excision of uterus (procedure)"
           },
           {
             "code": "86477000",

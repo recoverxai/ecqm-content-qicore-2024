@@ -1,38 +1,37 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1559",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-18"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1559",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1559"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1559"
     }
   ],
   "version": "20210218",
-  "name": "MacularScarofPosteriorPolar",
+  "name": "MacularScarOfPosteriorPolar",
   "title": "Macular Scar of Posterior Polar",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-18T01:00:59-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "H31.011",
-            "display": "Macula scars of posterior pole (postinflammatory) (post-traumatic), right eye"
-          },
-          {
-            "code": "H31.012",
-            "display": "Macula scars of posterior pole (postinflammatory) (post-traumatic), left eye"
-          },
-          {
-            "code": "H31.013",
-            "display": "Macula scars of posterior pole (postinflammatory) (post-traumatic), bilateral"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -79,6 +78,23 @@
           {
             "code": "774010000",
             "display": "Scarred macula of left eye (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "H31.011",
+            "display": "Macula scars of posterior pole (postinflammatory) (post-traumatic), right eye"
+          },
+          {
+            "code": "H31.012",
+            "display": "Macula scars of posterior pole (postinflammatory) (post-traumatic), left eye"
+          },
+          {
+            "code": "H31.013",
+            "display": "Macula scars of posterior pole (postinflammatory) (post-traumatic), bilateral"
           }
         ]
       }

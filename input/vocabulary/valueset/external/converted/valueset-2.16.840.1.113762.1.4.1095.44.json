@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1095.44",
+  "meta": {
+    "versionId": "23",
+    "lastUpdated": "2024-01-17T01:08:53.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-17"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.44",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1095.44"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1095.44"
     }
   ],
-  "version": "20230215",
-  "name": "NutritionAssessmentStatusModeratelyMalnourished",
-  "title": "Nutrition Assessment Status Moderately Malnourished",
+  "version": "20240117",
+  "name": "NutritionAssessmentStatusFindingOfModeratelyMalnourished",
+  "title": "Nutrition Assessment Status Finding of Moderately Malnourished",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-17T01:08:53-05:00",
+  "publisher": "AND Steward",
   "compose": {
     "include": [
       {
@@ -28,12 +43,40 @@
             "display": "Moderate protein energy malnutrition (disorder)"
           },
           {
+            "code": "238107002",
+            "display": "Deficiency of macronutrients (disorder)"
+          },
+          {
+            "code": "238111008",
+            "display": "Deficiency of micronutrients (disorder)"
+          },
+          {
+            "code": "2492009",
+            "display": "Nutritional disorder (disorder)"
+          },
+          {
+            "code": "285588004",
+            "display": "Nutrition deficiency due to insufficient food (disorder)"
+          },
+          {
+            "code": "441961000124100",
+            "display": "Acute disease or injury-related malnutrition (disorder)"
+          },
+          {
+            "code": "441971000124107",
+            "display": "Chronic disease-related malnutrition (disorder)"
+          },
+          {
             "code": "448765001",
             "display": "Unintentional weight loss (finding)"
           },
           {
-            "code": "698859001",
-            "display": "Impaired nutrient utilization (finding)"
+            "code": "65404009",
+            "display": "Undernutrition (disorder)"
+          },
+          {
+            "code": "70241007",
+            "display": "Nutritional deficiency disorder (disorder)"
           }
         ]
       }

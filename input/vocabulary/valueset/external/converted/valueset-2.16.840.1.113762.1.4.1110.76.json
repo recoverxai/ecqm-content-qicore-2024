@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1110.76",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-11-15"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.76",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1110.76"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1110.76"
     }
   ],
   "version": "20221115",
-  "name": "HistoryofAtrialAblation",
+  "name": "HistoryOfAtrialAblation",
   "title": "History of Atrial Ablation",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-11-15T01:03:33-05:00",
+  "publisher": "TJC EH Steward",
   "compose": {
     "include": [
       {

@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.400",
+  "meta": {
+    "versionId": "32",
+    "lastUpdated": "2024-02-03T01:09:29.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-03"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.400",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.117.1.7.1.400"
+      "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.400"
     }
   ],
-  "version": "20210220",
+  "version": "20240203",
   "name": "LowRisk",
   "title": "Low Risk",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-03T01:09:29-05:00",
+  "publisher": "TJC EH Steward",
   "compose": {
     "include": [
       {
@@ -28,12 +43,8 @@
             "display": "Low (qualifier value)"
           },
           {
-            "code": "260362008",
-            "display": "Very low (qualifier value)"
-          },
-          {
-            "code": "62482003",
-            "display": "Low (qualifier value)"
+            "code": "723505004",
+            "display": "Low risk (qualifier value)"
           }
         ]
       }

@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.320",
+  "meta": {
+    "versionId": "26",
+    "lastUpdated": "2024-08-09T09:57:28.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-30"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.320",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.320"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.320"
     }
   ],
-  "version": "20170504",
+  "version": "20240130",
   "name": "BoneScan",
   "title": "Bone Scan",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-30T01:08:32-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
@@ -114,7 +129,41 @@
           {
             "code": "44142-8",
             "display": "NM Bone Views W Tc-99m medronate IV"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "78811",
+            "display": "Positron emission tomography (PET) imaging; limited area (eg, chest, head/neck)"
           },
+          {
+            "code": "78812",
+            "display": "Positron emission tomography (PET) imaging; skull base to mid-thigh"
+          },
+          {
+            "code": "78813",
+            "display": "Positron emission tomography (PET) imaging; whole body"
+          },
+          {
+            "code": "78814",
+            "display": "Positron emission tomography (PET) with concurrently acquired computed tomography (CT) for attenuation correction and anatomical localization imaging; limited area (eg, chest, head/neck)"
+          },
+          {
+            "code": "78815",
+            "display": "Positron emission tomography (PET) with concurrently acquired computed tomography (CT) for attenuation correction and anatomical localization imaging; skull base to mid-thigh"
+          },
+          {
+            "code": "78816",
+            "display": "Positron emission tomography (PET) with concurrently acquired computed tomography (CT) for attenuation correction and anatomical localization imaging; whole body"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
           {
             "code": "81551-4",
             "display": "PET+CT Bone from skull base to mid-thigh W 18F-NaF IV"
@@ -122,6 +171,23 @@
           {
             "code": "81552-2",
             "display": "PET+CT Whole body Bone W 18F-NaF IV"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "concept": [
+          {
+            "code": "A9593",
+            "display": "Gallium ga-68 psma-11, diagnostic, (ucsf), 1 millicurie"
+          },
+          {
+            "code": "A9594",
+            "display": "Gallium ga-68 psma-11, diagnostic, (ucla), 1 millicurie"
+          },
+          {
+            "code": "A9595",
+            "display": "Piflufolastat f-18, diagnostic, 1 millicurie"
           }
         ]
       }

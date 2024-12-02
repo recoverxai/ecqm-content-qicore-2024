@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1265",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-08-12T09:29:45.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2018-03-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1265",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.196.12.1265"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1265"
     }
   ],
   "version": "20180310",
@@ -13,12 +28,25 @@
   "title": "Aromatase Inhibitors",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2018-03-10T01:00:08-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
         "concept": [
+          {
+            "code": "1923053",
+            "display": "{28 (letrozole 2.5 MG Oral Tablet) / 21 (ribociclib 200 MG Oral Tablet) } Pack"
+          },
+          {
+            "code": "1923055",
+            "display": "{28 (letrozole 2.5 MG Oral Tablet) / 42 (ribociclib 200 MG Oral Tablet) } Pack"
+          },
+          {
+            "code": "1923057",
+            "display": "{28 (letrozole 2.5 MG Oral Tablet) / 63 (ribociclib 200 MG Oral Tablet) } Pack"
+          },
           {
             "code": "199224",
             "display": "anastrozole 1 MG Oral Tablet"

@@ -1,80 +1,87 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.134",
+  "meta": {
+    "versionId": "51",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-02-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.134",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.117.1.7.1.134"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.134"
+    }
+  ],
   "version": "20220212",
-  "name": "OralFactorXaInhibitorforVTEProphylaxisorVTETreatment",
+  "name": "OralFactorXaInhibitorForVTEProphylaxisOrVTETreatment",
   "title": "Oral Factor Xa Inhibitor for VTE Prophylaxis or VTE Treatment",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-02-12T01:02:18-05:00",
+  "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:52-06:00",
-    "contains": [ {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1364435",
-      "display": "apixaban 2.5 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1364445",
-      "display": "apixaban 5 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1599543",
-      "display": "edoxaban 15 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1599551",
-      "display": "edoxaban 30 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1599555",
-      "display": "edoxaban 60 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1992427",
-      "display": "{74 (apixaban 5 MG Oral Tablet) } Pack"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1364435",
-      "display": "apixaban 2.5 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1364445",
-      "display": "apixaban 5 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1599543",
-      "display": "edoxaban 15 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1599551",
-      "display": "edoxaban 30 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1599555",
-      "display": "edoxaban 60 MG Oral Tablet"
-    }, {
-      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "version": "2023-01",
-      "code": "1992427",
-      "display": "{74 (apixaban 5 MG Oral Tablet) } Pack"
-    } ]
+    "identifier": "urn:uuid:e00445f6-d316-4b49-9ad1-a4594f4c8ef4",
+    "timestamp": "2024-12-01T19:47:14-05:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "1364435",
+        "display": "apixaban 2.5 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "1364445",
+        "display": "apixaban 5 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "1599543",
+        "display": "edoxaban 15 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "1599551",
+        "display": "edoxaban 30 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "1599555",
+        "display": "edoxaban 60 MG Oral Tablet"
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "version": "11042024",
+        "code": "1992427",
+        "display": "{74 (apixaban 5 MG Oral Tablet) } Pack"
+      }
+    ]
   }
 }

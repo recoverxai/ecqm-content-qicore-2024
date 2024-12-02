@@ -3,16 +3,17 @@
   "id": "2.16.840.1.113883.3.464.1003.110.12.1025",
   "meta": {
     "versionId": "17",
-    "lastUpdated": "2021-01-13T13:38:55.000-05:00",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
     ]
   },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2021-01-13"
+      "valueDate": "2017-05-04"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1025",
@@ -23,9 +24,9 @@
     }
   ],
   "version": "20170504",
-  "name": "Hepatitis B",
+  "name": "HepatitisB",
   "title": "Hepatitis B",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "NCQA PHEMUR",

@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1212",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1212",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1212"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1212"
     }
   ],
   "version": "20170504",
-  "name": "IntolerancetoACEInhibitororARB",
+  "name": "IntoleranceToACEInhibitorOrARB",
   "title": "Intolerance to ACE Inhibitor or ARB",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "AHA Steward",
   "compose": {
     "include": [
       {
@@ -82,6 +98,34 @@
           {
             "code": "422593004",
             "display": "Acute renal failure caused by angiotensin-converting-enzyme inhibitor (disorder)"
+          },
+          {
+            "code": "720672008",
+            "display": "Adverse reaction caused by telmisartan (disorder)"
+          },
+          {
+            "code": "720673003",
+            "display": "Adverse reaction caused by valsartan (disorder)"
+          },
+          {
+            "code": "720674009",
+            "display": "Adverse reaction caused by olmesartan (disorder)"
+          },
+          {
+            "code": "720675005",
+            "display": "Adverse reaction caused by irbesartan (disorder)"
+          },
+          {
+            "code": "720676006",
+            "display": "Adverse reaction caused by eprosartan (disorder)"
+          },
+          {
+            "code": "720677002",
+            "display": "Adverse reaction caused by candesartan (disorder)"
+          },
+          {
+            "code": "720678007",
+            "display": "Adverse reaction caused by azilsartan (disorder)"
           }
         ]
       }

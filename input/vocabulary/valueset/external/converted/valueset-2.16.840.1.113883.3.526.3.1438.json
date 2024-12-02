@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1438",
+  "meta": {
+    "versionId": "33",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-18"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1438",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1438"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1438"
     }
   ],
   "version": "20210218",
@@ -13,26 +28,10 @@
   "title": "Retrolental Fibroplasias",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2021-02-18T01:00:59-05:00",
+  "publisher": "American Academy of Ophthalmology Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "concept": [
-          {
-            "code": "H35.171",
-            "display": "Retrolental fibroplasia, right eye"
-          },
-          {
-            "code": "H35.172",
-            "display": "Retrolental fibroplasia, left eye"
-          },
-          {
-            "code": "H35.173",
-            "display": "Retrolental fibroplasia, bilateral"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -107,6 +106,23 @@
           {
             "code": "415297005",
             "display": "Retinopathy of prematurity (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "H35.171",
+            "display": "Retrolental fibroplasia, right eye"
+          },
+          {
+            "code": "H35.172",
+            "display": "Retrolental fibroplasia, left eye"
+          },
+          {
+            "code": "H35.173",
+            "display": "Retrolental fibroplasia, bilateral"
           }
         ]
       }

@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.199.12.1031",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-05-04"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.199.12.1031",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.199.12.1031"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.199.12.1031"
     }
   ],
   "version": "20170504",
-  "name": "AnaphylacticReactiontoDTaPVaccine",
+  "name": "AnaphylacticReactionToDTaPVaccine",
   "title": "Anaphylactic Reaction to DTaP Vaccine",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -21,11 +37,11 @@
         "concept": [
           {
             "code": "428281000124107",
-            "display": "Anaphylaxis caused by diphtheria and tetanus vaccine (disorder)"
+            "display": "Anaphylaxis caused by vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)"
           },
           {
             "code": "428291000124105",
-            "display": "Anaphylaxis caused by tetanus, diphtheria and acellular pertussis vaccine (disorder)"
+            "display": "Anaphylaxis caused by component of vaccine product containing low dose acellular Bordetella pertussis and Clostridium tetani and low dose Corynebacterium diphtheriae antigens (disorder)"
           }
         ]
       }

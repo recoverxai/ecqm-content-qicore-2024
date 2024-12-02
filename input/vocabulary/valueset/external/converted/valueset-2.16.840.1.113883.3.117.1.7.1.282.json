@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.282",
+  "meta": {
+    "versionId": "45",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-06-11"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.282",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.117.1.7.1.282"
+      "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.282"
     }
   ],
   "version": "20210611",
@@ -13,7 +28,8 @@
   "title": "Cesarean Birth",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "TJC EH Steward",
   "compose": {
     "include": [
       {
@@ -39,6 +55,10 @@
           {
             "code": "11466000",
             "display": "Cesarean section (procedure)"
+          },
+          {
+            "code": "1197219005",
+            "display": "Elective lower segment cesarean section through inverted T shaped incision of uterus (procedure)"
           },
           {
             "code": "177141003",
@@ -99,6 +119,26 @@
           {
             "code": "709004006",
             "display": "Emergency lower segment cesarean section with inverted T incision (procedure)"
+          },
+          {
+            "code": "736018001",
+            "display": "Elective upper segment cesarean section with bilateral tubal ligation (procedure)"
+          },
+          {
+            "code": "736020003",
+            "display": "Emergency upper segment cesarean section with bilateral tubal ligation (procedure)"
+          },
+          {
+            "code": "736026009",
+            "display": "Elective lower segment cesarean section with bilateral tubal ligation (procedure)"
+          },
+          {
+            "code": "736118004",
+            "display": "Emergency lower segment cesarean section with bilateral tubal ligation (procedure)"
+          },
+          {
+            "code": "788180009",
+            "display": "Lower uterine segment cesarean section (procedure)"
           },
           {
             "code": "84195007",

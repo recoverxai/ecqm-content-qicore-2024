@@ -1,19 +1,35 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.196.12.1523",
+  "meta": {
+    "versionId": "29",
+    "lastUpdated": "2024-01-24T08:35:00.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-02-13"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1523",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.196.12.1523"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1523"
     }
   ],
   "version": "20220213",
-  "name": "Antipsychotic",
-  "title": "Antipsychotic",
+  "name": "PotentiallyHarmfulAntipsychoticsForOlderAdults",
+  "title": "Potentially Harmful Antipsychotics for Older Adults",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-02-13T01:01:49-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -342,6 +358,42 @@
           {
             "code": "2570420",
             "display": "5 ML paliperidone palmitate 312 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2636033",
+            "display": "0.28 ML risperidone 357 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2636041",
+            "display": "0.35 ML risperidone 357 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2636043",
+            "display": "0.42 ML risperidone 357 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2636045",
+            "display": "0.56 ML risperidone 357 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2636047",
+            "display": "0.7 ML risperidone 357 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2636049",
+            "display": "0.14 ML risperidone 357 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2636051",
+            "display": "0.21 ML risperidone 357 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2636637",
+            "display": "2.4 ML aripiprazole 300 MG/ML Prefilled Syringe"
+          },
+          {
+            "code": "2636645",
+            "display": "3.2 ML aripiprazole 300 MG/ML Prefilled Syringe"
           },
           {
             "code": "283639",

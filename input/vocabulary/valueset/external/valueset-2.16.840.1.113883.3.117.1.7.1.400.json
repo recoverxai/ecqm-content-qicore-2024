@@ -1,40 +1,68 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.400",
+  "meta": {
+    "versionId": "32",
+    "lastUpdated": "2024-02-03T01:09:29.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-02-03"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.400",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113883.3.117.1.7.1.400"
-  } ],
-  "version": "20210220",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.400"
+    }
+  ],
+  "version": "20240203",
   "name": "LowRisk",
   "title": "Low Risk",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-02-03T01:09:29-05:00",
+  "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:52-06:00",
-    "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "2022-09",
-      "code": "260362008",
-      "display": "Very low (qualifier value)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2022-09",
-      "code": "62482003",
-      "display": "Low (qualifier value)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2022-09",
-      "code": "260362008",
-      "display": "Very low (qualifier value)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "2022-09",
-      "code": "62482003",
-      "display": "Low (qualifier value)"
-    } ]
+    "identifier": "urn:uuid:741bb08a-adc8-4d53-be4b-d93633273d05",
+    "timestamp": "2024-12-01T19:48:09-05:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "260362008",
+        "display": "Very low (qualifier value)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "62482003",
+        "display": "Low (qualifier value)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "723505004",
+        "display": "Low risk (qualifier value)"
+      }
+    ]
   }
 }

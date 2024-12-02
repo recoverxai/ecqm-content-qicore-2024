@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1060",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-01-23T09:04:21.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-17"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1060",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1060"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1060"
     }
   ],
-  "version": "20210910",
-  "name": "Endocrinesystem,other",
-  "title": "Endocrine system, other",
+  "version": "20240117",
+  "name": "DesiccatedThyroidMedications",
+  "title": "Desiccated Thyroid Medications",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-17T01:08:53-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -100,24 +115,8 @@
             "display": "thyroid (USP) 32.5 MG Oral Tablet"
           },
           {
-            "code": "577154",
-            "display": "megestrol acetate 125 MG/ML Oral Suspension"
-          },
-          {
             "code": "728581",
             "display": "thyroid (USP) 16.25 MG Oral Tablet"
-          },
-          {
-            "code": "860215",
-            "display": "megestrol acetate 20 MG Oral Tablet"
-          },
-          {
-            "code": "860221",
-            "display": "megestrol acetate 40 MG Oral Tablet"
-          },
-          {
-            "code": "860225",
-            "display": "megestrol acetate 40 MG/ML Oral Suspension"
           }
         ]
       }

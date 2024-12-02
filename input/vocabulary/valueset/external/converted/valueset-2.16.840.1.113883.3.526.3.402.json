@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.402",
+  "meta": {
+    "versionId": "30",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-09-09"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.402",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.402"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.402"
     }
   ],
   "version": "20220909",
@@ -13,23 +28,25 @@
   "title": "Influenza Vaccine Administered",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-09-09T01:02:41-04:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "86198006",
+            "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)"
+          }
+        ]
+      },
       {
         "system": "http://www.ama-assn.org/go/cpt",
         "concept": [
           {
-            "code": "90630",
-            "display": "Influenza virus vaccine, quadrivalent (IIV4), split virus, preservative free, for intradermal use"
-          },
-          {
             "code": "90653",
             "display": "Influenza vaccine, inactivated (IIV), subunit, adjuvanted, for intramuscular use"
-          },
-          {
-            "code": "90654",
-            "display": "Influenza virus vaccine, trivalent (IIV3), split virus, preservative-free, for intradermal use"
           },
           {
             "code": "90655",
@@ -49,7 +66,7 @@
           },
           {
             "code": "90661",
-            "display": "Influenza virus vaccine, trivalent (ccIIV3), derived from cell cultures, subunit, preservative and antibiotic free, 0.5 mL dosage, for intramuscular use"
+            "display": "Influenza virus vaccine, trivalent (ccIIV3), derived from cell cultures, subunit, antibiotic free, 0.5 mL dosage, for intramuscular use"
           },
           {
             "code": "90662",
@@ -106,15 +123,6 @@
           {
             "code": "90756",
             "display": "Influenza virus vaccine, quadrivalent (ccIIV4), derived from cell cultures, subunit, antibiotic free, 0.5 mL dosage, for intramuscular use"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "86198006",
-            "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)"
           }
         ]
       }

@@ -1,68 +1,39 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1104.10",
+  "meta": {
+    "versionId": "23",
+    "lastUpdated": "2024-02-01T16:09:40.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2023-02-14"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.10",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1104.10"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1104.10"
     }
   ],
   "version": "20230214",
-  "name": "MedicareFFSpayer",
-  "title": "Medicare FFS payer",
+  "name": "MedicareFFSPayer",
+  "title": "Medicare FFS Payer",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2023-02-14T01:02:32-05:00",
+  "publisher": "Yale",
   "compose": {
     "include": [
       {
-        "system": "urn:oid:2.16.840.1.113883.3.221.5",
+        "system": "https://nahdo.org/sopt",
         "concept": [
-          {
-            "code": "1",
-            "display": "MEDICARE"
-          },
-          {
-            "code": "12",
-            "display": "Medicare (Non-managed Care)"
-          },
-          {
-            "code": "121",
-            "display": "Medicare FFS"
-          },
-          {
-            "code": "122",
-            "display": "Medicare Drug Benefit"
-          },
-          {
-            "code": "129",
-            "display": "Medicare Non-managed Care Other"
-          },
-          {
-            "code": "13",
-            "display": "Medicare Hospice"
-          },
-          {
-            "code": "14",
-            "display": "Dual Eligibility Medicare/Medicaid Organization"
-          },
-          {
-            "code": "141",
-            "display": "Dual Eligible Special Needs Plan (D-SNP)"
-          },
-          {
-            "code": "142",
-            "display": "Fully Integrated Dual Eligible Special Needs Plan (FIDE-SNP)"
-          },
-          {
-            "code": "19",
-            "display": "Medicare Other"
-          },
-          {
-            "code": "191",
-            "display": "Medicare Pharmacy Benefit Manager"
-          },
           {
             "code": "1",
             "display": "MEDICARE"

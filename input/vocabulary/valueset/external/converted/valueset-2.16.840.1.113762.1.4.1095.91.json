@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1095.91",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-01-03T14:28:50.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-11-16"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.91",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1095.91"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1095.91"
     }
   ],
   "version": "20221116",
@@ -13,7 +28,8 @@
   "title": "Hospital Dietitian Referral",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-11-16T01:02:47-05:00",
+  "publisher": "AND Steward",
   "compose": {
     "include": [
       {

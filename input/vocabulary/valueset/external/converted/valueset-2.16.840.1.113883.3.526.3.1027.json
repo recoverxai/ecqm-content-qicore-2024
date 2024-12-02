@@ -1,28 +1,304 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.1027",
+  "meta": {
+    "versionId": "27",
+    "lastUpdated": "2024-01-31T01:08:33.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-31"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1027",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.1027"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.1027"
     }
   ],
-  "version": "20170504",
+  "version": "20240131",
   "name": "ChemotherapyAdministration",
   "title": "Chemotherapy Administration",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-31T01:08:33-05:00",
+  "publisher": "American Society of Clinical Oncology Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1141994004",
+            "display": "Rituximab, cyclophosphamide, etoposide, vincristine, prednisone antineoplastic chemotherapy regimen (regime/therapy)"
+          },
+          {
+            "code": "1172516002",
+            "display": "High-dose chemotherapy with stem cell transplant (procedure)"
+          },
+          {
+            "code": "12149006",
+            "display": "Chemotherapy administration, subcutaneous, with local anesthesia (procedure)"
+          },
+          {
+            "code": "1254741007",
+            "display": "Intensification antineoplastic therapy regimen (regime/therapy)"
+          },
+          {
+            "code": "1254742000",
+            "display": "Delayed intensification antineoplastic therapy regimen (regime/therapy)"
+          },
+          {
+            "code": "1255831008",
+            "display": "Chemotherapy for malignant neoplastic disease using targeted agent (procedure)"
+          },
+          {
+            "code": "1255834000",
+            "display": "Administration of antineoplastic chemotherapy into peritoneal cavity (procedure)"
+          },
+          {
+            "code": "1255904006",
+            "display": "Administration of palliative antineoplastic agent (procedure)"
+          },
+          {
+            "code": "1259200004",
+            "display": "Neoadjuvant antineoplastic chemotherapy (procedure)"
+          },
+          {
+            "code": "169396008",
+            "display": "Radiomimetic chemotherapy (procedure)"
+          },
+          {
+            "code": "169397004",
+            "display": "Radiochemotherapy: local infiltration (procedure)"
+          },
+          {
+            "code": "169398009",
+            "display": "Radiochemotherapy: to stop spread (procedure)"
+          },
+          {
+            "code": "169399001",
+            "display": "Radiochemotherapy via oral route (procedure)"
+          },
+          {
+            "code": "169400008",
+            "display": "Radiochemotherapy via intravenous route (procedure)"
+          },
+          {
+            "code": "169401007",
+            "display": "Radiochemotherapy: for immunosuppression (procedure)"
+          },
+          {
+            "code": "169402000",
+            "display": "Radiochemotherapy: local artery (procedure)"
+          },
+          {
+            "code": "169403005",
+            "display": "Radiochemotherapy: into cavity (procedure)"
+          },
+          {
+            "code": "171765004",
+            "display": "Intrathecal injection of chemotherapeutic agent (procedure)"
+          },
+          {
+            "code": "230857009",
+            "display": "Injection of chemotherapeutic substance into subcutaneous reservoir (procedure)"
+          },
+          {
+            "code": "265761001",
+            "display": "Intramuscular chemotherapy (procedure)"
+          },
+          {
+            "code": "266719004",
+            "display": "Oral chemotherapy (procedure)"
+          },
+          {
+            "code": "29391003",
+            "display": "Chemotherapy administration into peritoneal cavity requiring paracentesis (procedure)"
+          },
+          {
+            "code": "309698005",
+            "display": "Continuous infusion of chemotherapy (procedure)"
+          },
+          {
+            "code": "315601005",
+            "display": "Ambulatory chemotherapy (procedure)"
+          },
+          {
+            "code": "31652009",
+            "display": "Intracavitary chemotherapy for malignant neoplasm (procedure)"
+          },
+          {
+            "code": "363688001",
+            "display": "Administration of antineoplastic agent (procedure)"
+          },
+          {
+            "code": "367336001",
+            "display": "Chemotherapy (procedure)"
+          },
+          {
+            "code": "38216008",
+            "display": "Infusion chemotherapy for malignant neoplasm (procedure)"
+          },
+          {
+            "code": "394894008",
+            "display": "Pre-operative chemotherapy (procedure)"
+          },
+          {
+            "code": "394895009",
+            "display": "Postoperative chemotherapy (procedure)"
+          },
+          {
+            "code": "394934009",
+            "display": "Combined preoperative chemotherapy and radiotherapy (procedure)"
+          },
+          {
+            "code": "394935005",
+            "display": "Combined postoperative chemotherapy and radiotherapy (procedure)"
+          },
+          {
+            "code": "399042005",
+            "display": "Chemotherapy cycle (procedure)"
+          },
+          {
+            "code": "4114003",
+            "display": "Parenteral chemotherapy for malignant neoplasm (procedure)"
+          },
+          {
+            "code": "450827009",
+            "display": "Induction chemotherapy (procedure)"
+          },
+          {
+            "code": "455281000124104",
+            "display": "Dose-dense methotrexate-vinblastine-doxorubicin-cisplatin chemotherapy regimen (regime/therapy)"
+          },
+          {
+            "code": "455291000124101",
+            "display": "Dose-adjusted etoposide-prednisolone-oncovin-cyclophosphamide-hydroxydaunorubicin (regime/therapy)"
+          },
+          {
+            "code": "461391000124102",
+            "display": "Folinic acid-fluorouracil-oxaliplatin regimen (regime/therapy)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "50391",
+            "display": "Instillation(s) of therapeutic agent into renal pelvis and/or ureter through established nephrostomy, pyelostomy or ureterostomy tube (eg, anticarcinogenic or antifungal agent)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "51534007",
+            "display": "Oral chemotherapy for malignant neoplasm (procedure)"
+          }
+        ]
+      },
       {
         "system": "http://www.ama-assn.org/go/cpt",
         "concept": [
           {
             "code": "51720",
             "display": "Bladder instillation of anticarcinogenic agent (including retention time)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "6872008",
+            "display": "Perfusion chemotherapy for malignant neoplasm (procedure)"
           },
+          {
+            "code": "700496000",
+            "display": "Postoperative administration of antineoplastic agent into peritoneal cavity (procedure)"
+          },
+          {
+            "code": "703423002",
+            "display": "Combined chemotherapy and radiation therapy (procedure)"
+          },
+          {
+            "code": "70446004",
+            "display": "Chemotherapy administration into pleural cavity requiring thoracentesis (procedure)"
+          },
+          {
+            "code": "716872004",
+            "display": "Antineoplastic chemotherapy regimen (regime/therapy)"
+          },
+          {
+            "code": "720379009",
+            "display": "Hepatic arterial infusion chemotherapy (procedure)"
+          },
+          {
+            "code": "722472009",
+            "display": "Rituximab, ifosfamide, carboplatin and etoposide chemotherapy regimen (regime/therapy)"
+          },
+          {
+            "code": "722482005",
+            "display": "Doxorubicin, bleomycin, vinblastine and dacarbazine chemotherapy regimen (regime/therapy)"
+          },
+          {
+            "code": "722491009",
+            "display": "Rituximab, cyclophosphamide, doxorubicin, vincristine and prednisone chemotherapy regimen (regime/therapy)"
+          },
+          {
+            "code": "77738002",
+            "display": "Local chemotherapy for malignant neoplasm (procedure)"
+          },
+          {
+            "code": "816151001",
+            "display": "Administration of consolidation antineoplastic agent (procedure)"
+          },
+          {
+            "code": "830155008",
+            "display": "Administration of hyperthermic antineoplastic agent into peritoneal cavity (procedure)"
+          },
+          {
+            "code": "830156009",
+            "display": "Administration of hyperthermic antineoplastic agent into thoracic cavity (procedure)"
+          },
+          {
+            "code": "86036005",
+            "display": "Intravenous chemotherapy administration by push technique (procedure)"
+          },
+          {
+            "code": "870249004",
+            "display": "Folinic acid, fluorouracil and irinotecan antineoplastic chemotherapy regimen (regime/therapy)"
+          },
+          {
+            "code": "870250004",
+            "display": "Fluorouracil, leucovorin, irinotecan and oxaliplatin antineoplastic chemotherapy regimen (regime/therapy)"
+          },
+          {
+            "code": "87776000",
+            "display": "Intra-arterial infusion of antineoplastic agent (procedure)"
+          },
+          {
+            "code": "890093004",
+            "display": "Administration of multiple antineoplastic agents (procedure)"
+          },
+          {
+            "code": "897713009",
+            "display": "Antineoplastic chemoimmunotherapy (regime/therapy)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
           {
             "code": "96401",
             "display": "Chemotherapy administration, subcutaneous or intramuscular; non-hormonal anti-neoplastic"
@@ -65,7 +341,7 @@
           },
           {
             "code": "96446",
-            "display": "Chemotherapy administration into the peritoneal cavity via indwelling port or catheter"
+            "display": "Chemotherapy administration into the peritoneal cavity via implanted port or catheter"
           },
           {
             "code": "96450",
@@ -94,79 +370,11 @@
         ]
       },
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
         "concept": [
           {
-            "code": "169396008",
-            "display": "Radiomimetic chemotherapy (procedure)"
-          },
-          {
-            "code": "265760000",
-            "display": "Intravenous chemotherapy (procedure)"
-          },
-          {
-            "code": "265761001",
-            "display": "Intramuscular chemotherapy (procedure)"
-          },
-          {
-            "code": "265762008",
-            "display": "Subcutaneous chemotherapy (procedure)"
-          },
-          {
-            "code": "266719004",
-            "display": "Oral chemotherapy (procedure)"
-          },
-          {
-            "code": "268500004",
-            "display": "Administration of prophylactic chemotherapy (procedure)"
-          },
-          {
-            "code": "315601005",
-            "display": "Ambulatory chemotherapy (procedure)"
-          },
-          {
-            "code": "31652009",
-            "display": "Intracavitary chemotherapy for malignant neoplasm (procedure)"
-          },
-          {
-            "code": "367336001",
-            "display": "Chemotherapy (procedure)"
-          },
-          {
-            "code": "38216008",
-            "display": "Infusion chemotherapy for malignant neoplasm (procedure)"
-          },
-          {
-            "code": "394894008",
-            "display": "Pre-operative chemotherapy (procedure)"
-          },
-          {
-            "code": "394895009",
-            "display": "Postoperative chemotherapy (procedure)"
-          },
-          {
-            "code": "394935005",
-            "display": "Combined post-operative chemotherapy and radiotherapy (procedure)"
-          },
-          {
-            "code": "4114003",
-            "display": "Parenteral chemotherapy for malignant neoplasm (procedure)"
-          },
-          {
-            "code": "51534007",
-            "display": "Oral chemotherapy for malignant neoplasm (procedure)"
-          },
-          {
-            "code": "6872008",
-            "display": "Perfusion chemotherapy for malignant neoplasm (procedure)"
-          },
-          {
-            "code": "716872004",
-            "display": "Antineoplastic chemotherapy regimen (regime/therapy)"
-          },
-          {
-            "code": "77738002",
-            "display": "Local chemotherapy for malignant neoplasm (procedure)"
+            "code": "G0498",
+            "display": "Chemotherapy administration, intravenous infusion technique; initiation of infusion in the office/clinic setting using office/clinic pump/supplies, with continuation of the infusion in the community setting (e.g., home, domiciliary, rest home or assisted living) using a portable pump provided by the office/clinic, includes follow up office/clinic visit at the conclusion of the infusion"
           }
         ]
       }

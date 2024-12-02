@@ -1,57 +1,48 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1147.113",
+  "meta": {
+    "versionId": "15",
+    "lastUpdated": "2024-02-22T15:51:00.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-04-15"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1147.113",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1147.113"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1147.113"
     }
   ],
   "version": "20220415",
-  "name": "PressureInjuryStage2,3,4orUnstageable",
+  "name": "PressureInjuryStage234OrUnstageable",
   "title": "Pressure Injury Stage 2, 3, 4 or Unstageable",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-04-15T01:02:23-04:00",
+  "publisher": "Mathematica PSI Steward",
   "compose": {
     "include": [
       {
-        "system": "http://loinc.org",
-        "concept": [
-          {
-            "code": "54576-4",
-            "display": "Pressure injuries - stage 2"
-          },
-          {
-            "code": "54577-2",
-            "display": "Pressure injuries - stage 3"
-          },
-          {
-            "code": "54578-0",
-            "display": "Pressure injuries - stage 4"
-          },
-          {
-            "code": "54579-8",
-            "display": "Pressure injuries - unstageable due to non-removable dressing"
-          },
-          {
-            "code": "55088-9",
-            "display": "Pressure injuries - unstageable with suspected deep tissue injury in evolution"
-          },
-          {
-            "code": "55089-7",
-            "display": "Pressure injuries - unstageable due to coverage of wound bed by slough/eschar"
-          },
-          {
-            "code": "57188-5",
-            "display": "Stage 3 or 4 pressure injury with largest surface dimensions"
-          }
-        ]
-      },
-      {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "10634631000119105",
+            "display": "Unstageable pressure injury of left heel (disorder)"
+          },
+          {
+            "code": "10634671000119108",
+            "display": "Unstageable pressure injury of right heel (disorder)"
+          },
           {
             "code": "10637071000119109",
             "display": "Pressure injury of buttock stage II (disorder)"
@@ -63,6 +54,102 @@
           {
             "code": "10637151000119101",
             "display": "Pressure injury of buttock stage IV (disorder)"
+          },
+          {
+            "code": "10637591000119100",
+            "display": "Unstageable pressure injury of buttock (disorder)"
+          },
+          {
+            "code": "10637631000119100",
+            "display": "Unstageable pressure injury of left buttock (disorder)"
+          },
+          {
+            "code": "10637671000119102",
+            "display": "Unstageable pressure injury of right buttock (disorder)"
+          },
+          {
+            "code": "10642111000119104",
+            "display": "Unstageable pressure injury of sacral region of back (disorder)"
+          },
+          {
+            "code": "10666711000119108",
+            "display": "Pressure injury of right lower leg stage IV (disorder)"
+          },
+          {
+            "code": "10666791000119104",
+            "display": "Pressure injury of left lower leg stage IV (disorder)"
+          },
+          {
+            "code": "10666951000119107",
+            "display": "Unstageable pressure injury of head (disorder)"
+          },
+          {
+            "code": "10667431000119105",
+            "display": "Pressure injury of left lower leg stage II (disorder)"
+          },
+          {
+            "code": "10667471000119108",
+            "display": "Pressure injury of right lower leg stage II (disorder)"
+          },
+          {
+            "code": "10669431000119102",
+            "display": "Unstageable pressure injury of back (disorder)"
+          },
+          {
+            "code": "10669591000119104",
+            "display": "Pressure injury of coccygeal region of back stage IV (disorder)"
+          },
+          {
+            "code": "10669631000119104",
+            "display": "Pressure injury of coccygeal region of back stage III (disorder)"
+          },
+          {
+            "code": "10669671000119101",
+            "display": "Pressure injury of coccygeal region of back stage II (disorder)"
+          },
+          {
+            "code": "10669751000119101",
+            "display": "Unstageable pressure injury of coccygeal region of back (disorder)"
+          },
+          {
+            "code": "10669831000119100",
+            "display": "Pressure injury of left lower leg stage III (disorder)"
+          },
+          {
+            "code": "10670031000119108",
+            "display": "Pressure injury of right lower leg stage III (disorder)"
+          },
+          {
+            "code": "10670791000119109",
+            "display": "Unstageable pressure injury of left elbow (disorder)"
+          },
+          {
+            "code": "10670831000119103",
+            "display": "Unstageable pressure injury of right elbow (disorder)"
+          },
+          {
+            "code": "10670951000119101",
+            "display": "Unstageable pressure injury of right lower leg (disorder)"
+          },
+          {
+            "code": "10670991000119106",
+            "display": "Unstageable pressure injury of right hip (disorder)"
+          },
+          {
+            "code": "10671071000119102",
+            "display": "Unstageable pressure injury of left lower leg (disorder)"
+          },
+          {
+            "code": "10671111000119109",
+            "display": "Unstageable pressure injury of left ankle (disorder)"
+          },
+          {
+            "code": "10671191000119100",
+            "display": "Unstageable pressure injury of right ankle (disorder)"
+          },
+          {
+            "code": "10671231000119109",
+            "display": "Unstageable pressure injury of left hip (disorder)"
           },
           {
             "code": "1163220007",
@@ -229,6 +316,10 @@
             "display": "Pressure injury of left ankle stage IV (disorder)"
           },
           {
+            "code": "301891901000119107",
+            "display": "Unstageable pressure injury of toe of right foot (disorder)"
+          },
+          {
             "code": "30221000175103",
             "display": "Pressure injury of right elbow stage II (disorder)"
           },
@@ -277,6 +368,10 @@
             "display": "Pressure injury of elbow stage IV (disorder)"
           },
           {
+            "code": "35791000175103",
+            "display": "Pressure injury of ankle stage II (disorder)"
+          },
+          {
             "code": "35801000175102",
             "display": "Pressure injury of ankle stage III (disorder)"
           },
@@ -295,7 +390,41 @@
           {
             "code": "35861000175101",
             "display": "Pressure injury of heel stage IV (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "54576-4",
+            "display": "Pressure injuries - stage 2"
           },
+          {
+            "code": "54577-2",
+            "display": "Pressure injuries - stage 3"
+          },
+          {
+            "code": "54578-0",
+            "display": "Pressure injuries - stage 4"
+          },
+          {
+            "code": "54579-8",
+            "display": "Pressure injuries - unstageable due to non-removable dressing"
+          },
+          {
+            "code": "55088-9",
+            "display": "Pressure injuries - unstageable with suspected deep tissue injury in evolution"
+          },
+          {
+            "code": "55089-7",
+            "display": "Pressure injuries - unstageable due to coverage of wound bed by slough/eschar"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "551841000124101",
             "display": "Pressure injury of left foot stage II (disorder)"
@@ -339,6 +468,92 @@
           {
             "code": "551971000124103",
             "display": "Pressure injury of toe of right foot stage IV (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "57188-5",
+            "display": "Stage 3 or 4 pressure injury with largest surface dimensions"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "580951000124106",
+            "display": "Unstageable pressure injury of left foot (disorder)"
+          },
+          {
+            "code": "580961000124108",
+            "display": "Unstageable pressure injury of right foot (disorder)"
+          },
+          {
+            "code": "590911000124109",
+            "display": "Pressure injury of right lumbar region of back stage II (disorder)"
+          },
+          {
+            "code": "590921000124101",
+            "display": "Pressure injury of left lumbar region of back stage II (disorder)"
+          },
+          {
+            "code": "590931000124103",
+            "display": "Pressure injury of back stage II (disorder)"
+          },
+          {
+            "code": "590941000124108",
+            "display": "Pressure injury of left thoracic region of back stage II (disorder)"
+          },
+          {
+            "code": "590951000124105",
+            "display": "Pressure injury of right lumbar region of back stage III (disorder)"
+          },
+          {
+            "code": "590961000124107",
+            "display": "Pressure injury of right thoracic region of back stage II (disorder)"
+          },
+          {
+            "code": "590971000124100",
+            "display": "Pressure injury of left lumbar region of back stage III (disorder)"
+          },
+          {
+            "code": "590981000124102",
+            "display": "Pressure injury of back stage III (disorder)"
+          },
+          {
+            "code": "590991000124104",
+            "display": "Pressure injury of left thoracic region of back stage III (disorder)"
+          },
+          {
+            "code": "591001000124103",
+            "display": "Pressure injury of left lumbar region of back stage IV (disorder)"
+          },
+          {
+            "code": "591011000124100",
+            "display": "Pressure injury of right lumbar region of back stage IV (disorder)"
+          },
+          {
+            "code": "591021000124108",
+            "display": "Pressure injury of right thoracic region of back stage III (disorder)"
+          },
+          {
+            "code": "591031000124106",
+            "display": "Pressure injury of back stage IV (disorder)"
+          },
+          {
+            "code": "591041000124101",
+            "display": "Pressure injury of left thoracic region of back stage IV (disorder)"
+          },
+          {
+            "code": "591051000124104",
+            "display": "Pressure injury of right thoracic region of back stage IV (disorder)"
+          },
+          {
+            "code": "78433671000119100",
+            "display": "Unstageable pressure injury of toe of left foot (disorder)"
           }
         ]
       }

@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1176",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-01-23T01:10:32.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-23"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1176",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1176"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1176"
     }
   ],
-  "version": "20220902",
+  "version": "20240123",
   "name": "Methylphenidate",
   "title": "Methylphenidate",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-23T01:10:32-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -93,7 +108,7 @@
           },
           {
             "code": "1734951",
-            "display": "24 HR methylphenidate 40 MG Chewable Extended Release Oral Tablet"
+            "display": "24 HR methylphenidate hydrochloride 40 MG Chewable Extended Release Oral Tablet"
           },
           {
             "code": "1806177",
@@ -238,6 +253,14 @@
           {
             "code": "2168868",
             "display": "Evening Dosing 24 HR methylphenidate hydrochloride 40 MG Extended Release Oral Capsule"
+          },
+          {
+            "code": "2605796",
+            "display": "24 HR methylphenidate hydrochloride 63 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "2605798",
+            "display": "24 HR methylphenidate hydrochloride 45 MG Extended Release Oral Tablet"
           },
           {
             "code": "753436",

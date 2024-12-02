@@ -1,21 +1,73 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.113.12.1049",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-08-12T12:41:27.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-12"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.113.12.1049",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.113.12.1049"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.113.12.1049"
     }
   ],
-  "version": "20180310",
+  "version": "20240112",
   "name": "Osteopenia",
   "title": "Osteopenia",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "276703007",
+            "display": "Osteopenia of prematurity (disorder)"
+          },
+          {
+            "code": "312894000",
+            "display": "Osteopenia (disorder)"
+          },
+          {
+            "code": "37605006",
+            "display": "Senile osteopenia (disorder)"
+          },
+          {
+            "code": "40308000",
+            "display": "Steroid-induced osteopenia (disorder)"
+          },
+          {
+            "code": "735613004",
+            "display": "Premenopausal idiopathic osteopenia (disorder)"
+          },
+          {
+            "code": "735614005",
+            "display": "Osteopenia following menopause (disorder)"
+          },
+          {
+            "code": "735615006",
+            "display": "Osteopenia due to disuse (disorder)"
+          },
+          {
+            "code": "735616007",
+            "display": "Osteopenia caused by drug (disorder)"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -154,60 +206,6 @@
           {
             "code": "M89.8X9",
             "display": "Other specified disorders of bone, unspecified site"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
-        "concept": [
-          {
-            "code": "733.90",
-            "display": "Disorder of bone and cartilage, unspecified"
-          },
-          {
-            "code": "733.99",
-            "display": "Other disorders of bone and cartilage"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "276703007",
-            "display": "Osteopenia of prematurity (disorder)"
-          },
-          {
-            "code": "312894000",
-            "display": "Osteopenia (disorder)"
-          },
-          {
-            "code": "37605006",
-            "display": "Senile osteopenia (disorder)"
-          },
-          {
-            "code": "40308000",
-            "display": "Steroid-induced osteopenia (disorder)"
-          },
-          {
-            "code": "735613004",
-            "display": "Premenopausal idiopathic osteopenia (disorder)"
-          },
-          {
-            "code": "735614005",
-            "display": "Osteopenia following menopause (disorder)"
-          },
-          {
-            "code": "735615006",
-            "display": "Osteopenia due to disuse (disorder)"
-          },
-          {
-            "code": "735616007",
-            "display": "Osteopenia caused by drug (disorder)"
-          },
-          {
-            "code": "78441005",
-            "display": "Osteopenia (morphologic abnormality)"
           }
         ]
       }

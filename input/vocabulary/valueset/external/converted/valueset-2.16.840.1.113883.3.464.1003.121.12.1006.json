@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.121.12.1006",
+  "meta": {
+    "versionId": "27",
+    "lastUpdated": "2024-09-18T08:20:58.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2019-03-15"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.121.12.1006",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.121.12.1006"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.121.12.1006"
     }
   ],
   "version": "20190315",
@@ -13,7 +28,8 @@
   "title": "Consultant Report",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-09-18T08:20:59-04:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
@@ -214,7 +230,29 @@
           {
             "code": "34879-7",
             "display": "Endocrinology Consult note"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "371530004",
+            "display": "Clinical consultation report (record artifact)"
           },
+          {
+            "code": "371531000",
+            "display": "Report of clinical encounter (record artifact)"
+          },
+          {
+            "code": "371545006",
+            "display": "Confirmatory consultation report (record artifact)"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
           {
             "code": "51845-6",
             "display": "Outpatient Consult note"
@@ -398,7 +436,25 @@
           {
             "code": "68897-8",
             "display": "Pediatric endocrinology Hospital Consult note"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "721916007",
+            "display": "Physician consulting initial evaluation note (record artifact)"
           },
+          {
+            "code": "721927009",
+            "display": "Referral note (record artifact)"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
           {
             "code": "72555-6",
             "display": "Interventional radiology Consult note"
@@ -954,31 +1010,6 @@
           {
             "code": "96737-2",
             "display": "COVID-19 Consultation note"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "371530004",
-            "display": "Clinical consultation report (record artifact)"
-          },
-          {
-            "code": "371531000",
-            "display": "Report of clinical encounter (record artifact)"
-          },
-          {
-            "code": "371545006",
-            "display": "Confirmatory consultation report (record artifact)"
-          },
-          {
-            "code": "721916007",
-            "display": "Physician consulting initial evaluation note (record artifact)"
-          },
-          {
-            "code": "721927009",
-            "display": "Referral note (record artifact)"
           }
         ]
       }

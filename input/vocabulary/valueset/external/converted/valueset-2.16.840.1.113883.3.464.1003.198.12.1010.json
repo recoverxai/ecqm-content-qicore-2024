@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.198.12.1010",
+  "meta": {
+    "versionId": "25",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2017-12-19"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1010",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.198.12.1010"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.198.12.1010"
     }
   ],
   "version": "20171219",
@@ -13,9 +28,27 @@
   "title": "Flexible Sigmoidoscopy",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1217117008",
+            "display": "Endoscopic examination of lower bowel and sampling for bacterial overgrowth (procedure)"
+          },
+          {
+            "code": "396226005",
+            "display": "Flexible fiberoptic sigmoidoscopy with biopsy (procedure)"
+          },
+          {
+            "code": "44441009",
+            "display": "Flexible fiberoptic sigmoidoscopy (procedure)"
+          }
+        ]
+      },
       {
         "system": "http://www.ama-assn.org/go/cpt",
         "concept": [
@@ -82,32 +115,11 @@
         ]
       },
       {
-        "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
         "concept": [
           {
             "code": "G0104",
             "display": "Colorectal cancer screening; flexible sigmoidoscopy"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "425634007",
-            "display": "Diagnostic endoscopic examination of lower bowel and sampling for bacterial overgrowth using fiberoptic sigmoidoscope (procedure)"
-          },
-          {
-            "code": "396226005",
-            "display": "Flexible fiberoptic sigmoidoscopy with biopsy (procedure)"
-          },
-          {
-            "code": "44441009",
-            "display": "Flexible fiberoptic sigmoidoscopy (procedure)"
-          },
-          {
-            "code": "841000119107",
-            "display": "History of flexible sigmoidoscopy (situation)"
           }
         ]
       }

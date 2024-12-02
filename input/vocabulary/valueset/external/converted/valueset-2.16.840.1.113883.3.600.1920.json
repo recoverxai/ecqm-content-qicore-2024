@@ -1,63 +1,171 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.600.1920",
+  "meta": {
+    "versionId": "31",
+    "lastUpdated": "2024-08-09T13:43:15.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-20"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1920",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.600.1920"
+      "value": "urn:oid:2.16.840.1.113883.3.600.1920"
     }
   ],
   "version": "20210220",
-  "name": "EncountertoScreenforBloodPressure",
+  "name": "EncounterToScreenForBloodPressure",
   "title": "Encounter to Screen for Blood Pressure",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
-        "system": "http://terminology.hl7.org/CodeSystem/CD2",
+        "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "D3921",
-            "display": "decoronation or submergence of an erupted tooth"
+            "code": "103705002",
+            "display": "Patient status observation (procedure)"
           },
           {
-            "code": "D7111",
-            "display": "extraction, coronal remnants - primary tooth"
+            "code": "108220007",
+            "display": "Evaluation AND/OR management - new patient (procedure)"
           },
           {
-            "code": "D7140",
-            "display": "extraction, erupted tooth or exposed root (elevation and/or forceps removal)"
+            "code": "108221006",
+            "display": "Evaluation AND/OR management - established patient (procedure)"
           },
           {
-            "code": "D7210",
-            "display": "extraction, erupted tooth requiring removal of bone and/or sectioning of tooth, and including elevation of mucoperiosteal flap if indicated"
+            "code": "108224003",
+            "display": "Preventive patient evaluation (procedure)"
           },
           {
-            "code": "D7220",
-            "display": "removal of impacted tooth - soft tissue"
+            "code": "12843005",
+            "display": "Subsequent hospital visit by physician (procedure)"
           },
           {
-            "code": "D7230",
-            "display": "removal of impacted tooth - partially bony"
+            "code": "13607009",
+            "display": "Manual examination of breast (procedure)"
           },
           {
-            "code": "D7240",
-            "display": "removal of impacted tooth - completely bony"
+            "code": "14736009",
+            "display": "History and physical examination with evaluation and management of patient (procedure)"
           },
           {
-            "code": "D7241",
-            "display": "removal of impacted tooth - completely bony, with unusual surgical complications"
+            "code": "1759002",
+            "display": "Assessment of nutritional status (procedure)"
           },
           {
-            "code": "D7250",
-            "display": "removal of residual tooth roots (cutting procedure)"
+            "code": "18170008",
+            "display": "Subsequent nursing facility visit (procedure)"
           },
           {
-            "code": "D7251",
-            "display": "coronectomy - intentional partial tooth removal, impacted teeth only"
+            "code": "185349003",
+            "display": "Encounter for check up (procedure)"
+          },
+          {
+            "code": "185463005",
+            "display": "Visit out of hours (procedure)"
+          },
+          {
+            "code": "185465003",
+            "display": "Weekend visit (procedure)"
+          },
+          {
+            "code": "207195004",
+            "display": "History and physical examination with evaluation and management of nursing facility patient (procedure)"
+          },
+          {
+            "code": "209099002",
+            "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
+          },
+          {
+            "code": "210098006",
+            "display": "Domiciliary or rest home patient evaluation and management (procedure)"
+          },
+          {
+            "code": "270427003",
+            "display": "Patient-initiated encounter (procedure)"
+          },
+          {
+            "code": "270430005",
+            "display": "Provider-initiated encounter (procedure)"
+          },
+          {
+            "code": "306677009",
+            "display": "Discharge from day hospital (procedure)"
+          },
+          {
+            "code": "308335008",
+            "display": "Patient encounter procedure (procedure)"
+          },
+          {
+            "code": "310243009",
+            "display": "Nutritional assessment (procedure)"
+          },
+          {
+            "code": "35025007",
+            "display": "Manual pelvic examination (procedure)"
+          },
+          {
+            "code": "390906007",
+            "display": "Follow-up encounter (procedure)"
+          },
+          {
+            "code": "406547006",
+            "display": "Urgent follow-up (procedure)"
+          },
+          {
+            "code": "410172000",
+            "display": "Nutrition care management (procedure)"
+          },
+          {
+            "code": "439708006",
+            "display": "Home visit (procedure)"
+          },
+          {
+            "code": "4525004",
+            "display": "Emergency department patient visit (procedure)"
+          },
+          {
+            "code": "46662001",
+            "display": "Examination of breast (procedure)"
+          },
+          {
+            "code": "50357006",
+            "display": "Evaluation and management of patient at home (procedure)"
+          },
+          {
+            "code": "76464004",
+            "display": "Hospital admission, for observation (procedure)"
+          },
+          {
+            "code": "78318003",
+            "display": "History and physical examination, annual for health maintenance (procedure)"
+          },
+          {
+            "code": "83607001",
+            "display": "Gynecologic examination (procedure)"
+          },
+          {
+            "code": "86013001",
+            "display": "Periodic reevaluation and management of healthy individual (procedure)"
+          },
+          {
+            "code": "90526000",
+            "display": "Initial evaluation and management of healthy individual (procedure)"
           }
         ]
       },
@@ -125,36 +233,44 @@
             "display": "Assessment of tinnitus (includes pitch, loudness matching, and masking)"
           },
           {
+            "code": "97802",
+            "display": "Medical nutrition therapy; initial assessment and intervention, individual, face-to-face with the patient, each 15 minutes"
+          },
+          {
+            "code": "97803",
+            "display": "Medical nutrition therapy; re-assessment and intervention, individual, face-to-face with the patient, each 15 minutes"
+          },
+          {
             "code": "99202",
-            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
           },
           {
             "code": "99203",
-            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 30-44 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
           },
           {
             "code": "99204",
-            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using time for code selection, 45-59 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
           },
           {
             "code": "99205",
-            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 60-74 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
           },
           {
             "code": "99212",
-            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 10-19 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 10 minutes must be met or exceeded."
           },
           {
             "code": "99213",
-            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 20-29 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
           },
           {
             "code": "99214",
-            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using time for code selection, 30-39 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
           },
           {
             "code": "99215",
-            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
           },
           {
             "code": "99236",
@@ -190,7 +306,7 @@
           },
           {
             "code": "99306",
-            "display": "Initial nursing facility care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+            "display": "Initial nursing facility care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 50 minutes must be met or exceeded."
           },
           {
             "code": "99307",
@@ -198,7 +314,7 @@
           },
           {
             "code": "99308",
-            "display": "Subsequent nursing facility care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+            "display": "Subsequent nursing facility care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
           },
           {
             "code": "99309",
@@ -283,11 +399,60 @@
         ]
       },
       {
-        "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "system": "http://www.ada.org/cdt",
+        "concept": [
+          {
+            "code": "D3921",
+            "display": "decoronation or submergence of an erupted tooth"
+          },
+          {
+            "code": "D7111",
+            "display": "extraction, coronal remnants - primary tooth"
+          },
+          {
+            "code": "D7140",
+            "display": "extraction, erupted tooth or exposed root (elevation and/or forceps removal)"
+          },
+          {
+            "code": "D7210",
+            "display": "extraction, erupted tooth requiring removal of bone and/or sectioning of tooth, and including elevation of mucoperiosteal flap if indicated"
+          },
+          {
+            "code": "D7220",
+            "display": "removal of impacted tooth - soft tissue"
+          },
+          {
+            "code": "D7230",
+            "display": "removal of impacted tooth - partially bony"
+          },
+          {
+            "code": "D7240",
+            "display": "removal of impacted tooth - completely bony"
+          },
+          {
+            "code": "D7241",
+            "display": "removal of impacted tooth - completely bony, with unusual surgical complications"
+          },
+          {
+            "code": "D7250",
+            "display": "removal of residual tooth roots (cutting procedure)"
+          },
+          {
+            "code": "D7251",
+            "display": "coronectomy - intentional partial tooth removal, impacted teeth only"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
         "concept": [
           {
             "code": "G0101",
             "display": "Cervical or vaginal cancer screening; pelvic and clinical breast examination"
+          },
+          {
+            "code": "G0270",
+            "display": "Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes"
           },
           {
             "code": "G0402",
@@ -300,131 +465,6 @@
           {
             "code": "G0439",
             "display": "Annual wellness visit, includes a personalized prevention plan of service (pps), subsequent visit"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "103705002",
-            "display": "Patient status observation (procedure)"
-          },
-          {
-            "code": "108220007",
-            "display": "Evaluation AND/OR management - new patient (procedure)"
-          },
-          {
-            "code": "108221006",
-            "display": "Evaluation AND/OR management - established patient (procedure)"
-          },
-          {
-            "code": "108224003",
-            "display": "Preventive patient evaluation (procedure)"
-          },
-          {
-            "code": "12843005",
-            "display": "Subsequent hospital visit by physician (procedure)"
-          },
-          {
-            "code": "13607009",
-            "display": "Manual examination of breast (procedure)"
-          },
-          {
-            "code": "14736009",
-            "display": "History and physical examination with evaluation and management of patient (procedure)"
-          },
-          {
-            "code": "18170008",
-            "display": "Subsequent nursing facility visit (procedure)"
-          },
-          {
-            "code": "185349003",
-            "display": "Encounter for check up (procedure)"
-          },
-          {
-            "code": "185463005",
-            "display": "Visit out of hours (procedure)"
-          },
-          {
-            "code": "185465003",
-            "display": "Weekend visit (procedure)"
-          },
-          {
-            "code": "207195004",
-            "display": "History and physical examination with evaluation and management of nursing facility patient (procedure)"
-          },
-          {
-            "code": "209099002",
-            "display": "History and physical examination with management of domiciliary or rest home patient (procedure)"
-          },
-          {
-            "code": "210098006",
-            "display": "Domiciliary or rest home patient evaluation and management (procedure)"
-          },
-          {
-            "code": "270427003",
-            "display": "Patient-initiated encounter (procedure)"
-          },
-          {
-            "code": "270430005",
-            "display": "Provider-initiated encounter (procedure)"
-          },
-          {
-            "code": "306677009",
-            "display": "Discharge from day hospital (procedure)"
-          },
-          {
-            "code": "308335008",
-            "display": "Patient encounter procedure (procedure)"
-          },
-          {
-            "code": "35025007",
-            "display": "Manual pelvic examination (procedure)"
-          },
-          {
-            "code": "390906007",
-            "display": "Follow-up encounter (procedure)"
-          },
-          {
-            "code": "406547006",
-            "display": "Urgent follow-up (procedure)"
-          },
-          {
-            "code": "439708006",
-            "display": "Home visit (procedure)"
-          },
-          {
-            "code": "4525004",
-            "display": "Emergency department patient visit (procedure)"
-          },
-          {
-            "code": "46662001",
-            "display": "Examination of breast (procedure)"
-          },
-          {
-            "code": "50357006",
-            "display": "Evaluation and management of patient at home (procedure)"
-          },
-          {
-            "code": "76464004",
-            "display": "Hospital admission, for observation (procedure)"
-          },
-          {
-            "code": "78318003",
-            "display": "History and physical examination, annual for health maintenance (procedure)"
-          },
-          {
-            "code": "83607001",
-            "display": "Gynecologic examination (procedure)"
-          },
-          {
-            "code": "86013001",
-            "display": "Periodic reevaluation and management of healthy individual (procedure)"
-          },
-          {
-            "code": "90526000",
-            "display": "Initial evaluation and management of healthy individual (procedure)"
           }
         ]
       }

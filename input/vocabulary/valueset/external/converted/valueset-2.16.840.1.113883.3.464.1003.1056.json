@@ -1,32 +1,39 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1056",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-01-23T09:02:28.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-17"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1056",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1056"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1056"
     }
   ],
-  "version": "20210909",
-  "name": "Centralnervoussystem,vasodilators",
-  "title": "Central nervous system, vasodilators",
-  "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "version": "20240117",
+  "name": "ErgoloidMesylatesMedications",
+  "title": "Ergoloid Mesylates Medications",
+  "status": "retired",
+  "date": "2024-01-17T01:08:53-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
         "concept": [
-          {
-            "code": "1298799",
-            "display": "isoxsuprine hydrochloride 20 MG Oral Tablet"
-          },
-          {
-            "code": "1298834",
-            "display": "isoxsuprine hydrochloride 10 MG Oral Tablet"
-          },
           {
             "code": "318179",
             "display": "ergoloid mesylates, USP 1 MG Oral Tablet"

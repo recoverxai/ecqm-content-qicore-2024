@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1095.42",
+  "meta": {
+    "versionId": "26",
+    "lastUpdated": "2024-01-17T01:08:53.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-17"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.42",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1095.42"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1095.42"
     }
   ],
-  "version": "20230215",
-  "name": "NutritionAssessmentStatusSeverelyMalnourished",
-  "title": "Nutrition Assessment Status Severely Malnourished",
+  "version": "20240117",
+  "name": "NutritionAssessmentStatusFindingOfSeverelyMalnourished",
+  "title": "Nutrition Assessment Status Finding of Severely Malnourished",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-17T01:08:53-05:00",
+  "publisher": "AND Steward",
   "compose": {
     "include": [
       {
@@ -24,12 +39,68 @@
             "display": "Acute nutritional deficiency (finding)"
           },
           {
+            "code": "129588001",
+            "display": "Adult failure to thrive syndrome (disorder)"
+          },
+          {
+            "code": "238108007",
+            "display": "Cachexia (finding)"
+          },
+          {
             "code": "272588001",
             "display": "Malnutrition (calorie) (disorder)"
           },
           {
+            "code": "281583001",
+            "display": "Nutritional wasting (disorder)"
+          },
+          {
+            "code": "288517002",
+            "display": "Wasting disease (disorder)"
+          },
+          {
             "code": "371597004",
             "display": "Emaciated (finding)"
+          },
+          {
+            "code": "441951000124102",
+            "display": "Starvation-related malnutrition (disorder)"
+          },
+          {
+            "code": "54840006",
+            "display": "Failure to thrive (disorder)"
+          },
+          {
+            "code": "56882008",
+            "display": "Anorexia nervosa (disorder)"
+          },
+          {
+            "code": "722959000",
+            "display": "Anorexia nervosa co-occurrent with dangerously low body weight (disorder)"
+          },
+          {
+            "code": "722960005",
+            "display": "Anorexia nervosa co-occurrent with significantly low body weight (disorder)"
+          },
+          {
+            "code": "723917005",
+            "display": "Dangerously low body weight co-occurrent and due to anorexia nervosa of restricting type (disorder)"
+          },
+          {
+            "code": "723919008",
+            "display": "Significantly low body weight co-occurrent and due to anorexia nervosa of restricting type (disorder)"
+          },
+          {
+            "code": "772791006",
+            "display": "Sarcopenia (disorder)"
+          },
+          {
+            "code": "77675002",
+            "display": "Anorexia nervosa, restricting type (disorder)"
+          },
+          {
+            "code": "788876001",
+            "display": "Cachexia due to malignant neoplastic disease (finding)"
           }
         ]
       }

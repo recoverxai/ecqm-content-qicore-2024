@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1164.67",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2018-04-27"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1164.67",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1164.67"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1164.67"
     }
   ],
   "version": "20180427",
@@ -13,9 +28,23 @@
   "title": "Morbid Obesity",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2018-04-27T01:00:04-04:00",
+  "publisher": "LUGPA Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "238136002",
+            "display": "Morbid obesity (disorder)"
+          },
+          {
+            "code": "408512008",
+            "display": "Body mass index 40+ - severely obese (finding)"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -46,19 +75,6 @@
           {
             "code": "Z68.45",
             "display": "Body mass index [BMI] 70 or greater, adult"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "238136002",
-            "display": "Morbid obesity (disorder)"
-          },
-          {
-            "code": "408512008",
-            "display": "Body mass index 40+ - severely obese (finding)"
           }
         ]
       }

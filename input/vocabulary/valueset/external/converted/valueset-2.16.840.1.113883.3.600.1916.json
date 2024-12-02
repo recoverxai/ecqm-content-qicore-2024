@@ -1,21 +1,146 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.600.1916",
+  "meta": {
+    "versionId": "33",
+    "lastUpdated": "2024-08-09T13:43:57.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-20"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1916",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.600.1916"
+      "value": "urn:oid:2.16.840.1.113883.3.600.1916"
     }
   ],
   "version": "20210220",
-  "name": "EncountertoScreenforDepression",
+  "name": "EncounterToScreenForDepression",
   "title": "Encounter to Screen for Depression",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10197000",
+            "display": "Psychiatric interview and evaluation (procedure)"
+          },
+          {
+            "code": "108220007",
+            "display": "Evaluation AND/OR management - new patient (procedure)"
+          },
+          {
+            "code": "108221006",
+            "display": "Evaluation AND/OR management - established patient (procedure)"
+          },
+          {
+            "code": "108224003",
+            "display": "Preventive patient evaluation (procedure)"
+          },
+          {
+            "code": "108311000",
+            "display": "Psychiatric procedure, interview AND/OR consultation (procedure)"
+          },
+          {
+            "code": "13607009",
+            "display": "Manual examination of breast (procedure)"
+          },
+          {
+            "code": "14736009",
+            "display": "History and physical examination with evaluation and management of patient (procedure)"
+          },
+          {
+            "code": "165171009",
+            "display": "Initial psychiatric evaluation (procedure)"
+          },
+          {
+            "code": "171207006",
+            "display": "Depression screening (procedure)"
+          },
+          {
+            "code": "18512000",
+            "display": "Individual psychotherapy (regime/therapy)"
+          },
+          {
+            "code": "185349003",
+            "display": "Encounter for check up (procedure)"
+          },
+          {
+            "code": "185463005",
+            "display": "Visit out of hours (procedure)"
+          },
+          {
+            "code": "185465003",
+            "display": "Weekend visit (procedure)"
+          },
+          {
+            "code": "252603000",
+            "display": "Tinnitus assessment (procedure)"
+          },
+          {
+            "code": "270427003",
+            "display": "Patient-initiated encounter (procedure)"
+          },
+          {
+            "code": "270430005",
+            "display": "Provider-initiated encounter (procedure)"
+          },
+          {
+            "code": "302440009",
+            "display": "Psychiatric pharmacologic management (procedure)"
+          },
+          {
+            "code": "308335008",
+            "display": "Patient encounter procedure (procedure)"
+          },
+          {
+            "code": "35025007",
+            "display": "Manual pelvic examination (procedure)"
+          },
+          {
+            "code": "370803007",
+            "display": "Evaluation of psychosocial impact on plan of care (procedure)"
+          },
+          {
+            "code": "390906007",
+            "display": "Follow-up encounter (procedure)"
+          },
+          {
+            "code": "406547006",
+            "display": "Urgent follow-up (procedure)"
+          },
+          {
+            "code": "410155007",
+            "display": "Occupational therapy assessment (procedure)"
+          },
+          {
+            "code": "410157004",
+            "display": "Occupational therapy management (procedure)"
+          },
+          {
+            "code": "46662001",
+            "display": "Examination of breast (procedure)"
+          },
+          {
+            "code": "53555003",
+            "display": "Basic comprehensive audiometry testing (procedure)"
+          }
+        ]
+      },
       {
         "system": "http://www.ama-assn.org/go/cpt",
         "concept": [
@@ -34,7 +159,37 @@
           {
             "code": "59618",
             "display": "Routine obstetric care including antepartum care, cesarean delivery, and postpartum care, following attempted vaginal delivery after previous cesarean delivery"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "78318003",
+            "display": "History and physical examination, annual for health maintenance (procedure)"
           },
+          {
+            "code": "83607001",
+            "display": "Gynecologic examination (procedure)"
+          },
+          {
+            "code": "8411005",
+            "display": "Interactive individual medical psychotherapy (regime/therapy)"
+          },
+          {
+            "code": "86013001",
+            "display": "Periodic reevaluation and management of healthy individual (procedure)"
+          },
+          {
+            "code": "90526000",
+            "display": "Initial evaluation and management of healthy individual (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
           {
             "code": "90791",
             "display": "Psychiatric diagnostic evaluation"
@@ -54,6 +209,10 @@
           {
             "code": "90837",
             "display": "Psychotherapy, 60 minutes with patient"
+          },
+          {
+            "code": "92622",
+            "display": "Diagnostic analysis, programming, and verification of an auditory osseointegrated sound processor, any type; first 60 minutes"
           },
           {
             "code": "92625",
@@ -121,35 +280,35 @@
           },
           {
             "code": "99202",
-            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
           },
           {
             "code": "99203",
-            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 30-44 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
           },
           {
             "code": "99204",
-            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using time for code selection, 45-59 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
           },
           {
             "code": "99205",
-            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 60-74 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
           },
           {
             "code": "99212",
-            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 10-19 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 10 minutes must be met or exceeded."
           },
           {
             "code": "99213",
-            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 20-29 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
           },
           {
             "code": "99214",
-            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using time for code selection, 30-39 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
           },
           {
             "code": "99215",
-            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter."
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
           },
           {
             "code": "99304",
@@ -161,7 +320,7 @@
           },
           {
             "code": "99306",
-            "display": "Initial nursing facility care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+            "display": "Initial nursing facility care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 50 minutes must be met or exceeded."
           },
           {
             "code": "99307",
@@ -169,7 +328,7 @@
           },
           {
             "code": "99308",
-            "display": "Subsequent nursing facility care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+            "display": "Subsequent nursing facility care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
           },
           {
             "code": "99309",
@@ -294,7 +453,7 @@
         ]
       },
       {
-        "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
         "concept": [
           {
             "code": "G0101",
@@ -323,135 +482,6 @@
           {
             "code": "G0444",
             "display": "Annual depression screening, 5 to 15 minutes"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "10197000",
-            "display": "Psychiatric interview and evaluation (procedure)"
-          },
-          {
-            "code": "108220007",
-            "display": "Evaluation AND/OR management - new patient (procedure)"
-          },
-          {
-            "code": "108221006",
-            "display": "Evaluation AND/OR management - established patient (procedure)"
-          },
-          {
-            "code": "108224003",
-            "display": "Preventive patient evaluation (procedure)"
-          },
-          {
-            "code": "108311000",
-            "display": "Psychiatric procedure, interview AND/OR consultation (procedure)"
-          },
-          {
-            "code": "13607009",
-            "display": "Manual examination of breast (procedure)"
-          },
-          {
-            "code": "14736009",
-            "display": "History and physical examination with evaluation and management of patient (procedure)"
-          },
-          {
-            "code": "165171009",
-            "display": "Initial psychiatric evaluation (procedure)"
-          },
-          {
-            "code": "171207006",
-            "display": "Depression screening (procedure)"
-          },
-          {
-            "code": "18512000",
-            "display": "Individual psychotherapy (regime/therapy)"
-          },
-          {
-            "code": "185349003",
-            "display": "Encounter for check up (procedure)"
-          },
-          {
-            "code": "185463005",
-            "display": "Visit out of hours (procedure)"
-          },
-          {
-            "code": "185465003",
-            "display": "Weekend visit (procedure)"
-          },
-          {
-            "code": "252603000",
-            "display": "Tinnitus assessment (procedure)"
-          },
-          {
-            "code": "270427003",
-            "display": "Patient-initiated encounter (procedure)"
-          },
-          {
-            "code": "270430005",
-            "display": "Provider-initiated encounter (procedure)"
-          },
-          {
-            "code": "302440009",
-            "display": "Psychiatric pharmacologic management (procedure)"
-          },
-          {
-            "code": "308335008",
-            "display": "Patient encounter procedure (procedure)"
-          },
-          {
-            "code": "35025007",
-            "display": "Manual pelvic examination (procedure)"
-          },
-          {
-            "code": "370803007",
-            "display": "Evaluation of psychosocial impact on plan of care (procedure)"
-          },
-          {
-            "code": "390906007",
-            "display": "Follow-up encounter (procedure)"
-          },
-          {
-            "code": "406547006",
-            "display": "Urgent follow-up (procedure)"
-          },
-          {
-            "code": "410155007",
-            "display": "Occupational therapy assessment (procedure)"
-          },
-          {
-            "code": "410157004",
-            "display": "Occupational therapy management (procedure)"
-          },
-          {
-            "code": "46662001",
-            "display": "Examination of breast (procedure)"
-          },
-          {
-            "code": "53555003",
-            "display": "Basic comprehensive audiometry testing (procedure)"
-          },
-          {
-            "code": "78318003",
-            "display": "History and physical examination, annual for health maintenance (procedure)"
-          },
-          {
-            "code": "83607001",
-            "display": "Gynecologic examination (procedure)"
-          },
-          {
-            "code": "8411005",
-            "display": "Interactive individual medical psychotherapy (regime/therapy)"
-          },
-          {
-            "code": "86013001",
-            "display": "Periodic reevaluation and management of healthy individual (procedure)"
-          },
-          {
-            "code": "90526000",
-            "display": "Initial evaluation and management of healthy individual (procedure)"
           }
         ]
       }

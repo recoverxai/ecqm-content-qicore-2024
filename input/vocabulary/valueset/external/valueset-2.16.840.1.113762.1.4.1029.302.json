@@ -1,35 +1,69 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.302",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-01-27"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.302",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "2.16.840.1.113762.1.4.1029.302"
-  } ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.302"
+    }
+  ],
   "version": "20220127",
-  "name": "PlacentalAccretaSpectrum",
-  "title": "Placental Accreta Spectrum",
+  "name": "PlacentaAccreta",
+  "title": "Placenta Accreta",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-01-27T01:02:46-05:00",
+  "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "20230504",
-    "timestamp": "2023-08-02T11:13:55-06:00",
-    "contains": [ {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O43.213",
-      "display": "Placenta accreta, third trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O43.223",
-      "display": "Placenta increta, third trimester"
-    }, {
-      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-      "version": "2023",
-      "code": "O43.233",
-      "display": "Placenta percreta, third trimester"
-    } ]
+    "identifier": "urn:uuid:4972f32b-8e26-41ea-ae6f-d71ef28e6c45",
+    "timestamp": "2024-12-01T19:48:59-05:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [
+      {
+        "name": "count",
+        "valueInteger": 1000
+      },
+      {
+        "name": "offset",
+        "valueInteger": 0
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O43.212",
+        "display": "Placenta accreta, second trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O43.213",
+        "display": "Placenta accreta, third trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O43.219",
+        "display": "Placenta accreta, unspecified trimester"
+      }
+    ]
   }
 }

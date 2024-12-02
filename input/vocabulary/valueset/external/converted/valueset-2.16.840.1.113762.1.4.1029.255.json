@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1029.255",
+  "meta": {
+    "versionId": "18",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-01-27"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.255",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1029.255"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1029.255"
     }
   ],
   "version": "20220127",
@@ -13,7 +28,8 @@
   "title": "Severe Maternal Morbidity Diagnoses",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-01-27T01:02:44-05:00",
+  "publisher": "Joint Commission",
   "compose": {
     "include": [
       {
@@ -84,6 +100,10 @@
             "display": "Sepsis due to Serratia"
           },
           {
+            "code": "A41.54",
+            "display": "Sepsis due to Acinetobacter baumannii"
+          },
+          {
             "code": "A41.59",
             "display": "Other Gram-negative sepsis"
           },
@@ -120,6 +140,10 @@
             "display": "Hb-SS disease with cerebral vascular involvement"
           },
           {
+            "code": "D57.04",
+            "display": "Hb-SS disease with dactylitis"
+          },
+          {
             "code": "D57.09",
             "display": "Hb-SS disease with crisis with other specified complication"
           },
@@ -134,6 +158,10 @@
           {
             "code": "D57.213",
             "display": "Sickle-cell/Hb-C disease with cerebral vascular involvement"
+          },
+          {
+            "code": "D57.214",
+            "display": "Sickle-cell/Hb-C disease with dactylitis"
           },
           {
             "code": "D57.218",
@@ -156,6 +184,10 @@
             "display": "Sickle-cell thalassemia, unspecified, with cerebral vascular involvement"
           },
           {
+            "code": "D57.414",
+            "display": "Sickle-cell thalassemia, unspecified, with dactylitis"
+          },
+          {
             "code": "D57.418",
             "display": "Sickle-cell thalassemia, unspecified, with crisis with other specified complication"
           },
@@ -174,6 +206,10 @@
           {
             "code": "D57.433",
             "display": "Sickle-cell thalassemia beta zero with cerebral vascular involvement"
+          },
+          {
+            "code": "D57.434",
+            "display": "Sickle-cell thalassemia beta zero with dactylitis"
           },
           {
             "code": "D57.438",
@@ -196,6 +232,10 @@
             "display": "Sickle-cell thalassemia beta plus with cerebral vascular involvement"
           },
           {
+            "code": "D57.454",
+            "display": "Sickle-cell thalassemia beta plus with dactylitis"
+          },
+          {
             "code": "D57.458",
             "display": "Sickle-cell thalassemia beta plus with crisis with other specified complication"
           },
@@ -214,6 +254,10 @@
           {
             "code": "D57.813",
             "display": "Other sickle-cell disorders with cerebral vascular involvement"
+          },
+          {
+            "code": "D57.814",
+            "display": "Other sickle-cell disorders with dactylitis"
           },
           {
             "code": "D57.818",
@@ -368,6 +412,10 @@
             "display": "Other myocardial infarction type"
           },
           {
+            "code": "I21.B",
+            "display": "Myocardial infarction with coronary microvascular dysfunction"
+          },
+          {
             "code": "I22.0",
             "display": "Subsequent ST elevation (STEMI) myocardial infarction of anterior wall"
           },
@@ -409,11 +457,11 @@
           },
           {
             "code": "I26.93",
-            "display": "Single subsegmental pulmonary embolism without acute cor pulmonale"
+            "display": "Single subsegmental thrombotic pulmonary embolism without acute cor pulmonale"
           },
           {
             "code": "I26.94",
-            "display": "Multiple subsegmental pulmonary emboli without acute cor pulmonale"
+            "display": "Multiple subsegmental thrombotic pulmonary emboli without acute cor pulmonale"
           },
           {
             "code": "I26.99",
@@ -1285,11 +1333,11 @@
           },
           {
             "code": "I71.51",
-            "display": "Supraceliac aneurysm of the abdominal aorta, ruptured"
+            "display": "Supraceliac aneurysm of the thoracoabdominal aorta, ruptured"
           },
           {
             "code": "I71.52",
-            "display": "Paravisceral aneurysm of the abdominal aorta, ruptured"
+            "display": "Paravisceral aneurysm of the thoracoabdominal aorta, ruptured"
           },
           {
             "code": "I71.60",
@@ -1297,11 +1345,11 @@
           },
           {
             "code": "I71.61",
-            "display": "Supraceliac aneurysm of the abdominal aorta, without rupture"
+            "display": "Supraceliac aneurysm of the thoracoabdominal aorta, without rupture"
           },
           {
             "code": "I71.62",
-            "display": "Paravisceral aneurysm of the abdominal aorta, without rupture"
+            "display": "Paravisceral aneurysm of the thoracoabdominal aorta, without rupture"
           },
           {
             "code": "I71.8",
@@ -1788,8 +1836,12 @@
             "display": "Central nervous system complications of anesthesia during the puerperium"
           },
           {
-            "code": "O90.4",
-            "display": "Postpartum acute kidney failure"
+            "code": "O90.41",
+            "display": "Hepatorenal syndrome following labor and delivery"
+          },
+          {
+            "code": "O90.49",
+            "display": "Other postpartum acute kidney failure"
           },
           {
             "code": "R06.03",

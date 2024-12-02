@@ -1,21 +1,94 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.113.12.1050",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-08-12T10:54:06.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2018-03-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.113.12.1050",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.113.12.1050"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.113.12.1050"
     }
   ],
   "version": "20180310",
-  "name": "OsteoporoticFractures",
-  "title": "Osteoporotic Fractures",
+  "name": "OsteoporosisWithCurrentFracture",
+  "title": "Osteoporosis With Current Fracture",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2018-03-10T01:00:08-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "203444008",
+            "display": "Osteoporotic fracture due to postoophorectomy osteoporosis (disorder)"
+          },
+          {
+            "code": "203446005",
+            "display": "Pathological fracture co-occurrent and due to post-surgical malabsorption osteoporosis (disorder)"
+          },
+          {
+            "code": "203447001",
+            "display": "Osteoporotic fracture due to drug-induced osteoporosis (disorder)"
+          },
+          {
+            "code": "203450003",
+            "display": "Osteoporotic fracture of lumbar vertebra (disorder)"
+          },
+          {
+            "code": "203451004",
+            "display": "Osteoporotic fracture of thoracic vertebra (disorder)"
+          },
+          {
+            "code": "203452006",
+            "display": "Osteoporotic fracture of cervical vertebra (disorder)"
+          },
+          {
+            "code": "240198002",
+            "display": "Osteoporotic vertebral collapse (disorder)"
+          },
+          {
+            "code": "311806008",
+            "display": "Osteoporotic collapse of cervical vertebra (disorder)"
+          },
+          {
+            "code": "311890007",
+            "display": "Osteoporotic collapse of lumbar vertebra (disorder)"
+          },
+          {
+            "code": "311891006",
+            "display": "Osteoporotic collapse of thoracic vertebra (disorder)"
+          },
+          {
+            "code": "431031001",
+            "display": "Osteoporotic fracture of neck of femur (disorder)"
+          },
+          {
+            "code": "443165006",
+            "display": "Osteoporotic fracture of bone (disorder)"
+          },
+          {
+            "code": "704330001",
+            "display": "Osteoporotic fracture of femur (disorder)"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -596,6 +669,78 @@
             "display": "Age-related osteoporosis with current pathological fracture, other site, sequela"
           },
           {
+            "code": "M80.0B1A",
+            "display": "Age-related osteoporosis with current pathological fracture, right pelvis, initial encounter for fracture"
+          },
+          {
+            "code": "M80.0B1D",
+            "display": "Age-related osteoporosis with current pathological fracture, right pelvis, subsequent encounter for fracture with routine healing"
+          },
+          {
+            "code": "M80.0B1G",
+            "display": "Age-related osteoporosis with current pathological fracture, right pelvis, subsequent encounter for fracture with delayed healing"
+          },
+          {
+            "code": "M80.0B1K",
+            "display": "Age-related osteoporosis with current pathological fracture, right pelvis, subsequent encounter for fracture with nonunion"
+          },
+          {
+            "code": "M80.0B1P",
+            "display": "Age-related osteoporosis with current pathological fracture, right pelvis, subsequent encounter for fracture with malunion"
+          },
+          {
+            "code": "M80.0B1S",
+            "display": "Age-related osteoporosis with current pathological fracture, right pelvis, sequela"
+          },
+          {
+            "code": "M80.0B2A",
+            "display": "Age-related osteoporosis with current pathological fracture, left pelvis, initial encounter for fracture"
+          },
+          {
+            "code": "M80.0B2D",
+            "display": "Age-related osteoporosis with current pathological fracture, left pelvis, subsequent encounter for fracture with routine healing"
+          },
+          {
+            "code": "M80.0B2G",
+            "display": "Age-related osteoporosis with current pathological fracture, left pelvis, subsequent encounter for fracture with delayed healing"
+          },
+          {
+            "code": "M80.0B2K",
+            "display": "Age-related osteoporosis with current pathological fracture, left pelvis, subsequent encounter for fracture with nonunion"
+          },
+          {
+            "code": "M80.0B2P",
+            "display": "Age-related osteoporosis with current pathological fracture, left pelvis, subsequent encounter for fracture with malunion"
+          },
+          {
+            "code": "M80.0B2S",
+            "display": "Age-related osteoporosis with current pathological fracture, left pelvis, sequela"
+          },
+          {
+            "code": "M80.0B9A",
+            "display": "Age-related osteoporosis with current pathological fracture, unspecified pelvis, initial encounter for fracture"
+          },
+          {
+            "code": "M80.0B9D",
+            "display": "Age-related osteoporosis with current pathological fracture, unspecified pelvis, subsequent encounter for fracture with routine healing"
+          },
+          {
+            "code": "M80.0B9G",
+            "display": "Age-related osteoporosis with current pathological fracture, unspecified pelvis, subsequent encounter for fracture with delayed healing"
+          },
+          {
+            "code": "M80.0B9K",
+            "display": "Age-related osteoporosis with current pathological fracture, unspecified pelvis, subsequent encounter for fracture with nonunion"
+          },
+          {
+            "code": "M80.0B9P",
+            "display": "Age-related osteoporosis with current pathological fracture, unspecified pelvis, subsequent encounter for fracture with malunion"
+          },
+          {
+            "code": "M80.0B9S",
+            "display": "Age-related osteoporosis with current pathological fracture, unspecified pelvis, sequela"
+          },
+          {
             "code": "M80.80XA",
             "display": "Other osteoporosis with current pathological fracture, unspecified site, initial encounter for fracture"
           },
@@ -1170,79 +1315,78 @@
           {
             "code": "M80.8AXS",
             "display": "Other osteoporosis with current pathological fracture, other site, sequela"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "431030000",
-            "display": "Pathologic fracture of femur associated with osteoporosis (disorder)"
           },
           {
-            "code": "203444008",
-            "display": "Postoophorectomy osteoporosis with pathological fracture (disorder)"
+            "code": "M80.8B1A",
+            "display": "Other osteoporosis with current pathological fracture, right pelvis, initial encounter for fracture"
           },
           {
-            "code": "203445009",
-            "display": "Osteoporosis of disuse with pathological fracture (disorder)"
+            "code": "M80.8B1D",
+            "display": "Other osteoporosis with current pathological fracture, right pelvis, subsequent encounter for fracture with routine healing"
           },
           {
-            "code": "203446005",
-            "display": "Pathological fracture co-occurrent and due to post-surgical malabsorption osteoporosis (disorder)"
+            "code": "M80.8B1G",
+            "display": "Other osteoporosis with current pathological fracture, right pelvis, subsequent encounter for fracture with delayed healing"
           },
           {
-            "code": "203447001",
-            "display": "Pathological fracture co-occurrent and due to drug-induced osteoporosis (disorder)"
+            "code": "M80.8B1K",
+            "display": "Other osteoporosis with current pathological fracture, right pelvis, subsequent encounter for fracture with nonunion"
           },
           {
-            "code": "203448006",
-            "display": "Idiopathic osteoporosis with pathological fracture (disorder)"
+            "code": "M80.8B1P",
+            "display": "Other osteoporosis with current pathological fracture, right pelvis, subsequent encounter for fracture with malunion"
           },
           {
-            "code": "203449003",
-            "display": "Pathologic fracture of bone at site of neoplasm (disorder)"
+            "code": "M80.8B1S",
+            "display": "Other osteoporosis with current pathological fracture, right pelvis, sequela"
           },
           {
-            "code": "203450003",
-            "display": "Osteoporotic fracture of lumbar vertebra (disorder)"
+            "code": "M80.8B2A",
+            "display": "Other osteoporosis with current pathological fracture, left pelvis, initial encounter for fracture"
           },
           {
-            "code": "203451004",
-            "display": "Osteoporotic fracture of thoracic vertebra (disorder)"
+            "code": "M80.8B2D",
+            "display": "Other osteoporosis with current pathological fracture, left pelvis, subsequent encounter for fracture with routine healing"
           },
           {
-            "code": "203452006",
-            "display": "Osteoporotic fracture of cervical vertebra (disorder)"
+            "code": "M80.8B2G",
+            "display": "Other osteoporosis with current pathological fracture, left pelvis, subsequent encounter for fracture with delayed healing"
           },
           {
-            "code": "203453001",
-            "display": "Postmenopausal osteoporosis with pathological fracture (disorder)"
+            "code": "M80.8B2K",
+            "display": "Other osteoporosis with current pathological fracture, left pelvis, subsequent encounter for fracture with nonunion"
           },
           {
-            "code": "240198002",
-            "display": "Osteoporotic vertebral collapse (disorder)"
+            "code": "M80.8B2P",
+            "display": "Other osteoporosis with current pathological fracture, left pelvis, subsequent encounter for fracture with malunion"
           },
           {
-            "code": "311806008",
-            "display": "Osteoporotic collapse of cervical vertebra (disorder)"
+            "code": "M80.8B2S",
+            "display": "Other osteoporosis with current pathological fracture, left pelvis, sequela"
           },
           {
-            "code": "311890007",
-            "display": "Osteoporotic collapse of lumbar vertebra (disorder)"
+            "code": "M80.8B9A",
+            "display": "Other osteoporosis with current pathological fracture, unspecified pelvis, initial encounter for fracture"
           },
           {
-            "code": "311891006",
-            "display": "Osteoporotic collapse of thoracic vertebra (disorder)"
+            "code": "M80.8B9D",
+            "display": "Other osteoporosis with current pathological fracture, unspecified pelvis, subsequent encounter for fracture with routine healing"
           },
           {
-            "code": "431031001",
-            "display": "Osteoporotic fracture of neck of femur (disorder)"
+            "code": "M80.8B9G",
+            "display": "Other osteoporosis with current pathological fracture, unspecified pelvis, subsequent encounter for fracture with delayed healing"
           },
           {
-            "code": "443165006",
-            "display": "Osteoporotic fracture of bone (disorder)"
+            "code": "M80.8B9K",
+            "display": "Other osteoporosis with current pathological fracture, unspecified pelvis, subsequent encounter for fracture with nonunion"
+          },
+          {
+            "code": "M80.8B9P",
+            "display": "Other osteoporosis with current pathological fracture, unspecified pelvis, subsequent encounter for fracture with malunion"
+          },
+          {
+            "code": "M80.8B9S",
+            "display": "Other osteoporosis with current pathological fracture, unspecified pelvis, sequela"
           }
         ]
       }

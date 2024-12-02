@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1171",
+  "meta": {
+    "versionId": "14",
+    "lastUpdated": "2024-01-19T01:09:35.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-19"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1171",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1171"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1171"
     }
   ],
-  "version": "20230217",
+  "version": "20240119",
   "name": "Clonidine",
   "title": "Clonidine",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-19T01:09:35-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
@@ -22,10 +37,6 @@
           {
             "code": "1013930",
             "display": "12 HR clonidine hydrochloride 0.1 MG Extended Release Oral Tablet"
-          },
-          {
-            "code": "1013937",
-            "display": "12 HR clonidine hydrochloride 0.2 MG Extended Release Oral Tablet"
           },
           {
             "code": "884173",
@@ -46,6 +57,10 @@
           {
             "code": "884225",
             "display": "10 ML clonidine hydrochloride 0.5 MG/ML Injection"
+          },
+          {
+            "code": "885880",
+            "display": "24 HR clonidine 0.17 MG Extended Release Oral Tablet"
           },
           {
             "code": "998671",

@@ -1,19 +1,34 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1196.393",
+  "meta": {
+    "versionId": "39",
+    "lastUpdated": "2024-02-22T15:25:56.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-17"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1196.393",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113762.1.4.1196.393"
+      "value": "urn:oid:2.16.840.1.113762.1.4.1196.393"
     }
   ],
-  "version": "20230203",
+  "version": "20240117",
   "name": "HypoglycemicsSevereHypoglycemia",
   "title": "Hypoglycemics Severe Hypoglycemia",
   "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "date": "2024-01-17T01:08:53-05:00",
+  "publisher": "Mathematica PSI Steward",
   "compose": {
     "include": [
       {
@@ -184,20 +199,12 @@
             "display": "insulin lispro-aabc 100 UNT/ML Injectable Solution"
           },
           {
-            "code": "2380248",
-            "display": "3 ML insulin lispro-aabc 100 UNT/ML Cartridge"
-          },
-          {
             "code": "2380254",
             "display": "3 ML insulin lispro-aabc 200 UNT/ML Pen Injector"
           },
           {
             "code": "2380259",
             "display": "3 ML insulin lispro-aabc 100 UNT/ML Pen Injector"
-          },
-          {
-            "code": "2380265",
-            "display": "0.5 UNT Doses 3 ML insulin lispro-aabc 100 UNT/ML Pen Injector"
           },
           {
             "code": "2380267",
@@ -238,6 +245,18 @@
           {
             "code": "260265",
             "display": "insulin lispro 50 UNT/ML / insulin lispro protamine, human 50 UNT/ML Injectable Suspension"
+          },
+          {
+            "code": "2621571",
+            "display": "Sensor 3 ML insulin lispro 100 UNT/ML Pen Injector"
+          },
+          {
+            "code": "2642808",
+            "display": "1.6 ML insulin aspart, human 100 UNT/ML Cartridge"
+          },
+          {
+            "code": "2644768",
+            "display": "{9 (insulin, regular, human 12 UNT Inhalation Powder) / 9 (insulin, regular, human 4 UNT Inhalation Powder) / 9 (insulin, regular, human 8 UNT Inhalation Powder) } Pack"
           },
           {
             "code": "310488",
@@ -312,6 +331,10 @@
             "display": "insulin aspart protamine, human 70 UNT/ML / insulin aspart, human 30 UNT/ML Injectable Suspension"
           },
           {
+            "code": "379804",
+            "display": "glipizide 2.5 MG Oral Tablet"
+          },
+          {
             "code": "484322",
             "display": "insulin detemir 100 UNT/ML Injectable Solution"
           },
@@ -378,14 +401,6 @@
           {
             "code": "861753",
             "display": "glyburide 5 MG / metformin hydrochloride 500 MG Oral Tablet"
-          },
-          {
-            "code": "861787",
-            "display": "metformin hydrochloride 500 MG / repaglinide 1 MG Oral Tablet"
-          },
-          {
-            "code": "861790",
-            "display": "metformin hydrochloride 500 MG / repaglinide 2 MG Oral Tablet"
           }
         ]
       }

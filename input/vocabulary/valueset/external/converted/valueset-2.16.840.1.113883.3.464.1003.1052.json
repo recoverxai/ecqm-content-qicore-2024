@@ -1,28 +1,39 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1052",
+  "meta": {
+    "versionId": "13",
+    "lastUpdated": "2024-01-26T11:45:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2024-01-17"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1052",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.1052"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.1052"
     }
   ],
-  "version": "20210909",
-  "name": "Cardiovascular,alphaagonists,central",
+  "version": "20240117",
+  "name": "CardiovascularAlphaAgonistsCentral",
   "title": "Cardiovascular, alpha agonists, central",
-  "status": "active",
-  "experimental": false,
-  "publisher": "NLM",
+  "status": "retired",
+  "date": "2024-01-17T01:08:53-05:00",
+  "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
         "concept": [
-          {
-            "code": "1092566",
-            "display": "{7 (24 HR guanfacine 1 MG Extended Release Oral Tablet) / 7 (24 HR guanfacine 2 MG Extended Release Oral Tablet) } Pack"
-          },
           {
             "code": "197745",
             "display": "guanfacine 1 MG Oral Tablet"
@@ -30,22 +41,6 @@
           {
             "code": "197746",
             "display": "guanfacine 2 MG Oral Tablet"
-          },
-          {
-            "code": "197956",
-            "display": "methyldopa 250 MG Oral Tablet"
-          },
-          {
-            "code": "197958",
-            "display": "methyldopa 500 MG Oral Tablet"
-          },
-          {
-            "code": "197960",
-            "display": "hydrochlorothiazide 25 MG / methyldopa 250 MG Oral Tablet"
-          },
-          {
-            "code": "197963",
-            "display": "hydrochlorothiazide 15 MG / methyldopa 250 MG Oral Tablet"
           },
           {
             "code": "862006",

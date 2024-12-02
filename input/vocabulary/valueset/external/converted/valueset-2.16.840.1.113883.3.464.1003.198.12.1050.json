@@ -1,11 +1,26 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.198.12.1050",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2024-08-12T10:26:23.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2018-03-10"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1050",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.464.1003.198.12.1050"
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.198.12.1050"
     }
   ],
   "version": "20180310",
@@ -13,78 +28,10 @@
   "title": "Gastric Bypass Surgery",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
-      {
-        "system": "http://www.ama-assn.org/go/cpt",
-        "concept": [
-          {
-            "code": "43117",
-            "display": "Partial esophagectomy, distal two-thirds, with thoracotomy and separate abdominal incision, with or without proximal gastrectomy; with thoracic esophagogastrostomy, with or without pyloroplasty (Ivor Lewis)"
-          },
-          {
-            "code": "43118",
-            "display": "Partial esophagectomy, distal two-thirds, with thoracotomy and separate abdominal incision, with or without proximal gastrectomy; with colon interposition or small intestine reconstruction, including intestine mobilization, preparation, and anastomosis(es)"
-          },
-          {
-            "code": "43121",
-            "display": "Partial esophagectomy, distal two-thirds, with thoracotomy only, with or without proximal gastrectomy, with thoracic esophagogastrostomy, with or without pyloroplasty"
-          },
-          {
-            "code": "43122",
-            "display": "Partial esophagectomy, thoracoabdominal or abdominal approach, with or without proximal gastrectomy; with esophagogastrostomy, with or without pyloroplasty"
-          },
-          {
-            "code": "43123",
-            "display": "Partial esophagectomy, thoracoabdominal or abdominal approach, with or without proximal gastrectomy; with colon interposition or small intestine reconstruction, including intestine mobilization, preparation, and anastomosis(es)"
-          },
-          {
-            "code": "43620",
-            "display": "Gastrectomy, total; with esophagoenterostomy"
-          },
-          {
-            "code": "43621",
-            "display": "Gastrectomy, total; with Roux-en-Y reconstruction"
-          },
-          {
-            "code": "43622",
-            "display": "Gastrectomy, total; with formation of intestinal pouch, any type"
-          },
-          {
-            "code": "43631",
-            "display": "Gastrectomy, partial, distal; with gastroduodenostomy"
-          },
-          {
-            "code": "43632",
-            "display": "Gastrectomy, partial, distal; with gastrojejunostomy"
-          },
-          {
-            "code": "43633",
-            "display": "Gastrectomy, partial, distal; with Roux-en-Y reconstruction"
-          },
-          {
-            "code": "43634",
-            "display": "Gastrectomy, partial, distal; with formation of intestinal pouch"
-          },
-          {
-            "code": "43775",
-            "display": "Laparoscopy, surgical, gastric restrictive procedure; longitudinal gastrectomy (ie, sleeve gastrectomy)"
-          },
-          {
-            "code": "43845",
-            "display": "Gastric restrictive procedure with partial gastrectomy, pylorus-preserving duodenoileostomy and ileoileostomy (50 to 100 cm common channel) to limit absorption (biliopancreatic diversion with duodenal switch)"
-          },
-          {
-            "code": "48150",
-            "display": "Pancreatectomy, proximal subtotal with total duodenectomy, partial gastrectomy, choledochoenterostomy and gastrojejunostomy (Whipple-type procedure); with pancreatojejunostomy"
-          },
-          {
-            "code": "48152",
-            "display": "Pancreatectomy, proximal subtotal with total duodenectomy, partial gastrectomy, choledochoenterostomy and gastrojejunostomy (Whipple-type procedure); without pancreatojejunostomy"
-          }
-        ]
-      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -249,21 +196,103 @@
             "display": "Laparoscopic sleeve gastrectomy (procedure)"
           },
           {
-            "code": "427980007",
-            "display": "Sleeve gastrectomy with duodenal switch (procedure)"
-          },
-          {
             "code": "430715008",
             "display": "Bariatric operative procedure (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "43117",
+            "display": "Partial esophagectomy, distal two-thirds, with thoracotomy and separate abdominal incision, with or without proximal gastrectomy; with thoracic esophagogastrostomy, with or without pyloroplasty (Ivor Lewis)"
           },
+          {
+            "code": "43118",
+            "display": "Partial esophagectomy, distal two-thirds, with thoracotomy and separate abdominal incision, with or without proximal gastrectomy; with colon interposition or small intestine reconstruction, including intestine mobilization, preparation, and anastomosis(es)"
+          },
+          {
+            "code": "43121",
+            "display": "Partial esophagectomy, distal two-thirds, with thoracotomy only, with or without proximal gastrectomy, with thoracic esophagogastrostomy, with or without pyloroplasty"
+          },
+          {
+            "code": "43122",
+            "display": "Partial esophagectomy, thoracoabdominal or abdominal approach, with or without proximal gastrectomy; with esophagogastrostomy, with or without pyloroplasty"
+          },
+          {
+            "code": "43123",
+            "display": "Partial esophagectomy, thoracoabdominal or abdominal approach, with or without proximal gastrectomy; with colon interposition or small intestine reconstruction, including intestine mobilization, preparation, and anastomosis(es)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "43344006",
             "display": "Hofmeister operation, gastrectomy (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "43620",
+            "display": "Gastrectomy, total; with esophagoenterostomy"
           },
+          {
+            "code": "43621",
+            "display": "Gastrectomy, total; with Roux-en-Y reconstruction"
+          },
+          {
+            "code": "43622",
+            "display": "Gastrectomy, total; with formation of intestinal pouch, any type"
+          },
+          {
+            "code": "43631",
+            "display": "Gastrectomy, partial, distal; with gastroduodenostomy"
+          },
+          {
+            "code": "43632",
+            "display": "Gastrectomy, partial, distal; with gastrojejunostomy"
+          },
+          {
+            "code": "43633",
+            "display": "Gastrectomy, partial, distal; with Roux-en-Y reconstruction"
+          },
+          {
+            "code": "43634",
+            "display": "Gastrectomy, partial, distal; with formation of intestinal pouch"
+          },
+          {
+            "code": "43775",
+            "display": "Laparoscopy, surgical, gastric restrictive procedure; longitudinal gastrectomy (ie, sleeve gastrectomy)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "438338008",
             "display": "Total gastrectomy with extended lymphadenectomy (procedure)"
-          },
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "43845",
+            "display": "Gastric restrictive procedure with partial gastrectomy, pylorus-preserving duodenoileostomy and ileoileostomy (50 to 100 cm common channel) to limit absorption (biliopancreatic diversion with duodenal switch)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "439878001",
             "display": "Completion gastrectomy (procedure)"
@@ -273,17 +302,31 @@
             "display": "Partial excision of stomach and jejunal transposition and excision of intestine (procedure)"
           },
           {
-            "code": "445983004",
-            "display": "Endoscopic excision of mucosa of stomach (procedure)"
-          },
-          {
             "code": "446650001",
             "display": "Excision of mucosa of stomach (procedure)"
           },
           {
             "code": "46936007",
             "display": "Hemigastrectomy by thoracic approach (procedure)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "48150",
+            "display": "Pancreatectomy, proximal subtotal with total duodenectomy, partial gastrectomy, choledochoenterostomy and gastrojejunostomy (Whipple-type procedure); with pancreatojejunostomy"
           },
+          {
+            "code": "48152",
+            "display": "Pancreatectomy, proximal subtotal with total duodenectomy, partial gastrectomy, choledochoenterostomy and gastrojejunostomy (Whipple-type procedure); without pancreatojejunostomy"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "49209004",
             "display": "Subtotal gastrectomy (procedure)"

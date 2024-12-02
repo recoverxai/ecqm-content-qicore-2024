@@ -1,21 +1,114 @@
 {
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.526.3.451",
+  "meta": {
+    "versionId": "22",
+    "lastUpdated": "2024-08-09T12:26:42.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2020-03-06"
+    }
+  ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.451",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "2.16.840.1.113883.3.526.3.451"
+      "value": "urn:oid:2.16.840.1.113883.3.526.3.451"
     }
   ],
   "version": "20200306",
-  "name": "PainWarrantingFurtherInvestigationforProstateCancer",
+  "name": "PainWarrantingFurtherInvestigationForProstateCancer",
   "title": "Pain Warranting Further Investigation for Prostate Cancer",
   "status": "active",
   "experimental": false,
-  "publisher": "NLM",
+  "date": "2020-03-06T01:00:20-05:00",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "12584003",
+            "display": "Bone pain (finding)"
+          },
+          {
+            "code": "161977000",
+            "display": "Costal margin chest pain (finding)"
+          },
+          {
+            "code": "203508001",
+            "display": "Bony pelvic pain (finding)"
+          },
+          {
+            "code": "203509009",
+            "display": "Clavicle pain (finding)"
+          },
+          {
+            "code": "20793008",
+            "display": "Scapulalgia (finding)"
+          },
+          {
+            "code": "267981009",
+            "display": "Pain in thoracic spine (finding)"
+          },
+          {
+            "code": "282743009",
+            "display": "Malignant bone pain (finding)"
+          },
+          {
+            "code": "297217002",
+            "display": "Rib pain (finding)"
+          },
+          {
+            "code": "298731003",
+            "display": "Pain of sternum (finding)"
+          },
+          {
+            "code": "298740004",
+            "display": "Rib tender (finding)"
+          },
+          {
+            "code": "301773003",
+            "display": "Pain in femur (finding)"
+          },
+          {
+            "code": "3200003",
+            "display": "Sacrocoxalgia (finding)"
+          },
+          {
+            "code": "34789001",
+            "display": "Pain in coccyx (finding)"
+          },
+          {
+            "code": "36729000",
+            "display": "Pain of prostate (finding)"
+          },
+          {
+            "code": "426135001",
+            "display": "Chronic prostatitis - chronic pelvic pain syndrome (disorder)"
+          },
+          {
+            "code": "48926009",
+            "display": "Pain in spine (finding)"
+          },
+          {
+            "code": "49218002",
+            "display": "Hip pain (finding)"
+          },
+          {
+            "code": "89638008",
+            "display": "Xiphodynia (finding)"
+          }
+        ]
+      },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
@@ -110,83 +203,6 @@
           {
             "code": "R10.9",
             "display": "Unspecified abdominal pain"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "12584003",
-            "display": "Bone pain (finding)"
-          },
-          {
-            "code": "161977000",
-            "display": "Costal margin chest pain (finding)"
-          },
-          {
-            "code": "203508001",
-            "display": "Bony pelvic pain (finding)"
-          },
-          {
-            "code": "203509009",
-            "display": "Clavicle pain (finding)"
-          },
-          {
-            "code": "20793008",
-            "display": "Scapulalgia (finding)"
-          },
-          {
-            "code": "267981009",
-            "display": "Pain in thoracic spine (finding)"
-          },
-          {
-            "code": "282743009",
-            "display": "Malignant bone pain (finding)"
-          },
-          {
-            "code": "297217002",
-            "display": "Rib pain (finding)"
-          },
-          {
-            "code": "298731003",
-            "display": "Pain of sternum (finding)"
-          },
-          {
-            "code": "298740004",
-            "display": "Rib tender (finding)"
-          },
-          {
-            "code": "301773003",
-            "display": "Pain in femur (finding)"
-          },
-          {
-            "code": "3200003",
-            "display": "Sacrocoxalgia (finding)"
-          },
-          {
-            "code": "34789001",
-            "display": "Pain in coccyx (finding)"
-          },
-          {
-            "code": "36729000",
-            "display": "Pain of prostate (finding)"
-          },
-          {
-            "code": "426135001",
-            "display": "Chronic prostatitis - chronic pelvic pain syndrome (disorder)"
-          },
-          {
-            "code": "48926009",
-            "display": "Pain in spine (finding)"
-          },
-          {
-            "code": "49218002",
-            "display": "Hip pain (finding)"
-          },
-          {
-            "code": "89638008",
-            "display": "Xiphodynia (finding)"
           }
         ]
       }
