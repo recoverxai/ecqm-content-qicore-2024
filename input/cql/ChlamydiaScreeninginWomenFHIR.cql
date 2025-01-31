@@ -13,6 +13,7 @@ include Status version '1.6.000' called Status
 codesystem "AdministrativeGender": 'http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender'
 codesystem "LOINC": 'http://loinc.org'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
+codesystem "RXNORM": 'http://www.nlm.nih.gov/research/umls/rxnorm'
 codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 
 valueset "Chlamydia Screening": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1052'
@@ -41,6 +42,7 @@ code "Female": 'F' from "AdministrativeGender" display 'Female'
 code "Have you ever had vaginal intercourse [PhenX]": '64728-9' from "LOINC" display 'Have you ever had vaginal intercourse [PhenX]'
 code "Yes (qualifier value)": '373066001' from "SNOMEDCT" display 'Yes (qualifier value)'
 code "Clinic": '22282402' from "CERNER" display 'Clinic'
+code "{3 (168 HR ethinyl estradiol 0.00125 MG/HR / levonorgestrel 0.005 MG/HR Transdermal System) } Pack": '2396253' from "RXNORM" display '{3 (168 HR ethinyl estradiol 0.00125 MG/HR / levonorgestrel 0.005 MG/HR Transdermal System) } Pack'
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -100,12 +102,26 @@ define "Diagnoses Identifying Sexual Activity":
       where QICoreCommon."ToPrevalenceInterval" ( SexualActivityDiagnosis ) overlaps "Measurement Period"
 
 define "Active Contraceptive Medications":
-  ( Status."Active Medication" ( ["MedicationRequest": "Contraceptive Medications"] ) ) ActiveContraceptives
+  ( "Active Medication Plan" ( ["MedicationRequest": "Contraceptive Medications"]
+      union ["MedicationRequest": "{3 (168 HR ethinyl estradiol 0.00125 MG/HR / levonorgestrel 0.005 MG/HR Transdermal System) } Pack"]
+   ) ) ActiveContraceptives
       where CMD."MedicationRequestPeriod" ( ActiveContraceptives ) overlaps "Measurement Period"
 
+define function "Active Medication Plan"(MedicationRequest List<MedicationRequest>):
+  MedicationRequest M
+    where M.status = 'active'
+      and M.intent in { 'order', 'plan'}
+
 define "Ordered Contraceptive Medications":
-  ( Status."Active or Completed Medication Request" ( [MedicationRequest: "Contraceptive Medications"] ) ) OrderedContraceptives
+  ( "Active or Completed Medication Plan Request" ( [MedicationRequest: "Contraceptive Medications"]
+        union ["MedicationRequest": "{3 (168 HR ethinyl estradiol 0.00125 MG/HR / levonorgestrel 0.005 MG/HR Transdermal System) } Pack"]  
+   ) ) OrderedContraceptives
       where QICoreCommon."ToInterval" ( OrderedContraceptives.authoredOn ) during day of "Measurement Period"
+
+define function "Active or Completed Medication Plan Request"(MedicationRequest List<MedicationRequest>):
+  MedicationRequest M
+    where M.status in { 'active', 'completed' }
+      and M.intent in { 'order', 'plan'}
 
 define "Laboratory Tests Identifying Sexual Activity But Not Pregnancy":
   ( Status."Completed or Ongoing Service Request" ( [ServiceRequest: "Pap Test"]
@@ -124,8 +140,11 @@ define "Diagnostic Studies Identifying Sexual Activity":
       where QICoreCommon."ToInterval" ( SexualActivityDiagnostics.authoredOn ) during day of "Measurement Period"
 
 define "Procedures Identifying Sexual Activity":
-  ( Status."Completed Procedure" ( [Procedure: "Procedures Used to Indicate Sexual Activity"] ) ) ProceduresForSexualActivity
-      where QICoreCommon."ToInterval" ( ProceduresForSexualActivity.performed ) during day of "Measurement Period"
+  (( Status."Completed Procedure" ( [Procedure: "Procedures Used to Indicate Sexual Activity"] ) ) ProceduresForSexualActivity
+      where QICoreCommon."ToInterval" ( ProceduresForSexualActivity.performed ) during day of "Measurement Period")
+  union
+  (( [Condition: "Procedures Used to Indicate Sexual Activity"] ) SexualActivityDiagnosis
+      where QICoreCommon."ToPrevalenceInterval" ( SexualActivityDiagnosis ) overlaps "Measurement Period")
 
 define "Denominator":
   "Initial Population"
