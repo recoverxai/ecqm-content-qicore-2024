@@ -1,5 +1,6 @@
 library AppropriateTestingforPharyngitisFHIR version '0.1.000'
 
+// using FHIR version '4.0.1'
 using QICore version '4.1.1'
 
 include FHIRHelpers version '4.3.000' called FHIRHelpers
@@ -11,6 +12,8 @@ include Status version '1.6.000' called Status
 include QICoreCommon version '2.0.000' called QICoreCommon
 
 codesystem "CPT": 'http://www.ama-assn.org/go/cpt'
+codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
+codesystem "CERNER_SYNONYM": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/synonym'
 
 valueset "Acute Pharyngitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011'
 valueset "Acute Tonsillitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1012'
@@ -37,11 +40,17 @@ valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.11
 
 code "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])": '99217' from "CPT" display 'Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])'
 code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unlisted preventive medicine service'
+code "Clinic": '22282402' from "CERNER" display 'Clinic'
+code "Azithromycin 5 Day Dose Pack 250 mg oral tablet": '4144756' from "CERNER_SYNONYM" display 'Azithromycin 5 Day Dose Pack 250 mg oral tablet'
 
 parameter "Measurement Period" Interval<DateTime>
-  default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
 
 context Patient
+
+define "Age In Measurement Period":
+  AgeInYearsAt(date from
+    end of "Measurement Period"
+  )
 
 define "SDE Ethnicity":
   SDE."SDE Ethnicity"
@@ -56,30 +65,51 @@ define "SDE Sex":
   SDE."SDE Sex"
 
 define "Initial Population":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+  "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic" `
     where AgeInYearsAt(date from start of "Measurement Period") >= 3
     return EncounterWithPharyngitis
 
+define function EndOfDay(dateValue DateTime):
+  if dateValue is null then null
+  else DateTime(year from dateValue, month from dateValue, day from dateValue, 23, 59, 59, 999, 0)
+
+// original CQL
 define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
   from
     "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
     "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
-    where QICoreCommon."ToPrevalenceInterval" ( AcutePharyngitisTonsillitis ) starts during QICoreCommon."ToInterval" ( VisitWithAntibiotic.period )
+    where AcutePharyngitisTonsillitis.prevalenceInterval() starts during VisitWithAntibiotic.period.toInterval()
     return VisitWithAntibiotic
 
+define "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic":
+  from
+    "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
+    "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
+    where EndOfDay(AcutePharyngitisTonsillitis.onset) during VisitWithAntibiotic.period.toInterval()
+    return VisitWithAntibiotic
+
+
+// define "Debug Pharyngitis Intervals":
+//   from "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
+//   return AcutePharyngitisTonsillitis.prevalenceInterval()
+
+
+// define "Debug Visit Intervals":
+//   from "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic
+//   return  VisitWithAntibiotic.period.toInterval()
+
 define "Pharyngitis or Tonsillitis":
-  ( Status."Active Condition" ( [Condition: "Acute Pharyngitis"]
+  ( [Condition: "Acute Pharyngitis"]
       union [Condition: "Acute Tonsillitis"] )
-  )
 
 define "Denominator":
   "Initial Population"
 
 define "Denominator Exclusions":
   "In Hospice"
-    union Antibiotic."Has Antibiotic Medication History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"] ) )
-    union Antibiotic."Has Competing Diagnosis History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] ) )
-    union Antibiotic."Has Comorbid Condition History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Comorbid Conditions for Respiratory Conditions"] ) )
+    union Antibiotic."Has Antibiotic Medication History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"] ) )
+    union Antibiotic."Has Competing Diagnosis History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] ) )
+    union Antibiotic."Has Comorbid Condition History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Comorbid Conditions for Respiratory Conditions"] ) )
 
 define "In Hospice":
   "Initial Population" EligibleEncounters
@@ -87,47 +117,41 @@ define "In Hospice":
 
 define "Encounter With Antibiotic Ordered Within Three Days":
   "Qualifying Encounter" EDOrAmbulatoryVisit
-    with ( Status."Active Medication" ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"] ) ) AntibioticOrdered
-      such that ( QICoreCommon."ToInterval" ( EDOrAmbulatoryVisit.period ) starts 3 days or less on or before AntibioticOrdered.authoredOn )
+    with (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
+    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]).isMedicationOrder() ) AntibioticOrdered
+    such that EDOrAmbulatoryVisit.period.toInterval() starts 3 days or less on or before AntibioticOrdered.authoredOn
 
 define "Qualifying Encounter":
-  ( Status."Finished Encounter" ( [Encounter: "Emergency Department Visit"]
-    union ( [Encounter] E
-        where exists ( ( E.type ) T
-            where T ~ "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])"
-        )
-    )
-    union ["Encounter": "Emergency Department Visit"]
-    union ["Encounter": "Home Healthcare Services"]
-    union ["Encounter": "Initial Hospital Observation Care"]
-    union ["Encounter": "Medical Disability Exam"]
-    union ["Encounter": "Observation"]
-    union ["Encounter": "Office Visit"]
-    union ["Encounter": "Telephone Visits"]
-    union ["Encounter": "Online Assessments"]
-    union ["Encounter": "Outpatient Consultation"]
-    union ["Encounter": "Preventive Care Services Established Office Visit, 18 and Up"]
-    union ["Encounter": "Preventive Care Services Group Counseling"]
-    union ( [Encounter] E
-        where exists ( ( E.type ) T
-            where T ~ "Unlisted preventive medicine service"
-        )
-    )
-    union ["Encounter": "Preventive Care Services, Initial Office Visit, 0 to 17"]
-    union ["Encounter": "Preventive Care Services Individual Counseling"]
-    union ["Encounter": "Preventive Care Services Initial Office Visit, 18 and Up"]
-    union ["Encounter": "Preventive Care, Established Office Visit, 0 to 17"] ) ) ValidEncounter
-    where QICoreCommon."ToInterval" ( ValidEncounter.period ) during "Measurement Period"
+  ( ([Encounter: "Emergency Department Visit"]
+    union ([Encounter] E where exists ((E.type) T where T ~ "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])"))
+    union [Encounter: "Clinic"]
+    union [Encounter: "Home Healthcare Services"]
+    union [Encounter: "Initial Hospital Observation Care"]
+    union [Encounter: "Medical Disability Exam"]
+    union [Encounter: "Observation"]
+    union [Encounter: "Office Visit"]
+    union [Encounter: "Telephone Visits"]
+    union [Encounter: "Online Assessments"]
+    union [Encounter: "Outpatient Consultation"]
+    union [Encounter: "Preventive Care Services Established Office Visit, 18 and Up"]
+    union [Encounter: "Preventive Care Services Group Counseling"]
+    union ([Encounter] E where exists ((E.type) T where T ~ "Unlisted preventive medicine service"))
+    union [Encounter: "Preventive Care Services, Initial Office Visit, 0 to 17"]
+    union [Encounter: "Preventive Care Services Individual Counseling"]
+    union [Encounter: "Preventive Care Services Initial Office Visit, 18 and Up"]
+    union [Encounter: "Preventive Care, Established Office Visit, 0 to 17"] ).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() during "Measurement Period"
 
 define "Numerator":
   from
     "Group A Streptococcus Lab Test With Result" GroupAStreptococcusTest,
-    "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
-    where ( QICoreCommon."ToInterval" ( GroupAStreptococcusTest.effective ) starts during day of Interval[( end of EncounterWithPharyngitis.period ) - 3 days, ( end of EncounterWithPharyngitis.period ) + 3 days])
+    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+    // "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+    where  GroupAStreptococcusTest.effective.toInterval() starts during day of Interval[( end of EncounterWithPharyngitis.period ) - 3 days, ( end of EncounterWithPharyngitis.period ) + 3 days]
     return EncounterWithPharyngitis
 
 define "Group A Streptococcus Lab Test With Result":
-  ( Status."Final Lab Observation" ( [Observation: "Group A Streptococcus Test"] ) ) GroupAStreptococcusTest
+  (( [Observation: "Group A Streptococcus Test"] ).isLaboratoryTestPerformed() ) GroupAStreptococcusTest
     where GroupAStreptococcusTest.value is not null
 
 define "Stratification 1":
