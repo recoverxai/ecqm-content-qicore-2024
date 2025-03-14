@@ -249,9 +249,10 @@ define function MedicationRequestPeriod(Request "MedicationRequest"):
       doseRange: doseAndRate.dose,
       doseQuantity: doseAndRate.dose,
       dose: Coalesce(end of doseRange, doseQuantity),
-      dosesPerDay: Coalesce(ToDaily(frequency, period), Count(timing.repeat.timeOfDay), 1.0),
+      // dosesPerDay: Coalesce(ToDaily(frequency, period), Count(timing.repeat.timeOfDay), 1.0),
+      dosesPerDay: Coalesce(1.0, 1.0),
       boundsPeriod: timing.repeat.bounds as Interval<DateTime>,
-      daysSupply: (convert R.dispenseRequest.expectedSupplyDuration to days).value,
+      daysSupply: ConvertToDays(R.dispenseRequest.expectedSupplyDuration).value,
       quantity: R.dispenseRequest.quantity,
       refills: Coalesce(R.dispenseRequest.numberOfRepeatsAllowed, 0),
       startDate:
@@ -260,14 +261,23 @@ define function MedicationRequestPeriod(Request "MedicationRequest"):
           date from R.authoredOn,
           date from start of R.dispenseRequest.validityPeriod
         ),
-      totalDaysSupplied: Coalesce(daysSupply, quantity.value / (dose.value * dosesPerDay)) * (1 + refills)
+      totalDaysSupplied:  (if daysSupply is null or daysSupply = 0 then
+                            quantity.value / (dose.value * dosesPerDay)
+                          else
+                            daysSupply) * (1 + refills)
     return
-      if startDate is not null and totalDaysSupplied is not null then
+      if startDate is not null and totalDaysSupplied is not null and totalDaysSupplied > 0 then
         Interval[startDate, startDate + Quantity(totalDaysSupplied - 1, 'day') ]
       else if startDate is not null and boundsPeriod."high" is not null then
         Interval[startDate, date from end of boundsPeriod]
       else
         null
+
+define function GetFrequencyCode(timing Timing):
+  if timing is not null and timing.code is not null then
+    timing.code
+  else
+    null
 
 /*
 Next, consider the MedicationDispense case:
@@ -349,7 +359,7 @@ define function MedicationDispensePeriod(Dispense "MedicationDispense"):
       doseRange: doseAndRate.dose,
       doseQuantity: doseAndRate.dose,
       dose: Coalesce(end of doseRange, doseQuantity),
-      daysSupply: (convert D.daysSupply to days).value,
+      daysSupply: ConvertToDays(D.daysSupply).value,
       dosesPerDay: Coalesce(ToDaily(frequency, period), Count(timing.repeat.timeOfDay), 1.0),
       startDate:
         Coalesce(
@@ -358,7 +368,7 @@ define function MedicationDispensePeriod(Dispense "MedicationDispense"):
         ),
       totalDaysSupplied: Coalesce(daysSupply, D.quantity.value / (dose.value * dosesPerDay))
     return
-      if startDate is not null and totalDaysSupplied is not null then
+      if startDate is not null and totalDaysSupplied is not null and totalDaysSupplied > 0 then
         Interval[startDate, startDate + Quantity(totalDaysSupplied - 1, 'day')]
       else
         null
@@ -483,5 +493,32 @@ define function CumulativeMedicationDuration(
 define function Quantity(value Decimal, unit String):
   if value is not null then
     System.Quantity { value: value, unit: unit }
+  else
+    null
+
+/*******************************************************************/
+/* This Evidium Function is used to fix the implicit conversion    */
+/*******************************************************************/
+
+define function ConvertToDays(quantity Quantity):
+  if quantity is not null then
+    case quantity.unit
+      when 's' then Quantity(quantity.value / 60 / 60 / 24, 'd')
+      when 'min' then Quantity(quantity.value / 60 / 24, 'd')
+      when 'h' then Quantity(quantity.value / 24, 'd')
+      when 'd' then quantity
+      when 'wk' then Quantity(quantity.value * 7, 'd')
+      when 'mo' then Quantity(quantity.value * 30, 'd')
+      when 'a' then Quantity(quantity.value * 365, 'd')
+      when 'day' then Quantity(quantity.value, 'd')
+      when 'week' then Quantity(quantity.value * 7, 'd')
+      when 'month' then Quantity(quantity.value * 30, 'd')
+      when 'year' then Quantity(quantity.value * 365, 'd')
+      when 'days' then Quantity(quantity.value, 'd')
+      when 'weeks' then Quantity(quantity.value * 7, 'd')
+      when 'months' then Quantity(quantity.value * 30, 'd')
+      when 'years' then Quantity(quantity.value * 365, 'd')
+      else Message(null, true, 'CMDLogic.ConvertToDays.UnknownUnit', ErrorLevel, 'Unknown unit ' & quantity.unit)
+    end
   else
     null
