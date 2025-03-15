@@ -65,7 +65,7 @@ define "SDE Sex":
   SDE."SDE Sex"
 
 define "Initial Population":
-  "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic" `
+  "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
     where AgeInYearsAt(date from start of "Measurement Period") >= 3
     return EncounterWithPharyngitis
 
@@ -89,14 +89,14 @@ define "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic":
     return VisitWithAntibiotic
 
 
-// define "Debug Pharyngitis Intervals":
-//   from "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
-//   return AcutePharyngitisTonsillitis.prevalenceInterval()
+define "Debug Pharyngitis Intervals":
+  from "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
+  return AcutePharyngitisTonsillitis.prevalenceInterval()
 
 
-// define "Debug Visit Intervals":
-//   from "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic
-//   return  VisitWithAntibiotic.period.toInterval()
+define "Debug Visit Intervals":
+  from "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic
+  return  VisitWithAntibiotic.period.toInterval()
 
 define "Pharyngitis or Tonsillitis":
   ( [Condition: "Acute Pharyngitis"]
@@ -120,6 +120,16 @@ define "Encounter With Antibiotic Ordered Within Three Days":
     with (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
     union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]).isMedicationOrder() ) AntibioticOrdered
     such that EDOrAmbulatoryVisit.period.toInterval() starts 3 days or less on or before AntibioticOrdered.authoredOn
+
+define "Debug Medication Requests":
+  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
+    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
+  ).isMedicationOrder()
+
+define "Debug Medication Authored Dates":
+  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
+    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
+  ).isMedicationOrder().authoredOn
 
 define "Qualifying Encounter":
   ( ([Encounter: "Emergency Department Visit"]
