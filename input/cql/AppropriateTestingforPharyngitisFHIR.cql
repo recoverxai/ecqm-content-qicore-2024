@@ -65,6 +65,7 @@ define "SDE Sex":
   SDE."SDE Sex"
 
 define "Initial Population":
+  // "Encounter With Pharyngitis or Tonsillitis With Antibiotic"
   "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
     where AgeInYearsAt(date from start of "Measurement Period") >= 3
     return EncounterWithPharyngitis
@@ -115,6 +116,25 @@ define "In Hospice":
   "Initial Population" EligibleEncounters
     where Hospice."Has Hospice Services"
 
+define "Debug Antibiotic Medication History":
+  Antibiotic."Has Antibiotic Medication History"(
+    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic",
+    [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
+  )
+
+
+define "Debug Competing Diagnosis History":
+  Antibiotic."Has Competing Diagnosis History"(
+    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic",
+    [Condition: "Competing Conditions for Respiratory Conditions"]
+  )
+
+define "Debug Comorbid Condition History":
+  Antibiotic."Has Comorbid Condition History"(
+    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic",
+    [Condition: "Comorbid Conditions for Respiratory Conditions"]
+  )
+
 define "Encounter With Antibiotic Ordered Within Three Days":
   "Qualifying Encounter" EDOrAmbulatoryVisit
     with (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
@@ -163,6 +183,9 @@ define "Numerator":
 define "Group A Streptococcus Lab Test With Result":
   (( [Observation: "Group A Streptococcus Test"] ).isLaboratoryTestPerformed() ) GroupAStreptococcusTest
     where GroupAStreptococcusTest.value is not null
+
+define "Debug Group A Streptococcus Lab Test With Result":
+  ( [Observation: "Group A Streptococcus Test"] )
 
 define "Stratification 1":
   "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
