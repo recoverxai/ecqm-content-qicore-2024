@@ -112,28 +112,77 @@ define "Denominator Exclusions":
     union Antibiotic."Has Competing Diagnosis History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] ) )
     union Antibiotic."Has Comorbid Condition History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Comorbid Conditions for Respiratory Conditions"] ) )
 
+// Check 1: Hospice status check
 define "In Hospice":
   "Initial Population" EligibleEncounters
     where Hospice."Has Hospice Services"
 
+// Check 2: Previous antibiotic medication history check
 define "Debug Antibiotic Medication History":
   Antibiotic."Has Antibiotic Medication History"(
     "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic",
     [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
   )
 
+// Get the list of antibiotic medications for this patient
+define "Debug Antibiotic Medications List":
+  [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
 
-define "Debug Competing Diagnosis History":
-  Antibiotic."Has Competing Diagnosis History"(
-    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic",
-    [Condition: "Competing Conditions for Respiratory Conditions"]
+// Get the list of pharyngitis encounters for debugging
+define "Debug Pharyngitis Encounters":
+  "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic"
+
+// Check antibiotics with appropriate timing - returns the filtered medications that match
+define "Debug Antibiotics With Valid Timing":
+  "Debug Antibiotic Medications List" ActiveMedication
+    with "Debug Pharyngitis Encounters" Encounter
+      such that exists ( ActiveMedication.dosageInstruction.timing T
+          where ( QICoreCommon."ToInterval" ( T.repeat.bounds ) ) overlaps day of 
+            Interval[
+              date from start of QICoreCommon."ToInterval" ( Encounter.period ) - 30 days, 
+              date from start of QICoreCommon."ToInterval" ( Encounter.period ) - 1 day
+            ]
+      )
+
+// Check 3: Competing diagnosis check
+define "Debug Competing Diagnosis":
+  Antibiotic."Has Competing Diagnosis History" ( 
+    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
+    ( [Condition: "Competing Conditions for Respiratory Conditions"] ) 
   )
 
-define "Debug Comorbid Condition History":
-  Antibiotic."Has Comorbid Condition History"(
-    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic",
-    [Condition: "Comorbid Conditions for Respiratory Conditions"]
+// Get the list of competing conditions
+define "Debug Competing Conditions List":
+  [Condition: "Competing Conditions for Respiratory Conditions"]
+
+// Get competing conditions with valid timing - returns the filtered conditions that match
+define "Debug Competing Conditions With Valid Timing":
+  "Debug Competing Conditions List" CompetingCondition
+    with "Debug Pharyngitis Encounters" Encounter
+      such that ( QICoreCommon."ToPrevalenceInterval" ( CompetingCondition ) ) 
+          starts 3 days or less on or after day of start of Encounter.period
+
+
+// Check 4: Comorbid condition check
+define "Debug Comorbid Conditions":
+  Antibiotic."Has Comorbid Condition History" ( 
+    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
+    ( [Condition: "Comorbid Conditions for Respiratory Conditions"] ) 
   )
+
+// Get the list of comorbid conditions
+define "Debug Comorbid Conditions List":
+  [Condition: "Comorbid Conditions for Respiratory Conditions"]
+
+// Get comorbid conditions with valid timing - returns the filtered conditions that match
+define "Debug Comorbid Conditions With Valid Timing":
+  "Debug Comorbid Conditions List" ComorbidCondition
+    with "Debug Pharyngitis Encounters" Encounter
+      such that date from start of ( QICoreCommon."ToPrevalenceInterval" ( ComorbidCondition ) ) 
+          during Interval[
+            date from start of QICoreCommon."ToInterval" ( Encounter.period ) - 1 year, 
+            date from start of QICoreCommon."ToInterval" ( Encounter.period )
+          ]
 
 define "Encounter With Antibiotic Ordered Within Three Days":
   "Qualifying Encounter" EDOrAmbulatoryVisit
