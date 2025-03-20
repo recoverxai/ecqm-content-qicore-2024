@@ -31,20 +31,10 @@
   "date": "2022-04-07T01:03:24-04:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:b47532ef-858d-45cd-84b3-9a4fb10475cb",
-    "timestamp": "2024-12-01T19:47:05-05:00",
-    "total": 2,
+    "identifier": "urn:uuid:9558446f-c987-493f-b089-5b9b4197e7bc",
+    "timestamp": "2025-03-20T16:19:32-04:00",
+    "total": 3,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
@@ -57,6 +47,12 @@
         "version": "2025",
         "code": "E66.2",
         "display": "Morbid (severe) obesity with alveolar hypoventilation"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E66.813",
+        "display": "Obesity, class 3"
       }
     ]
   }

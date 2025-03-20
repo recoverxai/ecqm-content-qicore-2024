@@ -565,6 +565,38 @@
             "display": "Excision of lesion of brain (procedure)"
           },
           {
+            "code": "1287541008",
+            "display": "Coagulation of brain tissue (procedure)"
+          },
+          {
+            "code": "1296603004",
+            "display": "Drainage of cerebral epidural space by incision (procedure)"
+          },
+          {
+            "code": "1296604005",
+            "display": "Drainage of cerebral epidural space by trephination (procedure)"
+          },
+          {
+            "code": "1296605006",
+            "display": "Drainage of cerebral subdural space by incision (procedure)"
+          },
+          {
+            "code": "1296606007",
+            "display": "Drainage of cerebral subdural space by trephination (procedure)"
+          },
+          {
+            "code": "1296607003",
+            "display": "Drainage of cerebral subarachnoid space by trephination (procedure)"
+          },
+          {
+            "code": "1296608008",
+            "display": "Drainage of cerebral subarachnoid space by incision (procedure)"
+          },
+          {
+            "code": "1296626006",
+            "display": "Division of tract of brain (procedure)"
+          },
+          {
             "code": "13431007",
             "display": "Prefrontal lobotomy (procedure)"
           },
@@ -807,6 +839,10 @@
           {
             "code": "2737001",
             "display": "Exploratory craniotomy, infratentorial (procedure)"
+          },
+          {
+            "code": "273990004",
+            "display": "Coagulation of brain tissue using electrical energy (procedure)"
           },
           {
             "code": "273991000",

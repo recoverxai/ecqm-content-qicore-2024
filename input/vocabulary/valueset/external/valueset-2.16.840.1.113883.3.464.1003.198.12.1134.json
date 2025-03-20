@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:be1d591a-0f07-4483-a17a-09906e4152f8",
-    "timestamp": "2024-12-01T19:47:54-05:00",
+    "identifier": "urn:uuid:22b85f3f-74f6-42b0-958c-a54665ea8878",
+    "timestamp": "2025-03-20T16:20:25-04:00",
     "total": 9,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",

@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:14656360-79d6-4533-92c5-a4a2e977fa86",
-    "timestamp": "2024-12-01T19:46:44-05:00",
-    "total": 10,
+    "identifier": "urn:uuid:f4a78436-8435-4172-886f-48308a7f8391",
+    "timestamp": "2025-03-20T16:19:10-04:00",
+    "total": 14,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",
@@ -61,6 +51,12 @@
       {
         "system": "http://loinc.org",
         "version": "2.78",
+        "code": "24322-0",
+        "display": "Comprehensive metabolic 1998 panel - Serum or Plasma"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
         "code": "24323-8",
         "display": "Comprehensive metabolic 2000 panel - Serum or Plasma"
       },
@@ -69,12 +65,6 @@
         "version": "2.78",
         "code": "24356-8",
         "display": "Urinalysis complete panel - Urine"
-      },
-      {
-        "system": "http://loinc.org",
-        "version": "2.78",
-        "code": "24357-6",
-        "display": "Urinalysis macro (dipstick) panel - Urine"
       },
       {
         "system": "http://loinc.org",
@@ -91,8 +81,20 @@
       {
         "system": "http://loinc.org",
         "version": "2.78",
+        "code": "51990-0",
+        "display": "Basic metabolic panel - Blood"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
         "code": "57021-8",
         "display": "CBC W Auto Differential panel - Blood"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "57022-6",
+        "display": "CBC W Reflex Manual Differential panel - Blood"
       },
       {
         "system": "http://loinc.org",
@@ -103,8 +105,20 @@
       {
         "system": "http://loinc.org",
         "version": "2.78",
+        "code": "58077-9",
+        "display": "Urinalysis complete W Reflex Culture panel - Urine"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
         "code": "58410-2",
         "display": "CBC panel - Blood by Automated count"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "69742-5",
+        "display": "CBC W Differential panel, method unspecified - Blood"
       }
     ]
   }

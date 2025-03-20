@@ -31,21 +31,17 @@
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:08d95346-ecc8-4cec-88e7-5b1874adc64b",
-    "timestamp": "2024-12-01T19:46:14-05:00",
-    "total": 9,
+    "identifier": "urn:uuid:d740152c-5171-4c84-b1fd-242e95ea1190",
+    "timestamp": "2025-03-20T16:18:46-04:00",
+    "total": 11,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1148631003",
+        "display": "Paroxysmal rhabdomyolysis (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -69,6 +65,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "240132004",
         "display": "Non-traumatic rhabdomyolysis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "240133009",
+        "display": "Familial paroxysmal rhabdomyolysis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

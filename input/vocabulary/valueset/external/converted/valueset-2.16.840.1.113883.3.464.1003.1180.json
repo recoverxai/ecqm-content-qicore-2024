@@ -111,6 +111,18 @@
             "display": "Primary adamantinoma of femur (disorder)"
           },
           {
+            "code": "1285738000",
+            "display": "Primary malignant neoplasm of bone of foot (disorder)"
+          },
+          {
+            "code": "1287540009",
+            "display": "Primary malignant adamantinoma of long bone of lower limb (disorder)"
+          },
+          {
+            "code": "1290725008",
+            "display": "Malignant dedifferentiated adamantinoma of bone (disorder)"
+          },
+          {
             "code": "130911000119108",
             "display": "Chordoma of pelvis (disorder)"
           },
@@ -171,12 +183,24 @@
             "display": "Malignant neoplasm of phalanges of foot (disorder)"
           },
           {
+            "code": "265458371000119104",
+            "display": "Primary malignant adamantinoma of long bone of right lower limb (disorder)"
+          },
+          {
             "code": "281702006",
             "display": "Tibial adamantinoma (disorder)"
           },
           {
             "code": "286890004",
             "display": "Carcinoma of lower limb bones (disorder)"
+          },
+          {
+            "code": "352981000119107",
+            "display": "Primary malignant neoplasm of bone of left foot (disorder)"
+          },
+          {
+            "code": "353001000119106",
+            "display": "Primary malignant neoplasm of bone of right foot (disorder)"
           },
           {
             "code": "353661000119102",
@@ -245,6 +269,10 @@
           {
             "code": "712525007",
             "display": "Malignant neoplasm of short bone of lower limb (disorder)"
+          },
+          {
+            "code": "776005371000119104",
+            "display": "Primary malignant adamantinoma of long bone of left lower limb (disorder)"
           },
           {
             "code": "78411000119107",

@@ -31,20 +31,10 @@
   "date": "2019-03-15T01:00:14-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:d714f097-0dc5-42ef-a326-ddd2b2feb976",
-    "timestamp": "2024-12-01T19:49:28-05:00",
-    "total": 339,
+    "identifier": "urn:uuid:600201c4-af55-4846-bcd9-3f7c92488d8b",
+    "timestamp": "2025-03-20T16:34:17-04:00",
+    "total": 338,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -369,12 +359,6 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "44188002",
         "display": "Fall in shower (event)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "52702003",
-        "display": "Chronic fatigue syndrome (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

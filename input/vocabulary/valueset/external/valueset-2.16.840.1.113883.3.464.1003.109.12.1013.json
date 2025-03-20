@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:657100f9-6bfc-40ea-9faf-8376601e02a6",
-    "timestamp": "2024-12-01T19:43:28-05:00",
+    "identifier": "urn:uuid:de5e4f80-585e-4cc5-9397-83eeed34f79c",
+    "timestamp": "2025-03-20T16:14:01-04:00",
     "total": 53,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -353,14 +343,14 @@
         "display": "Home visit for hemodialysis"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0257",
         "display": "Unscheduled or emergency dialysis treatment for an esrd patient in a hospital outpatient department that is not certified as an esrd facility"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S9339",
         "display": "Home therapy; peritoneal dialysis, administrative services, professional pharmacy services, care coordination and all necessary supplies and equipment (drugs and nursing visits coded separately), per diem"
       }

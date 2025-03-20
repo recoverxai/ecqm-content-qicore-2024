@@ -31,20 +31,10 @@
   "date": "2022-01-27T01:02:26-05:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:a5b89793-9e3b-4c19-8f60-59af1df681b8",
-    "timestamp": "2024-12-01T19:47:36-05:00",
+    "identifier": "urn:uuid:95f79255-fcf8-4b5b-897c-df39a04a258d",
+    "timestamp": "2025-03-20T16:19:58-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding",

@@ -31,26 +31,58 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:3e052f2a-542f-4836-bbf5-d6919573bf82",
-    "timestamp": "2024-12-01T19:44:32-05:00",
-    "total": 43,
+    "identifier": "urn:uuid:8945ad0d-81cd-4d41-8d33-c4810c63251c",
+    "timestamp": "2025-03-20T16:16:21-04:00",
+    "total": 50,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "111513000",
         "display": "Advanced open-angle glaucoma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231243004",
+        "display": "High pressure primary open-angle glaucoma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306287007",
+        "display": "Primary open angle glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306288002",
+        "display": "Primary open angle glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306289005",
+        "display": "Primary open angle glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306884006",
+        "display": "Normal pressure primary open-angle glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306885007",
+        "display": "Normal pressure primary open-angle glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306886008",
+        "display": "Normal pressure primary open-angle glaucoma of bilateral eyes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

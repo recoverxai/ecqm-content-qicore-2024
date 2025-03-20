@@ -239,6 +239,10 @@
             "display": "Secondary diastolic hypertension (disorder)"
           },
           {
+            "code": "762463000",
+            "display": "Diastolic hypertension co-occurrent with systolic hypertension (disorder)"
+          },
+          {
             "code": "78975002",
             "display": "Malignant essential hypertension (disorder)"
           },

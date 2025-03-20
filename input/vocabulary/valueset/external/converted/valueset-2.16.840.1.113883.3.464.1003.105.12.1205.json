@@ -52,6 +52,10 @@
             "display": "Chronic disorganized schizophrenia (disorder)"
           },
           {
+            "code": "1335862003",
+            "display": "Childhood-onset schizophrenia (disorder)"
+          },
+          {
             "code": "14291003",
             "display": "Subchronic disorganized schizophrenia with acute exacerbations (disorder)"
           },

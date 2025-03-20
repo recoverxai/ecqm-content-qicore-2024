@@ -30,20 +30,10 @@
   "date": "2023-07-22T01:12:36-04:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:37df05d3-2830-417c-8c81-b0a353d1d8e4",
-    "timestamp": "2024-12-01T19:49:41-05:00",
-    "total": 115,
+    "identifier": "urn:uuid:aa36d3c1-3983-4a5d-b116-9fa67fb8ec4e",
+    "timestamp": "2025-03-20T16:34:30-04:00",
+    "total": 122,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -162,6 +152,24 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285738000",
+        "display": "Primary malignant neoplasm of bone of foot (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1287540009",
+        "display": "Primary malignant adamantinoma of long bone of lower limb (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1290725008",
+        "display": "Malignant dedifferentiated adamantinoma of bone (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "130911000119108",
         "display": "Chordoma of pelvis (disorder)"
       },
@@ -252,6 +260,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "265458371000119104",
+        "display": "Primary malignant adamantinoma of long bone of right lower limb (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "281702006",
         "display": "Tibial adamantinoma (disorder)"
       },
@@ -260,6 +274,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "286890004",
         "display": "Carcinoma of lower limb bones (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "352981000119107",
+        "display": "Primary malignant neoplasm of bone of left foot (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "353001000119106",
+        "display": "Primary malignant neoplasm of bone of right foot (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -362,6 +388,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "712525007",
         "display": "Malignant neoplasm of short bone of lower limb (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "776005371000119104",
+        "display": "Primary malignant adamantinoma of long bone of left lower limb (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

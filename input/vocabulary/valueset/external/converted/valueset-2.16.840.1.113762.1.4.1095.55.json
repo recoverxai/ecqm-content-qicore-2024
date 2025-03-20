@@ -88,6 +88,10 @@
             "display": "Emaciated (finding)"
           },
           {
+            "code": "432788009",
+            "display": "Pediatric failure to thrive (disorder)"
+          },
+          {
             "code": "441951000124102",
             "display": "Starvation-related malnutrition (disorder)"
           },
@@ -149,12 +153,28 @@
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
           {
+            "code": "E40",
+            "display": "Kwashiorkor"
+          },
+          {
+            "code": "E41",
+            "display": "Nutritional marasmus"
+          },
+          {
+            "code": "E42",
+            "display": "Marasmic kwashiorkor"
+          },
+          {
             "code": "E43",
             "display": "Unspecified severe protein-calorie malnutrition"
           },
           {
             "code": "E44.0",
             "display": "Moderate protein-calorie malnutrition"
+          },
+          {
+            "code": "E45",
+            "display": "Retarded development following protein-calorie malnutrition"
           },
           {
             "code": "E46",
@@ -165,8 +185,36 @@
             "display": "Nutritional deficiency, unspecified"
           },
           {
+            "code": "E64.0",
+            "display": "Sequelae of protein-calorie malnutrition"
+          },
+          {
             "code": "M62.84",
             "display": "Sarcopenia"
+          },
+          {
+            "code": "O25.10",
+            "display": "Malnutrition in pregnancy, unspecified trimester"
+          },
+          {
+            "code": "O25.11",
+            "display": "Malnutrition in pregnancy, first trimester"
+          },
+          {
+            "code": "O25.12",
+            "display": "Malnutrition in pregnancy, second trimester"
+          },
+          {
+            "code": "O25.13",
+            "display": "Malnutrition in pregnancy, third trimester"
+          },
+          {
+            "code": "O25.2",
+            "display": "Malnutrition in childbirth"
+          },
+          {
+            "code": "O25.3",
+            "display": "Malnutrition in the puerperium"
           },
           {
             "code": "R62.7",

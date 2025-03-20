@@ -196,6 +196,10 @@
             "display": "End stage renal disease due to hypertension (disorder)"
           },
           {
+            "code": "113901000052102",
+            "display": "Heart failure following administration of antineoplastic agent (disorder)"
+          },
+          {
             "code": "1141626005",
             "display": "Adenocarcinoma of pancreas with neuregulin 1 gene fusion (disorder)"
           },
@@ -668,6 +672,198 @@
             "display": "Secondary biliary cirrhosis (disorder)"
           },
           {
+            "code": "1236931008",
+            "display": "Metastatic carcinoma to body of pancreas (disorder)"
+          },
+          {
+            "code": "1236940007",
+            "display": "Metastatic carcinoma to tail of pancreas (disorder)"
+          },
+          {
+            "code": "1236941006",
+            "display": "Metastatic carcinoma to intrahepatic bile duct (disorder)"
+          },
+          {
+            "code": "1236942004",
+            "display": "Metastatic carcinoma to ventral surface of tongue (disorder)"
+          },
+          {
+            "code": "1236943009",
+            "display": "Metastatic carcinoma to anterior two-thirds tongue ventrum (disorder)"
+          },
+          {
+            "code": "1236944003",
+            "display": "Metastatic carcinoma to dorsal surface of anterior two-thirds of tongue (disorder)"
+          },
+          {
+            "code": "1236945002",
+            "display": "Metastatic carcinoma to midline of tongue (disorder)"
+          },
+          {
+            "code": "1236947005",
+            "display": "Metastatic carcinoma to dorsal surface of base of tongue (disorder)"
+          },
+          {
+            "code": "1236948000",
+            "display": "Metastatic carcinoma to fallopian tube (disorder)"
+          },
+          {
+            "code": "1236953005",
+            "display": "Metastatic carcinoma to bone, connective tissue, skin and breast (disorder)"
+          },
+          {
+            "code": "1236954004",
+            "display": "Metastatic carcinoma to vermilion border of upper lip (disorder)"
+          },
+          {
+            "code": "1236955003",
+            "display": "Metastatic carcinoma to frenum of lip (disorder)"
+          },
+          {
+            "code": "1236956002",
+            "display": "Metastatic carcinoma to frenum of lower lip (disorder)"
+          },
+          {
+            "code": "1236957006",
+            "display": "Metastatic carcinoma to frenum of upper lip (disorder)"
+          },
+          {
+            "code": "1236958001",
+            "display": "Metastatic carcinoma to commissure of lip (disorder)"
+          },
+          {
+            "code": "1236960004",
+            "display": "Metastatic carcinoma to lingual tonsil (disorder)"
+          },
+          {
+            "code": "1236961000",
+            "display": "Metastatic carcinoma to anterior part of floor of mouth (disorder)"
+          },
+          {
+            "code": "1236962007",
+            "display": "Metastatic carcinoma to lateral part of floor of mouth (disorder)"
+          },
+          {
+            "code": "1236963002",
+            "display": "Metastatic carcinoma to hard palate (disorder)"
+          },
+          {
+            "code": "1236964008",
+            "display": "Metastatic carcinoma to soft palate (disorder)"
+          },
+          {
+            "code": "1236966005",
+            "display": "Metastatic carcinoma to upper buccal sulcus (disorder)"
+          },
+          {
+            "code": "1236967001",
+            "display": "Metastatic carcinoma to lower buccal sulcus (disorder)"
+          },
+          {
+            "code": "1236968006",
+            "display": "Metastatic carcinoma to upper labial sulcus (disorder)"
+          },
+          {
+            "code": "1236969003",
+            "display": "Metastatic carcinoma to lower labial sulcus (disorder)"
+          },
+          {
+            "code": "1237031003",
+            "display": "Metastatic carcinoma to fundus of stomach (disorder)"
+          },
+          {
+            "code": "1237032005",
+            "display": "Metastatic carcinoma to thoracic part of esophagus (disorder)"
+          },
+          {
+            "code": "1237033000",
+            "display": "Metastatic carcinoma to sublingual gland (disorder)"
+          },
+          {
+            "code": "1237034006",
+            "display": "Metastatic carcinoma to submandibular gland (disorder)"
+          },
+          {
+            "code": "1237035007",
+            "display": "Metastatic carcinoma to parotid gland (disorder)"
+          },
+          {
+            "code": "1237036008",
+            "display": "Metastatic carcinoma to middle third of esophagus (disorder)"
+          },
+          {
+            "code": "1237037004",
+            "display": "Metastatic carcinoma to cervical part of esophagus (disorder)"
+          },
+          {
+            "code": "1237038009",
+            "display": "Metastatic carcinoma to abdominal part of esophagus (disorder)"
+          },
+          {
+            "code": "1237039001",
+            "display": "Metastatic carcinoma to upper third of esophagus (disorder)"
+          },
+          {
+            "code": "1237041000",
+            "display": "Metastatic carcinoma to pylorus (disorder)"
+          },
+          {
+            "code": "1237042007",
+            "display": "Metastatic carcinoma to pyloric antrum (disorder)"
+          },
+          {
+            "code": "1237043002",
+            "display": "Metastatic carcinoma to greater curve of stomach (disorder)"
+          },
+          {
+            "code": "1237044008",
+            "display": "Metastatic carcinoma to lesser curve of stomach (disorder)"
+          },
+          {
+            "code": "1237045009",
+            "display": "Metastatic carcinoma to body of stomach (disorder)"
+          },
+          {
+            "code": "1237046005",
+            "display": "Metastatic carcinoma to duodenum (disorder)"
+          },
+          {
+            "code": "1237047001",
+            "display": "Metastatic carcinoma to endocrine pancreas (disorder)"
+          },
+          {
+            "code": "1237048006",
+            "display": "Metastatic squamous cell carcinoma to bronchus (disorder)"
+          },
+          {
+            "code": "1237050003",
+            "display": "Metastatic carcinoma to cardia of stomach (disorder)"
+          },
+          {
+            "code": "1237051004",
+            "display": "Metastatic carcinoma to lower third of esophagus (disorder)"
+          },
+          {
+            "code": "1237052006",
+            "display": "Metastatic carcinoma to axillary tail of breast (disorder)"
+          },
+          {
+            "code": "1237053001",
+            "display": "Metastatic carcinoma to upper inner quadrant of breast (disorder)"
+          },
+          {
+            "code": "1237055008",
+            "display": "Metastatic carcinoma to upper outer quadrant of breast (disorder)"
+          },
+          {
+            "code": "1237056009",
+            "display": "Metastatic carcinoma to lower inner quadrant of breast (disorder)"
+          },
+          {
+            "code": "1237057000",
+            "display": "Metastatic carcinoma to lower outer quadrant of breast (disorder)"
+          },
+          {
             "code": "123716002",
             "display": "Latent cirrhosis (disorder)"
           },
@@ -678,6 +874,526 @@
           {
             "code": "1237341006",
             "display": "Intraductal tubulopapillary malignant neoplasm of pancreas (disorder)"
+          },
+          {
+            "code": "1237372005",
+            "display": "Metastatic carcinoma to vagina (disorder)"
+          },
+          {
+            "code": "1237414000",
+            "display": "Metastatic cystadenocarcinoma to kidney (disorder)"
+          },
+          {
+            "code": "1237415004",
+            "display": "Metastatic cystadenocarcinoma to ovary (disorder)"
+          },
+          {
+            "code": "1237416003",
+            "display": "Metastatic cystadenocarcinoma to pancreas (disorder)"
+          },
+          {
+            "code": "1237422007",
+            "display": "Metastatic carcinoma to prostate (disorder)"
+          },
+          {
+            "code": "1237423002",
+            "display": "Metastatic carcinoma to glans penis (disorder)"
+          },
+          {
+            "code": "1237424008",
+            "display": "Metastatic carcinoma to foreskin (disorder)"
+          },
+          {
+            "code": "1237425009",
+            "display": "Metastatic carcinoma to pituitary (disorder)"
+          },
+          {
+            "code": "1237426005",
+            "display": "Metastatic carcinoma to parathyroid (disorder)"
+          },
+          {
+            "code": "1237427001",
+            "display": "Metastatic carcinoma to cecum (disorder)"
+          },
+          {
+            "code": "1237428006",
+            "display": "Metastatic carcinoma to common bile duct (disorder)"
+          },
+          {
+            "code": "1237454003",
+            "display": "Metastatic carcinoma to splenic flexure (disorder)"
+          },
+          {
+            "code": "1237455002",
+            "display": "Metastatic carcinoma to descending colon (disorder)"
+          },
+          {
+            "code": "1237456001",
+            "display": "Metastatic carcinoma to hepatic flexure (disorder)"
+          },
+          {
+            "code": "1237457005",
+            "display": "Metastatic carcinoma to urinary bladder (disorder)"
+          },
+          {
+            "code": "1237458000",
+            "display": "Metastatic carcinoma to transverse colon (disorder)"
+          },
+          {
+            "code": "1237460003",
+            "display": "Metastatic carcinoma to ascending colon (disorder)"
+          },
+          {
+            "code": "1237461004",
+            "display": "Metastatic adenocarcinoma to retinal pigment epithelium (disorder)"
+          },
+          {
+            "code": "1237465008",
+            "display": "Metastatic adenocarcinoma to urinary bladder (disorder)"
+          },
+          {
+            "code": "1237466009",
+            "display": "Metastatic squamous cell carcinoma to bronchus of left upper lobe (disorder)"
+          },
+          {
+            "code": "1237467000",
+            "display": "Metastatic squamous cell carcinoma to bronchus of right upper lobe (disorder)"
+          },
+          {
+            "code": "1237469002",
+            "display": "Metastatic squamous cell carcinoma to bronchus of left lower lobe (disorder)"
+          },
+          {
+            "code": "1237471002",
+            "display": "Metastatic squamous cell carcinoma to bronchus of right lower lobe (disorder)"
+          },
+          {
+            "code": "1237472009",
+            "display": "Metastatic squamous cell carcinoma to bronchus of middle lobe of right lung (disorder)"
+          },
+          {
+            "code": "1237473004",
+            "display": "Metastatic carcinoma to head of pancreas (disorder)"
+          },
+          {
+            "code": "1237474005",
+            "display": "Metastatic carcinoma to bone of upper limb (disorder)"
+          },
+          {
+            "code": "1237476007",
+            "display": "Metastatic carcinoma to bone of lower limb (disorder)"
+          },
+          {
+            "code": "1237477003",
+            "display": "Metastatic carcinoma to skin of head (disorder)"
+          },
+          {
+            "code": "1237478008",
+            "display": "Metastatic carcinoma to skin of neck (disorder)"
+          },
+          {
+            "code": "1237479000",
+            "display": "Metastatic carcinoma to anal canal (disorder)"
+          },
+          {
+            "code": "1237480002",
+            "display": "Metastatic carcinoma to sigmoid colon (disorder)"
+          },
+          {
+            "code": "1237481003",
+            "display": "Metastatic carcinoma to cervix (disorder)"
+          },
+          {
+            "code": "1237482005",
+            "display": "Metastatic papillary adenocarcinoma to thyroid (disorder)"
+          },
+          {
+            "code": "1237483000",
+            "display": "Metastatic carcinoma to tongue (disorder)"
+          },
+          {
+            "code": "1237484006",
+            "display": "Metastatic carcinoma to colon (disorder)"
+          },
+          {
+            "code": "1237485007",
+            "display": "Metastatic carcinoma to rectosigmoid junction (disorder)"
+          },
+          {
+            "code": "1237487004",
+            "display": "Metastatic carcinoma to base of tongue (disorder)"
+          },
+          {
+            "code": "1237488009",
+            "display": "Metastatic carcinoma to palate (disorder)"
+          },
+          {
+            "code": "1237489001",
+            "display": "Metastatic carcinoma to tonsil (disorder)"
+          },
+          {
+            "code": "1237490005",
+            "display": "Metastatic carcinoma to genital organ (disorder)"
+          },
+          {
+            "code": "1237492002",
+            "display": "Metastatic carcinoma to endocervix (disorder)"
+          },
+          {
+            "code": "1237493007",
+            "display": "Metastatic carcinoma to exocervix (disorder)"
+          },
+          {
+            "code": "1237494001",
+            "display": "Metastatic carcinoma to extrahepatic bile duct (disorder)"
+          },
+          {
+            "code": "1237495000",
+            "display": "Metastatic carcinoma to glottis (disorder)"
+          },
+          {
+            "code": "1237496004",
+            "display": "Metastatic carcinoma to subglottis (disorder)"
+          },
+          {
+            "code": "1237497008",
+            "display": "Metastatic carcinoma to supraglottis (disorder)"
+          },
+          {
+            "code": "1237498003",
+            "display": "Metastatic carcinoma to penis (disorder)"
+          },
+          {
+            "code": "1237516000",
+            "display": "Metastatic carcinoma to lower lobe of lung (disorder)"
+          },
+          {
+            "code": "1237517009",
+            "display": "Metastatic carcinoma to pelvic bones, sacrum and coccyx (disorder)"
+          },
+          {
+            "code": "1237518004",
+            "display": "Metastatic carcinoma to main bronchus (disorder)"
+          },
+          {
+            "code": "1237519007",
+            "display": "Metastatic carcinoma to skin of lower limb (disorder)"
+          },
+          {
+            "code": "1237520001",
+            "display": "Metastatic carcinoma to skin of trunk (disorder)"
+          },
+          {
+            "code": "1237521002",
+            "display": "Metastatic carcinoma to skin of upper limb (disorder)"
+          },
+          {
+            "code": "1237522009",
+            "display": "Metastatic carcinoma to gallbladder (disorder)"
+          },
+          {
+            "code": "1237523004",
+            "display": "Metastatic carcinoma to vocal cord (disorder)"
+          },
+          {
+            "code": "1237524005",
+            "display": "Metastatic carcinoma to pancreas (disorder)"
+          },
+          {
+            "code": "1237525006",
+            "display": "Metastatic carcinoma to stomach (disorder)"
+          },
+          {
+            "code": "1237526007",
+            "display": "Metastatic carcinoma to bone of rib (disorder)"
+          },
+          {
+            "code": "1237527003",
+            "display": "Metastatic carcinoma to bone of sternum (disorder)"
+          },
+          {
+            "code": "1237528008",
+            "display": "Metastatic carcinoma to bone of clavicle (disorder)"
+          },
+          {
+            "code": "1237529000",
+            "display": "Metastatic carcinoma to ampulla of Vater (disorder)"
+          },
+          {
+            "code": "1237530005",
+            "display": "Metastatic adenocarcinoma to carotid body (disorder)"
+          },
+          {
+            "code": "1237531009",
+            "display": "Metastatic adenocarcinoma to parathyroid (disorder)"
+          },
+          {
+            "code": "1237621006",
+            "display": "Metastatic adenocarcinoma to Moll's gland (disorder)"
+          },
+          {
+            "code": "1240346000",
+            "display": "Metastatic adenocarcinoma to Meckel diverticulum (disorder)"
+          },
+          {
+            "code": "1240351006",
+            "display": "Metastatic carcinoma to lower gum (disorder)"
+          },
+          {
+            "code": "1240352004",
+            "display": "Metastatic carcinoma to upper gum (disorder)"
+          },
+          {
+            "code": "1240353009",
+            "display": "Metastatic squamous cell carcinoma to prostate (disorder)"
+          },
+          {
+            "code": "1240355002",
+            "display": "Metastatic squamous cell carcinoma to epididymis and spermatic cord (disorder)"
+          },
+          {
+            "code": "1240359008",
+            "display": "Metastatic small cell carcinoma to prostate (disorder)"
+          },
+          {
+            "code": "1240362006",
+            "display": "Metastatic small cell carcinoma (disorder)"
+          },
+          {
+            "code": "1240363001",
+            "display": "Metastatic small cell carcinoma to ovary (disorder)"
+          },
+          {
+            "code": "1240370001",
+            "display": "Metastatic squamous cell carcinoma to liver and intrahepatic biliary tract (disorder)"
+          },
+          {
+            "code": "1240372009",
+            "display": "Metastatic carcinoma to meibomian gland (disorder)"
+          },
+          {
+            "code": "1251445000",
+            "display": "Metastatic neuroblastoma to abdominothoracic structure (disorder)"
+          },
+          {
+            "code": "1251454002",
+            "display": "Metastatic neuroblastoma to adrenal gland (disorder)"
+          },
+          {
+            "code": "1251456000",
+            "display": "Metastatic neuroblastoma to brain (disorder)"
+          },
+          {
+            "code": "1251457009",
+            "display": "Metastatic neuroblastoma to central nervous system (disorder)"
+          },
+          {
+            "code": "1251458004",
+            "display": "Metastatic neuroblastoma to thorax (disorder)"
+          },
+          {
+            "code": "1251459007",
+            "display": "Metastatic neuroblastoma to paraspinal area (disorder)"
+          },
+          {
+            "code": "1251460002",
+            "display": "Metastatic neuroblastoma to pelvis (disorder)"
+          },
+          {
+            "code": "1251465007",
+            "display": "Metastatic extraskeletal osteosarcoma (disorder)"
+          },
+          {
+            "code": "1251466008",
+            "display": "Metastatic osteosarcoma to articular cartilage of clavicle (disorder)"
+          },
+          {
+            "code": "1251467004",
+            "display": "Metastatic osteosarcoma to articular cartilage of rib (disorder)"
+          },
+          {
+            "code": "1251468009",
+            "display": "Metastatic osteosarcoma to articular cartilage of sternum (disorder)"
+          },
+          {
+            "code": "1251469001",
+            "display": "Metastatic osteosarcoma to articular cartilage of vertebra (disorder)"
+          },
+          {
+            "code": "1251470000",
+            "display": "Metastatic osteosarcoma to bone (disorder)"
+          },
+          {
+            "code": "1251471001",
+            "display": "Metastatic osteosarcoma to bone of clavicle (disorder)"
+          },
+          {
+            "code": "1251472008",
+            "display": "Metastatic osteosarcoma to bone of head (disorder)"
+          },
+          {
+            "code": "1251473003",
+            "display": "Metastatic osteosarcoma to bone of rib (disorder)"
+          },
+          {
+            "code": "1251474009",
+            "display": "Metastatic osteosarcoma to bone of vertebra (disorder)"
+          },
+          {
+            "code": "1251475005",
+            "display": "Metastatic osteosarcoma to bone of sternum (disorder)"
+          },
+          {
+            "code": "1251482009",
+            "display": "Metastatic adenocarcinoma to pancreatic duct (disorder)"
+          },
+          {
+            "code": "1251483004",
+            "display": "Metastatic adenocarcinoma to paraganglia (disorder)"
+          },
+          {
+            "code": "1251484005",
+            "display": "Metastatic adenocarcinoma to pituitary gland (disorder)"
+          },
+          {
+            "code": "1251485006",
+            "display": "Metastatic adenocarcinoma to prostate (disorder)"
+          },
+          {
+            "code": "1251486007",
+            "display": "Metastatic carcinoma to liver (disorder)"
+          },
+          {
+            "code": "1251487003",
+            "display": "Metastatic carcinoma to biliary tract (disorder)"
+          },
+          {
+            "code": "1251489000",
+            "display": "Metastatic carcinoma to frenum linguae (disorder)"
+          },
+          {
+            "code": "1251490009",
+            "display": "Metastatic carcinoma to gallbladder and extrahepatic biliary tract (disorder)"
+          },
+          {
+            "code": "1251491008",
+            "display": "Metastatic carcinoma to larynx (disorder)"
+          },
+          {
+            "code": "1251492001",
+            "display": "Metastatic carcinoma to lip (disorder)"
+          },
+          {
+            "code": "1251493006",
+            "display": "Metastatic carcinoma to lip, oral cavity and/or pharynx (disorder)"
+          },
+          {
+            "code": "1251494000",
+            "display": "Metastatic carcinoma to retromolar area (disorder)"
+          },
+          {
+            "code": "1251495004",
+            "display": "Metastatic carcinoma to scapula (disorder)"
+          },
+          {
+            "code": "1251496003",
+            "display": "Metastatic carcinoma to uvula (disorder)"
+          },
+          {
+            "code": "1251497007",
+            "display": "Metastatic carcinoma to vermilion border of lower lip (disorder)"
+          },
+          {
+            "code": "1251498002",
+            "display": "Metastatic sarcoma to retroperitoneum (disorder)"
+          },
+          {
+            "code": "1254689008",
+            "display": "Metastatic adenoid cystic carcinoma to cervix uteri (disorder)"
+          },
+          {
+            "code": "1254691000",
+            "display": "Metastatic adenoid cystic carcinoma to left lacrimal gland (disorder)"
+          },
+          {
+            "code": "1254723004",
+            "display": "Metastatic adenoid cystic carcinoma to right lacrimal gland (disorder)"
+          },
+          {
+            "code": "1254724005",
+            "display": "Metastatic adenoid cystic carcinoma to oropharynx (disorder)"
+          },
+          {
+            "code": "1254725006",
+            "display": "Metastatic adenoid cystic carcinoma to parotid gland (disorder)"
+          },
+          {
+            "code": "1254726007",
+            "display": "Metastatic adenoid cystic carcinoma to salivary gland (disorder)"
+          },
+          {
+            "code": "1254727003",
+            "display": "Metastatic adenoid cystic carcinoma to submandibular gland (disorder)"
+          },
+          {
+            "code": "1254728008",
+            "display": "Metastatic adenoid cystic carcinoma to trachea (disorder)"
+          },
+          {
+            "code": "1254732002",
+            "display": "Metastatic large cell carcinoma to lung (disorder)"
+          },
+          {
+            "code": "1254733007",
+            "display": "Metastatic large cell carcinoma to right lung (disorder)"
+          },
+          {
+            "code": "1254734001",
+            "display": "Metastatic large cell carcinoma to left lung (disorder)"
+          },
+          {
+            "code": "1254735000",
+            "display": "Metastatic large cell carcinoma to bilateral lungs (disorder)"
+          },
+          {
+            "code": "1254740008",
+            "display": "Metastatic giant cell carcinoma to lung (disorder)"
+          },
+          {
+            "code": "1254745003",
+            "display": "Metastatic giant cell carcinoma to left lung (disorder)"
+          },
+          {
+            "code": "1254746002",
+            "display": "Metastatic giant cell carcinoma to right lung (disorder)"
+          },
+          {
+            "code": "1254747006",
+            "display": "Metastatic giant cell carcinoma to bilateral lungs (disorder)"
+          },
+          {
+            "code": "1254748001",
+            "display": "Metastatic clear cell squamous cell carcinoma to skin (disorder)"
+          },
+          {
+            "code": "1254749009",
+            "display": "Metastatic acantholytic squamous cell carcinoma (disorder)"
+          },
+          {
+            "code": "1254750009",
+            "display": "Metastatic acantholytic squamous cell carcinoma to skin (disorder)"
+          },
+          {
+            "code": "1254752001",
+            "display": "Metastatic verrucous carcinoma to oral cavity (disorder)"
+          },
+          {
+            "code": "1254753006",
+            "display": "Metastatic verrucous carcinoma to skin of sole of foot (disorder)"
+          },
+          {
+            "code": "1254755004",
+            "display": "Metastatic basosquamous cell carcinoma to skin (disorder)"
           },
           {
             "code": "1255358009",
@@ -748,12 +1464,160 @@
             "display": "Primary neuroblastoma of brain (disorder)"
           },
           {
+            "code": "1259465009",
+            "display": "Dementia due to hepatic failure (disorder)"
+          },
+          {
+            "code": "1259467001",
+            "display": "Dementia due to hypercalcemia (disorder)"
+          },
+          {
+            "code": "1259469003",
+            "display": "Dementia due to Gerstmann Straussler Scheinker syndrome (disorder)"
+          },
+          {
+            "code": "1259471003",
+            "display": "Dementia due to Hashimoto encephalopathy (disorder)"
+          },
+          {
+            "code": "1259473000",
+            "display": "Dementia due to fragile X syndrome (disorder)"
+          },
+          {
+            "code": "1259476008",
+            "display": "Dementia due to genetic disease (disorder)"
+          },
+          {
+            "code": "1259478009",
+            "display": "Dementia due to familial Creutzfeldt-Jakob disease (disorder)"
+          },
+          {
+            "code": "1259480003",
+            "display": "Dementia due to fatal familial insomnia (disorder)"
+          },
+          {
+            "code": "1259485008",
+            "display": "Dementia due to cerebral vasculitis (disorder)"
+          },
+          {
+            "code": "1259488005",
+            "display": "Dementia due to cerebral amyloid angiopathy (disorder)"
+          },
+          {
+            "code": "1259492003",
+            "display": "Dementia due to metastatic malignant neoplasm to brain (disorder)"
+          },
+          {
+            "code": "1259494002",
+            "display": "Dementia due to leukodystrophy (disorder)"
+          },
+          {
+            "code": "1259496000",
+            "display": "Dementia due to Lyme disease (disorder)"
+          },
+          {
+            "code": "1259499007",
+            "display": "Dementia due to hemorrhagic cerebral infarction due to hypertension (disorder)"
+          },
+          {
+            "code": "1259501004",
+            "display": "Dementia due to kuru (disorder)"
+          },
+          {
+            "code": "1259503001",
+            "display": "Dementia due to iatrogenic Creutzfeldt-Jakob disease (disorder)"
+          },
+          {
+            "code": "1259511006",
+            "display": "Dementia due to Wilson disease (disorder)"
+          },
+          {
+            "code": "1259513009",
+            "display": "Dementia due to Whipple disease (disorder)"
+          },
+          {
+            "code": "1259517005",
+            "display": "Dementia due to systemic lupus erythematosus (disorder)"
+          },
+          {
+            "code": "1259519008",
+            "display": "Dementia due to subacute sclerosing panencephalitis (disorder)"
+          },
+          {
+            "code": "1259522005",
+            "display": "Dementia due to variant Creutzfeldt-Jakob disease (disorder)"
+          },
+          {
+            "code": "1259524006",
+            "display": "Dementia due to trypanosomiasis (disorder)"
+          },
+          {
+            "code": "1259529001",
+            "display": "Dementia due to sporadic Creutzfeldt-Jakob disease (disorder)"
+          },
+          {
+            "code": "1259531005",
+            "display": "Dementia due to hypertensive encephalopathy (disorder)"
+          },
+          {
             "code": "1259539007",
             "display": "Primary carcinoma of pancreas (disorder)"
           },
           {
+            "code": "1259579003",
+            "display": "Dementia due to Behcet syndrome (disorder)"
+          },
+          {
+            "code": "1259581001",
+            "display": "Dementia due to celiac disease (disorder)"
+          },
+          {
+            "code": "1259584009",
+            "display": "Dementia due to and following dialysis (disorder)"
+          },
+          {
+            "code": "1259586006",
+            "display": "Dementia due to autoimmune encephalitis (disorder)"
+          },
+          {
+            "code": "1259591007",
+            "display": "Dementia due to acquired hypothyroidism (disorder)"
+          },
+          {
             "code": "1259629009",
             "display": "Primary adenocarcinoma of pituitary gland (disorder)"
+          },
+          {
+            "code": "1259656006",
+            "display": "Dementia due to renal failure (disorder)"
+          },
+          {
+            "code": "1259661008",
+            "display": "Dementia due to inflammatory disorder of musculoskeletal system (disorder)"
+          },
+          {
+            "code": "1259663006",
+            "display": "Dementia due to polyarteritis nodosa (disorder)"
+          },
+          {
+            "code": "1259665004",
+            "display": "Dementia due to progressive subcortical gliosis (disorder)"
+          },
+          {
+            "code": "1259667007",
+            "display": "Dementia due to paraneoplastic encephalitis (disorder)"
+          },
+          {
+            "code": "1259675001",
+            "display": "Dementia due to obstructive hydrocephalus (disorder)"
+          },
+          {
+            "code": "1259677009",
+            "display": "Dementia due to multiple system atrophy (disorder)"
+          },
+          {
+            "code": "1259679007",
+            "display": "Dementia due to atypical pantothenate kinase associated neurodegeneration (disorder)"
           },
           {
             "code": "1259682002",
@@ -864,6 +1728,330 @@
             "display": "Primary pilomyxoid astrocytoma of brain (disorder)"
           },
           {
+            "code": "1259990004",
+            "display": "Dementia due to classical pantothenate kinase associated neurodegeneration (disorder)"
+          },
+          {
+            "code": "1263484004",
+            "display": "Metastatic endometrioid carcinoma to ovary (disorder)"
+          },
+          {
+            "code": "1263555006",
+            "display": "Logopenic non-amnestic Alzheimer disease (disorder)"
+          },
+          {
+            "code": "1263585001",
+            "display": "Frontal variant non-amnestic Alzheimer disease (disorder)"
+          },
+          {
+            "code": "1263601000",
+            "display": "Metastatic scirrhous carcinoma to breast (disorder)"
+          },
+          {
+            "code": "1263639008",
+            "display": "Metastatic transitional cell carcinoma to urinary bladder (disorder)"
+          },
+          {
+            "code": "1263640005",
+            "display": "Metastatic transitional cell carcinoma to corpus uteri (disorder)"
+          },
+          {
+            "code": "1263641009",
+            "display": "Metastatic transitional cell carcinoma to kidney (disorder)"
+          },
+          {
+            "code": "1263642002",
+            "display": "Metastatic transitional cell carcinoma to left kidney (disorder)"
+          },
+          {
+            "code": "1263643007",
+            "display": "Metastatic transitional cell carcinoma to right kidney (disorder)"
+          },
+          {
+            "code": "1263651005",
+            "display": "Metastatic mucoepidermoid carcinoma to skin (disorder)"
+          },
+          {
+            "code": "1263652003",
+            "display": "Metastatic mucoepidermoid carcinoma to parotid gland (disorder)"
+          },
+          {
+            "code": "1263653008",
+            "display": "Metastatic mucoepidermoid carcinoma to salivary gland (disorder)"
+          },
+          {
+            "code": "1263654002",
+            "display": "Metastatic mucoepidermoid carcinoma to submandibular gland (disorder)"
+          },
+          {
+            "code": "1263655001",
+            "display": "Metastatic transitional cell carcinoma to right renal pelvis (disorder)"
+          },
+          {
+            "code": "1263656000",
+            "display": "Metastatic transitional cell carcinoma to left renal pelvis (disorder)"
+          },
+          {
+            "code": "1263657009",
+            "display": "Metastatic transitional cell carcinoma to ureter (disorder)"
+          },
+          {
+            "code": "1263658004",
+            "display": "Metastatic transitional cell carcinoma to left ureter (disorder)"
+          },
+          {
+            "code": "1263659007",
+            "display": "Metastatic transitional cell carcinoma to renal pelvis (disorder)"
+          },
+          {
+            "code": "1263660002",
+            "display": "Metastatic transitional cell carcinoma to upper urinary tract (disorder)"
+          },
+          {
+            "code": "1263786003",
+            "display": "Metastatic basaloid squamous cell carcinoma to nasopharynx (disorder)"
+          },
+          {
+            "code": "1263911005",
+            "display": "Metastatic carcinoma ex pleomorphic adenoma to parotid gland (disorder)"
+          },
+          {
+            "code": "1263912003",
+            "display": "Metastatic carcinoma ex pleomorphic adenoma to lacrimal gland (disorder)"
+          },
+          {
+            "code": "1263913008",
+            "display": "Metastatic chromophobe renal cell carcinoma (disorder)"
+          },
+          {
+            "code": "1263914002",
+            "display": "Metastatic papillary renal cell carcinoma (disorder)"
+          },
+          {
+            "code": "1263999008",
+            "display": "Metastatic MiT family translocation renal cell carcinoma (disorder)"
+          },
+          {
+            "code": "1264003007",
+            "display": "Acute right ventricular failure following incision of heart (disorder)"
+          },
+          {
+            "code": "1264066001",
+            "display": "Metastatic keratinizing squamous cell carcinoma to nasopharynx (disorder)"
+          },
+          {
+            "code": "1264067005",
+            "display": "Metastatic acinar cell carcinoma to pancreas (disorder)"
+          },
+          {
+            "code": "1264068000",
+            "display": "Metastatic lymphoepithelial carcinoma (disorder)"
+          },
+          {
+            "code": "1264115008",
+            "display": "Metastatic metaplastic carcinoma to breast (disorder)"
+          },
+          {
+            "code": "1264116009",
+            "display": "Metastatic adenosquamous carcinoma (disorder)"
+          },
+          {
+            "code": "1264117000",
+            "display": "Metastatic adenosquamous carcinoma to cervix (disorder)"
+          },
+          {
+            "code": "1264118005",
+            "display": "Metastatic oxyphilic adenocarcinoma (disorder)"
+          },
+          {
+            "code": "1264258003",
+            "display": "Metastatic papillary squamous cell carcinoma (disorder)"
+          },
+          {
+            "code": "1264357006",
+            "display": "Metastatic mucinous cystadenocarcinoma to ovary (disorder)"
+          },
+          {
+            "code": "1264358001",
+            "display": "Metastatic mucinous cystadenocarcinoma to pancreas (disorder)"
+          },
+          {
+            "code": "1264364008",
+            "display": "Metastatic ceruminous adenocarcinoma to skin (disorder)"
+          },
+          {
+            "code": "1264367001",
+            "display": "Metastatic sebaceous adenocarcinoma (disorder)"
+          },
+          {
+            "code": "1264369003",
+            "display": "Metastatic sebaceous adenocarcinoma to eyelid (disorder)"
+          },
+          {
+            "code": "1264495000",
+            "display": "Metastatic carcinoma to breast (disorder)"
+          },
+          {
+            "code": "1264497008",
+            "display": "Metastatic infiltrating duct carcinoma to breast (disorder)"
+          },
+          {
+            "code": "1264499006",
+            "display": "Metastatic infiltrating duct carcinoma to pancreas (disorder)"
+          },
+          {
+            "code": "1264500002",
+            "display": "Metastatic infiltrating duct carcinoma to prostate (disorder)"
+          },
+          {
+            "code": "1264501003",
+            "display": "Metastatic papillary cystadenocarcinoma to kidney (disorder)"
+          },
+          {
+            "code": "1264502005",
+            "display": "Metastatic mucinous adenocarcinoma to gastrointestinal tract (disorder)"
+          },
+          {
+            "code": "1268352008",
+            "display": "Primary carcinoma of pituitary gland (disorder)"
+          },
+          {
+            "code": "1268353003",
+            "display": "Metastatic clear cell adenocarcinoma to ovary (disorder)"
+          },
+          {
+            "code": "1268354009",
+            "display": "Metastatic clear cell adenocarcinoma to peritoneum (disorder)"
+          },
+          {
+            "code": "1268386004",
+            "display": "Metastatic undifferentiated carcinoma to corpus uteri (disorder)"
+          },
+          {
+            "code": "1268388003",
+            "display": "Metastatic undifferentiated carcinoma to esophagus (disorder)"
+          },
+          {
+            "code": "1268390002",
+            "display": "Metastatic undifferentiated carcinoma to liver and intrahepatic biliary tract (disorder)"
+          },
+          {
+            "code": "1268392005",
+            "display": "Metastatic undifferentiated carcinoma to nasal sinus (disorder)"
+          },
+          {
+            "code": "1268393000",
+            "display": "Metastatic undifferentiated carcinoma to nasopharynx (disorder)"
+          },
+          {
+            "code": "1268394006",
+            "display": "Metastatic undifferentiated carcinoma to ovary (disorder)"
+          },
+          {
+            "code": "1268395007",
+            "display": "Metastatic undifferentiated carcinoma to stomach (disorder)"
+          },
+          {
+            "code": "1268532006",
+            "display": "Primary carcinoma of ampulla of Vater (disorder)"
+          },
+          {
+            "code": "1268542008",
+            "display": "Primary invasive intraductal papillary-mucinous carcinoma of pancreas (disorder)"
+          },
+          {
+            "code": "1268546006",
+            "display": "Primary mucinous cystadenocarcinoma of pancreas (disorder)"
+          },
+          {
+            "code": "1268561007",
+            "display": "Primary serous cystadenocarcinoma of pancreas (disorder)"
+          },
+          {
+            "code": "1268563005",
+            "display": "Primary acinar cell carcinoma of pancreas (disorder)"
+          },
+          {
+            "code": "1268698000",
+            "display": "Primary solid pseudopapillary carcinoma of pancreas (disorder)"
+          },
+          {
+            "code": "1268702001",
+            "display": "Primary choroid plexus carcinoma (disorder)"
+          },
+          {
+            "code": "1268716006",
+            "display": "Primary medulloblastoma (disorder)"
+          },
+          {
+            "code": "1268888008",
+            "display": "Primary pineal parenchymal tumor of intermediate differentiation (disorder)"
+          },
+          {
+            "code": "1268911008",
+            "display": "Primary pancreatoblastoma (disorder)"
+          },
+          {
+            "code": "1268957005",
+            "display": "Primary pineoblastoma (disorder)"
+          },
+          {
+            "code": "1268961004",
+            "display": "Primary diffuse astrocytoma of brain (disorder)"
+          },
+          {
+            "code": "1268966009",
+            "display": "Primary gliomatosis cerebri (disorder)"
+          },
+          {
+            "code": "1269042005",
+            "display": "Primary protoplasmic astrocytoma of brain (disorder)"
+          },
+          {
+            "code": "1269047004",
+            "display": "Primary papillary tumor of pineal region (disorder)"
+          },
+          {
+            "code": "1269048009",
+            "display": "Primary diffuse intrinsic pontine glioma (disorder)"
+          },
+          {
+            "code": "1269051002",
+            "display": "Primary desmoplastic nodular medulloblastoma of brain (disorder)"
+          },
+          {
+            "code": "1269052009",
+            "display": "Primary large cell medulloblastoma of brain (disorder)"
+          },
+          {
+            "code": "1269121005",
+            "display": "Metastatic rhabdomyosarcoma (disorder)"
+          },
+          {
+            "code": "1269122003",
+            "display": "Metastatic carcinoma to nasopharynx (disorder)"
+          },
+          {
+            "code": "1269123008",
+            "display": "Metastatic squamous cell carcinoma to rectum (disorder)"
+          },
+          {
+            "code": "1269125001",
+            "display": "Metastatic squamous cell carcinoma to small intestine (disorder)"
+          },
+          {
+            "code": "1269126000",
+            "display": "Metastatic squamous cell carcinoma to stomach (disorder)"
+          },
+          {
+            "code": "1279841001",
+            "display": "Undifferentiated carcinoma with osteoclast-like giant cells of pancreas (disorder)"
+          },
+          {
+            "code": "1279882001",
+            "display": "Metastatic embryonal rhabdomyosarcoma (disorder)"
+          },
+          {
             "code": "127991000119101",
             "display": "Hypertension concurrent and due to end stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)"
           },
@@ -880,12 +2068,196 @@
             "display": "Metastatic malignant neoplasm to articular cartilage (disorder)"
           },
           {
+            "code": "1286863002",
+            "display": "Metastatic malignant neoplasm to cecum and/or colon and/or rectum (disorder)"
+          },
+          {
+            "code": "1286896000",
+            "display": "Metastatic collecting duct renal cell carcinoma (disorder)"
+          },
+          {
+            "code": "1286898004",
+            "display": "Metastatic cystic renal cell carcinoma (disorder)"
+          },
+          {
+            "code": "1287657002",
+            "display": "Primary well-differentiated neuroendocrine tumor of ampulla of Vater (disorder)"
+          },
+          {
+            "code": "1287665004",
+            "display": "Primary well-differentiated neuroendocrine tumor of pancreas (disorder)"
+          },
+          {
+            "code": "1290060007",
+            "display": "Metastatic well-differentiated neuroendocrine tumor (disorder)"
+          },
+          {
+            "code": "1290066001",
+            "display": "Well-differentiated neuroendocrine tumor of ampulla of Vater (disorder)"
+          },
+          {
+            "code": "1290080008",
+            "display": "Neuroendocrine neoplasm of pancreas (disorder)"
+          },
+          {
+            "code": "1290115008",
+            "display": "Growth hormone releasing factor-secreting tumor of pancreas (disorder)"
+          },
+          {
+            "code": "1290116009",
+            "display": "Gastric inhibitory peptide-secreting tumor of pancreas (disorder)"
+          },
+          {
+            "code": "1290117000",
+            "display": "Parathyroid hormone-related peptide-secreting tumor of pancreas (disorder)"
+          },
+          {
+            "code": "1290690001",
+            "display": "Metastatic cholangiocarcinoma (disorder)"
+          },
+          {
+            "code": "1290695006",
+            "display": "Metastatic apocrine adenocarcinoma (disorder)"
+          },
+          {
+            "code": "1290697003",
+            "display": "Metastatic eccrine porocarcinoma (disorder)"
+          },
+          {
+            "code": "1290698008",
+            "display": "Metastatic pilomatrix carcinoma (disorder)"
+          },
+          {
+            "code": "1290700004",
+            "display": "Metastatic lobular carcinoma (disorder)"
+          },
+          {
+            "code": "1296659009",
+            "display": "Acute exacerbation of chronic heart failure (disorder)"
+          },
+          {
+            "code": "1296851009",
+            "display": "Metastatic malignant melanoma of unknown primary (disorder)"
+          },
+          {
             "code": "130121000119104",
             "display": "Dementia due to Rett syndrome (disorder)"
           },
           {
+            "code": "1306321008",
+            "display": "Metastatic malignant neoplasm to nipple (disorder)"
+          },
+          {
+            "code": "1306322001",
+            "display": "Metastatic malignant neoplasm to ectopic site of breast (disorder)"
+          },
+          {
+            "code": "1306323006",
+            "display": "Metastatic malignant neoplasm to areola (disorder)"
+          },
+          {
+            "code": "1306543004",
+            "display": "Metastatic malignant neoplasm to central portion of breast (disorder)"
+          },
+          {
+            "code": "1306544005",
+            "display": "Metastatic malignant neoplasm to lower inner quadrant of breast (disorder)"
+          },
+          {
+            "code": "1306545006",
+            "display": "Metastatic malignant neoplasm to lower outer quadrant of breast (disorder)"
+          },
+          {
+            "code": "1306546007",
+            "display": "Metastatic malignant neoplasm to upper inner quadrant of breast (disorder)"
+          },
+          {
+            "code": "1306547003",
+            "display": "Metastatic malignant neoplasm to upper outer quadrant of breast (disorder)"
+          },
+          {
             "code": "13274008",
             "display": "Atrophic fibrosis of lung (disorder)"
+          },
+          {
+            "code": "1332483008",
+            "display": "Metastatic balloon cell malignant melanoma (disorder)"
+          },
+          {
+            "code": "1332484002",
+            "display": "Metastatic anaplastic thyroid carcinoma (disorder)"
+          },
+          {
+            "code": "1332485001",
+            "display": "Metastatic endometrial stromal sarcoma (disorder)"
+          },
+          {
+            "code": "1332486000",
+            "display": "Metastatic amelanotic malignant melanoma to skin (disorder)"
+          },
+          {
+            "code": "1335987009",
+            "display": "Metastatic desmoplastic malignant melanoma (disorder)"
+          },
+          {
+            "code": "1336170004",
+            "display": "Metastatic spindle cell rhabdomyosarcoma (disorder)"
+          },
+          {
+            "code": "1336171000",
+            "display": "Metastatic synovial sarcoma (disorder)"
+          },
+          {
+            "code": "1336172007",
+            "display": "Metastatic ganglioneuroblastoma (disorder)"
+          },
+          {
+            "code": "1336173002",
+            "display": "Metastatic superficial spreading melanoma (disorder)"
+          },
+          {
+            "code": "1336176005",
+            "display": "Metastatic fibrosarcoma (disorder)"
+          },
+          {
+            "code": "1336177001",
+            "display": "Metastatic spindle cell melanoma (disorder)"
+          },
+          {
+            "code": "1336182008",
+            "display": "Metastatic myxofibrosarcoma (disorder)"
+          },
+          {
+            "code": "1336185005",
+            "display": "Metastatic pleomorphic rhabdomyosarcoma (disorder)"
+          },
+          {
+            "code": "1336186006",
+            "display": "Metastatic lentigo maligna melanoma (disorder)"
+          },
+          {
+            "code": "1336188007",
+            "display": "Metastatic glassy cell carcinoma (disorder)"
+          },
+          {
+            "code": "1336190008",
+            "display": "Metastatic inflammatory carcinoma (disorder)"
+          },
+          {
+            "code": "1339031006",
+            "display": "Dementia caused by ionizing radiation (disorder)"
+          },
+          {
+            "code": "1339049006",
+            "display": "Metastatic infantile fibrosarcoma (disorder)"
+          },
+          {
+            "code": "1339050006",
+            "display": "Metastatic malignant glioma (disorder)"
+          },
+          {
+            "code": "1339051005",
+            "display": "Metastatic germinoma (disorder)"
           },
           {
             "code": "135091000119106",
@@ -928,6 +2300,14 @@
             "display": "Bauxite fibrosis of lung (disorder)"
           },
           {
+            "code": "14914851000119109",
+            "display": "Metastatic Merkel cell carcinoma to skin (disorder)"
+          },
+          {
+            "code": "14914931000119107",
+            "display": "Metastatic Merkel cell carcinoma to liver (disorder)"
+          },
+          {
             "code": "153891000119101",
             "display": "End stage renal disease on dialysis due to hypertension (disorder)"
           },
@@ -958,6 +2338,10 @@
           {
             "code": "15629741000119102",
             "display": "Systolic heart failure stage C due to ischemic cardiomyopathy (disorder)"
+          },
+          {
+            "code": "15650751000119107",
+            "display": "Primary sarcoma of pancreas (disorder)"
           },
           {
             "code": "15662003",
@@ -1660,6 +3044,10 @@
             "display": "Cardiorespiratory failure during AND/OR resulting from a procedure (disorder)"
           },
           {
+            "code": "253005002",
+            "display": "Vasoactive intestinal peptide-secreting tumor (disorder)"
+          },
+          {
             "code": "254609000",
             "display": "Carcinoma of ampulla of Vater (disorder)"
           },
@@ -1686,6 +3074,10 @@
           {
             "code": "254969001",
             "display": "Malignant tumor of olfactory tract (disorder)"
+          },
+          {
+            "code": "255039001",
+            "display": "Pancreatic polypeptidoma (disorder)"
           },
           {
             "code": "255088001",
@@ -2756,8 +4148,24 @@
             "display": "Primary ependymoma of brain ventricle (disorder)"
           },
           {
+            "code": "683771000119101",
+            "display": "Primary ependymoma of frontal lobe (disorder)"
+          },
+          {
+            "code": "683781000119103",
+            "display": "Primary malignant ependymoma of occipital lobe (disorder)"
+          },
+          {
             "code": "683791000119100",
             "display": "Primary ependymoma of parietal lobe (disorder)"
+          },
+          {
+            "code": "683801000119104",
+            "display": "Primary ependymoma of temporal lobe (disorder)"
+          },
+          {
+            "code": "684891000119108",
+            "display": "Primary glioblastoma multiforme of cerebral ventricle (disorder)"
           },
           {
             "code": "684901000119107",
@@ -2780,6 +4188,10 @@
             "display": "Primary glioblastoma multiforme of temporal lobe (disorder)"
           },
           {
+            "code": "686421000119103",
+            "display": "Primary malignant glioma of brain ventricle (disorder)"
+          },
+          {
             "code": "686431000119100",
             "display": "Primary malignant glioma of frontal lobe (disorder)"
           },
@@ -2798,6 +4210,10 @@
           {
             "code": "687331000119109",
             "display": "Primary oligodendroglioma of frontal lobe (disorder)"
+          },
+          {
+            "code": "687341000119100",
+            "display": "Primary oligodendroglioma of occipital lobe (disorder)"
           },
           {
             "code": "687351000119103",
@@ -2988,6 +4404,10 @@
             "display": "Congestive heart failure stage B (disorder)"
           },
           {
+            "code": "717919005",
+            "display": "Neuroendocrine tumor of pancreas (disorder)"
+          },
+          {
             "code": "718685006",
             "display": "Orthostatic hypotension co-occurrent and due to Parkinson's disease (disorder)"
           },
@@ -3046,6 +4466,10 @@
           {
             "code": "723829000",
             "display": "Pulmonary fibrosis, hepatic hyperplasia, bone marrow hypoplasia syndrome (disorder)"
+          },
+          {
+            "code": "724003651000119103",
+            "display": "Primary malignant glioma of thalamus (disorder)"
           },
           {
             "code": "724761004",
@@ -4034,6 +5458,2575 @@
           {
             "code": "94270002",
             "display": "Metastatic malignant neoplasm to cystic duct (disorder)"
+          },
+          {
+            "code": "94271003",
+            "display": "Metastatic malignant neoplasm to descending colon (disorder)"
+          },
+          {
+            "code": "94272005",
+            "display": "Metastatic malignant neoplasm to diaphragm (disorder)"
+          },
+          {
+            "code": "94273000",
+            "display": "Metastatic malignant neoplasm to dorsal surface of tongue (disorder)"
+          },
+          {
+            "code": "94274006",
+            "display": "Metastatic malignant neoplasm to thoracic vertebral column (disorder)"
+          },
+          {
+            "code": "94275007",
+            "display": "Metastatic malignant neoplasm to duodenum (disorder)"
+          },
+          {
+            "code": "94278009",
+            "display": "Metastatic malignant neoplasm to endocardium (disorder)"
+          },
+          {
+            "code": "94279001",
+            "display": "Metastatic malignant neoplasm to endocervix (disorder)"
+          },
+          {
+            "code": "94280003",
+            "display": "Metastatic malignant neoplasm to endocrine gland (disorder)"
+          },
+          {
+            "code": "94281004",
+            "display": "Metastatic malignant neoplasm to endometrium (disorder)"
+          },
+          {
+            "code": "94282006",
+            "display": "Metastatic malignant neoplasm to epicardium (disorder)"
+          },
+          {
+            "code": "94283001",
+            "display": "Metastatic malignant neoplasm to epididymis (disorder)"
+          },
+          {
+            "code": "94284007",
+            "display": "Metastatic malignant neoplasm to epiglottis (disorder)"
+          },
+          {
+            "code": "94285008",
+            "display": "Metastatic malignant neoplasm to epitrochlear lymph nodes (disorder)"
+          },
+          {
+            "code": "94286009",
+            "display": "Metastatic malignant neoplasm to esophagus (disorder)"
+          },
+          {
+            "code": "94287000",
+            "display": "Metastatic malignant neoplasm to ethmoid bone (disorder)"
+          },
+          {
+            "code": "94288005",
+            "display": "Metastatic malignant neoplasm to ethmoidal sinus (disorder)"
+          },
+          {
+            "code": "94289002",
+            "display": "Metastatic malignant neoplasm to eustachian tube (disorder)"
+          },
+          {
+            "code": "94290006",
+            "display": "Metastatic malignant neoplasm to exocervix (disorder)"
+          },
+          {
+            "code": "94291005",
+            "display": "Metastatic malignant neoplasm to extrahepatic bile ducts (disorder)"
+          },
+          {
+            "code": "94292003",
+            "display": "Metastatic malignant neoplasm to eye (disorder)"
+          },
+          {
+            "code": "94293008",
+            "display": "Metastatic malignant neoplasm to face (disorder)"
+          },
+          {
+            "code": "94294002",
+            "display": "Metastatic malignant neoplasm to facial nerve (disorder)"
+          },
+          {
+            "code": "94295001",
+            "display": "Metastatic malignant neoplasm to fallopian tube (disorder)"
+          },
+          {
+            "code": "94296000",
+            "display": "Metastatic malignant neoplasm to false vocal cord (disorder)"
+          },
+          {
+            "code": "94298004",
+            "display": "Metastatic malignant neoplasm to female genital organ (disorder)"
+          },
+          {
+            "code": "94299007",
+            "display": "Metastatic malignant neoplasm to femoral lymph nodes (disorder)"
+          },
+          {
+            "code": "94300004",
+            "display": "Metastatic malignant neoplasm to femur (disorder)"
+          },
+          {
+            "code": "94301000",
+            "display": "Metastatic malignant neoplasm to fibula (disorder)"
+          },
+          {
+            "code": "94302007",
+            "display": "Metastatic malignant neoplasm to first cuneiform bone of foot (disorder)"
+          },
+          {
+            "code": "94303002",
+            "display": "Metastatic malignant neoplasm to flank (disorder)"
+          },
+          {
+            "code": "94304008",
+            "display": "Metastatic malignant neoplasm to floor of mouth (disorder)"
+          },
+          {
+            "code": "94305009",
+            "display": "Metastatic malignant neoplasm to foot (disorder)"
+          },
+          {
+            "code": "94306005",
+            "display": "Metastatic malignant neoplasm to forearm (disorder)"
+          },
+          {
+            "code": "94307001",
+            "display": "Metastatic malignant neoplasm to prepuce (disorder)"
+          },
+          {
+            "code": "94308006",
+            "display": "Metastatic malignant neoplasm to frontal bone (disorder)"
+          },
+          {
+            "code": "94309003",
+            "display": "Metastatic malignant neoplasm to frontal lobe (disorder)"
+          },
+          {
+            "code": "94310008",
+            "display": "Metastatic malignant neoplasm to frontal sinus (disorder)"
+          },
+          {
+            "code": "94311007",
+            "display": "Metastatic malignant neoplasm to fundus of stomach (disorder)"
+          },
+          {
+            "code": "94312000",
+            "display": "Metastatic malignant neoplasm to gallbladder (disorder)"
+          },
+          {
+            "code": "94313005",
+            "display": "Metastatic malignant neoplasm to gastrointestinal tract (disorder)"
+          },
+          {
+            "code": "94314004",
+            "display": "Metastatic malignant neoplasm to gingival mucosa (disorder)"
+          },
+          {
+            "code": "94315003",
+            "display": "Metastatic malignant neoplasm to glans penis (disorder)"
+          },
+          {
+            "code": "94316002",
+            "display": "Metastatic malignant neoplasm to glomus jugulare (disorder)"
+          },
+          {
+            "code": "94317006",
+            "display": "Metastatic malignant neoplasm to glossopharyngeal nerve (disorder)"
+          },
+          {
+            "code": "94318001",
+            "display": "Metastatic malignant neoplasm to glottis (disorder)"
+          },
+          {
+            "code": "94319009",
+            "display": "Metastatic malignant neoplasm to great vessels (disorder)"
+          },
+          {
+            "code": "94320003",
+            "display": "Metastatic malignant neoplasm to greater curvature of stomach (disorder)"
+          },
+          {
+            "code": "94321004",
+            "display": "Metastatic malignant neoplasm to gum (disorder)"
+          },
+          {
+            "code": "94322006",
+            "display": "Metastatic malignant neoplasm to hamate bone (disorder)"
+          },
+          {
+            "code": "94323001",
+            "display": "Metastatic malignant neoplasm to hand (disorder)"
+          },
+          {
+            "code": "94324007",
+            "display": "Metastatic malignant neoplasm to hard palate (disorder)"
+          },
+          {
+            "code": "94325008",
+            "display": "Metastatic malignant neoplasm to head of pancreas (disorder)"
+          },
+          {
+            "code": "94326009",
+            "display": "Metastatic malignant neoplasm to head (disorder)"
+          },
+          {
+            "code": "94327000",
+            "display": "Metastatic malignant neoplasm to heart (disorder)"
+          },
+          {
+            "code": "94328005",
+            "display": "Metastatic malignant neoplasm to hepatic flexure of colon (disorder)"
+          },
+          {
+            "code": "94329002",
+            "display": "Metastatic malignant neoplasm to hilus of lung (disorder)"
+          },
+          {
+            "code": "94330007",
+            "display": "Metastatic malignant neoplasm to hypogastric lymph nodes (disorder)"
+          },
+          {
+            "code": "94331006",
+            "display": "Metastatic malignant neoplasm to hypoglossal nerve (disorder)"
+          },
+          {
+            "code": "94332004",
+            "display": "Metastatic malignant neoplasm to hypopharyngeal aspect of aryepiglottic fold (disorder)"
+          },
+          {
+            "code": "94333009",
+            "display": "Metastatic malignant neoplasm to hypopharyngeal aspect of interarytenoid fold (disorder)"
+          },
+          {
+            "code": "94334003",
+            "display": "Metastatic malignant neoplasm to hypopharynx (disorder)"
+          },
+          {
+            "code": "94335002",
+            "display": "Metastatic malignant neoplasm to ileum (disorder)"
+          },
+          {
+            "code": "94336001",
+            "display": "Metastatic malignant neoplasm to iliac lymph nodes (disorder)"
+          },
+          {
+            "code": "94337005",
+            "display": "Metastatic malignant neoplasm to ilium (disorder)"
+          },
+          {
+            "code": "94338000",
+            "display": "Metastatic malignant neoplasm to infraclavicular lymph nodes (disorder)"
+          },
+          {
+            "code": "94339008",
+            "display": "Metastatic malignant neoplasm to inguinal lymph nodes (disorder)"
+          },
+          {
+            "code": "94340005",
+            "display": "Metastatic malignant neoplasm to inguinal region (disorder)"
+          },
+          {
+            "code": "94341009",
+            "display": "Metastatic malignant neoplasm to inner aspect of lip (disorder)"
+          },
+          {
+            "code": "94342002",
+            "display": "Metastatic malignant neoplasm to inner aspect of lower lip (disorder)"
+          },
+          {
+            "code": "94343007",
+            "display": "Metastatic malignant neoplasm to inner aspect of upper lip (disorder)"
+          },
+          {
+            "code": "94344001",
+            "display": "Metastatic malignant neoplasm to intercostal lymph nodes (disorder)"
+          },
+          {
+            "code": "94345000",
+            "display": "Metastatic malignant neoplasm to intestinal lymph nodes (disorder)"
+          },
+          {
+            "code": "94346004",
+            "display": "Metastatic malignant neoplasm to intestinal tract (disorder)"
+          },
+          {
+            "code": "94347008",
+            "display": "Metastatic malignant neoplasm to intra-abdominal lymph nodes (disorder)"
+          },
+          {
+            "code": "94348003",
+            "display": "Metastatic malignant neoplasm to intra-abdominal organs (disorder)"
+          },
+          {
+            "code": "94349006",
+            "display": "Metastatic malignant neoplasm to intrahepatic bile ducts (disorder)"
+          },
+          {
+            "code": "94350006",
+            "display": "Metastatic malignant neoplasm to intrapelvic lymph nodes (disorder)"
+          },
+          {
+            "code": "94351005",
+            "display": "Metastatic malignant neoplasm to intrathoracic lymph nodes (disorder)"
+          },
+          {
+            "code": "94352003",
+            "display": "Metastatic malignant neoplasm to intrathoracic organs (disorder)"
+          },
+          {
+            "code": "94353008",
+            "display": "Metastatic malignant neoplasm to ischium (disorder)"
+          },
+          {
+            "code": "94354002",
+            "display": "Metastatic malignant neoplasm to islets of Langerhans (disorder)"
+          },
+          {
+            "code": "94355001",
+            "display": "Metastatic malignant neoplasm to isthmus of uterus (disorder)"
+          },
+          {
+            "code": "94356000",
+            "display": "Metastatic malignant neoplasm to jaw (disorder)"
+          },
+          {
+            "code": "94357009",
+            "display": "Metastatic malignant neoplasm to jejunum (disorder)"
+          },
+          {
+            "code": "94358004",
+            "display": "Metastatic malignant neoplasm to junctional region of epiglottis (disorder)"
+          },
+          {
+            "code": "94359007",
+            "display": "Metastatic malignant neoplasm to junctional zone of tongue (disorder)"
+          },
+          {
+            "code": "94360002",
+            "display": "Metastatic malignant neoplasm to kidney (disorder)"
+          },
+          {
+            "code": "94361003",
+            "display": "Metastatic malignant neoplasm to labia majora (disorder)"
+          },
+          {
+            "code": "94362005",
+            "display": "Metastatic malignant neoplasm to labia minora (disorder)"
+          },
+          {
+            "code": "94364006",
+            "display": "Metastatic malignant neoplasm to lacrimal gland (disorder)"
+          },
+          {
+            "code": "94365007",
+            "display": "Metastatic malignant neoplasm to large intestine (disorder)"
+          },
+          {
+            "code": "94366008",
+            "display": "Metastatic malignant neoplasm to laryngeal aspect of aryepiglottic fold (disorder)"
+          },
+          {
+            "code": "94367004",
+            "display": "Metastatic malignant neoplasm to laryngeal aspect of interarytenoid fold (disorder)"
+          },
+          {
+            "code": "94368009",
+            "display": "Metastatic malignant neoplasm to laryngeal commissure (disorder)"
+          },
+          {
+            "code": "94369001",
+            "display": "Metastatic malignant neoplasm to laryngeal surface of epiglottis (disorder)"
+          },
+          {
+            "code": "94370000",
+            "display": "Metastatic malignant neoplasm to larynx (disorder)"
+          },
+          {
+            "code": "94371001",
+            "display": "Metastatic malignant neoplasm to lateral portion of floor of mouth (disorder)"
+          },
+          {
+            "code": "94372008",
+            "display": "Metastatic malignant neoplasm to lateral wall of nasopharynx (disorder)"
+          },
+          {
+            "code": "94373003",
+            "display": "Metastatic malignant neoplasm to lateral wall of oropharynx (disorder)"
+          },
+          {
+            "code": "94374009",
+            "display": "Metastatic malignant neoplasm to lateral wall of urinary bladder (disorder)"
+          },
+          {
+            "code": "94375005",
+            "display": "Metastatic malignant neoplasm to left lower lobe of lung (disorder)"
+          },
+          {
+            "code": "94376006",
+            "display": "Metastatic malignant neoplasm to left upper lobe of lung (disorder)"
+          },
+          {
+            "code": "94378007",
+            "display": "Metastatic malignant neoplasm to lesser curvature of stomach (disorder)"
+          },
+          {
+            "code": "94379004",
+            "display": "Metastatic malignant neoplasm to lingual tonsil (disorder)"
+          },
+          {
+            "code": "94380001",
+            "display": "Metastatic malignant neoplasm to lip (disorder)"
+          },
+          {
+            "code": "94381002",
+            "display": "Metastatic malignant neoplasm to liver (disorder)"
+          },
+          {
+            "code": "94382009",
+            "display": "Metastatic malignant neoplasm to long bone of lower limb (disorder)"
+          },
+          {
+            "code": "94383004",
+            "display": "Metastatic malignant neoplasm to long bone of upper limb (disorder)"
+          },
+          {
+            "code": "94384005",
+            "display": "Metastatic malignant neoplasm to lower gum (disorder)"
+          },
+          {
+            "code": "94386007",
+            "display": "Metastatic malignant neoplasm to lower limb (disorder)"
+          },
+          {
+            "code": "94388008",
+            "display": "Metastatic malignant neoplasm to lower third of esophagus (disorder)"
+          },
+          {
+            "code": "94389000",
+            "display": "Metastatic malignant neoplasm to lumbar vertebral column (disorder)"
+          },
+          {
+            "code": "94390009",
+            "display": "Metastatic malignant neoplasm to lunate bone (disorder)"
+          },
+          {
+            "code": "94391008",
+            "display": "Metastatic malignant neoplasm to lung (disorder)"
+          },
+          {
+            "code": "94392001",
+            "display": "Metastatic malignant neoplasm to lymph node (disorder)"
+          },
+          {
+            "code": "94393006",
+            "display": "Metastatic malignant neoplasm to lymph nodes of face (disorder)"
+          },
+          {
+            "code": "94394000",
+            "display": "Metastatic malignant neoplasm to lymph nodes of head (disorder)"
+          },
+          {
+            "code": "94395004",
+            "display": "Metastatic malignant neoplasm to lymph nodes of lower limb (disorder)"
+          },
+          {
+            "code": "94396003",
+            "display": "Metastatic malignant neoplasm to lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "94397007",
+            "display": "Metastatic malignant neoplasm to lymph nodes of neck (disorder)"
+          },
+          {
+            "code": "94398002",
+            "display": "Metastatic malignant neoplasm to lymph nodes of upper limb (disorder)"
+          },
+          {
+            "code": "94399005",
+            "display": "Metastatic malignant neoplasm to main bronchus (disorder)"
+          },
+          {
+            "code": "94400003",
+            "display": "Metastatic malignant neoplasm to major salivary gland (disorder)"
+          },
+          {
+            "code": "94402006",
+            "display": "Metastatic malignant neoplasm to male genital organ (disorder)"
+          },
+          {
+            "code": "94403001",
+            "display": "Metastatic malignant neoplasm to mandible (disorder)"
+          },
+          {
+            "code": "94404007",
+            "display": "Metastatic malignant neoplasm to mastoid air cells (disorder)"
+          },
+          {
+            "code": "94405008",
+            "display": "Metastatic malignant neoplasm to maxilla (disorder)"
+          },
+          {
+            "code": "94406009",
+            "display": "Metastatic malignant neoplasm to maxillary sinus (disorder)"
+          },
+          {
+            "code": "94407000",
+            "display": "Metastatic malignant neoplasm to Meckel's diverticulum (disorder)"
+          },
+          {
+            "code": "94408005",
+            "display": "Metastatic malignant neoplasm to mediastinal lymph nodes (disorder)"
+          },
+          {
+            "code": "94409002",
+            "display": "Metastatic malignant neoplasm to mediastinum (disorder)"
+          },
+          {
+            "code": "94410007",
+            "display": "Metastatic malignant neoplasm to mesenteric lymph nodes (disorder)"
+          },
+          {
+            "code": "94411006",
+            "display": "Metastatic malignant neoplasm to metacarpal bone (disorder)"
+          },
+          {
+            "code": "94412004",
+            "display": "Metastatic malignant neoplasm to metatarsal bone (disorder)"
+          },
+          {
+            "code": "94413009",
+            "display": "Metastatic malignant neoplasm to middle ear (disorder)"
+          },
+          {
+            "code": "94414003",
+            "display": "Metastatic malignant neoplasm to middle third of esophagus (disorder)"
+          },
+          {
+            "code": "94415002",
+            "display": "Metastatic malignant neoplasm to minor salivary gland (disorder)"
+          },
+          {
+            "code": "94416001",
+            "display": "Metastatic malignant neoplasm to mouth (disorder)"
+          },
+          {
+            "code": "94417005",
+            "display": "Metastatic malignant neoplasm to multiple endocrine glands (disorder)"
+          },
+          {
+            "code": "94418000",
+            "display": "Metastatic malignant neoplasm to muscle of abdomen (disorder)"
+          },
+          {
+            "code": "94419008",
+            "display": "Metastatic malignant neoplasm to muscle of buttock (disorder)"
+          },
+          {
+            "code": "94420002",
+            "display": "Metastatic malignant neoplasm to muscle of face (disorder)"
+          },
+          {
+            "code": "94421003",
+            "display": "Metastatic malignant neoplasm to muscle of head (disorder)"
+          },
+          {
+            "code": "94422005",
+            "display": "Metastatic malignant neoplasm to muscle of hip (disorder)"
+          },
+          {
+            "code": "94423000",
+            "display": "Metastatic malignant neoplasm to muscle of inguinal region (disorder)"
+          },
+          {
+            "code": "94424006",
+            "display": "Metastatic malignant neoplasm to muscle of lower limb (disorder)"
+          },
+          {
+            "code": "94425007",
+            "display": "Metastatic malignant neoplasm to muscle of neck (disorder)"
+          },
+          {
+            "code": "94426008",
+            "display": "Metastatic malignant neoplasm to muscle of pelvis (disorder)"
+          },
+          {
+            "code": "94427004",
+            "display": "Metastatic malignant neoplasm to muscle of perineum (disorder)"
+          },
+          {
+            "code": "94428009",
+            "display": "Metastatic malignant neoplasm to muscle of shoulder (disorder)"
+          },
+          {
+            "code": "94429001",
+            "display": "Metastatic malignant neoplasm to muscle of thorax (disorder)"
+          },
+          {
+            "code": "94430006",
+            "display": "Metastatic malignant neoplasm to muscle of trunk (disorder)"
+          },
+          {
+            "code": "94431005",
+            "display": "Metastatic malignant neoplasm to muscle of upper limb (disorder)"
+          },
+          {
+            "code": "94432003",
+            "display": "Metastatic malignant neoplasm to muscle (disorder)"
+          },
+          {
+            "code": "94433008",
+            "display": "Metastatic malignant neoplasm to myocardium (disorder)"
+          },
+          {
+            "code": "94434002",
+            "display": "Metastatic malignant neoplasm to myometrium (disorder)"
+          },
+          {
+            "code": "94435001",
+            "display": "Metastatic malignant neoplasm to nasal bone (disorder)"
+          },
+          {
+            "code": "94436000",
+            "display": "Metastatic malignant neoplasm to nasal cavity (disorder)"
+          },
+          {
+            "code": "94437009",
+            "display": "Metastatic malignant neoplasm to nasal concha (disorder)"
+          },
+          {
+            "code": "94439007",
+            "display": "Metastatic malignant neoplasm to navicular bone of foot (disorder)"
+          },
+          {
+            "code": "94440009",
+            "display": "Metastatic malignant neoplasm to scaphoid bone (disorder)"
+          },
+          {
+            "code": "94441008",
+            "display": "Metastatic malignant neoplasm to neck (disorder)"
+          },
+          {
+            "code": "94442001",
+            "display": "Metastatic malignant neoplasm to nervous system (disorder)"
+          },
+          {
+            "code": "94445004",
+            "display": "Metastatic malignant neoplasm to nose (disorder)"
+          },
+          {
+            "code": "94446003",
+            "display": "Metastatic malignant neoplasm to obturator lymph nodes (disorder)"
+          },
+          {
+            "code": "94447007",
+            "display": "Metastatic malignant neoplasm to occipital bone (disorder)"
+          },
+          {
+            "code": "94448002",
+            "display": "Metastatic malignant neoplasm to occipital lobe (disorder)"
+          },
+          {
+            "code": "94449005",
+            "display": "Metastatic malignant neoplasm to occipital lymph nodes (disorder)"
+          },
+          {
+            "code": "94450005",
+            "display": "Metastatic malignant neoplasm to oculomotor nerve (disorder)"
+          },
+          {
+            "code": "94451009",
+            "display": "Metastatic malignant neoplasm to olfactory nerve (disorder)"
+          },
+          {
+            "code": "94452002",
+            "display": "Metastatic malignant neoplasm to optic nerve (disorder)"
+          },
+          {
+            "code": "94453007",
+            "display": "Metastatic malignant neoplasm to orbit (disorder)"
+          },
+          {
+            "code": "94454001",
+            "display": "Metastatic malignant neoplasm to oropharynx (disorder)"
+          },
+          {
+            "code": "94455000",
+            "display": "Metastatic malignant neoplasm to ovary (disorder)"
+          },
+          {
+            "code": "94456004",
+            "display": "Metastatic malignant neoplasm to palate (disorder)"
+          },
+          {
+            "code": "94457008",
+            "display": "Metastatic malignant neoplasm to palatine bone (disorder)"
+          },
+          {
+            "code": "94458003",
+            "display": "Metastatic malignant neoplasm to tonsil (disorder)"
+          },
+          {
+            "code": "94459006",
+            "display": "Metastatic malignant neoplasm to pancreas (disorder)"
+          },
+          {
+            "code": "94460001",
+            "display": "Metastatic malignant neoplasm to pancreatic duct (disorder)"
+          },
+          {
+            "code": "94461002",
+            "display": "Metastatic malignant neoplasm to para-aortic body (disorder)"
+          },
+          {
+            "code": "94462009",
+            "display": "Metastatic malignant neoplasm to paraganglion (disorder)"
+          },
+          {
+            "code": "94463004",
+            "display": "Metastatic malignant neoplasm to paramammary lymph nodes (disorder)"
+          },
+          {
+            "code": "94464005",
+            "display": "Metastatic malignant neoplasm to parametrial lymph nodes (disorder)"
+          },
+          {
+            "code": "94465006",
+            "display": "Metastatic malignant neoplasm to parametrium (disorder)"
+          },
+          {
+            "code": "94466007",
+            "display": "Metastatic malignant neoplasm to pararectal lymph nodes (disorder)"
+          },
+          {
+            "code": "94467003",
+            "display": "Metastatic malignant neoplasm to parathyroid gland (disorder)"
+          },
+          {
+            "code": "94468008",
+            "display": "Metastatic malignant neoplasm to paraurethral glands (disorder)"
+          },
+          {
+            "code": "94469000",
+            "display": "Metastatic malignant neoplasm to paravaginal lymph nodes (disorder)"
+          },
+          {
+            "code": "94470004",
+            "display": "Metastatic malignant neoplasm to parietal bone (disorder)"
+          },
+          {
+            "code": "94471000",
+            "display": "Metastatic malignant neoplasm to parietal lobe (disorder)"
+          },
+          {
+            "code": "94472007",
+            "display": "Metastatic malignant neoplasm to parietal peritoneum (disorder)"
+          },
+          {
+            "code": "94473002",
+            "display": "Metastatic malignant neoplasm to parietal pleura (disorder)"
+          },
+          {
+            "code": "94474008",
+            "display": "Metastatic malignant neoplasm to parotid gland (disorder)"
+          },
+          {
+            "code": "94475009",
+            "display": "Metastatic malignant neoplasm to parotid lymph nodes (disorder)"
+          },
+          {
+            "code": "94476005",
+            "display": "Metastatic malignant neoplasm to patella (disorder)"
+          },
+          {
+            "code": "94477001",
+            "display": "Metastatic malignant neoplasm to pectoral axillary lymph nodes (disorder)"
+          },
+          {
+            "code": "94478006",
+            "display": "Metastatic malignant neoplasm to pelvic bone (disorder)"
+          },
+          {
+            "code": "94479003",
+            "display": "Metastatic malignant neoplasm to pelvic peritoneum (disorder)"
+          },
+          {
+            "code": "94480000",
+            "display": "Metastatic malignant neoplasm to pelvis (disorder)"
+          },
+          {
+            "code": "94481001",
+            "display": "Metastatic malignant neoplasm to penis (disorder)"
+          },
+          {
+            "code": "94482008",
+            "display": "Metastatic malignant neoplasm to periadrenal tissue (disorder)"
+          },
+          {
+            "code": "94483003",
+            "display": "Metastatic malignant neoplasm to perianal skin (disorder)"
+          },
+          {
+            "code": "94484009",
+            "display": "Metastatic malignant neoplasm to pericardium (disorder)"
+          },
+          {
+            "code": "94485005",
+            "display": "Metastatic malignant neoplasm to perirenal tissue (disorder)"
+          },
+          {
+            "code": "94486006",
+            "display": "Metastatic malignant neoplasm to phalanx of foot (disorder)"
+          },
+          {
+            "code": "94487002",
+            "display": "Metastatic malignant neoplasm to phalanx of hand (disorder)"
+          },
+          {
+            "code": "94488007",
+            "display": "Metastatic malignant neoplasm to pharynx (disorder)"
+          },
+          {
+            "code": "94489004",
+            "display": "Metastatic malignant neoplasm to pineal gland (disorder)"
+          },
+          {
+            "code": "94490008",
+            "display": "Metastatic malignant neoplasm to pisiform bone of hand (disorder)"
+          },
+          {
+            "code": "94491007",
+            "display": "Metastatic malignant neoplasm to pituitary gland (disorder)"
+          },
+          {
+            "code": "94492000",
+            "display": "Metastatic malignant neoplasm to placenta (disorder)"
+          },
+          {
+            "code": "94493005",
+            "display": "Metastatic malignant neoplasm to pleura (disorder)"
+          },
+          {
+            "code": "94494004",
+            "display": "Metastatic malignant neoplasm to popliteal lymph nodes (disorder)"
+          },
+          {
+            "code": "94495003",
+            "display": "Metastatic malignant neoplasm to postcricoid region (disorder)"
+          },
+          {
+            "code": "94496002",
+            "display": "Metastatic malignant neoplasm to posterior hypopharyngeal wall (disorder)"
+          },
+          {
+            "code": "94497006",
+            "display": "Metastatic malignant neoplasm to posterior mediastinum (disorder)"
+          },
+          {
+            "code": "94498001",
+            "display": "Metastatic malignant neoplasm to posterior wall of nasopharynx (disorder)"
+          },
+          {
+            "code": "94499009",
+            "display": "Metastatic malignant neoplasm to posterior wall of oropharynx (disorder)"
+          },
+          {
+            "code": "94500000",
+            "display": "Metastatic malignant neoplasm to posterior wall of urinary bladder (disorder)"
+          },
+          {
+            "code": "94501001",
+            "display": "Metastatic malignant neoplasm to preauricular lymph nodes (disorder)"
+          },
+          {
+            "code": "94502008",
+            "display": "Metastatic malignant neoplasm to presacral region (disorder)"
+          },
+          {
+            "code": "94503003",
+            "display": "Metastatic malignant neoplasm to prostate (disorder)"
+          },
+          {
+            "code": "94504009",
+            "display": "Metastatic malignant neoplasm to pubis (disorder)"
+          },
+          {
+            "code": "94505005",
+            "display": "Metastatic malignant neoplasm to pyloric antrum (disorder)"
+          },
+          {
+            "code": "94506006",
+            "display": "Metastatic malignant neoplasm to pylorus (disorder)"
+          },
+          {
+            "code": "94507002",
+            "display": "Metastatic malignant neoplasm to pyriform sinus (disorder)"
+          },
+          {
+            "code": "94508007",
+            "display": "Metastatic malignant neoplasm to radius (disorder)"
+          },
+          {
+            "code": "94509004",
+            "display": "Metastatic malignant neoplasm to rectosigmoid junction (disorder)"
+          },
+          {
+            "code": "94510009",
+            "display": "Metastatic malignant neoplasm to rectouterine pouch (disorder)"
+          },
+          {
+            "code": "94511008",
+            "display": "Metastatic malignant neoplasm to rectovaginal septum (disorder)"
+          },
+          {
+            "code": "94512001",
+            "display": "Metastatic malignant neoplasm to rectovesical septum (disorder)"
+          },
+          {
+            "code": "94513006",
+            "display": "Metastatic malignant neoplasm to rectum (disorder)"
+          },
+          {
+            "code": "94514000",
+            "display": "Metastatic malignant neoplasm to renal pelvis (disorder)"
+          },
+          {
+            "code": "94515004",
+            "display": "Metastatic malignant neoplasm to respiratory tract (disorder)"
+          },
+          {
+            "code": "94516003",
+            "display": "Metastatic malignant neoplasm to retina (disorder)"
+          },
+          {
+            "code": "94517007",
+            "display": "Metastatic malignant neoplasm to retrocecal tissue (disorder)"
+          },
+          {
+            "code": "94518002",
+            "display": "Metastatic malignant neoplasm to retromolar area (disorder)"
+          },
+          {
+            "code": "94519005",
+            "display": "Metastatic malignant neoplasm to retroperitoneal lymph nodes (disorder)"
+          },
+          {
+            "code": "94520004",
+            "display": "Metastatic malignant neoplasm to retropharyngeal lymph nodes (disorder)"
+          },
+          {
+            "code": "94521000",
+            "display": "Metastatic malignant neoplasm to rib (disorder)"
+          },
+          {
+            "code": "94522007",
+            "display": "Metastatic malignant neoplasm to right lower lobe of lung (disorder)"
+          },
+          {
+            "code": "94523002",
+            "display": "Metastatic malignant neoplasm to middle lobe of right lung (disorder)"
+          },
+          {
+            "code": "94524008",
+            "display": "Metastatic malignant neoplasm to right upper lobe of lung (disorder)"
+          },
+          {
+            "code": "94525009",
+            "display": "Metastatic malignant neoplasm to round ligament of uterus (disorder)"
+          },
+          {
+            "code": "94526005",
+            "display": "Metastatic malignant neoplasm to sacrococcygeal region (disorder)"
+          },
+          {
+            "code": "94527001",
+            "display": "Metastatic malignant neoplasm to sacrum (disorder)"
+          },
+          {
+            "code": "94528006",
+            "display": "Metastatic malignant neoplasm to scalene lymph nodes (disorder)"
+          },
+          {
+            "code": "94529003",
+            "display": "Metastatic malignant neoplasm to scapula (disorder)"
+          },
+          {
+            "code": "94530008",
+            "display": "Metastatic malignant neoplasm to sclera (disorder)"
+          },
+          {
+            "code": "94531007",
+            "display": "Metastatic malignant neoplasm to scrotum (disorder)"
+          },
+          {
+            "code": "94532000",
+            "display": "Metastatic malignant neoplasm to sebaceous gland (disorder)"
+          },
+          {
+            "code": "94533005",
+            "display": "Metastatic malignant neoplasm to second cuneiform bone of foot (disorder)"
+          },
+          {
+            "code": "94534004",
+            "display": "Metastatic malignant neoplasm to septum of nose (disorder)"
+          },
+          {
+            "code": "94535003",
+            "display": "Metastatic malignant neoplasm to short bone of lower limb (disorder)"
+          },
+          {
+            "code": "94536002",
+            "display": "Metastatic malignant neoplasm to short bone of upper limb (disorder)"
+          },
+          {
+            "code": "94537006",
+            "display": "Metastatic malignant neoplasm to shoulder (disorder)"
+          },
+          {
+            "code": "94538001",
+            "display": "Metastatic malignant neoplasm to sigmoid colon (disorder)"
+          },
+          {
+            "code": "94539009",
+            "display": "Metastatic malignant neoplasm to skin of abdomen (disorder)"
+          },
+          {
+            "code": "94540006",
+            "display": "Metastatic malignant neoplasm to skin of ankle (disorder)"
+          },
+          {
+            "code": "94542003",
+            "display": "Metastatic malignant neoplasm to skin of axilla (disorder)"
+          },
+          {
+            "code": "94543008",
+            "display": "Metastatic malignant neoplasm to skin of back (disorder)"
+          },
+          {
+            "code": "94544002",
+            "display": "Metastatic malignant neoplasm to skin of breast (disorder)"
+          },
+          {
+            "code": "94545001",
+            "display": "Metastatic malignant neoplasm to skin of buttock (disorder)"
+          },
+          {
+            "code": "94546000",
+            "display": "Metastatic malignant neoplasm to skin of cheek (disorder)"
+          },
+          {
+            "code": "94547009",
+            "display": "Metastatic malignant neoplasm to skin of chest (disorder)"
+          },
+          {
+            "code": "94548004",
+            "display": "Metastatic malignant neoplasm to skin of chin (disorder)"
+          },
+          {
+            "code": "94549007",
+            "display": "Metastatic malignant neoplasm to skin of ear (disorder)"
+          },
+          {
+            "code": "94550007",
+            "display": "Metastatic malignant neoplasm to skin of elbow (disorder)"
+          },
+          {
+            "code": "94551006",
+            "display": "Metastatic malignant neoplasm to skin of external auditory canal (disorder)"
+          },
+          {
+            "code": "94552004",
+            "display": "Metastatic malignant neoplasm to skin of eyebrow (disorder)"
+          },
+          {
+            "code": "94553009",
+            "display": "Metastatic malignant neoplasm to skin of eyelid (disorder)"
+          },
+          {
+            "code": "94554003",
+            "display": "Metastatic malignant neoplasm to skin of face (disorder)"
+          },
+          {
+            "code": "94555002",
+            "display": "Metastatic malignant neoplasm to skin of finger (disorder)"
+          },
+          {
+            "code": "94556001",
+            "display": "Metastatic malignant neoplasm to skin of foot (disorder)"
+          },
+          {
+            "code": "94557005",
+            "display": "Metastatic malignant neoplasm to skin of forearm (disorder)"
+          },
+          {
+            "code": "94558000",
+            "display": "Metastatic malignant neoplasm to skin of forehead (disorder)"
+          },
+          {
+            "code": "94559008",
+            "display": "Metastatic malignant neoplasm to skin of groin (disorder)"
+          },
+          {
+            "code": "94560003",
+            "display": "Metastatic malignant neoplasm to skin of hand (disorder)"
+          },
+          {
+            "code": "94561004",
+            "display": "Metastatic malignant neoplasm to skin of hip (disorder)"
+          },
+          {
+            "code": "94562006",
+            "display": "Metastatic malignant neoplasm to skin of knee (disorder)"
+          },
+          {
+            "code": "94564007",
+            "display": "Metastatic malignant neoplasm to skin of lip (disorder)"
+          },
+          {
+            "code": "94565008",
+            "display": "Metastatic malignant neoplasm to skin of lower limb (disorder)"
+          },
+          {
+            "code": "94566009",
+            "display": "Metastatic malignant neoplasm to skin of neck (disorder)"
+          },
+          {
+            "code": "94567000",
+            "display": "Metastatic malignant neoplasm to skin of nose (disorder)"
+          },
+          {
+            "code": "94568005",
+            "display": "Metastatic malignant neoplasm to skin of perineum (disorder)"
+          },
+          {
+            "code": "94569002",
+            "display": "Metastatic malignant neoplasm to skin of popliteal area (disorder)"
+          },
+          {
+            "code": "94570001",
+            "display": "Metastatic malignant neoplasm to skin of scalp (disorder)"
+          },
+          {
+            "code": "94571002",
+            "display": "Metastatic malignant neoplasm to skin of shoulder (disorder)"
+          },
+          {
+            "code": "94572009",
+            "display": "Metastatic malignant neoplasm to skin of temporal region (disorder)"
+          },
+          {
+            "code": "94573004",
+            "display": "Metastatic malignant neoplasm to skin of thigh (disorder)"
+          },
+          {
+            "code": "94574005",
+            "display": "Metastatic malignant neoplasm to skin of toe (disorder)"
+          },
+          {
+            "code": "94575006",
+            "display": "Metastatic malignant neoplasm to skin of trunk (disorder)"
+          },
+          {
+            "code": "94577003",
+            "display": "Metastatic malignant neoplasm to skin of upper limb (disorder)"
+          },
+          {
+            "code": "94578008",
+            "display": "Metastatic malignant neoplasm to skin of wrist (disorder)"
+          },
+          {
+            "code": "94579000",
+            "display": "Metastatic malignant neoplasm to skin (disorder)"
+          },
+          {
+            "code": "94580002",
+            "display": "Metastatic malignant neoplasm to small intestine (disorder)"
+          },
+          {
+            "code": "94581003",
+            "display": "Metastatic malignant neoplasm to soft palate (disorder)"
+          },
+          {
+            "code": "94582005",
+            "display": "Metastatic malignant neoplasm to soft tissues of abdomen (disorder)"
+          },
+          {
+            "code": "94583000",
+            "display": "Metastatic malignant neoplasm to soft tissues of axilla (disorder)"
+          },
+          {
+            "code": "94584006",
+            "display": "Metastatic malignant neoplasm to soft tissues of buttock (disorder)"
+          },
+          {
+            "code": "94585007",
+            "display": "Metastatic malignant neoplasm to soft tissues of face (disorder)"
+          },
+          {
+            "code": "94586008",
+            "display": "Metastatic malignant neoplasm to soft tissues of head (disorder)"
+          },
+          {
+            "code": "94587004",
+            "display": "Metastatic malignant neoplasm to soft tissues of hip (disorder)"
+          },
+          {
+            "code": "94588009",
+            "display": "Metastatic malignant neoplasm to soft tissues of inguinal region (disorder)"
+          },
+          {
+            "code": "94589001",
+            "display": "Metastatic malignant neoplasm to soft tissues of lower limb (disorder)"
+          },
+          {
+            "code": "94590005",
+            "display": "Metastatic malignant neoplasm to soft tissues of neck (disorder)"
+          },
+          {
+            "code": "94591009",
+            "display": "Metastatic malignant neoplasm to soft tissues of pelvis (disorder)"
+          },
+          {
+            "code": "94592002",
+            "display": "Metastatic malignant neoplasm to soft tissues of perineum (disorder)"
+          },
+          {
+            "code": "94593007",
+            "display": "Metastatic malignant neoplasm to soft tissues of shoulder (disorder)"
+          },
+          {
+            "code": "94594001",
+            "display": "Metastatic malignant neoplasm to soft tissues of thorax (disorder)"
+          },
+          {
+            "code": "94595000",
+            "display": "Metastatic malignant neoplasm to soft tissues of trunk (disorder)"
+          },
+          {
+            "code": "94596004",
+            "display": "Metastatic malignant neoplasm to soft tissues of upper limb (disorder)"
+          },
+          {
+            "code": "94597008",
+            "display": "Metastatic malignant neoplasm to spermatic cord (disorder)"
+          },
+          {
+            "code": "94598003",
+            "display": "Metastatic malignant neoplasm to sphenoid bone (disorder)"
+          },
+          {
+            "code": "94599006",
+            "display": "Metastatic malignant neoplasm to sphenoidal sinus (disorder)"
+          },
+          {
+            "code": "94600009",
+            "display": "Metastatic malignant neoplasm to spinal cord (disorder)"
+          },
+          {
+            "code": "94601008",
+            "display": "Metastatic malignant neoplasm to spinal meninges (disorder)"
+          },
+          {
+            "code": "94602001",
+            "display": "Metastatic malignant neoplasm to vertebral column (disorder)"
+          },
+          {
+            "code": "94603006",
+            "display": "Metastatic malignant neoplasm to spleen (disorder)"
+          },
+          {
+            "code": "94604000",
+            "display": "Metastatic malignant neoplasm to splenic flexure of colon (disorder)"
+          },
+          {
+            "code": "94605004",
+            "display": "Metastatic malignant neoplasm to sternum (disorder)"
+          },
+          {
+            "code": "94606003",
+            "display": "Metastatic malignant neoplasm to stomach (disorder)"
+          },
+          {
+            "code": "94607007",
+            "display": "Metastatic malignant neoplasm to subglottis (disorder)"
+          },
+          {
+            "code": "94608002",
+            "display": "Metastatic malignant neoplasm to sublingual gland (disorder)"
+          },
+          {
+            "code": "94609005",
+            "display": "Metastatic malignant neoplasm to submandibular lymph nodes (disorder)"
+          },
+          {
+            "code": "94610000",
+            "display": "Metastatic malignant neoplasm to submaxillary gland (disorder)"
+          },
+          {
+            "code": "94611001",
+            "display": "Metastatic malignant neoplasm to submental lymph nodes (disorder)"
+          },
+          {
+            "code": "94612008",
+            "display": "Metastatic malignant neoplasm to superficial inguinal lymph nodes (disorder)"
+          },
+          {
+            "code": "94613003",
+            "display": "Metastatic malignant neoplasm to superior wall of nasopharynx (disorder)"
+          },
+          {
+            "code": "94614009",
+            "display": "Metastatic malignant neoplasm to supraclavicular lymph nodes (disorder)"
+          },
+          {
+            "code": "94615005",
+            "display": "Metastatic malignant neoplasm to supraclavicular region (disorder)"
+          },
+          {
+            "code": "94616006",
+            "display": "Metastatic malignant neoplasm to supraglottis (disorder)"
+          },
+          {
+            "code": "94617002",
+            "display": "Metastatic malignant neoplasm to sweat gland (disorder)"
+          },
+          {
+            "code": "94618007",
+            "display": "Metastatic malignant neoplasm to tail of pancreas (disorder)"
+          },
+          {
+            "code": "94619004",
+            "display": "Metastatic malignant neoplasm to talus (disorder)"
+          },
+          {
+            "code": "94620005",
+            "display": "Metastatic malignant neoplasm to tarsal bone (disorder)"
+          },
+          {
+            "code": "94621009",
+            "display": "Metastatic malignant neoplasm to temporal bone (disorder)"
+          },
+          {
+            "code": "94622002",
+            "display": "Metastatic malignant neoplasm to temporal lobe (disorder)"
+          },
+          {
+            "code": "94623007",
+            "display": "Metastatic malignant neoplasm to testis (disorder)"
+          },
+          {
+            "code": "94624001",
+            "display": "Metastatic malignant neoplasm to the mesentery (disorder)"
+          },
+          {
+            "code": "94625000",
+            "display": "Metastatic malignant neoplasm to the mesocolon (disorder)"
+          },
+          {
+            "code": "94626004",
+            "display": "Metastatic malignant neoplasm to omentum (disorder)"
+          },
+          {
+            "code": "94627008",
+            "display": "Metastatic malignant neoplasm to peritoneum (disorder)"
+          },
+          {
+            "code": "94628003",
+            "display": "Metastatic malignant neoplasm to retroperitoneum (disorder)"
+          },
+          {
+            "code": "94629006",
+            "display": "Metastatic malignant neoplasm to thigh (disorder)"
+          },
+          {
+            "code": "94630001",
+            "display": "Metastatic malignant neoplasm to third cuneiform bone of foot (disorder)"
+          },
+          {
+            "code": "94631002",
+            "display": "Metastatic malignant neoplasm to thoracic esophagus (disorder)"
+          },
+          {
+            "code": "94632009",
+            "display": "Metastatic malignant neoplasm to thymus (disorder)"
+          },
+          {
+            "code": "94633004",
+            "display": "Metastatic malignant neoplasm to thyroglossal duct (disorder)"
+          },
+          {
+            "code": "94634005",
+            "display": "Metastatic malignant neoplasm to thyroid gland (disorder)"
+          },
+          {
+            "code": "94635006",
+            "display": "Metastatic malignant neoplasm to tibia (disorder)"
+          },
+          {
+            "code": "94636007",
+            "display": "Metastatic malignant neoplasm to tibial lymph nodes (disorder)"
+          },
+          {
+            "code": "94637003",
+            "display": "Metastatic malignant neoplasm to tip and lateral border of tongue (disorder)"
+          },
+          {
+            "code": "94638008",
+            "display": "Metastatic malignant neoplasm to tongue (disorder)"
+          },
+          {
+            "code": "94639000",
+            "display": "Metastatic malignant neoplasm to tonsillar fossa (disorder)"
+          },
+          {
+            "code": "94640003",
+            "display": "Metastatic malignant neoplasm to tonsillar pillar (disorder)"
+          },
+          {
+            "code": "94641004",
+            "display": "Metastatic malignant neoplasm to trachea (disorder)"
+          },
+          {
+            "code": "94642006",
+            "display": "Metastatic malignant neoplasm to tracheobronchial lymph nodes (disorder)"
+          },
+          {
+            "code": "94643001",
+            "display": "Metastatic malignant neoplasm to transverse colon (disorder)"
+          },
+          {
+            "code": "94644007",
+            "display": "Metastatic malignant neoplasm to trapezium (disorder)"
+          },
+          {
+            "code": "94645008",
+            "display": "Metastatic malignant neoplasm to trapezoid bone (disorder)"
+          },
+          {
+            "code": "94646009",
+            "display": "Metastatic malignant neoplasm to trigeminal nerve (disorder)"
+          },
+          {
+            "code": "94647000",
+            "display": "Metastatic malignant neoplasm to trigone of urinary bladder (disorder)"
+          },
+          {
+            "code": "94648005",
+            "display": "Metastatic malignant neoplasm to trochlear nerve (disorder)"
+          },
+          {
+            "code": "94649002",
+            "display": "Metastatic malignant neoplasm to trunk (disorder)"
+          },
+          {
+            "code": "94650002",
+            "display": "Metastatic malignant neoplasm to ulna (disorder)"
+          },
+          {
+            "code": "94651003",
+            "display": "Metastatic malignant neoplasm to undescended testis (disorder)"
+          },
+          {
+            "code": "94652005",
+            "display": "Metastatic malignant neoplasm to upper gum (disorder)"
+          },
+          {
+            "code": "94654006",
+            "display": "Metastatic malignant neoplasm to upper limb (disorder)"
+          },
+          {
+            "code": "94656008",
+            "display": "Metastatic malignant neoplasm to upper respiratory tract (disorder)"
+          },
+          {
+            "code": "94657004",
+            "display": "Metastatic malignant neoplasm to upper third of esophagus (disorder)"
+          },
+          {
+            "code": "94658009",
+            "display": "Metastatic malignant neoplasm to urachus (disorder)"
+          },
+          {
+            "code": "94659001",
+            "display": "Metastatic malignant neoplasm to ureter (disorder)"
+          },
+          {
+            "code": "94660006",
+            "display": "Metastatic malignant neoplasm to ureteric orifice of urinary bladder (disorder)"
+          },
+          {
+            "code": "94661005",
+            "display": "Metastatic malignant neoplasm to urethra (disorder)"
+          },
+          {
+            "code": "94662003",
+            "display": "Metastatic malignant neoplasm to urinary bladder neck (disorder)"
+          },
+          {
+            "code": "94663008",
+            "display": "Metastatic malignant neoplasm to urinary system (disorder)"
+          },
+          {
+            "code": "94664002",
+            "display": "Metastatic malignant neoplasm to uterine adnexa (disorder)"
+          },
+          {
+            "code": "94665001",
+            "display": "Metastatic malignant neoplasm to uterus (disorder)"
+          },
+          {
+            "code": "94666000",
+            "display": "Metastatic malignant neoplasm to uveal tract (disorder)"
+          },
+          {
+            "code": "94667009",
+            "display": "Metastatic malignant neoplasm to uvula (disorder)"
+          },
+          {
+            "code": "94668004",
+            "display": "Metastatic malignant neoplasm to vagina (disorder)"
+          },
+          {
+            "code": "94669007",
+            "display": "Metastatic malignant neoplasm to vagus nerve (disorder)"
+          },
+          {
+            "code": "94670008",
+            "display": "Metastatic malignant neoplasm to vallecula (disorder)"
+          },
+          {
+            "code": "94671007",
+            "display": "Metastatic malignant neoplasm to vas deferens (disorder)"
+          },
+          {
+            "code": "94672000",
+            "display": "Metastatic malignant neoplasm to ventral surface of tongue (disorder)"
+          },
+          {
+            "code": "94673005",
+            "display": "Metastatic malignant neoplasm to vermilion border of lip (disorder)"
+          },
+          {
+            "code": "94674004",
+            "display": "Metastatic malignant neoplasm to vermilion border of lower lip (disorder)"
+          },
+          {
+            "code": "94675003",
+            "display": "Metastatic malignant neoplasm to vermilion border of upper lip (disorder)"
+          },
+          {
+            "code": "94676002",
+            "display": "Metastatic malignant neoplasm to vestibule of mouth (disorder)"
+          },
+          {
+            "code": "94677006",
+            "display": "Metastatic malignant neoplasm to vestibule of nose (disorder)"
+          },
+          {
+            "code": "94678001",
+            "display": "Metastatic malignant neoplasm to visceral pleura (disorder)"
+          },
+          {
+            "code": "94679009",
+            "display": "Metastatic malignant neoplasm to vocal cord (disorder)"
+          },
+          {
+            "code": "94680007",
+            "display": "Metastatic malignant neoplasm to vomer (disorder)"
+          },
+          {
+            "code": "94681006",
+            "display": "Metastatic malignant neoplasm to vulva (disorder)"
+          },
+          {
+            "code": "94682004",
+            "display": "Metastatic malignant neoplasm to Waldeyer's ring (disorder)"
+          },
+          {
+            "code": "94683009",
+            "display": "Metastatic malignant neoplasm to zygomatic bone (disorder)"
+          },
+          {
+            "code": "96311000119109",
+            "display": "Exacerbation of congestive heart failure (disorder)"
+          },
+          {
+            "code": "96901000119105",
+            "display": "Prostate cancer metastatic to eye (disorder)"
+          },
+          {
+            "code": "97051000119105",
+            "display": "Malignant melanoma metastatic to pancreas (disorder)"
+          },
+          {
+            "code": "971918681000119107",
+            "display": "Chronic respiratory failure due to obstructive sleep apnea (disorder)"
+          },
+          {
+            "code": "97751000119108",
+            "display": "Altered behavior in Alzheimer's disease (disorder)"
+          },
+          {
+            "code": "99131000119108",
+            "display": "Astrocytoma of cerebrum (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "A81.00",
+            "display": "Creutzfeldt-Jakob disease, unspecified"
+          },
+          {
+            "code": "A81.01",
+            "display": "Variant Creutzfeldt-Jakob disease"
+          },
+          {
+            "code": "A81.09",
+            "display": "Other Creutzfeldt-Jakob disease"
+          },
+          {
+            "code": "C25.0",
+            "display": "Malignant neoplasm of head of pancreas"
+          },
+          {
+            "code": "C25.1",
+            "display": "Malignant neoplasm of body of pancreas"
+          },
+          {
+            "code": "C25.2",
+            "display": "Malignant neoplasm of tail of pancreas"
+          },
+          {
+            "code": "C25.3",
+            "display": "Malignant neoplasm of pancreatic duct"
+          },
+          {
+            "code": "C25.4",
+            "display": "Malignant neoplasm of endocrine pancreas"
+          },
+          {
+            "code": "C25.7",
+            "display": "Malignant neoplasm of other parts of pancreas"
+          },
+          {
+            "code": "C25.8",
+            "display": "Malignant neoplasm of overlapping sites of pancreas"
+          },
+          {
+            "code": "C25.9",
+            "display": "Malignant neoplasm of pancreas, unspecified"
+          },
+          {
+            "code": "C71.0",
+            "display": "Malignant neoplasm of cerebrum, except lobes and ventricles"
+          },
+          {
+            "code": "C71.1",
+            "display": "Malignant neoplasm of frontal lobe"
+          },
+          {
+            "code": "C71.2",
+            "display": "Malignant neoplasm of temporal lobe"
+          },
+          {
+            "code": "C71.3",
+            "display": "Malignant neoplasm of parietal lobe"
+          },
+          {
+            "code": "C71.4",
+            "display": "Malignant neoplasm of occipital lobe"
+          },
+          {
+            "code": "C71.5",
+            "display": "Malignant neoplasm of cerebral ventricle"
+          },
+          {
+            "code": "C71.6",
+            "display": "Malignant neoplasm of cerebellum"
+          },
+          {
+            "code": "C71.7",
+            "display": "Malignant neoplasm of brain stem"
+          },
+          {
+            "code": "C71.8",
+            "display": "Malignant neoplasm of overlapping sites of brain"
+          },
+          {
+            "code": "C71.9",
+            "display": "Malignant neoplasm of brain, unspecified"
+          },
+          {
+            "code": "C77.0",
+            "display": "Secondary and unspecified malignant neoplasm of lymph nodes of head, face and neck"
+          },
+          {
+            "code": "C77.1",
+            "display": "Secondary and unspecified malignant neoplasm of intrathoracic lymph nodes"
+          },
+          {
+            "code": "C77.2",
+            "display": "Secondary and unspecified malignant neoplasm of intra-abdominal lymph nodes"
+          },
+          {
+            "code": "C77.3",
+            "display": "Secondary and unspecified malignant neoplasm of axilla and upper limb lymph nodes"
+          },
+          {
+            "code": "C77.4",
+            "display": "Secondary and unspecified malignant neoplasm of inguinal and lower limb lymph nodes"
+          },
+          {
+            "code": "C77.5",
+            "display": "Secondary and unspecified malignant neoplasm of intrapelvic lymph nodes"
+          },
+          {
+            "code": "C77.8",
+            "display": "Secondary and unspecified malignant neoplasm of lymph nodes of multiple regions"
+          },
+          {
+            "code": "C77.9",
+            "display": "Secondary and unspecified malignant neoplasm of lymph node, unspecified"
+          },
+          {
+            "code": "C78.00",
+            "display": "Secondary malignant neoplasm of unspecified lung"
+          },
+          {
+            "code": "C78.01",
+            "display": "Secondary malignant neoplasm of right lung"
+          },
+          {
+            "code": "C78.02",
+            "display": "Secondary malignant neoplasm of left lung"
+          },
+          {
+            "code": "C78.1",
+            "display": "Secondary malignant neoplasm of mediastinum"
+          },
+          {
+            "code": "C78.2",
+            "display": "Secondary malignant neoplasm of pleura"
+          },
+          {
+            "code": "C78.30",
+            "display": "Secondary malignant neoplasm of unspecified respiratory organ"
+          },
+          {
+            "code": "C78.39",
+            "display": "Secondary malignant neoplasm of other respiratory organs"
+          },
+          {
+            "code": "C78.4",
+            "display": "Secondary malignant neoplasm of small intestine"
+          },
+          {
+            "code": "C78.5",
+            "display": "Secondary malignant neoplasm of large intestine and rectum"
+          },
+          {
+            "code": "C78.6",
+            "display": "Secondary malignant neoplasm of retroperitoneum and peritoneum"
+          },
+          {
+            "code": "C78.7",
+            "display": "Secondary malignant neoplasm of liver and intrahepatic bile duct"
+          },
+          {
+            "code": "C78.80",
+            "display": "Secondary malignant neoplasm of unspecified digestive organ"
+          },
+          {
+            "code": "C78.89",
+            "display": "Secondary malignant neoplasm of other digestive organs"
+          },
+          {
+            "code": "C79.00",
+            "display": "Secondary malignant neoplasm of unspecified kidney and renal pelvis"
+          },
+          {
+            "code": "C79.01",
+            "display": "Secondary malignant neoplasm of right kidney and renal pelvis"
+          },
+          {
+            "code": "C79.02",
+            "display": "Secondary malignant neoplasm of left kidney and renal pelvis"
+          },
+          {
+            "code": "C79.10",
+            "display": "Secondary malignant neoplasm of unspecified urinary organs"
+          },
+          {
+            "code": "C79.11",
+            "display": "Secondary malignant neoplasm of bladder"
+          },
+          {
+            "code": "C79.19",
+            "display": "Secondary malignant neoplasm of other urinary organs"
+          },
+          {
+            "code": "C79.2",
+            "display": "Secondary malignant neoplasm of skin"
+          },
+          {
+            "code": "C79.31",
+            "display": "Secondary malignant neoplasm of brain"
+          },
+          {
+            "code": "C79.32",
+            "display": "Secondary malignant neoplasm of cerebral meninges"
+          },
+          {
+            "code": "C79.40",
+            "display": "Secondary malignant neoplasm of unspecified part of nervous system"
+          },
+          {
+            "code": "C79.49",
+            "display": "Secondary malignant neoplasm of other parts of nervous system"
+          },
+          {
+            "code": "C79.51",
+            "display": "Secondary malignant neoplasm of bone"
+          },
+          {
+            "code": "C79.52",
+            "display": "Secondary malignant neoplasm of bone marrow"
+          },
+          {
+            "code": "C79.60",
+            "display": "Secondary malignant neoplasm of unspecified ovary"
+          },
+          {
+            "code": "C79.61",
+            "display": "Secondary malignant neoplasm of right ovary"
+          },
+          {
+            "code": "C79.62",
+            "display": "Secondary malignant neoplasm of left ovary"
+          },
+          {
+            "code": "C79.63",
+            "display": "Secondary malignant neoplasm of bilateral ovaries"
+          },
+          {
+            "code": "C79.70",
+            "display": "Secondary malignant neoplasm of unspecified adrenal gland"
+          },
+          {
+            "code": "C79.71",
+            "display": "Secondary malignant neoplasm of right adrenal gland"
+          },
+          {
+            "code": "C79.72",
+            "display": "Secondary malignant neoplasm of left adrenal gland"
+          },
+          {
+            "code": "C79.81",
+            "display": "Secondary malignant neoplasm of breast"
+          },
+          {
+            "code": "C79.82",
+            "display": "Secondary malignant neoplasm of genital organs"
+          },
+          {
+            "code": "C79.89",
+            "display": "Secondary malignant neoplasm of other specified sites"
+          },
+          {
+            "code": "C79.9",
+            "display": "Secondary malignant neoplasm of unspecified site"
+          },
+          {
+            "code": "C91.00",
+            "display": "Acute lymphoblastic leukemia not having achieved remission"
+          },
+          {
+            "code": "C91.02",
+            "display": "Acute lymphoblastic leukemia, in relapse"
+          },
+          {
+            "code": "C92.00",
+            "display": "Acute myeloblastic leukemia, not having achieved remission"
+          },
+          {
+            "code": "C92.02",
+            "display": "Acute myeloblastic leukemia, in relapse"
+          },
+          {
+            "code": "C93.00",
+            "display": "Acute monoblastic/monocytic leukemia, not having achieved remission"
+          },
+          {
+            "code": "C93.02",
+            "display": "Acute monoblastic/monocytic leukemia, in relapse"
+          },
+          {
+            "code": "C93.90",
+            "display": "Monocytic leukemia, unspecified, not having achieved remission"
+          },
+          {
+            "code": "C93.92",
+            "display": "Monocytic leukemia, unspecified in relapse"
+          },
+          {
+            "code": "C93.Z0",
+            "display": "Other monocytic leukemia, not having achieved remission"
+          },
+          {
+            "code": "C93.Z2",
+            "display": "Other monocytic leukemia, in relapse"
+          },
+          {
+            "code": "C94.30",
+            "display": "Mast cell leukemia not having achieved remission"
+          },
+          {
+            "code": "C94.32",
+            "display": "Mast cell leukemia, in relapse"
+          },
+          {
+            "code": "F01.50",
+            "display": "Vascular dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F01.511",
+            "display": "Vascular dementia, unspecified severity, with agitation"
+          },
+          {
+            "code": "F01.518",
+            "display": "Vascular dementia, unspecified severity, with other behavioral disturbance"
+          },
+          {
+            "code": "F01.52",
+            "display": "Vascular dementia, unspecified severity, with psychotic disturbance"
+          },
+          {
+            "code": "F01.53",
+            "display": "Vascular dementia, unspecified severity, with mood disturbance"
+          },
+          {
+            "code": "F01.54",
+            "display": "Vascular dementia, unspecified severity, with anxiety"
+          },
+          {
+            "code": "F01.A0",
+            "display": "Vascular dementia, mild, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F01.A11",
+            "display": "Vascular dementia, mild, with agitation"
+          },
+          {
+            "code": "F01.A18",
+            "display": "Vascular dementia, mild, with other behavioral disturbance"
+          },
+          {
+            "code": "F01.A2",
+            "display": "Vascular dementia, mild, with psychotic disturbance"
+          },
+          {
+            "code": "F01.A3",
+            "display": "Vascular dementia, mild, with mood disturbance"
+          },
+          {
+            "code": "F01.A4",
+            "display": "Vascular dementia, mild, with anxiety"
+          },
+          {
+            "code": "F01.B0",
+            "display": "Vascular dementia, moderate, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F01.B11",
+            "display": "Vascular dementia, moderate, with agitation"
+          },
+          {
+            "code": "F01.B18",
+            "display": "Vascular dementia, moderate, with other behavioral disturbance"
+          },
+          {
+            "code": "F01.B2",
+            "display": "Vascular dementia, moderate, with psychotic disturbance"
+          },
+          {
+            "code": "F01.B3",
+            "display": "Vascular dementia, moderate, with mood disturbance"
+          },
+          {
+            "code": "F01.B4",
+            "display": "Vascular dementia, moderate, with anxiety"
+          },
+          {
+            "code": "F01.C0",
+            "display": "Vascular dementia, severe, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F01.C11",
+            "display": "Vascular dementia, severe, with agitation"
+          },
+          {
+            "code": "F01.C18",
+            "display": "Vascular dementia, severe, with other behavioral disturbance"
+          },
+          {
+            "code": "F01.C2",
+            "display": "Vascular dementia, severe, with psychotic disturbance"
+          },
+          {
+            "code": "F01.C3",
+            "display": "Vascular dementia, severe, with mood disturbance"
+          },
+          {
+            "code": "F01.C4",
+            "display": "Vascular dementia, severe, with anxiety"
+          },
+          {
+            "code": "F02.80",
+            "display": "Dementia in other diseases classified elsewhere, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F02.811",
+            "display": "Dementia in other diseases classified elsewhere, unspecified severity, with agitation"
+          },
+          {
+            "code": "F02.818",
+            "display": "Dementia in other diseases classified elsewhere, unspecified severity, with other behavioral disturbance"
+          },
+          {
+            "code": "F02.82",
+            "display": "Dementia in other diseases classified elsewhere, unspecified severity, with psychotic disturbance"
+          },
+          {
+            "code": "F02.83",
+            "display": "Dementia in other diseases classified elsewhere, unspecified severity, with mood disturbance"
+          },
+          {
+            "code": "F02.84",
+            "display": "Dementia in other diseases classified elsewhere, unspecified severity, with anxiety"
+          },
+          {
+            "code": "F02.A0",
+            "display": "Dementia in other diseases classified elsewhere, mild, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F02.A11",
+            "display": "Dementia in other diseases classified elsewhere, mild, with agitation"
+          },
+          {
+            "code": "F02.A18",
+            "display": "Dementia in other diseases classified elsewhere, mild, with other behavioral disturbance"
+          },
+          {
+            "code": "F02.A2",
+            "display": "Dementia in other diseases classified elsewhere, mild, with psychotic disturbance"
+          },
+          {
+            "code": "F02.A3",
+            "display": "Dementia in other diseases classified elsewhere, mild, with mood disturbance"
+          },
+          {
+            "code": "F02.A4",
+            "display": "Dementia in other diseases classified elsewhere, mild, with anxiety"
+          },
+          {
+            "code": "F02.B0",
+            "display": "Dementia in other diseases classified elsewhere, moderate, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F02.B11",
+            "display": "Dementia in other diseases classified elsewhere, moderate, with agitation"
+          },
+          {
+            "code": "F02.B18",
+            "display": "Dementia in other diseases classified elsewhere, moderate, with other behavioral disturbance"
+          },
+          {
+            "code": "F02.B2",
+            "display": "Dementia in other diseases classified elsewhere, moderate, with psychotic disturbance"
+          },
+          {
+            "code": "F02.B3",
+            "display": "Dementia in other diseases classified elsewhere, moderate, with mood disturbance"
+          },
+          {
+            "code": "F02.B4",
+            "display": "Dementia in other diseases classified elsewhere, moderate, with anxiety"
+          },
+          {
+            "code": "F02.C0",
+            "display": "Dementia in other diseases classified elsewhere, severe, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F02.C11",
+            "display": "Dementia in other diseases classified elsewhere, severe, with agitation"
+          },
+          {
+            "code": "F02.C18",
+            "display": "Dementia in other diseases classified elsewhere, severe, with other behavioral disturbance"
+          },
+          {
+            "code": "F02.C2",
+            "display": "Dementia in other diseases classified elsewhere, severe, with psychotic disturbance"
+          },
+          {
+            "code": "F02.C3",
+            "display": "Dementia in other diseases classified elsewhere, severe, with mood disturbance"
+          },
+          {
+            "code": "F02.C4",
+            "display": "Dementia in other diseases classified elsewhere, severe, with anxiety"
+          },
+          {
+            "code": "F03.90",
+            "display": "Unspecified dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F03.911",
+            "display": "Unspecified dementia, unspecified severity, with agitation"
+          },
+          {
+            "code": "F03.918",
+            "display": "Unspecified dementia, unspecified severity, with other behavioral disturbance"
+          },
+          {
+            "code": "F03.92",
+            "display": "Unspecified dementia, unspecified severity, with psychotic disturbance"
+          },
+          {
+            "code": "F03.93",
+            "display": "Unspecified dementia, unspecified severity, with mood disturbance"
+          },
+          {
+            "code": "F03.94",
+            "display": "Unspecified dementia, unspecified severity, with anxiety"
+          },
+          {
+            "code": "F03.A0",
+            "display": "Unspecified dementia, mild, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F03.A11",
+            "display": "Unspecified dementia, mild, with agitation"
+          },
+          {
+            "code": "F03.A18",
+            "display": "Unspecified dementia, mild, with other behavioral disturbance"
+          },
+          {
+            "code": "F03.A2",
+            "display": "Unspecified dementia, mild, with psychotic disturbance"
+          },
+          {
+            "code": "F03.A3",
+            "display": "Unspecified dementia, mild, with mood disturbance"
+          },
+          {
+            "code": "F03.A4",
+            "display": "Unspecified dementia, mild, with anxiety"
+          },
+          {
+            "code": "F03.B0",
+            "display": "Unspecified dementia, moderate, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F03.B11",
+            "display": "Unspecified dementia, moderate, with agitation"
+          },
+          {
+            "code": "F03.B18",
+            "display": "Unspecified dementia, moderate, with other behavioral disturbance"
+          },
+          {
+            "code": "F03.B2",
+            "display": "Unspecified dementia, moderate, with psychotic disturbance"
+          },
+          {
+            "code": "F03.B3",
+            "display": "Unspecified dementia, moderate, with mood disturbance"
+          },
+          {
+            "code": "F03.B4",
+            "display": "Unspecified dementia, moderate, with anxiety"
+          },
+          {
+            "code": "F03.C0",
+            "display": "Unspecified dementia, severe, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+          },
+          {
+            "code": "F03.C11",
+            "display": "Unspecified dementia, severe, with agitation"
+          },
+          {
+            "code": "F03.C18",
+            "display": "Unspecified dementia, severe, with other behavioral disturbance"
+          },
+          {
+            "code": "F03.C2",
+            "display": "Unspecified dementia, severe, with psychotic disturbance"
+          },
+          {
+            "code": "F03.C3",
+            "display": "Unspecified dementia, severe, with mood disturbance"
+          },
+          {
+            "code": "F03.C4",
+            "display": "Unspecified dementia, severe, with anxiety"
+          },
+          {
+            "code": "F04",
+            "display": "Amnestic disorder due to known physiological condition"
+          },
+          {
+            "code": "F10.27",
+            "display": "Alcohol dependence with alcohol-induced persisting dementia"
+          },
+          {
+            "code": "F10.96",
+            "display": "Alcohol use, unspecified with alcohol-induced persisting amnestic disorder"
+          },
+          {
+            "code": "F10.97",
+            "display": "Alcohol use, unspecified with alcohol-induced persisting dementia"
+          },
+          {
+            "code": "G10",
+            "display": "Huntington's disease"
+          },
+          {
+            "code": "G12.21",
+            "display": "Amyotrophic lateral sclerosis"
+          },
+          {
+            "code": "G20.A1",
+            "display": "Parkinson's disease without dyskinesia, without mention of fluctuations"
+          },
+          {
+            "code": "G20.A2",
+            "display": "Parkinson's disease without dyskinesia, with fluctuations"
+          },
+          {
+            "code": "G20.B1",
+            "display": "Parkinson's disease with dyskinesia, without mention of fluctuations"
+          },
+          {
+            "code": "G20.B2",
+            "display": "Parkinson's disease with dyskinesia, with fluctuations"
+          },
+          {
+            "code": "G20.C",
+            "display": "Parkinsonism, unspecified"
+          },
+          {
+            "code": "G30.0",
+            "display": "Alzheimer's disease with early onset"
+          },
+          {
+            "code": "G30.1",
+            "display": "Alzheimer's disease with late onset"
+          },
+          {
+            "code": "G30.8",
+            "display": "Other Alzheimer's disease"
+          },
+          {
+            "code": "G30.9",
+            "display": "Alzheimer's disease, unspecified"
+          },
+          {
+            "code": "G31.01",
+            "display": "Pick's disease"
+          },
+          {
+            "code": "G31.09",
+            "display": "Other frontotemporal neurocognitive disorder"
+          },
+          {
+            "code": "G31.83",
+            "display": "Neurocognitive disorder with Lewy bodies"
+          },
+          {
+            "code": "G35",
+            "display": "Multiple sclerosis"
+          },
+          {
+            "code": "I09.81",
+            "display": "Rheumatic heart failure"
+          },
+          {
+            "code": "I11.0",
+            "display": "Hypertensive heart disease with heart failure"
+          },
+          {
+            "code": "I12.0",
+            "display": "Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease"
+          },
+          {
+            "code": "I13.0",
+            "display": "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"
+          },
+          {
+            "code": "I13.11",
+            "display": "Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease"
+          },
+          {
+            "code": "I13.2",
+            "display": "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease"
+          },
+          {
+            "code": "I50.1",
+            "display": "Left ventricular failure, unspecified"
+          },
+          {
+            "code": "I50.20",
+            "display": "Unspecified systolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.21",
+            "display": "Acute systolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.22",
+            "display": "Chronic systolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.23",
+            "display": "Acute on chronic systolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.30",
+            "display": "Unspecified diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.31",
+            "display": "Acute diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.32",
+            "display": "Chronic diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.33",
+            "display": "Acute on chronic diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.40",
+            "display": "Unspecified combined systolic (congestive) and diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.41",
+            "display": "Acute combined systolic (congestive) and diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.42",
+            "display": "Chronic combined systolic (congestive) and diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.43",
+            "display": "Acute on chronic combined systolic (congestive) and diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.810",
+            "display": "Right heart failure, unspecified"
+          },
+          {
+            "code": "I50.811",
+            "display": "Acute right heart failure"
+          },
+          {
+            "code": "I50.812",
+            "display": "Chronic right heart failure"
+          },
+          {
+            "code": "I50.813",
+            "display": "Acute on chronic right heart failure"
+          },
+          {
+            "code": "I50.814",
+            "display": "Right heart failure due to left heart failure"
+          },
+          {
+            "code": "I50.82",
+            "display": "Biventricular heart failure"
+          },
+          {
+            "code": "I50.83",
+            "display": "High output heart failure"
+          },
+          {
+            "code": "I50.84",
+            "display": "End stage heart failure"
+          },
+          {
+            "code": "I50.89",
+            "display": "Other heart failure"
+          },
+          {
+            "code": "I50.9",
+            "display": "Heart failure, unspecified"
+          },
+          {
+            "code": "J43.0",
+            "display": "Unilateral pulmonary emphysema [MacLeod's syndrome]"
+          },
+          {
+            "code": "J43.1",
+            "display": "Panlobular emphysema"
+          },
+          {
+            "code": "J43.2",
+            "display": "Centrilobular emphysema"
+          },
+          {
+            "code": "J43.8",
+            "display": "Other emphysema"
+          },
+          {
+            "code": "J43.9",
+            "display": "Emphysema, unspecified"
+          },
+          {
+            "code": "J68.4",
+            "display": "Chronic respiratory conditions due to chemicals, gases, fumes and vapors"
+          },
+          {
+            "code": "J84.10",
+            "display": "Pulmonary fibrosis, unspecified"
+          },
+          {
+            "code": "J84.112",
+            "display": "Idiopathic pulmonary fibrosis"
+          },
+          {
+            "code": "J84.170",
+            "display": "Interstitial lung disease with progressive fibrotic phenotype in diseases classified elsewhere"
+          },
+          {
+            "code": "J84.178",
+            "display": "Other interstitial pulmonary diseases with fibrosis in diseases classified elsewhere"
+          },
+          {
+            "code": "J96.10",
+            "display": "Chronic respiratory failure, unspecified whether with hypoxia or hypercapnia"
+          },
+          {
+            "code": "J96.11",
+            "display": "Chronic respiratory failure with hypoxia"
+          },
+          {
+            "code": "J96.12",
+            "display": "Chronic respiratory failure with hypercapnia"
+          },
+          {
+            "code": "J96.20",
+            "display": "Acute and chronic respiratory failure, unspecified whether with hypoxia or hypercapnia"
+          },
+          {
+            "code": "J96.21",
+            "display": "Acute and chronic respiratory failure with hypoxia"
+          },
+          {
+            "code": "J96.22",
+            "display": "Acute and chronic respiratory failure with hypercapnia"
+          },
+          {
+            "code": "J96.90",
+            "display": "Respiratory failure, unspecified, unspecified whether with hypoxia or hypercapnia"
+          },
+          {
+            "code": "J96.91",
+            "display": "Respiratory failure, unspecified with hypoxia"
+          },
+          {
+            "code": "J96.92",
+            "display": "Respiratory failure, unspecified with hypercapnia"
+          },
+          {
+            "code": "J98.2",
+            "display": "Interstitial emphysema"
+          },
+          {
+            "code": "J98.3",
+            "display": "Compensatory emphysema"
+          },
+          {
+            "code": "K70.10",
+            "display": "Alcoholic hepatitis without ascites"
+          },
+          {
+            "code": "K70.11",
+            "display": "Alcoholic hepatitis with ascites"
+          },
+          {
+            "code": "K70.2",
+            "display": "Alcoholic fibrosis and sclerosis of liver"
+          },
+          {
+            "code": "K70.30",
+            "display": "Alcoholic cirrhosis of liver without ascites"
+          },
+          {
+            "code": "K70.31",
+            "display": "Alcoholic cirrhosis of liver with ascites"
+          },
+          {
+            "code": "K70.40",
+            "display": "Alcoholic hepatic failure without coma"
+          },
+          {
+            "code": "K70.41",
+            "display": "Alcoholic hepatic failure with coma"
+          },
+          {
+            "code": "K70.9",
+            "display": "Alcoholic liver disease, unspecified"
+          },
+          {
+            "code": "K74.00",
+            "display": "Hepatic fibrosis, unspecified"
+          },
+          {
+            "code": "K74.01",
+            "display": "Hepatic fibrosis, early fibrosis"
+          },
+          {
+            "code": "K74.02",
+            "display": "Hepatic fibrosis, advanced fibrosis"
+          },
+          {
+            "code": "K74.1",
+            "display": "Hepatic sclerosis"
+          },
+          {
+            "code": "K74.2",
+            "display": "Hepatic fibrosis with hepatic sclerosis"
+          },
+          {
+            "code": "K74.4",
+            "display": "Secondary biliary cirrhosis"
+          },
+          {
+            "code": "K74.5",
+            "display": "Biliary cirrhosis, unspecified"
+          },
+          {
+            "code": "K74.60",
+            "display": "Unspecified cirrhosis of liver"
+          },
+          {
+            "code": "K74.69",
+            "display": "Other cirrhosis of liver"
+          },
+          {
+            "code": "N18.5",
+            "display": "Chronic kidney disease, stage 5"
+          },
+          {
+            "code": "N18.6",
+            "display": "End stage renal disease"
           }
         ]
       }

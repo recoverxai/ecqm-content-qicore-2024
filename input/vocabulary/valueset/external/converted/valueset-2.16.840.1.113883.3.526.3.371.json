@@ -316,6 +316,10 @@
             "display": "Anastomosis of left internal thoracic artery to third obtuse marginal branch of circumflex branch of left coronary artery (procedure)"
           },
           {
+            "code": "1287561002",
+            "display": "Coronary artery bypass using robotic assistance (procedure)"
+          },
+          {
             "code": "14323007",
             "display": "Aortocoronary bypass of three coronary arteries (procedure)"
           },
@@ -455,6 +459,14 @@
           {
             "code": "33516",
             "display": "Coronary artery bypass, vein only; 6 or more coronary venous grafts"
+          },
+          {
+            "code": "33522",
+            "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 5 venous grafts (List separately in addition to code for primary procedure)"
+          },
+          {
+            "code": "33523",
+            "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 6 or more venous grafts (List separately in addition to code for primary procedure)"
           },
           {
             "code": "33533",

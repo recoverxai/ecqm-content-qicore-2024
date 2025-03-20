@@ -36,8 +36,16 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1172900005",
+            "display": "Progressive microcephaly, seizures, cortical blindness, developmental delay syndrome (disorder)"
+          },
+          {
             "code": "128329001",
             "display": "Disorder of visual cortex (disorder)"
+          },
+          {
+            "code": "15913031000119100",
+            "display": "Cortical blindness of bilateral sides of brain (disorder)"
           },
           {
             "code": "194068002",
@@ -68,12 +76,24 @@
             "display": "Cortical blindness of left side of brain (disorder)"
           },
           {
+            "code": "39194005",
+            "display": "Visual epilepsy (disorder)"
+          },
+          {
+            "code": "413924001",
+            "display": "Cortical visual impairment (disorder)"
+          },
+          {
             "code": "68574006",
             "display": "Cortical blindness (disorder)"
           },
           {
             "code": "732251003",
             "display": "Cortical blindness, intellectual disability, polydactyly syndrome (disorder)"
+          },
+          {
+            "code": "773548008",
+            "display": "Early-onset epileptic encephalopathy, cortical blindness, intellectual disability, facial dysmorphism syndrome (disorder)"
           }
         ]
       },

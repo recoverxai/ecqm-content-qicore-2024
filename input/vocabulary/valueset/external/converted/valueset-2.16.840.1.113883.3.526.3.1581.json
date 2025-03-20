@@ -36,6 +36,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "10189761000046105",
+            "display": "Hypertension exercise education (procedure)"
+          },
+          {
             "code": "313204009",
             "display": "Lifestyle education (procedure)"
           },

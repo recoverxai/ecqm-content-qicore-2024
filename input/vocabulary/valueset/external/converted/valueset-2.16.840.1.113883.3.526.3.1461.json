@@ -36,8 +36,156 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1003425007",
+            "display": "Glaucoma due to Lowe syndrome (disorder)"
+          },
+          {
+            "code": "1003428009",
+            "display": "Glaucoma due to congenital anomaly of eye (disorder)"
+          },
+          {
+            "code": "1003657004",
+            "display": "Congenital glaucoma of left eye (disorder)"
+          },
+          {
+            "code": "1111401000000105",
+            "display": "Open angle glaucoma due to neovascularization (disorder)"
+          },
+          {
             "code": "1137633000",
             "display": "Secondary angle-closure glaucoma due to iridocorneal endothelial syndrome (disorder)"
+          },
+          {
+            "code": "1231270006",
+            "display": "Glaucoma following ocular onchocerciasis (disorder)"
+          },
+          {
+            "code": "1231271005",
+            "display": "Glaucoma due to and following retinopathy of prematurity (disorder)"
+          },
+          {
+            "code": "1285643003",
+            "display": "Neovascular glaucoma due to central retinal vein occlusion (disorder)"
+          },
+          {
+            "code": "1303454004",
+            "display": "Open angle glaucoma of right eye due to ocular vascular disorder (disorder)"
+          },
+          {
+            "code": "1303455003",
+            "display": "Open angle glaucoma of left eye due to ocular vascular disorder (disorder)"
+          },
+          {
+            "code": "1303456002",
+            "display": "Open angle glaucoma of bilateral eyes due to ocular vascular disorder (disorder)"
+          },
+          {
+            "code": "1303462007",
+            "display": "Open angle glaucoma of bilateral eyes due to vascular disorder (disorder)"
+          },
+          {
+            "code": "1303463002",
+            "display": "Open angle glaucoma of left eye due to vascular disorder (disorder)"
+          },
+          {
+            "code": "1303464008",
+            "display": "Open angle glaucoma of right eye due to vascular disorder (disorder)"
+          },
+          {
+            "code": "1303889009",
+            "display": "Open angle glaucoma of left eye due to systemic syndrome (disorder)"
+          },
+          {
+            "code": "1303890000",
+            "display": "Open angle glaucoma of right eye due to systemic syndrome (disorder)"
+          },
+          {
+            "code": "1303891001",
+            "display": "Open angle glaucoma of bilateral eyes due to systemic syndrome (disorder)"
+          },
+          {
+            "code": "1304034000",
+            "display": "Open angle glaucoma of bilateral eyes due to neovascularization (disorder)"
+          },
+          {
+            "code": "1304035004",
+            "display": "Open angle glaucoma of left eye due to neovascularization (disorder)"
+          },
+          {
+            "code": "1304036003",
+            "display": "Open angle glaucoma of right eye due to neovascularization (disorder)"
+          },
+          {
+            "code": "1304266004",
+            "display": "Secondary angle-closure glaucoma of right eye due to iridocorneal endothelial syndrome (disorder)"
+          },
+          {
+            "code": "1304267008",
+            "display": "Secondary angle-closure glaucoma of left eye due to iridocorneal endothelial syndrome (disorder)"
+          },
+          {
+            "code": "1304268003",
+            "display": "Secondary angle-closure glaucoma of bilateral eyes due to iridocorneal endothelial syndrome (disorder)"
+          },
+          {
+            "code": "1306607000",
+            "display": "Angle recession glaucoma of right eye (disorder)"
+          },
+          {
+            "code": "1306768000",
+            "display": "Phacomorphic angle closure glaucoma of left eye due to disorder of lens (disorder)"
+          },
+          {
+            "code": "1306772001",
+            "display": "Lens particle glaucoma of right eye (disorder)"
+          },
+          {
+            "code": "1306773006",
+            "display": "Lens particle glaucoma of left eye (disorder)"
+          },
+          {
+            "code": "1306774000",
+            "display": "Lens particle glaucoma of bilateral eyes (disorder)"
+          },
+          {
+            "code": "1306778002",
+            "display": "Phacomorphic angle closure glaucoma of right eye due to disorder of lens (disorder)"
+          },
+          {
+            "code": "1306782000",
+            "display": "Glaucoma of right eye due to congenital malformation of angle of anterior chamber of eye (disorder)"
+          },
+          {
+            "code": "1306787006",
+            "display": "Glaucoma of left eye due to congenital malformation of angle of anterior chamber of eye (disorder)"
+          },
+          {
+            "code": "1306789009",
+            "display": "Glaucoma of bilateral eyes due to congenital malformation of angle of anterior chamber of eyes (disorder)"
+          },
+          {
+            "code": "1306868005",
+            "display": "Angle recession glaucoma of left eye (disorder)"
+          },
+          {
+            "code": "1306869002",
+            "display": "Angle recession glaucoma of bilateral eyes (disorder)"
+          },
+          {
+            "code": "1331893009",
+            "display": "Neovascular angle closure glaucoma of right eye (disorder)"
+          },
+          {
+            "code": "1331894003",
+            "display": "Neovascular angle closure glaucoma of left eye (disorder)"
+          },
+          {
+            "code": "1331895002",
+            "display": "Neovascular angle closure glaucoma of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15673001000119103",
+            "display": "Congenital glaucoma of bilateral eyes (disorder)"
           },
           {
             "code": "15673041000119101",
@@ -46,6 +194,14 @@
           {
             "code": "15679801000119105",
             "display": "Uveitis-glaucoma-hyphema syndrome of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15738961000119102",
+            "display": "Glaucoma of left eye due to congenital anomaly of iris (disorder)"
+          },
+          {
+            "code": "15739001000119109",
+            "display": "Glaucoma of right eye due to congenital anomaly of iris (disorder)"
           },
           {
             "code": "15739041000119106",
@@ -64,16 +220,12 @@
             "display": "Glaucoma of left eye due to anterior segment anomaly (disorder)"
           },
           {
-            "code": "15739441000119101",
-            "display": "Glaucoma of right eye due to trauma (disorder)"
-          },
-          {
-            "code": "15739481000119106",
-            "display": "Glaucoma of left eye due to trauma (disorder)"
-          },
-          {
             "code": "15739561000119101",
             "display": "Glaucoma of right eye due to lens disorder (disorder)"
+          },
+          {
+            "code": "15739641000119104",
+            "display": "Glaucoma of left eye due to lens disorder (disorder)"
           },
           {
             "code": "19309007",
@@ -100,6 +252,14 @@
             "display": "Secondary angle-closure glaucoma with pupil block (disorder)"
           },
           {
+            "code": "193562004",
+            "display": "Open angle glaucoma due to ocular vascular disorder (disorder)"
+          },
+          {
+            "code": "204113001",
+            "display": "Congenital glaucoma (disorder)"
+          },
+          {
             "code": "206248004",
             "display": "Traumatic glaucoma due to birth trauma (disorder)"
           },
@@ -112,10 +272,6 @@
             "display": "Neovascular angle closure glaucoma (disorder)"
           },
           {
-            "code": "29538005",
-            "display": "Glaucomatocyclitic crisis (disorder)"
-          },
-          {
             "code": "314033007",
             "display": "Uveitic glaucoma (disorder)"
           },
@@ -124,12 +280,36 @@
             "display": "Phacolytic glaucoma (disorder)"
           },
           {
+            "code": "331471000119105",
+            "display": "Uveitic glaucoma of right eye (disorder)"
+          },
+          {
+            "code": "333111000119107",
+            "display": "Pigmentary glaucoma of right eye (disorder)"
+          },
+          {
             "code": "333151000119108",
             "display": "Phacolytic glaucoma of right eye (disorder)"
           },
           {
+            "code": "337081000119109",
+            "display": "Uveitic glaucoma of left eye (disorder)"
+          },
+          {
+            "code": "338721000119108",
+            "display": "Pigmentary glaucoma of left eye (disorder)"
+          },
+          {
             "code": "338761000119103",
             "display": "Phacolytic glaucoma of left eye (disorder)"
+          },
+          {
+            "code": "344491000119107",
+            "display": "Pigmentary glaucoma of bilateral eyes (disorder)"
+          },
+          {
+            "code": "344531000119107",
+            "display": "Phacolytic glaucoma of bilateral eyes (disorder)"
           },
           {
             "code": "370504007",
@@ -146,6 +326,10 @@
           {
             "code": "404648005",
             "display": "Lens particle glaucoma (disorder)"
+          },
+          {
+            "code": "415176004",
+            "display": "Primary congenital glaucoma (disorder)"
           },
           {
             "code": "418435001",
@@ -168,8 +352,12 @@
             "display": "Glaucoma associated with ocular disorder (disorder)"
           },
           {
-            "code": "68241007",
-            "display": "Glaucoma due to ocular trauma (disorder)"
+            "code": "713457002",
+            "display": "Neovascular glaucoma due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "716166002",
+            "display": "Microcornea with glaucoma and absent frontal sinus syndrome (disorder)"
           },
           {
             "code": "788946007",
@@ -178,6 +366,18 @@
           {
             "code": "84333006",
             "display": "Glaucoma due to lens disorder (disorder)"
+          },
+          {
+            "code": "860798008",
+            "display": "Glaucoma due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "890423003",
+            "display": "Secondary childhood glaucoma following congenital cataract surgery (disorder)"
+          },
+          {
+            "code": "897585008",
+            "display": "Congenital primary glaucoma of bilateral eyes (disorder)"
           },
           {
             "code": "95717004",

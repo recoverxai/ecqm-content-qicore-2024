@@ -96,6 +96,18 @@
             "display": "Compressive optic atrophy (disorder)"
           },
           {
+            "code": "334941000119106",
+            "display": "Atrophy of optic disc of right eye due to glaucoma (disorder)"
+          },
+          {
+            "code": "340551000119105",
+            "display": "Atrophy of optic disc of left eye due to glaucoma (disorder)"
+          },
+          {
+            "code": "345861000119103",
+            "display": "Atrophy of optic disc of bilateral eyes due to glaucoma (disorder)"
+          },
+          {
             "code": "348051000119102",
             "display": "Atrophy of right optic nerve following inflammation (disorder)"
           },

@@ -1076,7 +1076,15 @@
             "display": "Hypoplastic left heart syndrome"
           },
           {
-            "code": "Q23.8",
+            "code": "Q23.81",
+            "display": "Bicuspid aortic valve"
+          },
+          {
+            "code": "Q23.82",
+            "display": "Congenital mitral valve cleft leaflet"
+          },
+          {
+            "code": "Q23.88",
             "display": "Other congenital malformations of aortic and mitral valves"
           },
           {

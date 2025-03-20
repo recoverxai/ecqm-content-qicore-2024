@@ -31,21 +31,143 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:797f252f-8c78-403b-9582-1183f279bd6a",
-    "timestamp": "2024-12-01T19:50:53-05:00",
-    "total": 49,
+    "identifier": "urn:uuid:afe24a60-74d6-447a-aacd-8d7088c5726d",
+    "timestamp": "2025-03-20T16:36:15-04:00",
+    "total": 106,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1144978007",
+        "display": "Anterior uveitis due to sarcoidosis (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1156843000",
+        "display": "Uveitis due to persistent onset antinuclear antibody negative juvenile idiopathic oligoarthritis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1156844006",
+        "display": "Uveitis due to persistent onset antinuclear antibody positive juvenile idiopathic oligoarthritis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1156845007",
+        "display": "Uveitis due to extended onset antinuclear antibody negative juvenile idiopathic oligoarthritis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1156846008",
+        "display": "Uveitis due to extended onset antinuclear antibody positive juvenile idiopathic oligoarthritis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1163460006",
+        "display": "Intermediate uveitis caused by Borrelia burgdorferi (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1176981005",
+        "display": "Posterior uveitis caused by Mycobacterium tuberculosis complex (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1176982003",
+        "display": "Posterior uveitis caused by virus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1177018001",
+        "display": "Anterior uveitis caused by Mycobacterium tuberculosis complex (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1177029002",
+        "display": "Intermediate uveitis caused by Treponema pallidum (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1177031006",
+        "display": "Intermediate uveitis caused by Mycobacterium tuberculosis complex (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1197180007",
+        "display": "Recurrent anterior uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208838005",
+        "display": "Idiopathic acute inflammation of anterior uveal tract (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1216988003",
+        "display": "Idiopathic subacute inflammation of anterior uveal tract (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1217647006",
+        "display": "Idiopathic chronic anterior uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231232007",
+        "display": "Intermediate uveitis associated with multiple sclerosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231259004",
+        "display": "Uveitis due to juvenile idiopathic arthritis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231640005",
+        "display": "Recurrent acute anterior uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231665007",
+        "display": "Intermediate uveitis due to sarcoidosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231676006",
+        "display": "Posterior uveitis due to Vogt Koyanagi Harada disease (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231680001",
+        "display": "Panuveitis due to sarcoidosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1269223003",
+        "display": "Paraneoplastic uveitis (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -55,8 +177,50 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15630771000119104",
+        "display": "Uveitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15630811000119104",
+        "display": "Uveitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15630851000119103",
+        "display": "Uveitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15678521000119108",
+        "display": "Chronic inflammation of uveal tract of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15678561000119103",
+        "display": "Chronic inflammation of uveal tract of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15678601000119103",
+        "display": "Chronic inflammation of uveal tract of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "16553002",
         "display": "Choroiditis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "186266008",
+        "display": "Tuberculous chronic iridocyclitis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -73,8 +237,20 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "267619000",
+        "display": "Non-infectious anterior uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "314029000",
         "display": "Tuberculous uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "314030005",
+        "display": "Post-traumatic uveitis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -85,8 +261,38 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "314493000",
+        "display": "Postoperative uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "333391000119101",
+        "display": "Panuveitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "333401000119104",
+        "display": "Panophthalmitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "33382000",
         "display": "Panophthalmitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "335971000119100",
+        "display": "Chronic anterior uveitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "336041000119101",
+        "display": "Choroiditis of right eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -97,14 +303,62 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "339001000119107",
+        "display": "Panuveitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "339011000119105",
+        "display": "Panophthalmitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "341581000119106",
+        "display": "Chronic anterior uveitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "341651000119103",
+        "display": "Choroiditis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "342151000119100",
         "display": "Acute anterior uveitis of left eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "344751000119109",
+        "display": "Panuveitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "346801000119106",
+        "display": "Chronic anterior uveitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "346871000119101",
+        "display": "Choroiditis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "347311000119100",
         "display": "Acute anterior uveitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "370506009",
+        "display": "Keratouveitis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -129,6 +383,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "410477000",
         "display": "Infective uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "410481000",
+        "display": "Panuveitis in Behcet's syndrome (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -175,6 +435,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "414784001",
+        "display": "Multifocal choroiditis and panuveitis syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "414996002",
         "display": "Pamidronic acid-induced uveitis (disorder)"
       },
@@ -189,6 +455,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "415359008",
         "display": "Sarcoid uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "415657000",
+        "display": "Subretinal fibrosis and uveitis syndrome (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -223,6 +495,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "434391000124109",
+        "display": "Secondary infective uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "444248002",
         "display": "Chronic inflammation of uveal tract (disorder)"
       },
@@ -241,8 +519,20 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "722607009",
+        "display": "Optic disc swelling co-occurrent with uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "733317009",
         "display": "Primary anterior uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "733337008",
+        "display": "Noninfectious panuveitis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -261,6 +551,42 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "766933000",
         "display": "Idiopathic panuveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "773991005",
+        "display": "Idiopathic posterior uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "786077003",
+        "display": "Ankylosing spondylitis co-occurrent with anterior uveitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "788963006",
+        "display": "Intermediate uveitis due to infectious disease (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "789008006",
+        "display": "Posterior uveitis due to infectious disease (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "789116000",
+        "display": "Panuveitis due to infectious disease (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "86219005",
+        "display": "Uveitis-rheumatoid arthritis syndrome (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -303,6 +629,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "870335005",
         "display": "Panuveitis caused by Borrelia burgdorferi (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "95680001",
+        "display": "Sclerouveitis (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

@@ -52,6 +52,18 @@
             "display": "Hypotony of eye co-occurrent and due to ocular fistula (disorder)"
           },
           {
+            "code": "677291000119105",
+            "display": "Hypotony of bilateral eyes due to ocular fistula (disorder)"
+          },
+          {
+            "code": "677301000119106",
+            "display": "Hypotony of left eye due to ocular fistula (disorder)"
+          },
+          {
+            "code": "677311000119109",
+            "display": "Hypotony of right eye due to ocular fistula (disorder)"
+          },
+          {
             "code": "700280001",
             "display": "Flat anterior chamber of eye with hypotony (disorder)"
           },

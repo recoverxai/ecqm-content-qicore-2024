@@ -31,54 +31,38 @@
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:284dea2c-0c41-4662-8096-f583a09acd4d",
-    "timestamp": "2024-12-01T19:50:42-05:00",
-    "total": 6,
+    "identifier": "urn:uuid:478499ab-91af-49f8-9351-251ccd27fa8f",
+    "timestamp": "2025-03-20T16:36:04-04:00",
+    "total": 5,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
-        "code": "1648755",
-        "display": "nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1648759",
         "display": "nitrofurantoin, macrocrystals 100 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "311989",
         "display": "nitrofurantoin 5 MG/ML Oral Suspension"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "311994",
         "display": "nitrofurantoin, macrocrystals 25 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "311995",
         "display": "nitrofurantoin, macrocrystals 50 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "422434",
         "display": "nitrofurantoin 10 MG/ML Oral Suspension"
       }

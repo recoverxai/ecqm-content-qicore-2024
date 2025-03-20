@@ -44,10 +44,6 @@
             "display": "Hypermature senile cataract (disorder)"
           },
           {
-            "code": "264443002",
-            "display": "Morgagnian cataract (disorder)"
-          },
-          {
             "code": "267626000",
             "display": "Hypermature cataract (disorder)"
           },
@@ -80,6 +76,66 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
+          {
+            "code": "H25.011",
+            "display": "Cortical age-related cataract, right eye"
+          },
+          {
+            "code": "H25.012",
+            "display": "Cortical age-related cataract, left eye"
+          },
+          {
+            "code": "H25.013",
+            "display": "Cortical age-related cataract, bilateral"
+          },
+          {
+            "code": "H25.091",
+            "display": "Other age-related incipient cataract, right eye"
+          },
+          {
+            "code": "H25.092",
+            "display": "Other age-related incipient cataract, left eye"
+          },
+          {
+            "code": "H25.093",
+            "display": "Other age-related incipient cataract, bilateral"
+          },
+          {
+            "code": "H25.099",
+            "display": "Other age-related incipient cataract, unspecified eye"
+          },
+          {
+            "code": "H25.11",
+            "display": "Age-related nuclear cataract, right eye"
+          },
+          {
+            "code": "H25.12",
+            "display": "Age-related nuclear cataract, left eye"
+          },
+          {
+            "code": "H25.13",
+            "display": "Age-related nuclear cataract, bilateral"
+          },
+          {
+            "code": "H25.811",
+            "display": "Combined forms of age-related cataract, right eye"
+          },
+          {
+            "code": "H25.812",
+            "display": "Combined forms of age-related cataract, left eye"
+          },
+          {
+            "code": "H25.813",
+            "display": "Combined forms of age-related cataract, bilateral"
+          },
+          {
+            "code": "H25.89",
+            "display": "Other age-related cataract"
+          },
+          {
+            "code": "H25.9",
+            "display": "Unspecified age-related cataract"
+          },
           {
             "code": "H26.9",
             "display": "Unspecified cataract"

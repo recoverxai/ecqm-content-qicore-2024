@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:86b513e9-6141-4630-8743-d9acb2bf6c86",
-    "timestamp": "2024-12-01T19:50:00-05:00",
+    "identifier": "urn:uuid:ed74ac66-9a9f-451d-8b9c-124779734be4",
+    "timestamp": "2025-03-20T16:34:53-04:00",
     "total": 129,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",

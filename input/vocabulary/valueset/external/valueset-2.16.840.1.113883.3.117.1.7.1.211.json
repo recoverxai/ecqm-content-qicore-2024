@@ -31,42 +31,32 @@
   "date": "2021-02-20T01:02:00-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:84af3ba9-fc80-4b62-ab84-b0f7c1f0c31b",
-    "timestamp": "2024-12-01T19:47:37-05:00",
+    "identifier": "urn:uuid:50cbe5b9-c5a1-4e16-85ae-a0d243bba411",
+    "timestamp": "2025-03-20T16:19:59-04:00",
     "total": 4,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "861356",
         "display": "0.8 ML fondaparinux sodium 12.5 MG/ML Prefilled Syringe"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "861360",
         "display": "0.5 ML fondaparinux sodium 5 MG/ML Prefilled Syringe"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "861363",
         "display": "0.4 ML fondaparinux sodium 12.5 MG/ML Prefilled Syringe"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "861365",
         "display": "0.6 ML fondaparinux sodium 12.5 MG/ML Prefilled Syringe"
       }

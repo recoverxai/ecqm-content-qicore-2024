@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1196.394",
   "meta": {
-    "versionId": "52",
-    "lastUpdated": "2024-02-22T15:25:56.000-05:00",
+    "versionId": "62",
+    "lastUpdated": "2025-02-27T01:08:38.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2024-01-18"
+      "valueDate": "2025-02-27"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1196.394",
@@ -23,11 +23,11 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1196.394"
     }
   ],
-  "version": "20240118",
+  "version": "20250227",
   "name": "HypoglycemicsTreatmentMedications",
   "title": "Hypoglycemics Treatment Medications",
   "status": "active",
-  "date": "2024-01-18T01:08:31-05:00",
+  "date": "2025-02-27T01:08:38-05:00",
   "publisher": "Mathematica PSI Steward",
   "compose": {
     "include": [
@@ -411,10 +411,6 @@
             "display": "tolazamide 500 MG Oral Tablet"
           },
           {
-            "code": "198294",
-            "display": "tolbutamide 500 MG Oral Tablet"
-          },
-          {
             "code": "1990866",
             "display": "0.85 ML exenatide 2.35 MG/ML Auto-Injector"
           },
@@ -789,10 +785,6 @@
           {
             "code": "312859",
             "display": "rosiglitazone 2 MG Oral Tablet"
-          },
-          {
-            "code": "312860",
-            "display": "rosiglitazone 4 MG Oral Tablet"
           },
           {
             "code": "314000",

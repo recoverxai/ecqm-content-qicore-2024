@@ -31,60 +31,50 @@
   "date": "2022-09-02T01:02:12-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:70bbc617-2f12-4340-932b-b5ef06b8f4ab",
-    "timestamp": "2024-12-01T19:46:36-05:00",
+    "identifier": "urn:uuid:1e834c2d-a753-444f-9f7d-071df6a35def",
+    "timestamp": "2025-03-20T16:19:04-04:00",
     "total": 7,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "349591",
         "display": "atomoxetine 10 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "349592",
         "display": "atomoxetine 18 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "349593",
         "display": "atomoxetine 25 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "349594",
         "display": "atomoxetine 40 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "349595",
         "display": "atomoxetine 60 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "608139",
         "display": "atomoxetine 100 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "608143",
         "display": "atomoxetine 80 MG Oral Capsule"
       }

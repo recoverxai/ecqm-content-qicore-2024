@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:b1a93674-4810-4753-b54f-7459b65b5461",
-    "timestamp": "2024-12-01T19:47:15-05:00",
-    "total": 49,
+    "identifier": "urn:uuid:6ebaec6e-3c1c-4e1c-be70-16df62797018",
+    "timestamp": "2025-03-20T16:19:40-04:00",
+    "total": 60,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -55,14 +45,68 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1217313001",
+        "display": "Biopsy of colon using endoscopic ultrasonography guidance (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "12350003",
         "display": "Colonoscopy with rigid sigmoidoscope through colotomy (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304042004",
+        "display": "Colonoscopy and suturing of rectum (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304043009",
+        "display": "Colonoscopy and suturing of colon (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304044003",
+        "display": "Colonoscopy and suturing of small intestine (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304045002",
+        "display": "Colonoscopy and full thickness resection of rectum (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304049008",
+        "display": "Colonoscopy and full thickness resection of colon (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304050008",
+        "display": "Colonoscopy and full thickness resection of small intestine (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "174158000",
         "display": "Open colonoscopy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "174173004",
+        "display": "Fiberoptic endoscopic laser destruction of lesion of colon (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "174179000",
+        "display": "Fiberoptic endoscopic dilation of colon (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -295,6 +339,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "609197007",
+        "display": "Endoscopic surgical procedure on colon using laser (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "709421007",
         "display": "Colonoscopy and dilation of stricture of colon (procedure)"
       },
@@ -319,6 +369,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "771568007",
+        "display": "Fiberoptic endoscopic excision of lesion of colonic mucous membrane (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "789778002",
         "display": "Colonoscopy and fecal microbiota transplantation (procedure)"
       },
@@ -329,14 +385,14 @@
         "display": "Fiberoptic colonoscopy through colostomy (procedure)"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0105",
         "display": "Colorectal cancer screening; colonoscopy on individual at high risk"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0121",
         "display": "Colorectal cancer screening; colonoscopy on individual not meeting criteria for high risk"
       }

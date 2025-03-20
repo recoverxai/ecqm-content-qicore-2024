@@ -36,6 +36,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1148631003",
+            "display": "Paroxysmal rhabdomyolysis (disorder)"
+          },
+          {
             "code": "23697004",
             "display": "Crush syndrome (disorder)"
           },
@@ -50,6 +54,10 @@
           {
             "code": "240132004",
             "display": "Non-traumatic rhabdomyolysis (disorder)"
+          },
+          {
+            "code": "240133009",
+            "display": "Familial paroxysmal rhabdomyolysis (disorder)"
           },
           {
             "code": "72960004",

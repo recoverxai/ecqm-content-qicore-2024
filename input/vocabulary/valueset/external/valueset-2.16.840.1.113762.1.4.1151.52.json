@@ -31,30 +31,20 @@
   "date": "2020-02-07T01:00:20-05:00",
   "publisher": "Oregon Urology Steward",
   "expansion": {
-    "identifier": "urn:uuid:0c93f550-9629-4a10-877f-10f936b5515d",
-    "timestamp": "2024-12-01T19:43:11-05:00",
+    "identifier": "urn:uuid:ed5d85cc-2949-4d0a-84b2-ba4f96da1d14",
+    "timestamp": "2025-03-20T16:13:47-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1653484",
         "display": "BCG, live, Tice strain 50 MG/ML Topical Suspension"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1653579",
         "display": "BCG, live, Tice strain 50 MG Injection"
       }

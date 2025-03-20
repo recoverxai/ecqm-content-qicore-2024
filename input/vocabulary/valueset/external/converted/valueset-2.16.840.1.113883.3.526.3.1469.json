@@ -56,6 +56,18 @@
             "display": "Classic choroidal neovascular membrane (disorder)"
           },
           {
+            "code": "332421000119101",
+            "display": "Retinal vasculitis of right eye (disorder)"
+          },
+          {
+            "code": "338031000119109",
+            "display": "Retinal vasculitis of left eye (disorder)"
+          },
+          {
+            "code": "343801000119100",
+            "display": "Retinal vasculitis of bilateral eyes (disorder)"
+          },
+          {
             "code": "414297000",
             "display": "Frosted branch angiitis (disorder)"
           },

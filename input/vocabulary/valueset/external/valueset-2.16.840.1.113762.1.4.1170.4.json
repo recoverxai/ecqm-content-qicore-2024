@@ -31,54 +31,44 @@
   "date": "2021-10-07T01:00:28-04:00",
   "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "urn:uuid:d86554bd-dcde-48e8-a7f5-3682df3c76f8",
-    "timestamp": "2024-12-01T19:48:11-05:00",
+    "identifier": "urn:uuid:0e1860bb-d7a3-431e-8c75-806bebd3aa95",
+    "timestamp": "2025-03-20T16:20:42-04:00",
     "total": 6,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "10106",
         "display": "streptokinase"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "11055",
         "display": "urokinase"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "259280",
         "display": "tenecteplase"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "40028",
         "display": "anistreplase"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "76895",
         "display": "reteplase"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "8410",
         "display": "alteplase"
       }

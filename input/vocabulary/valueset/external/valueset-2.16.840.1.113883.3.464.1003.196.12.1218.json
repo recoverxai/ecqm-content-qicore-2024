@@ -31,78 +31,68 @@
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:33a09892-867f-42da-aa2d-e6aae6abde42",
-    "timestamp": "2024-12-01T19:47:32-05:00",
+    "identifier": "urn:uuid:e9528b00-60b5-486b-84e3-d9b011607476",
+    "timestamp": "2025-03-20T16:19:55-04:00",
     "total": 10,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "140",
         "display": "Influenza, split virus, trivalent, injectable, preservative free"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "141",
         "display": "Influenza, split virus, trivalent, injectable, contains preservative"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "150",
         "display": "Influenza, split virus, quadrivalent, injectable, preservative free"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "153",
         "display": "Influenza, Madin Darby Canine Kidney, subunit, trivalent, injectable, preservative free"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "155",
         "display": "Influenza, recombinant, trivalent, injectable, preservative free"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "158",
         "display": "Influenza, split virus, quadrivalent, injectable, contains preservative"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "161",
         "display": "Influenza, injectable,quadrivalent, preservative free, pediatric"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "171",
         "display": "Influenza, Madin Darby Canine Kidney, subunit, quadrivalent, injectable, preservative free"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "186",
         "display": "Influenza, Madin Darby Canine Kidney, subunit, quadrivalent, injectable, contains preservative"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "88",
         "display": "influenza virus vaccine, unspecified formulation"
       }

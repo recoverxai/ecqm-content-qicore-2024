@@ -31,54 +31,44 @@
   "date": "2022-02-19T01:06:51-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:3124a4eb-c3a3-4366-9d1d-8cc6465b5077",
-    "timestamp": "2024-12-01T19:44:20-05:00",
+    "identifier": "urn:uuid:36b10f4b-3028-4f0f-a3c1-8cca217a5768",
+    "timestamp": "2025-03-20T16:16:04-04:00",
     "total": 6,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1114198",
         "display": "rivaroxaban 10 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1232082",
         "display": "rivaroxaban 15 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1232086",
         "display": "rivaroxaban 20 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1549682",
         "display": "{42 (rivaroxaban 15 MG Oral Tablet) / 9 (rivaroxaban 20 MG Oral Tablet) } Pack"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "2059015",
         "display": "rivaroxaban 2.5 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "2588062",
         "display": "rivaroxaban 1 MG/ML Oral Suspension"
       }

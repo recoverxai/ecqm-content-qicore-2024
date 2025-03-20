@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.464.1003.105.12.1152",
   "meta": {
     "versionId": "12",
-    "lastUpdated": "2024-02-10T01:11:25.000-05:00",
+    "lastUpdated": "2025-02-27T13:50:02.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -28,22 +28,12 @@
   "title": "Pervasive Developmental Disorder",
   "status": "active",
   "date": "2024-02-10T01:11:25-05:00",
-  "publisher": "Telligen",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:9bbdfc54-fb89-458a-98ec-2b0c1ed97353",
-    "timestamp": "2024-12-01T19:49:54-05:00",
-    "total": 14,
+    "identifier": "urn:uuid:a2197a72-6b78-4761-9872-7ae455c80d0b",
+    "timestamp": "2025-03-20T16:34:47-04:00",
+    "total": 49,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -60,8 +50,26 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "191692007",
+        "display": "Active disintegrative psychoses (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "191693002",
+        "display": "Residual disintegrative psychoses (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "231536004",
         "display": "Atypical autism (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "23560001",
+        "display": "Asperger's disorder (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -102,8 +110,188 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "68618008",
+        "display": "Rett syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "702732007",
+        "display": "High-functioning autism (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "708037001",
+        "display": "Residual Asperger's disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "718393002",
+        "display": "Atypical Rett syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "719600006",
+        "display": "1p21.3 microdeletion syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "71961003",
         "display": "Childhood disintegrative disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "723332005",
+        "display": "Isodicentric chromosome 15 syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "733623005",
+        "display": "Autism spectrum disorder, epilepsy, arthrogryposis syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "766824003",
+        "display": "Activity dependent neuroprotector homeobox related multiple congenital anomalies, intellectual disability, autism spectrum disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "770790004",
+        "display": "Developmental delay with autism spectrum disorder and gait instability (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "771448004",
+        "display": "Autism epilepsy syndrome due to branched chain ketoacid dehydrogenase kinase deficiency (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "771512003",
+        "display": "Autism spectrum disorder due to AUTS2 activator of transcription and developmental regulator deficiency (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870260008",
+        "display": "Pervasive developmental disorder with marked impairment of functional language with loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870261007",
+        "display": "Pervasive developmental disorder with marked impairment of functional language without loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870262000",
+        "display": "Pervasive developmental disorder with disorder of intellectual development without loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870263005",
+        "display": "Pervasive developmental disorder with impairment of functional language (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870264004",
+        "display": "Pervasive developmental disorder with disorder of intellectual development and pervasive impairment of functional language without loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870265003",
+        "display": "Pervasive developmental disorder with disorder of intellectual development with loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870266002",
+        "display": "Pervasive developmental disorder with disorder of intellectual development and marked impairment of functional language with loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870267006",
+        "display": "Pervasive developmental disorder with disorder of intellectual development and marked impairment of functional language without loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870268001",
+        "display": "Pervasive developmental disorder with disorder of intellectual development and complete impairment of functional language without loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870269009",
+        "display": "Pervasive developmental disorder with disorder of intellectual development and absence of functional language with loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870270005",
+        "display": "Pervasive developmental disorder with disorder of intellectual development and complete impairment of functional language with loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870280009",
+        "display": "Pervasive developmental disorder with severe impairment of functional language with loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870282001",
+        "display": "Pervasive developmental disorder with severe impairment of functional language without loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870303005",
+        "display": "Pervasive developmental disorder with complete impairment of functional language with loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870304004",
+        "display": "Pervasive developmental disorder with complete impairment of functional language without loss of previously acquired skills (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870305003",
+        "display": "Pervasive developmental disorder with cognitive developmental delay and marked impairment of functional language (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870306002",
+        "display": "Pervasive developmental disorder with complete impairment of functional language (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870307006",
+        "display": "Pervasive developmental disorder with abscence of functional language (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "870308001",
+        "display": "Pervasive developmental disorder with cognitive developmental delay and complete impairment of functional language (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
@@ -114,8 +302,20 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
+        "code": "F84.2",
+        "display": "Rett's syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
         "code": "F84.3",
         "display": "Other childhood disintegrative disorder"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "F84.5",
+        "display": "Asperger's syndrome"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

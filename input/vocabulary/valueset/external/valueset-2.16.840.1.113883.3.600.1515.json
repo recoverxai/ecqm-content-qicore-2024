@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.600.1515",
   "meta": {
-    "versionId": "36",
-    "lastUpdated": "2024-08-09T10:28:43.000-04:00",
+    "versionId": "46",
+    "lastUpdated": "2025-02-05T01:09:18.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2021-02-20"
+      "valueDate": "2025-02-05"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1515",
@@ -23,28 +23,17 @@
       "value": "urn:oid:2.16.840.1.113883.3.600.1515"
     }
   ],
-  "version": "20210220",
+  "version": "20250205",
   "name": "DietaryRecommendations",
   "title": "Dietary Recommendations",
   "status": "active",
-  "experimental": false,
-  "date": "2022-03-07T11:14:02-05:00",
+  "date": "2025-02-05T01:09:18-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:c3bc8a0c-62e8-469f-9c9d-60d25adaf526",
-    "timestamp": "2024-12-01T19:43:31-05:00",
-    "total": 37,
+    "identifier": "urn:uuid:bfc04dcb-3499-42d0-81bc-1d4e97e5e57e",
+    "timestamp": "2025-03-20T16:14:04-04:00",
+    "total": 78,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -55,8 +44,32 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1055204001",
+        "display": "Fat and oil modified diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1151000175103",
         "display": "Dietary Approaches to Stop Hypertension diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1156315004",
+        "display": "Plant fiber modified diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1156717005",
+        "display": "Cardiovascular Health Integrated Lifestyle Diet 1 (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1156958007",
+        "display": "Promotion of food and nutrient intake to support target weight and body mass (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -67,8 +80,44 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1230141004",
+        "display": "Education about nutrition influence on health (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1255163004",
+        "display": "Mediterranean diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "14051000175103",
+        "display": "Dietary education for cardiovascular disorder (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "170961007",
+        "display": "Menopause dietary education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "182922004",
         "display": "Dietary regime (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "183059007",
+        "display": "High fiber diet education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "183060002",
+        "display": "Low residue diet education (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -79,8 +128,32 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "183062005",
+        "display": "Low cholesterol diet education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "183063000",
+        "display": "Low salt diet education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "183065007",
         "display": "Low carbohydrate diet education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "183066008",
+        "display": "Low protein diet education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "183067004",
+        "display": "High protein diet education (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -97,6 +170,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "266724001",
+        "display": "Weight-reducing diet education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "281085002",
         "display": "Sugar-free diet education (procedure)"
       },
@@ -105,6 +184,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "284071006",
         "display": "Dietary treatment for disorder (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "284350006",
+        "display": "Diabetes mellitus diet education (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -135,6 +220,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "306163007",
         "display": "Referral to dietetics service (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "306353006",
+        "display": "Referral to community-based dietitian (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "306354000",
+        "display": "Referral to hospital-based dietitian (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -181,6 +278,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "416116000",
+        "display": "Referral to home registered dietitian (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "418995006",
         "display": "Feeding regime (regime/therapy)"
       },
@@ -193,6 +296,36 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "429071001",
+        "display": "Dietary education for lipid disorder (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "429095004",
+        "display": "Dietary education for weight gain (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "435581000124102",
+        "display": "Carbohydrate modified diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "435671000124101",
+        "display": "Cholesterol modified diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "435701000124100",
+        "display": "Energy modified diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "435771000124106",
         "display": "General healthful diet (regime/therapy)"
       },
@@ -201,6 +334,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "436691000124108",
         "display": "Decreased carbohydrate diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "436891000124107",
+        "display": "Saturated fat modified diet (regime/therapy)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -223,8 +362,56 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "438578000",
+        "display": "Dietary education for renal disorder (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "438588004",
+        "display": "Dietary education for hepatic disorder (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "440328002",
+        "display": "Dietary education for pancreatic disorder (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "443288003",
         "display": "Lifestyle education regarding diet (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "445291000124103",
+        "display": "Nutrition-related skill education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "445301000124102",
+        "display": "Content-related nutrition education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "445331000124105",
+        "display": "Nutrition-related laboratory result interpretation education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "445341000124100",
+        "display": "Modification of nutritional regime (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "445641000124105",
+        "display": "Technical nutrition education (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -235,8 +422,20 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "698612005",
+        "display": "Dietary education for impaired glucose tolerance (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "699849008",
         "display": "Healthy eating education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "710881000",
+        "display": "Education about eating pattern (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -247,26 +446,62 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "765021002",
+        "display": "Vegetarian diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "765024005",
+        "display": "Atkins diet (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "770749002",
         "display": "Referral for combined healthy eating and physical education program (procedure)"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "97802",
+        "display": "Medical nutrition therapy; initial assessment and intervention, individual, face-to-face with the patient, each 15 minutes"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "97803",
+        "display": "Medical nutrition therapy; re-assessment and intervention, individual, face-to-face with the patient, each 15 minutes"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "97804",
+        "display": "Medical nutrition therapy; group (2 or more individual(s)), each 30 minutes"
+      },
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
+        "code": "G0270",
+        "display": "Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes"
+      },
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
+        "code": "G0271",
+        "display": "Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes"
+      },
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S9452",
         "display": "Nutrition classes, non-physician provider, per session"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S9470",
         "display": "Nutritional counseling, dietitian visit"
-      },
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "version": "2025",
-        "code": "Z71.3",
-        "display": "Dietary counseling and surveillance"
       }
     ]
   }

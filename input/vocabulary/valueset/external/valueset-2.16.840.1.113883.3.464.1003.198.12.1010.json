@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:fb1a1fa6-d631-43b9-9148-e3af161e83e4",
-    "timestamp": "2024-12-01T19:47:09-05:00",
+    "identifier": "urn:uuid:3306e7b9-ab3d-4b29-a895-ca1f8573b175",
+    "timestamp": "2025-03-20T16:19:35-04:00",
     "total": 19,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -155,8 +145,8 @@
         "display": "Sigmoidoscopy, flexible; with band ligation(s) (eg, hemorrhoids)"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0104",
         "display": "Colorectal cancer screening; flexible sigmoidoscopy"
       }

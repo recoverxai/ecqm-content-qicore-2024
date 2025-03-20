@@ -31,26 +31,28 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "Mathematica",
   "expansion": {
-    "identifier": "urn:uuid:fcf05ba8-a4f6-4740-9c48-5800e258350c",
-    "timestamp": "2024-12-01T19:43:21-05:00",
-    "total": 18,
+    "identifier": "urn:uuid:0b2eb600-ceb8-4e57-84a4-a36c0c649ea0",
+    "timestamp": "2025-03-20T16:13:56-04:00",
+    "total": 20,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",
         "version": "2.78",
         "code": "10351-5",
         "display": "HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by Probe with amplification"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104762-0",
+        "display": "HIV 1 RNA [Log #/volume] in Serum or Plasma by Molecular genetics method"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104781-0",
+        "display": "HIV 1 RNA [#/volume] in Serum or Plasma by Molecular genetics method"
       },
       {
         "system": "http://loinc.org",

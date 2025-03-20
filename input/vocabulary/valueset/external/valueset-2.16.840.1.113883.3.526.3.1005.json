@@ -31,20 +31,10 @@
   "date": "2020-03-06T01:00:20-05:00",
   "publisher": "American Academy of Neurology Steward",
   "expansion": {
-    "identifier": "urn:uuid:ce638bd0-93ba-4efe-9ebf-376eb16d1b49",
-    "timestamp": "2024-12-01T19:47:49-05:00",
-    "total": 116,
+    "identifier": "urn:uuid:ce69570a-34dd-4544-8d87-aa16e4d7f9d0",
+    "timestamp": "2025-03-20T16:20:20-04:00",
+    "total": 117,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -69,6 +59,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "12348006",
         "display": "Presenile dementia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1339031006",
+        "display": "Dementia caused by ionizing radiation (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

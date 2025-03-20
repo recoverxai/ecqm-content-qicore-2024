@@ -36,12 +36,20 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1187531009",
+            "display": "Obesity due to pituitary disease (disorder)"
+          },
+          {
             "code": "162863004",
             "display": "Body mass index 25-29 - overweight (finding)"
           },
           {
             "code": "162864005",
             "display": "Body mass index 30+ - obesity (finding)"
+          },
+          {
+            "code": "190966007",
+            "display": "Extreme obesity with alveolar hypoventilation (disorder)"
           },
           {
             "code": "238131007",
@@ -66,6 +74,38 @@
           {
             "code": "415530009",
             "display": "Simple obesity (disorder)"
+          },
+          {
+            "code": "443371000124107",
+            "display": "Obese class I (finding)"
+          },
+          {
+            "code": "443381000124105",
+            "display": "Obese class II (finding)"
+          },
+          {
+            "code": "722595002",
+            "display": "Overweight in adulthood with body mass index of 25 or more but less than 30 (finding)"
+          },
+          {
+            "code": "783549006",
+            "display": "Obesity due to centrosomal protein 19 deficiency (disorder)"
+          },
+          {
+            "code": "783556000",
+            "display": "Severe early-onset obesity insulin resistance syndrome due to SH2B adaptor protein 1 deficiency (disorder)"
+          },
+          {
+            "code": "783719006",
+            "display": "Obesity due to SIM bHLH transcription factor 1 deficiency (disorder)"
+          },
+          {
+            "code": "785722006",
+            "display": "Obesity due to leptin receptor gene deficiency (disorder)"
+          },
+          {
+            "code": "819948005",
+            "display": "Obese class III (finding)"
           },
           {
             "code": "83911000119104",
@@ -97,8 +137,20 @@
             "display": "Overweight"
           },
           {
-            "code": "E66.8",
-            "display": "Other obesity"
+            "code": "E66.811",
+            "display": "Obesity, class 1"
+          },
+          {
+            "code": "E66.812",
+            "display": "Obesity, class 2"
+          },
+          {
+            "code": "E66.813",
+            "display": "Obesity, class 3"
+          },
+          {
+            "code": "E66.89",
+            "display": "Other obesity not elsewhere classified"
           },
           {
             "code": "E66.9",

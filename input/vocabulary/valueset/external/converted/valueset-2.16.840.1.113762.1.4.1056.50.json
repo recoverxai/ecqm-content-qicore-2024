@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1056.50",
   "meta": {
-    "versionId": "31",
-    "lastUpdated": "2024-08-09T14:22:18.000-04:00",
+    "versionId": "37",
+    "lastUpdated": "2025-02-06T01:09:49.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2024-02-07"
+      "valueDate": "2025-02-06"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1056.50",
@@ -23,17 +23,25 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1056.50"
     }
   ],
-  "version": "20240207",
+  "version": "20250206",
   "name": "HIVLabTests",
   "title": "HIV Lab Tests",
   "status": "active",
-  "date": "2024-02-07T01:03:02-05:00",
+  "date": "2025-02-06T01:09:49-05:00",
   "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
         "system": "http://loinc.org",
         "concept": [
+          {
+            "code": "104732-3",
+            "display": "HIV 1 Ab band pattern [Interpretation] in Serum"
+          },
+          {
+            "code": "105080-6",
+            "display": "HIV 1+2 Ab+HIV1 p24 Ag [Presence] in Serum or Plasma"
+          },
           {
             "code": "10901-7",
             "display": "HIV 2 gp125 Ab [Presence] in Serum by Immunoblot"

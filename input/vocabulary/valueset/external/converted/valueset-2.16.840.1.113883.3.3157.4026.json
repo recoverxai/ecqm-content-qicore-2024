@@ -116,12 +116,28 @@
             "display": "Contusion of face (disorder)"
           },
           {
+            "code": "127295002",
+            "display": "Traumatic brain injury (disorder)"
+          },
+          {
             "code": "127296001",
             "display": "Intracranial injury (disorder)"
           },
           {
+            "code": "127298000",
+            "display": "Traumatic brain injury with loss of consciousness (disorder)"
+          },
+          {
+            "code": "127304009",
+            "display": "Cerebellar contusion (disorder)"
+          },
+          {
             "code": "127305005",
             "display": "Brain stem contusion (disorder)"
+          },
+          {
+            "code": "127306006",
+            "display": "Cerebellar laceration (disorder)"
           },
           {
             "code": "127308007",

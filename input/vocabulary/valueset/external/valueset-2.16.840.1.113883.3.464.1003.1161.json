@@ -31,54 +31,44 @@
   "date": "2022-02-02T01:02:05-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:54e2d7c9-6564-4892-aca6-2292e8e31dc4",
-    "timestamp": "2024-12-01T19:43:04-05:00",
+    "identifier": "urn:uuid:778f10b8-8a0e-4752-b67b-fd96f88d5de3",
+    "timestamp": "2025-03-20T16:13:40-04:00",
     "total": 6,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "109",
         "display": "pneumococcal vaccine, unspecified formulation"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "133",
         "display": "pneumococcal conjugate vaccine, 13 valent"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "152",
         "display": "Pneumococcal Conjugate, unspecified formulation"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "215",
         "display": "Pneumococcal conjugate vaccine 15-valent (PCV15), polysaccharide CRM197 conjugate, adjuvant, preservative free"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "216",
         "display": "Pneumococcal conjugate vaccine 20-valent (PCV20), polysaccharide CRM197 conjugate, adjuvant, preservative free"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "33",
         "display": "pneumococcal polysaccharide vaccine, 23 valent"
       }

@@ -50,12 +50,112 @@
           {
             "code": "0SQBXZZ",
             "display": "Repair Left Hip Joint, External Approach"
+          },
+          {
+            "code": "0SS904Z",
+            "display": "Reposition Right Hip Joint with Internal Fixation Device, Open Approach"
+          },
+          {
+            "code": "0SS905Z",
+            "display": "Reposition Right Hip Joint with External Fixation Device, Open Approach"
+          },
+          {
+            "code": "0SS90ZZ",
+            "display": "Reposition Right Hip Joint, Open Approach"
+          },
+          {
+            "code": "0SS934Z",
+            "display": "Reposition Right Hip Joint with Internal Fixation Device, Percutaneous Approach"
+          },
+          {
+            "code": "0SS935Z",
+            "display": "Reposition Right Hip Joint with External Fixation Device, Percutaneous Approach"
+          },
+          {
+            "code": "0SS93ZZ",
+            "display": "Reposition Right Hip Joint, Percutaneous Approach"
+          },
+          {
+            "code": "0SS944Z",
+            "display": "Reposition Right Hip Joint with Internal Fixation Device, Percutaneous Endoscopic Approach"
+          },
+          {
+            "code": "0SS945Z",
+            "display": "Reposition Right Hip Joint with External Fixation Device, Percutaneous Endoscopic Approach"
+          },
+          {
+            "code": "0SS94ZZ",
+            "display": "Reposition Right Hip Joint, Percutaneous Endoscopic Approach"
+          },
+          {
+            "code": "0SS9X4Z",
+            "display": "Reposition Right Hip Joint with Internal Fixation Device, External Approach"
+          },
+          {
+            "code": "0SS9X5Z",
+            "display": "Reposition Right Hip Joint with External Fixation Device, External Approach"
+          },
+          {
+            "code": "0SS9XZZ",
+            "display": "Reposition Right Hip Joint, External Approach"
+          },
+          {
+            "code": "0SSB04Z",
+            "display": "Reposition Left Hip Joint with Internal Fixation Device, Open Approach"
+          },
+          {
+            "code": "0SSB05Z",
+            "display": "Reposition Left Hip Joint with External Fixation Device, Open Approach"
+          },
+          {
+            "code": "0SSB0ZZ",
+            "display": "Reposition Left Hip Joint, Open Approach"
+          },
+          {
+            "code": "0SSB34Z",
+            "display": "Reposition Left Hip Joint with Internal Fixation Device, Percutaneous Approach"
+          },
+          {
+            "code": "0SSB35Z",
+            "display": "Reposition Left Hip Joint with External Fixation Device, Percutaneous Approach"
+          },
+          {
+            "code": "0SSB3ZZ",
+            "display": "Reposition Left Hip Joint, Percutaneous Approach"
+          },
+          {
+            "code": "0SSB44Z",
+            "display": "Reposition Left Hip Joint with Internal Fixation Device, Percutaneous Endoscopic Approach"
+          },
+          {
+            "code": "0SSB45Z",
+            "display": "Reposition Left Hip Joint with External Fixation Device, Percutaneous Endoscopic Approach"
+          },
+          {
+            "code": "0SSB4ZZ",
+            "display": "Reposition Left Hip Joint, Percutaneous Endoscopic Approach"
+          },
+          {
+            "code": "0SSBX4Z",
+            "display": "Reposition Left Hip Joint with Internal Fixation Device, External Approach"
+          },
+          {
+            "code": "0SSBX5Z",
+            "display": "Reposition Left Hip Joint with External Fixation Device, External Approach"
+          },
+          {
+            "code": "0SSBXZZ",
+            "display": "Reposition Left Hip Joint, External Approach"
           }
         ]
       },
       {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "119614000",
+            "display": "Hip joint reconstruction (procedure)"
+          },
           {
             "code": "16174006",
             "display": "Acetabuloplasty with use of methyl methacrylate (procedure)"

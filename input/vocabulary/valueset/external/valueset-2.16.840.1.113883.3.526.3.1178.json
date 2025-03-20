@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "AHA Steward",
   "expansion": {
-    "identifier": "urn:uuid:0f23ed47-3449-4036-a4d4-6527fd4cb886",
-    "timestamp": "2024-12-01T19:45:36-05:00",
-    "total": 23,
+    "identifier": "urn:uuid:e3109923-e955-4c96-9a01-482ce933fdca",
+    "timestamp": "2025-03-20T16:17:23-04:00",
+    "total": 25,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -177,6 +167,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "418370000",
         "display": "Atenolol adverse reaction (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "720665007",
+        "display": "Adverse reaction caused by metoprolol succinate (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "720666008",
+        "display": "Adverse reaction caused by metoprolol tartrate (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

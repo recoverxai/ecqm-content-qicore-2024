@@ -31,20 +31,10 @@
   "date": "2021-02-20T01:02:00-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:21679878-5dbe-42a6-b903-bb77bc44d499",
-    "timestamp": "2024-12-01T19:44:20-05:00",
+    "identifier": "urn:uuid:e22a501a-276a-4d1c-9cc0-369a43f78242",
+    "timestamp": "2025-03-20T16:16:04-04:00",
     "total": 3,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

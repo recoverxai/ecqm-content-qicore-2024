@@ -31,26 +31,160 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "AHA Steward",
   "expansion": {
-    "identifier": "urn:uuid:e6e5421f-4b05-4421-a623-6afe17e97966",
-    "timestamp": "2024-12-01T19:46:53-05:00",
-    "total": 26,
+    "identifier": "urn:uuid:11a26257-8db5-4b89-8f8a-4c10f51c60d4",
+    "timestamp": "2025-03-20T16:19:18-04:00",
+    "total": 50,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",
         "version": "2.78",
         "code": "10230-1",
         "display": "Left ventricular Ejection fraction"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104145-8",
+        "display": "Left ventricular Ejection fraction - upper limit by US.2D.A2C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104146-6",
+        "display": "Left ventricular Ejection fraction - upper limit by US.2D.A3C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104147-4",
+        "display": "Left ventricular Ejection fraction - upper limit by US.3D.A3C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104148-2",
+        "display": "Left ventricular Ejection fraction - upper limit by US.3D.A4C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104149-0",
+        "display": "Left ventricular Ejection fraction by US.2D.A2C+Calculated by biplane method"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104150-8",
+        "display": "Left ventricular Ejection fraction by US.2D.A3C+Calculated by biplane method"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104151-6",
+        "display": "Left ventricular Ejection fraction by US.2D.A4C+Calculed by biplane method"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104152-4",
+        "display": "Left ventricular Ejection fraction by US.3D.A2C+Calculated by biplane method"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104153-2",
+        "display": "Left ventricular Ejection fraction by US.3D.A3C+Calculated by biplane method"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104154-0",
+        "display": "Left ventricular Ejection fraction by US.3D.A4C+Calculated by biplane method"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104155-7",
+        "display": "Left ventricular Ejection fraction - upper limit by US.3D.A2C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104157-3",
+        "display": "Left ventricular Ejection fraction - upper limit by US.2D.A4C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104243-1",
+        "display": "Left ventricular Ejection fraction - lower limit by US.2D.A3C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104244-9",
+        "display": "Left ventricular Ejection fraction - lower limit by US.2D.A4C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104245-6",
+        "display": "Left ventricular Ejection fraction - lower limit by US.3D.A2C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104246-4",
+        "display": "Left ventricular Ejection fraction - lower limit by US.3D.A3C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104247-2",
+        "display": "Left ventricular Ejection fraction - lower limit by US.3D.A4C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104251-4",
+        "display": "Left ventricular Ejection fraction by US.2D.A2C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104252-2",
+        "display": "Left ventricular Ejection fraction by US.2D.A3C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104253-0",
+        "display": "Left ventricular Ejection fraction by US.2D.A4C Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104254-8",
+        "display": "Left ventricular Ejection fraction by US.3D.A2C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104255-5",
+        "display": "Left ventricular Ejection fraction by US.3D.A3C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104256-3",
+        "display": "Left ventricular Ejection fraction by US.3D.A4C+Estimated"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104258-9",
+        "display": "Left ventricular Ejection fraction - lower limit by US.2D.A2C+Estimated"
       },
       {
         "system": "http://loinc.org",

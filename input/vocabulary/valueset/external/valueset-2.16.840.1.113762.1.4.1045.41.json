@@ -30,54 +30,44 @@
   "date": "2023-01-17T01:02:49-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:569e140c-5205-477d-9db0-44f45686918c",
-    "timestamp": "2024-12-01T19:44:32-05:00",
+    "identifier": "urn:uuid:8ed95b4f-c3eb-442a-8f23-120a713a6a0a",
+    "timestamp": "2025-03-20T16:16:21-04:00",
     "total": 6,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1736470",
         "display": "10 ML eptifibatide 2 MG/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1736477",
         "display": "100 ML eptifibatide 2 MG/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1737466",
         "display": "100 ML tirofiban 0.05 MG/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1737471",
         "display": "250 ML tirofiban 0.05 MG/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1813035",
         "display": "15 ML tirofiban 0.25 MG/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "200349",
         "display": "100 ML eptifibatide 0.75 MG/ML Injection"
       }

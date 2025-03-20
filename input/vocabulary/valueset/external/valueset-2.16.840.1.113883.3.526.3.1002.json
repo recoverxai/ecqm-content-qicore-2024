@@ -31,20 +31,10 @@
   "date": "2020-03-07T01:00:21-05:00",
   "publisher": "American Society of Clinical Oncology Steward",
   "expansion": {
-    "identifier": "urn:uuid:4736bdba-9e7a-428e-886e-fcd701c8c4f7",
-    "timestamp": "2024-12-01T19:50:43-05:00",
+    "identifier": "urn:uuid:d3012b76-545b-4a9b-9d37-d9ba0e0da4fd",
+    "timestamp": "2025-03-20T16:36:05-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

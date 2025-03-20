@@ -31,20 +31,10 @@
   "date": "2022-04-15T01:02:23-04:00",
   "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "urn:uuid:75b732eb-12fa-437a-99a2-9ae89535e5ce",
-    "timestamp": "2024-12-01T19:43:38-05:00",
+    "identifier": "urn:uuid:f6a39584-4559-4d6e-bd40-f67336e54818",
+    "timestamp": "2025-03-20T16:14:11-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding",

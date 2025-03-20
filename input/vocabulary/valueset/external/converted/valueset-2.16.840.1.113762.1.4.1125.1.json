@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1125.1",
   "meta": {
-    "versionId": "53",
-    "lastUpdated": "2024-02-15T01:10:30.000-05:00",
+    "versionId": "57",
+    "lastUpdated": "2025-02-11T01:03:34.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2024-02-15"
+      "valueDate": "2025-02-11"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1125.1",
@@ -23,11 +23,11 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1125.1"
     }
   ],
-  "version": "20240215",
+  "version": "20250211",
   "name": "ScheduleIVBenzodiazepines",
   "title": "Schedule IV Benzodiazepines",
   "status": "active",
-  "date": "2024-02-15T01:10:30-05:00",
+  "date": "2025-02-11T01:03:34-05:00",
   "publisher": "Mathematica",
   "compose": {
     "include": [
@@ -301,6 +301,10 @@
           {
             "code": "312134",
             "display": "oxazepam 15 MG Oral Capsule"
+          },
+          {
+            "code": "317408",
+            "display": "lorazepam 4 MG/ML"
           },
           {
             "code": "349194",

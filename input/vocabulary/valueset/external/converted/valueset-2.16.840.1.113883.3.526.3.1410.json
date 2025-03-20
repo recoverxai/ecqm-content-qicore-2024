@@ -36,6 +36,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1217661001",
+            "display": "Cataract due to degenerative disorder of eye (disorder)"
+          },
+          {
             "code": "15738161000119104",
             "display": "Cataract of right eye due to ocular disease (disorder)"
           },
@@ -56,12 +60,36 @@
             "display": "Cataract of bilateral eyes due to inflammatory disorder (disorder)"
           },
           {
+            "code": "15990151000119103",
+            "display": "Cataract due to and following ocular disease of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15990191000119108",
+            "display": "Cataract due to and following ocular disease of left eye (disorder)"
+          },
+          {
+            "code": "15990231000119104",
+            "display": "Cataract due to and following ocular disease of right eye (disorder)"
+          },
+          {
             "code": "193600001",
             "display": "Cataract due to ocular disease (disorder)"
           },
           {
             "code": "193602009",
             "display": "Cataract due to inflammatory disorder (disorder)"
+          },
+          {
+            "code": "331941000119109",
+            "display": "Glaukomflecken of right eye (disorder)"
+          },
+          {
+            "code": "337561000119109",
+            "display": "Glaukomflecken of left eye (disorder)"
+          },
+          {
+            "code": "343351000119105",
+            "display": "Glaukomflecken of bilateral eyes (disorder)"
           },
           {
             "code": "67733005",

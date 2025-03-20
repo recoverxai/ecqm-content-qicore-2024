@@ -30,120 +30,110 @@
   "date": "2024-01-23T01:10:32-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:2d760bdf-cf04-456b-8907-1fc2d9bdf898",
-    "timestamp": "2024-12-01T19:45:50-05:00",
+    "identifier": "urn:uuid:99e3c813-cc3d-4673-8ce7-8dabd2e93452",
+    "timestamp": "2025-03-20T16:17:52-04:00",
     "total": 17,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1361493",
         "display": "glimepiride 6 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1361495",
         "display": "glimepiride 8 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "153842",
         "display": "glimepiride 3 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "197737",
         "display": "glyburide 1.25 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "199245",
         "display": "glimepiride 1 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "199246",
         "display": "glimepiride 2 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "199247",
         "display": "glimepiride 4 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "310534",
         "display": "glyburide 2.5 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "310536",
         "display": "glyburide 3 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "310537",
         "display": "glyburide 5 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "310539",
         "display": "glyburide 6 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "314000",
         "display": "glyburide 1.5 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "647237",
         "display": "glimepiride 2 MG / pioglitazone 30 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "647239",
         "display": "glimepiride 4 MG / pioglitazone 30 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "861743",
         "display": "glyburide 1.25 MG / metformin hydrochloride 250 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "861748",
         "display": "glyburide 2.5 MG / metformin hydrochloride 500 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "861753",
         "display": "glyburide 5 MG / metformin hydrochloride 500 MG Oral Tablet"
       }

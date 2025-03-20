@@ -30,20 +30,10 @@
   "date": "2023-02-14T01:02:32-05:00",
   "publisher": "Yale",
   "expansion": {
-    "identifier": "urn:uuid:3f65047d-ee5b-42c7-91a7-a845b89a0aaf",
-    "timestamp": "2024-12-01T19:43:36-05:00",
+    "identifier": "urn:uuid:f021b063-07c7-4554-95ea-22ed317852a7",
+    "timestamp": "2025-03-20T16:14:09-04:00",
     "total": 14,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "https://nahdo.org/sopt",

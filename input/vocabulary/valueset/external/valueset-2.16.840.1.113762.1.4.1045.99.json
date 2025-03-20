@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113762.1.4.1045.99",
   "meta": {
     "versionId": "31",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2024-12-02T08:10:20.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -31,20 +31,10 @@
   "date": "2021-06-11T01:01:24-04:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:1a55016e-396e-49a4-8139-005aba403bf6",
-    "timestamp": "2024-12-01T19:43:14-05:00",
+    "identifier": "urn:uuid:4ab93362-5bdf-49b7-a723-d585cd47167b",
+    "timestamp": "2025-03-20T16:13:50-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

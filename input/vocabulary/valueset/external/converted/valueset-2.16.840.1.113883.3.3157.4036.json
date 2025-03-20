@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.3157.4036",
   "meta": {
     "versionId": "11",
-    "lastUpdated": "2024-09-06T09:09:58.000-04:00",
+    "lastUpdated": "2025-02-10T09:51:00.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -24,8 +24,8 @@
     }
   ],
   "version": "20190216",
-  "name": "ActiveBleedingExcludingMensesOrBleedingDiathesis",
-  "title": "Active Bleeding Excluding Menses or Bleeding Diathesis",
+  "name": "ActiveBleedingOrBleedingDiathesisExcludingMenses",
+  "title": "Active Bleeding or Bleeding Diathesis, Excluding Menses",
   "status": "active",
   "experimental": false,
   "date": "2022-03-07T11:14:02-05:00",
@@ -501,6 +501,14 @@
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
           {
+            "code": "D63.0",
+            "display": "Anemia in neoplastic disease"
+          },
+          {
+            "code": "D65",
+            "display": "Disseminated intravascular coagulation [defibrination syndrome]"
+          },
+          {
             "code": "D68.311",
             "display": "Acquired hemophilia"
           },
@@ -699,6 +707,10 @@
           {
             "code": "I62.9",
             "display": "Nontraumatic intracranial hemorrhage, unspecified"
+          },
+          {
+            "code": "K92.0",
+            "display": "Hematemesis"
           },
           {
             "code": "R04.1",

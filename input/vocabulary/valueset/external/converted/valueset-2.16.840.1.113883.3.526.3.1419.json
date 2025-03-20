@@ -36,6 +36,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1003921006",
+            "display": "Sclerocornea of bilateral corneas (disorder)"
+          },
+          {
             "code": "1099031000119105",
             "display": "Opacity of cornea of bilateral eyes (disorder)"
           },
@@ -48,8 +52,28 @@
             "display": "Opacity of cornea of right eye (disorder)"
           },
           {
+            "code": "1144352007",
+            "display": "Scar of cornea due to and following herpes zoster infection (disorder)"
+          },
+          {
+            "code": "1217688006",
+            "display": "Congenital corneal leukoma (disorder)"
+          },
+          {
+            "code": "1231682009",
+            "display": "Opacity of cornea due to and following traumatic injury (disorder)"
+          },
+          {
             "code": "13282008",
             "display": "Congenital corneal opacity interfering with vision (disorder)"
+          },
+          {
+            "code": "15987391000119105",
+            "display": "Congenital opacity of cornea of left eye (disorder)"
+          },
+          {
+            "code": "15987431000119100",
+            "display": "Congenital opacity of cornea of right eye (disorder)"
           },
           {
             "code": "15999271000119108",
@@ -84,6 +108,10 @@
             "display": "Corneal leukoma interfering with central vision (disorder)"
           },
           {
+            "code": "246967007",
+            "display": "Central posterior corneal opacity (finding)"
+          },
+          {
             "code": "268160006",
             "display": "Congenital corneal opacity (disorder)"
           },
@@ -96,12 +124,40 @@
             "display": "Visually significant corneal scar (disorder)"
           },
           {
+            "code": "333231000119107",
+            "display": "Peripheral opacity of right cornea (disorder)"
+          },
+          {
+            "code": "333881000119109",
+            "display": "Minor opacity of right cornea (disorder)"
+          },
+          {
+            "code": "336221000119104",
+            "display": "Central opacity of right cornea (disorder)"
+          },
+          {
             "code": "336501000119105",
             "display": "Adherent leukoma of right eye (disorder)"
           },
           {
+            "code": "338841000119108",
+            "display": "Peripheral opacity of left cornea (disorder)"
+          },
+          {
+            "code": "339481000119109",
+            "display": "Minor opacity of left cornea (disorder)"
+          },
+          {
+            "code": "341831000119108",
+            "display": "Central opacity of left cornea (disorder)"
+          },
+          {
             "code": "342111000119101",
             "display": "Adherent leukoma of left eye (disorder)"
+          },
+          {
+            "code": "344611000119101",
+            "display": "Peripheral opacity of bilateral corneas (disorder)"
           },
           {
             "code": "347271000119100",
@@ -152,8 +208,28 @@
             "display": "Minor opacity of cornea (disorder)"
           },
           {
+            "code": "675331000119106",
+            "display": "Leukoma of cornea of bilateral eyes (disorder)"
+          },
+          {
+            "code": "675341000119102",
+            "display": "Leukoma of cornea of left eye (disorder)"
+          },
+          {
+            "code": "675351000119100",
+            "display": "Leukoma of cornea of right eye (disorder)"
+          },
+          {
+            "code": "704272003",
+            "display": "Corneal leukoma (disorder)"
+          },
+          {
             "code": "72494008",
             "display": "Corneal nebula (disorder)"
+          },
+          {
+            "code": "840489001",
+            "display": "Congenital opacity of bilateral corneas (disorder)"
           },
           {
             "code": "95479005",

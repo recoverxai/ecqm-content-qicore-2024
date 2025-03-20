@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.666.5.2363",
   "meta": {
-    "versionId": "34",
-    "lastUpdated": "2024-02-01T15:13:55.000-05:00",
+    "versionId": "41",
+    "lastUpdated": "2025-02-07T01:09:20.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2023-02-14"
+      "valueDate": "2025-02-07"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.2363",
@@ -23,28 +23,24 @@
       "value": "urn:oid:2.16.840.1.113883.3.666.5.2363"
     }
   ],
-  "version": "20230214",
+  "version": "20250207",
   "name": "CreatinineLabTest",
   "title": "Creatinine Lab Test",
   "status": "active",
-  "date": "2023-02-14T01:02:32-05:00",
+  "date": "2025-02-07T01:09:20-05:00",
   "publisher": "Yale",
   "expansion": {
-    "identifier": "urn:uuid:935deb35-3285-4ae0-b59c-c15536d3b8f3",
-    "timestamp": "2024-12-01T19:49:25-05:00",
+    "identifier": "urn:uuid:1d938243-3a17-4671-bce8-c2c604f113fb",
+    "timestamp": "2025-03-20T16:34:14-04:00",
     "total": 11,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "101475-2",
+        "display": "Creatinine [Moles/volume] in Venous blood"
+      },
       {
         "system": "http://loinc.org",
         "version": "2.78",
@@ -74,12 +70,6 @@
         "version": "2.78",
         "code": "2160-0",
         "display": "Creatinine [Mass/volume] in Serum or Plasma"
-      },
-      {
-        "system": "http://loinc.org",
-        "version": "2.78",
-        "code": "35203-9",
-        "display": "Creatinine [Mass or Moles/volume] in Serum or Plasma"
       },
       {
         "system": "http://loinc.org",

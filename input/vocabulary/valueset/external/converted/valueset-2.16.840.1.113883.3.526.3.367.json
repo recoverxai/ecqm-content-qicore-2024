@@ -40,12 +40,20 @@
             "display": "Complete atrioventricular block as complication of atrioventricular nodal ablation (disorder)"
           },
           {
+            "code": "195039008",
+            "display": "Partial atrioventricular block (disorder)"
+          },
+          {
             "code": "195042002",
             "display": "Second degree atrioventricular block (disorder)"
           },
           {
             "code": "204383001",
             "display": "Congenital complete atrioventricular heart block (disorder)"
+          },
+          {
+            "code": "204384007",
+            "display": "Congenital incomplete atrioventricular heart block (disorder)"
           },
           {
             "code": "233917008",
@@ -58,6 +66,10 @@
           {
             "code": "251114004",
             "display": "Intermittent second degree atrioventricular block (disorder)"
+          },
+          {
+            "code": "270492004",
+            "display": "First degree atrioventricular block (disorder)"
           },
           {
             "code": "27885002",
@@ -76,12 +88,24 @@
             "display": "High degree second degree atrioventricular block (disorder)"
           },
           {
+            "code": "284951000119109",
+            "display": "Postoperative atrioventricular block (disorder)"
+          },
+          {
+            "code": "472809000",
+            "display": "Atrioventricular block due to endocarditis (disorder)"
+          },
+          {
             "code": "54016002",
             "display": "Mobitz type I incomplete atrioventricular block (disorder)"
           },
           {
             "code": "733125004",
             "display": "Acquired complete atrioventricular block (disorder)"
+          },
+          {
+            "code": "77221000",
+            "display": "Incomplete atrioventricular block with atrioventricular response (disorder)"
           }
         ]
       },

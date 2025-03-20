@@ -31,20 +31,10 @@
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:3b5c4b0b-12ee-41ed-8064-59979e501b5a",
-    "timestamp": "2024-12-01T19:46:26-05:00",
+    "identifier": "urn:uuid:fd7c2da6-a301-4fb0-a4b2-decc3882eca4",
+    "timestamp": "2025-03-20T16:18:55-04:00",
     "total": 35,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

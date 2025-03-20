@@ -36,6 +36,30 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1085951000119102",
+            "display": "Dental caries on pit and fissure surface limited to enamel (disorder)"
+          },
+          {
+            "code": "1085961000119100",
+            "display": "Dental caries on pit and fissure surface penetrating into dentin (disorder)"
+          },
+          {
+            "code": "1085971000119106",
+            "display": "Dental caries on pit and fissure surface penetrating into pulp (disorder)"
+          },
+          {
+            "code": "1085981000119109",
+            "display": "Dental caries on smooth surface limited to enamel (disorder)"
+          },
+          {
+            "code": "1085991000119107",
+            "display": "Dental caries on smooth surface penetrating into dentin (disorder)"
+          },
+          {
+            "code": "1086001000119108",
+            "display": "Dental caries on smooth surface penetrating into pulp (disorder)"
+          },
+          {
             "code": "109564008",
             "display": "Dental caries associated with enamel hypomineralization (disorder)"
           },
@@ -96,6 +120,10 @@
             "display": "Caries of infancy associated with bottle feeding (disorder)"
           },
           {
+            "code": "1287576005",
+            "display": "Primary dental caries extending into outer half of enamel (disorder)"
+          },
+          {
             "code": "15733007",
             "display": "Incipient enamel caries (disorder)"
           },
@@ -118,6 +146,10 @@
           {
             "code": "196305005",
             "display": "Odontoclasia (disorder)"
+          },
+          {
+            "code": "234975001",
+            "display": "Root caries (disorder)"
           },
           {
             "code": "234976000",

@@ -31,20 +31,10 @@
   "date": "2021-06-11T01:01:24-04:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:7b9aa639-279e-4b48-b663-801a4bb92465",
-    "timestamp": "2024-12-01T19:48:35-05:00",
+    "identifier": "urn:uuid:4c390eee-8193-4c5a-b820-84ccc7dab0ce",
+    "timestamp": "2025-03-20T16:21:03-04:00",
     "total": 8,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

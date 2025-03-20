@@ -31,26 +31,34 @@
   "date": "2021-02-10T01:02:26-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:3c6db5c2-6486-4dbf-9017-bcf798f86993",
-    "timestamp": "2024-12-01T19:45:54-05:00",
-    "total": 8,
+    "identifier": "urn:uuid:2884c8d9-fcd1-4aa1-a93b-53f2d1b69c47",
+    "timestamp": "2025-03-20T16:17:55-04:00",
+    "total": 14,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "186266008",
         "display": "Tuberculous chronic iridocyclitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332731000119108",
+        "display": "Recurrent iridocyclitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "338341000119103",
+        "display": "Recurrent iridocyclitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "344111000119109",
+        "display": "Recurrent iridocyclitis of bilateral eyes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -69,6 +77,24 @@
         "version": "2025",
         "code": "A18.54",
         "display": "Tuberculous iridocyclitis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "H20.021",
+        "display": "Recurrent acute iridocyclitis, right eye"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "H20.022",
+        "display": "Recurrent acute iridocyclitis, left eye"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "H20.023",
+        "display": "Recurrent acute iridocyclitis, bilateral"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

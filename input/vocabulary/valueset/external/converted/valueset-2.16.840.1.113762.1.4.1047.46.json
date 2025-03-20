@@ -228,8 +228,8 @@
             "display": "Acute coronary thrombosis not resulting in myocardial infarction"
           },
           {
-            "code": "I24.8",
-            "display": "Other forms of acute ischemic heart disease"
+            "code": "I24.81",
+            "display": "Acute coronary microvascular dysfunction"
           },
           {
             "code": "I24.89",
@@ -238,6 +238,10 @@
           {
             "code": "I24.9",
             "display": "Acute ischemic heart disease, unspecified"
+          },
+          {
+            "code": "I25.2",
+            "display": "Old myocardial infarction"
           },
           {
             "code": "I25.5",
@@ -250,6 +254,10 @@
           {
             "code": "I25.82",
             "display": "Chronic total occlusion of coronary artery"
+          },
+          {
+            "code": "I25.85",
+            "display": "Chronic coronary microvascular dysfunction"
           },
           {
             "code": "I25.89",

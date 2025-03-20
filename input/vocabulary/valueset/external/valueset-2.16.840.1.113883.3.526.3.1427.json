@@ -31,21 +31,17 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:2fdaf9c3-e485-4823-937f-3552e580c39a",
-    "timestamp": "2024-12-01T19:44:19-05:00",
-    "total": 20,
+    "identifier": "urn:uuid:16fbd420-2bf5-45ad-ad92-0bdbc76e0843",
+    "timestamp": "2025-03-20T16:16:03-04:00",
+    "total": 25,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1339033009",
+        "display": "Disorder of optic nerve caused by radiation (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -85,6 +81,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "735646005",
+        "display": "Injury of bilateral optic nerves (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "735648006",
+        "display": "Injury of bilateral optic pathways (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "735649003",
         "display": "Injury of bilateral optic tracts (disorder)"
       },
@@ -93,6 +101,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "736321008",
         "display": "Injury of both visual cortices (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "762357005",
+        "display": "Traumatic injury of left optic nerve (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "762358000",
+        "display": "Traumatic injury of right optic nerve (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

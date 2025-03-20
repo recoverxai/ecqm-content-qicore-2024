@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.93",
   "meta": {
-    "versionId": "39",
-    "lastUpdated": "2024-11-13T14:51:18.000-05:00",
+    "versionId": "44",
+    "lastUpdated": "2025-02-06T01:09:49.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2023-01-17"
+      "valueDate": "2025-02-06"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.93",
@@ -23,33 +23,29 @@
       "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.93"
     }
   ],
-  "version": "20230117",
+  "version": "20250206",
   "name": "PatientRefusal",
   "title": "Patient Refusal",
   "status": "active",
-  "date": "2023-01-17T01:02:49-05:00",
+  "date": "2025-02-06T01:09:49-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:0151e873-b9f8-4a53-8388-73a79255f19c",
-    "timestamp": "2024-12-01T19:47:38-05:00",
-    "total": 17,
+    "identifier": "urn:uuid:3710dd0b-3ed4-44e1-aff9-566ae382bbda",
+    "timestamp": "2025-03-20T16:20:00-04:00",
+    "total": 18,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1162745003",
         "display": "Refused by parent of subject (qualifier value)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296859006",
+        "display": "Procedure declined (situation)"
       },
       {
         "system": "http://snomed.info/sct",

@@ -56,6 +56,10 @@
             "display": "simvastatin 40 MG Oral Tablet"
           },
           {
+            "code": "2001254",
+            "display": "pitavastatin magnesium 1 MG Oral Tablet"
+          },
+          {
             "code": "2001262",
             "display": "pitavastatin magnesium 2 MG Oral Tablet"
           },
@@ -78,6 +82,18 @@
           {
             "code": "2535750",
             "display": "ezetimibe 10 MG / rosuvastatin 10 MG Oral Tablet"
+          },
+          {
+            "code": "2689112",
+            "display": "pitavastatin sodium 1 MG Oral Tablet"
+          },
+          {
+            "code": "2689121",
+            "display": "pitavastatin sodium 2 MG Oral Tablet"
+          },
+          {
+            "code": "2689125",
+            "display": "pitavastatin sodium 4 MG Oral Tablet"
           },
           {
             "code": "310405",
@@ -146,6 +162,10 @@
           {
             "code": "859747",
             "display": "rosuvastatin calcium 10 MG Oral Tablet"
+          },
+          {
+            "code": "861643",
+            "display": "pitavastatin calcium 1 MG Oral Tablet"
           },
           {
             "code": "861648",

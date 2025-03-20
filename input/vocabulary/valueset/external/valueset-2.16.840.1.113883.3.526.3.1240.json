@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:560e1ce5-94b8-4ea8-8455-61d17c523580",
-    "timestamp": "2024-12-01T19:44:52-05:00",
+    "identifier": "urn:uuid:618636d3-c138-4146-b3a8-6d7c824f4999",
+    "timestamp": "2025-03-20T16:16:46-04:00",
     "total": 8,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -77,20 +67,20 @@
         "display": "Initial evaluation and management of healthy individual (procedure)"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0402",
         "display": "Initial preventive physical examination; face-to-face visit, services limited to new beneficiary during the first 12 months of medicare enrollment"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0438",
         "display": "Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0439",
         "display": "Annual wellness visit, includes a personalized prevention plan of service (pps), subsequent visit"
       }

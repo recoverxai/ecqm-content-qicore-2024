@@ -31,21 +31,41 @@
   "date": "2021-02-18T01:00:25-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:71d1bb56-ca4b-48e1-af98-fcbd8fc1ea91",
-    "timestamp": "2024-12-01T19:45:35-05:00",
-    "total": 48,
+    "identifier": "urn:uuid:7197d52b-703f-4c97-858b-9cc75155f3cd",
+    "timestamp": "2025-03-20T16:17:22-04:00",
+    "total": 90,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231625008",
+        "display": "Tractional retinal detachment due to proliferative diabetic retinopathy (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231728000",
+        "display": "Retinal detachment due to degenerative progressive high myopia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1255639008",
+        "display": "Break of retina with schisis of retina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1279846006",
+        "display": "Detachment of retina of left eye with break of retina of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1279847002",
+        "display": "Detachment of retina of right eye with break of retina of right eye (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -63,6 +83,96 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1281815001",
         "display": "Partial detachment of retina with multiple breaks of retina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306765002",
+        "display": "Detachment of retina of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306766001",
+        "display": "Detachment of retina of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306767005",
+        "display": "Detachment of retina of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15733601000119104",
+        "display": "Chronic partial detachment of retina of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15733681000119107",
+        "display": "Chronic partial detachment of retina of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734081000119102",
+        "display": "Old total detachment of retinas of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734121000119100",
+        "display": "Chronic total detachment of retina of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734161000119105",
+        "display": "Chronic total detachment of retina of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734321000119103",
+        "display": "Acute partial detachment of retina of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734361000119108",
+        "display": "Old retinal detachment of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734401000119104",
+        "display": "Acute partial detachment of retina of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734521000119107",
+        "display": "Old retinal detachment of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734561000119102",
+        "display": "Old retinal detachment of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734641000119100",
+        "display": "Acute detachment of retina of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15734681000119105",
+        "display": "Acute detachment of retina of right eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -105,6 +215,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "193327005",
         "display": "Old subtotal retinal detachment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "193329008",
+        "display": "Retinoschisis and retinal cysts (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -175,6 +291,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "31181000119100",
+        "display": "Old retinal detachment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "31191000119102",
+        "display": "Recent retinal detachment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "312923002",
         "display": "Chronic central serous chorioretinopathy (disorder)"
       },
@@ -229,8 +357,62 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "314494006",
+        "display": "Pseudophakic retinal detachment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "331111000119108",
+        "display": "Total retinal detachment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "331811000119104",
+        "display": "Traction detachment of right retina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "331831000119109",
+        "display": "Total detachment of right retina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332341000119100",
+        "display": "Schisis of right retina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "334891000119105",
         "display": "Hemorrhagic detachment of right retinal pigment epithelium (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "335021000119100",
+        "display": "Giant retinal tear of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337431000119100",
+        "display": "Traction detachment of left retina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337451000119106",
+        "display": "Total detachment of left retina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337951000119101",
+        "display": "Schisis of left retina (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -241,14 +423,32 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "340631000119100",
+        "display": "Giant retinal tear of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "345811000119101",
         "display": "Hemorrhagic detachment of bilateral retinal pigment epithelium (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "345941000119106",
+        "display": "Giant retinal tear of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "34711008",
         "display": "Traction detachment of retina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "361130009",
+        "display": "Peripheral retinoschisis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -271,14 +471,56 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "44268007",
+        "display": "Retinoschisis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "51987004",
         "display": "Retinal detachment without retinal defect (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "712507000",
+        "display": "Rhegmatogenous retinal detachment with multiple breaks (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "713345005",
+        "display": "Partial retinal detachment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "7219007",
         "display": "Traction detachment with vitreoretinal organization (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "723023003",
+        "display": "Adult retinoschisis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "83405000",
+        "display": "Flat retinoschisis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "86923008",
+        "display": "Juvenile retinoschisis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "95493003",
+        "display": "Congenital retinoschisis (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

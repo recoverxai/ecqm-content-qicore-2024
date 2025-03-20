@@ -31,20 +31,10 @@
   "date": "2012-10-25T12:28:31-04:00",
   "publisher": "CDC NCHS",
   "expansion": {
-    "identifier": "urn:uuid:543941f2-346c-4041-9287-42c5c614ec21",
-    "timestamp": "2024-12-01T19:45:44-05:00",
+    "identifier": "urn:uuid:8302d05b-4ca1-4c21-9fd9-4b139da1f1cb",
+    "timestamp": "2025-03-20T16:17:29-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "urn:oid:2.16.840.1.113883.6.238",

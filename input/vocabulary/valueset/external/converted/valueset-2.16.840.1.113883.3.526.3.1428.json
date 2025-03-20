@@ -52,12 +52,16 @@
             "display": "Punctate keratitis of bilateral eyes (disorder)"
           },
           {
-            "code": "397567009",
-            "display": "Keratoconjunctivitis caused by molluscum contagiosum (disorder)"
+            "code": "347031000119107",
+            "display": "Ulcer of bilateral central corneas (disorder)"
           },
           {
             "code": "397570008",
             "display": "Herpes simplex stromal keratitis (disorder)"
+          },
+          {
+            "code": "397571007",
+            "display": "Herpes simplex necrotizing stromal keratitis (disorder)"
           },
           {
             "code": "42513006",

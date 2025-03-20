@@ -140,24 +140,116 @@
             "display": "Antidromic atrioventricular reciprocating tachycardia utilizing accessory pathway with bidirectional conduction (disorder)"
           },
           {
+            "code": "1142123003",
+            "display": "Atrial premature depolarization with aberrant ventricular conduction (disorder)"
+          },
+          {
+            "code": "1142124009",
+            "display": "Atrial premature depolarization with normal conduction (disorder)"
+          },
+          {
             "code": "1142204001",
             "display": "Orthodromic atrioventricular reciprocating tachycardia utilizing concealed accessory pathway (disorder)"
+          },
+          {
+            "code": "1156821008",
+            "display": "Autosomal recessive sick sinus syndrome (disorder)"
           },
           {
             "code": "11849007",
             "display": "Atrioventricular junctional rhythm (disorder)"
           },
           {
+            "code": "1197418004",
+            "display": "Familial atrial tachyarrhythmia, infra-Hisian cardiac conduction disease (disorder)"
+          },
+          {
+            "code": "120041000119109",
+            "display": "Atrial fibrillation with rapid ventricular response (disorder)"
+          },
+          {
+            "code": "1204129001",
+            "display": "Catecholaminergic polymorphic ventricular tachycardia due to RYR2 mutation (disorder)"
+          },
+          {
+            "code": "1204167003",
+            "display": "Catecholaminergic polymorphic ventricular tachycardia due to calsequestrin mutation (disorder)"
+          },
+          {
             "code": "1208832006",
             "display": "Pacemaker mediated tachycardia (disorder)"
+          },
+          {
+            "code": "1208861007",
+            "display": "Long QT syndrome type 4 (disorder)"
+          },
+          {
+            "code": "1208863005",
+            "display": "Long QT syndrome type 5 (disorder)"
+          },
+          {
+            "code": "1208864004",
+            "display": "Long QT syndrome type 2 (disorder)"
+          },
+          {
+            "code": "1208866002",
+            "display": "Long QT syndrome type 3 (disorder)"
+          },
+          {
+            "code": "1208868001",
+            "display": "Long QT syndrome type 12 (disorder)"
+          },
+          {
+            "code": "1208870005",
+            "display": "Long QT syndrome type 13 (disorder)"
+          },
+          {
+            "code": "1208881008",
+            "display": "Long QT syndrome type 11 (disorder)"
+          },
+          {
+            "code": "1208884000",
+            "display": "Long QT syndrome type 10 (disorder)"
+          },
+          {
+            "code": "1208909006",
+            "display": "Long QT syndrome type 6 (disorder)"
+          },
+          {
+            "code": "1208911002",
+            "display": "Long QT syndrome type 9 (disorder)"
           },
           {
             "code": "1220643007",
             "display": "Regular wide QRS complex tachycardia (disorder)"
           },
           {
+            "code": "1222539006",
+            "display": "Three consecutive ventricular premature complexes (disorder)"
+          },
+          {
+            "code": "1230096008",
+            "display": "Timothy syndrome (disorder)"
+          },
+          {
+            "code": "1230097004",
+            "display": "Atypical Timothy syndrome (disorder)"
+          },
+          {
+            "code": "1332373008",
+            "display": "Agonal ventricular rhythm (disorder)"
+          },
+          {
+            "code": "13395001",
+            "display": "Sinoatrial arrest with nodal/ventricular escape (disorder)"
+          },
+          {
             "code": "13640000",
             "display": "Fusion beats (disorder)"
+          },
+          {
+            "code": "15964901000119107",
+            "display": "Atypical atrial flutter (disorder)"
           },
           {
             "code": "16415081000119104",
@@ -196,6 +288,10 @@
             "display": "Ventricular fibrillation and flutter (disorder)"
           },
           {
+            "code": "20852007",
+            "display": "Romano-Ward syndrome (disorder)"
+          },
+          {
             "code": "233891009",
             "display": "Sinoatrial node tachycardia (disorder)"
           },
@@ -220,6 +316,18 @@
             "display": "Permanent junctional reciprocating tachycardia (disorder)"
           },
           {
+            "code": "233910005",
+            "display": "Lone atrial fibrillation (disorder)"
+          },
+          {
+            "code": "233911009",
+            "display": "Non-rheumatic atrial fibrillation (disorder)"
+          },
+          {
+            "code": "233913007",
+            "display": "Familial sick sinus syndrome (disorder)"
+          },
+          {
             "code": "233915000",
             "display": "Paroxysmal familial ventricular fibrillation (disorder)"
           },
@@ -234,6 +342,22 @@
           {
             "code": "234172002",
             "display": "Electromechanical dissociation (disorder)"
+          },
+          {
+            "code": "251092003",
+            "display": "Sinus arrest with atrial escape (disorder)"
+          },
+          {
+            "code": "251093008",
+            "display": "Sinus arrest with junctional escape (disorder)"
+          },
+          {
+            "code": "251094002",
+            "display": "Sinus arrest with ventricular escape (disorder)"
+          },
+          {
+            "code": "251152003",
+            "display": "Marked sinus arrhythmia (disorder)"
           },
           {
             "code": "251161003",
@@ -266,6 +390,10 @@
           {
             "code": "251170000",
             "display": "Blocked premature atrial contraction (disorder)"
+          },
+          {
+            "code": "251171001",
+            "display": "Multiple atrial premature complexes (disorder)"
           },
           {
             "code": "251172008",
@@ -308,6 +436,10 @@
             "display": "Paired ventricular premature complexes (disorder)"
           },
           {
+            "code": "251183004",
+            "display": "Aberrantly conducted complex (disorder)"
+          },
+          {
             "code": "251186007",
             "display": "Ventricular escape complex (disorder)"
           },
@@ -318,6 +450,10 @@
           {
             "code": "251188008",
             "display": "Atrial parasystole (disorder)"
+          },
+          {
+            "code": "253528005",
+            "display": "Arrhythmogenic right ventricular dysplasia (disorder)"
           },
           {
             "code": "26950008",
@@ -344,6 +480,10 @@
             "display": "Ectopic rhythm (disorder)"
           },
           {
+            "code": "300996004",
+            "display": "Controlled atrial fibrillation (disorder)"
+          },
+          {
             "code": "309809007",
             "display": "Electromechanical dissociation with successful resuscitation (disorder)"
           },
@@ -354,6 +494,10 @@
           {
             "code": "36083008",
             "display": "Sick sinus syndrome (disorder)"
+          },
+          {
+            "code": "373905003",
+            "display": "Jervell and Lange-Nielsen syndrome (disorder)"
           },
           {
             "code": "38274001",
@@ -384,6 +528,10 @@
             "display": "Brugada syndrome (disorder)"
           },
           {
+            "code": "419671004",
+            "display": "Catecholaminergic polymorphic ventricular tachycardia (disorder)"
+          },
+          {
             "code": "419752005",
             "display": "Sinoatrial nodal reentrant tachycardia (disorder)"
           },
@@ -396,24 +544,92 @@
             "display": "Andersen Tawil syndrome (disorder)"
           },
           {
+            "code": "425615007",
+            "display": "Chronic atrial flutter (disorder)"
+          },
+          {
+            "code": "426749004",
+            "display": "Chronic atrial fibrillation (disorder)"
+          },
+          {
+            "code": "427665004",
+            "display": "Paroxysmal atrial flutter (disorder)"
+          },
+          {
             "code": "429243003",
             "display": "Sustained ventricular fibrillation (disorder)"
+          },
+          {
+            "code": "440059007",
+            "display": "Persistent atrial fibrillation (disorder)"
+          },
+          {
+            "code": "44103008",
+            "display": "Ventricular arrhythmia (disorder)"
+          },
+          {
+            "code": "442559009",
+            "display": "Bundle branch reentrant ventricular tachycardia (disorder)"
+          },
+          {
+            "code": "442917000",
+            "display": "Familial long QT syndrome (disorder)"
+          },
+          {
+            "code": "444605001",
+            "display": "Symptomatic sinus bradycardia (disorder)"
+          },
+          {
+            "code": "44602002",
+            "display": "Persistent sinus bradycardia (disorder)"
           },
           {
             "code": "44808001",
             "display": "Conduction disorder of the heart (disorder)"
           },
           {
+            "code": "450919004",
+            "display": "Atrial standstill (disorder)"
+          },
+          {
             "code": "47830009",
             "display": "Junctional escape beats (disorder)"
+          },
+          {
+            "code": "49044005",
+            "display": "Severe sinus bradycardia (disorder)"
+          },
+          {
+            "code": "49260003",
+            "display": "Idioventricular rhythm (disorder)"
+          },
+          {
+            "code": "49436004",
+            "display": "Atrial fibrillation (disorder)"
+          },
+          {
+            "code": "49710005",
+            "display": "Sinus bradycardia (disorder)"
           },
           {
             "code": "49982000",
             "display": "Multifocal atrial tachycardia (disorder)"
           },
           {
+            "code": "50799005",
+            "display": "Atrioventricular dissociation (disorder)"
+          },
+          {
+            "code": "5370000",
+            "display": "Atrial flutter (disorder)"
+          },
+          {
             "code": "55475008",
             "display": "Lown-Ganong-Levine syndrome (disorder)"
+          },
+          {
+            "code": "5609005",
+            "display": "Sinus arrest (disorder)"
           },
           {
             "code": "59272004",
@@ -436,16 +652,76 @@
             "display": "Supraventricular premature beats (disorder)"
           },
           {
+            "code": "65778007",
+            "display": "Sinoatrial block (disorder)"
+          },
+          {
+            "code": "6624005",
+            "display": "Ventricular tachyarrhythmia (disorder)"
+          },
+          {
             "code": "69730002",
             "display": "Idiojunctional tachycardia (disorder)"
+          },
+          {
+            "code": "698272007",
+            "display": "Short QT syndrome (disorder)"
+          },
+          {
+            "code": "699256006",
+            "display": "Timothy syndrome type 1 (disorder)"
+          },
+          {
+            "code": "706923002",
+            "display": "Longstanding persistent atrial fibrillation (disorder)"
+          },
+          {
+            "code": "710878005",
+            "display": "Mahaim fibre tachycardia (disorder)"
+          },
+          {
+            "code": "715395008",
+            "display": "Familial atrial fibrillation (disorder)"
+          },
+          {
+            "code": "715560009",
+            "display": "Idiopathic neonatal atrial flutter (disorder)"
+          },
+          {
+            "code": "715865008",
+            "display": "Familial isolated arrhythmogenic right ventricular dysplasia (disorder)"
+          },
+          {
+            "code": "71792006",
+            "display": "Nodal rhythm disorder (disorder)"
           },
           {
             "code": "71908006",
             "display": "Ventricular fibrillation (disorder)"
           },
           {
+            "code": "719907006",
+            "display": "Timothy syndrome type 2 (disorder)"
+          },
+          {
+            "code": "720448006",
+            "display": "Typical atrial flutter (disorder)"
+          },
+          {
+            "code": "723866006",
+            "display": "Idiopathic ventricular fibrillation not Brugada type (disorder)"
+          },
+          {
             "code": "72654001",
             "display": "Supraventricular arrhythmia (disorder)"
+          },
+          {
+            "code": "735682000",
+            "display": "Macro re-entrant atrial tachycardia (disorder)"
+          },
+          {
+            "code": "735684004",
+            "display": "Non-cavotricuspid isthmus dependent atrial tachycardia (disorder)"
           },
           {
             "code": "74390002",
@@ -460,8 +736,20 @@
             "display": "Ventricular escape beat (disorder)"
           },
           {
+            "code": "762247006",
+            "display": "Preexcited atrial fibrillation (disorder)"
+          },
+          {
             "code": "762534000",
             "display": "Supraventricular bradyarrhythmia (disorder)"
+          },
+          {
+            "code": "770784003",
+            "display": "Sinoatrial node dysfunction and deafness (disorder)"
+          },
+          {
+            "code": "789039008",
+            "display": "Scar mediated macro re-entrant atrial tachycardia (disorder)"
           },
           {
             "code": "81681009",
@@ -470,6 +758,14 @@
           {
             "code": "81898007",
             "display": "Ventricular escape rhythm (disorder)"
+          },
+          {
+            "code": "871686004",
+            "display": "Multiple atrial ectopics (disorder)"
+          },
+          {
+            "code": "871832005",
+            "display": "Multifocal atrial ectopics (disorder)"
           },
           {
             "code": "88412007",

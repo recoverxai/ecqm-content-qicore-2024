@@ -31,20 +31,10 @@
   "date": "2022-02-19T01:07:29-05:00",
   "publisher": "MNCM Steward",
   "expansion": {
-    "identifier": "urn:uuid:975fae97-b2bf-44fa-bc72-6175c33ecbc0",
-    "timestamp": "2024-12-01T19:50:45-05:00",
+    "identifier": "urn:uuid:0fc3b7a9-f0b6-4606-831f-ac41de6baa4c",
+    "timestamp": "2025-03-20T16:36:07-04:00",
     "total": 11,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:deb66b9d-7df5-4b2d-bd78-5503264c7712",
-    "timestamp": "2024-12-01T19:44:53-05:00",
+    "identifier": "urn:uuid:73949e75-573a-4cdf-b347-df45283d4e79",
+    "timestamp": "2025-03-20T16:16:46-04:00",
     "total": 9,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -95,8 +85,8 @@
         "display": "Exercises education, guidance, and counseling (procedure)"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S9451",
         "display": "Exercise classes, non-physician provider, per session"
       }

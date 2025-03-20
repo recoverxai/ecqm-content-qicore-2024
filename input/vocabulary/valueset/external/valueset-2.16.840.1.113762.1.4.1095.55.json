@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "AND Steward",
   "expansion": {
-    "identifier": "urn:uuid:7110410f-0356-45fd-8465-e83065cd64ce",
-    "timestamp": "2024-12-01T19:47:36-05:00",
-    "total": 37,
+    "identifier": "urn:uuid:d246145d-2a08-4cc1-8566-dde680bf6d02",
+    "timestamp": "2025-03-20T16:19:58-04:00",
+    "total": 49,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -123,6 +113,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "371597004",
         "display": "Emaciated (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "432788009",
+        "display": "Pediatric failure to thrive (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -211,6 +207,24 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
+        "code": "E40",
+        "display": "Kwashiorkor"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E41",
+        "display": "Nutritional marasmus"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E42",
+        "display": "Marasmic kwashiorkor"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
         "code": "E43",
         "display": "Unspecified severe protein-calorie malnutrition"
       },
@@ -219,6 +233,12 @@
         "version": "2025",
         "code": "E44.0",
         "display": "Moderate protein-calorie malnutrition"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E45",
+        "display": "Retarded development following protein-calorie malnutrition"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
@@ -235,8 +255,50 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
+        "code": "E64.0",
+        "display": "Sequelae of protein-calorie malnutrition"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
         "code": "M62.84",
         "display": "Sarcopenia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O25.10",
+        "display": "Malnutrition in pregnancy, unspecified trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O25.11",
+        "display": "Malnutrition in pregnancy, first trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O25.12",
+        "display": "Malnutrition in pregnancy, second trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O25.13",
+        "display": "Malnutrition in pregnancy, third trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O25.2",
+        "display": "Malnutrition in childbirth"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O25.3",
+        "display": "Malnutrition in the puerperium"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

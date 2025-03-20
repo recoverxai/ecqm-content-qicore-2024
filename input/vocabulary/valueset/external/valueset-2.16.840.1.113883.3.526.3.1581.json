@@ -31,21 +31,17 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:4d7ffb39-4701-4683-81ae-874608972627",
-    "timestamp": "2024-12-01T19:44:52-05:00",
-    "total": 3,
+    "identifier": "urn:uuid:6278b20f-48fd-400d-a645-706f7b77f2ce",
+    "timestamp": "2025-03-20T16:16:46-04:00",
+    "total": 4,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "10189761000046105",
+        "display": "Hypertension exercise education (procedure)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",

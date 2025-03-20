@@ -31,21 +31,47 @@
   "date": "2021-03-08T01:00:16-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:46f361c0-3dc4-4a8b-aa8b-7ed972e6ab25",
-    "timestamp": "2024-12-01T19:43:26-05:00",
-    "total": 34,
+    "identifier": "urn:uuid:710f471d-7b23-4fc8-99d2-ecc41ebd0b5d",
+    "timestamp": "2025-03-20T16:14:00-04:00",
+    "total": 59,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1087131000119102",
+        "display": "Scleritis due to herpes zoster (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1335863008",
+        "display": "Idiopathic scleritis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1335866000",
+        "display": "Immune-mediated scleritis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16000751000119105",
+        "display": "Scleritis of bilateral eyes due to herpes zoster (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16000791000119100",
+        "display": "Scleritis of left eye due to herpes zoster (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16000831000119106",
+        "display": "Scleritis of right eye due to herpes zoster (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -73,8 +99,74 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332221000119100",
+        "display": "Sclerosing keratitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332231000119102",
+        "display": "Scleromalacia perforans of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332241000119106",
+        "display": "Sclerokeratitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332261000119105",
+        "display": "Scleritis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332281000119101",
+        "display": "Abscess of sclera of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "332981000119106",
         "display": "Posterior scleritis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "336391000119107",
+        "display": "Anterior scleritis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337831000119103",
+        "display": "Sclerosing keratitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337841000119107",
+        "display": "Scleromalacia perforans of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337851000119109",
+        "display": "Sclerokeratitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337871000119100",
+        "display": "Scleritis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337891000119104",
+        "display": "Abscess of sclera of left eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -85,8 +177,44 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "342001000119103",
+        "display": "Anterior scleritis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "343601000119101",
+        "display": "Sclerosing keratitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "343611000119103",
+        "display": "Scleromalacia perforans of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "343621000119105",
+        "display": "Sclerokeratitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "343641000119104",
+        "display": "Scleritis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "344361000119105",
         "display": "Posterior scleritis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "347181000119109",
+        "display": "Anterior scleritis of bilateral eyes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -127,6 +255,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "63454000",
+        "display": "Anterior scleritis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "78370002",
         "display": "Scleritis (disorder)"
       },
@@ -159,6 +293,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "95796007",
         "display": "Deep scleritis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "95797003",
+        "display": "Necrotizing scleritis (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

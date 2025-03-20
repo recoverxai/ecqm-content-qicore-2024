@@ -36,6 +36,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1231226002",
+            "display": "Non-arteritic posterior ischemic optic neuropathy (disorder)"
+          },
+          {
             "code": "14357004",
             "display": "Ischemic optic neuropathy (disorder)"
           },
@@ -46,6 +50,18 @@
           {
             "code": "15731641000119103",
             "display": "Anterior ischemic optic neuropathy of right eye (disorder)"
+          },
+          {
+            "code": "16376191000119109",
+            "display": "Arteritic anterior ischemic optic neuropathy of bilateral eyes (disorder)"
+          },
+          {
+            "code": "16376241000119109",
+            "display": "Arteritic anterior ischemic optic neuropathy of left eye (disorder)"
+          },
+          {
+            "code": "16376391000119106",
+            "display": "Arteritic anterior ischemic optic neuropathy of right eye (disorder)"
           },
           {
             "code": "230508004",

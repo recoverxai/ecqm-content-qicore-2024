@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113762.1.4.1110.67",
   "meta": {
     "versionId": "10",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2025-01-28T11:15:51.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -41,6 +41,10 @@
           {
             "code": "13798002",
             "display": "Gestation period, 38 weeks (finding)"
+          },
+          {
+            "code": "22281000119101",
+            "display": "Post-term pregnancy of 40 to 42 weeks (finding)"
           },
           {
             "code": "23464008",

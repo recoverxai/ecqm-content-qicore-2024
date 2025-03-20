@@ -52,6 +52,54 @@
             "display": "Full thickness burn of periorbital region (disorder)"
           },
           {
+            "code": "12081251000119109",
+            "display": "Chemical burn of left conjunctival sac (disorder)"
+          },
+          {
+            "code": "12081291000119104",
+            "display": "Chemical burn of right conjunctival sac (disorder)"
+          },
+          {
+            "code": "12081411000119109",
+            "display": "Chemical burn of left cornea (disorder)"
+          },
+          {
+            "code": "12081451000119105",
+            "display": "Chemical burn of right cornea (disorder)"
+          },
+          {
+            "code": "12081491000119100",
+            "display": "Burn of cornea of left eye (disorder)"
+          },
+          {
+            "code": "12081531000119100",
+            "display": "Burn of cornea of right eye (disorder)"
+          },
+          {
+            "code": "12081651000119107",
+            "display": "Burn of conjunctival sac of left eye (disorder)"
+          },
+          {
+            "code": "12081691000119102",
+            "display": "Burn of conjunctival sac of right eye (disorder)"
+          },
+          {
+            "code": "12081931000119106",
+            "display": "Burn of left eye region (disorder)"
+          },
+          {
+            "code": "12081971000119109",
+            "display": "Burn of right eye region (disorder)"
+          },
+          {
+            "code": "12114081000119101",
+            "display": "Chemical burn of left eye (disorder)"
+          },
+          {
+            "code": "12115361000119108",
+            "display": "Chemical burn of right eye (disorder)"
+          },
+          {
             "code": "211659009",
             "display": "Chemical burn of eyelid region (disorder)"
           },
@@ -92,8 +140,16 @@
             "display": "Chemical injury to cornea (disorder)"
           },
           {
+            "code": "232027007",
+            "display": "Photocoagulation burn to retina (disorder)"
+          },
+          {
             "code": "232028002",
             "display": "Laser coagulation burn to retina (disorder)"
+          },
+          {
+            "code": "232029005",
+            "display": "Cryotherapy burn to retina (disorder)"
           },
           {
             "code": "269232009",
@@ -148,6 +204,14 @@
             "display": "Alkaline chemical burn of cornea AND/OR conjunctival sac (disorder)"
           },
           {
+            "code": "40901000087106",
+            "display": "Burn of left eye proper (disorder)"
+          },
+          {
+            "code": "41171000087107",
+            "display": "Burn of right eye proper (disorder)"
+          },
+          {
             "code": "418591009",
             "display": "Corneal wound burn (disorder)"
           },
@@ -188,8 +252,40 @@
             "display": "Burn of ocular adnexa (disorder)"
           },
           {
+            "code": "473243005",
+            "display": "Burn of eye region with burn of face (disorder)"
+          },
+          {
+            "code": "473244004",
+            "display": "Burn of eye region with epidermal burn of face (disorder)"
+          },
+          {
+            "code": "473245003",
+            "display": "Burn of eye region with partial thickness burn of face (disorder)"
+          },
+          {
+            "code": "473246002",
+            "display": "Burn of eye region with full thickness burn of face (disorder)"
+          },
+          {
+            "code": "473248001",
+            "display": "Burn of eye region with epidermal burn of head and/or neck (disorder)"
+          },
+          {
+            "code": "473249009",
+            "display": "Burn of eye region with partial thickness burn of head and/or neck (disorder)"
+          },
+          {
+            "code": "473250009",
+            "display": "Burn of eye region with full thickness burn of head and/or neck (disorder)"
+          },
+          {
             "code": "63542002",
             "display": "Acid chemical burn of cornea AND/OR conjunctival sac (disorder)"
+          },
+          {
+            "code": "770555009",
+            "display": "Burn of eye proper (disorder)"
           }
         ]
       },

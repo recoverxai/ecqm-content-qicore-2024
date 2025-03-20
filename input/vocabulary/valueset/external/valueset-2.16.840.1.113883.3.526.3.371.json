@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "AHA Steward",
   "expansion": {
-    "identifier": "urn:uuid:590e431b-7c12-4775-aca7-dc255e93bd47",
-    "timestamp": "2024-12-01T19:44:25-05:00",
-    "total": 149,
+    "identifier": "urn:uuid:7a78f683-b267-4252-b5c3-f76445f0b0e0",
+    "timestamp": "2025-03-20T16:16:08-04:00",
+    "total": 152,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -469,6 +459,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1287561002",
+        "display": "Coronary artery bypass using robotic assistance (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "14323007",
         "display": "Aortocoronary bypass of three coronary arteries (procedure)"
       },
@@ -669,6 +665,18 @@
         "version": "2025",
         "code": "33516",
         "display": "Coronary artery bypass, vein only; 6 or more coronary venous grafts"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "33522",
+        "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 5 venous grafts (List separately in addition to code for primary procedure)"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "33523",
+        "display": "Coronary artery bypass, using venous graft(s) and arterial graft(s); 6 or more venous grafts (List separately in addition to code for primary procedure)"
       },
       {
         "system": "http://www.ama-assn.org/go/cpt",

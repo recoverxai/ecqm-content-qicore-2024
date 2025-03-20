@@ -60,20 +60,8 @@
             "display": "Serous choroidal detachment of right eye (disorder)"
           },
           {
-            "code": "333881000119109",
-            "display": "Minor opacity of right cornea (disorder)"
-          },
-          {
             "code": "334901000119109",
             "display": "Hemorrhagic detachment of right choroid (disorder)"
-          },
-          {
-            "code": "336051000119104",
-            "display": "Rupture of choroid of right eye (disorder)"
-          },
-          {
-            "code": "336061000119102",
-            "display": "Hemorrhage of choroid of right eye (disorder)"
           },
           {
             "code": "336071000119108",
@@ -84,20 +72,8 @@
             "display": "Serous choroidal detachment of left eye (disorder)"
           },
           {
-            "code": "339481000119109",
-            "display": "Minor opacity of left cornea (disorder)"
-          },
-          {
             "code": "340511000119109",
             "display": "Hemorrhagic detachment of left choroid (disorder)"
-          },
-          {
-            "code": "341661000119101",
-            "display": "Rupture of choroid of left eye (disorder)"
-          },
-          {
-            "code": "341671000119107",
-            "display": "Hemorrhage of choroid of left eye (disorder)"
           },
           {
             "code": "341681000119105",
@@ -108,8 +84,8 @@
             "display": "Serous choroidal detachment of bilateral eyes (disorder)"
           },
           {
-            "code": "344611000119101",
-            "display": "Peripheral opacity of bilateral corneas (disorder)"
+            "code": "346901000119101",
+            "display": "Choroidal detachment of bilateral eyes (disorder)"
           },
           {
             "code": "778049009",

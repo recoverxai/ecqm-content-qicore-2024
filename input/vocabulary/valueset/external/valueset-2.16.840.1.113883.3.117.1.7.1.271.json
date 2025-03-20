@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.117.1.7.1.271",
   "meta": {
     "versionId": "42",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2025-01-28T12:14:23.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -31,20 +31,10 @@
   "date": "2022-01-27T01:02:42-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:90b6a7ee-4e3c-4ca8-9b11-eb1e6eaf397b",
-    "timestamp": "2024-12-01T19:48:43-05:00",
+    "identifier": "urn:uuid:f32560f5-bb56-4566-a438-96d08be1c1c6",
+    "timestamp": "2025-03-20T16:21:11-04:00",
     "total": 18,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

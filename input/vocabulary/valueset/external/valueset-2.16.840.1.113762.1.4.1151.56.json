@@ -31,20 +31,10 @@
   "date": "2018-04-06T01:00:04-04:00",
   "publisher": "Oregon Urology Steward",
   "expansion": {
-    "identifier": "urn:uuid:f0d7487f-3e53-403b-aa6f-084b30b22932",
-    "timestamp": "2024-12-01T19:47:52-05:00",
+    "identifier": "urn:uuid:84297781-204e-49fb-814b-42fa059a4d8a",
+    "timestamp": "2025-03-20T16:20:22-04:00",
     "total": 41,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

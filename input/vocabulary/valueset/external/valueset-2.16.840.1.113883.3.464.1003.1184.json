@@ -30,20 +30,10 @@
   "date": "2023-07-22T01:12:36-04:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:2512ed06-2e42-4250-8161-563144353007",
-    "timestamp": "2024-12-01T19:45:10-05:00",
-    "total": 61,
+    "identifier": "urn:uuid:4696b972-de71-4aa6-ac38-c39a26ae03ec",
+    "timestamp": "2025-03-20T16:17:01-04:00",
+    "total": 62,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -404,6 +394,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "386649003",
         "display": "Partial hip replacement by prosthesis (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "69625007",
+        "display": "Replacement of femoral head by prosthesis (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

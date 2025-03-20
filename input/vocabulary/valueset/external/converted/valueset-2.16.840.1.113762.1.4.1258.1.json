@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1258.1",
   "meta": {
-    "versionId": "12",
-    "lastUpdated": "2024-01-30T01:08:32.000-05:00",
+    "versionId": "16",
+    "lastUpdated": "2025-02-08T01:04:21.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2024-01-30"
+      "valueDate": "2025-02-08"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1258.1",
@@ -23,17 +23,33 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1258.1"
     }
   ],
-  "version": "20240130",
+  "version": "20250208",
   "name": "GonorrheaScreening",
   "title": "Gonorrhea Screening",
   "status": "active",
-  "date": "2024-01-30T01:08:32-05:00",
+  "date": "2025-02-08T01:04:21-05:00",
   "publisher": "HRSA - HAB",
   "compose": {
     "include": [
       {
         "system": "http://loinc.org",
         "concept": [
+          {
+            "code": "104765-3",
+            "display": "Neisseria gonorrhoeae DNA [Presence] in Specimen by Molecular genetics method"
+          },
+          {
+            "code": "104780-2",
+            "display": "Neisseria gonorrhoeae rRNA [Presence] in Specimen by Molecular genetics method"
+          },
+          {
+            "code": "105085-5",
+            "display": "Neisseria gonorrhoeae rRNA [Presence] in Specimen"
+          },
+          {
+            "code": "105922-9",
+            "display": "Neisseria gonorrhoeae DNA [Presence] in Semen by NAA with probe detection"
+          },
           {
             "code": "21415-5",
             "display": "Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection"

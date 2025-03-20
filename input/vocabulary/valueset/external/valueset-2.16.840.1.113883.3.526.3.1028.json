@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Society of Clinical Oncology Steward",
   "expansion": {
-    "identifier": "urn:uuid:53e6b33e-b636-47b2-8eb6-d291705519e9",
-    "timestamp": "2024-12-01T19:48:16-05:00",
+    "identifier": "urn:uuid:45f93dac-f66a-4645-81aa-646ecd2d1378",
+    "timestamp": "2025-03-20T16:20:47-04:00",
     "total": 5,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",

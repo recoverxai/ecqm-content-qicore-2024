@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1170.5",
   "meta": {
-    "versionId": "5",
-    "lastUpdated": "2024-10-21T18:21:28.000-04:00",
+    "versionId": "12",
+    "lastUpdated": "2025-02-11T01:03:34.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2021-10-07"
+      "valueDate": "2025-02-11"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1170.5",
@@ -23,29 +23,30 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1170.5"
     }
   ],
-  "version": "20211007",
+  "version": "20250211",
   "name": "AllergyToThrombolytics",
   "title": "Allergy to thrombolytics",
   "status": "active",
-  "experimental": false,
-  "date": "2021-10-07T01:00:28-04:00",
+  "date": "2025-02-11T01:03:34-05:00",
   "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "urn:uuid:0c7c0e18-f249-4ede-8191-3131467256d8",
-    "timestamp": "2024-12-01T19:48:02-05:00",
-    "total": 4,
+    "identifier": "urn:uuid:46c7966e-c42d-4687-922f-b3067e1a17db",
+    "timestamp": "2025-03-20T16:20:31-04:00",
+    "total": 6,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1300135006",
+        "display": "Allergy to reteplase (finding)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1300136007",
+        "display": "Allergy to tenecteplase (finding)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",

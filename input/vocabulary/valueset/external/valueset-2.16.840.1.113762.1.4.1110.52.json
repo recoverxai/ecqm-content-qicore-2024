@@ -31,30 +31,20 @@
   "date": "2022-02-19T01:06:51-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:9c04de41-d2a4-40e1-91cf-7f49fba49fbb",
-    "timestamp": "2024-12-01T19:50:12-05:00",
+    "identifier": "urn:uuid:0fd9f6d1-ab93-4cc2-aa51-4e4d81bebf46",
+    "timestamp": "2025-03-20T16:35:28-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "855812",
         "display": "prasugrel 10 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "855818",
         "display": "prasugrel 5 MG Oral Tablet"
       }

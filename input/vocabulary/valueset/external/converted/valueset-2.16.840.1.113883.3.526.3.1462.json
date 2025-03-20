@@ -36,8 +36,20 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1231678007",
+            "display": "Peripapillary choroidal dystrophy (disorder)"
+          },
+          {
+            "code": "15989831000119105",
+            "display": "Choroideremia of bilateral eyes (disorder)"
+          },
+          {
             "code": "193466003",
             "display": "Partial circumpapillary choroid dystrophy (disorder)"
+          },
+          {
+            "code": "193468002",
+            "display": "Partial central choroid dystrophy (disorder)"
           },
           {
             "code": "19871000",

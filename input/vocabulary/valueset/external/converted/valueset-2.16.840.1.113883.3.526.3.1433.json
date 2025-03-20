@@ -36,6 +36,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1230066003",
+            "display": "Isolated microspherophakia (disorder)"
+          },
+          {
             "code": "15987871000119100",
             "display": "Congenital coloboma of right lens (disorder)"
           },
@@ -64,12 +68,20 @@
             "display": "Primary lens coloboma (disorder)"
           },
           {
+            "code": "4465002",
+            "display": "Spherophakia (disorder)"
+          },
+          {
             "code": "773690008",
             "display": "Microcornea, posterior megalolenticonus, persistent fetal vasculature, coloboma syndrome (disorder)"
           },
           {
             "code": "840458000",
             "display": "Coloboma of bilateral lenses (disorder)"
+          },
+          {
+            "code": "897576008",
+            "display": "Spherophakia of bilateral lenses (disorder)"
           },
           {
             "code": "95482000",

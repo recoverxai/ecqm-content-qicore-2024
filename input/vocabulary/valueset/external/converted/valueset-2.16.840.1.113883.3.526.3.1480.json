@@ -36,6 +36,14 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "332351000119103",
+            "display": "Retinopathy of prematurity stage 5 of right eye (disorder)"
+          },
+          {
+            "code": "332361000119101",
+            "display": "Retinopathy of prematurity of right eye stage 4 - subtotal retinal detachment (disorder)"
+          },
+          {
             "code": "332371000119107",
             "display": "Retinopathy of prematurity of right eye stage 3 - ridge with extraretinal fibrovascular proliferation (disorder)"
           },
@@ -52,6 +60,14 @@
             "display": "Retinopathy of prematurity of right eye (disorder)"
           },
           {
+            "code": "337961000119104",
+            "display": "Retinopathy of prematurity stage 5 of left eye (disorder)"
+          },
+          {
+            "code": "337971000119105",
+            "display": "Retinopathy of prematurity of left eye stage 4 - subtotal retinal detachment (disorder)"
+          },
+          {
             "code": "337981000119108",
             "display": "Retinopathy of prematurity of left eye stage 3 - ridge with extraretinal fibrovascular proliferation (disorder)"
           },
@@ -66,6 +82,14 @@
           {
             "code": "338021000119106",
             "display": "Retinopathy of prematurity of left eye (disorder)"
+          },
+          {
+            "code": "343731000119100",
+            "display": "Retinopathy of prematurity stage 5 of bilateral eyes (disorder)"
+          },
+          {
+            "code": "343741000119109",
+            "display": "Retinopathy of prematurity of bilateral eyes stage 4 - subtotal retinal detachment (disorder)"
           },
           {
             "code": "343751000119106",

@@ -52,6 +52,10 @@
             "display": "Choroidal rupture (disorder)"
           },
           {
+            "code": "335201000119104",
+            "display": "Expulsive hemorrhage of choroid of right eye (disorder)"
+          },
+          {
             "code": "336051000119104",
             "display": "Rupture of choroid of right eye (disorder)"
           },
@@ -60,12 +64,20 @@
             "display": "Hemorrhage of choroid of right eye (disorder)"
           },
           {
+            "code": "340811000119106",
+            "display": "Expulsive hemorrhage of choroid of left eye (disorder)"
+          },
+          {
             "code": "341661000119101",
             "display": "Rupture of choroid of left eye (disorder)"
           },
           {
             "code": "341671000119107",
             "display": "Hemorrhage of choroid of left eye (disorder)"
+          },
+          {
+            "code": "346891000119100",
+            "display": "Hemorrhage of choroid of bilateral eyes (disorder)"
           },
           {
             "code": "419596007",

@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:faca9524-9e97-4d99-9ff8-37a7dd79227b",
-    "timestamp": "2024-12-01T19:49:45-05:00",
-    "total": 292,
+    "identifier": "urn:uuid:5a9d8305-5a30-4a2b-b18a-d25610144465",
+    "timestamp": "2025-03-20T16:34:34-04:00",
+    "total": 301,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -835,6 +825,54 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1287541008",
+        "display": "Coagulation of brain tissue (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296603004",
+        "display": "Drainage of cerebral epidural space by incision (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296604005",
+        "display": "Drainage of cerebral epidural space by trephination (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296605006",
+        "display": "Drainage of cerebral subdural space by incision (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296606007",
+        "display": "Drainage of cerebral subdural space by trephination (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296607003",
+        "display": "Drainage of cerebral subarachnoid space by trephination (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296608008",
+        "display": "Drainage of cerebral subarachnoid space by incision (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296626006",
+        "display": "Division of tract of brain (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "13431007",
         "display": "Prefrontal lobotomy (procedure)"
       },
@@ -1197,6 +1235,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "2737001",
         "display": "Exploratory craniotomy, infratentorial (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "273990004",
+        "display": "Coagulation of brain tissue using electrical energy (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

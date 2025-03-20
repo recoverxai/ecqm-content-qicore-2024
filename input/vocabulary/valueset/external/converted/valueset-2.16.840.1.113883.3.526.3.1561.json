@@ -44,6 +44,10 @@
             "display": "phentermine hydrochloride 30 MG Disintegrating Oral Tablet"
           },
           {
+            "code": "1232585",
+            "display": "24 HR bupropion hydrochloride 450 MG Extended Release Oral Tablet"
+          },
+          {
             "code": "1249083",
             "display": "phentermine hydrochloride 37.5 MG Disintegrating Oral Tablet"
           },
@@ -116,6 +120,10 @@
             "display": "0.75 ML semaglutide 3.2 MG/ML Auto-Injector"
           },
           {
+            "code": "2599362",
+            "display": "3 ML semaglutide 2.68 MG/ML Pen Injector"
+          },
+          {
             "code": "2601743",
             "display": "0.5 ML tirzepatide 10 MG/ML Auto-Injector"
           },
@@ -138,6 +146,14 @@
           {
             "code": "2601784",
             "display": "0.5 ML tirzepatide 15 MG/ML Auto-Injector"
+          },
+          {
+            "code": "2611260",
+            "display": "bupropion hydrochloride 105 MG / dextromethorphan hydrobromide 45 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "2619152",
+            "display": "0.25 MG, 0.5 MG Dose 3 ML semaglutide 0.68 MG/ML Pen Injector"
           },
           {
             "code": "2644396",
@@ -222,6 +238,46 @@
           {
             "code": "979549",
             "display": "phendimetrazine tartrate 35 MG Oral Tablet"
+          },
+          {
+            "code": "993503",
+            "display": "12 HR bupropion hydrochloride 100 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "993518",
+            "display": "12 HR bupropion hydrochloride 150 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "993536",
+            "display": "12 HR bupropion hydrochloride 200 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "993541",
+            "display": "24 HR bupropion hydrochloride 150 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "993550",
+            "display": "24 HR bupropion hydrobromide 174 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "993557",
+            "display": "24 HR bupropion hydrochloride 300 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "993567",
+            "display": "24 HR bupropion hydrobromide 348 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "993681",
+            "display": "24 HR bupropion hydrobromide 522 MG Extended Release Oral Tablet"
+          },
+          {
+            "code": "993687",
+            "display": "bupropion hydrochloride 100 MG Oral Tablet"
+          },
+          {
+            "code": "993691",
+            "display": "bupropion hydrochloride 75 MG Oral Tablet"
           }
         ]
       }

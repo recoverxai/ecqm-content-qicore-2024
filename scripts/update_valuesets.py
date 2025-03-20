@@ -3,7 +3,7 @@ import csv
 import json
 import re
 from pathlib import Path
-
+from tqdm import tqdm
 import pandas as pd
 import requests
 
@@ -14,6 +14,7 @@ encoded_api_key = base64.b64encode(API_KEY.encode()).decode()
 # Define the base URL for VSAC API
 VSAC_URL = "https://vsac.nlm.nih.gov/vsac/svs"
 
+VALUESET_PATH = "/Users/matt/dev/recoverx/ecqm-content-qicore-2024/input/vocabulary/valueset/external"
 
 # Function to fetch value set concepts from VSAC
 def fetch_value_set(value_set_oid):
@@ -24,21 +25,39 @@ def fetch_value_set(value_set_oid):
     :return: A list of dictionaries containing code and description of the concepts.
     """
     # API endpoint for value set retrieval
-    endpoint = f"https://cts.nlm.nih.gov/fhir/res/ValueSet/{value_set_oid}/$expand?_format=json"
     headers = {"Authorization": f"Basic {encoded_api_key}"}
-    # Set up the parameters
-    params = {"id": value_set_oid}
+    result = None
+    next_offset = 0
+    while result is None or next_offset is not None:
+        # Make the GET request to fetch the value set
+        endpoint = f"https://cts.nlm.nih.gov/fhir/res/ValueSet/{value_set_oid}/$expand?_format=json&offset={next_offset}"
+        response = requests.get(endpoint, headers=headers)
 
-    # Make the GET request to fetch the value set
-    response = requests.get(endpoint, headers=headers)
-
-    if response.status_code == 200:
-        data = response.json()
-        return data
-    else:
-        print(f"Failed to fetch value set: {response.status_code} - {response.text}")
+        if response.status_code == 200:
+            data = response.json()
+            next_offset = extract_next_offset(data)
+            result = combine_data(result, data)
+        else:
+            raise(f"Failed to fetch value set: {response.status_code} - {response.text}")
+    if 'expansion' not in result or 'contains' not in result['expansion'] or len(result['expansion']['contains']) != result['expansion']['total']:
+        print('Failed to fetch all value set concepts')
         return None
+    del result['expansion']['parameter']
+    return result
 
+def extract_next_offset(data):
+    total = data.get('expansion', {}).get("total", 0)
+    offset = data.get('expansion', {}).get("offset", 0)
+    offset_2 = next((i.get('valueInteger') for i in data.get('expansion', {}).get("parameter", []) if i.get("name") == "offset"), None)
+    count = next((i.get('valueInteger') for i in data.get('expansion', {}).get("parameter", []) if i.get("name") == "count"), None) 
+    if count + offset < total:
+        return count + offset
+    return None
+def combine_data(result, data):
+    if result is None:
+        return data
+    result['expansion']['contains'] += data['expansion']['contains']
+    return result
 
 # Function to write concepts to CSV
 def write_concepts_to_csv(concepts, output_file):
@@ -69,16 +88,15 @@ def vsac_valueset_files(path: str):
 
 # Main function to fetch and write value set concepts to a CSV
 def main():
-    valueset_path = "/Users/matt/dev/recoverx/ecqm-content-qicore-2024/input/vocabulary/valueset/external"
-    files = vsac_valueset_files(valueset_path)
-
+    files = vsac_valueset_files(VALUESET_PATH)
     # Fetch the value set concepts
-    for file in files:
+    for file in tqdm(files):
         value_set_oid = re.match(r"^valueset-(\d+\..*)\.json$", file).group(1)
         valueset_json = fetch_value_set(value_set_oid)
         if valueset_json:
             # Write the JSON data to a file
-            output_file = f"{valueset_path}/{file}"
+            print(f"Value set data fetched for {file}. Concepts: {len(valueset_json['expansion']['contains'])}")
+            output_file = f"{VALUESET_PATH}/{file}"
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(valueset_json, f, indent=2)
                 print(f"Value set data written to {output_file}")

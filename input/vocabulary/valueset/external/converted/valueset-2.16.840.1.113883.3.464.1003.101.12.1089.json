@@ -78,7 +78,7 @@
         ]
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
         "concept": [
           {
             "code": "G0071",
@@ -87,10 +87,6 @@
           {
             "code": "G2010",
             "display": "Remote evaluation of recorded video and/or images submitted by an established patient (e.g., store and forward), including interpretation with follow-up with the patient within 24 business hours, not originating from a related e/m service provided within the previous 7 days nor leading to an e/m service or procedure within the next 24 hours or soonest available appointment"
-          },
-          {
-            "code": "G2012",
-            "display": "Brief communication technology-based service, e.g. virtual check-in, by a physician or other qualified health care professional who can report evaluation and management services, provided to an established patient, not originating from a related e/m service provided within the previous 7 days nor leading to an e/m service or procedure within the next 24 hours or soonest available appointment; 5-10 minutes of medical discussion"
           },
           {
             "code": "G2250",

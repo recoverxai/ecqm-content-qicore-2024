@@ -40,6 +40,10 @@
             "display": "Right main coronary artery thrombosis (disorder)"
           },
           {
+            "code": "11018701000119109",
+            "display": "Coronary arteriosclerosis after percutaneous coronary angioplasty (disorder)"
+          },
+          {
             "code": "123641001",
             "display": "Left coronary artery occlusion (disorder)"
           },
@@ -48,12 +52,116 @@
             "display": "Right coronary artery occlusion (disorder)"
           },
           {
+            "code": "1254657004",
+            "display": "Stenosis of proximal portion of right coronary artery (disorder)"
+          },
+          {
+            "code": "1254658009",
+            "display": "Stenosis of mid portion of right coronary artery (disorder)"
+          },
+          {
+            "code": "1254659001",
+            "display": "Stenosis of distal portion of right coronary artery (disorder)"
+          },
+          {
+            "code": "1254660006",
+            "display": "Stenosis of marginal branch of right coronary artery (disorder)"
+          },
+          {
+            "code": "1254661005",
+            "display": "Stenosis of posterior lateral branch of right coronary artery (disorder)"
+          },
+          {
+            "code": "1254662003",
+            "display": "Stenosis of posterior descending branch of right coronary artery (disorder)"
+          },
+          {
+            "code": "1254663008",
+            "display": "Stenosis of distal portion of anterior descending branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1254664002",
+            "display": "Stenosis of diagonal branch of anterior descending branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1254665001",
+            "display": "Stenosis of septal branch of anterior descending branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1254666000",
+            "display": "Stenosis of ostium of right coronary artery (disorder)"
+          },
+          {
+            "code": "1255187002",
+            "display": "Stenosis of obtuse marginal branch of circumflex branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1255188007",
+            "display": "Stenosis of left posterior lateral branch of circumflex branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1255189004",
+            "display": "Stenosis of left posterior descending circumflex coronary artery (disorder)"
+          },
+          {
+            "code": "1255256006",
+            "display": "Stenosis of proximal portion of circumflex branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1255257002",
+            "display": "Stenosis of mid portion of circumflex branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1255258007",
+            "display": "Stenosis of distal portion of circumflex branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1255264000",
+            "display": "Stenosis of coronary intermediate artery (disorder)"
+          },
+          {
+            "code": "1255265004",
+            "display": "Stenosis of proximal portion of anterior descending branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1255266003",
+            "display": "Stenosis of mid portion of anterior descending branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1255569006",
+            "display": "Stenosis of ostium of left main coronary artery (disorder)"
+          },
+          {
+            "code": "1255621004",
+            "display": "Stenosis of distal segment of left coronary artery main stem (disorder)"
+          },
+          {
+            "code": "1255622006",
+            "display": "Stenosis of mid segment of left coronary artery main stem (disorder)"
+          },
+          {
+            "code": "1255623001",
+            "display": "Stenosis of ostium of anterior descending branch of left coronary artery (disorder)"
+          },
+          {
+            "code": "1255624007",
+            "display": "Stenosis of ostium of circumflex branch of left coronary artery (disorder)"
+          },
+          {
             "code": "1269257006",
             "display": "Arteriosclerosis of nonautologous biological coronary artery bypass graft (disorder)"
           },
           {
+            "code": "1293192009",
+            "display": "Premature coronary artery disease (disorder)"
+          },
+          {
             "code": "139971000119106",
             "display": "Thrombosis of coronary artery bypass graft (disorder)"
+          },
+          {
+            "code": "15960061000119102",
+            "display": "Unstable angina co-occurrent and due to coronary arteriosclerosis (disorder)"
           },
           {
             "code": "15960341000119104",
@@ -64,12 +172,36 @@
             "display": "Unstable angina due to arteriosclerosis of autologous arterial coronary artery bypass graft (disorder)"
           },
           {
+            "code": "15960541000119107",
+            "display": "Unstable angina due to arteriosclerosis of autologous vein coronary artery bypass graft (disorder)"
+          },
+          {
+            "code": "15960701000119100",
+            "display": "Angina due to arteriosclerosis of coronary artery bypass graft of transplanted heart (disorder)"
+          },
+          {
             "code": "15960741000119103",
             "display": "Preinfarction syndrome due to arteriosclerosis of nonautologous biological coronary artery bypass graft (disorder)"
           },
           {
+            "code": "16025471000119107",
+            "display": "Aneurysm of coronary artery due to and following acute febrile mucocutaneous lymph node syndrome (disorder)"
+          },
+          {
+            "code": "16754391000119100",
+            "display": "Stable angina due to coronary arteriosclerosis (disorder)"
+          },
+          {
+            "code": "16891151000119103",
+            "display": "Coronary artery disease due to type 2 diabetes mellitus (disorder)"
+          },
+          {
             "code": "19057007",
             "display": "Status anginosus (disorder)"
+          },
+          {
+            "code": "194821006",
+            "display": "Coronary thrombosis not resulting in myocardial infarction (disorder)"
           },
           {
             "code": "194823009",
@@ -88,6 +220,14 @@
             "display": "Double coronary vessel disease (disorder)"
           },
           {
+            "code": "19830001000004106",
+            "display": "Thrombosis of left circumflex artery (disorder)"
+          },
+          {
+            "code": "204378009",
+            "display": "Congenital coronary aneurysm (disorder)"
+          },
+          {
             "code": "21470009",
             "display": "Syncope anginosa (disorder)"
           },
@@ -102,6 +242,10 @@
           {
             "code": "233821000",
             "display": "New onset angina (disorder)"
+          },
+          {
+            "code": "233844002",
+            "display": "Accelerated coronary artery disease in transplanted heart (disorder)"
           },
           {
             "code": "233970002",
@@ -236,6 +380,10 @@
             "display": "Preinfarction syndrome (disorder)"
           },
           {
+            "code": "473362006",
+            "display": "Congenital stenosis of distal coronary artery (disorder)"
+          },
+          {
             "code": "50570003",
             "display": "Aneurysm of coronary vessels (disorder)"
           },
@@ -244,8 +392,16 @@
             "display": "Coronary arteriosclerosis (disorder)"
           },
           {
+            "code": "56276002",
+            "display": "Left main coronary artery thrombosis (disorder)"
+          },
+          {
             "code": "59021001",
             "display": "Angina decubitus (disorder)"
+          },
+          {
+            "code": "59062007",
+            "display": "Coronary stricture (disorder)"
           },
           {
             "code": "61490001",
@@ -270,6 +426,14 @@
           {
             "code": "75398000",
             "display": "Anomalous origin of coronary artery (disorder)"
+          },
+          {
+            "code": "791000119109",
+            "display": "Angina due to type 2 diabetes mellitus (disorder)"
+          },
+          {
+            "code": "792842004",
+            "display": "Coronary arteriosclerosis in artery of transplanted heart (disorder)"
           },
           {
             "code": "85284003",

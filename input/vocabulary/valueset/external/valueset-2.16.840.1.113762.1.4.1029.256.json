@@ -30,20 +30,10 @@
   "date": "2023-02-18T01:03:13-05:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:5ffb6f2c-dc38-4da4-b63c-91a8187c9f20",
-    "timestamp": "2024-12-01T19:49:30-05:00",
-    "total": 98,
+    "identifier": "urn:uuid:46e41fc0-a5c6-4d93-8be5-2185ed7a994c",
+    "timestamp": "2025-03-20T16:34:20-04:00",
+    "total": 100,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -140,6 +130,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1187630003",
         "display": "Subtotal hysterectomy via vaginal approach (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303414001",
+        "display": "Laparoscopic vaginal hysterectomy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304071003",
+        "display": "Endoscopic vaginal natural orifice transluminal hysterectomy (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

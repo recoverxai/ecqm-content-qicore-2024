@@ -31,21 +31,35 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:7238c561-c47a-40b3-86e8-cadbc702ad89",
-    "timestamp": "2024-12-01T19:45:09-05:00",
-    "total": 43,
+    "identifier": "urn:uuid:03dfbbbe-5c16-4cbb-ad79-4002e4e0040d",
+    "timestamp": "2025-03-20T16:17:01-04:00",
+    "total": 60,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "11816003",
+        "display": "Diet education (procedure)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1230141004",
+        "display": "Education about nutrition influence on health (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1279742004",
+        "display": "Development of nutrition care plan (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1759002",
+        "display": "Assessment of nutritional status (procedure)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -55,8 +69,20 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "225387002",
+        "display": "Nutrient intake assessment (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "225388007",
         "display": "Dietary intake assessment (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "226069004",
+        "display": "Review of current diet (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -97,6 +123,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "370780002",
+        "display": "Assessment of psychosocial issues specific to patient nutritional status (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "370847001",
         "display": "Dietary needs education (procedure)"
       },
@@ -127,6 +159,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "386374005",
+        "display": "Nutritional monitoring (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "386463000",
         "display": "Prescribed activity/exercise education (procedure)"
       },
@@ -151,6 +189,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "410178001",
+        "display": "Special diet management (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "413315001",
         "display": "Nutrition / feeding management (regime/therapy)"
       },
@@ -159,6 +203,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "418995006",
         "display": "Feeding regime (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "419155003",
+        "display": "Recommendation to change diet (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -181,6 +231,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "428461000124101",
+        "display": "Referral to nutrition professional (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "429095004",
         "display": "Dietary education for weight gain (procedure)"
       },
@@ -193,8 +249,44 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "445291000124103",
+        "display": "Nutrition-related skill education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "445301000124102",
+        "display": "Content-related nutrition education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "445641000124105",
+        "display": "Technical nutrition education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "61310001",
+        "display": "Nutrition education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "699829004",
+        "display": "High energy diet education (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "710847006",
         "display": "Assessment of dietary need (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "710881000",
+        "display": "Education about eating pattern (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -257,38 +349,38 @@
         "display": "Preventive medicine counseling and/or risk factor reduction intervention(s) provided to an individual (separate procedure); approximately 60 minutes"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0270",
         "display": "Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0271",
         "display": "Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S9449",
         "display": "Weight management classes, non-physician provider, per session"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S9451",
         "display": "Exercise classes, non-physician provider, per session"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S9452",
         "display": "Nutrition classes, non-physician provider, per session"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S9470",
         "display": "Nutritional counseling, dietitian visit"
       },

@@ -36,6 +36,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "185349003",
+            "display": "Encounter for check up (procedure)"
+          },
+          {
             "code": "185463005",
             "display": "Visit out of hours (procedure)"
           },

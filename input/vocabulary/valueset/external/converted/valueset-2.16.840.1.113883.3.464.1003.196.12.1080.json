@@ -184,10 +184,6 @@
             "display": "{24 (ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Chewable Tablet) } Pack"
           },
           {
-            "code": "1788958",
-            "display": "nonoxynol-9 280 MG Vaginal Film"
-          },
-          {
             "code": "1811886",
             "display": "levonorgestrel 0.000729 MG/HR Intrauterine System"
           },
@@ -196,32 +192,12 @@
             "display": "norethindrone 0.35 MG Oral Tablet"
           },
           {
-            "code": "198761",
-            "display": "nonoxynol-9 100 MG Vaginal Insert"
-          },
-          {
-            "code": "198762",
-            "display": "nonoxynol-9 0.01 MG/MG Vaginal Gel"
-          },
-          {
-            "code": "198765",
-            "display": "nonoxynol-9 0.04 MG/MG Vaginal Gel"
-          },
-          {
-            "code": "2173503",
-            "display": "nonoxynol-9 1000 MG Vaginal Sponge"
-          },
-          {
             "code": "238015",
             "display": "ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet"
           },
           {
             "code": "238019",
             "display": "ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet"
-          },
-          {
-            "code": "238021",
-            "display": "nonoxynol-9 0.02 MG/MG Vaginal Gel"
           },
           {
             "code": "240128",
@@ -252,6 +228,18 @@
             "display": "levonorgestrel 0.75 MG Oral Tablet"
           },
           {
+            "code": "2672923",
+            "display": "{21 (ethinyl estradiol 0.02 MG / levonorgestrel 0.1 MG Oral Tablet) / 7 (ferrous bisglycinate 36.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "code": "2696883",
+            "display": "ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Disintegrating Oral Tablet"
+          },
+          {
+            "code": "2696887",
+            "display": "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Disintegrating Oral Tablet) / 4 (inert ingredients 1 MG Disintegrating Oral Tablet) } Pack"
+          },
+          {
             "code": "284207",
             "display": "drospirenone 3 MG / ethinyl estradiol 0.03 MG Oral Tablet"
           },
@@ -270,14 +258,6 @@
           {
             "code": "311359",
             "display": "ethinyl estradiol 0.03 MG / norgestrel 0.3 MG Oral Tablet"
-          },
-          {
-            "code": "312028",
-            "display": "nonoxynol-9 125 MG/ML Vaginal Foam"
-          },
-          {
-            "code": "312029",
-            "display": "nonoxynol-9 0.03 MG/MG Vaginal Gel"
           },
           {
             "code": "312033",
@@ -454,6 +434,10 @@
           {
             "code": "759743",
             "display": "{21 (desogestrel 0.15 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 5 (ethinyl estradiol 0.01 MG Oral Tablet) / 2 (inert ingredients 1 MG Oral Tablet) } Pack"
+          },
+          {
+            "code": "763088",
+            "display": "{2 (levonorgestrel 0.75 MG Oral Tablet) } Pack"
           },
           {
             "code": "804156",

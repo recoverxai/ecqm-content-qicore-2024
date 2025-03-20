@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Society of Clinical Oncology Steward",
   "expansion": {
-    "identifier": "urn:uuid:8d04f91f-4a24-47c4-832a-c6a81b4a848d",
-    "timestamp": "2024-12-01T19:46:59-05:00",
+    "identifier": "urn:uuid:15f50ce3-ddb5-45a1-9696-d13221083b61",
+    "timestamp": "2025-03-20T16:19:27-04:00",
     "total": 5,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.ama-assn.org/go/cpt",

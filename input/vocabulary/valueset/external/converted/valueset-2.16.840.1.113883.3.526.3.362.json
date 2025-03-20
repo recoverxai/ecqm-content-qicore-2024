@@ -124,6 +124,10 @@
             "display": "Allergic asthma (disorder)"
           },
           {
+            "code": "401000119107",
+            "display": "Asthma with irreversible airway obstruction (disorder)"
+          },
+          {
             "code": "405944004",
             "display": "Asthmatic bronchitis (disorder)"
           },
@@ -188,6 +192,14 @@
             "display": "Allergic asthma without status asthmaticus (disorder)"
           },
           {
+            "code": "703953004",
+            "display": "Allergic asthma caused by Dermatophagoides pteronyssinus (disorder)"
+          },
+          {
+            "code": "703954005",
+            "display": "Allergic asthma caused by Dermatophagoides farinae (disorder)"
+          },
+          {
             "code": "707445000",
             "display": "Exacerbation of mild persistent asthma (disorder)"
           },
@@ -220,12 +232,20 @@
             "display": "Acute severe exacerbation of intrinsic asthma (disorder)"
           },
           {
+            "code": "735588005",
+            "display": "Uncomplicated allergic asthma (disorder)"
+          },
+          {
             "code": "762521001",
             "display": "Exacerbation of allergic asthma (disorder)"
           },
           {
             "code": "782520007",
             "display": "Exacerbation of allergic asthma due to infection (disorder)"
+          },
+          {
+            "code": "829976001",
+            "display": "Thunderstorm asthma (disorder)"
           },
           {
             "code": "85761009",

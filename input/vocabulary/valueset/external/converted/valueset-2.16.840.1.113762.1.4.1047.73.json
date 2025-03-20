@@ -52,20 +52,16 @@
             "display": "Feeding intention - breast (finding)"
           },
           {
+            "code": "169743001",
+            "display": "Breastfeeding with supplement (finding)"
+          },
+          {
             "code": "169745008",
             "display": "Breastfeeding started (finding)"
           },
           {
             "code": "199004",
             "display": "Decreased lactation (finding)"
-          },
-          {
-            "code": "200416006",
-            "display": "Breast engorgement in pregnancy, the puerperium or lactation (finding)"
-          },
-          {
-            "code": "200420005",
-            "display": "Breast engorgement in pregnancy, the puerperium or lactation with antenatal complication (finding)"
           },
           {
             "code": "200430001",

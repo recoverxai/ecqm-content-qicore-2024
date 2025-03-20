@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.464.1003.1172",
   "meta": {
-    "versionId": "6",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "versionId": "11",
+    "lastUpdated": "2025-01-09T01:02:58.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2022-09-02"
+      "valueDate": "2025-01-09"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1172",
@@ -23,12 +23,11 @@
       "value": "urn:oid:2.16.840.1.113883.3.464.1003.1172"
     }
   ],
-  "version": "20220902",
+  "version": "20250109",
   "name": "Dexmethylphenidate",
   "title": "Dexmethylphenidate",
   "status": "active",
-  "experimental": false,
-  "date": "2022-09-02T01:02:12-04:00",
+  "date": "2025-01-09T01:02:58-05:00",
   "publisher": "NCQA PHEMUR",
   "compose": {
     "include": [
@@ -46,6 +45,18 @@
           {
             "code": "1101932",
             "display": "24 HR dexmethylphenidate hydrochloride 35 MG Extended Release Oral Capsule"
+          },
+          {
+            "code": "2562187",
+            "display": "dexmethylphenidate 5.2 MG / serdexmethylphenidate 26.1 MG Oral Capsule"
+          },
+          {
+            "code": "2562191",
+            "display": "dexmethylphenidate 7.8 MG / serdexmethylphenidate 39.2 MG Oral Capsule"
+          },
+          {
+            "code": "2562194",
+            "display": "dexmethylphenidate 10.4 MG / serdexmethylphenidate 52.3 MG Oral Capsule"
           },
           {
             "code": "899439",

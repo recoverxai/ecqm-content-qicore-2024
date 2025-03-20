@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.526.3.1023",
   "meta": {
     "versionId": "26",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2025-02-07T14:49:40.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -24,8 +24,8 @@
     }
   ],
   "version": "20190315",
-  "name": "BehavioralNeuropsychAssessment",
-  "title": "Behavioral/Neuropsych Assessment",
+  "name": "BehavioralOrNeuropsychAssessment",
+  "title": "Behavioral or Neuropsych Assessment",
   "status": "active",
   "experimental": false,
   "date": "2022-03-03T18:46:01-05:00",

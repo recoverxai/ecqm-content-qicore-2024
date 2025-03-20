@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:10ac77c4-96aa-476a-ac15-b6371f3f6248",
-    "timestamp": "2024-12-01T19:49:05-05:00",
+    "identifier": "urn:uuid:4da8b737-5ae6-492d-8108-c07492fb5ac4",
+    "timestamp": "2025-03-20T16:21:30-04:00",
     "total": 212,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",

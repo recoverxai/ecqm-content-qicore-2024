@@ -35,8 +35,52 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "15960061000119102",
+            "display": "Unstable angina co-occurrent and due to coronary arteriosclerosis (disorder)"
+          },
+          {
+            "code": "15960101000119104",
+            "display": "Angina due to coronary arteriosclerosis in artery of transplanted heart (disorder)"
+          },
+          {
+            "code": "15960141000119102",
+            "display": "Angina co-occurrent and due to coronary arteriosclerosis (disorder)"
+          },
+          {
+            "code": "15960341000119104",
+            "display": "Unstable angina due to arteriosclerosis of coronary artery bypass graft of transplanted heart (disorder)"
+          },
+          {
+            "code": "15960461000119105",
+            "display": "Unstable angina due to arteriosclerosis of autologous arterial coronary artery bypass graft (disorder)"
+          },
+          {
+            "code": "15960541000119107",
+            "display": "Unstable angina due to arteriosclerosis of autologous vein coronary artery bypass graft (disorder)"
+          },
+          {
+            "code": "15960701000119100",
+            "display": "Angina due to arteriosclerosis of coronary artery bypass graft of transplanted heart (disorder)"
+          },
+          {
+            "code": "15960741000119103",
+            "display": "Preinfarction syndrome due to arteriosclerosis of nonautologous biological coronary artery bypass graft (disorder)"
+          },
+          {
+            "code": "16754391000119100",
+            "display": "Stable angina due to coronary arteriosclerosis (disorder)"
+          },
+          {
+            "code": "19057007",
+            "display": "Status anginosus (disorder)"
+          },
+          {
             "code": "194828000",
             "display": "Angina (disorder)"
+          },
+          {
+            "code": "21470009",
+            "display": "Syncope anginosa (disorder)"
           },
           {
             "code": "233819005",
@@ -72,8 +116,12 @@
             "display": "Angina pectoris with documented spasm"
           },
           {
-            "code": "I20.8",
-            "display": "Other forms of angina pectoris"
+            "code": "I20.2",
+            "display": "Refractory angina pectoris"
+          },
+          {
+            "code": "I20.81",
+            "display": "Angina pectoris with coronary microvascular dysfunction"
           },
           {
             "code": "I20.89",

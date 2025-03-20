@@ -72,6 +72,38 @@
             "display": "Health behavior intervention, individual, face-to-face; each additional 15 minutes (List separately in addition to code for primary service)"
           },
           {
+            "code": "98008",
+            "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, straightforward medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+          },
+          {
+            "code": "98009",
+            "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, low medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+          },
+          {
+            "code": "98010",
+            "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, moderate medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+          },
+          {
+            "code": "98011",
+            "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, high medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+          },
+          {
+            "code": "98012",
+            "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, straightforward medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 10 minutes must be exceeded."
+          },
+          {
+            "code": "98013",
+            "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, low medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+          },
+          {
+            "code": "98014",
+            "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, moderate medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+          },
+          {
+            "code": "98015",
+            "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, high medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+          },
+          {
             "code": "99202",
             "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
           },
@@ -154,7 +186,7 @@
         ]
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
         "concept": [
           {
             "code": "G0402",

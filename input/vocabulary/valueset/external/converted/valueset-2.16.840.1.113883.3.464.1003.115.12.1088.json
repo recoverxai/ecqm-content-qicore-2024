@@ -36,6 +36,18 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "18188000",
+            "display": "Ophthalmoscopy under general anesthesia (procedure)"
+          },
+          {
+            "code": "20067007",
+            "display": "Ocular fundus photography (procedure)"
+          },
+          {
+            "code": "21593001",
+            "display": "Ophthalmodynamography (procedure)"
+          },
+          {
             "code": "252779009",
             "display": "Single bright white flash electroretinography (procedure)"
           },
@@ -72,6 +84,10 @@
             "display": "Focal electroretinography (procedure)"
           },
           {
+            "code": "252846004",
+            "display": "Scanning laser ophthalmoscopy (procedure)"
+          },
+          {
             "code": "274795007",
             "display": "Examination of optic disc (procedure)"
           },
@@ -80,8 +96,16 @@
             "display": "Examination of retina (procedure)"
           },
           {
+            "code": "3047001",
+            "display": "Kowa fundus photography (procedure)"
+          },
+          {
             "code": "308110009",
             "display": "Direct fundoscopy following mydriatic (procedure)"
+          },
+          {
+            "code": "30842004",
+            "display": "Ophthalmoscopy with medical evaluation, extended, with fundus photography (procedure)"
           },
           {
             "code": "314971001",
@@ -90,6 +114,26 @@
           {
             "code": "314972008",
             "display": "Indirect fundoscopy following mydriatic (procedure)"
+          },
+          {
+            "code": "36844005",
+            "display": "Ophthalmoscopy with medical evaluation, extended, with ophthalmodynamometry (procedure)"
+          },
+          {
+            "code": "391999003",
+            "display": "Confocal scanning laser ophthalmoscopy (procedure)"
+          },
+          {
+            "code": "392005004",
+            "display": "Scanning laser polarimetry (procedure)"
+          },
+          {
+            "code": "410441007",
+            "display": "Ophthalmoscopy with medical evaluation, extended, with fluorescein angiography (procedure)"
+          },
+          {
+            "code": "410450009",
+            "display": "Direct ophthalmoscopy (procedure)"
           },
           {
             "code": "410451008",
@@ -108,6 +152,14 @@
             "display": "Slit lamp fundus examination (procedure)"
           },
           {
+            "code": "416369006",
+            "display": "Integrated optical coherence tomography and scanning laser ophthalmoscopy (procedure)"
+          },
+          {
+            "code": "417587001",
+            "display": "Integrated ray-trace triangulation acquisition laser scanning with conventional fundus imaging (procedure)"
+          },
+          {
             "code": "420213007",
             "display": "Multifocal electroretinography (procedure)"
           },
@@ -120,8 +172,24 @@
             "display": "Evaluation of retina (procedure)"
           },
           {
+            "code": "53524009",
+            "display": "Ophthalmoscopy (procedure)"
+          },
+          {
+            "code": "56072006",
+            "display": "Ophthalmoscopy with medical evaluation, extended, for retinal detachment mapping (procedure)"
+          },
+          {
+            "code": "56204000",
+            "display": "Ophthalmodynamometry (procedure)"
+          },
+          {
             "code": "6615001",
             "display": "Electroretinography (procedure)"
+          },
+          {
+            "code": "700070005",
+            "display": "Optical coherence tomography of retina (procedure)"
           },
           {
             "code": "722161008",

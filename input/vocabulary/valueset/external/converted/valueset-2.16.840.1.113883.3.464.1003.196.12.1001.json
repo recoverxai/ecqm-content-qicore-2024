@@ -408,6 +408,10 @@
             "display": "clarithromycin 25 MG/ML Oral Suspension"
           },
           {
+            "code": "242807",
+            "display": "minocycline 10 MG/ML Oral Suspension"
+          },
+          {
             "code": "248656",
             "display": "azithromycin 500 MG Oral Tablet"
           },
@@ -660,6 +664,14 @@
             "display": "sulfamethoxazole 80 MG/ML / trimethoprim 16 MG/ML Injectable Solution"
           },
           {
+            "code": "313252",
+            "display": "tetracycline hydrochloride 250 MG Oral Tablet"
+          },
+          {
+            "code": "313254",
+            "display": "tetracycline hydrochloride 500 MG Oral Tablet"
+          },
+          {
             "code": "313797",
             "display": "amoxicillin 25 MG/ML Oral Suspension"
           },
@@ -758,10 +770,6 @@
           {
             "code": "562707",
             "display": "trimethoprim 10 MG/ML Oral Solution"
-          },
-          {
-            "code": "577378",
-            "display": "azithromycin 33.3 MG/ML Extended Release Suspension"
           },
           {
             "code": "598006",

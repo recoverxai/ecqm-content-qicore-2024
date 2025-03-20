@@ -30,20 +30,10 @@
   "date": "2024-02-17T01:10:27-05:00",
   "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "urn:uuid:053e0acc-5555-482a-9660-23f2f2095630",
-    "timestamp": "2024-12-01T19:48:55-05:00",
+    "identifier": "urn:uuid:e4f11e5e-91e8-4cb7-b4c9-7ea387bc0dc1",
+    "timestamp": "2025-03-20T16:21:21-04:00",
     "total": 60,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

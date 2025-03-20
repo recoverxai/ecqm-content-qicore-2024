@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:6616b6a9-b5f2-4c67-b0ba-439d77c5e1ef",
-    "timestamp": "2024-12-01T19:47:11-05:00",
+    "identifier": "urn:uuid:1320af06-e551-4f35-bf46-35734b617bc0",
+    "timestamp": "2025-03-20T16:19:36-04:00",
     "total": 59,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -371,32 +361,32 @@
         "display": "Assessment of and care planning for a patient with cognitive impairment, requiring an independent historian, in the office or other outpatient, home or domiciliary or rest home, with all of the following required elements: Cognition-focused evaluation including a pertinent history and examination, Medical decision making of moderate or high complexity, Functional assessment (eg, basic and instrumental activities of daily living), including decision-making capacity, Use of standardized instruments for staging of dementia (eg, functional assessment staging test [FAST], clinical dementia rating [CDR]), Medication reconciliation and review for high-risk medications, Evaluation for neuropsychiatric and behavioral symptoms, including depression, including use of standardized screening instrument(s), Evaluation of safety (eg, home), including motor vehicle operation, Identification of caregiver(s), caregiver knowledge, caregiver needs, social supports, and the willingness of caregiver to take on caregiving tasks, Development, updating or revision, or review of an Advance Care Plan, Creation of a written care plan, including initial plans to address any neuropsychiatric symptoms, neuro-cognitive symptoms, functional limitations, and referral to community resources as needed (eg, rehabilitation services, adult day programs, support groups) shared with the patient and/or caregiver with initial education and support. Typically, 60 minutes of total time is spent on the date of the encounter."
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0402",
         "display": "Initial preventive physical examination; face-to-face visit, services limited to new beneficiary during the first 12 months of medicare enrollment"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0438",
         "display": "Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0439",
         "display": "Annual wellness visit, includes a personalized prevention plan of service (pps), subsequent visit"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0463",
         "display": "Hospital outpatient clinic visit for assessment and management of a patient"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "T1015",
         "display": "Clinic visit/encounter, all-inclusive"
       }

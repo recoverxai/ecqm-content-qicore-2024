@@ -1240,6 +1240,10 @@
             "display": "Coronary artery bypass graft, anastomosis of artery of thorax to coronary artery (procedure)"
           },
           {
+            "code": "1287561002",
+            "display": "Coronary artery bypass using robotic assistance (procedure)"
+          },
+          {
             "code": "14323007",
             "display": "Aortocoronary bypass of three coronary arteries (procedure)"
           },

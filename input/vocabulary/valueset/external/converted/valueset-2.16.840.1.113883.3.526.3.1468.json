@@ -192,6 +192,10 @@
             "display": "Macular focal chorioretinitis of bilateral eyes (disorder)"
           },
           {
+            "code": "345971000119104",
+            "display": "Generalized disseminated chorioretinitis of bilateral eyes (disorder)"
+          },
+          {
             "code": "346251000119106",
             "display": "Disseminated chorioretinitis of bilateral eyes (disorder)"
           },
@@ -310,6 +314,10 @@
           {
             "code": "699763005",
             "display": "Focal choroiditis of posterior pole of eye (disorder)"
+          },
+          {
+            "code": "711616006",
+            "display": "Chorioretinitis caused by Cytomegalovirus (disorder)"
           },
           {
             "code": "77628002",

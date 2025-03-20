@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:be2abec5-0348-4750-8478-359bf56c066c",
-    "timestamp": "2024-12-01T19:44:00-05:00",
+    "identifier": "urn:uuid:7a1f9c58-b0a1-4113-b2f7-4d3b1dc76870",
+    "timestamp": "2025-03-20T16:14:37-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",

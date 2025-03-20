@@ -44,12 +44,56 @@
             "display": "Macular edema not clinically significant due to diabetes mellitus (disorder)"
           },
           {
+            "code": "399877009",
+            "display": "Very severe nonproliferative retinopathy with clinically significant macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "769217008",
+            "display": "Macular edema of right eye due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "769218003",
+            "display": "Macular edema of left eye due to diabetes mellitus (disorder)"
+          },
+          {
             "code": "769219006",
             "display": "Macular edema due to type 1 diabetes mellitus (disorder)"
           },
           {
             "code": "769220000",
             "display": "Macular edema due to type 2 diabetes mellitus (disorder)"
+          },
+          {
+            "code": "769221001",
+            "display": "Clinically significant macular edema of right eye due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "769222008",
+            "display": "Clinically significant macular edema of left eye due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "770097006",
+            "display": "Clinically significant macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "870421009",
+            "display": "Cystoid macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "870529009",
+            "display": "Persistent macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "871778008",
+            "display": "Centrally involved macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "871781003",
+            "display": "Non centrally involved macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "97331000119101",
+            "display": "Macular edema and retinopathy due to type 2 diabetes mellitus (disorder)"
           }
         ]
       },
@@ -119,42 +163,6 @@
           {
             "code": "E08.3523",
             "display": "Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral"
-          },
-          {
-            "code": "E08.3531",
-            "display": "Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye"
-          },
-          {
-            "code": "E08.3532",
-            "display": "Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye"
-          },
-          {
-            "code": "E08.3533",
-            "display": "Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral"
-          },
-          {
-            "code": "E08.3541",
-            "display": "Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye"
-          },
-          {
-            "code": "E08.3542",
-            "display": "Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye"
-          },
-          {
-            "code": "E08.3543",
-            "display": "Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral"
-          },
-          {
-            "code": "E08.3551",
-            "display": "Diabetes mellitus due to underlying condition with stable proliferative diabetic retinopathy, right eye"
-          },
-          {
-            "code": "E08.3552",
-            "display": "Diabetes mellitus due to underlying condition with stable proliferative diabetic retinopathy, left eye"
-          },
-          {
-            "code": "E08.3553",
-            "display": "Diabetes mellitus due to underlying condition with stable proliferative diabetic retinopathy, bilateral"
           },
           {
             "code": "E08.37X1",
@@ -233,42 +241,6 @@
             "display": "Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral"
           },
           {
-            "code": "E09.3531",
-            "display": "Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye"
-          },
-          {
-            "code": "E09.3532",
-            "display": "Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye"
-          },
-          {
-            "code": "E09.3533",
-            "display": "Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral"
-          },
-          {
-            "code": "E09.3541",
-            "display": "Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye"
-          },
-          {
-            "code": "E09.3542",
-            "display": "Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye"
-          },
-          {
-            "code": "E09.3543",
-            "display": "Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral"
-          },
-          {
-            "code": "E09.3551",
-            "display": "Drug or chemical induced diabetes mellitus with stable proliferative diabetic retinopathy, right eye"
-          },
-          {
-            "code": "E09.3552",
-            "display": "Drug or chemical induced diabetes mellitus with stable proliferative diabetic retinopathy, left eye"
-          },
-          {
-            "code": "E09.3553",
-            "display": "Drug or chemical induced diabetes mellitus with stable proliferative diabetic retinopathy, bilateral"
-          },
-          {
             "code": "E09.37X1",
             "display": "Drug or chemical induced diabetes mellitus with diabetic macular edema, resolved following treatment, right eye"
           },
@@ -343,42 +315,6 @@
           {
             "code": "E10.3523",
             "display": "Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral"
-          },
-          {
-            "code": "E10.3531",
-            "display": "Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye"
-          },
-          {
-            "code": "E10.3532",
-            "display": "Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye"
-          },
-          {
-            "code": "E10.3533",
-            "display": "Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral"
-          },
-          {
-            "code": "E10.3541",
-            "display": "Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye"
-          },
-          {
-            "code": "E10.3542",
-            "display": "Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye"
-          },
-          {
-            "code": "E10.3543",
-            "display": "Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral"
-          },
-          {
-            "code": "E10.3551",
-            "display": "Type 1 diabetes mellitus with stable proliferative diabetic retinopathy, right eye"
-          },
-          {
-            "code": "E10.3552",
-            "display": "Type 1 diabetes mellitus with stable proliferative diabetic retinopathy, left eye"
-          },
-          {
-            "code": "E10.3553",
-            "display": "Type 1 diabetes mellitus with stable proliferative diabetic retinopathy, bilateral"
           },
           {
             "code": "E10.37X1",
@@ -457,42 +393,6 @@
             "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral"
           },
           {
-            "code": "E11.3531",
-            "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye"
-          },
-          {
-            "code": "E11.3532",
-            "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye"
-          },
-          {
-            "code": "E11.3533",
-            "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral"
-          },
-          {
-            "code": "E11.3541",
-            "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye"
-          },
-          {
-            "code": "E11.3542",
-            "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye"
-          },
-          {
-            "code": "E11.3543",
-            "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral"
-          },
-          {
-            "code": "E11.3551",
-            "display": "Type 2 diabetes mellitus with stable proliferative diabetic retinopathy, right eye"
-          },
-          {
-            "code": "E11.3552",
-            "display": "Type 2 diabetes mellitus with stable proliferative diabetic retinopathy, left eye"
-          },
-          {
-            "code": "E11.3553",
-            "display": "Type 2 diabetes mellitus with stable proliferative diabetic retinopathy, bilateral"
-          },
-          {
             "code": "E11.37X1",
             "display": "Type 2 diabetes mellitus with diabetic macular edema, resolved following treatment, right eye"
           },
@@ -567,42 +467,6 @@
           {
             "code": "E13.3523",
             "display": "Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral"
-          },
-          {
-            "code": "E13.3531",
-            "display": "Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye"
-          },
-          {
-            "code": "E13.3532",
-            "display": "Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye"
-          },
-          {
-            "code": "E13.3533",
-            "display": "Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral"
-          },
-          {
-            "code": "E13.3541",
-            "display": "Other specified diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye"
-          },
-          {
-            "code": "E13.3542",
-            "display": "Other specified diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye"
-          },
-          {
-            "code": "E13.3543",
-            "display": "Other specified diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral"
-          },
-          {
-            "code": "E13.3551",
-            "display": "Other specified diabetes mellitus with stable proliferative diabetic retinopathy, right eye"
-          },
-          {
-            "code": "E13.3552",
-            "display": "Other specified diabetes mellitus with stable proliferative diabetic retinopathy, left eye"
-          },
-          {
-            "code": "E13.3553",
-            "display": "Other specified diabetes mellitus with stable proliferative diabetic retinopathy, bilateral"
           },
           {
             "code": "E13.37X1",

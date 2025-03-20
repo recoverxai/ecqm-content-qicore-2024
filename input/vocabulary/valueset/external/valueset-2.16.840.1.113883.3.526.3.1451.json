@@ -31,20 +31,10 @@
   "date": "2021-02-10T01:02:26-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:1d3a814e-85de-42e0-baaf-ad5d523e21a3",
-    "timestamp": "2024-12-01T19:43:12-05:00",
-    "total": 30,
+    "identifier": "urn:uuid:67adb6a4-7e8a-44a9-90fb-092f313cdbb5",
+    "timestamp": "2025-03-20T16:13:47-04:00",
+    "total": 24,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -85,26 +75,8 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "333881000119109",
-        "display": "Minor opacity of right cornea (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "334901000119109",
         "display": "Hemorrhagic detachment of right choroid (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "336051000119104",
-        "display": "Rupture of choroid of right eye (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "336061000119102",
-        "display": "Hemorrhage of choroid of right eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -121,26 +93,8 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "339481000119109",
-        "display": "Minor opacity of left cornea (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "340511000119109",
         "display": "Hemorrhagic detachment of left choroid (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "341661000119101",
-        "display": "Rupture of choroid of left eye (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "341671000119107",
-        "display": "Hemorrhage of choroid of left eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -157,8 +111,8 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "344611000119101",
-        "display": "Peripheral opacity of bilateral corneas (disorder)"
+        "code": "346901000119101",
+        "display": "Choroidal detachment of bilateral eyes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

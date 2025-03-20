@@ -97,10 +97,6 @@
             "display": "Emergency cesarean section (procedure)"
           },
           {
-            "code": "288042004",
-            "display": "Hysterectomy and fetus removal (procedure)"
-          },
-          {
             "code": "41059002",
             "display": "Cesarean hysterectomy (procedure)"
           },

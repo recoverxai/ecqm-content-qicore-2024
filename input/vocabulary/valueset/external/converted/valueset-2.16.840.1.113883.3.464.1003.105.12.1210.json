@@ -84,6 +84,10 @@
             "display": "Agoraphobia without history of panic disorder with limited symptom attacks (disorder)"
           },
           {
+            "code": "15277004",
+            "display": "Hallucinogen-induced anxiety disorder (disorder)"
+          },
+          {
             "code": "16264621000119109",
             "display": "Recurrent mild major depressive disorder co-occurrent with anxiety (disorder)"
           },
@@ -184,6 +188,10 @@
             "display": "Panic disorder with agoraphobia, mild agoraphobic avoidance AND severe panic attacks (disorder)"
           },
           {
+            "code": "20876004",
+            "display": "Inhalant-induced anxiety disorder (disorder)"
+          },
+          {
             "code": "21897009",
             "display": "Generalized anxiety disorder (disorder)"
           },
@@ -282,6 +290,10 @@
           {
             "code": "386810004",
             "display": "Phobic disorder (disorder)"
+          },
+          {
+            "code": "39951001",
+            "display": "Cannabis-induced anxiety disorder (disorder)"
           },
           {
             "code": "403593004",
@@ -418,6 +430,10 @@
           {
             "code": "699241002",
             "display": "Chronic post-traumatic stress disorder following military combat (disorder)"
+          },
+          {
+            "code": "70655008",
+            "display": "Caffeine-induced anxiety disorder (disorder)"
           },
           {
             "code": "70691001",

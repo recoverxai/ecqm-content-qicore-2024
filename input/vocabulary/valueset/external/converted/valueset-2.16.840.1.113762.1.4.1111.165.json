@@ -880,10 +880,6 @@
             "display": "acetaminophen 325 MG / hydrocodone bitartrate 2.5 MG Oral Tablet"
           },
           {
-            "code": "857512",
-            "display": "12 HR chlorpheniramine polistirex 8 MG / hydrocodone polistirex 10 MG Extended Release Oral Capsule"
-          },
-          {
             "code": "858770",
             "display": "hydrocodone bitartrate 2.5 MG / ibuprofen 200 MG Oral Tablet"
           },
@@ -1270,10 +1266,6 @@
           {
             "code": "996725",
             "display": "codeine phosphate 20 MG / guaifenesin 400 MG Oral Tablet"
-          },
-          {
-            "code": "996728",
-            "display": "codeine phosphate 20 MG / pseudoephedrine hydrochloride 60 MG Oral Capsule"
           },
           {
             "code": "997170",

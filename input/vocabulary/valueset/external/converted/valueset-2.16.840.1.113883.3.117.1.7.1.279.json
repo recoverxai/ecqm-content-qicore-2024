@@ -68,6 +68,54 @@
             "display": "Deep vein thrombosis of leg related to air travel (disorder)"
           },
           {
+            "code": "15968821000119100",
+            "display": "Thrombophlebitis of right iliac vein (disorder)"
+          },
+          {
+            "code": "15968861000119105",
+            "display": "Thrombophlebitis of left iliac vein (disorder)"
+          },
+          {
+            "code": "15968901000119104",
+            "display": "Thrombophlebitis of bilateral iliac veins (disorder)"
+          },
+          {
+            "code": "16011871000119103",
+            "display": "Thrombophlebitis of bilateral popliteal veins (disorder)"
+          },
+          {
+            "code": "16011911000119100",
+            "display": "Thrombophlebitis of left popliteal vein (disorder)"
+          },
+          {
+            "code": "16011951000119104",
+            "display": "Thrombophlebitis of right popliteal vein (disorder)"
+          },
+          {
+            "code": "16011991000119109",
+            "display": "Thrombophlebitis of right femoral vein (disorder)"
+          },
+          {
+            "code": "16012031000119104",
+            "display": "Thrombophlebitis of bilateral femoral veins (disorder)"
+          },
+          {
+            "code": "16012071000119101",
+            "display": "Thrombophlebitis of left femoral vein (disorder)"
+          },
+          {
+            "code": "16012111000119108",
+            "display": "Thrombophlebitis of right deep femoral vein (disorder)"
+          },
+          {
+            "code": "16012151000119109",
+            "display": "Thrombophlebitis of left deep femoral vein (disorder)"
+          },
+          {
+            "code": "16012191000119104",
+            "display": "Thrombophlebitis of bilateral deep femoral veins (disorder)"
+          },
+          {
             "code": "16750002",
             "display": "Deep thrombophlebitis (disorder)"
           },
@@ -148,6 +196,54 @@
             "display": "Thrombosis of inferior vena cava (disorder)"
           },
           {
+            "code": "285381000119104",
+            "display": "Acute deep vein thrombosis of bilateral femoral veins (disorder)"
+          },
+          {
+            "code": "285391000119101",
+            "display": "Acute deep venous thrombosis of left femoral vein (disorder)"
+          },
+          {
+            "code": "285401000119104",
+            "display": "Acute deep venous thrombosis of right femoral vein (disorder)"
+          },
+          {
+            "code": "285441000119102",
+            "display": "Acute deep venous thrombosis of bilateral ileofemoral veins (disorder)"
+          },
+          {
+            "code": "285451000119100",
+            "display": "Acute deep venous thrombosis of ileofemoral vein of left lower extremity (disorder)"
+          },
+          {
+            "code": "285461000119103",
+            "display": "Acute deep venous thrombosis of ileofemoral vein of right lower extremity (disorder)"
+          },
+          {
+            "code": "285561000119102",
+            "display": "Acute deep venous thrombosis of bilateral popliteal veins (disorder)"
+          },
+          {
+            "code": "285571000119108",
+            "display": "Acute deep venous thrombosis of popliteal vein of left leg (disorder)"
+          },
+          {
+            "code": "285581000119106",
+            "display": "Acute deep venous thrombosis of politeal vein of right leg (disorder)"
+          },
+          {
+            "code": "293471000119106",
+            "display": "Acute deep vein thrombosis of bilateral iliac veins (disorder)"
+          },
+          {
+            "code": "293481000119109",
+            "display": "Acute deep vein thrombosis of right iliac vein (disorder)"
+          },
+          {
+            "code": "293491000119107",
+            "display": "Acute deep vein thrombosis of left iliac vein (disorder)"
+          },
+          {
             "code": "312584000",
             "display": "Thrombosis of vein of trunk (disorder)"
           },
@@ -224,8 +320,16 @@
             "display": "Pulmonary thrombosis (disorder)"
           },
           {
+            "code": "703277001",
+            "display": "Deep venous thrombosis of femoropopliteal vein (disorder)"
+          },
+          {
             "code": "74315008",
             "display": "Pulmonary microemboli (disorder)"
+          },
+          {
+            "code": "762256003",
+            "display": "Thrombosis of iliac vein (disorder)"
           },
           {
             "code": "77892009",
@@ -257,6 +361,14 @@
             "display": "Saddle embolus of pulmonary artery with acute cor pulmonale"
           },
           {
+            "code": "I26.03",
+            "display": "Cement embolism of pulmonary artery with acute cor pulmonale"
+          },
+          {
+            "code": "I26.04",
+            "display": "Fat embolism of pulmonary artery with acute cor pulmonale"
+          },
+          {
             "code": "I26.09",
             "display": "Other pulmonary embolism with acute cor pulmonale"
           },
@@ -271,6 +383,14 @@
           {
             "code": "I26.94",
             "display": "Multiple subsegmental thrombotic pulmonary emboli without acute cor pulmonale"
+          },
+          {
+            "code": "I26.95",
+            "display": "Cement embolism of pulmonary artery without acute cor pulmonale"
+          },
+          {
+            "code": "I26.96",
+            "display": "Fat embolism of pulmonary artery without acute cor pulmonale"
           },
           {
             "code": "I26.99",

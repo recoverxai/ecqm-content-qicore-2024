@@ -56,6 +56,22 @@
             "display": "Needling of secondary cataract (procedure)"
           },
           {
+            "code": "1231296008",
+            "display": "Extraction of cataract of bilateral eyes (procedure)"
+          },
+          {
+            "code": "1231299001",
+            "display": "Extraction of cataract of right eye (procedure)"
+          },
+          {
+            "code": "1231300009",
+            "display": "Extraction of cataract of left eye (procedure)"
+          },
+          {
+            "code": "1236928007",
+            "display": "Surgery of cataract of bilateral eyes (procedure)"
+          },
+          {
             "code": "172523009",
             "display": "Intracapsular extraction of lens (procedure)"
           },
@@ -96,8 +112,20 @@
             "display": "Extraction of cataract by ultrasonic phacofragmentation (procedure)"
           },
           {
+            "code": "3700004",
+            "display": "Erysiphake extraction of cataract by intracapsular approach (procedure)"
+          },
+          {
             "code": "385468004",
             "display": "Cataract extraction and implantation of intraocular lens (procedure)"
+          },
+          {
+            "code": "38621000087109",
+            "display": "Extraction of cataract and implantation of intraocular lens in left eye (procedure)"
+          },
+          {
+            "code": "38631000087106",
+            "display": "Extraction of cataract and implantation of intraocular lens in right eye (procedure)"
           },
           {
             "code": "39243005",
@@ -215,6 +243,22 @@
           {
             "code": "66984",
             "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1 stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification); without endoscopic cyclophotocoagulation"
+          },
+          {
+            "code": "66987",
+            "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1-stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification), complex, requiring devices or techniques not generally used in routine cataract surgery (eg, iris expansion device, suture support for intraocular lens, or primary posterior capsulorrhexis) or performed on patients in the amblyogenic developmental stage; with endoscopic cyclophotocoagulation"
+          },
+          {
+            "code": "66988",
+            "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1 stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification); with endoscopic cyclophotocoagulation"
+          },
+          {
+            "code": "66989",
+            "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1-stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification), complex, requiring devices or techniques not generally used in routine cataract surgery (eg, iris expansion device, suture support for intraocular lens, or primary posterior capsulorrhexis) or performed on patients in the amblyogenic developmental stage; with insertion of intraocular (eg, trabecular meshwork, supraciliary, suprachoroidal) anterior segment aqueous drainage device, without extraocular reservoir, internal approach, one or more"
+          },
+          {
+            "code": "66991",
+            "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1 stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification); with insertion of intraocular (eg, trabecular meshwork, supraciliary, suprachoroidal) anterior segment aqueous drainage device, without extraocular reservoir, internal approach, one or more"
           }
         ]
       },

@@ -40,12 +40,48 @@
             "display": "Fiberoptic colonoscopy with biopsy of lesion of colon (procedure)"
           },
           {
+            "code": "1217313001",
+            "display": "Biopsy of colon using endoscopic ultrasonography guidance (procedure)"
+          },
+          {
             "code": "12350003",
             "display": "Colonoscopy with rigid sigmoidoscope through colotomy (procedure)"
           },
           {
+            "code": "1304042004",
+            "display": "Colonoscopy and suturing of rectum (procedure)"
+          },
+          {
+            "code": "1304043009",
+            "display": "Colonoscopy and suturing of colon (procedure)"
+          },
+          {
+            "code": "1304044003",
+            "display": "Colonoscopy and suturing of small intestine (procedure)"
+          },
+          {
+            "code": "1304045002",
+            "display": "Colonoscopy and full thickness resection of rectum (procedure)"
+          },
+          {
+            "code": "1304049008",
+            "display": "Colonoscopy and full thickness resection of colon (procedure)"
+          },
+          {
+            "code": "1304050008",
+            "display": "Colonoscopy and full thickness resection of small intestine (procedure)"
+          },
+          {
             "code": "174158000",
             "display": "Open colonoscopy (procedure)"
+          },
+          {
+            "code": "174173004",
+            "display": "Fiberoptic endoscopic laser destruction of lesion of colon (procedure)"
+          },
+          {
+            "code": "174179000",
+            "display": "Fiberoptic endoscopic dilation of colon (procedure)"
           },
           {
             "code": "235150006",
@@ -230,6 +266,10 @@
             "display": "Colonoscopy using rectal retroflexion technique (procedure)"
           },
           {
+            "code": "609197007",
+            "display": "Endoscopic surgical procedure on colon using laser (procedure)"
+          },
+          {
             "code": "709421007",
             "display": "Colonoscopy and dilation of stricture of colon (procedure)"
           },
@@ -246,6 +286,10 @@
             "display": "Colonoscopy (procedure)"
           },
           {
+            "code": "771568007",
+            "display": "Fiberoptic endoscopic excision of lesion of colonic mucous membrane (procedure)"
+          },
+          {
             "code": "789778002",
             "display": "Colonoscopy and fecal microbiota transplantation (procedure)"
           },
@@ -256,7 +300,7 @@
         ]
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
         "concept": [
           {
             "code": "G0105",

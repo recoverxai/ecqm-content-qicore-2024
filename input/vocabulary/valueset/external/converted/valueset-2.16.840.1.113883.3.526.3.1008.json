@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.526.3.1008",
   "meta": {
     "versionId": "30",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2025-01-30T16:13:05.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -29,12 +29,16 @@
   "status": "active",
   "experimental": false,
   "date": "2022-03-03T18:46:01-05:00",
-  "publisher": "Mathematica",
+  "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
       {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "1296859006",
+            "display": "Procedure declined (situation)"
+          },
           {
             "code": "160932005",
             "display": "Financial problem (finding)"
@@ -102,6 +106,10 @@
           {
             "code": "275936005",
             "display": "Patient noncompliance - general (situation)"
+          },
+          {
+            "code": "31021000119100",
+            "display": "Screening declined (situation)"
           },
           {
             "code": "310343007",

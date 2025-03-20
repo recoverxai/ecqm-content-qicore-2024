@@ -31,72 +31,62 @@
   "date": "2021-09-10T01:00:58-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:ed1893d4-012a-4909-bb1f-365a28459036",
-    "timestamp": "2024-12-01T19:49:27-05:00",
+    "identifier": "urn:uuid:71437579-4e34-479b-8c2a-30892282a05c",
+    "timestamp": "2025-03-20T16:34:16-04:00",
     "total": 9,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1000048",
         "display": "doxepin 10 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1000054",
         "display": "doxepin 10 MG/ML Oral Solution"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1000058",
         "display": "doxepin 100 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1000064",
         "display": "doxepin 150 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1000070",
         "display": "doxepin 25 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1000076",
         "display": "doxepin 50 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1000097",
         "display": "doxepin 75 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "966787",
         "display": "doxepin 3 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "966793",
         "display": "doxepin 6 MG Oral Tablet"
       }

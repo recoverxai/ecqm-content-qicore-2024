@@ -31,20 +31,10 @@
   "date": "2021-02-14T01:00:35-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:f03196fb-9aa7-44a5-a394-08b2582f8d46",
-    "timestamp": "2024-12-01T19:43:40-05:00",
-    "total": 19,
+    "identifier": "urn:uuid:5ad539f1-deb0-4503-95f3-a0f16c348cc3",
+    "timestamp": "2025-03-20T16:14:12-04:00",
+    "total": 22,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -69,6 +59,24 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "53885001",
         "display": "Hypotony of eye co-occurrent and due to ocular fistula (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677291000119105",
+        "display": "Hypotony of bilateral eyes due to ocular fistula (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677301000119106",
+        "display": "Hypotony of left eye due to ocular fistula (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677311000119109",
+        "display": "Hypotony of right eye due to ocular fistula (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

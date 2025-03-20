@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.93",
   "meta": {
-    "versionId": "39",
-    "lastUpdated": "2024-11-13T14:51:18.000-05:00",
+    "versionId": "44",
+    "lastUpdated": "2025-02-06T01:09:49.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2023-01-17"
+      "valueDate": "2025-02-06"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.93",
@@ -23,11 +23,11 @@
       "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.93"
     }
   ],
-  "version": "20230117",
+  "version": "20250206",
   "name": "PatientRefusal",
   "title": "Patient Refusal",
   "status": "active",
-  "date": "2023-01-17T01:02:49-05:00",
+  "date": "2025-02-06T01:09:49-05:00",
   "publisher": "TJC EH Steward",
   "compose": {
     "include": [
@@ -37,6 +37,10 @@
           {
             "code": "1162745003",
             "display": "Refused by parent of subject (qualifier value)"
+          },
+          {
+            "code": "1296859006",
+            "display": "Procedure declined (situation)"
           },
           {
             "code": "182890002",

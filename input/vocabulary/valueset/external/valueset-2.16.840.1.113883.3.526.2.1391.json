@@ -31,20 +31,10 @@
   "date": "2013-06-12T19:16:25-04:00",
   "publisher": "AMA-PCPI",
   "expansion": {
-    "identifier": "urn:uuid:dbb0d1f7-43a3-4e4a-87d5-dac5c822b6be",
-    "timestamp": "2024-12-01T19:46:43-05:00",
+    "identifier": "urn:uuid:62827d4a-6edf-474c-9d11-cb08d740c388",
+    "timestamp": "2025-03-20T16:19:09-04:00",
     "total": 1,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

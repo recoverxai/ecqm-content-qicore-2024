@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1258.1",
   "meta": {
-    "versionId": "12",
-    "lastUpdated": "2024-01-30T01:08:32.000-05:00",
+    "versionId": "16",
+    "lastUpdated": "2025-02-08T01:04:21.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2024-01-30"
+      "valueDate": "2025-02-08"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1258.1",
@@ -23,28 +23,42 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1258.1"
     }
   ],
-  "version": "20240130",
+  "version": "20250208",
   "name": "GonorrheaScreening",
   "title": "Gonorrhea Screening",
   "status": "active",
-  "date": "2024-01-30T01:08:32-05:00",
+  "date": "2025-02-08T01:04:21-05:00",
   "publisher": "HRSA - HAB",
   "expansion": {
-    "identifier": "urn:uuid:b04d8408-d452-413a-bd5a-5f70ccf4f846",
-    "timestamp": "2024-12-01T19:49:00-05:00",
-    "total": 40,
+    "identifier": "urn:uuid:c12eb49e-4390-499c-94df-61da9a3c86f3",
+    "timestamp": "2025-03-20T16:21:26-04:00",
+    "total": 44,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104765-3",
+        "display": "Neisseria gonorrhoeae DNA [Presence] in Specimen by Molecular genetics method"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "104780-2",
+        "display": "Neisseria gonorrhoeae rRNA [Presence] in Specimen by Molecular genetics method"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "105085-5",
+        "display": "Neisseria gonorrhoeae rRNA [Presence] in Specimen"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "105922-9",
+        "display": "Neisseria gonorrhoeae DNA [Presence] in Semen by NAA with probe detection"
+      },
       {
         "system": "http://loinc.org",
         "version": "2.78",

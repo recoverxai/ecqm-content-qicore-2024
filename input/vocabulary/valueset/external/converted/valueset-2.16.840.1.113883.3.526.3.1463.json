@@ -36,8 +36,32 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1010610007",
+            "display": "Retinitis pigmentosa-deafness syndrome type 3 (disorder)"
+          },
+          {
+            "code": "1172605003",
+            "display": "Retinitis pigmentosa, hearing loss, premature aging, short stature, facial dysmorphism syndrome (disorder)"
+          },
+          {
+            "code": "1220597000",
+            "display": "Retinitis pigmentosa, juvenile cataract, short stature, intellectual disability syndrome (disorder)"
+          },
+          {
             "code": "15059000",
             "display": "Retinal dystrophy in systemic lipidosis (disorder)"
+          },
+          {
+            "code": "15699201000119104",
+            "display": "Retinitis pigmentosa of left eye (disorder)"
+          },
+          {
+            "code": "15699241000119102",
+            "display": "Retinitis pigmentosa of right eye (disorder)"
+          },
+          {
+            "code": "15699281000119107",
+            "display": "Retinitis pigmentosa of bilateral eyes (disorder)"
           },
           {
             "code": "192788009",
@@ -64,6 +88,14 @@
             "display": "Autosomal recessive retinitis pigmentosa (disorder)"
           },
           {
+            "code": "232054005",
+            "display": "X-linked retinitis pigmentosa (disorder)"
+          },
+          {
+            "code": "232055006",
+            "display": "X-linked retinitis pigmentosa heterozygote (disorder)"
+          },
+          {
             "code": "232056007",
             "display": "Progressive rod dystrophy (disorder)"
           },
@@ -74,6 +106,14 @@
           {
             "code": "232058008",
             "display": "Usher syndrome type 2 (disorder)"
+          },
+          {
+            "code": "237611007",
+            "display": "Muscular atrophy, ataxia, retinitis pigmentosa, and diabetes mellitus (disorder)"
+          },
+          {
+            "code": "237984008",
+            "display": "Neurogenic muscle weakness, ataxia and retinitis pigmentosa (disorder)"
           },
           {
             "code": "267613004",
@@ -96,8 +136,28 @@
             "display": "Hereditary retinal dystrophy (disorder)"
           },
           {
+            "code": "514793471000119104",
+            "display": "Usher syndrome type 1F (disorder)"
+          },
+          {
             "code": "57838006",
             "display": "Retinitis pigmentosa-deafness syndrome (disorder)"
+          },
+          {
+            "code": "698847000",
+            "display": "Hereditary retinal dystrophy primarily involving retinal pigment epithelium (disorder)"
+          },
+          {
+            "code": "698848005",
+            "display": "Hereditary retinal dystrophy primarily involving sensory retina (disorder)"
+          },
+          {
+            "code": "719282008",
+            "display": "Primary ciliary dyskinesia and retinitis pigmentosa syndrome (disorder)"
+          },
+          {
+            "code": "723452007",
+            "display": "Polyneuropathy, hearing loss, ataxia, retinitis pigmentosa, cataract syndrome (disorder)"
           },
           {
             "code": "764939004",

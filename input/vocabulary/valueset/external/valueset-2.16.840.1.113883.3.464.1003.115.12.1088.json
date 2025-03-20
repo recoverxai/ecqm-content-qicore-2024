@@ -31,21 +31,29 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:db47ad88-6b42-4fea-9ffa-35307796134a",
-    "timestamp": "2024-12-01T19:45:02-05:00",
-    "total": 23,
+    "identifier": "urn:uuid:4b783106-e743-449d-8a24-fbf1ca95bc9e",
+    "timestamp": "2025-03-20T16:16:55-04:00",
+    "total": 40,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "18188000",
+        "display": "Ophthalmoscopy under general anesthesia (procedure)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "20067007",
+        "display": "Ocular fundus photography (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "21593001",
+        "display": "Ophthalmodynamography (procedure)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -103,6 +111,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "252846004",
+        "display": "Scanning laser ophthalmoscopy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "274795007",
         "display": "Examination of optic disc (procedure)"
       },
@@ -115,8 +129,20 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "3047001",
+        "display": "Kowa fundus photography (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "308110009",
         "display": "Direct fundoscopy following mydriatic (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "30842004",
+        "display": "Ophthalmoscopy with medical evaluation, extended, with fundus photography (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -129,6 +155,36 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "314972008",
         "display": "Indirect fundoscopy following mydriatic (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "36844005",
+        "display": "Ophthalmoscopy with medical evaluation, extended, with ophthalmodynamometry (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "391999003",
+        "display": "Confocal scanning laser ophthalmoscopy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "392005004",
+        "display": "Scanning laser polarimetry (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "410441007",
+        "display": "Ophthalmoscopy with medical evaluation, extended, with fluorescein angiography (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "410450009",
+        "display": "Direct ophthalmoscopy (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -157,6 +213,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "416369006",
+        "display": "Integrated optical coherence tomography and scanning laser ophthalmoscopy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "417587001",
+        "display": "Integrated ray-trace triangulation acquisition laser scanning with conventional fundus imaging (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "420213007",
         "display": "Multifocal electroretinography (procedure)"
       },
@@ -175,8 +243,32 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "53524009",
+        "display": "Ophthalmoscopy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "56072006",
+        "display": "Ophthalmoscopy with medical evaluation, extended, for retinal detachment mapping (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "56204000",
+        "display": "Ophthalmodynamometry (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "6615001",
         "display": "Electroretinography (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "700070005",
+        "display": "Optical coherence tomography of retina (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

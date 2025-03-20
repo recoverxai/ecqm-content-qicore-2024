@@ -31,21 +31,17 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:6046cbf4-d530-476c-a316-b107f397f37a",
-    "timestamp": "2024-12-01T19:47:12-05:00",
-    "total": 291,
+    "identifier": "urn:uuid:13b0db9f-5976-46f0-a0db-bf17d6df5f53",
+    "timestamp": "2025-03-20T16:19:38-04:00",
+    "total": 330,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "111498005",
+        "display": "Extratemporal epilepsy (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -61,6 +57,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "116401000119105",
+        "display": "Recurrent complex partial epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1167371007",
+        "display": "Polyhydramnios, megalencephaly, symptomatic epilepsy syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1172593006",
         "display": "Early-onset progressive diffuse brain atrophy, microcephaly, muscle weakness, optic atrophy syndrome (disorder)"
       },
@@ -69,6 +77,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1172630000",
         "display": "Global developmental delay, neuro-ophthalmological abnormalities, seizures, intellectual disability syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1172844009",
+        "display": "Combined oxidative phosphorylation defect type 27 (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -123,6 +137,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1187304005",
         "display": "Macrocephaly, intellectual disability, neurodevelopmental disorder, small thorax syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1197587003",
+        "display": "Lethal neonatal spasticity, epileptic encephalopathy syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208486005",
+        "display": "Multiple mitochondrial dysfunctions syndrome type 2 (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -189,6 +215,72 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1254960008",
         "display": "Seizure co-occurrent and due to substance withdrawal (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1260117009",
+        "display": "Combined focal and generalized epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1260368003",
+        "display": "Epilepsy due to Rasmussen syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1260369006",
+        "display": "Epilepsy due to perinatal intraventricular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1260370007",
+        "display": "Epilepsy due to perinatal periventricular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1260371006",
+        "display": "Epilepsy due to perinatal cerebral ischemia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1260374003",
+        "display": "Epilepsy due to congenital infectious disease (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1260375002",
+        "display": "Epilepsy due to glucose transporter protein type 1 deficiency syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1260377005",
+        "display": "Epilepsy due to congenital anomaly of brain (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1260407007",
+        "display": "Genetic generalized epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1269236003",
+        "display": "Primary hypomagnesemia, refractory seizures, intellectual disability syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1275631007",
+        "display": "Developmental and epileptic encephalopathy (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -271,6 +363,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "193010006",
+        "display": "Visual reflex epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "193021002",
         "display": "Cursive (running) epilepsy (disorder)"
       },
@@ -291,6 +389,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "21391000119102",
         "display": "Partial parietal lobe epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "2198002",
+        "display": "Visceral epilepsy (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -613,6 +717,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "290741000119102",
+        "display": "Intractable idiopathic partial epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "307356008",
         "display": "Motor epilepsy (disorder)"
       },
@@ -639,6 +749,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "322112361000132104",
         "display": "Epilepsy due to scarring of brain (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "361123003",
+        "display": "Psychomotor epilepsy (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -673,6 +789,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "430061000124109",
+        "display": "Early myoclonic encephalopathy, refractory (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "430071000124102",
+        "display": "Early myoclonic encephalopathy, non-refractory (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "431111000124104",
         "display": "Lennox-Gastaut syndrome, refractory (disorder)"
       },
@@ -693,6 +821,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "431991000124107",
         "display": "Petit mal status, non-refractory (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "432171000124102",
+        "display": "Severe myoclonic epilepsy in infancy, refractory (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -805,6 +939,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "44423001",
+        "display": "Early myoclonic encephalopathy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "444441000124109",
         "display": "Generalized epilepsy with febrile seizures plus, refractory (disorder)"
       },
@@ -883,6 +1023,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "715425000",
+        "display": "Benign focal seizure of adolescence (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "715629001",
         "display": "Generalized epilepsy and paroxysmal dyskinesia syndrome (disorder)"
       },
@@ -909,6 +1055,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "717225001",
         "display": "Benign adult familial myoclonic epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "717276003",
+        "display": "Folinic acid responsive seizure syndrome (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -1093,6 +1245,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "725413002",
+        "display": "Febrile infection related epilepsy syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "726702005",
         "display": "Epileptic encephalopathy with global cerebral demyelination (disorder)"
       },
@@ -1195,6 +1353,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "765089003",
+        "display": "Focal epilepsy, intellectual disability, cerebro-cerebellar malformation syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "765093009",
         "display": "Rolandic epilepsy, speech dyspraxia syndrome (disorder)"
       },
@@ -1225,6 +1389,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "766932005",
+        "display": "Hypothalamic hamartoma with gelastic seizure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "768473009",
         "display": "Purine rich element binding protein A syndrome (disorder)"
       },
@@ -1251,6 +1421,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "770623004",
         "display": "Benign occipital lobe epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "770624005",
+        "display": "Benign partial epilepsy of infancy with complex partial seizures (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -1291,6 +1467,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "771303004",
+        "display": "Severe neonatal onset encephalopathy with microcephaly (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "771448004",
         "display": "Autism epilepsy syndrome due to branched chain ketoacid dehydrogenase kinase deficiency (disorder)"
       },
@@ -1303,8 +1485,20 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "771516000",
+        "display": "Solute carrier family 35 member A2 congenital disorder of glycosylation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "773230003",
         "display": "Cyclin-dependent kinase-like 5 deficiency (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "773497001",
+        "display": "Partial corpus callosum agenesis, cerebellar vermis hypoplasia with posterior fossa cysts syndrome (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -1351,6 +1545,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "782737003",
+        "display": "Diffuse cerebral and cerebellar atrophy, intractable seizures, progressive microcephaly syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "782772000",
+        "display": "Congenital muscular dystrophy with intellectual disability and severe epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "782825008",
         "display": "Primary microcephaly, epilepsy, permanent neonatal diabetes syndrome (disorder)"
       },
@@ -1383,6 +1589,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "783739005",
         "display": "Familial temporal lobe epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "784345005",
+        "display": "Malignant migrating partial seizures of infancy (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -1447,6 +1659,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "84211000119108",
+        "display": "Intractable partial parietal lobe epilepsy with impairment of consciousness (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "84757009",
         "display": "Epilepsy (disorder)"
       },
@@ -1467,6 +1685,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "860815000",
         "display": "Epilepsy due to neonatal central nervous system infection (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "95208000",
+        "display": "Photogenic epilepsy (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

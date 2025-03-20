@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.424",
   "meta": {
-    "versionId": "27",
-    "lastUpdated": "2024-11-13T14:27:44.000-05:00",
+    "versionId": "36",
+    "lastUpdated": "2025-02-06T01:09:49.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2021-02-20"
+      "valueDate": "2025-02-06"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.424",
@@ -23,28 +23,17 @@
       "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.424"
     }
   ],
-  "version": "20210220",
+  "version": "20250206",
   "name": "NonelectiveInpatientEncounter",
   "title": "Nonelective Inpatient Encounter",
   "status": "active",
-  "experimental": false,
-  "date": "2021-02-20T01:02:00-05:00",
+  "date": "2025-02-06T01:09:49-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:22fc6db4-263b-45cf-99b3-1fadd0c2eeb7",
-    "timestamp": "2024-12-01T19:44:04-05:00",
-    "total": 2,
+    "identifier": "urn:uuid:127e23c1-076b-40c7-98ed-3cf2d29352e4",
+    "timestamp": "2025-03-20T16:14:41-04:00",
+    "total": 3,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -57,6 +46,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "32485007",
         "display": "Hospital admission (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "442281000124108",
+        "display": "Emergency hospital admission from observation unit (procedure)"
       }
     ]
   }

@@ -1,9 +1,6 @@
 import os
 import json
-import requests
 from tqdm import tqdm
-
-FHIR_SERVER_URL = "http://localhost:8089/fhir/ValueSet"
 
 VALUESET_DIRECTORY = "/Users/matt/dev/recoverx/ecqm-content-qicore-2024/input/vocabulary/valueset/external"
 VALUESET_OUTPUT_DIRECTORY = "/Users/matt/dev/recoverx/ecqm-content-qicore-2024/input/vocabulary/valueset/external/converted"
@@ -19,7 +16,6 @@ def convert_valueset(filename: str):
   filepath = os.path.join(VALUESET_DIRECTORY, filename)
   with open(filepath, 'r') as file:
     valueset = json.load(file)
-    fhir_id = valueset["id"]
     if 'expansion' in valueset:
       compose = {"include": []}
       include = {"system": None, "concept": []}
@@ -50,5 +46,5 @@ def convert_valueset(filename: str):
     json.dump(valueset, f, indent=2)
 
 if __name__ == "__main__":
-    convert_valueset("valueset-evdm-hysterectomy.json")
-    # convert_valuesets()
+    # convert_valueset("valueset-evdm-hysterectomy.json")
+    convert_valuesets()

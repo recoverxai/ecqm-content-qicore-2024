@@ -36,6 +36,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "111498005",
+            "display": "Extratemporal epilepsy (disorder)"
+          },
+          {
             "code": "1163527006",
             "display": "Epilepsy due to parasitic disease (disorder)"
           },
@@ -44,12 +48,24 @@
             "display": "Epilepsy due to bacterial endocarditis (disorder)"
           },
           {
+            "code": "116401000119105",
+            "display": "Recurrent complex partial epilepsy (disorder)"
+          },
+          {
+            "code": "1167371007",
+            "display": "Polyhydramnios, megalencephaly, symptomatic epilepsy syndrome (disorder)"
+          },
+          {
             "code": "1172593006",
             "display": "Early-onset progressive diffuse brain atrophy, microcephaly, muscle weakness, optic atrophy syndrome (disorder)"
           },
           {
             "code": "1172630000",
             "display": "Global developmental delay, neuro-ophthalmological abnormalities, seizures, intellectual disability syndrome (disorder)"
+          },
+          {
+            "code": "1172844009",
+            "display": "Combined oxidative phosphorylation defect type 27 (disorder)"
           },
           {
             "code": "1179282009",
@@ -86,6 +102,14 @@
           {
             "code": "1187304005",
             "display": "Macrocephaly, intellectual disability, neurodevelopmental disorder, small thorax syndrome (disorder)"
+          },
+          {
+            "code": "1197587003",
+            "display": "Lethal neonatal spasticity, epileptic encephalopathy syndrome (disorder)"
+          },
+          {
+            "code": "1208486005",
+            "display": "Multiple mitochondrial dysfunctions syndrome type 2 (disorder)"
           },
           {
             "code": "1208939001",
@@ -130,6 +154,50 @@
           {
             "code": "1254960008",
             "display": "Seizure co-occurrent and due to substance withdrawal (disorder)"
+          },
+          {
+            "code": "1260117009",
+            "display": "Combined focal and generalized epilepsy (disorder)"
+          },
+          {
+            "code": "1260368003",
+            "display": "Epilepsy due to Rasmussen syndrome (disorder)"
+          },
+          {
+            "code": "1260369006",
+            "display": "Epilepsy due to perinatal intraventricular hemorrhage (disorder)"
+          },
+          {
+            "code": "1260370007",
+            "display": "Epilepsy due to perinatal periventricular hemorrhage (disorder)"
+          },
+          {
+            "code": "1260371006",
+            "display": "Epilepsy due to perinatal cerebral ischemia (disorder)"
+          },
+          {
+            "code": "1260374003",
+            "display": "Epilepsy due to congenital infectious disease (disorder)"
+          },
+          {
+            "code": "1260375002",
+            "display": "Epilepsy due to glucose transporter protein type 1 deficiency syndrome (disorder)"
+          },
+          {
+            "code": "1260377005",
+            "display": "Epilepsy due to congenital anomaly of brain (disorder)"
+          },
+          {
+            "code": "1260407007",
+            "display": "Genetic generalized epilepsy (disorder)"
+          },
+          {
+            "code": "1269236003",
+            "display": "Primary hypomagnesemia, refractory seizures, intellectual disability syndrome (disorder)"
+          },
+          {
+            "code": "1275631007",
+            "display": "Developmental and epileptic encephalopathy (disorder)"
           },
           {
             "code": "128613002",
@@ -184,6 +252,10 @@
             "display": "Partial epilepsy with autonomic symptoms (disorder)"
           },
           {
+            "code": "193010006",
+            "display": "Visual reflex epilepsy (disorder)"
+          },
+          {
             "code": "193021002",
             "display": "Cursive (running) epilepsy (disorder)"
           },
@@ -198,6 +270,10 @@
           {
             "code": "21391000119102",
             "display": "Partial parietal lobe epilepsy (disorder)"
+          },
+          {
+            "code": "2198002",
+            "display": "Visceral epilepsy (disorder)"
           },
           {
             "code": "230191005",
@@ -412,6 +488,10 @@
             "display": "Idiopathic partial status epilepticus (finding)"
           },
           {
+            "code": "290741000119102",
+            "display": "Intractable idiopathic partial epilepsy (disorder)"
+          },
+          {
             "code": "307356008",
             "display": "Motor epilepsy (disorder)"
           },
@@ -430,6 +510,10 @@
           {
             "code": "322112361000132104",
             "display": "Epilepsy due to scarring of brain (disorder)"
+          },
+          {
+            "code": "361123003",
+            "display": "Psychomotor epilepsy (disorder)"
           },
           {
             "code": "36803009",
@@ -452,6 +536,14 @@
             "display": "Stress-induced epilepsy (disorder)"
           },
           {
+            "code": "430061000124109",
+            "display": "Early myoclonic encephalopathy, refractory (disorder)"
+          },
+          {
+            "code": "430071000124102",
+            "display": "Early myoclonic encephalopathy, non-refractory (disorder)"
+          },
+          {
             "code": "431111000124104",
             "display": "Lennox-Gastaut syndrome, refractory (disorder)"
           },
@@ -466,6 +558,10 @@
           {
             "code": "431991000124107",
             "display": "Petit mal status, non-refractory (finding)"
+          },
+          {
+            "code": "432171000124102",
+            "display": "Severe myoclonic epilepsy in infancy, refractory (disorder)"
           },
           {
             "code": "432271000124109",
@@ -540,6 +636,10 @@
             "display": "Status epilepticus without prominent motor symptoms (finding)"
           },
           {
+            "code": "44423001",
+            "display": "Early myoclonic encephalopathy (disorder)"
+          },
+          {
             "code": "444441000124109",
             "display": "Generalized epilepsy with febrile seizures plus, refractory (disorder)"
           },
@@ -592,6 +692,10 @@
             "display": "Spinal muscular atrophy with progressive myoclonic epilepsy (disorder)"
           },
           {
+            "code": "715425000",
+            "display": "Benign focal seizure of adolescence (disorder)"
+          },
+          {
             "code": "715629001",
             "display": "Generalized epilepsy and paroxysmal dyskinesia syndrome (disorder)"
           },
@@ -610,6 +714,10 @@
           {
             "code": "717225001",
             "display": "Benign adult familial myoclonic epilepsy (disorder)"
+          },
+          {
+            "code": "717276003",
+            "display": "Folinic acid responsive seizure syndrome (disorder)"
           },
           {
             "code": "719810000",
@@ -732,6 +840,10 @@
             "display": "X-linked spasticity, intellectual disability, epilepsy syndrome (disorder)"
           },
           {
+            "code": "725413002",
+            "display": "Febrile infection related epilepsy syndrome (disorder)"
+          },
+          {
             "code": "726702005",
             "display": "Epileptic encephalopathy with global cerebral demyelination (disorder)"
           },
@@ -800,6 +912,10 @@
             "display": "Familial focal epilepsy with variable foci (disorder)"
           },
           {
+            "code": "765089003",
+            "display": "Focal epilepsy, intellectual disability, cerebro-cerebellar malformation syndrome (disorder)"
+          },
+          {
             "code": "765093009",
             "display": "Rolandic epilepsy, speech dyspraxia syndrome (disorder)"
           },
@@ -820,6 +936,10 @@
             "display": "Perioral myoclonia with absences (disorder)"
           },
           {
+            "code": "766932005",
+            "display": "Hypothalamic hamartoma with gelastic seizure (disorder)"
+          },
+          {
             "code": "768473009",
             "display": "Purine rich element binding protein A syndrome (disorder)"
           },
@@ -838,6 +958,10 @@
           {
             "code": "770623004",
             "display": "Benign occipital lobe epilepsy (disorder)"
+          },
+          {
+            "code": "770624005",
+            "display": "Benign partial epilepsy of infancy with complex partial seizures (disorder)"
           },
           {
             "code": "770643005",
@@ -864,6 +988,10 @@
             "display": "Benign partial epilepsy with secondarily generalized seizures in infancy (disorder)"
           },
           {
+            "code": "771303004",
+            "display": "Severe neonatal onset encephalopathy with microcephaly (disorder)"
+          },
+          {
             "code": "771448004",
             "display": "Autism epilepsy syndrome due to branched chain ketoacid dehydrogenase kinase deficiency (disorder)"
           },
@@ -872,8 +1000,16 @@
             "display": "Early-onset spastic ataxia, myoclonic epilepsy, neuropathy syndrome (disorder)"
           },
           {
+            "code": "771516000",
+            "display": "Solute carrier family 35 member A2 congenital disorder of glycosylation (disorder)"
+          },
+          {
             "code": "773230003",
             "display": "Cyclin-dependent kinase-like 5 deficiency (disorder)"
+          },
+          {
+            "code": "773497001",
+            "display": "Partial corpus callosum agenesis, cerebellar vermis hypoplasia with posterior fossa cysts syndrome (disorder)"
           },
           {
             "code": "773498006",
@@ -904,6 +1040,14 @@
             "display": "Synaptic Ras GTPase activating protein 1- related intellectual disability (disorder)"
           },
           {
+            "code": "782737003",
+            "display": "Diffuse cerebral and cerebellar atrophy, intractable seizures, progressive microcephaly syndrome (disorder)"
+          },
+          {
+            "code": "782772000",
+            "display": "Congenital muscular dystrophy with intellectual disability and severe epilepsy (disorder)"
+          },
+          {
             "code": "782825008",
             "display": "Primary microcephaly, epilepsy, permanent neonatal diabetes syndrome (disorder)"
           },
@@ -926,6 +1070,10 @@
           {
             "code": "783739005",
             "display": "Familial temporal lobe epilepsy (disorder)"
+          },
+          {
+            "code": "784345005",
+            "display": "Malignant migrating partial seizures of infancy (disorder)"
           },
           {
             "code": "784372002",
@@ -968,6 +1116,10 @@
             "display": "Epileptic dementia with behavioral disturbance (disorder)"
           },
           {
+            "code": "84211000119108",
+            "display": "Intractable partial parietal lobe epilepsy with impairment of consciousness (disorder)"
+          },
+          {
             "code": "84757009",
             "display": "Epilepsy (disorder)"
           },
@@ -982,6 +1134,10 @@
           {
             "code": "860815000",
             "display": "Epilepsy due to neonatal central nervous system infection (disorder)"
+          },
+          {
+            "code": "95208000",
+            "display": "Photogenic epilepsy (disorder)"
           }
         ]
       },

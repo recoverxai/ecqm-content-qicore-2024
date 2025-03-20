@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1045.69",
   "meta": {
-    "versionId": "25",
-    "lastUpdated": "2024-09-06T09:12:59.000-04:00",
+    "versionId": "32",
+    "lastUpdated": "2025-02-12T01:07:44.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2017-05-04"
+      "valueDate": "2025-02-12"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.69",
@@ -23,28 +23,17 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1045.69"
     }
   ],
-  "version": "20170504",
+  "version": "20250212",
   "name": "EndotrachealIntubation",
   "title": "Endotracheal Intubation",
   "status": "active",
-  "experimental": false,
-  "date": "2022-03-03T18:46:01-05:00",
-  "publisher": "Lantana EH Steward",
+  "date": "2025-02-12T01:07:44-05:00",
+  "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "urn:uuid:f0f48db1-a11b-4e9f-8f87-2eaf397da1c9",
-    "timestamp": "2024-12-01T19:49:00-05:00",
-    "total": 25,
+    "identifier": "urn:uuid:e22bec8d-e34d-4866-a062-2112b3df98fa",
+    "timestamp": "2025-03-20T16:21:27-04:00",
+    "total": 28,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -167,6 +156,12 @@
         "display": "Awake intubation (procedure)"
       },
       {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "31500",
+        "display": "Intubation, endotracheal, emergency procedure"
+      },
+      {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "418613003",
@@ -195,6 +190,18 @@
         "version": "2025",
         "code": "5A1955Z",
         "display": "Respiratory Ventilation, Greater than 96 Consecutive Hours"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "94002",
+        "display": "Ventilation assist and management, initiation of pressure or volume preset ventilators for assisted or controlled breathing; hospital inpatient/observation, initial day"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "94003",
+        "display": "Ventilation assist and management, initiation of pressure or volume preset ventilators for assisted or controlled breathing; hospital inpatient/observation, each subsequent day"
       }
     ]
   }

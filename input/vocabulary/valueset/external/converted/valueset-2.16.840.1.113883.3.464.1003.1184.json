@@ -290,6 +290,10 @@
             "display": "Partial hip replacement by prosthesis (procedure)"
           },
           {
+            "code": "69625007",
+            "display": "Replacement of femoral head by prosthesis (procedure)"
+          },
+          {
             "code": "713686009",
             "display": "Partial hip replacement with bipolar prosthesis (procedure)"
           }

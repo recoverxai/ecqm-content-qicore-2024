@@ -36,8 +36,100 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1187639002",
+            "display": "Martinique crinkled retinal pigment epitheliopathy (disorder)"
+          },
+          {
+            "code": "1231253003",
+            "display": "Macular hole due to degenerative progressive high myopia (disorder)"
+          },
+          {
+            "code": "1285507004",
+            "display": "Nonexudative neovascular age-related macular degeneration (disorder)"
+          },
+          {
+            "code": "1285513008",
+            "display": "Lamellar macular hole (disorder)"
+          },
+          {
+            "code": "1285540008",
+            "display": "Pachychoroid neovasculopathy (disorder)"
+          },
+          {
+            "code": "1285589003",
+            "display": "Nongeographic atrophy of macula lutea (disorder)"
+          },
+          {
+            "code": "1296526000",
+            "display": "Disciform macular degeneration (disorder)"
+          },
+          {
+            "code": "1338026004",
+            "display": "Disorder of macula of retina caused by radiation (disorder)"
+          },
+          {
+            "code": "1338027008",
+            "display": "Disorder of macula of retina due to and following radiotherapy (disorder)"
+          },
+          {
             "code": "14046000",
             "display": "Cystoid macular retinal degeneration (disorder)"
+          },
+          {
+            "code": "15628531000119107",
+            "display": "Fundus flavimaculatus of right eye (disorder)"
+          },
+          {
+            "code": "15628571000119105",
+            "display": "Fundus flavimaculatus of left eye (disorder)"
+          },
+          {
+            "code": "15628611000119101",
+            "display": "Fundus flavimaculatus of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15628771000119100",
+            "display": "Forster-Fuchs spot of right eye (disorder)"
+          },
+          {
+            "code": "15628811000119100",
+            "display": "Forster-Fuchs spot of left eye (disorder)"
+          },
+          {
+            "code": "15628851000119104",
+            "display": "Forster-Fuchs spot of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15631531000119100",
+            "display": "Scarred macula of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15631611000119106",
+            "display": "Scarred macula of right eye (disorder)"
+          },
+          {
+            "code": "15639131000119107",
+            "display": "Macular edema of retina of right eye (disorder)"
+          },
+          {
+            "code": "15639181000119108",
+            "display": "Macular edema of retina of left eye (disorder)"
+          },
+          {
+            "code": "15639231000119102",
+            "display": "Macular edema of retina of bilateral eyes (disorder)"
+          },
+          {
+            "code": "16320791000119106",
+            "display": "Myopic macular degeneration of bilateral eyes (disorder)"
+          },
+          {
+            "code": "16320831000119100",
+            "display": "Myopic macular degeneration of right eye (disorder)"
+          },
+          {
+            "code": "16320871000119102",
+            "display": "Myopic macular degeneration of left eye (disorder)"
           },
           {
             "code": "18410006",
@@ -62,6 +154,10 @@
           {
             "code": "232013002",
             "display": "Macular retinoschisis (disorder)"
+          },
+          {
+            "code": "232014008",
+            "display": "Macular and peripheral retinoschisis (disorder)"
           },
           {
             "code": "232020009",
@@ -220,12 +316,24 @@
             "display": "Drusen plus pigment change stage macular degeneration (disorder)"
           },
           {
+            "code": "331821000119106",
+            "display": "Toxic disorder of macula lutea of right eye (disorder)"
+          },
+          {
             "code": "335531000119109",
             "display": "Cystoid macular degeneration of right retina (disorder)"
           },
           {
+            "code": "337441000119109",
+            "display": "Toxic disorder of macula lutea of left eye (disorder)"
+          },
+          {
             "code": "341141000119106",
             "display": "Cystoid macular degeneration of left retina (disorder)"
+          },
+          {
+            "code": "343231000119106",
+            "display": "Toxic maculopathy of bilateral eyes (disorder)"
           },
           {
             "code": "346401000119108",
@@ -316,16 +424,88 @@
             "display": "Fundus flavimaculatus (disorder)"
           },
           {
+            "code": "677851000119101",
+            "display": "Macular hole of bilateral eyes (disorder)"
+          },
+          {
+            "code": "677861000119104",
+            "display": "Full thickness macular hole of bilateral eyes (disorder)"
+          },
+          {
+            "code": "677871000119105",
+            "display": "Partial thickness macular hole of bilateral eyes (disorder)"
+          },
+          {
+            "code": "677881000119108",
+            "display": "Macular pseudohole of bilateral eyes (disorder)"
+          },
+          {
+            "code": "677901000119105",
+            "display": "Macular hole of left eye (disorder)"
+          },
+          {
+            "code": "677911000119108",
+            "display": "Full thickness macular hole of left eye (disorder)"
+          },
+          {
+            "code": "677921000119101",
+            "display": "Partial thickness macular hole of left eye (disorder)"
+          },
+          {
+            "code": "677931000119103",
+            "display": "Macular pseudohole of left eye (disorder)"
+          },
+          {
+            "code": "677951000119109",
+            "display": "Macular hole of right eye (disorder)"
+          },
+          {
+            "code": "677961000119106",
+            "display": "Full thickness macular hole of right eye (disorder)"
+          },
+          {
+            "code": "677971000119100",
+            "display": "Partial thickness macular hole of right eye (disorder)"
+          },
+          {
+            "code": "677981000119102",
+            "display": "Macular pseudohole of right eye (disorder)"
+          },
+          {
             "code": "70099003",
             "display": "Stargardt's disease (disorder)"
+          },
+          {
+            "code": "725590001",
+            "display": "Butterfly-shaped pigmentary macular dystrophy (disorder)"
           },
           {
             "code": "737273002",
             "display": "Degeneration of posterior pole of eye (disorder)"
           },
           {
+            "code": "769244003",
+            "display": "Disorder of right macula due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "769245002",
+            "display": "Disorder of left macula due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "770097006",
+            "display": "Clinically significant macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "774010000",
+            "display": "Scarred macula of left eye (disorder)"
+          },
+          {
             "code": "789220007",
             "display": "Atrophy of macula lutea (disorder)"
+          },
+          {
+            "code": "860721006",
+            "display": "Disorder of macula of bilateral eyes due to diabetes mellitus (disorder)"
           }
         ]
       },
