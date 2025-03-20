@@ -184,21 +184,26 @@ define "Debug Comorbid Conditions With Valid Timing":
             date from start of QICoreCommon."ToInterval" ( Encounter.period )
           ]
 
+define fluent function isActiveCompletedStoppedMedicationOrder(MedicationRequest List<MedicationRequest>):
+  MedicationRequest M
+    where M.status in { 'active', 'completed', 'stopped' }
+      and M.intent = 'order'
+
 define "Encounter With Antibiotic Ordered Within Three Days":
   "Qualifying Encounter" EDOrAmbulatoryVisit
     with (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
-    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]).isMedicationOrder() ) AntibioticOrdered
+    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]).isActiveCompletedStoppedMedicationOrder() ) AntibioticOrdered
     such that EDOrAmbulatoryVisit.period.toInterval() starts 3 days or less on or before AntibioticOrdered.authoredOn
 
 define "Debug Medication Requests":
   ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
     union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
-  ).isMedicationOrder()
+  ).isActiveCompletedStoppedMedicationOrder()
 
 define "Debug Medication Authored Dates":
   ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
     union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
-  ).isMedicationOrder().authoredOn
+  ).isActiveCompletedStoppedMedicationOrder().authoredOn
 
 define "Qualifying Encounter":
   ( ([Encounter: "Emergency Department Visit"]
