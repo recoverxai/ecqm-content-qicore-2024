@@ -14,6 +14,7 @@ include QICoreCommon version '2.0.000' called QICoreCommon
 codesystem "CPT": 'http://www.ama-assn.org/go/cpt'
 codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "CERNER_SYNONYM": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/synonym'
+codesystem "SNOMEDCT": 'http://snomed.info/sct'
 
 valueset "Acute Pharyngitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011'
 valueset "Acute Tonsillitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1012'
@@ -42,6 +43,7 @@ code "Observation care discharge day management (This code is to be utilized to 
 code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unlisted preventive medicine service'
 code "Clinic": '22282402' from "CERNER" display 'Clinic'
 code "Azithromycin 5 Day Dose Pack 250 mg oral tablet": '4144756' from "CERNER_SYNONYM" display 'Azithromycin 5 Day Dose Pack 250 mg oral tablet'
+code "Sinusitis (disorder)": '36971009' from "SNOMEDCT" display 'Sinusitis (disorder)'
 
 parameter "Measurement Period" Interval<DateTime>
 
@@ -109,7 +111,7 @@ define "Denominator":
 define "Denominator Exclusions":
   "In Hospice"
     union Antibiotic."Has Antibiotic Medication History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"] ) )
-    union Antibiotic."Has Competing Diagnosis History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] ) )
+    union Antibiotic."Has Competing Diagnosis History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"] ) )
     union Antibiotic."Has Comorbid Condition History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Comorbid Conditions for Respiratory Conditions"] ) )
 
 // Check 1: Hospice status check
