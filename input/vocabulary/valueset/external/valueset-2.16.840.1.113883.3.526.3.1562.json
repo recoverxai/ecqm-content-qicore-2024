@@ -31,66 +31,56 @@
   "date": "2021-02-20T01:02:00-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:e5b48e9d-321c-48dd-8faf-edb19a44155c",
-    "timestamp": "2024-12-01T19:44:19-05:00",
+    "identifier": "urn:uuid:de1c6a8a-e279-4ec1-adf6-bf1ab1234408",
+    "timestamp": "2025-03-20T16:16:03-04:00",
     "total": 8,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1928948",
         "display": "dronabinol 5 MG/ML Oral Solution"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "197634",
         "display": "dronabinol 10 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "197635",
         "display": "dronabinol 2.5 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "197636",
         "display": "dronabinol 5 MG Oral Capsule"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "577154",
         "display": "megestrol acetate 125 MG/ML Oral Suspension"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "860215",
         "display": "megestrol acetate 20 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "860221",
         "display": "megestrol acetate 40 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "860225",
         "display": "megestrol acetate 40 MG/ML Oral Suspension"
       }

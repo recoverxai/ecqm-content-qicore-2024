@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "AHA Steward",
   "expansion": {
-    "identifier": "urn:uuid:4b76adc8-970f-4a10-8acc-3402b350883b",
-    "timestamp": "2024-12-01T19:43:32-05:00",
-    "total": 112,
+    "identifier": "urn:uuid:c82e4cd5-1479-4dcd-88e2-257c32260115",
+    "timestamp": "2025-03-20T16:14:05-04:00",
+    "total": 186,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -205,8 +195,26 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1142123003",
+        "display": "Atrial premature depolarization with aberrant ventricular conduction (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1142124009",
+        "display": "Atrial premature depolarization with normal conduction (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1142204001",
         "display": "Orthodromic atrioventricular reciprocating tachycardia utilizing concealed accessory pathway (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1156821008",
+        "display": "Autosomal recessive sick sinus syndrome (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -217,8 +225,92 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1197418004",
+        "display": "Familial atrial tachyarrhythmia, infra-Hisian cardiac conduction disease (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "120041000119109",
+        "display": "Atrial fibrillation with rapid ventricular response (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1204129001",
+        "display": "Catecholaminergic polymorphic ventricular tachycardia due to RYR2 mutation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1204167003",
+        "display": "Catecholaminergic polymorphic ventricular tachycardia due to calsequestrin mutation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1208832006",
         "display": "Pacemaker mediated tachycardia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208861007",
+        "display": "Long QT syndrome type 4 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208863005",
+        "display": "Long QT syndrome type 5 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208864004",
+        "display": "Long QT syndrome type 2 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208866002",
+        "display": "Long QT syndrome type 3 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208868001",
+        "display": "Long QT syndrome type 12 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208870005",
+        "display": "Long QT syndrome type 13 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208881008",
+        "display": "Long QT syndrome type 11 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208884000",
+        "display": "Long QT syndrome type 10 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208909006",
+        "display": "Long QT syndrome type 6 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208911002",
+        "display": "Long QT syndrome type 9 (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -229,8 +321,44 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1222539006",
+        "display": "Three consecutive ventricular premature complexes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1230096008",
+        "display": "Timothy syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1230097004",
+        "display": "Atypical Timothy syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1332373008",
+        "display": "Agonal ventricular rhythm (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "13395001",
+        "display": "Sinoatrial arrest with nodal/ventricular escape (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "13640000",
         "display": "Fusion beats (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15964901000119107",
+        "display": "Atypical atrial flutter (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -289,6 +417,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "20852007",
+        "display": "Romano-Ward syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "233891009",
         "display": "Sinoatrial node tachycardia (disorder)"
       },
@@ -325,6 +459,24 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "233910005",
+        "display": "Lone atrial fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "233911009",
+        "display": "Non-rheumatic atrial fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "233913007",
+        "display": "Familial sick sinus syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "233915000",
         "display": "Paroxysmal familial ventricular fibrillation (disorder)"
       },
@@ -345,6 +497,30 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "234172002",
         "display": "Electromechanical dissociation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "251092003",
+        "display": "Sinus arrest with atrial escape (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "251093008",
+        "display": "Sinus arrest with junctional escape (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "251094002",
+        "display": "Sinus arrest with ventricular escape (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "251152003",
+        "display": "Marked sinus arrhythmia (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -393,6 +569,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "251170000",
         "display": "Blocked premature atrial contraction (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "251171001",
+        "display": "Multiple atrial premature complexes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -457,6 +639,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "251183004",
+        "display": "Aberrantly conducted complex (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "251186007",
         "display": "Ventricular escape complex (disorder)"
       },
@@ -471,6 +659,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "251188008",
         "display": "Atrial parasystole (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "253528005",
+        "display": "Arrhythmogenic right ventricular dysplasia (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -511,6 +705,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "300996004",
+        "display": "Controlled atrial fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "309809007",
         "display": "Electromechanical dissociation with successful resuscitation (disorder)"
       },
@@ -525,6 +725,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "36083008",
         "display": "Sick sinus syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "373905003",
+        "display": "Jervell and Lange-Nielsen syndrome (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -571,6 +777,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "419671004",
+        "display": "Catecholaminergic polymorphic ventricular tachycardia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "419752005",
         "display": "Sinoatrial nodal reentrant tachycardia (disorder)"
       },
@@ -589,8 +801,62 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "425615007",
+        "display": "Chronic atrial flutter (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "426749004",
+        "display": "Chronic atrial fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "427665004",
+        "display": "Paroxysmal atrial flutter (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "429243003",
         "display": "Sustained ventricular fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "440059007",
+        "display": "Persistent atrial fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "44103008",
+        "display": "Ventricular arrhythmia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "442559009",
+        "display": "Bundle branch reentrant ventricular tachycardia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "442917000",
+        "display": "Familial long QT syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "444605001",
+        "display": "Symptomatic sinus bradycardia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "44602002",
+        "display": "Persistent sinus bradycardia (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -601,8 +867,38 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "450919004",
+        "display": "Atrial standstill (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "47830009",
         "display": "Junctional escape beats (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "49044005",
+        "display": "Severe sinus bradycardia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "49260003",
+        "display": "Idioventricular rhythm (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "49436004",
+        "display": "Atrial fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "49710005",
+        "display": "Sinus bradycardia (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -613,8 +909,26 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "50799005",
+        "display": "Atrioventricular dissociation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "5370000",
+        "display": "Atrial flutter (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "55475008",
         "display": "Lown-Ganong-Levine syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "5609005",
+        "display": "Sinus arrest (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -649,8 +963,68 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "65778007",
+        "display": "Sinoatrial block (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "6624005",
+        "display": "Ventricular tachyarrhythmia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "69730002",
         "display": "Idiojunctional tachycardia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "698272007",
+        "display": "Short QT syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "699256006",
+        "display": "Timothy syndrome type 1 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "706923002",
+        "display": "Longstanding persistent atrial fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "710878005",
+        "display": "Mahaim fibre tachycardia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "715395008",
+        "display": "Familial atrial fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "715560009",
+        "display": "Idiopathic neonatal atrial flutter (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "715865008",
+        "display": "Familial isolated arrhythmogenic right ventricular dysplasia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "71792006",
+        "display": "Nodal rhythm disorder (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -661,8 +1035,38 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "719907006",
+        "display": "Timothy syndrome type 2 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "720448006",
+        "display": "Typical atrial flutter (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "723866006",
+        "display": "Idiopathic ventricular fibrillation not Brugada type (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "72654001",
         "display": "Supraventricular arrhythmia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "735682000",
+        "display": "Macro re-entrant atrial tachycardia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "735684004",
+        "display": "Non-cavotricuspid isthmus dependent atrial tachycardia (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -685,8 +1089,26 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "762247006",
+        "display": "Preexcited atrial fibrillation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "762534000",
         "display": "Supraventricular bradyarrhythmia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "770784003",
+        "display": "Sinoatrial node dysfunction and deafness (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "789039008",
+        "display": "Scar mediated macro re-entrant atrial tachycardia (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -699,6 +1121,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "81898007",
         "display": "Ventricular escape rhythm (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "871686004",
+        "display": "Multiple atrial ectopics (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "871832005",
+        "display": "Multifocal atrial ectopics (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

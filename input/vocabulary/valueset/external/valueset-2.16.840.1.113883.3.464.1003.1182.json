@@ -30,20 +30,10 @@
   "date": "2023-07-22T01:12:36-04:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:cc0dfa43-4380-496c-9684-712749d8fdd9",
-    "timestamp": "2024-12-01T19:43:34-05:00",
-    "total": 195,
+    "identifier": "urn:uuid:519116e0-ddb0-4f41-8215-d8635553d806",
+    "timestamp": "2025-03-20T16:14:07-04:00",
+    "total": 196,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -140,6 +130,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1255235009",
         "display": "Malposition of prosthetic joint of hip (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1287988000",
+        "display": "Dislocation of prosthesis of hip joint following total hip replacement (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

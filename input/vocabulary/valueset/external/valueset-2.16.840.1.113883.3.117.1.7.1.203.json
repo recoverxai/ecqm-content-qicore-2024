@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:d96ed525-3ef2-4ad8-ab5d-96b5442c2b1c",
-    "timestamp": "2024-12-01T19:43:14-05:00",
-    "total": 20,
+    "identifier": "urn:uuid:dcfe104d-b985-42cf-a5dc-81c7341f7358",
+    "timestamp": "2025-03-20T16:13:49-04:00",
+    "total": 22,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -73,6 +63,12 @@
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
         "version": "2025",
+        "code": "02583ZF",
+        "display": "Destruction of Conduction Mechanism using Irreversible Electroporation, Percutaneous Approach"
+      },
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+        "version": "2025",
         "code": "02583ZZ",
         "display": "Destruction of Conduction Mechanism, Percutaneous Approach"
       },
@@ -81,6 +77,12 @@
         "version": "2025",
         "code": "02584ZZ",
         "display": "Destruction of Conduction Mechanism, Percutaneous Endoscopic Approach"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1332525002",
+        "display": "Cardiac ablation for atrial fibrillation (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

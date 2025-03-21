@@ -42,6 +42,10 @@
           {
             "code": "E66.2",
             "display": "Morbid (severe) obesity with alveolar hypoventilation"
+          },
+          {
+            "code": "E66.813",
+            "display": "Obesity, class 3"
           }
         ]
       }

@@ -344,6 +344,10 @@
             "display": "Other vascular syndromes of brain in cerebrovascular diseases"
           },
           {
+            "code": "G93.45",
+            "display": "Developmental and epileptic encephalopathy"
+          },
+          {
             "code": "G93.49",
             "display": "Other encephalopathy"
           },
@@ -444,6 +448,10 @@
             "display": "Saddle embolus of pulmonary artery with acute cor pulmonale"
           },
           {
+            "code": "I26.04",
+            "display": "Fat embolism of pulmonary artery with acute cor pulmonale"
+          },
+          {
             "code": "I26.09",
             "display": "Other pulmonary embolism with acute cor pulmonale"
           },
@@ -462,6 +470,10 @@
           {
             "code": "I26.94",
             "display": "Multiple subsegmental thrombotic pulmonary emboli without acute cor pulmonale"
+          },
+          {
+            "code": "I26.96",
+            "display": "Fat embolism of pulmonary artery without acute cor pulmonale"
           },
           {
             "code": "I26.99",

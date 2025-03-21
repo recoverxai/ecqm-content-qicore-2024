@@ -36,12 +36,36 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1231678007",
+            "display": "Peripapillary choroidal dystrophy (disorder)"
+          },
+          {
+            "code": "15989831000119105",
+            "display": "Choroideremia of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15989911000119106",
+            "display": "Angioid streaks of choroid of right eye (disorder)"
+          },
+          {
+            "code": "15989951000119107",
+            "display": "Angioid streaks of choroid of left eye (disorder)"
+          },
+          {
+            "code": "15989991000119102",
+            "display": "Angioid streaks of choroid of bilateral eyes (disorder)"
+          },
+          {
             "code": "193463006",
             "display": "Diffuse secondary choroid atrophy (disorder)"
           },
           {
             "code": "193466003",
             "display": "Partial circumpapillary choroid dystrophy (disorder)"
+          },
+          {
+            "code": "193468002",
+            "display": "Partial central choroid dystrophy (disorder)"
           },
           {
             "code": "19871000",
@@ -56,12 +80,56 @@
             "display": "Peripapillary choroidal sclerosis (disorder)"
           },
           {
+            "code": "247149008",
+            "display": "Macular choroidal sclerosis (disorder)"
+          },
+          {
             "code": "24950005",
             "display": "Partial generalized choroidal dystrophy (disorder)"
           },
           {
+            "code": "312918002",
+            "display": "Choroidal dystrophy (disorder)"
+          },
+          {
             "code": "312927001",
             "display": "Bietti's crystalline retinopathy (disorder)"
+          },
+          {
+            "code": "335401000119103",
+            "display": "Diffuse secondary atrophy of choroid of right eye (disorder)"
+          },
+          {
+            "code": "336081000119106",
+            "display": "Choroid degeneration of right eye (disorder)"
+          },
+          {
+            "code": "336491000119103",
+            "display": "Age-related atrophy of right choroid (disorder)"
+          },
+          {
+            "code": "341011000119108",
+            "display": "Diffuse secondary atrophy of choroid of left eye (disorder)"
+          },
+          {
+            "code": "341691000119108",
+            "display": "Choroid degeneration of left eye (disorder)"
+          },
+          {
+            "code": "342101000119104",
+            "display": "Age-related atrophy of left choroid (disorder)"
+          },
+          {
+            "code": "346281000119104",
+            "display": "Diffuse secondary atrophy of choroid of bilateral eyes (disorder)"
+          },
+          {
+            "code": "346911000119103",
+            "display": "Choroid degeneration of bilateral eyes (disorder)"
+          },
+          {
+            "code": "347261000119106",
+            "display": "Senile atrophy of choroid of bilateral eyes (disorder)"
           },
           {
             "code": "38513001",
@@ -100,6 +168,50 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "concept": [
+          {
+            "code": "H31.111",
+            "display": "Age-related choroidal atrophy, right eye"
+          },
+          {
+            "code": "H31.112",
+            "display": "Age-related choroidal atrophy, left eye"
+          },
+          {
+            "code": "H31.113",
+            "display": "Age-related choroidal atrophy, bilateral"
+          },
+          {
+            "code": "H31.121",
+            "display": "Diffuse secondary atrophy of choroid, right eye"
+          },
+          {
+            "code": "H31.122",
+            "display": "Diffuse secondary atrophy of choroid, left eye"
+          },
+          {
+            "code": "H31.123",
+            "display": "Diffuse secondary atrophy of choroid, bilateral"
+          },
+          {
+            "code": "H31.20",
+            "display": "Hereditary choroidal dystrophy, unspecified"
+          },
+          {
+            "code": "H31.21",
+            "display": "Choroideremia"
+          },
+          {
+            "code": "H31.22",
+            "display": "Choroidal dystrophy (central areolar) (generalized) (peripapillary)"
+          },
+          {
+            "code": "H31.23",
+            "display": "Gyrate atrophy, choroid"
+          },
+          {
+            "code": "H31.29",
+            "display": "Other hereditary choroidal dystrophy"
+          },
           {
             "code": "H35.33",
             "display": "Angioid streaks of macula"

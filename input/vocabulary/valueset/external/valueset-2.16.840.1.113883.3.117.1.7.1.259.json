@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:f6e0d500-fd6a-41e7-87dc-a6864317c07d",
-    "timestamp": "2024-12-01T19:44:17-05:00",
-    "total": 189,
+    "identifier": "urn:uuid:9aa1108a-fbac-4037-b7e3-5e0eef3f03bd",
+    "timestamp": "2025-03-20T16:16:01-04:00",
+    "total": 192,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -943,6 +933,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1290059002",
+        "display": "Conversion from total prosthetic replacement of hip joint (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15036006",
         "display": "Implantation of prosthesis or prosthetic device of acetabulum of hip joint, Aufranc-Turner (procedure)"
       },
@@ -1093,6 +1089,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "43660001",
+        "display": "Replacement of femoral head by prosthesis with use of methyl methacrylate (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "443435007",
         "display": "Total replacement of right hip joint (procedure)"
       },
@@ -1149,6 +1151,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "68491008",
         "display": "Implantation of prosthesis or prosthetic device of acetabulum of hip joint with use of methyl methacrylate (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "69625007",
+        "display": "Replacement of femoral head by prosthesis (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

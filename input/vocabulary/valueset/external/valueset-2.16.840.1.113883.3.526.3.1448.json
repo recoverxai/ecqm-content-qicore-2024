@@ -31,21 +31,29 @@
   "date": "2021-02-10T01:02:26-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:8dfde314-5935-4a58-aebf-146da5b8bd89",
-    "timestamp": "2024-12-01T19:50:24-05:00",
-    "total": 39,
+    "identifier": "urn:uuid:ea8633f2-782b-4710-9140-e32890eb9581",
+    "timestamp": "2025-03-20T16:35:39-04:00",
+    "total": 42,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16697921000119109",
+        "display": "Suspected amblyopia of bilateral eyes (situation)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16697961000119104",
+        "display": "Suspected amblyopia of left eye (situation)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16698001000119102",
+        "display": "Suspected amblyopia of right eye (situation)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",

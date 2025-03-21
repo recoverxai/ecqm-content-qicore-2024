@@ -36,6 +36,18 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "16697921000119109",
+            "display": "Suspected amblyopia of bilateral eyes (situation)"
+          },
+          {
+            "code": "16697961000119104",
+            "display": "Suspected amblyopia of left eye (situation)"
+          },
+          {
+            "code": "16698001000119102",
+            "display": "Suspected amblyopia of right eye (situation)"
+          },
+          {
             "code": "193638002",
             "display": "Stimulus deprivation amblyopia (disorder)"
           },

@@ -30,78 +30,68 @@
   "date": "2024-01-19T01:09:35-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:7e21a728-9b8a-47d0-bc1b-e525500982b8",
-    "timestamp": "2024-12-01T19:45:36-05:00",
+    "identifier": "urn:uuid:ffe315c6-d831-4147-a7b5-817a82b8c245",
+    "timestamp": "2025-03-20T16:17:23-04:00",
     "total": 10,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1013930",
         "display": "12 HR clonidine hydrochloride 0.1 MG Extended Release Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "884173",
         "display": "clonidine hydrochloride 0.1 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "884185",
         "display": "clonidine hydrochloride 0.2 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "884189",
         "display": "clonidine hydrochloride 0.3 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "884221",
         "display": "10 ML clonidine hydrochloride 0.1 MG/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "884225",
         "display": "10 ML clonidine hydrochloride 0.5 MG/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "885880",
         "display": "24 HR clonidine 0.17 MG Extended Release Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "998671",
         "display": "168 HR clonidine 0.00417 MG/HR Transdermal System"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "998675",
         "display": "168 HR clonidine 0.00833 MG/HR Transdermal System"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "998679",
         "display": "168 HR clonidine 0.0125 MG/HR Transdermal System"
       }

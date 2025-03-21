@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.117.1.7.1.271",
   "meta": {
     "versionId": "42",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2025-01-28T12:14:23.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",

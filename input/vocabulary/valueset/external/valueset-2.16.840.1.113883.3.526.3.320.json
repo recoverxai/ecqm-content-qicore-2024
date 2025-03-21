@@ -30,20 +30,10 @@
   "date": "2024-01-30T01:08:32-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:ffb97de6-4bcf-4e3c-9258-58fdba5f9b92",
-    "timestamp": "2024-12-01T19:47:04-05:00",
+    "identifier": "urn:uuid:e0d90d71-9bde-4f74-8e00-46ac433c7f3d",
+    "timestamp": "2025-03-20T16:19:31-04:00",
     "total": 35,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",
@@ -238,20 +228,20 @@
         "display": "PET+CT Whole body Bone W 18F-NaF IV"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "A9593",
         "display": "Gallium ga-68 psma-11, diagnostic, (ucsf), 1 millicurie"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "A9594",
         "display": "Gallium ga-68 psma-11, diagnostic, (ucla), 1 millicurie"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "A9595",
         "display": "Piflufolastat f-18, diagnostic, 1 millicurie"
       }

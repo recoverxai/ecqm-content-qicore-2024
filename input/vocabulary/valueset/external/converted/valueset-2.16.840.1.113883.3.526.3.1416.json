@@ -40,6 +40,18 @@
             "display": "Tuberculous chronic iridocyclitis (disorder)"
           },
           {
+            "code": "332731000119108",
+            "display": "Recurrent iridocyclitis of right eye (disorder)"
+          },
+          {
+            "code": "338341000119103",
+            "display": "Recurrent iridocyclitis of left eye (disorder)"
+          },
+          {
+            "code": "344111000119109",
+            "display": "Recurrent iridocyclitis of bilateral eyes (disorder)"
+          },
+          {
             "code": "416449002",
             "display": "Chronic iridocyclitis in young girls (disorder)"
           },
@@ -55,6 +67,18 @@
           {
             "code": "A18.54",
             "display": "Tuberculous iridocyclitis"
+          },
+          {
+            "code": "H20.021",
+            "display": "Recurrent acute iridocyclitis, right eye"
+          },
+          {
+            "code": "H20.022",
+            "display": "Recurrent acute iridocyclitis, left eye"
+          },
+          {
+            "code": "H20.023",
+            "display": "Recurrent acute iridocyclitis, bilateral"
           },
           {
             "code": "H20.11",

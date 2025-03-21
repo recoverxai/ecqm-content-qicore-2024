@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:869c956c-c3fd-4a5f-b139-fa423c40aec4",
-    "timestamp": "2024-12-01T19:47:59-05:00",
+    "identifier": "urn:uuid:5d3e4927-19b5-43ac-8fc4-1298f0b0521c",
+    "timestamp": "2025-03-20T16:20:29-04:00",
     "total": 4,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",

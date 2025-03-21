@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.3157.4036",
   "meta": {
     "versionId": "11",
-    "lastUpdated": "2024-09-06T09:09:58.000-04:00",
+    "lastUpdated": "2025-02-10T09:51:00.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -24,27 +24,17 @@
     }
   ],
   "version": "20190216",
-  "name": "ActiveBleedingExcludingMensesOrBleedingDiathesis",
-  "title": "Active Bleeding Excluding Menses or Bleeding Diathesis",
+  "name": "ActiveBleedingOrBleedingDiathesisExcludingMenses",
+  "title": "Active Bleeding or Bleeding Diathesis, Excluding Menses",
   "status": "active",
   "experimental": false,
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "urn:uuid:2bd87808-3bf9-4756-8a06-7f137ad9978d",
-    "timestamp": "2024-12-01T19:43:07-05:00",
-    "total": 265,
+    "identifier": "urn:uuid:25dcd71d-7c1a-4667-8d0e-db4ab0a7f5a8",
+    "timestamp": "2025-03-20T16:13:44-04:00",
+    "total": 268,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -739,6 +729,18 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
+        "code": "D63.0",
+        "display": "Anemia in neoplastic disease"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D65",
+        "display": "Disseminated intravascular coagulation [defibrination syndrome]"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
         "code": "D68.311",
         "display": "Acquired hemophilia"
       },
@@ -1035,6 +1037,12 @@
         "version": "2025",
         "code": "I62.9",
         "display": "Nontraumatic intracranial hemorrhage, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "K92.0",
+        "display": "Hematemesis"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

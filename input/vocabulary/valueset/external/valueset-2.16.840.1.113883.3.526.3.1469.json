@@ -31,20 +31,10 @@
   "date": "2021-02-18T01:00:25-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:dd13250b-a2b6-40cb-94e6-2fa3a38b9d18",
-    "timestamp": "2024-12-01T19:49:25-05:00",
-    "total": 28,
+    "identifier": "urn:uuid:af0533b1-fd63-4864-9385-2f33e4542eb3",
+    "timestamp": "2025-03-20T16:34:14-04:00",
+    "total": 31,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -75,6 +65,24 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "314265001",
         "display": "Classic choroidal neovascular membrane (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332421000119101",
+        "display": "Retinal vasculitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "338031000119109",
+        "display": "Retinal vasculitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "343801000119100",
+        "display": "Retinal vasculitis of bilateral eyes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

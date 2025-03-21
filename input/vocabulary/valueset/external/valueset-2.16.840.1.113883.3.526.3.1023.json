@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.526.3.1023",
   "meta": {
     "versionId": "26",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2025-02-07T14:49:40.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -24,27 +24,17 @@
     }
   ],
   "version": "20190315",
-  "name": "BehavioralNeuropsychAssessment",
-  "title": "Behavioral/Neuropsych Assessment",
+  "name": "BehavioralOrNeuropsychAssessment",
+  "title": "Behavioral or Neuropsych Assessment",
   "status": "active",
   "experimental": false,
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Academy of Neurology Steward",
   "expansion": {
-    "identifier": "urn:uuid:ace20485-0a2c-430d-84d6-2ffbcd2604dc",
-    "timestamp": "2024-12-01T19:49:41-05:00",
+    "identifier": "urn:uuid:bdb95a94-24d0-4814-b2d5-3ea1a7775109",
+    "timestamp": "2025-03-20T16:34:30-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

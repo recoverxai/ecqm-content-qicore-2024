@@ -36,6 +36,26 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1231625008",
+            "display": "Tractional retinal detachment due to proliferative diabetic retinopathy (disorder)"
+          },
+          {
+            "code": "1231728000",
+            "display": "Retinal detachment due to degenerative progressive high myopia (disorder)"
+          },
+          {
+            "code": "1255639008",
+            "display": "Break of retina with schisis of retina (disorder)"
+          },
+          {
+            "code": "1279846006",
+            "display": "Detachment of retina of left eye with break of retina of left eye (disorder)"
+          },
+          {
+            "code": "1279847002",
+            "display": "Detachment of retina of right eye with break of retina of right eye (disorder)"
+          },
+          {
             "code": "1279848007",
             "display": "Detachment of retina with break of retina (disorder)"
           },
@@ -46,6 +66,66 @@
           {
             "code": "1281815001",
             "display": "Partial detachment of retina with multiple breaks of retina (disorder)"
+          },
+          {
+            "code": "1306765002",
+            "display": "Detachment of retina of right eye (disorder)"
+          },
+          {
+            "code": "1306766001",
+            "display": "Detachment of retina of left eye (disorder)"
+          },
+          {
+            "code": "1306767005",
+            "display": "Detachment of retina of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15733601000119104",
+            "display": "Chronic partial detachment of retina of left eye (disorder)"
+          },
+          {
+            "code": "15733681000119107",
+            "display": "Chronic partial detachment of retina of right eye (disorder)"
+          },
+          {
+            "code": "15734081000119102",
+            "display": "Old total detachment of retinas of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15734121000119100",
+            "display": "Chronic total detachment of retina of left eye (disorder)"
+          },
+          {
+            "code": "15734161000119105",
+            "display": "Chronic total detachment of retina of right eye (disorder)"
+          },
+          {
+            "code": "15734321000119103",
+            "display": "Acute partial detachment of retina of left eye (disorder)"
+          },
+          {
+            "code": "15734361000119108",
+            "display": "Old retinal detachment of left eye (disorder)"
+          },
+          {
+            "code": "15734401000119104",
+            "display": "Acute partial detachment of retina of right eye (disorder)"
+          },
+          {
+            "code": "15734521000119107",
+            "display": "Old retinal detachment of right eye (disorder)"
+          },
+          {
+            "code": "15734561000119102",
+            "display": "Old retinal detachment of bilateral eyes (disorder)"
+          },
+          {
+            "code": "15734641000119100",
+            "display": "Acute detachment of retina of left eye (disorder)"
+          },
+          {
+            "code": "15734681000119105",
+            "display": "Acute detachment of retina of right eye (disorder)"
           },
           {
             "code": "193319001",
@@ -74,6 +154,10 @@
           {
             "code": "193327005",
             "display": "Old subtotal retinal detachment (disorder)"
+          },
+          {
+            "code": "193329008",
+            "display": "Retinoschisis and retinal cysts (disorder)"
           },
           {
             "code": "19620000",
@@ -120,6 +204,14 @@
             "display": "Retinal detachment - subretinal fluid (disorder)"
           },
           {
+            "code": "31181000119100",
+            "display": "Old retinal detachment (disorder)"
+          },
+          {
+            "code": "31191000119102",
+            "display": "Recent retinal detachment (disorder)"
+          },
+          {
             "code": "312923002",
             "display": "Chronic central serous chorioretinopathy (disorder)"
           },
@@ -156,20 +248,68 @@
             "display": "Central serous retinopathy with small retinal pigment epithelial detachment (disorder)"
           },
           {
+            "code": "314494006",
+            "display": "Pseudophakic retinal detachment (disorder)"
+          },
+          {
+            "code": "331111000119108",
+            "display": "Total retinal detachment (disorder)"
+          },
+          {
+            "code": "331811000119104",
+            "display": "Traction detachment of right retina (disorder)"
+          },
+          {
+            "code": "331831000119109",
+            "display": "Total detachment of right retina (disorder)"
+          },
+          {
+            "code": "332341000119100",
+            "display": "Schisis of right retina (disorder)"
+          },
+          {
             "code": "334891000119105",
             "display": "Hemorrhagic detachment of right retinal pigment epithelium (disorder)"
+          },
+          {
+            "code": "335021000119100",
+            "display": "Giant retinal tear of right eye (disorder)"
+          },
+          {
+            "code": "337431000119100",
+            "display": "Traction detachment of left retina (disorder)"
+          },
+          {
+            "code": "337451000119106",
+            "display": "Total detachment of left retina (disorder)"
+          },
+          {
+            "code": "337951000119101",
+            "display": "Schisis of left retina (disorder)"
           },
           {
             "code": "340501000119106",
             "display": "Hemorrhagic detachment of left retinal pigment epithelium (disorder)"
           },
           {
+            "code": "340631000119100",
+            "display": "Giant retinal tear of left eye (disorder)"
+          },
+          {
             "code": "345811000119101",
             "display": "Hemorrhagic detachment of bilateral retinal pigment epithelium (disorder)"
           },
           {
+            "code": "345941000119106",
+            "display": "Giant retinal tear of bilateral eyes (disorder)"
+          },
+          {
             "code": "34711008",
             "display": "Traction detachment of retina (disorder)"
+          },
+          {
+            "code": "361130009",
+            "display": "Peripheral retinoschisis (disorder)"
           },
           {
             "code": "38579007",
@@ -184,12 +324,40 @@
             "display": "Retinal detachment (disorder)"
           },
           {
+            "code": "44268007",
+            "display": "Retinoschisis (disorder)"
+          },
+          {
             "code": "51987004",
             "display": "Retinal detachment without retinal defect (disorder)"
           },
           {
+            "code": "712507000",
+            "display": "Rhegmatogenous retinal detachment with multiple breaks (disorder)"
+          },
+          {
+            "code": "713345005",
+            "display": "Partial retinal detachment (disorder)"
+          },
+          {
             "code": "7219007",
             "display": "Traction detachment with vitreoretinal organization (disorder)"
+          },
+          {
+            "code": "723023003",
+            "display": "Adult retinoschisis (disorder)"
+          },
+          {
+            "code": "83405000",
+            "display": "Flat retinoschisis (disorder)"
+          },
+          {
+            "code": "86923008",
+            "display": "Juvenile retinoschisis (disorder)"
+          },
+          {
+            "code": "95493003",
+            "display": "Congenital retinoschisis (disorder)"
           }
         ]
       },

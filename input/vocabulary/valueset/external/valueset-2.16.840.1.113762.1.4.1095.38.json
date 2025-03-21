@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1095.38",
   "meta": {
-    "versionId": "24",
-    "lastUpdated": "2024-02-21T01:24:22.000-05:00",
+    "versionId": "28",
+    "lastUpdated": "2025-01-22T01:07:20.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2024-02-21"
+      "valueDate": "2025-01-22"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.38",
@@ -23,27 +23,17 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1095.38"
     }
   ],
-  "version": "20240221",
+  "version": "20250122",
   "name": "MalnutritionScreeningFindingOfAtRiskResult",
   "title": "Malnutrition Screening Finding of At Risk Result",
   "status": "active",
-  "date": "2024-02-21T01:24:22-05:00",
+  "date": "2025-01-22T01:07:20-05:00",
   "publisher": "AND Steward",
   "expansion": {
-    "identifier": "urn:uuid:8eb8f2dd-3b7c-40d9-9b59-64511ec62a1c",
-    "timestamp": "2024-12-01T19:47:55-05:00",
+    "identifier": "urn:uuid:6e39933c-1008-4377-bbea-ce3856641f74",
+    "timestamp": "2025-03-20T16:20:25-04:00",
     "total": 4,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

@@ -31,21 +31,17 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:799a36bd-bcfd-4c25-b15d-6251ec69b5a3",
-    "timestamp": "2024-12-01T19:43:35-05:00",
-    "total": 13,
+    "identifier": "urn:uuid:3d9a2505-3800-4b9f-a79c-84f96ab7518f",
+    "timestamp": "2025-03-20T16:14:08-04:00",
+    "total": 14,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",

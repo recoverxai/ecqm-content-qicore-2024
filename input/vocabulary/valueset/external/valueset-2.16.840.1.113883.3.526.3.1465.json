@@ -31,21 +31,23 @@
   "date": "2021-03-08T01:00:16-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:8978d69d-3c7a-4d1b-b239-66e7561929cf",
-    "timestamp": "2024-12-01T19:49:46-05:00",
-    "total": 72,
+    "identifier": "urn:uuid:699ae6b6-00cc-4878-a210-8d16a9f274c5",
+    "timestamp": "2025-03-20T16:34:34-04:00",
+    "total": 93,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1010460006",
+        "display": "Uniocular nystagmus of right eye (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1010461005",
+        "display": "Uniocular nystagmus of left eye (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -55,8 +57,62 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208860008",
+        "display": "Acquired periodic alternating nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1217636004",
+        "display": "Cyclovergence nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1217639006",
+        "display": "Congenital periodic alternating nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1217642000",
+        "display": "Centripetal nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1217662008",
+        "display": "Disjunctive pendular nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1220537002",
+        "display": "Gaze-evoked nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "194360001",
+        "display": "Central positional nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "232124002",
         "display": "Voluntary nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "246758003",
+        "display": "Mixed nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "246759006",
+        "display": "Irregular nystagmus (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -73,6 +129,30 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "246764005",
+        "display": "Postural nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "267664003",
+        "display": "Nystagmus and other irregular eye movements (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "278465006",
+        "display": "Spontaneous nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "278467003",
+        "display": "Neck positional nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "278468008",
         "display": "Pressure-induced nystagmus (disorder)"
       },
@@ -81,6 +161,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "278469000",
         "display": "Sound intensity-induced nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "285764004",
+        "display": "Manifest nystagmus (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -319,6 +405,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "783562005",
+        "display": "Syndactyly, nystagmus syndrome due to 2q31.1 microduplication (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "8134005",
         "display": "Periodic alternating nystagmus (disorder)"
       },
@@ -421,8 +513,32 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "95789005",
+        "display": "Nystagmus produced by neck rotation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "95790001",
         "display": "Fixation nystagmus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "95791002",
+        "display": "Nystagmus enhanced when fixation removed (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "95792009",
+        "display": "Nystagmus unchanged when fixation removed (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "95793004",
+        "display": "Nystagmus inhibited when fixation removed (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

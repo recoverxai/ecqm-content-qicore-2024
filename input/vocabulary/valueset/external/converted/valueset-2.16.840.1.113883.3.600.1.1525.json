@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.600.1.1525",
   "meta": {
-    "versionId": "32",
-    "lastUpdated": "2024-08-09T10:38:42.000-04:00",
+    "versionId": "43",
+    "lastUpdated": "2025-02-01T01:07:26.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2019-03-14"
+      "valueDate": "2025-02-01"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1.1525",
@@ -23,12 +23,11 @@
       "value": "urn:oid:2.16.840.1.113883.3.600.1.1525"
     }
   ],
-  "version": "20190314",
+  "version": "20250201",
   "name": "FollowUpForAboveNormalBMI",
   "title": "Follow Up for Above Normal BMI",
   "status": "active",
-  "experimental": false,
-  "date": "2022-03-07T11:14:02-05:00",
+  "date": "2025-02-01T01:07:26-05:00",
   "publisher": "American Institutes for Research Steward",
   "compose": {
     "include": [
@@ -36,20 +35,104 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "11816003",
+            "display": "Diet education (procedure)"
+          },
+          {
+            "code": "1230141004",
+            "display": "Education about nutrition influence on health (procedure)"
+          },
+          {
+            "code": "1279742004",
+            "display": "Development of nutrition care plan (procedure)"
+          },
+          {
+            "code": "1759002",
+            "display": "Assessment of nutritional status (procedure)"
+          },
+          {
             "code": "182922004",
             "display": "Dietary regime (regime/therapy)"
+          },
+          {
+            "code": "183059007",
+            "display": "High fiber diet education (procedure)"
+          },
+          {
+            "code": "183060002",
+            "display": "Low residue diet education (procedure)"
+          },
+          {
+            "code": "183061003",
+            "display": "Low fat diet education (procedure)"
+          },
+          {
+            "code": "183062005",
+            "display": "Low cholesterol diet education (procedure)"
+          },
+          {
+            "code": "183063000",
+            "display": "Low salt diet education (procedure)"
+          },
+          {
+            "code": "183065007",
+            "display": "Low carbohydrate diet education (procedure)"
+          },
+          {
+            "code": "183066008",
+            "display": "Low protein diet education (procedure)"
+          },
+          {
+            "code": "183067004",
+            "display": "High protein diet education (procedure)"
+          },
+          {
+            "code": "183070000",
+            "display": "Vegetarian diet education (procedure)"
+          },
+          {
+            "code": "183071001",
+            "display": "Vegan diet education (procedure)"
+          },
+          {
+            "code": "225387002",
+            "display": "Nutrient intake assessment (procedure)"
           },
           {
             "code": "225388007",
             "display": "Dietary intake assessment (procedure)"
           },
           {
+            "code": "226069004",
+            "display": "Review of current diet (procedure)"
+          },
+          {
             "code": "226074007",
             "display": "Dietary intake assessment using food frequency questionnaire (procedure)"
           },
           {
+            "code": "266724001",
+            "display": "Weight-reducing diet education (procedure)"
+          },
+          {
+            "code": "268522006",
+            "display": "Obesity monitoring (regime/therapy)"
+          },
+          {
+            "code": "281085002",
+            "display": "Sugar-free diet education (procedure)"
+          },
+          {
             "code": "284071006",
             "display": "Dietary treatment for disorder (regime/therapy)"
+          },
+          {
+            "code": "284350006",
+            "display": "Diabetes mellitus diet education (procedure)"
+          },
+          {
+            "code": "284352003",
+            "display": "Obesity diet education (procedure)"
           },
           {
             "code": "304491008",
@@ -66,6 +149,10 @@
           {
             "code": "313076000",
             "display": "Counseling for eating disorder (procedure)"
+          },
+          {
+            "code": "370780002",
+            "display": "Assessment of psychosocial issues specific to patient nutritional status (procedure)"
           },
           {
             "code": "370847001",
@@ -88,6 +175,10 @@
             "display": "Nutrition therapy (regime/therapy)"
           },
           {
+            "code": "386374005",
+            "display": "Nutritional monitoring (regime/therapy)"
+          },
+          {
             "code": "386463000",
             "display": "Prescribed activity/exercise education (procedure)"
           },
@@ -104,12 +195,20 @@
             "display": "Special diet education (procedure)"
           },
           {
+            "code": "410178001",
+            "display": "Special diet management (procedure)"
+          },
+          {
             "code": "413315001",
             "display": "Nutrition / feeding management (regime/therapy)"
           },
           {
             "code": "418995006",
             "display": "Feeding regime (regime/therapy)"
+          },
+          {
+            "code": "419155003",
+            "display": "Recommendation to change diet (procedure)"
           },
           {
             "code": "424753004",
@@ -122,6 +221,14 @@
           {
             "code": "428291006",
             "display": "Dietary education for gastrointestinal tract disorder (procedure)"
+          },
+          {
+            "code": "428461000124101",
+            "display": "Referral to nutrition professional (procedure)"
+          },
+          {
+            "code": "435391000124108",
+            "display": "Hypertensive disorder diet management (procedure)"
           }
         ]
       },
@@ -206,8 +313,32 @@
             "display": "Lifestyle education regarding diet (procedure)"
           },
           {
+            "code": "445291000124103",
+            "display": "Nutrition-related skill education (procedure)"
+          },
+          {
+            "code": "445301000124102",
+            "display": "Content-related nutrition education (procedure)"
+          },
+          {
+            "code": "445641000124105",
+            "display": "Technical nutrition education (procedure)"
+          },
+          {
+            "code": "61310001",
+            "display": "Nutrition education (procedure)"
+          },
+          {
+            "code": "699829004",
+            "display": "High energy diet education (procedure)"
+          },
+          {
             "code": "710847006",
             "display": "Assessment of dietary need (procedure)"
+          },
+          {
+            "code": "710881000",
+            "display": "Education about eating pattern (procedure)"
           },
           {
             "code": "870194003",
@@ -257,7 +388,7 @@
         ]
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
         "concept": [
           {
             "code": "G0270",

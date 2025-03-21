@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:8db3b92d-1701-4c65-90bb-47cd49f51ace",
-    "timestamp": "2024-12-01T19:50:55-05:00",
+    "identifier": "urn:uuid:f119080a-40b0-4253-9ca7-c400b4a25d54",
+    "timestamp": "2025-03-20T16:36:16-04:00",
     "total": 373,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -2267,20 +2257,20 @@
         "display": "Repair of current obstetric laceration of uterus (procedure)"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S0199",
         "display": "Medically induced abortion by oral ingestion of medication including all associated services and supplies (e.g., patient counseling, office visits, confirmation of pregnancy by hcg, ultrasound to confirm duration of pregnancy, ultrasound to confirm completion of abortion) except drugs"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S4981",
         "display": "Insertion of levonorgestrel-releasing intrauterine system"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S8055",
         "display": "Ultrasound guidance for multifetal pregnancy reduction(s), technical component (only to be used when the physician doing the reduction procedure does not perform the ultrasound, guidance is included in the cpt code for multifetal pregnancy reduction - 59866)"
       }

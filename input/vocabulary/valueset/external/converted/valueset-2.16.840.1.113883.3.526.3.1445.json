@@ -54,6 +54,14 @@
           {
             "code": "678211000119100",
             "display": "Rubeosis iridis of right eye (disorder)"
+          },
+          {
+            "code": "82551000119103",
+            "display": "Rubeosis iridis due to type 2 diabetes mellitus (disorder)"
+          },
+          {
+            "code": "82581000119105",
+            "display": "Rubeosis iridis due to type 1 diabetes mellitus (disorder)"
           }
         ]
       },

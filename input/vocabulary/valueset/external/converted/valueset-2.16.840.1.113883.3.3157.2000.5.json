@@ -750,6 +750,19 @@
         ]
       },
       {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "0913T",
+            "display": "Percutaneous transcatheter therapeutic drug delivery by intracoronary drug-delivery balloon (eg, drug-coated, drug-eluting), including mechanical dilation by nondrug-delivery balloon angioplasty, endoluminal imaging using intravascular ultrasound (IVUS) or optical coherence tomography (OCT) when performed, imaging supervision, interpretation, and report, single major coronary artery or branch"
+          },
+          {
+            "code": "0914T",
+            "display": "Percutaneous transcatheter therapeutic drug delivery by intracoronary drug-delivery balloon (eg, drug-coated, drug-eluting) performed on a separate target lesion from the target lesion treated with balloon angioplasty, coronary stent placement or coronary atherectomy, including mechanical dilation by nondrug-delivery balloon angioplasty, endoluminal imaging using intravascular ultrasound (IVUS) or optical coherence tomography (OCT) when performed, imaging supervision, interpretation, and report, single major coronary artery or branch (List separately in addition to code for percutaneous coronary stent or atherectomy intervention)"
+          }
+        ]
+      },
+      {
         "system": "http://snomed.info/sct",
         "concept": [
           {
@@ -932,7 +945,7 @@
         ]
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
         "concept": [
           {
             "code": "C9600",

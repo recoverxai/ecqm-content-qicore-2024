@@ -31,20 +31,10 @@
   "date": "2022-02-18T01:02:35-05:00",
   "publisher": "AHA Steward",
   "expansion": {
-    "identifier": "urn:uuid:0e9c817d-e52b-4c78-add3-60614c9f4b51",
-    "timestamp": "2024-12-01T19:48:06-05:00",
-    "total": 63,
+    "identifier": "urn:uuid:cb361be3-715d-45e5-951a-34c1285ed978",
+    "timestamp": "2025-03-20T16:20:38-04:00",
+    "total": 64,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -57,6 +47,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1234788003",
         "display": "Replacement of leadless cardiac pacemaker (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1287918007",
+        "display": "Repair of cardiac pacemaker pocket (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

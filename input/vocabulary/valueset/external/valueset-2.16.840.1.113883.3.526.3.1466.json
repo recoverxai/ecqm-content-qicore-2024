@@ -31,20 +31,10 @@
   "date": "2021-02-18T01:00:16-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:9ead1ac7-c4fc-4b57-9489-bb4d66a4481b",
-    "timestamp": "2024-12-01T19:44:30-05:00",
-    "total": 42,
+    "identifier": "urn:uuid:dd5a285e-4e1f-46d2-bd6d-30f28213cb09",
+    "timestamp": "2025-03-20T16:16:20-04:00",
+    "total": 45,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -135,6 +125,24 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "312944002",
         "display": "Compressive optic atrophy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "334941000119106",
+        "display": "Atrophy of optic disc of right eye due to glaucoma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "340551000119105",
+        "display": "Atrophy of optic disc of left eye due to glaucoma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "345861000119103",
+        "display": "Atrophy of optic disc of bilateral eyes due to glaucoma (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

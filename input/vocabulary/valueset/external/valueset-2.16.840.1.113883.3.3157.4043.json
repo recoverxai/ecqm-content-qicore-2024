@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "urn:uuid:33f5ba11-78a2-47bb-9fce-f9d150fc2aca",
-    "timestamp": "2024-12-01T19:49:36-05:00",
-    "total": 193,
+    "identifier": "urn:uuid:75538383-1c2b-4021-bfd9-90b5a125b992",
+    "timestamp": "2025-03-20T16:34:25-04:00",
+    "total": 199,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -85,8 +75,38 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1259485008",
+        "display": "Dementia due to cerebral vasculitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1259501004",
+        "display": "Dementia due to kuru (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1259586006",
+        "display": "Dementia due to autoimmune encephalitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1339031006",
+        "display": "Dementia caused by ionizing radiation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "14070001",
         "display": "Multi-infarct dementia with depression (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "142001000119106",
+        "display": "Depressed mood in Alzheimer's disease (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -253,6 +273,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "230288001",
+        "display": "Semantic dementia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "230289009",
         "display": "Patchy dementia (disorder)"
       },
@@ -393,6 +419,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "429458009",
         "display": "Dementia due to Creutzfeldt Jakob disease (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "429998004",
+        "display": "Vascular dementia (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -685,6 +717,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "788898005",
+        "display": "Dementia caused by volatile inhalant (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "792004",
         "display": "Jakob-Creutzfeldt disease (disorder)"
       },
@@ -719,16 +757,16 @@
         "display": "Epileptic dementia with behavioral disturbance (disorder)"
       },
       {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "version": "2025",
-        "code": "F01.50",
-        "display": "Vascular dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "833326008",
+        "display": "Cortical vascular dementia (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
-        "code": "F01.51",
-        "display": "Vascular dementia, unspecified severity, with behavioral disturbance"
+        "code": "F01.50",
+        "display": "Vascular dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
@@ -877,12 +915,6 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
-        "code": "F02.81",
-        "display": "Dementia in other diseases classified elsewhere, unspecified severity, with behavioral disturbance"
-      },
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "version": "2025",
         "code": "F02.811",
         "display": "Dementia in other diseases classified elsewhere, unspecified severity, with agitation"
       },
@@ -1023,12 +1055,6 @@
         "version": "2025",
         "code": "F03.90",
         "display": "Unspecified dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
-      },
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "version": "2025",
-        "code": "F03.91",
-        "display": "Unspecified dementia, unspecified severity, with behavioral disturbance"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

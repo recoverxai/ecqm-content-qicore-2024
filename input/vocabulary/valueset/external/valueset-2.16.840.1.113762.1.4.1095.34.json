@@ -30,20 +30,10 @@
   "date": "2024-01-17T01:08:53-05:00",
   "publisher": "AND Steward",
   "expansion": {
-    "identifier": "urn:uuid:4acbffe6-38d2-463c-b0d8-9b40c8fb08e5",
-    "timestamp": "2024-12-01T19:47:27-05:00",
+    "identifier": "urn:uuid:042b4137-92f4-4505-b443-0289543ac6e0",
+    "timestamp": "2025-03-20T16:19:50-04:00",
     "total": 1,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",

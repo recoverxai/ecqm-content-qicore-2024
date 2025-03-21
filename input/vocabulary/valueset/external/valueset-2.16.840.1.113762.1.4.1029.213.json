@@ -31,20 +31,10 @@
   "date": "2022-01-27T01:02:18-05:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:0486601a-9635-443c-bdac-18f7bafee447",
-    "timestamp": "2024-12-01T19:45:20-05:00",
+    "identifier": "urn:uuid:d0e9f68a-106a-4e25-b1e4-ce75f9de1940",
+    "timestamp": "2025-03-20T16:17:10-04:00",
     "total": 49,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

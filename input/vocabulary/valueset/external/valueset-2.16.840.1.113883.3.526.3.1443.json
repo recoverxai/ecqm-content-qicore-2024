@@ -31,20 +31,10 @@
   "date": "2021-02-19T01:00:28-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:90607af0-c66a-4c66-ae49-a9ff33c59a92",
-    "timestamp": "2024-12-01T19:47:35-05:00",
-    "total": 18,
+    "identifier": "urn:uuid:dfb62b0e-c3e3-48e1-a8e0-655e5a90e48a",
+    "timestamp": "2025-03-20T16:19:57-04:00",
+    "total": 21,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -63,6 +53,24 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "231968003",
         "display": "Cataract following rupture of capsule (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "331781000119101",
+        "display": "Cataract of right eye due to and following trauma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337401000119107",
+        "display": "Cataract of left eye due to and following trauma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "343191000119102",
+        "display": "Cataract of bilateral eyes due to and following trauma (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

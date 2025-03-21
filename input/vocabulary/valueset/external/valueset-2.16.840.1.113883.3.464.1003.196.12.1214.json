@@ -31,66 +31,56 @@
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:5ca4ad58-343c-41ce-afa9-39e8e250bd01",
-    "timestamp": "2024-12-01T19:47:59-05:00",
+    "identifier": "urn:uuid:3be1793a-e56b-4ce9-b891-0b44afecfd38",
+    "timestamp": "2025-03-20T16:20:28-04:00",
     "total": 8,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "106",
         "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine, 5 pertussis antigens"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "107",
         "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine, unspecified formulation"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "110",
         "display": "DTaP-hepatitis B and poliovirus vaccine"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "120",
         "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine, Haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (DTaP-Hib-IPV)"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "146",
         "display": "Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed, Inactivated Poliovirus, Haemophilus b Conjugate (Meningococcal Protein Conjugate), and Hepatitis B (Recombinant) Vaccine."
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "198",
         "display": "Diphtheria, pertussis, tetanus, hepatitis B, Haemophilus Influenza Type b, (Pentavalent)"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "20",
         "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "50",
         "display": "DTaP-Haemophilus influenzae type b conjugate vaccine"
       }

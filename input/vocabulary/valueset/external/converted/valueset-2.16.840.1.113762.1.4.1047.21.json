@@ -39,6 +39,10 @@
             "display": "Peripheral angiopathy due to diabetes mellitus (disorder)"
           },
           {
+            "code": "1303693000",
+            "display": "Atherosclerosis of right coronary artery (disorder)"
+          },
+          {
             "code": "13954005",
             "display": "Ischemic ulcer (disorder)"
           },
@@ -378,6 +382,10 @@
           {
             "code": "I25.84",
             "display": "Coronary atherosclerosis due to calcified coronary lesion"
+          },
+          {
+            "code": "I25.85",
+            "display": "Chronic coronary microvascular dysfunction"
           },
           {
             "code": "I25.89",

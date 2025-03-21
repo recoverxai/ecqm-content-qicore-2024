@@ -48,10 +48,6 @@
             "display": "lovastatin 20 MG Oral Tablet"
           },
           {
-            "code": "2001254",
-            "display": "pitavastatin magnesium 1 MG Oral Tablet"
-          },
-          {
             "code": "310404",
             "display": "fluvastatin 20 MG Oral Capsule"
           },
@@ -70,10 +66,6 @@
           {
             "code": "476345",
             "display": "ezetimibe 10 MG / simvastatin 10 MG Oral Tablet"
-          },
-          {
-            "code": "861643",
-            "display": "pitavastatin calcium 1 MG Oral Tablet"
           },
           {
             "code": "904458",

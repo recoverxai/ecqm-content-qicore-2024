@@ -31,30 +31,20 @@
   "date": "2021-02-24T01:00:28-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:e6647561-2973-48b1-b070-006325b8bfcf",
-    "timestamp": "2024-12-01T19:45:08-05:00",
+    "identifier": "urn:uuid:5efdc677-1df3-4057-a296-1fc1a3d83de8",
+    "timestamp": "2025-03-20T16:17:00-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "111",
         "display": "Influenza, live, trivalent, intranasal"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "149",
         "display": "Influenza, live, quadrivalent, intranasal"
       }

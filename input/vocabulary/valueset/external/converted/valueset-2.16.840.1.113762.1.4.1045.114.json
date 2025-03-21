@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1045.114",
   "meta": {
-    "versionId": "38",
-    "lastUpdated": "2024-02-01T15:12:53.000-05:00",
+    "versionId": "45",
+    "lastUpdated": "2025-02-07T01:09:20.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2023-02-14"
+      "valueDate": "2025-02-07"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.114",
@@ -23,17 +23,21 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1045.114"
     }
   ],
-  "version": "20230214",
+  "version": "20250207",
   "name": "HematocritLabTest",
   "title": "Hematocrit Lab Test",
   "status": "active",
-  "date": "2023-02-14T01:02:32-05:00",
+  "date": "2025-02-07T01:09:20-05:00",
   "publisher": "Yale",
   "compose": {
     "include": [
       {
         "system": "http://loinc.org",
         "concept": [
+          {
+            "code": "104826-3",
+            "display": "Hematocrit [Pure volume fraction] of Blood"
+          },
           {
             "code": "20570-8",
             "display": "Hematocrit [Volume Fraction] of Blood"

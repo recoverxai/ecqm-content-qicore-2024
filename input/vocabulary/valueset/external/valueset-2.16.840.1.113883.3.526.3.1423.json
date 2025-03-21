@@ -31,26 +31,28 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:f43dfc1b-b613-4f4b-8619-429f28440bf7",
-    "timestamp": "2024-12-01T19:48:48-05:00",
-    "total": 268,
+    "identifier": "urn:uuid:2ebf282d-bd45-443a-83b2-3ab865c0666e",
+    "timestamp": "2025-03-20T16:21:15-04:00",
+    "total": 381,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1003657004",
         "display": "Congenital glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1111391000000107",
+        "display": "Open angle glaucoma due to ocular trauma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1111401000000105",
+        "display": "Open angle glaucoma due to neovascularization (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -87,6 +89,624 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "12239501000119106",
         "display": "Glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285332001",
+        "display": "Angle closure glaucoma caused by drug (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285335004",
+        "display": "Open angle glaucoma due to ocular surgery (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285710008",
+        "display": "Open angle glaucoma caused by drug (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285711007",
+        "display": "Open angle glaucoma of right eye caused by drug (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285712000",
+        "display": "Open angle glaucoma of left eye caused by drug (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285713005",
+        "display": "Open angle glaucoma of bilateral eyes caused by drug (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285716002",
+        "display": "Angle closure glaucoma of right eye caused by drug (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285717006",
+        "display": "Angle closure glaucoma of left eye caused by drug (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285718001",
+        "display": "Angle closure glaucoma of bilateral eyes caused by drug (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303338003",
+        "display": "Primary angle closure glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303339006",
+        "display": "Primary angle closure glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303340008",
+        "display": "Primary angle closure glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303454004",
+        "display": "Open angle glaucoma of right eye due to ocular vascular disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303455003",
+        "display": "Open angle glaucoma of left eye due to ocular vascular disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303456002",
+        "display": "Open angle glaucoma of bilateral eyes due to ocular vascular disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303462007",
+        "display": "Open angle glaucoma of bilateral eyes due to vascular disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303463002",
+        "display": "Open angle glaucoma of left eye due to vascular disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303464008",
+        "display": "Open angle glaucoma of right eye due to vascular disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303701001",
+        "display": "Glaucoma of left eye due to intraocular neoplasm (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303702008",
+        "display": "Glaucoma of right eye caused by silicone oil (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303704009",
+        "display": "Glaucoma of bilateral eyes due to intraocular neoplasm (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303706006",
+        "display": "Glaucoma of right eye due to intraocular neoplasm (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303707002",
+        "display": "Glaucoma of left eye caused by silicone oil (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303708007",
+        "display": "Glaucoma of bilateral eyes caused by silicone oil (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303889009",
+        "display": "Open angle glaucoma of left eye due to systemic syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303890000",
+        "display": "Open angle glaucoma of right eye due to systemic syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303891001",
+        "display": "Open angle glaucoma of bilateral eyes due to systemic syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303892008",
+        "display": "Open angle glaucoma of right eye due to retinal detachment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303893003",
+        "display": "Open angle glaucoma of left eye due to retinal detachment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303894009",
+        "display": "Open angle glaucoma of bilateral eyes due to retinal detachment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303927008",
+        "display": "Secondary open-angle glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303928003",
+        "display": "Secondary open-angle glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1303929006",
+        "display": "Secondary open-angle glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304027002",
+        "display": "Open angle glaucoma of left eye due to ocular trauma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304029004",
+        "display": "Open angle glaucoma of right eye due to ocular trauma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304030009",
+        "display": "Open angle glaucoma of bilateral eyes due to ocular trauma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304031008",
+        "display": "Postoperative angle closure glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304032001",
+        "display": "Postoperative angle closure glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304033006",
+        "display": "Postoperative angle closure glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304034000",
+        "display": "Open angle glaucoma of bilateral eyes due to neovascularization (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304035004",
+        "display": "Open angle glaucoma of left eye due to neovascularization (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304036003",
+        "display": "Open angle glaucoma of right eye due to neovascularization (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304240002",
+        "display": "Glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304266004",
+        "display": "Secondary angle-closure glaucoma of right eye due to iridocorneal endothelial syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304267008",
+        "display": "Secondary angle-closure glaucoma of left eye due to iridocorneal endothelial syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304268003",
+        "display": "Secondary angle-closure glaucoma of bilateral eyes due to iridocorneal endothelial syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304282003",
+        "display": "Glaucoma of bilateral eyes due to hemolysis following intraocular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304284002",
+        "display": "Glaucoma of left eye due to hemolysis following intraocular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1304285001",
+        "display": "Glaucoma of right eye due to hemolysis following intraocular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306287007",
+        "display": "Primary open angle glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306288002",
+        "display": "Primary open angle glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306289005",
+        "display": "Primary open angle glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306298008",
+        "display": "Angle closure glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306301007",
+        "display": "Angle closure glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306328002",
+        "display": "Angle closure glaucoma of right eye due to peripheral anterior synechiae (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306329005",
+        "display": "Angle closure glaucoma of left eye due to peripheral anterior synechiae (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306330000",
+        "display": "Angle closure glaucoma of bilateral eyes due to peripheral anterior synechiae (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306331001",
+        "display": "Secondary angle-closure glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306332008",
+        "display": "Secondary angle closure glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306333003",
+        "display": "Secondary angle closure glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306607000",
+        "display": "Angle recession glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306746005",
+        "display": "Ghost cell glaucoma of right eye due to and following intraocular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306749003",
+        "display": "Ghost cell glaucoma of bilateral eyes due to and following intraocular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306750003",
+        "display": "Ghost cell glaucoma of left eye due to and following intraocular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306768000",
+        "display": "Phacomorphic angle closure glaucoma of left eye due to disorder of lens (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306772001",
+        "display": "Lens particle glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306773006",
+        "display": "Lens particle glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306774000",
+        "display": "Lens particle glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306777007",
+        "display": "Phacomorphic angle closure glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306778002",
+        "display": "Phacomorphic angle closure glaucoma of right eye due to disorder of lens (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306782000",
+        "display": "Glaucoma of right eye due to congenital malformation of angle of anterior chamber of eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306787006",
+        "display": "Glaucoma of left eye due to congenital malformation of angle of anterior chamber of eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306789009",
+        "display": "Glaucoma of bilateral eyes due to congenital malformation of angle of anterior chamber of eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306868005",
+        "display": "Angle recession glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306869002",
+        "display": "Angle recession glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306873004",
+        "display": "Glaucoma of left eye with intraocular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306874005",
+        "display": "Glaucoma of right eye with intraocular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306875006",
+        "display": "Glaucoma of bilateral eyes with intraocular hemorrhage (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306876007",
+        "display": "Open angle glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306877003",
+        "display": "Open angle glaucoma of right eye due to ocular surgery (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306878008",
+        "display": "Open angle glaucoma of left eye due to ocular surgery (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306879000",
+        "display": "Open angle glaucoma of bilateral eyes due to ocular surgery (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306884006",
+        "display": "Normal pressure primary open-angle glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306885007",
+        "display": "Normal pressure primary open-angle glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1306886008",
+        "display": "Normal pressure primary open-angle glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1331893009",
+        "display": "Neovascular angle closure glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1331894003",
+        "display": "Neovascular angle closure glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1331895002",
+        "display": "Neovascular angle closure glaucoma of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1332297002",
+        "display": "Glaucoma due to perforating injury of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1332298007",
+        "display": "Glaucoma due to perforating injury of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1332299004",
+        "display": "Glaucoma due to perforating injury of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1335974003",
+        "display": "Glaucoma due to cyst of iris (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1335975002",
+        "display": "Glaucoma due to cyst of ciliary body (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1335980006",
+        "display": "Glaucoma due to cyst of ciliary body of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1335982003",
+        "display": "Glaucoma due to cyst of ciliary body of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1335985001",
+        "display": "Glaucoma due to cyst of ciliary body of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1336007002",
+        "display": "Glaucoma due to cyst of iris of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1336008007",
+        "display": "Glaucoma due to cyst of iris of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1336009004",
+        "display": "Glaucoma due to cyst of iris of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1336022007",
+        "display": "Glaucoma due to cyst of right eye proper (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1336023002",
+        "display": "Glaucoma due to cyst of left eye proper (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1336024008",
+        "display": "Glaucoma due to cyst of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1336042003",
+        "display": "Glaucoma due to plateau iris (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -157,6 +777,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15738961000119102",
+        "display": "Glaucoma of left eye due to congenital anomaly of iris (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15739001000119109",
+        "display": "Glaucoma of right eye due to congenital anomaly of iris (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15739041000119106",
         "display": "Glaucoma of bilateral eyes due to congenital anomaly of iris (disorder)"
       },
@@ -201,6 +833,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15739641000119104",
         "display": "Glaucoma of left eye due to lens disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15995591000119109",
+        "display": "Glaucoma of left eye due to plateau iris (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15995631000119109",
+        "display": "Glaucoma of right eye due to plateau iris (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -379,6 +1023,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "333151000119108",
+        "display": "Phacolytic glaucoma of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "33647009",
         "display": "Anatomical narrow angle glaucoma (disorder)"
       },
@@ -397,6 +1047,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "338761000119103",
+        "display": "Phacolytic glaucoma of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "342221000119104",
         "display": "Acute angle-closure glaucoma of left eye (disorder)"
       },
@@ -405,6 +1061,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "342241000119105",
         "display": "Absolute glaucoma left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "344531000119107",
+        "display": "Phacolytic glaucoma of bilateral eyes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -429,6 +1091,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "370504007",
         "display": "Aqueous humor misdirect (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "392029006",
+        "display": "Uveitis-glaucoma-hyphema syndrome (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

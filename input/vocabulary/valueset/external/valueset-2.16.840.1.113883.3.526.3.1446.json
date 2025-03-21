@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:d82e8e8e-9f62-4c33-9073-3eb604ab6a33",
-    "timestamp": "2024-12-01T19:44:40-05:00",
-    "total": 60,
+    "identifier": "urn:uuid:e796c3bb-38ad-4e7a-a791-811c230ab6e1",
+    "timestamp": "2025-03-20T16:16:29-04:00",
+    "total": 86,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -75,6 +65,48 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15462009",
         "display": "Arcuate scotoma (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15747321000119109",
+        "display": "Scintillating scotoma of left eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15747361000119104",
+        "display": "Scintillating scotoma of right eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15747401000119108",
+        "display": "Scintillating scotoma of bilateral eyes (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16058911000119101",
+        "display": "Peripheral visual field defect of bilateral eyes (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16058951000119100",
+        "display": "Peripheral visual field defect of left eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16058991000119105",
+        "display": "Peripheral visual field defect of right eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16059111000119107",
+        "display": "Scotoma of right eye (finding)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -193,8 +225,56 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332131000119107",
+        "display": "Sector visual field defect of right eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "333371000119102",
+        "display": "Paracentral scotoma of right eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "333381000119104",
+        "display": "Paracecal scotoma of right eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "336151000119100",
+        "display": "Centrocecal scotoma of right eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "336171000119109",
         "display": "Central scotoma of right eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "336371000119106",
+        "display": "Arcuate visual field defect of right eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337741000119101",
+        "display": "Sector visual field defect of left eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "338981000119109",
+        "display": "Paracentral scotoma of left eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "338991000119107",
+        "display": "Paracecal scotoma of left eye (finding)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -205,8 +285,38 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "341761000119109",
+        "display": "Centrocecal scotoma of left eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "341781000119100",
         "display": "Central scotoma of left eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "341981000119103",
+        "display": "Arcuate visual field defect of left eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "343511000119104",
+        "display": "Sector visual field defect of bilateral eyes (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "344731000119103",
+        "display": "Paracentral scotoma of bilateral eyes (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "344741000119107",
+        "display": "Paracecal scotoma of bilateral eyes (finding)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -217,8 +327,20 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "346971000119106",
+        "display": "Centrocecal scotoma of bilateral eyes (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "346991000119107",
         "display": "Central scotoma of bilateral eyes (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "347161000119100",
+        "display": "Arcuate visual field defect of bilateral eyes (finding)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -297,6 +419,30 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "65133002",
         "display": "Physiologic scotoma (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "678701000119106",
+        "display": "Tunnel vision of bilateral eyes (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "678711000119109",
+        "display": "Tunnel vision of left eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "678721000119102",
+        "display": "Tunnel vision of right eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "733338003",
+        "display": "Isolated peripheral scotoma (finding)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

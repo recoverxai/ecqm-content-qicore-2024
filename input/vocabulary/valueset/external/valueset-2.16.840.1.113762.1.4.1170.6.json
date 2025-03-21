@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1170.6",
   "meta": {
-    "versionId": "10",
-    "lastUpdated": "2024-10-21T18:23:54.000-04:00",
+    "versionId": "17",
+    "lastUpdated": "2025-02-11T01:03:34.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2023-02-18"
+      "valueDate": "2025-02-11"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1170.6",
@@ -23,28 +23,30 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1170.6"
     }
   ],
-  "version": "20230218",
+  "version": "20250211",
   "name": "ThrombolyticsAdverseEvent",
   "title": "Thrombolytics Adverse Event",
   "status": "active",
-  "date": "2023-02-18T01:03:13-05:00",
+  "date": "2025-02-11T01:03:34-05:00",
   "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "urn:uuid:4ba079fe-90e3-49e7-b556-8ad59771910f",
-    "timestamp": "2024-12-01T19:46:37-05:00",
-    "total": 5,
+    "identifier": "urn:uuid:c8434ebc-b43d-46f6-87f9-90344b1f5105",
+    "timestamp": "2025-03-20T16:19:04-04:00",
+    "total": 7,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1300134005",
+        "display": "Adverse reaction to reteplase (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1300137003",
+        "display": "Adverse reaction to tenecteplase (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",

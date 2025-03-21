@@ -88,8 +88,12 @@
             "display": "Low income"
           },
           {
-            "code": "Z59.7",
-            "display": "Insufficient social insurance and welfare support"
+            "code": "Z59.71",
+            "display": "Insufficient health insurance coverage"
+          },
+          {
+            "code": "Z59.72",
+            "display": "Insufficient welfare support"
           },
           {
             "code": "Z59.811",

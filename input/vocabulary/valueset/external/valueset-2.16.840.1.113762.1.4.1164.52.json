@@ -31,20 +31,10 @@
   "date": "2017-06-27T05:00:03-04:00",
   "publisher": "LUGPA Steward",
   "expansion": {
-    "identifier": "urn:uuid:534aedb6-e97c-4bf6-a1bb-841a134f1017",
-    "timestamp": "2024-12-01T19:45:31-05:00",
+    "identifier": "urn:uuid:96a0cc6b-5627-4a2f-9b6d-0d803e39e157",
+    "timestamp": "2025-03-20T16:17:19-04:00",
     "total": 6,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

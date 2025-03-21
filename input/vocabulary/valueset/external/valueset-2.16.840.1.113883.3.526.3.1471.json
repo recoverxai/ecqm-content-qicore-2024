@@ -31,21 +31,17 @@
   "date": "2021-02-18T01:00:25-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:fd49b250-baa4-43ad-9aaa-62a56d7df4e8",
-    "timestamp": "2024-12-01T19:43:33-05:00",
-    "total": 18,
+    "identifier": "urn:uuid:3bf1b894-faa9-4ae0-8fa0-fd95401de7e3",
+    "timestamp": "2025-03-20T16:14:06-04:00",
+    "total": 22,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231226002",
+        "display": "Non-arteritic posterior ischemic optic neuropathy (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -63,6 +59,24 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15731641000119103",
         "display": "Anterior ischemic optic neuropathy of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16376191000119109",
+        "display": "Arteritic anterior ischemic optic neuropathy of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16376241000119109",
+        "display": "Arteritic anterior ischemic optic neuropathy of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16376391000119106",
+        "display": "Arteritic anterior ischemic optic neuropathy of right eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

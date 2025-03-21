@@ -36,6 +36,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1339033009",
+            "display": "Disorder of optic nerve caused by radiation (disorder)"
+          },
+          {
             "code": "212141007",
             "display": "Optic nerve and pathway injury (disorder)"
           },
@@ -60,12 +64,28 @@
             "display": "Injury of optic chiasm (disorder)"
           },
           {
+            "code": "735646005",
+            "display": "Injury of bilateral optic nerves (disorder)"
+          },
+          {
+            "code": "735648006",
+            "display": "Injury of bilateral optic pathways (disorder)"
+          },
+          {
             "code": "735649003",
             "display": "Injury of bilateral optic tracts (disorder)"
           },
           {
             "code": "736321008",
             "display": "Injury of both visual cortices (disorder)"
+          },
+          {
+            "code": "762357005",
+            "display": "Traumatic injury of left optic nerve (disorder)"
+          },
+          {
+            "code": "762358000",
+            "display": "Traumatic injury of right optic nerve (disorder)"
           },
           {
             "code": "762362006",

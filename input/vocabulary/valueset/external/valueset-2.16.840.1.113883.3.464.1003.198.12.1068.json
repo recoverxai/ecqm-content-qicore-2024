@@ -31,32 +31,16 @@
   "date": "2017-12-19T01:00:04-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:f2cc962d-49de-4ae6-b4a4-e66d19385aaa",
-    "timestamp": "2024-12-01T19:47:06-05:00",
-    "total": 4,
+    "identifier": "urn:uuid:b9d2e704-57e4-49f2-a458-0db7c61f2b32",
+    "timestamp": "2025-03-20T16:19:33-04:00",
+    "total": 3,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "136071000119101",
         "display": "History of bilateral prophylactic mastectomy (situation)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "16087411000119102",
-        "display": "History of excision of bilateral nipples (situation)"
       },
       {
         "system": "http://snomed.info/sct",

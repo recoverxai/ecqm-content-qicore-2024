@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:4d3d8de6-a9ce-4363-aceb-bf83a507b003",
-    "timestamp": "2024-12-01T19:45:13-05:00",
-    "total": 555,
+    "identifier": "urn:uuid:7ffc5813-7f5e-4344-81de-f8f4ae083d50",
+    "timestamp": "2025-03-20T16:17:04-04:00",
+    "total": 557,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -2623,6 +2613,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "176025009",
+        "display": "Ileal replacement of ureter (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "176106009",
         "display": "Radical cystoprostatourethrectomy (procedure)"
       },
@@ -3015,6 +3011,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "39214002",
         "display": "Closure of rectovesicovaginal fistula (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "40173000",
+        "display": "Incision of urinary bladder (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

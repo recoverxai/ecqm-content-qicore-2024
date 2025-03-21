@@ -31,21 +31,47 @@
   "date": "2021-02-20T01:03:49-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:2d52ea67-15aa-46fb-89fc-6cc0f5624c39",
-    "timestamp": "2024-12-01T19:48:21-05:00",
-    "total": 75,
+    "identifier": "urn:uuid:9825fa61-147a-4074-adb7-4a68bbcdeeec",
+    "timestamp": "2025-03-20T16:20:51-04:00",
+    "total": 83,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1085951000119102",
+        "display": "Dental caries on pit and fissure surface limited to enamel (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1085961000119100",
+        "display": "Dental caries on pit and fissure surface penetrating into dentin (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1085971000119106",
+        "display": "Dental caries on pit and fissure surface penetrating into pulp (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1085981000119109",
+        "display": "Dental caries on smooth surface limited to enamel (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1085991000119107",
+        "display": "Dental caries on smooth surface penetrating into dentin (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1086001000119108",
+        "display": "Dental caries on smooth surface penetrating into pulp (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -139,6 +165,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1287576005",
+        "display": "Primary dental caries extending into outer half of enamel (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15733007",
         "display": "Incipient enamel caries (disorder)"
       },
@@ -171,6 +203,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "196305005",
         "display": "Odontoclasia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "234975001",
+        "display": "Root caries (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

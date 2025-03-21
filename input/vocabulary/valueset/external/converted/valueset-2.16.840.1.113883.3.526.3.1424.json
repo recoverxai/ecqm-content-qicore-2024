@@ -156,6 +156,22 @@
             "display": "Macular corneal dystrophy (disorder)"
           },
           {
+            "code": "680491000119103",
+            "display": "Iridocorneal endothelial syndrome of bilateral eyes (disorder)"
+          },
+          {
+            "code": "680501000119105",
+            "display": "Iridocorneal endothelial syndrome of right eye (disorder)"
+          },
+          {
+            "code": "680511000119108",
+            "display": "Iridocorneal endothelial syndrome of left eye (disorder)"
+          },
+          {
+            "code": "702359002",
+            "display": "Congenital stromal corneal dystrophy (disorder)"
+          },
+          {
             "code": "75663006",
             "display": "Ring-like corneal dystrophy (disorder)"
           },

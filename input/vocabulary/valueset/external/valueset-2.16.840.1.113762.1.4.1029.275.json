@@ -31,20 +31,10 @@
   "date": "2022-01-27T01:02:42-05:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:90d88fdb-cf92-4f0b-b837-abc35ef45686",
-    "timestamp": "2024-12-01T19:45:01-05:00",
-    "total": 459,
+    "identifier": "urn:uuid:626b2caf-f428-4cf1-b2aa-09d9bf1fd365",
+    "timestamp": "2025-03-20T16:16:54-04:00",
+    "total": 462,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
@@ -1581,6 +1571,24 @@
         "version": "2025",
         "code": "E10.9",
         "display": "Type 1 diabetes mellitus without complications"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E10.A0",
+        "display": "Type 1 diabetes mellitus, presymptomatic, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E10.A1",
+        "display": "Type 1 diabetes mellitus, presymptomatic, Stage 1"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E10.A2",
+        "display": "Type 1 diabetes mellitus, presymptomatic, Stage 2"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

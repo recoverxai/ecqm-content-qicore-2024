@@ -197,6 +197,14 @@
             "display": "Ophthalmological services: medical examination and evaluation, with initiation or continuation of diagnostic and treatment program; comprehensive, established patient, 1 or more visits"
           },
           {
+            "code": "92532",
+            "display": "Positional nystagmus test"
+          },
+          {
+            "code": "92534",
+            "display": "Optokinetic nystagmus test"
+          },
+          {
             "code": "92537",
             "display": "Caloric vestibular test with recording, bilateral; bithermal (ie, one warm and one cool irrigation in each ear for a total of four irrigations)"
           },
@@ -227,6 +235,10 @@
           {
             "code": "92546",
             "display": "Sinusoidal vertical axis rotational testing"
+          },
+          {
+            "code": "92622",
+            "display": "Diagnostic analysis, programming, and verification of an auditory osseointegrated sound processor, any type; first 60 minutes"
           },
           {
             "code": "92625",
@@ -275,6 +287,22 @@
           {
             "code": "99236",
             "display": "Hospital inpatient or observation care, for the evaluation and management of a patient including admission and discharge on the same date, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 85 minutes must be met or exceeded."
+          },
+          {
+            "code": "99242",
+            "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+          },
+          {
+            "code": "99243",
+            "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+          },
+          {
+            "code": "99244",
+            "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+          },
+          {
+            "code": "99245",
+            "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 55 minutes must be met or exceeded."
           },
           {
             "code": "99281",
@@ -444,7 +472,7 @@
         ]
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
         "concept": [
           {
             "code": "G0101",

@@ -31,20 +31,10 @@
   "date": "2022-01-27T01:02:40-05:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:7a20533b-8da6-4455-acfb-b2084f1e6a1f",
-    "timestamp": "2024-12-01T19:45:32-05:00",
+    "identifier": "urn:uuid:a37ca167-4836-4fbd-a05e-aa0acec5efd3",
+    "timestamp": "2025-03-20T16:17:20-04:00",
     "total": 7,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

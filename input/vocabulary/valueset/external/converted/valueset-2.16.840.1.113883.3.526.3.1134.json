@@ -40,6 +40,102 @@
             "display": "Left ventricular Ejection fraction"
           },
           {
+            "code": "104145-8",
+            "display": "Left ventricular Ejection fraction - upper limit by US.2D.A2C+Estimated"
+          },
+          {
+            "code": "104146-6",
+            "display": "Left ventricular Ejection fraction - upper limit by US.2D.A3C+Estimated"
+          },
+          {
+            "code": "104147-4",
+            "display": "Left ventricular Ejection fraction - upper limit by US.3D.A3C+Estimated"
+          },
+          {
+            "code": "104148-2",
+            "display": "Left ventricular Ejection fraction - upper limit by US.3D.A4C+Estimated"
+          },
+          {
+            "code": "104149-0",
+            "display": "Left ventricular Ejection fraction by US.2D.A2C+Calculated by biplane method"
+          },
+          {
+            "code": "104150-8",
+            "display": "Left ventricular Ejection fraction by US.2D.A3C+Calculated by biplane method"
+          },
+          {
+            "code": "104151-6",
+            "display": "Left ventricular Ejection fraction by US.2D.A4C+Calculed by biplane method"
+          },
+          {
+            "code": "104152-4",
+            "display": "Left ventricular Ejection fraction by US.3D.A2C+Calculated by biplane method"
+          },
+          {
+            "code": "104153-2",
+            "display": "Left ventricular Ejection fraction by US.3D.A3C+Calculated by biplane method"
+          },
+          {
+            "code": "104154-0",
+            "display": "Left ventricular Ejection fraction by US.3D.A4C+Calculated by biplane method"
+          },
+          {
+            "code": "104155-7",
+            "display": "Left ventricular Ejection fraction - upper limit by US.3D.A2C+Estimated"
+          },
+          {
+            "code": "104157-3",
+            "display": "Left ventricular Ejection fraction - upper limit by US.2D.A4C+Estimated"
+          },
+          {
+            "code": "104243-1",
+            "display": "Left ventricular Ejection fraction - lower limit by US.2D.A3C+Estimated"
+          },
+          {
+            "code": "104244-9",
+            "display": "Left ventricular Ejection fraction - lower limit by US.2D.A4C+Estimated"
+          },
+          {
+            "code": "104245-6",
+            "display": "Left ventricular Ejection fraction - lower limit by US.3D.A2C+Estimated"
+          },
+          {
+            "code": "104246-4",
+            "display": "Left ventricular Ejection fraction - lower limit by US.3D.A3C+Estimated"
+          },
+          {
+            "code": "104247-2",
+            "display": "Left ventricular Ejection fraction - lower limit by US.3D.A4C+Estimated"
+          },
+          {
+            "code": "104251-4",
+            "display": "Left ventricular Ejection fraction by US.2D.A2C+Estimated"
+          },
+          {
+            "code": "104252-2",
+            "display": "Left ventricular Ejection fraction by US.2D.A3C+Estimated"
+          },
+          {
+            "code": "104253-0",
+            "display": "Left ventricular Ejection fraction by US.2D.A4C Estimated"
+          },
+          {
+            "code": "104254-8",
+            "display": "Left ventricular Ejection fraction by US.3D.A2C+Estimated"
+          },
+          {
+            "code": "104255-5",
+            "display": "Left ventricular Ejection fraction by US.3D.A3C+Estimated"
+          },
+          {
+            "code": "104256-3",
+            "display": "Left ventricular Ejection fraction by US.3D.A4C+Estimated"
+          },
+          {
+            "code": "104258-9",
+            "display": "Left ventricular Ejection fraction - lower limit by US.2D.A2C+Estimated"
+          },
+          {
             "code": "18043-0",
             "display": "Left ventricular Ejection fraction by US"
           },

@@ -31,21 +31,17 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:2e226b4e-5036-481f-802c-09a2a2d2ff8a",
-    "timestamp": "2024-12-01T19:48:56-05:00",
-    "total": 124,
+    "identifier": "urn:uuid:f0001fa2-2687-4c47-a9e3-cb4e8bf5015f",
+    "timestamp": "2025-03-20T16:21:22-04:00",
+    "total": 188,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1010616001",
+        "display": "Cirrhosis of liver due to classical cystic fibrosis (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -67,6 +63,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1087101000119109",
+        "display": "Herpes simplex hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "109819003",
         "display": "Obstructive biliary cirrhosis (disorder)"
       },
@@ -79,8 +81,56 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1148573000",
+        "display": "Hepatic failure following surgical procedure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1197150002",
+        "display": "Recurrent hepatitis C virus induced liver disease following liver transplant (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1197704005",
+        "display": "Autoantibody negative autoimmune hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "123604002",
+        "display": "Toxic cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "123605001",
+        "display": "Nutritional cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "123606000",
+        "display": "Cholangiolitic cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "123716002",
+        "display": "Latent cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "123717006",
         "display": "Advanced cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "128241005",
+        "display": "Inflammatory disease of liver (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -91,8 +141,44 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "146371000119104",
+        "display": "Hepatic coma due to chronic hepatitis C (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16098491000119109",
+        "display": "Chronic autoimmune hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16623921000119105",
+        "display": "Viral hepatitis C in mother during pregnancy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1761006",
+        "display": "Biliary cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "186628001",
         "display": "Hepatic coma due to viral hepatitis C (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "186698009",
+        "display": "Cytomegalovirus hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "19682006",
+        "display": "Lupus hepatitis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -127,6 +213,30 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "197293003",
+        "display": "Diffuse nodular cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "197310003",
+        "display": "Biliary cirrhosis of children (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "197339003",
+        "display": "Coxsackie virus hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "197344005",
+        "display": "Hepatitis caused by adenovirus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "197352008",
         "display": "Toxic hepatitis (disorder)"
       },
@@ -147,6 +257,24 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "206372007",
         "display": "Congenital viral hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "213230009",
+        "display": "Hepatic failure as a complication of care (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "21861000",
+        "display": "Micronodular cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "22508003",
+        "display": "Hepatic failure due to a procedure (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -175,6 +303,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "235873001",
+        "display": "Halothane hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "235874007",
+        "display": "Enflurane hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "235875008",
         "display": "Alcoholic hepatitis (disorder)"
       },
@@ -187,8 +327,44 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "235881000",
+        "display": "Alcoholic hepatic failure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "235884008",
+        "display": "Fulminant hepatic failure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "235885009",
+        "display": "Subfulminant hepatic failure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "235886005",
+        "display": "Chronic hepatic failure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "235889003",
         "display": "Drug-induced chronic hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "235896001",
+        "display": "Infectious cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "235897005",
+        "display": "Hypoxia-associated cirrhosis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -199,8 +375,32 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "271440004",
+        "display": "Cirrhosis secondary to cholestasis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "27156006",
+        "display": "Posthepatitic cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "278929008",
         "display": "Congenital hepatitis C infection (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "28766006",
+        "display": "Posttransfusion viral hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "302919001",
+        "display": "Epstein-Barr virus hepatitis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -231,6 +431,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "370889009",
         "display": "Lymphocytic portal hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "371139006",
+        "display": "Early cirrhosis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -271,6 +477,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "419728003",
+        "display": "Portal cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "420054005",
         "display": "Alcoholic cirrhosis (disorder)"
       },
@@ -283,6 +495,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "426364002",
+        "display": "Allergic hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "435091000124105",
         "display": "Hepatitis with hepatic coma (disorder)"
       },
@@ -291,6 +509,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "435101000124104",
         "display": "Chronic viral hepatitis C with hepatic coma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "43904005",
+        "display": "Macronodular cirrhosis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -327,6 +551,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "51292008",
         "display": "Hepatorenal syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "536002",
+        "display": "Glissonian cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "57339008",
+        "display": "Chronic lobular hepatitis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -391,14 +627,122 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "7111000119109",
+        "display": "Viral hepatitis type E (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "713181003",
+        "display": "Chronic alcoholic liver disease (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "716203000",
+        "display": "Decompensated cirrhosis of liver (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "721588008",
+        "display": "Hepatitis caused by sexually transmissible virus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "721710005",
+        "display": "Fibrosis of liver caused by alcohol (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "72445008",
         "display": "Subacute noninfective hepatitis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "725938001",
+        "display": "Cirrhosis of liver caused by methotrexate (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "725939009",
+        "display": "Cirrhosis of liver caused by amiodarone (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "725940006",
+        "display": "Cirrhosis of liver caused by methyldopa (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "735733008",
+        "display": "Cirrhosis of liver co-occurrent and due to primary sclerosing cholangitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "74669004",
+        "display": "Cardiac cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "76301009",
+        "display": "Florid cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "767809001",
+        "display": "Chronic hepatitis C caused by hepatitis C virus genotype 6 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "767810006",
+        "display": "Chronic hepatitis C caused by hepatitis C virus genotype 5 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "76783007",
         "display": "Chronic hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "768006009",
+        "display": "Chronic hepatitis C caused by Hepatitis C virus genotype 3 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "768125005",
+        "display": "Chronic hepatitis C caused by Hepatitis C virus genotype 2 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "768126006",
+        "display": "Chronic hepatitis C caused by Hepatitis C virus genotype 4 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "768127002",
+        "display": "Chronic hepatitis C caused by Hepatitis C virus genotype 1 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "78208005",
+        "display": "Pigment cirrhosis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -411,6 +755,36 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "831000119103",
         "display": "Cirrhosis of liver due to chronic hepatitis C (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "838377003",
+        "display": "Chronic hepatitis C co-occurrent with human immunodeficiency virus infection (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "83864008",
+        "display": "Drug-induced cholestatic hepatitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "86454000",
+        "display": "Postnecrotic cirrhosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "871619002",
+        "display": "Cirrhosis of liver due to and following cardiac procedure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "89580002",
+        "display": "Cryptogenic cirrhosis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

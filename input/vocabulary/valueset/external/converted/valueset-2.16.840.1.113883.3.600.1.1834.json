@@ -433,10 +433,6 @@
             "display": "Distortion product evoked otoacoustic emissions; comprehensive diagnostic evaluation (quantitative analysis of outer hair cell function by cochlear mapping, minimum of 12 frequencies), with interpretation and report"
           },
           {
-            "code": "92622",
-            "display": "Diagnostic analysis, programming, and verification of an auditory osseointegrated sound processor, any type; first 60 minutes"
-          },
-          {
             "code": "92626",
             "display": "Evaluation of auditory function for surgically implanted device(s) candidacy or postoperative status of a surgically implanted device(s); first hour"
           },
@@ -517,6 +513,74 @@
             "display": "Medical nutrition therapy; group (2 or more individual(s)), each 30 minutes"
           },
           {
+            "code": "98000",
+            "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+          },
+          {
+            "code": "98001",
+            "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+          },
+          {
+            "code": "98002",
+            "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate medical decision making. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+          },
+          {
+            "code": "98003",
+            "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+          },
+          {
+            "code": "98004",
+            "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 10 minutes must be met or exceeded."
+          },
+          {
+            "code": "98005",
+            "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+          },
+          {
+            "code": "98006",
+            "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+          },
+          {
+            "code": "98007",
+            "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+          },
+          {
+            "code": "98008",
+            "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, straightforward medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+          },
+          {
+            "code": "98009",
+            "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, low medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+          },
+          {
+            "code": "98010",
+            "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, moderate medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+          },
+          {
+            "code": "98011",
+            "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, high medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+          },
+          {
+            "code": "98012",
+            "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, straightforward medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 10 minutes must be exceeded."
+          },
+          {
+            "code": "98013",
+            "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, low medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+          },
+          {
+            "code": "98014",
+            "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, moderate medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+          },
+          {
+            "code": "98015",
+            "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, high medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+          },
+          {
+            "code": "98016",
+            "display": "Brief communication technology-based service (eg, virtual check-in) by a physician or other qualified health care professional who can report evaluation and management services, provided to an established patient, not originating from a related evaluation and management service provided within the previous 7 days nor leading to an evaluation and management service or procedure within the next 24 hours or soonest available appointment, 5-10 minutes of medical discussion"
+          },
+          {
             "code": "98960",
             "display": "Education and training for patient self-management by a nonphysician qualified health care professional using a standardized curriculum, face-to-face with the patient (could include caregiver/family) each 30 minutes; individual patient"
           },
@@ -543,6 +607,10 @@
           {
             "code": "99205",
             "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+          },
+          {
+            "code": "99211",
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient that may not require the presence of a physician or other qualified health care professional"
           },
           {
             "code": "99212",
@@ -707,7 +775,7 @@
         ]
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
         "concept": [
           {
             "code": "G0101",

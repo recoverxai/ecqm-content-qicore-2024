@@ -212,6 +212,10 @@
             "display": "Total replacement of hip joint using cage (procedure)"
           },
           {
+            "code": "1304236006",
+            "display": "Total prosthetic replacement of hip joint via supercapsular approach using percutaneous assistance (procedure)"
+          },
+          {
             "code": "15163009",
             "display": "Total arthroplasty of hip, low friction (procedure)"
           },
@@ -241,6 +245,10 @@
       {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "307814001",
+            "display": "Cemented arthroplasty of hip joint (procedure)"
+          },
           {
             "code": "314491003",
             "display": "Prosthetic hybrid total replacement of hip joint (procedure)"

@@ -31,42 +31,32 @@
   "date": "2021-02-20T01:02:00-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:3752bea4-d857-449c-b85c-d7a26c0d7218",
-    "timestamp": "2024-12-01T19:44:01-05:00",
+    "identifier": "urn:uuid:69c0a368-6e9c-49e0-9ead-bf7aea0b9137",
+    "timestamp": "2025-03-20T16:14:38-04:00",
     "total": 4,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1361607",
         "display": "500 ML heparin sodium, porcine 40 UNT/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1658717",
         "display": "250 ML heparin sodium, porcine 100 UNT/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1659195",
         "display": "500 ML heparin sodium, porcine 50 UNT/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1659197",
         "display": "250 ML heparin sodium, porcine 50 UNT/ML Injection"
       }

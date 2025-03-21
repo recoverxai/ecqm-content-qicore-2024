@@ -31,21 +31,29 @@
   "date": "2021-02-18T01:00:59-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:8db640f2-73cc-42db-8366-426d9c873f76",
-    "timestamp": "2024-12-01T19:43:47-05:00",
-    "total": 14,
+    "identifier": "urn:uuid:91ba08b9-f949-46bb-8c2f-5369a0656894",
+    "timestamp": "2025-03-20T16:14:18-04:00",
+    "total": 18,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1137552000",
+        "display": "Scar of posterior pole of retina of left eye (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1137553005",
+        "display": "Scar of posterior pole of retina of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1137554004",
+        "display": "Scar of posterior pole of retina of bilateral eyes (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -87,6 +95,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "18410006",
         "display": "Scarred macula (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "30537002",
+        "display": "Peripheral scar of posterior pole of retina of eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

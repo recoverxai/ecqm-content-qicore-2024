@@ -30,20 +30,10 @@
   "date": "2023-02-14T01:02:32-05:00",
   "publisher": "Yale",
   "expansion": {
-    "identifier": "urn:uuid:a79d68cc-5b29-4c7f-921a-d5007fbd2377",
-    "timestamp": "2024-12-01T19:50:13-05:00",
+    "identifier": "urn:uuid:c3c15cc0-2df9-4a19-a134-61936c1d3f91",
+    "timestamp": "2025-03-20T16:35:30-04:00",
     "total": 25,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",

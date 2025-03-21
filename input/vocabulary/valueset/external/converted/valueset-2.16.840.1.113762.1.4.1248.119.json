@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1248.119",
   "meta": {
-    "versionId": "24",
-    "lastUpdated": "2024-02-22T15:18:42.000-05:00",
+    "versionId": "30",
+    "lastUpdated": "2025-02-11T01:03:34.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2024-01-24"
+      "valueDate": "2025-02-11"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.119",
@@ -23,11 +23,11 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1248.119"
     }
   ],
-  "version": "20240124",
+  "version": "20250211",
   "name": "OpioidAntagonist",
   "title": "Opioid Antagonist",
   "status": "active",
-  "date": "2024-01-24T01:11:59-05:00",
+  "date": "2025-02-11T01:03:34-05:00",
   "publisher": "Mathematica PSI Steward",
   "compose": {
     "include": [

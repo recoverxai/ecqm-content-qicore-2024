@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:bff5d006-2812-4b0a-a2ff-e654da887d45",
-    "timestamp": "2024-12-01T19:50:29-05:00",
-    "total": 27,
+    "identifier": "urn:uuid:87e215f0-7b82-4721-99b7-e78a352dd405",
+    "timestamp": "2025-03-20T16:35:45-04:00",
+    "total": 26,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -129,12 +119,6 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "274130007",
         "display": "Emergency cesarean section (procedure)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "288042004",
-        "display": "Hysterectomy and fetus removal (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

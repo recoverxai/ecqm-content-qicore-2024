@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113883.3.117.1.7.1.200",
   "meta": {
-    "versionId": "67",
-    "lastUpdated": "2024-02-06T01:09:28.000-05:00",
+    "versionId": "71",
+    "lastUpdated": "2025-02-06T01:09:49.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2024-02-06"
+      "valueDate": "2025-02-06"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.200",
@@ -23,11 +23,11 @@
       "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.200"
     }
   ],
-  "version": "20240206",
+  "version": "20250206",
   "name": "AnticoagulantTherapy",
   "title": "Anticoagulant Therapy",
   "status": "active",
-  "date": "2024-02-06T01:09:28-05:00",
+  "date": "2025-02-06T01:09:49-05:00",
   "publisher": "TJC EH Steward",
   "compose": {
     "include": [
@@ -57,10 +57,6 @@
           {
             "code": "1361574",
             "display": "heparin sodium, porcine 20000 UNT/ML Injectable Solution"
-          },
-          {
-            "code": "1361615",
-            "display": "heparin sodium, porcine 5000 UNT/ML Injectable Solution"
           },
           {
             "code": "1364435",

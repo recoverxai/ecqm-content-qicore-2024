@@ -31,20 +31,10 @@
   "date": "2022-01-27T01:02:42-05:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:13c98d86-7aa0-42da-babd-e239a4659216",
-    "timestamp": "2024-12-01T19:48:39-05:00",
-    "total": 22,
+    "identifier": "urn:uuid:6fc5bccc-41d3-42d1-be43-a744fc1368a4",
+    "timestamp": "2025-03-20T16:21:07-04:00",
+    "total": 23,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
@@ -127,8 +117,14 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
-        "code": "Z59.7",
-        "display": "Insufficient social insurance and welfare support"
+        "code": "Z59.71",
+        "display": "Insufficient health insurance coverage"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Z59.72",
+        "display": "Insufficient welfare support"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

@@ -104,6 +104,14 @@
             "display": "Subtotal hysterectomy via vaginal approach (procedure)"
           },
           {
+            "code": "1303414001",
+            "display": "Laparoscopic vaginal hysterectomy (procedure)"
+          },
+          {
+            "code": "1304071003",
+            "display": "Endoscopic vaginal natural orifice transluminal hysterectomy (procedure)"
+          },
+          {
             "code": "13254001",
             "display": "Abdominal hysterectomy with colpo-urethrocystopexy, Marshall-Marchetti-Krantz type (procedure)"
           },

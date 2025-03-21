@@ -80,12 +80,40 @@
             "display": "Congenital total cataract (disorder)"
           },
           {
+            "code": "335831000119107",
+            "display": "Congenital posterior subcapsular polar cataract of right eye (disorder)"
+          },
+          {
             "code": "335841000119103",
             "display": "Congenital nuclear cataract of right eye (disorder)"
           },
           {
+            "code": "335851000119101",
+            "display": "Congenital combined form cataract of right eye (disorder)"
+          },
+          {
+            "code": "341441000119102",
+            "display": "Congenital posterior subcapsular polar cataract of left eye (disorder)"
+          },
+          {
             "code": "341451000119100",
             "display": "Congenital nuclear cataract of left eye (disorder)"
+          },
+          {
+            "code": "341461000119103",
+            "display": "Congenital combined form cataract of left eye (disorder)"
+          },
+          {
+            "code": "342821000119103",
+            "display": "Congenital posterior subcapsular polar cataract (disorder)"
+          },
+          {
+            "code": "346691000119104",
+            "display": "Congenital posterior subcapsular polar cataract of bilateral eyes (disorder)"
+          },
+          {
+            "code": "346701000119104",
+            "display": "Congenital nuclear cataract of bilateral eyes (disorder)"
           },
           {
             "code": "346711000119101",
@@ -94,6 +122,14 @@
           {
             "code": "346731000119106",
             "display": "Congenital anterior subcapsular polar cataract of bilateral eyes (disorder)"
+          },
+          {
+            "code": "348321000119108",
+            "display": "Congenital zonular cataract of right eye (disorder)"
+          },
+          {
+            "code": "348771000119108",
+            "display": "Congenital zonular cataract of left eye (disorder)"
           },
           {
             "code": "349281000119109",

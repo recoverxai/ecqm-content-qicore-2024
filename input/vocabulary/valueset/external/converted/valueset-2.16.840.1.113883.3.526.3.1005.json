@@ -52,6 +52,10 @@
             "display": "Presenile dementia (disorder)"
           },
           {
+            "code": "1339031006",
+            "display": "Dementia caused by ionizing radiation (disorder)"
+          },
+          {
             "code": "14070001",
             "display": "Multi-infarct dementia with depression (disorder)"
           },

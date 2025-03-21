@@ -31,20 +31,10 @@
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:11ccb6b8-564d-4f6c-85bf-d8219ad5d6f3",
-    "timestamp": "2024-12-01T19:50:09-05:00",
+    "identifier": "urn:uuid:fd04dbb6-53ed-4b28-9614-99e304e202da",
+    "timestamp": "2025-03-20T16:35:26-04:00",
     "total": 6,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.ama-assn.org/go/cpt",

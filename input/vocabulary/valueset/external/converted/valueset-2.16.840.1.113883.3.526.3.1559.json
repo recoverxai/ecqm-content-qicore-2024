@@ -36,6 +36,18 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1137552000",
+            "display": "Scar of posterior pole of retina of left eye (disorder)"
+          },
+          {
+            "code": "1137553005",
+            "display": "Scar of posterior pole of retina of right eye (disorder)"
+          },
+          {
+            "code": "1137554004",
+            "display": "Scar of posterior pole of retina of bilateral eyes (disorder)"
+          },
+          {
             "code": "1222888000",
             "display": "Scar of posterior pole of retina (disorder)"
           },
@@ -62,6 +74,10 @@
           {
             "code": "18410006",
             "display": "Scarred macula (disorder)"
+          },
+          {
+            "code": "30537002",
+            "display": "Peripheral scar of posterior pole of retina of eye (disorder)"
           },
           {
             "code": "344341000119106",

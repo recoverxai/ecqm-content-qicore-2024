@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:c1ec504b-4bd2-4194-a621-47fc39356949",
-    "timestamp": "2024-12-01T19:46:22-05:00",
+    "identifier": "urn:uuid:dd335aa3-d19c-4110-a0ed-7bbfbb9b6be5",
+    "timestamp": "2025-03-20T16:18:53-04:00",
     "total": 8,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

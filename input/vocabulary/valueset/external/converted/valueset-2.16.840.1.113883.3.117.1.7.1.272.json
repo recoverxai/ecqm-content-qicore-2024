@@ -1757,6 +1757,10 @@
             "display": "Anastomosis of ureter to urinary bladder (procedure)"
           },
           {
+            "code": "176025009",
+            "display": "Ileal replacement of ureter (procedure)"
+          },
+          {
             "code": "176106009",
             "display": "Radical cystoprostatourethrectomy (procedure)"
           },
@@ -2019,6 +2023,10 @@
           {
             "code": "39214002",
             "display": "Closure of rectovesicovaginal fistula (procedure)"
+          },
+          {
+            "code": "40173000",
+            "display": "Incision of urinary bladder (procedure)"
           },
           {
             "code": "41416003",

@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:1d3f1d54-13cf-4bfa-990d-e257adf5b6fd",
-    "timestamp": "2024-12-01T19:50:28-05:00",
-    "total": 90,
+    "identifier": "urn:uuid:323daef4-59aa-4132-84d5-7f8c952be118",
+    "timestamp": "2025-03-20T16:35:45-04:00",
+    "total": 92,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -283,6 +273,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "345971000119104",
+        "display": "Generalized disseminated chorioretinitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "346251000119106",
         "display": "Disseminated chorioretinitis of bilateral eyes (disorder)"
       },
@@ -459,6 +455,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "699763005",
         "display": "Focal choroiditis of posterior pole of eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "711616006",
+        "display": "Chorioretinitis caused by Cytomegalovirus (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

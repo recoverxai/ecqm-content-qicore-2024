@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:1762f15f-19cf-407b-8a12-e47186f4654d",
-    "timestamp": "2024-12-01T19:44:41-05:00",
-    "total": 57,
+    "identifier": "urn:uuid:5883e88e-027a-4eca-ac6e-9858f13b9fc3",
+    "timestamp": "2025-03-20T16:16:31-04:00",
+    "total": 68,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -75,6 +65,30 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "12163000",
         "display": "Needling of secondary cataract (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231296008",
+        "display": "Extraction of cataract of bilateral eyes (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231299001",
+        "display": "Extraction of cataract of right eye (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231300009",
+        "display": "Extraction of cataract of left eye (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1236928007",
+        "display": "Surgery of cataract of bilateral eyes (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -139,8 +153,26 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "3700004",
+        "display": "Erysiphake extraction of cataract by intracapsular approach (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "385468004",
         "display": "Cataract extraction and implantation of intraocular lens (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "38621000087109",
+        "display": "Extraction of cataract and implantation of intraocular lens in left eye (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "38631000087106",
+        "display": "Extraction of cataract and implantation of intraocular lens in right eye (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -309,6 +341,30 @@
         "version": "2025",
         "code": "66984",
         "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1 stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification); without endoscopic cyclophotocoagulation"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "66987",
+        "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1-stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification), complex, requiring devices or techniques not generally used in routine cataract surgery (eg, iris expansion device, suture support for intraocular lens, or primary posterior capsulorrhexis) or performed on patients in the amblyogenic developmental stage; with endoscopic cyclophotocoagulation"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "66988",
+        "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1 stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification); with endoscopic cyclophotocoagulation"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "66989",
+        "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1-stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification), complex, requiring devices or techniques not generally used in routine cataract surgery (eg, iris expansion device, suture support for intraocular lens, or primary posterior capsulorrhexis) or performed on patients in the amblyogenic developmental stage; with insertion of intraocular (eg, trabecular meshwork, supraciliary, suprachoroidal) anterior segment aqueous drainage device, without extraocular reservoir, internal approach, one or more"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "version": "2025",
+        "code": "66991",
+        "display": "Extracapsular cataract removal with insertion of intraocular lens prosthesis (1 stage procedure), manual or mechanical technique (eg, irrigation and aspiration or phacoemulsification); with insertion of intraocular (eg, trabecular meshwork, supraciliary, suprachoroidal) anterior segment aqueous drainage device, without extraocular reservoir, internal approach, one or more"
       },
       {
         "system": "http://snomed.info/sct",

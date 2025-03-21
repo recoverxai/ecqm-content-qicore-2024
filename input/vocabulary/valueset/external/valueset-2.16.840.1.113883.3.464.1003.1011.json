@@ -30,20 +30,10 @@
   "date": "2024-01-12T01:09:53-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:a55da3e6-93c0-44d9-a125-9dbd68d4c056",
-    "timestamp": "2024-12-01T19:50:22-05:00",
+    "identifier": "urn:uuid:4f08f397-4c5f-433e-8b1d-f4b5f2cfe62e",
+    "timestamp": "2025-03-20T16:35:38-04:00",
     "total": 15,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

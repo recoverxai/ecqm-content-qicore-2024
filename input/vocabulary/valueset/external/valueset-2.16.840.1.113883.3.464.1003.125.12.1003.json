@@ -31,20 +31,10 @@
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:69374a27-ddce-4642-a0d4-d3ed26c0c88b",
-    "timestamp": "2024-12-01T19:49:23-05:00",
+    "identifier": "urn:uuid:ea9f31e7-6a51-4e31-8780-8d586f2f8081",
+    "timestamp": "2025-03-20T16:34:12-04:00",
     "total": 7,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.ada.org/cdt",

@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.3157.4048",
   "meta": {
     "versionId": "10",
-    "lastUpdated": "2024-09-06T09:11:12.000-04:00",
+    "lastUpdated": "2025-02-11T14:13:04.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -24,34 +24,18 @@
     }
   ],
   "version": "20190216",
-  "name": "CardiopulmonaryArrest",
-  "title": "Cardiopulmonary Arrest",
+  "name": "CardiopulmonaryEmergency",
+  "title": "Cardiopulmonary Emergency",
   "status": "active",
   "experimental": false,
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "urn:uuid:61ed48f2-f81a-4a85-9063-8058f51564f2",
-    "timestamp": "2024-12-01T19:48:28-05:00",
-    "total": 58,
+    "identifier": "urn:uuid:392c1b34-8cd8-48ff-b951-6ec4d839b775",
+    "timestamp": "2025-03-20T16:20:58-04:00",
+    "total": 38,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "164895002",
-        "display": "Electrocardiographic ventricular tachycardia (finding)"
-      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -61,74 +45,8 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "21421000119109",
-        "display": "Nonsustained paroxysmal ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "233905006",
-        "display": "Ventricular tachycardia with normal heart (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "233907003",
-        "display": "Induced ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "233909000",
-        "display": "Right ventricular outflow tract ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "233927002",
         "display": "Cardiac arrest with successful resuscitation (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "234172002",
-        "display": "Electromechanical dissociation (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "251156000",
-        "display": "Wide QRS ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "251157009",
-        "display": "Narrow QRS ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "251158004",
-        "display": "Ventricular tachycardia, monomorphic (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "251159007",
-        "display": "Ventricular tachycardia, polymorphic (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "251160002",
-        "display": "Ventricular tachycardia, polymorphic without Q-T prolongation (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "25569003",
-        "display": "Ventricular tachycardia (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -181,18 +99,6 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "418872003",
-        "display": "Fascicular ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "419671004",
-        "display": "Catecholaminergic polymorphic ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "422970001",
         "display": "Cardiac arrest due to trauma (disorder)"
       },
@@ -223,12 +129,6 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "425856008",
-        "display": "Electrocardiogram: paroxysmal ventricular tachycardia (finding)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "426525004",
         "display": "Sustained ventricular tachycardia (disorder)"
       },
@@ -247,18 +147,6 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "442559009",
-        "display": "Bundle branch reentrant ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "444658006",
-        "display": "Nonsustained ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "5561000124105",
         "display": "Idiopathic cardiac arrest (disorder)"
       },
@@ -271,12 +159,6 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "66657009",
-        "display": "Paroxysmal ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "699748007",
         "display": "Cardiorespiratory arrest with successful resuscitation (disorder)"
       },
@@ -285,24 +167,6 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "703162001",
         "display": "Bradycardic cardiac arrest (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "708124001",
-        "display": "Recurrent ventricular tachycardia (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "713420008",
-        "display": "Electrocardiographic ventricular tachycardia polymorphic (finding)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "713421007",
-        "display": "Electrocardiographic ventricular tachycardia monomorphic (finding)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -343,20 +207,8 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
-        "code": "I47.20",
-        "display": "Ventricular tachycardia, unspecified"
-      },
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "version": "2025",
         "code": "I47.21",
         "display": "Torsades de pointes"
-      },
-      {
-        "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "version": "2025",
-        "code": "I47.29",
-        "display": "Other ventricular tachycardia"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
@@ -387,6 +239,24 @@
         "version": "2025",
         "code": "I97.711",
         "display": "Intraoperative cardiac arrest during other surgery"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.00",
+        "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.01",
+        "display": "Acute respiratory failure with hypoxia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.02",
+        "display": "Acute respiratory failure with hypercapnia"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

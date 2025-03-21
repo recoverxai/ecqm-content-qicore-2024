@@ -31,20 +31,10 @@
   "date": "2021-02-14T01:00:26-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:dae1c3d4-8057-47f0-b86b-e2fe6afa1261",
-    "timestamp": "2024-12-01T19:49:08-05:00",
-    "total": 8,
+    "identifier": "urn:uuid:e3a9af47-e844-4c68-ba7b-f3c40e4d523e",
+    "timestamp": "2025-03-20T16:33:50-04:00",
+    "total": 10,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -75,6 +65,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "678211000119100",
         "display": "Rubeosis iridis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "82551000119103",
+        "display": "Rubeosis iridis due to type 2 diabetes mellitus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "82581000119105",
+        "display": "Rubeosis iridis due to type 1 diabetes mellitus (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

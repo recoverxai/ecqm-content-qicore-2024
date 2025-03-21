@@ -30,26 +30,82 @@
   "date": "2024-02-08T01:10:25-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:3ef4c361-a54a-49b8-a06b-dff8dd1e4fec",
-    "timestamp": "2024-12-01T19:43:45-05:00",
-    "total": 12,
+    "identifier": "urn:uuid:79303d9c-e334-42d8-af79-ee98d35a986c",
+    "timestamp": "2025-03-20T16:14:16-04:00",
+    "total": 24,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15960061000119102",
+        "display": "Unstable angina co-occurrent and due to coronary arteriosclerosis (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15960101000119104",
+        "display": "Angina due to coronary arteriosclerosis in artery of transplanted heart (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15960141000119102",
+        "display": "Angina co-occurrent and due to coronary arteriosclerosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15960341000119104",
+        "display": "Unstable angina due to arteriosclerosis of coronary artery bypass graft of transplanted heart (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15960461000119105",
+        "display": "Unstable angina due to arteriosclerosis of autologous arterial coronary artery bypass graft (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15960541000119107",
+        "display": "Unstable angina due to arteriosclerosis of autologous vein coronary artery bypass graft (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15960701000119100",
+        "display": "Angina due to arteriosclerosis of coronary artery bypass graft of transplanted heart (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15960741000119103",
+        "display": "Preinfarction syndrome due to arteriosclerosis of nonautologous biological coronary artery bypass graft (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16754391000119100",
+        "display": "Stable angina due to coronary arteriosclerosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "19057007",
+        "display": "Status anginosus (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "194828000",
         "display": "Angina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "21470009",
+        "display": "Syncope anginosa (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -96,8 +152,14 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
-        "code": "I20.8",
-        "display": "Other forms of angina pectoris"
+        "code": "I20.2",
+        "display": "Refractory angina pectoris"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "I20.81",
+        "display": "Angina pectoris with coronary microvascular dysfunction"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

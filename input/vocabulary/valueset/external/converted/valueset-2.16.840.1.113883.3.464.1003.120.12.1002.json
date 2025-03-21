@@ -40,6 +40,14 @@
             "display": "HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by Probe with amplification"
           },
           {
+            "code": "104762-0",
+            "display": "HIV 1 RNA [Log #/volume] in Serum or Plasma by Molecular genetics method"
+          },
+          {
+            "code": "104781-0",
+            "display": "HIV 1 RNA [#/volume] in Serum or Plasma by Molecular genetics method"
+          },
+          {
             "code": "20447-9",
             "display": "HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection"
           },

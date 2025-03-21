@@ -31,36 +31,26 @@
   "date": "2021-02-20T01:02:00-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:c51f03c9-1581-4e5d-94ff-7de49646a718",
-    "timestamp": "2024-12-01T19:48:47-05:00",
+    "identifier": "urn:uuid:e8952b4f-95d7-489b-a8fd-8a24d91dfbfb",
+    "timestamp": "2025-03-20T16:21:13-04:00",
     "total": 3,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1804799",
         "display": "alteplase 100 MG Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1804804",
         "display": "alteplase 50 MG Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "313212",
         "display": "tenecteplase 50 MG Injection"
       }

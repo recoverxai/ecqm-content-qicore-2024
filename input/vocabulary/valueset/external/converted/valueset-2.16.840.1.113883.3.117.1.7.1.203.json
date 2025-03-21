@@ -52,6 +52,10 @@
             "display": "Destruction of Conduction Mechanism, Open Approach"
           },
           {
+            "code": "02583ZF",
+            "display": "Destruction of Conduction Mechanism using Irreversible Electroporation, Percutaneous Approach"
+          },
+          {
             "code": "02583ZZ",
             "display": "Destruction of Conduction Mechanism, Percutaneous Approach"
           },
@@ -64,6 +68,10 @@
       {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "1332525002",
+            "display": "Cardiac ablation for atrial fibrillation (procedure)"
+          },
           {
             "code": "175095005",
             "display": "Open ablation of atrioventricular node (procedure)"

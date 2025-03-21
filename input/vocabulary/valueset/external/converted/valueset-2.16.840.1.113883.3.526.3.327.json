@@ -36,6 +36,14 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1306699009",
+            "display": "Stable treated proliferative retinopathy due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "1306700005",
+            "display": "Stable treated proliferative retinopathy of bilateral eyes due to diabetes mellitus (disorder)"
+          },
+          {
             "code": "193349004",
             "display": "Preproliferative retinopathy due to diabetes mellitus (disorder)"
           },

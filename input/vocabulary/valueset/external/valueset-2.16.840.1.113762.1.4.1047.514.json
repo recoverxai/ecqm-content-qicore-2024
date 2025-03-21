@@ -31,21 +31,53 @@
   "date": "2019-03-13T01:00:10-04:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:d127cf7f-3a7c-4b78-9ec5-86c4ee9f80cc",
-    "timestamp": "2024-12-01T19:43:12-05:00",
-    "total": 10,
+    "identifier": "urn:uuid:95431229-ea52-4d9d-881d-1d4a94a230c9",
+    "timestamp": "2025-03-20T16:13:48-04:00",
+    "total": 39,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "10725009",
+        "display": "Benign hypertension (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1078301000112109",
+        "display": "Multiple drug intolerant hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1204139007",
+        "display": "Hypertension due to congenital adrenal hyperplasia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208845005",
+        "display": "Secondary hypertension due to congenital heart disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "194785008",
+        "display": "Secondary benign hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "194788005",
+        "display": "Hypertension secondary to endocrine disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "194791005",
+        "display": "Hypertension caused by drug (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -55,8 +87,44 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "198997005",
+        "display": "Pre-eclampsia or eclampsia with pre-existing hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "23130000",
+        "display": "Paroxysmal hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "237281009",
+        "display": "Moderate proteinuric hypertension of pregnancy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "24042004",
+        "display": "Chronic hypertension complicating AND/OR reason for care during puerperium (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "24184005",
         "display": "Increased blood pressure (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "28119000",
+        "display": "Renal hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "307632004",
+        "display": "Non-proteinuric hypertension of pregnancy (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -73,14 +141,62 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "37618003",
+        "display": "Chronic hypertension complicating AND/OR reason for care during pregnancy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "38341003",
         "display": "Hypertensive disorder, systemic arterial (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "397748008",
+        "display": "Hypertension with albuminuria (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "398254007",
+        "display": "Pre-eclampsia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "40521000119100",
+        "display": "Postpartum pregnancy-induced hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "427889009",
+        "display": "Hypertension associated with transplantation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "429198000",
+        "display": "Exertional hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "429457004",
+        "display": "Systolic essential hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "443482000",
         "display": "Hypertensive urgency (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "461301000124109",
+        "display": "Resistant hypertensive disorder (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -99,6 +215,54 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "56218007",
         "display": "Systolic hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "59720008",
+        "display": "Sustained diastolic hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "65518004",
+        "display": "Labile diastolic hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "698638005",
+        "display": "Pregnancy induced hypertension with pulmonary edema (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "74451002",
+        "display": "Secondary diastolic hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "762463000",
+        "display": "Diastolic hypertension co-occurrent with systolic hypertension (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "766937004",
+        "display": "Hypertension due to gain-of-function mutation in mineralocorticoid receptor (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "871642009",
+        "display": "Hypertension due to aortic arch obstruction (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "89242004",
+        "display": "Malignant secondary hypertension (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

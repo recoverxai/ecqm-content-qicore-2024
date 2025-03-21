@@ -556,6 +556,10 @@
             "display": "Intracranial meningioma (disorder)"
           },
           {
+            "code": "307649006",
+            "display": "Microglioma (disorder)"
+          },
+          {
             "code": "350841000119107",
             "display": "Benign neoplasm of infratentorial brain (disorder)"
           },
@@ -1379,6 +1383,10 @@
           {
             "code": "C83.31",
             "display": "Diffuse large B-cell lymphoma, lymph nodes of head, face, and neck"
+          },
+          {
+            "code": "C83.390",
+            "display": "Primary central nervous system lymphoma"
           },
           {
             "code": "C83.50",

@@ -30,20 +30,10 @@
   "date": "2023-07-22T01:12:36-04:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:25087678-3489-43b9-9bc8-f5b3b0868ef4",
-    "timestamp": "2024-12-01T19:46:33-05:00",
-    "total": 589,
+    "identifier": "urn:uuid:46580311-acff-4971-ad88-d82133862d04",
+    "timestamp": "2025-03-20T16:19:01-04:00",
+    "total": 596,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -2844,6 +2834,42 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1287712001",
+        "display": "Revision of prosthetic total arthroplasty of bilateral knee joints (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1290058005",
+        "display": "Conversion from cemented hybrid prosthetic replacement of hip joint (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1290059002",
+        "display": "Conversion from total prosthetic replacement of hip joint (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1290160009",
+        "display": "Revision of total prosthetic replacement of knee joint (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1290163006",
+        "display": "Revision of prosthetic replacement of ankle joint (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1290165004",
+        "display": "Revision of total prosthetic replacement of ankle joint (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "16117008",
         "display": "Revision of total knee arthroplasty, all components (procedure)"
       },
@@ -3026,6 +3052,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "179980003",
         "display": "Conversion from hybrid total replacement ankle joint (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "180117008",
+        "display": "Correction of congenital deformity of lower limb (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -3574,8 +3606,8 @@
         "display": "Removal of internal fixation device of vertebra (procedure)"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "S2118",
         "display": "Metal-on-metal total hip resurfacing, including acetabular and femoral components"
       }

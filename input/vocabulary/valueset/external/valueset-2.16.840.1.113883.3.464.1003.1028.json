@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:e530cf84-2b3b-4803-b2a9-8164f115993d",
-    "timestamp": "2024-12-01T19:43:33-05:00",
+    "identifier": "urn:uuid:d268115c-a349-4db8-b2b5-0df0b33f12dc",
+    "timestamp": "2025-03-20T16:14:06-04:00",
     "total": 13,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",

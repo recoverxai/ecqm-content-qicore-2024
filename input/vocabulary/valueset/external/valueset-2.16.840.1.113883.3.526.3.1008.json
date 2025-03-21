@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.526.3.1008",
   "meta": {
     "versionId": "30",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2025-01-30T16:13:05.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -29,23 +29,19 @@
   "status": "active",
   "experimental": false,
   "date": "2022-03-03T18:46:01-05:00",
-  "publisher": "Mathematica",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:39f7518d-ad35-4e00-bb96-a40c843dae51",
-    "timestamp": "2024-12-01T19:48:54-05:00",
-    "total": 27,
+    "identifier": "urn:uuid:a1b6b84f-e049-4f3b-9d44-94609ac5f0cd",
+    "timestamp": "2025-03-20T16:21:20-04:00",
+    "total": 29,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296859006",
+        "display": "Procedure declined (situation)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -147,6 +143,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "275936005",
         "display": "Patient noncompliance - general (situation)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "31021000119100",
+        "display": "Screening declined (situation)"
       },
       {
         "system": "http://snomed.info/sct",

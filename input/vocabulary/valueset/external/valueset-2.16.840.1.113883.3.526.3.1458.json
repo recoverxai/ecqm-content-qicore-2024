@@ -31,26 +31,28 @@
   "date": "2021-02-14T01:00:26-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:2dbfa5a7-5a07-4f76-8559-589dbf09d08f",
-    "timestamp": "2024-12-01T19:48:54-05:00",
-    "total": 18,
+    "identifier": "urn:uuid:74e5f433-2b29-4c44-a9a1-25127199834d",
+    "timestamp": "2025-03-20T16:21:20-04:00",
+    "total": 23,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1172900005",
+        "display": "Progressive microcephaly, seizures, cortical blindness, developmental delay syndrome (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "128329001",
         "display": "Disorder of visual cortex (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15913031000119100",
+        "display": "Cortical blindness of bilateral sides of brain (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -97,6 +99,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "39194005",
+        "display": "Visual epilepsy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "413924001",
+        "display": "Cortical visual impairment (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "68574006",
         "display": "Cortical blindness (disorder)"
       },
@@ -105,6 +119,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "732251003",
         "display": "Cortical blindness, intellectual disability, polydactyly syndrome (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "773548008",
+        "display": "Early-onset epileptic encephalopathy, cortical blindness, intellectual disability, facial dysmorphism syndrome (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

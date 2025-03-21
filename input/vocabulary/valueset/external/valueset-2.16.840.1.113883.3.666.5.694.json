@@ -30,20 +30,10 @@
   "date": "2024-02-08T01:10:25-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:4cfb3f52-a165-4d8c-87e9-8ac772545356",
-    "timestamp": "2024-12-01T19:48:53-05:00",
-    "total": 340,
+    "identifier": "urn:uuid:009e426f-c644-40bf-b7e9-cc7daefef710",
+    "timestamp": "2025-03-20T16:21:19-04:00",
+    "total": 341,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -1844,6 +1834,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "119565001",
         "display": "Coronary artery bypass graft, anastomosis of artery of thorax to coronary artery (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1287561002",
+        "display": "Coronary artery bypass using robotic assistance (procedure)"
       },
       {
         "system": "http://snomed.info/sct",

@@ -1904,6 +1904,30 @@
             "display": "Arthroscopic reconstruction of acetabular labrum (procedure)"
           },
           {
+            "code": "1287712001",
+            "display": "Revision of prosthetic total arthroplasty of bilateral knee joints (procedure)"
+          },
+          {
+            "code": "1290058005",
+            "display": "Conversion from cemented hybrid prosthetic replacement of hip joint (procedure)"
+          },
+          {
+            "code": "1290059002",
+            "display": "Conversion from total prosthetic replacement of hip joint (procedure)"
+          },
+          {
+            "code": "1290160009",
+            "display": "Revision of total prosthetic replacement of knee joint (procedure)"
+          },
+          {
+            "code": "1290163006",
+            "display": "Revision of prosthetic replacement of ankle joint (procedure)"
+          },
+          {
+            "code": "1290165004",
+            "display": "Revision of total prosthetic replacement of ankle joint (procedure)"
+          },
+          {
             "code": "16117008",
             "display": "Revision of total knee arthroplasty, all components (procedure)"
           },
@@ -2026,6 +2050,10 @@
           {
             "code": "179980003",
             "display": "Conversion from hybrid total replacement ankle joint (procedure)"
+          },
+          {
+            "code": "180117008",
+            "display": "Correction of congenital deformity of lower limb (procedure)"
           },
           {
             "code": "19954002",
@@ -2404,7 +2432,7 @@
         ]
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
         "concept": [
           {
             "code": "S2118",

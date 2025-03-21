@@ -31,26 +31,154 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:c3f7edf9-4c6e-4ce8-9ed1-d543a9b5fef1",
-    "timestamp": "2024-12-01T19:49:14-05:00",
-    "total": 116,
+    "identifier": "urn:uuid:d176da41-6e60-418f-be7c-8e05158713b5",
+    "timestamp": "2025-03-20T16:33:56-04:00",
+    "total": 161,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1187639002",
+        "display": "Martinique crinkled retinal pigment epitheliopathy (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231253003",
+        "display": "Macular hole due to degenerative progressive high myopia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285507004",
+        "display": "Nonexudative neovascular age-related macular degeneration (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285513008",
+        "display": "Lamellar macular hole (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285540008",
+        "display": "Pachychoroid neovasculopathy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285589003",
+        "display": "Nongeographic atrophy of macula lutea (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1296526000",
+        "display": "Disciform macular degeneration (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1338026004",
+        "display": "Disorder of macula of retina caused by radiation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1338027008",
+        "display": "Disorder of macula of retina due to and following radiotherapy (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "14046000",
         "display": "Cystoid macular retinal degeneration (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15628531000119107",
+        "display": "Fundus flavimaculatus of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15628571000119105",
+        "display": "Fundus flavimaculatus of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15628611000119101",
+        "display": "Fundus flavimaculatus of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15628771000119100",
+        "display": "Forster-Fuchs spot of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15628811000119100",
+        "display": "Forster-Fuchs spot of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15628851000119104",
+        "display": "Forster-Fuchs spot of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15631531000119100",
+        "display": "Scarred macula of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15631611000119106",
+        "display": "Scarred macula of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15639131000119107",
+        "display": "Macular edema of retina of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15639181000119108",
+        "display": "Macular edema of retina of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15639231000119102",
+        "display": "Macular edema of retina of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16320791000119106",
+        "display": "Myopic macular degeneration of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16320831000119100",
+        "display": "Myopic macular degeneration of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "16320871000119102",
+        "display": "Myopic macular degeneration of left eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -87,6 +215,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "232013002",
         "display": "Macular retinoschisis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "232014008",
+        "display": "Macular and peripheral retinoschisis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -325,14 +459,32 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "331821000119106",
+        "display": "Toxic disorder of macula lutea of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "335531000119109",
         "display": "Cystoid macular degeneration of right retina (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "337441000119109",
+        "display": "Toxic disorder of macula lutea of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "341141000119106",
         "display": "Cystoid macular degeneration of left retina (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "343231000119106",
+        "display": "Toxic maculopathy of bilateral eyes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -469,8 +621,86 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677851000119101",
+        "display": "Macular hole of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677861000119104",
+        "display": "Full thickness macular hole of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677871000119105",
+        "display": "Partial thickness macular hole of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677881000119108",
+        "display": "Macular pseudohole of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677901000119105",
+        "display": "Macular hole of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677911000119108",
+        "display": "Full thickness macular hole of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677921000119101",
+        "display": "Partial thickness macular hole of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677931000119103",
+        "display": "Macular pseudohole of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677951000119109",
+        "display": "Macular hole of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677961000119106",
+        "display": "Full thickness macular hole of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677971000119100",
+        "display": "Partial thickness macular hole of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "677981000119102",
+        "display": "Macular pseudohole of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "70099003",
         "display": "Stargardt's disease (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "725590001",
+        "display": "Butterfly-shaped pigmentary macular dystrophy (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -481,8 +711,38 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "769244003",
+        "display": "Disorder of right macula due to diabetes mellitus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "769245002",
+        "display": "Disorder of left macula due to diabetes mellitus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "770097006",
+        "display": "Clinically significant macular edema due to diabetes mellitus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "774010000",
+        "display": "Scarred macula of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "789220007",
         "display": "Atrophy of macula lutea (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "860721006",
+        "display": "Disorder of macula of bilateral eyes due to diabetes mellitus (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

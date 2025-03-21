@@ -44,6 +44,10 @@
             "display": "Replacement of leadless cardiac pacemaker (procedure)"
           },
           {
+            "code": "1287918007",
+            "display": "Repair of cardiac pacemaker pocket (procedure)"
+          },
+          {
             "code": "175135009",
             "display": "Introduction of cardiac pacemaker system via vein (procedure)"
           },

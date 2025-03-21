@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 FHIR_SERVER_URL = "http://localhost:8089/fhir/ValueSet"
 
-VALUESET_DIRECTORY = "input/vocabulary/valueset/external/converted"
+VALUESET_DIRECTORY = "./input/vocabulary/valueset/external/converted"
 
 def load_valuesets():
   print("Loading valuesets...")

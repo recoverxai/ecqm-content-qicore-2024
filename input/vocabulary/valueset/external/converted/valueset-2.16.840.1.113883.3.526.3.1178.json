@@ -124,6 +124,14 @@
             "display": "Atenolol adverse reaction (disorder)"
           },
           {
+            "code": "720665007",
+            "display": "Adverse reaction caused by metoprolol succinate (disorder)"
+          },
+          {
+            "code": "720666008",
+            "display": "Adverse reaction caused by metoprolol tartrate (disorder)"
+          },
+          {
             "code": "772020009",
             "display": "Adverse reaction caused by nebivolol (disorder)"
           }

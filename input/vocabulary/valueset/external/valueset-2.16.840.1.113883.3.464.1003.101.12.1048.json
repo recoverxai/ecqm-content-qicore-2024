@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "HRSA - HAB",
   "expansion": {
-    "identifier": "urn:uuid:c8302602-02e4-4876-9099-059853a4d80e",
-    "timestamp": "2024-12-01T19:48:00-05:00",
+    "identifier": "urn:uuid:2353f10a-afd6-4452-a5c3-de1f8ee2d5bf",
+    "timestamp": "2025-03-20T16:20:29-04:00",
     "total": 15,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

@@ -31,20 +31,10 @@
   "date": "2020-03-07T01:00:21-05:00",
   "publisher": "Lantana EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:a4db2536-907b-4532-961e-e1176066644c",
-    "timestamp": "2024-12-01T19:44:31-05:00",
+    "identifier": "urn:uuid:7f20fa74-0e5f-4d14-82be-8547a0782c09",
+    "timestamp": "2025-03-20T16:16:20-04:00",
     "total": 3,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

@@ -218,6 +218,10 @@
             "display": "Vaginal delivery, medical personnel present (procedure)"
           },
           {
+            "code": "2321005",
+            "display": "Delivery by Ritgen maneuver (procedure)"
+          },
+          {
             "code": "236973005",
             "display": "Delivery procedure (procedure)"
           },

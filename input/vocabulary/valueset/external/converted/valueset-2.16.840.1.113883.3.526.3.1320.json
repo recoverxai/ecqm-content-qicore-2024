@@ -36,6 +36,22 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "1217634001",
+            "display": "Cystoid macular edema following cataract surgery (disorder)"
+          },
+          {
+            "code": "15639131000119107",
+            "display": "Macular edema of retina of right eye (disorder)"
+          },
+          {
+            "code": "15639181000119108",
+            "display": "Macular edema of retina of left eye (disorder)"
+          },
+          {
+            "code": "15639231000119102",
+            "display": "Macular edema of retina of bilateral eyes (disorder)"
+          },
+          {
             "code": "193350004",
             "display": "Advanced maculopathy due to diabetes mellitus (disorder)"
           },
@@ -46,6 +62,14 @@
           {
             "code": "232020009",
             "display": "Disorder of macula due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "232042005",
+            "display": "Macular edema due to juvenile central retinal vein occlusion (disorder)"
+          },
+          {
+            "code": "232045007",
+            "display": "Macular edema due to hemispheric retinal vein occlusion (disorder)"
           },
           {
             "code": "312911008",
@@ -84,6 +108,18 @@
             "display": "Mixed maculopathy due to diabetes mellitus (disorder)"
           },
           {
+            "code": "335551000119103",
+            "display": "Cystoid macular edema of right retina (disorder)"
+          },
+          {
+            "code": "341161000119105",
+            "display": "Cystoid macular edema of left retina (disorder)"
+          },
+          {
+            "code": "346421000119104",
+            "display": "Cystoid macular edema of bilateral retinas (disorder)"
+          },
+          {
             "code": "37231002",
             "display": "Macular retinal edema (disorder)"
           },
@@ -92,12 +128,20 @@
             "display": "Macular edema not clinically significant due to diabetes mellitus (disorder)"
           },
           {
+            "code": "399872003",
+            "display": "Severe nonproliferative retinopathy with clinically significant macular edema due to diabetes mellitus (disorder)"
+          },
+          {
             "code": "399874002",
             "display": "High risk proliferative retinopathy with clinically significant macula edema due to diabetes mellitus (disorder)"
           },
           {
             "code": "399875001",
             "display": "Non-high-risk proliferative retinopathy with clinically significant macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "399877009",
+            "display": "Very severe nonproliferative retinopathy with clinically significant macular edema due to diabetes mellitus (disorder)"
           },
           {
             "code": "420486006",
@@ -128,8 +172,20 @@
             "display": "Macular edema due to type 2 diabetes mellitus (disorder)"
           },
           {
+            "code": "769221001",
+            "display": "Clinically significant macular edema of right eye due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "769222008",
+            "display": "Clinically significant macular edema of left eye due to diabetes mellitus (disorder)"
+          },
+          {
             "code": "770097006",
             "display": "Clinically significant macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "870421009",
+            "display": "Cystoid macular edema due to diabetes mellitus (disorder)"
           },
           {
             "code": "870529009",
@@ -142,6 +198,10 @@
           {
             "code": "871781003",
             "display": "Non centrally involved macular edema due to diabetes mellitus (disorder)"
+          },
+          {
+            "code": "97331000119101",
+            "display": "Macular edema and retinopathy due to type 2 diabetes mellitus (disorder)"
           }
         ]
       }

@@ -31,20 +31,10 @@
   "date": "2022-04-15T01:02:23-04:00",
   "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "urn:uuid:e985554c-caa3-4558-a801-427c83104b16",
-    "timestamp": "2024-12-01T19:43:08-05:00",
+    "identifier": "urn:uuid:43588b78-cf00-4318-9c1d-6240f0356119",
+    "timestamp": "2025-03-20T16:13:44-04:00",
     "total": 25,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

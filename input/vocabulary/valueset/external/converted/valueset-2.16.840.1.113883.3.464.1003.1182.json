@@ -99,6 +99,10 @@
             "display": "Malposition of prosthetic joint of hip (disorder)"
           },
           {
+            "code": "1287988000",
+            "display": "Dislocation of prosthesis of hip joint following total hip replacement (disorder)"
+          },
+          {
             "code": "240267008",
             "display": "Loosening of hip joint prosthesis (disorder)"
           },

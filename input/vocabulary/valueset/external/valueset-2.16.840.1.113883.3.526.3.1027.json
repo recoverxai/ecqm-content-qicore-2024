@@ -30,20 +30,10 @@
   "date": "2024-01-31T01:08:33-05:00",
   "publisher": "American Society of Clinical Oncology Steward",
   "expansion": {
-    "identifier": "urn:uuid:5ecfc178-a457-4c48-8731-3dfe4e0b6247",
-    "timestamp": "2024-12-01T19:45:11-05:00",
-    "total": 78,
+    "identifier": "urn:uuid:be5d1c07-f224-4805-8342-92eeaac58d5e",
+    "timestamp": "2025-03-20T16:17:02-04:00",
+    "total": 81,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -98,6 +88,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1259200004",
         "display": "Neoadjuvant antineoplastic chemotherapy (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1290226008",
+        "display": "Administration of antineoplastic agent via intravenous route (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1290228009",
+        "display": "Administration of antineoplastic agent via subcutaneous route (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -248,6 +250,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "4114003",
         "display": "Parenteral chemotherapy for malignant neoplasm (procedure)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "420965003",
+        "display": "Administration of prophylactic antineoplastic agent (procedure)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -508,8 +516,8 @@
         "display": "Unlisted chemotherapy procedure"
       },
       {
-        "system": "http://www.nlm.nih.gov/research/umls/hcpcs",
-        "version": "2024",
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "version": "2025",
         "code": "G0498",
         "display": "Chemotherapy administration, intravenous infusion technique; initiation of infusion in the office/clinic setting using office/clinic pump/supplies, with continuation of the infusion in the community setting (e.g., home, domiciliary, rest home or assisted living) using a portable pump provided by the office/clinic, includes follow up office/clinic visit at the conclusion of the infusion"
       }

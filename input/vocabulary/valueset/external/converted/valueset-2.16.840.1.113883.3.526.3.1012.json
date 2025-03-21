@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.526.3.1012",
   "meta": {
     "versionId": "22",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2025-01-09T10:12:10.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -29,7 +29,7 @@
   "status": "active",
   "experimental": false,
   "date": "2022-03-03T18:46:01-05:00",
-  "publisher": "NCQA PHEMUR",
+  "publisher": "American Academy of Neurology Steward",
   "compose": {
     "include": [
       {

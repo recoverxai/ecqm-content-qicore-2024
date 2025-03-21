@@ -48,6 +48,18 @@
             "display": "Cataract following rupture of capsule (disorder)"
           },
           {
+            "code": "331781000119101",
+            "display": "Cataract of right eye due to and following trauma (disorder)"
+          },
+          {
+            "code": "337401000119107",
+            "display": "Cataract of left eye due to and following trauma (disorder)"
+          },
+          {
+            "code": "343191000119102",
+            "display": "Cataract of bilateral eyes due to and following trauma (disorder)"
+          },
+          {
             "code": "34361001",
             "display": "Traumatic cataract (disorder)"
           },

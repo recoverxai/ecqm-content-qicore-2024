@@ -31,20 +31,10 @@
   "date": "2022-03-07T11:14:02-05:00",
   "publisher": "AHA Steward",
   "expansion": {
-    "identifier": "urn:uuid:cc7b0365-cd65-4a94-8014-e8a108b826e3",
-    "timestamp": "2024-12-01T19:47:25-05:00",
-    "total": 69,
+    "identifier": "urn:uuid:9319b1ed-cc69-4129-a2e0-df507adea386",
+    "timestamp": "2025-03-20T16:19:49-04:00",
+    "total": 74,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -181,6 +171,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "401000119107",
+        "display": "Asthma with irreversible airway obstruction (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "405944004",
         "display": "Asthmatic bronchitis (disorder)"
       },
@@ -277,6 +273,18 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "703953004",
+        "display": "Allergic asthma caused by Dermatophagoides pteronyssinus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "703954005",
+        "display": "Allergic asthma caused by Dermatophagoides farinae (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "707445000",
         "display": "Exacerbation of mild persistent asthma (disorder)"
       },
@@ -325,6 +333,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "735588005",
+        "display": "Uncomplicated allergic asthma (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "762521001",
         "display": "Exacerbation of allergic asthma (disorder)"
       },
@@ -333,6 +347,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "782520007",
         "display": "Exacerbation of allergic asthma due to infection (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "829976001",
+        "display": "Thunderstorm asthma (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

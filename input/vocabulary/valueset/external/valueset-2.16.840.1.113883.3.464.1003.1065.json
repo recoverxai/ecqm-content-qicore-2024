@@ -31,54 +31,44 @@
   "date": "2021-09-10T01:00:58-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:082a38f4-deef-4211-9924-27fbe36dfaab",
-    "timestamp": "2024-12-01T19:42:46-05:00",
+    "identifier": "urn:uuid:719b4ca3-d2ad-4522-97a8-1e2aa700021e",
+    "timestamp": "2025-03-20T16:13:11-04:00",
     "total": 6,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "104208",
         "display": "2 ML digoxin 0.25 MG/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "197604",
         "display": "digoxin 0.125 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "197606",
         "display": "digoxin 0.25 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "204504",
         "display": "1 ML digoxin 0.1 MG/ML Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "245273",
         "display": "digoxin 0.0625 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "393245",
         "display": "digoxin 0.05 MG/ML Oral Solution"
       }

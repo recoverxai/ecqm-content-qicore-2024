@@ -30,20 +30,10 @@
   "date": "2023-07-08T01:00:58-04:00",
   "publisher": "OPA Steward",
   "expansion": {
-    "identifier": "urn:uuid:fcb91f15-be0a-4f62-a7d0-a509a3114f1b",
-    "timestamp": "2024-12-01T19:48:50-05:00",
+    "identifier": "urn:uuid:c556cf5a-33c9-4e4a-acc9-c5bad524f46e",
+    "timestamp": "2025-03-20T16:21:16-04:00",
     "total": 57,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",

@@ -31,20 +31,10 @@
   "date": "2021-02-24T01:00:28-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:b646303d-42e5-484e-9ffc-00aa2e3c6628",
-    "timestamp": "2024-12-01T19:46:45-05:00",
-    "total": 52,
+    "identifier": "urn:uuid:38bf8d0c-02ba-4af0-a0d9-fd5b055066d9",
+    "timestamp": "2025-03-20T16:19:11-04:00",
+    "total": 53,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -69,6 +59,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "12939007",
         "display": "Chronic disorganized schizophrenia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1335862003",
+        "display": "Childhood-onset schizophrenia (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

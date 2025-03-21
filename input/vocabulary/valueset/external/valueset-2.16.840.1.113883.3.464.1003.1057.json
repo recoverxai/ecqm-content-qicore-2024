@@ -31,30 +31,20 @@
   "date": "2021-09-09T01:01:23-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:5e18c5b2-9cbc-4920-a7c9-4c2556689c76",
-    "timestamp": "2024-12-01T19:47:17-05:00",
+    "identifier": "urn:uuid:8de584f9-95ab-413a-9bf1-775ceb7bcdc1",
+    "timestamp": "2025-03-20T16:19:42-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "197928",
         "display": "meprobamate 200 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "197929",
         "display": "meprobamate 400 MG Oral Tablet"
       }

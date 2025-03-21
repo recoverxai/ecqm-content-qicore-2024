@@ -40,6 +40,34 @@
             "display": "Advanced open-angle glaucoma (disorder)"
           },
           {
+            "code": "1231243004",
+            "display": "High pressure primary open-angle glaucoma (disorder)"
+          },
+          {
+            "code": "1306287007",
+            "display": "Primary open angle glaucoma of left eye (disorder)"
+          },
+          {
+            "code": "1306288002",
+            "display": "Primary open angle glaucoma of right eye (disorder)"
+          },
+          {
+            "code": "1306289005",
+            "display": "Primary open angle glaucoma of bilateral eyes (disorder)"
+          },
+          {
+            "code": "1306884006",
+            "display": "Normal pressure primary open-angle glaucoma of left eye (disorder)"
+          },
+          {
+            "code": "1306885007",
+            "display": "Normal pressure primary open-angle glaucoma of right eye (disorder)"
+          },
+          {
+            "code": "1306886008",
+            "display": "Normal pressure primary open-angle glaucoma of bilateral eyes (disorder)"
+          },
+          {
             "code": "15633281000119103",
             "display": "Bilateral primary open angle glaucoma (disorder)"
           },

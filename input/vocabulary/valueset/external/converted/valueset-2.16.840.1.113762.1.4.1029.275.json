@@ -1060,6 +1060,18 @@
             "display": "Type 1 diabetes mellitus without complications"
           },
           {
+            "code": "E10.A0",
+            "display": "Type 1 diabetes mellitus, presymptomatic, unspecified"
+          },
+          {
+            "code": "E10.A1",
+            "display": "Type 1 diabetes mellitus, presymptomatic, Stage 1"
+          },
+          {
+            "code": "E10.A2",
+            "display": "Type 1 diabetes mellitus, presymptomatic, Stage 2"
+          },
+          {
             "code": "E11.00",
             "display": "Type 2 diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)"
           },

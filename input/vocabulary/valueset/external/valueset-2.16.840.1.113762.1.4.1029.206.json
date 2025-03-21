@@ -31,20 +31,10 @@
   "date": "2021-02-20T01:02:00-05:00",
   "publisher": "TJC EH Steward",
   "expansion": {
-    "identifier": "urn:uuid:b3b7c044-ed9d-47cd-b19e-92c00c30e844",
-    "timestamp": "2024-12-01T19:49:06-05:00",
+    "identifier": "urn:uuid:00ad7ac6-edfb-4aa1-a198-a07acec57147",
+    "timestamp": "2025-03-20T16:33:48-04:00",
     "total": 36,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",

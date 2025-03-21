@@ -30,20 +30,10 @@
   "date": "2024-01-17T01:08:53-05:00",
   "publisher": "AND Steward",
   "expansion": {
-    "identifier": "urn:uuid:cab07165-2700-41b3-b801-6509dcb03b3d",
-    "timestamp": "2024-12-01T19:50:15-05:00",
+    "identifier": "urn:uuid:97bc76e2-4f3d-48d1-b23d-0f0aab4fa9ab",
+    "timestamp": "2025-03-20T16:35:32-04:00",
     "total": 1,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

@@ -31,20 +31,10 @@
   "date": "2022-03-03T18:46:01-05:00",
   "publisher": "Mathematica",
   "expansion": {
-    "identifier": "urn:uuid:923e8597-2ec6-4483-98ea-661b6588938d",
-    "timestamp": "2024-12-01T19:43:38-05:00",
+    "identifier": "urn:uuid:fb51c843-12c8-489c-8464-5858ba8adc73",
+    "timestamp": "2025-03-20T16:14:10-04:00",
     "total": 10,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

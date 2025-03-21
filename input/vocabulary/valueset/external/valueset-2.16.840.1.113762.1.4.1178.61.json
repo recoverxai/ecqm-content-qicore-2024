@@ -31,20 +31,10 @@
   "date": "2022-02-18T01:02:46-05:00",
   "publisher": "AHA Steward",
   "expansion": {
-    "identifier": "urn:uuid:af89d8dc-4534-4baf-b0aa-99f69e63b071",
-    "timestamp": "2024-12-01T19:43:43-05:00",
+    "identifier": "urn:uuid:ce32cc6d-8677-4b40-bd86-20be8bbaad11",
+    "timestamp": "2025-03-20T16:14:14-04:00",
     "total": 8,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

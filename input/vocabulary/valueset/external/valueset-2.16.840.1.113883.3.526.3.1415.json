@@ -31,26 +31,22 @@
   "date": "2021-02-10T01:03:00-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:0ae2ee19-2684-45d9-99e1-b7ae7cce2498",
-    "timestamp": "2024-12-01T19:48:30-05:00",
-    "total": 30,
+    "identifier": "urn:uuid:a0acb56d-23f0-48b9-a713-18380b0043d4",
+    "timestamp": "2025-03-20T16:20:59-04:00",
+    "total": 46,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "10698009",
         "display": "Herpes zoster iridocyclitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1092761000119105",
+        "display": "Iridocyclitis caused by tuberculosis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -85,6 +81,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15678721000119100",
+        "display": "Iridocyclitis of bilateral eyes caused by Human alphaherpesvirus 1 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15678761000119105",
         "display": "Iridocyclitis of right eye due to herpes zoster (disorder)"
       },
@@ -93,6 +95,48 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15678801000119102",
         "display": "Iridocyclitis of left eye due to herpes zoster (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15678841000119100",
+        "display": "Iridocyclitis of bilateral eyes caused by Human alphaherpesvirus 3 (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15679361000119103",
+        "display": "Iridocyclitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15679401000119107",
+        "display": "Iridocyclitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15679441000119109",
+        "display": "Iridocyclitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15991591000119106",
+        "display": "Iridocyclitis of left eye caused by Mycobacterium tuberculosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15991631000119106",
+        "display": "Iridocyclitis of right eye caused by Mycobacterium tuberculosis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15991671000119109",
+        "display": "Iridocyclitis of bilateral eyes caused by Mycobacterium tuberculosis (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -109,20 +153,56 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "267619000",
-        "display": "Non-infectious anterior uveitis (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
-        "code": "29538005",
-        "display": "Glaucomatocyclitic crisis (disorder)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "30080002",
         "display": "Secondary syphilitic iridocyclitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332731000119108",
+        "display": "Recurrent iridocyclitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332921000119107",
+        "display": "Primary iridocyclitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "335061000119105",
+        "display": "Fuchs' heterochromic cyclitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "338341000119103",
+        "display": "Recurrent iridocyclitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "338531000119102",
+        "display": "Primary iridocyclitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "340671000119102",
+        "display": "Fuchs' heterochromic cyclitis of left eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "344111000119109",
+        "display": "Recurrent iridocyclitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "344301000119109",
+        "display": "Primary iridocyclitis of bilateral eyes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -135,6 +215,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "46916006",
         "display": "Secondary noninfectious iridocyclitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "680291000119102",
+        "display": "Fuchs' heterochromic cyclitis of bilateral eyes (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

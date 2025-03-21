@@ -60,8 +60,28 @@
             "display": "Presenile dementia (disorder)"
           },
           {
+            "code": "1259485008",
+            "display": "Dementia due to cerebral vasculitis (disorder)"
+          },
+          {
+            "code": "1259501004",
+            "display": "Dementia due to kuru (disorder)"
+          },
+          {
+            "code": "1259586006",
+            "display": "Dementia due to autoimmune encephalitis (disorder)"
+          },
+          {
+            "code": "1339031006",
+            "display": "Dementia caused by ionizing radiation (disorder)"
+          },
+          {
             "code": "14070001",
             "display": "Multi-infarct dementia with depression (disorder)"
+          },
+          {
+            "code": "142001000119106",
+            "display": "Depressed mood in Alzheimer's disease (disorder)"
           },
           {
             "code": "15662003",
@@ -172,6 +192,10 @@
             "display": "Mixed cortical and subcortical vascular dementia (disorder)"
           },
           {
+            "code": "230288001",
+            "display": "Semantic dementia (disorder)"
+          },
+          {
             "code": "230289009",
             "display": "Patchy dementia (disorder)"
           },
@@ -266,6 +290,10 @@
           {
             "code": "429458009",
             "display": "Dementia due to Creutzfeldt Jakob disease (disorder)"
+          },
+          {
+            "code": "429998004",
+            "display": "Vascular dementia (disorder)"
           },
           {
             "code": "430771000124100",
@@ -460,6 +488,10 @@
             "display": "Subcortical dementia (disorder)"
           },
           {
+            "code": "788898005",
+            "display": "Dementia caused by volatile inhalant (disorder)"
+          },
+          {
             "code": "792004",
             "display": "Jakob-Creutzfeldt disease (disorder)"
           },
@@ -482,6 +514,10 @@
           {
             "code": "82381000119103",
             "display": "Epileptic dementia with behavioral disturbance (disorder)"
+          },
+          {
+            "code": "833326008",
+            "display": "Cortical vascular dementia (disorder)"
           }
         ]
       },
@@ -491,10 +527,6 @@
           {
             "code": "F01.50",
             "display": "Vascular dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
-          },
-          {
-            "code": "F01.51",
-            "display": "Vascular dementia, unspecified severity, with behavioral disturbance"
           },
           {
             "code": "F01.511",
@@ -593,10 +625,6 @@
             "display": "Dementia in other diseases classified elsewhere, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
           },
           {
-            "code": "F02.81",
-            "display": "Dementia in other diseases classified elsewhere, unspecified severity, with behavioral disturbance"
-          },
-          {
             "code": "F02.811",
             "display": "Dementia in other diseases classified elsewhere, unspecified severity, with agitation"
           },
@@ -691,10 +719,6 @@
           {
             "code": "F03.90",
             "display": "Unspecified dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety"
-          },
-          {
-            "code": "F03.91",
-            "display": "Unspecified dementia, unspecified severity, with behavioral disturbance"
           },
           {
             "code": "F03.911",

@@ -3,7 +3,7 @@
   "id": "2.16.840.1.113883.3.526.3.1007",
   "meta": {
     "versionId": "32",
-    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "lastUpdated": "2025-01-31T14:08:38.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -29,22 +29,12 @@
   "status": "active",
   "experimental": false,
   "date": "2022-03-07T11:14:02-05:00",
-  "publisher": "Mathematica",
+  "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:46a686e3-1c0a-4aa2-8371-ba0feef8c4b9",
-    "timestamp": "2024-12-01T19:45:47-05:00",
+    "identifier": "urn:uuid:527dd7cf-c3e4-4c2b-853b-0696d9e726fc",
+    "timestamp": "2025-03-20T16:17:50-04:00",
     "total": 15,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",

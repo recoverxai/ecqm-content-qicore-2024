@@ -87,6 +87,10 @@
             "display": "diphenhydramine hydrochloride 25 MG Oral Tablet"
           },
           {
+            "code": "1049884",
+            "display": "diphenhydramine hydrochloride 1.25 MG/ML Oral Solution"
+          },
+          {
             "code": "1049900",
             "display": "diphenhydramine hydrochloride 12.5 MG Chewable Tablet"
           },
@@ -431,6 +435,10 @@
             "display": "acetaminophen 500 MG / chlorpheniramine maleate 2 MG / pseudoephedrine hydrochloride 30 MG Oral Tablet"
           },
           {
+            "code": "1291266",
+            "display": "chlorpheniramine maleate 0.8 MG/ML / dextromethorphan hydrobromide 2 MG/ML / phenylephrine hydrochloride 2 MG/ML Oral Solution"
+          },
+          {
             "code": "1292342",
             "display": "acetaminophen 43.3 MG/ML / chlorpheniramine maleate 0.267 MG/ML / dextromethorphan hydrobromide 2 MG/ML Oral Solution"
           },
@@ -443,12 +451,8 @@
             "display": "acetaminophen 325 MG / chlorpheniramine maleate 2 MG / pseudoephedrine hydrochloride 30 MG Oral Capsule"
           },
           {
-            "code": "1294348",
-            "display": "diphenhydramine hydrochloride 12.5 MG / phenylephrine hydrochloride 5 MG Chewable Tablet"
-          },
-          {
-            "code": "1294567",
-            "display": "acetaminophen 500 MG / diphenhydramine hydrochloride 12.5 MG / pseudoephedrine hydrochloride 30 MG Oral Tablet"
+            "code": "1294607",
+            "display": "acetaminophen 21.7 MG/ML / diphenhydramine hydrochloride 0.833 MG/ML Oral Solution"
           },
           {
             "code": "1297288",
@@ -581,10 +585,6 @@
           {
             "code": "1366948",
             "display": "chlorpheniramine tannate 8 MG / phenylephrine tannate 25 MG Oral Tablet"
-          },
-          {
-            "code": "1367219",
-            "display": "brompheniramine tannate 2.2 MG / phenylephrine tannate 1.58 MG Chewable Tablet"
           },
           {
             "code": "1367225",
@@ -795,10 +795,6 @@
             "display": "acetaminophen 650 MG / chlorpheniramine maleate 4 MG / phenylephrine hydrochloride 10 MG Oral Powder"
           },
           {
-            "code": "1789508",
-            "display": "triprolidine hydrochloride 0.313 MG/ML Oral Solution"
-          },
-          {
             "code": "1789740",
             "display": "diphenhydramine hydrochloride 6.25 MG/ML Oral Solution"
           },
@@ -875,6 +871,10 @@
             "display": "{100 (acetaminophen 250 MG / aspirin 250 MG / caffeine 65 MG Oral Tablet) / 24 (acetaminophen 250 MG / aspirin 250 MG / diphenhydramine citrate 38 MG Oral Tablet) } Pack"
           },
           {
+            "code": "2049283",
+            "display": "acetaminophen 33.3 MG/ML / chlorpheniramine maleate 0.133 MG/ML / dextromethorphan hydrobromide 1 MG/ML / pseudoephedrine hydrochloride 2 MG/ML Oral Solution"
+          },
+          {
             "code": "2049841",
             "display": "acetaminophen 325 MG / chlorpheniramine maleate 2 MG / dextromethorphan hydrobromide 10 MG Oral Tablet"
           },
@@ -903,6 +903,10 @@
             "display": "chlorpheniramine maleate 0.133 MG/ML / dextromethorphan hydrobromide 0.333 MG/ML / phenylephrine hydrochloride 0.333 MG/ML Oral Solution"
           },
           {
+            "code": "2167750",
+            "display": "chlorpheniramine maleate 0.8 MG/ML / dextromethorphan hydrobromide 6 MG/ML / phenylephrine hydrochloride 1.5 MG/ML Oral Solution"
+          },
+          {
             "code": "2167752",
             "display": "chlorpheniramine maleate 4 MG / dextromethorphan hydrobromide 20 MG / phenylephrine hydrochloride 10 MG Oral Tablet"
           },
@@ -927,10 +931,6 @@
             "display": "acetaminophen 325 MG / caffeine 45 MG / chlorpheniramine maleate 2 MG / phenylephrine hydrochloride 5 MG Oral Tablet"
           },
           {
-            "code": "2183701",
-            "display": "chlorpheniramine maleate 8 MG Extended Release Oral Capsule"
-          },
-          {
             "code": "2268058",
             "display": "dextromethorphan hydrobromide 3 MG/ML / phenylephrine hydrochloride 1 MG/ML / triprolidine hydrochloride 0.25 MG/ML Oral Solution"
           },
@@ -941,6 +941,10 @@
           {
             "code": "2288826",
             "display": "{1 (acetaminophen 32.5 MG/ML / dextromethorphan hydrobromide 1 MG/ML / phenylephrine hydrochloride 0.5 MG/ML / triprolidine hydrochloride 0.125 MG/ML Oral Solution) / 1 (dextromethorphan hydrobromide 1 MG/ML / guaifenesin 20 MG/ML / phenylephrine hydrochloride 0.5 MG/ML Oral Solution) } Pack"
+          },
+          {
+            "code": "2362250",
+            "display": "{1 (chlorpheniramine maleate 0.2 MG/ML / dextromethorphan hydrobromide 1.5 MG/ML Oral Solution) / 1 (dextromethorphan hydrobromide 1 MG/ML / guaifenesin 10 MG/ML Oral Solution) } Pack"
           },
           {
             "code": "2374554",
@@ -1115,6 +1119,42 @@
             "display": "{1 (aspirin 325 MG / chlorpheniramine maleate 2 MG / dextromethorphan hydrobromide 10 MG / phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet) / 1 (aspirin 325 MG / dextromethorphan hydrobromide 10 MG / phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet) } Pack"
           },
           {
+            "code": "2670677",
+            "display": "acetaminophen 650 MG / diphenhydramine hydrochloride 25 MG Powder for Oral Solution"
+          },
+          {
+            "code": "2676954",
+            "display": "{1 (acetaminophen 325 MG / dextromethorphan hydrobromide 10 MG Oral Capsule) / 1 (acetaminophen 325 MG / dextromethorphan hydrobromide 15 MG / doxylamine succinate 6.25 MG Oral Capsule) } Pack"
+          },
+          {
+            "code": "2681010",
+            "display": "{1 (acetaminophen 33.3 MG/ML / diphenhydramine hydrochloride 1.67 MG/ML Oral Solution) / 1 (acetaminophen 33.3 MG/ML Oral Solution) } Pack"
+          },
+          {
+            "code": "2683226",
+            "display": "{1 (dextromethorphan hydrobromide 1 MG/ML / guaifenesin 20 MG/ML Oral Solution) / 1 (diphenhydramine hydrochloride 2.5 MG/ML Oral Solution) } Pack"
+          },
+          {
+            "code": "2683422",
+            "display": "{1 (brompheniramine maleate 0.2 MG/ML / dextromethorphan hydrobromide 1 MG/ML Oral Solution) / 1 (diphenhydramine hydrochloride 1.25 MG/ML Oral Solution) } Pack"
+          },
+          {
+            "code": "2683423",
+            "display": "dextromethorphan hydrobromide 10 MG / doxylamine succinate 6.25 MG Chewable Tablet"
+          },
+          {
+            "code": "2683425",
+            "display": "{1 (dextromethorphan hydrobromide 10 MG / doxylamine succinate 6.25 MG Chewable Tablet) / 1 (dextromethorphan hydrobromide 10 MG Chewable Tablet) } Pack"
+          },
+          {
+            "code": "2687211",
+            "display": "{1 (acetaminophen 21.7 MG/ML / dextromethorphan hydrobromide 0.667 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution) / 1 (acetaminophen 21.7 MG/ML / dextromethorphan hydrobromide 0.667 MG/ML Oral Solution) } Pack"
+          },
+          {
+            "code": "2695452",
+            "display": "{1 (acetaminophen 21.7 MG/ML / dextromethorphan hydrobromide 0.667 MG/ML / guaifenesin 13.3 MG/ML Oral Solution) / 1 (acetaminophen 21.7 MG/ML / diphenhydramine hydrochloride 0.833 MG/ML Oral Solution) } Pack"
+          },
+          {
             "code": "309913",
             "display": "dimenhydrinate 50 MG Chewable Tablet"
           },
@@ -1153,10 +1193,6 @@
           {
             "code": "759494",
             "display": "{14 (12 HR brompheniramine maleate 6 MG / pseudoephedrine hydrochloride 45 MG Extended Release Oral Tablet) / 14 (12 HR chlorpheniramine maleate 8 MG / methscopolamine nitrate 2.5 MG / phenylephrine hydrochloride 25 MG Extended Release Oral Tablet) } Pack"
-          },
-          {
-            "code": "857512",
-            "display": "12 HR chlorpheniramine polistirex 8 MG / hydrocodone polistirex 10 MG Extended Release Oral Capsule"
           },
           {
             "code": "866021",

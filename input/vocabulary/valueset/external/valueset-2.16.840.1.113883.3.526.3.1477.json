@@ -31,21 +31,77 @@
   "date": "2021-02-18T01:00:25-05:00",
   "publisher": "American Academy of Ophthalmology Steward",
   "expansion": {
-    "identifier": "urn:uuid:aca601dc-e5ec-405f-b785-fb616351e00f",
-    "timestamp": "2024-12-01T19:45:14-05:00",
-    "total": 35,
+    "identifier": "urn:uuid:c861c23d-bba3-422f-88c6-bba6a6d882b9",
+    "timestamp": "2025-03-20T16:17:04-04:00",
+    "total": 54,
     "offset": 0,
-    "parameter": [
+    "contains": [
       {
-        "name": "count",
-        "valueInteger": 1000
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1099241000119105",
+        "display": "Acute endophthalmitis of bilateral eyes (disorder)"
       },
       {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
-    "contains": [
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1208910001",
+        "display": "Acute bacterial endophthalmitis following surgical procedure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1217670003",
+        "display": "Chronic endophthalmitis caused by Bacteria following surgical procedure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231258007",
+        "display": "Endogenous endophthalmitis caused by Aspergillus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231260009",
+        "display": "Endogenous endophthalmitis caused by Candida (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231276000",
+        "display": "Exogenous endophthalmitis caused by Fungi (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231279007",
+        "display": "Endogenous endophthalmitis caused by Fungi (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231280005",
+        "display": "Endogenous endophthalmitis caused by Bacteria (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231646004",
+        "display": "Bacterial endophthalmitis due to and following traumatic injury (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1231700006",
+        "display": "Endophthalmitis caused by Bacteria following surgical procedure (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "1285506008",
+        "display": "Endophthalmitis following glaucoma drainage implant surgery (disorder)"
+      },
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
@@ -61,6 +117,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15678401000119100",
+        "display": "Chronic endophthalmitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15678441000119103",
         "display": "Chronic endophthalmitis of left eye (disorder)"
       },
@@ -69,6 +131,24 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "15678481000119108",
         "display": "Chronic endophthalmitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15681561000119104",
+        "display": "Endophthalmitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15681681000119107",
+        "display": "Endophthalmitis of bilateral eyes (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15681721000119101",
+        "display": "Endophthalmitis of left eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -105,6 +185,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "314548006",
         "display": "Endogenous endophthalmitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "332761000119100",
+        "display": "Purulent endophthalmitis of right eye (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "338371000119105",
+        "display": "Purulent endophthalmitis of left eye (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -201,6 +293,18 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "41720003",
         "display": "Purulent endophthalmitis (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "711644007",
+        "display": "Endophthalmitis caused by Acanthamoeba (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "860836003",
+        "display": "Endophthalmitis caused by Ascaris lumbricoides (disorder)"
       },
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",

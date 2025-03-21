@@ -31,36 +31,26 @@
   "date": "2021-09-09T01:01:05-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:5f8c3278-d1a5-4038-9f1e-10b03c3d784d",
-    "timestamp": "2024-12-01T19:49:35-05:00",
+    "identifier": "urn:uuid:8dedd6ea-3c18-4131-a320-477e4ec53f7c",
+    "timestamp": "2025-03-20T16:34:23-04:00",
     "total": 3,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "197622",
         "display": "dipyridamole 50 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "309952",
         "display": "dipyridamole 25 MG Oral Tablet"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "309955",
         "display": "dipyridamole 75 MG Oral Tablet"
       }

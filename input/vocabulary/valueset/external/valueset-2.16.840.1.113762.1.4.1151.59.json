@@ -30,20 +30,10 @@
   "date": "2023-02-18T01:03:13-05:00",
   "publisher": "Oregon Urology Steward",
   "expansion": {
-    "identifier": "urn:uuid:b12a5535-a8c3-4271-897b-e35293d836fa",
-    "timestamp": "2024-12-01T19:46:58-05:00",
+    "identifier": "urn:uuid:4779f630-f89d-488b-9e18-bc58de1f11c6",
+    "timestamp": "2025-03-20T16:19:26-04:00",
     "total": 15,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.ama-assn.org/go/cpt",

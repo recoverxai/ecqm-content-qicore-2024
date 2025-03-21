@@ -668,14 +668,6 @@
             "display": "ramipril 5 MG Oral Tablet"
           },
           {
-            "code": "2586034",
-            "display": "125 ML diltiazem hydrochloride 1 MG/ML Injection"
-          },
-          {
-            "code": "2586036",
-            "display": "250 ML diltiazem hydrochloride 1 MG/ML Injection"
-          },
-          {
             "code": "2589881",
             "display": "torsemide 40 MG Oral Tablet"
           },
@@ -702,6 +694,18 @@
           {
             "code": "2621022",
             "display": "10 ML furosemide 8 MG/ML Cartridge"
+          },
+          {
+            "code": "2683305",
+            "display": "50 ML furosemide 10 MG/ML Injection"
+          },
+          {
+            "code": "2683306",
+            "display": "100 ML furosemide 10 MG/ML Injection"
+          },
+          {
+            "code": "2690727",
+            "display": "24 HR clonidine hydrochloride 0.1 MG/ML Extended Release Suspension"
           },
           {
             "code": "282486",
@@ -1538,6 +1542,10 @@
           {
             "code": "896771",
             "display": "labetalol hydrochloride 5 MG/ML Injectable Solution"
+          },
+          {
+            "code": "896983",
+            "display": "labetalol hydrochloride 400 MG Oral Tablet"
           },
           {
             "code": "897584",

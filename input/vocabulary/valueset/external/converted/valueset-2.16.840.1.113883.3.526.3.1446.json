@@ -56,6 +56,34 @@
             "display": "Arcuate scotoma (finding)"
           },
           {
+            "code": "15747321000119109",
+            "display": "Scintillating scotoma of left eye (finding)"
+          },
+          {
+            "code": "15747361000119104",
+            "display": "Scintillating scotoma of right eye (finding)"
+          },
+          {
+            "code": "15747401000119108",
+            "display": "Scintillating scotoma of bilateral eyes (finding)"
+          },
+          {
+            "code": "16058911000119101",
+            "display": "Peripheral visual field defect of bilateral eyes (finding)"
+          },
+          {
+            "code": "16058951000119100",
+            "display": "Peripheral visual field defect of left eye (finding)"
+          },
+          {
+            "code": "16058991000119105",
+            "display": "Peripheral visual field defect of right eye (finding)"
+          },
+          {
+            "code": "16059111000119107",
+            "display": "Scotoma of right eye (finding)"
+          },
+          {
             "code": "16059151000119108",
             "display": "Scotoma of left eye (finding)"
           },
@@ -132,24 +160,84 @@
             "display": "Peripheral visual field defect (finding)"
           },
           {
+            "code": "332131000119107",
+            "display": "Sector visual field defect of right eye (finding)"
+          },
+          {
+            "code": "333371000119102",
+            "display": "Paracentral scotoma of right eye (finding)"
+          },
+          {
+            "code": "333381000119104",
+            "display": "Paracecal scotoma of right eye (finding)"
+          },
+          {
+            "code": "336151000119100",
+            "display": "Centrocecal scotoma of right eye (finding)"
+          },
+          {
             "code": "336171000119109",
             "display": "Central scotoma of right eye (finding)"
+          },
+          {
+            "code": "336371000119106",
+            "display": "Arcuate visual field defect of right eye (finding)"
+          },
+          {
+            "code": "337741000119101",
+            "display": "Sector visual field defect of left eye (finding)"
+          },
+          {
+            "code": "338981000119109",
+            "display": "Paracentral scotoma of left eye (finding)"
+          },
+          {
+            "code": "338991000119107",
+            "display": "Paracecal scotoma of left eye (finding)"
           },
           {
             "code": "33970004",
             "display": "Enlarged blind spot (finding)"
           },
           {
+            "code": "341761000119109",
+            "display": "Centrocecal scotoma of left eye (finding)"
+          },
+          {
             "code": "341781000119100",
             "display": "Central scotoma of left eye (finding)"
+          },
+          {
+            "code": "341981000119103",
+            "display": "Arcuate visual field defect of left eye (finding)"
+          },
+          {
+            "code": "343511000119104",
+            "display": "Sector visual field defect of bilateral eyes (finding)"
+          },
+          {
+            "code": "344731000119103",
+            "display": "Paracentral scotoma of bilateral eyes (finding)"
+          },
+          {
+            "code": "344741000119107",
+            "display": "Paracecal scotoma of bilateral eyes (finding)"
           },
           {
             "code": "345121001",
             "display": "Heteronymous bilateral visual field defects (finding)"
           },
           {
+            "code": "346971000119106",
+            "display": "Centrocecal scotoma of bilateral eyes (finding)"
+          },
+          {
             "code": "346991000119107",
             "display": "Central scotoma of bilateral eyes (finding)"
+          },
+          {
+            "code": "347161000119100",
+            "display": "Arcuate visual field defect of bilateral eyes (finding)"
           },
           {
             "code": "370961005",
@@ -202,6 +290,22 @@
           {
             "code": "65133002",
             "display": "Physiologic scotoma (finding)"
+          },
+          {
+            "code": "678701000119106",
+            "display": "Tunnel vision of bilateral eyes (finding)"
+          },
+          {
+            "code": "678711000119109",
+            "display": "Tunnel vision of left eye (finding)"
+          },
+          {
+            "code": "678721000119102",
+            "display": "Tunnel vision of right eye (finding)"
+          },
+          {
+            "code": "733338003",
+            "display": "Isolated peripheral scotoma (finding)"
           }
         ]
       },

@@ -44,6 +44,10 @@
             "display": "Vascular occlusion of retina of right eye (disorder)"
           },
           {
+            "code": "15997991000119107",
+            "display": "Vascular occlusion of retina of bilateral eyes (disorder)"
+          },
+          {
             "code": "16279401000119108",
             "display": "Occlusion of right cilioretinal artery (disorder)"
           },
@@ -62,6 +66,10 @@
           {
             "code": "232035005",
             "display": "Retinal artery occlusion (disorder)"
+          },
+          {
+            "code": "232036006",
+            "display": "Cilioretinal artery occlusion (disorder)"
           },
           {
             "code": "232037002",
@@ -84,20 +92,12 @@
             "display": "Neovascularization of eye due to juvenile central retinal vein occlusion (disorder)"
           },
           {
-            "code": "232042005",
-            "display": "Macular edema due to juvenile central retinal vein occlusion (disorder)"
-          },
-          {
             "code": "232043000",
             "display": "Hemispheric retinal vein occlusion (disorder)"
           },
           {
             "code": "232044006",
             "display": "Neovascularization of eye due to hemispheric retinal vein occlusion (disorder)"
-          },
-          {
-            "code": "232045007",
-            "display": "Macular edema due to hemispheric retinal vein occlusion (disorder)"
           },
           {
             "code": "232046008",
@@ -128,6 +128,10 @@
             "display": "Branch retinal vein occlusion with no neovascularization (disorder)"
           },
           {
+            "code": "331801000119102",
+            "display": "Transient occlusion of right retinal artery (disorder)"
+          },
+          {
             "code": "333281000119108",
             "display": "Partial occlusion of right retinal artery (disorder)"
           },
@@ -146,6 +150,14 @@
           {
             "code": "341801000119101",
             "display": "Occlusion of left central retinal artery (disorder)"
+          },
+          {
+            "code": "344661000119103",
+            "display": "Partial occlusion of retinal artery of bilateral eyes (disorder)"
+          },
+          {
+            "code": "347011000119102",
+            "display": "Occlusion of bilateral central retinal arteries (disorder)"
           },
           {
             "code": "38742007",
@@ -188,12 +200,32 @@
             "display": "Central retinal vein occlusion (disorder)"
           },
           {
+            "code": "733325006",
+            "display": "Combined occlusion by thrombus of retinal artery and retinal vein (disorder)"
+          },
+          {
             "code": "73757007",
             "display": "Retinal vascular occlusion (disorder)"
           },
           {
             "code": "776009",
             "display": "Partial occlusion of retinal artery (disorder)"
+          },
+          {
+            "code": "786049007",
+            "display": "Occlusion of branch of retinal vein of left eye (disorder)"
+          },
+          {
+            "code": "786050007",
+            "display": "Occlusion of branch of retinal vein of right eye (disorder)"
+          },
+          {
+            "code": "786054003",
+            "display": "Occlusion of central retinal vein of right eye (disorder)"
+          },
+          {
+            "code": "786055002",
+            "display": "Occlusion of central retinal vein of left eye (disorder)"
           },
           {
             "code": "87224000",

@@ -31,20 +31,10 @@
   "date": "2021-02-24T01:00:28-05:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:89fabb69-534a-40fa-a1fe-4726585a5fd9",
-    "timestamp": "2024-12-01T19:47:20-05:00",
-    "total": 130,
+    "identifier": "urn:uuid:2a589e9c-7218-4a17-b6c5-80804196522f",
+    "timestamp": "2025-03-20T16:19:45-04:00",
+    "total": 134,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
@@ -117,6 +107,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "1380006",
         "display": "Agoraphobia without history of panic disorder with limited symptom attacks (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "15277004",
+        "display": "Hallucinogen-induced anxiety disorder (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -271,6 +267,12 @@
       {
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "20876004",
+        "display": "Inhalant-induced anxiety disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "21897009",
         "display": "Generalized anxiety disorder (disorder)"
       },
@@ -417,6 +419,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "386810004",
         "display": "Phobic disorder (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "39951001",
+        "display": "Cannabis-induced anxiety disorder (disorder)"
       },
       {
         "system": "http://snomed.info/sct",
@@ -621,6 +629,12 @@
         "version": "http://snomed.info/sct/731000124108/version/20240901",
         "code": "699241002",
         "display": "Chronic post-traumatic stress disorder following military combat (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/731000124108/version/20240901",
+        "code": "70655008",
+        "display": "Caffeine-induced anxiety disorder (disorder)"
       },
       {
         "system": "http://snomed.info/sct",

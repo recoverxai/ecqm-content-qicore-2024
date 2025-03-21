@@ -31,20 +31,10 @@
   "date": "2022-04-15T01:02:23-04:00",
   "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "urn:uuid:336a98ed-a5f0-47dd-926c-529957adfe02",
-    "timestamp": "2024-12-01T19:45:56-05:00",
+    "identifier": "urn:uuid:cb2b2eba-ca3b-44ac-b8da-4daedd2a50c8",
+    "timestamp": "2025-03-20T16:17:57-04:00",
     "total": 3,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://loinc.org",

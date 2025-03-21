@@ -31,30 +31,20 @@
   "date": "2017-05-04T01:00:13-04:00",
   "publisher": "NCQA PHEMUR",
   "expansion": {
-    "identifier": "urn:uuid:6694c15a-351d-4a2b-9343-960f9f2bb99f",
-    "timestamp": "2024-12-01T19:48:51-05:00",
+    "identifier": "urn:uuid:a70fa0a0-9292-4011-826a-81f78d7f5f04",
+    "timestamp": "2025-03-20T16:21:18-04:00",
     "total": 2,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "116",
         "display": "rotavirus, live, pentavalent vaccine"
       },
       {
         "system": "http://hl7.org/fhir/sid/cvx",
-        "version": "20240903",
+        "version": "20241216",
         "code": "122",
         "display": "rotavirus vaccine, unspecified formulation"
       }

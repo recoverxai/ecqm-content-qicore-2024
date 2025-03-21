@@ -30,42 +30,32 @@
   "date": "2023-02-18T01:03:13-05:00",
   "publisher": "Acumen OP Steward",
   "expansion": {
-    "identifier": "urn:uuid:2f38a485-6e2d-446c-84ce-efd81a168cf6",
-    "timestamp": "2024-12-01T19:50:46-05:00",
+    "identifier": "urn:uuid:023f63c5-c050-4f0e-b10d-7c5ea53c0b4d",
+    "timestamp": "2025-03-20T16:36:08-04:00",
     "total": 4,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1804799",
         "display": "alteplase 100 MG Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "1804804",
         "display": "alteplase 50 MG Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "313212",
         "display": "tenecteplase 50 MG Injection"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "763138",
         "display": "reteplase 10 UNT Injection"
       }

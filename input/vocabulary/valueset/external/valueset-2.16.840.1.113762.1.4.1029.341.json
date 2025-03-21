@@ -31,20 +31,10 @@
   "date": "2022-01-27T01:02:46-05:00",
   "publisher": "Joint Commission",
   "expansion": {
-    "identifier": "urn:uuid:b2e1b18a-ebda-441d-832c-8ef752986ead",
-    "timestamp": "2024-12-01T19:46:42-05:00",
-    "total": 271,
+    "identifier": "urn:uuid:5251b057-8460-4a47-8f59-ffd39526c335",
+    "timestamp": "2025-03-20T16:19:08-04:00",
+    "total": 273,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
@@ -1609,7 +1599,19 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
         "version": "2025",
-        "code": "Q23.8",
+        "code": "Q23.81",
+        "display": "Bicuspid aortic valve"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q23.82",
+        "display": "Congenital mitral valve cleft leaflet"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q23.88",
         "display": "Other congenital malformations of aortic and mitral valves"
       },
       {

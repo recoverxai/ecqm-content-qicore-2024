@@ -31,30 +31,20 @@
   "date": "2021-02-20T01:02:00-05:00",
   "publisher": "American Institutes for Research Steward",
   "expansion": {
-    "identifier": "urn:uuid:a66c621a-5ed9-4c7c-81bc-95cf74216e4d",
-    "timestamp": "2024-12-01T19:48:35-05:00",
+    "identifier": "urn:uuid:2ae7869e-3d79-4a65-baa3-ed50c2f167ad",
+    "timestamp": "2025-03-20T16:21:03-04:00",
     "total": 9,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "301542",
         "display": "rosuvastatin"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "36567",
         "display": "simvastatin"
       },
@@ -66,31 +56,31 @@
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "41127",
         "display": "fluvastatin"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "42463",
         "display": "pravastatin"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "6472",
         "display": "lovastatin"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "83367",
         "display": "atorvastatin"
       },
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "11042024",
+        "version": "03032025",
         "code": "861634",
         "display": "pitavastatin"
       },

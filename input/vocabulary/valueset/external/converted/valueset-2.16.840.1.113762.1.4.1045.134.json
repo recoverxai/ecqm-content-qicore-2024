@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "id": "2.16.840.1.113762.1.4.1045.134",
   "meta": {
-    "versionId": "33",
-    "lastUpdated": "2024-02-01T14:53:54.000-05:00",
+    "versionId": "40",
+    "lastUpdated": "2025-02-07T01:09:20.000-05:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
       "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
@@ -13,7 +13,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
-      "valueDate": "2023-02-14"
+      "valueDate": "2025-02-07"
     }
   ],
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.134",
@@ -23,11 +23,11 @@
       "value": "urn:oid:2.16.840.1.113762.1.4.1045.134"
     }
   ],
-  "version": "20230214",
+  "version": "20250207",
   "name": "GlucoseLabTest",
   "title": "Glucose Lab Test",
   "status": "active",
-  "date": "2023-02-14T01:02:32-05:00",
+  "date": "2025-02-07T01:09:20-05:00",
   "publisher": "Yale",
   "compose": {
     "include": [
@@ -37,6 +37,22 @@
           {
             "code": "100746-7",
             "display": "Glucose [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "101476-0",
+            "display": "Fasting glucose [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "104597-0",
+            "display": "Glucose [Mass/volume] in Venous blood by Glucometer"
+          },
+          {
+            "code": "104598-8",
+            "display": "Glucose [Mass/volume] in Arterial blood by Glucometer"
+          },
+          {
+            "code": "104655-6",
+            "display": "Glucose [Mass/volume] in Mixed venous blood"
           },
           {
             "code": "14743-9",
@@ -97,6 +113,10 @@
           {
             "code": "32016-8",
             "display": "Glucose [Mass/volume] in Capillary blood"
+          },
+          {
+            "code": "35184-1",
+            "display": "Fasting glucose [Mass or Moles/volume] in Serum or Plasma"
           },
           {
             "code": "39480-9",

@@ -31,20 +31,10 @@
   "date": "2022-04-15T01:02:23-04:00",
   "publisher": "Mathematica PSI Steward",
   "expansion": {
-    "identifier": "urn:uuid:0c2a5fa5-8eb8-4b7e-8f5b-2dc5c279cbd9",
-    "timestamp": "2024-12-01T19:48:32-05:00",
+    "identifier": "urn:uuid:719cd464-9d2a-40fa-a40d-80a5504fbe06",
+    "timestamp": "2025-03-20T16:21:00-04:00",
     "total": 125,
     "offset": 0,
-    "parameter": [
-      {
-        "name": "count",
-        "valueInteger": 1000
-      },
-      {
-        "name": "offset",
-        "valueInteger": 0
-      }
-    ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
