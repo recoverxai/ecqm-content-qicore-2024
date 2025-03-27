@@ -15,12 +15,24 @@ codesystem "CPT": 'http://www.ama-assn.org/go/cpt'
 codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "CERNER_SYNONYM": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/synonym'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
+codesystem "ICD": 'http://hl7.org/fhir/sid/icd-10-cm'
 
 valueset "Acute Pharyngitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011'
 valueset "Acute Tonsillitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1012'
 valueset "Antibiotic Medications for Pharyngitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1001'
-valueset "Comorbid Conditions for Respiratory Conditions": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025'
-valueset "Competing Conditions for Respiratory Conditions": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1017'
+
+valueset "Comorbid Conditions for Respiratory Conditions - Part 1": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025.1'
+valueset "Comorbid Conditions for Respiratory Conditions - Part 2": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025.2'
+valueset "Comorbid Conditions for Respiratory Conditions - Part 3": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025.3'
+valueset "Comorbid Conditions for Respiratory Conditions - Part 4": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025.4'
+valueset "Comorbid Conditions for Respiratory Conditions - Part 5": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025.5'
+valueset "Comorbid Conditions for Respiratory Conditions - Part 6": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025.6'
+valueset "Comorbid Conditions for Respiratory Conditions - Part 7": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025.7'
+
+valueset "Competing Conditions for Respiratory Conditions - Part 1": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1017.1'
+valueset "Competing Conditions for Respiratory Conditions - Part 2": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1017.2'
+valueset "Competing Conditions for Respiratory Conditions - Part 3": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1017.3'
+
 valueset "Discharge Services Observation Care": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1039'
 valueset "Emergency Department Visit": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1010'
 valueset "Group A Streptococcus Test": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1012'
@@ -68,8 +80,7 @@ define "SDE Sex":
   SDE."SDE Sex"
 
 define "Initial Population":
-  // "Encounter With Pharyngitis or Tonsillitis With Antibiotic"
-  "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
     where AgeInYearsAt(date from start of "Measurement Period") >= 3
     return EncounterWithPharyngitis
 
@@ -78,14 +89,14 @@ define function EndOfDay(dateValue DateTime):
   else DateTime(year from dateValue, month from dateValue, day from dateValue, 23, 59, 59, 999, 0)
 
 // original CQL
-define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
-  from
-    "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
-    "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
-    where AcutePharyngitisTonsillitis.prevalenceInterval() starts during VisitWithAntibiotic.period.toInterval()
-    return VisitWithAntibiotic
+// define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
+//   from
+//     "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
+//     "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
+//     where AcutePharyngitisTonsillitis.prevalenceInterval() starts during VisitWithAntibiotic.period.toInterval()
+//     return VisitWithAntibiotic
 
-define "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic":
+define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
   from
     "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
     "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
@@ -111,10 +122,21 @@ define "Denominator":
 
 define "Denominator Exclusions":
   "In Hospice"
-    union Antibiotic."Has Antibiotic Medication History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"] ) )
-    // union Antibiotic."Has Competing Diagnosis History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"] union [Condition: "Maxillary sinusitis (disorder)"] ) )
-    union "Enhanced Has Competing Diagnosis History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"] union [Condition: "Maxillary sinusitis (disorder)"] ) )
-    union Antibiotic."Has Comorbid Condition History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Comorbid Conditions for Respiratory Conditions"] ) )
+    union Antibiotic."Has Antibiotic Medication History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"] ) )
+    union "Enhanced Has Competing Diagnosis History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( 
+        [Condition: "Competing Conditions for Respiratory Conditions - Part 1"]
+        union [Condition: "Competing Conditions for Respiratory Conditions - Part 2"]
+        union [Condition: "Competing Conditions for Respiratory Conditions - Part 3"] 
+      ) )
+    union Antibiotic."Has Comorbid Condition History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( 
+      [Condition: "Comorbid Conditions for Respiratory Conditions - Part 1"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 2"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 3"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 4"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 5"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 6"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 7"]
+      ) )
 
 define function "Enhanced Has Competing Diagnosis History"(episodeDate List<Encounter>, competingConditions List<Condition>):
   episodeDate eDate
@@ -134,7 +156,7 @@ define "In Hospice":
 // Check 2: Previous antibiotic medication history check
 define "Debug Antibiotic Medication History":
   Antibiotic."Has Antibiotic Medication History"(
-    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic",
+    "Encounter With Pharyngitis or Tonsillitis With Antibiotic",
     [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
   )
 
@@ -144,7 +166,7 @@ define "Debug Antibiotic Medications List":
 
 // Get the list of pharyngitis encounters for debugging
 define "Debug Pharyngitis Encounters":
-  "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic"
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic"
 
 // Check antibiotics with appropriate timing - returns the filtered medications that match
 define "Debug Antibiotics With Valid Timing":
@@ -161,13 +183,21 @@ define "Debug Antibiotics With Valid Timing":
 // Check 3: Competing diagnosis check
 define "Debug Competing Diagnosis":
   "Enhanced Has Competing Diagnosis History" ( 
-    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
-    ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"]  union [Condition: "Maxillary sinusitis (disorder)"]) 
+    "Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
+    ( 
+      [Condition: "Competing Conditions for Respiratory Conditions - Part 1"]
+        union [Condition: "Competing Conditions for Respiratory Conditions - Part 2"]
+        union [Condition: "Competing Conditions for Respiratory Conditions - Part 3"] 
+    )
   )
 
 // Get the list of competing conditions
 define "Debug Competing Conditions List":
-  ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"] union [Condition: "Maxillary sinusitis (disorder)"])
+  ( 
+    [Condition: "Competing Conditions for Respiratory Conditions - Part 1"]
+        union [Condition: "Competing Conditions for Respiratory Conditions - Part 2"]
+        union [Condition: "Competing Conditions for Respiratory Conditions - Part 3"] 
+  )
 
 // Get competing conditions with valid timing - returns the filtered conditions that match
 define "Debug Competing Conditions With Valid Timing":
@@ -180,13 +210,27 @@ define "Debug Competing Conditions With Valid Timing":
 // Check 4: Comorbid condition check
 define "Debug Comorbid Conditions":
   Antibiotic."Has Comorbid Condition History" ( 
-    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
-    ( [Condition: "Comorbid Conditions for Respiratory Conditions"] ) 
+    "Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
+    ( [Condition: "Comorbid Conditions for Respiratory Conditions - Part 1"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 2"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 3"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 4"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 5"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 6"]
+      union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 7"]
+    ) 
   )
 
 // Get the list of comorbid conditions
 define "Debug Comorbid Conditions List":
-  [Condition: "Comorbid Conditions for Respiratory Conditions"]
+  ( [Condition: "Comorbid Conditions for Respiratory Conditions - Part 1"]
+    union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 2"]
+    union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 3"]
+    union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 4"]
+    union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 5"]
+    union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 6"]
+    union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 7"]
+  )
 
 // Get comorbid conditions with valid timing - returns the filtered conditions that match
 define "Debug Comorbid Conditions With Valid Timing":
@@ -197,11 +241,6 @@ define "Debug Comorbid Conditions With Valid Timing":
             date from start of QICoreCommon."ToInterval" ( Encounter.period ) - 1 year, 
             date from start of QICoreCommon."ToInterval" ( Encounter.period )
           ]
-
-define fluent function isActiveCompletedStoppedMedicationOrder(MedicationRequest List<MedicationRequest>):
-  MedicationRequest M
-    where M.status in { 'active', 'completed', 'stopped' }
-      and M.intent = 'order'
 
 define "Encounter With Antibiotic Ordered Within Three Days":
   "Qualifying Encounter" EDOrAmbulatoryVisit
@@ -243,8 +282,7 @@ define "Qualifying Encounter":
 define "Numerator":
   from
     "Group A Streptococcus Lab Test With Result" GroupAStreptococcusTest,
-    "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
-    // "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+    "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
     where  GroupAStreptococcusTest.effective.toInterval() starts during day of Interval[( end of EncounterWithPharyngitis.period ) - 3 days, ( end of EncounterWithPharyngitis.period ) + 3 days]
     return EncounterWithPharyngitis
 
@@ -269,3 +307,8 @@ define "Stratification 3":
   "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
     where AgeInYearsAt(date from start of "Measurement Period") >= 65
     return EncounterWithPharyngitis
+
+define fluent function isActiveCompletedStoppedMedicationOrder(MedicationRequest List<MedicationRequest>):
+  MedicationRequest M
+    where M.status in { 'active', 'completed', 'stopped' }
+      and M.intent = 'order'
