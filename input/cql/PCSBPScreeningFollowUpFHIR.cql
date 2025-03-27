@@ -380,38 +380,38 @@ define "Encounter with Medical Reason for Not Obtaining or Patient Declined Bloo
         and NoBPScreen.status = 'cancelled'
 
 define "Encounter with Order for Hypertension Follow Up Declined by Patient":
-  ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedBPEncounter
+  ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80".episode ElevatedBPEncounter
       with ( [ServiceNotRequested: "Referral to Primary Care or Alternate Provider"]
         union [ServiceNotRequested: code = "Referral Management"]
         union [ServiceNotRequested: code = "Follow-up 2-3 months (finding)"]
         union [ServiceNotRequested: code = "Follow-up 4-6 months (finding)"] ) ElevatedBPDeclinedInterventions
         such that ElevatedBPDeclinedInterventions.reasonRefused in "Patient Declined"
-          and ElevatedBPDeclinedInterventions.authoredOn during day of ElevatedBPEncounter.episode.period
+          and ElevatedBPDeclinedInterventions.authoredOn during day of ElevatedBPEncounter.period
           and ElevatedBPDeclinedInterventions.status = 'completed'
   )
-    union ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedBPEncounter
+    union ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80".episode ElevatedBPEncounter
         with "NonPharmacological Intervention Not Ordered" NotOrdered
-          such that NotOrdered.authoredOn during day of ElevatedBPEncounter.episode.period
+          such that NotOrdered.authoredOn during day of ElevatedBPEncounter.period
     )
-    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter
+    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80".episode FirstHTNEncounter
         with ( [ServiceNotRequested: "Follow Up Within 4 Weeks"]
           union [ServiceNotRequested: "Referral to Primary Care or Alternate Provider"]
           union [ServiceNotRequested: code = "Referral Management"] ) FirstHTNDeclinedInterventions
           such that FirstHTNDeclinedInterventions.reasonRefused in "Patient Declined"
-            and FirstHTNDeclinedInterventions.authoredOn during day of FirstHTNEncounter.episode.period
+            and FirstHTNDeclinedInterventions.authoredOn during day of FirstHTNEncounter.period
             and FirstHTNDeclinedInterventions.status = 'completed'
     )
-    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter
+    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80".episode FirstHTNEncounter
         with "NonPharmacological Intervention Not Ordered" NoNonPharm
-          such that NoNonPharm.authoredOn during day of FirstHTNEncounter.episode.period
+          such that NoNonPharm.authoredOn during day of FirstHTNEncounter.period
     )
-    union ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89" SecondHTNEncounter
+    union ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89".episode SecondHTNEncounter
         with "Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 Interventions Declined" SecondHTNDeclinedInterventions
-          such that SecondHTNDeclinedInterventions.authoredOn during day of SecondHTNEncounter.episode.period
+          such that SecondHTNDeclinedInterventions.authoredOn during day of SecondHTNEncounter.period
     )
-    union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90" SecondHTN140Over90Encounter
+    union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90".episode SecondHTN140Over90Encounter
         with "Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 Interventions Declined" SecondHTN140Over90DeclinedInterventions
-          such that SecondHTN140Over90DeclinedInterventions.authoredOn during day of SecondHTN140Over90Encounter.episode.period
+          such that SecondHTN140Over90DeclinedInterventions.authoredOn during day of SecondHTN140Over90Encounter.period
     )
 
 define "Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 Interventions Declined":
