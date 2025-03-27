@@ -44,6 +44,7 @@ code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unliste
 code "Clinic": '22282402' from "CERNER" display 'Clinic'
 code "Azithromycin 5 Day Dose Pack 250 mg oral tablet": '4144756' from "CERNER_SYNONYM" display 'Azithromycin 5 Day Dose Pack 250 mg oral tablet'
 code "Sinusitis (disorder)": '36971009' from "SNOMEDCT" display 'Sinusitis (disorder)'
+code "Maxillary sinusitis (disorder)": '88348008' from "SNOMEDCT" display 'Maxillary sinusitis (disorder)'
 
 parameter "Measurement Period" Interval<DateTime>
 
@@ -111,8 +112,19 @@ define "Denominator":
 define "Denominator Exclusions":
   "In Hospice"
     union Antibiotic."Has Antibiotic Medication History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"] ) )
-    union Antibiotic."Has Competing Diagnosis History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"] ) )
+    // union Antibiotic."Has Competing Diagnosis History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"] union [Condition: "Maxillary sinusitis (disorder)"] ) )
+    union "Enhanced Has Competing Diagnosis History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"] union [Condition: "Maxillary sinusitis (disorder)"] ) )
     union Antibiotic."Has Comorbid Condition History" ( "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [Condition: "Comorbid Conditions for Respiratory Conditions"] ) )
+
+define function "Enhanced Has Competing Diagnosis History"(episodeDate List<Encounter>, competingConditions List<Condition>):
+  episodeDate eDate
+      with competingConditions competcondition
+        such that (
+          competcondition.prevalenceInterval ( )  starts 3 days or less on or after day of start of eDate.period
+          or (competcondition.prevalenceInterval ( ) is null
+            and competcondition.recordedDate.toInterval() starts 3 days or less on or after day of start of eDate.period)
+        ) 
+      return eDate
 
 // Check 1: Hospice status check
 define "In Hospice":
@@ -148,14 +160,14 @@ define "Debug Antibiotics With Valid Timing":
 
 // Check 3: Competing diagnosis check
 define "Debug Competing Diagnosis":
-  Antibiotic."Has Competing Diagnosis History" ( 
+  "Enhanced Has Competing Diagnosis History" ( 
     "Debug 2 Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
-    ( [Condition: "Competing Conditions for Respiratory Conditions"] ) 
+    ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"]  union [Condition: "Maxillary sinusitis (disorder)"]) 
   )
 
 // Get the list of competing conditions
 define "Debug Competing Conditions List":
-  [Condition: "Competing Conditions for Respiratory Conditions"]
+  ( [Condition: "Competing Conditions for Respiratory Conditions"] union [Condition: "Sinusitis (disorder)"] union [Condition: "Maxillary sinusitis (disorder)"])
 
 // Get competing conditions with valid timing - returns the filtered conditions that match
 define "Debug Competing Conditions With Valid Timing":
