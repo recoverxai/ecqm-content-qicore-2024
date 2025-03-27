@@ -1,5 +1,4 @@
 library AppropriateTestingforPharyngitisFHIR version '0.1.000'
-
 // using FHIR version '4.0.1'
 using QICore version '4.1.1'
 
@@ -56,7 +55,6 @@ code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unliste
 code "Clinic": '22282402' from "CERNER" display 'Clinic'
 code "Azithromycin 5 Day Dose Pack 250 mg oral tablet": '4144756' from "CERNER_SYNONYM" display 'Azithromycin 5 Day Dose Pack 250 mg oral tablet'
 code "Sinusitis (disorder)": '36971009' from "SNOMEDCT" display 'Sinusitis (disorder)'
-code "Maxillary sinusitis (disorder)": '88348008' from "SNOMEDCT" display 'Maxillary sinusitis (disorder)'
 
 parameter "Measurement Period" Interval<DateTime>
 
@@ -66,7 +64,6 @@ define "Age In Measurement Period":
   AgeInYearsAt(date from
     end of "Measurement Period"
   )
-
 define "SDE Ethnicity":
   SDE."SDE Ethnicity"
 
@@ -88,14 +85,6 @@ define function EndOfDay(dateValue DateTime):
   if dateValue is null then null
   else DateTime(year from dateValue, month from dateValue, day from dateValue, 23, 59, 59, 999, 0)
 
-// original CQL
-// define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
-//   from
-//     "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
-//     "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
-//     where AcutePharyngitisTonsillitis.prevalenceInterval() starts during VisitWithAntibiotic.period.toInterval()
-//     return VisitWithAntibiotic
-
 define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
   from
     "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
@@ -103,11 +92,9 @@ define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
     where EndOfDay(AcutePharyngitisTonsillitis.onset) during VisitWithAntibiotic.period.toInterval()
     return VisitWithAntibiotic
 
-
 define "Debug Pharyngitis Intervals":
   from "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
   return AcutePharyngitisTonsillitis.prevalenceInterval()
-
 
 define "Debug Visit Intervals":
   from "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic
@@ -137,6 +124,16 @@ define "Denominator Exclusions":
       union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 6"]
       union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 7"]
       ) )
+
+define function "Enhanced Has Competing Diagnosis History"(episodeDate List<Encounter>, competingConditions List<Condition>):
+  episodeDate eDate
+      with competingConditions competcondition
+        such that (
+          competcondition.prevalenceInterval ( )  starts 3 days or less on or after day of start of eDate.period
+          or (competcondition.prevalenceInterval ( ) is null
+            and competcondition.recordedDate.toInterval() starts 3 days or less on or after day of start of eDate.period)
+        ) 
+      return eDate
 
 define function "Enhanced Has Competing Diagnosis History"(episodeDate List<Encounter>, competingConditions List<Condition>):
   episodeDate eDate
@@ -205,7 +202,6 @@ define "Debug Competing Conditions With Valid Timing":
     with "Debug Pharyngitis Encounters" Encounter
       such that ( QICoreCommon."ToPrevalenceInterval" ( CompetingCondition ) ) 
           starts 3 days or less on or after day of start of Encounter.period
-
 
 // Check 4: Comorbid condition check
 define "Debug Comorbid Conditions":
