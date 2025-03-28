@@ -205,17 +205,17 @@ define "Group A Streptococcus Lab Test With Result":
 Stratifications
 */
 define "Stratification 1":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode EncounterWithPharyngitis
     where AgeInYearsAt(date from start of "Measurement Period") in Interval[3, 17]
     return EncounterWithPharyngitis
 
 define "Stratification 2":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode EncounterWithPharyngitis
     where AgeInYearsAt(date from start of "Measurement Period") in Interval[18, 64]
     return EncounterWithPharyngitis
 
 define "Stratification 3":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode EncounterWithPharyngitis
     where AgeInYearsAt(date from start of "Measurement Period") >= 65
     return EncounterWithPharyngitis
 
