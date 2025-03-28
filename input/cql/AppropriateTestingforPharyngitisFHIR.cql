@@ -64,7 +64,7 @@ context Patient
 Base Expressions
 */
 define "Initial Population":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode EncounterWithPharyngitis
     where "Age In Measurement Period" >= 3
     return EncounterWithPharyngitis
 
@@ -73,13 +73,13 @@ define "Denominator":
 
 define "Denominator Exclusions":
   "In Hospice"
-    union Antibiotic."Has Antibiotic Medication History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"] ) )
-    union "Enhanced Has Competing Diagnosis History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( 
+    union Antibiotic."Has Antibiotic Medication History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode, ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"] ) )
+    union "Enhanced Has Competing Diagnosis History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode, (
         [Condition: "Competing Conditions for Respiratory Conditions - Part 1"]
         union [Condition: "Competing Conditions for Respiratory Conditions - Part 2"]
         union [Condition: "Competing Conditions for Respiratory Conditions - Part 3"] 
       ) )
-    union Antibiotic."Has Comorbid Condition History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic", ( 
+    union Antibiotic."Has Comorbid Condition History" ( "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode, (
       [Condition: "Comorbid Conditions for Respiratory Conditions - Part 1"]
       union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 2"]
       union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 3"]
@@ -92,7 +92,7 @@ define "Denominator Exclusions":
 define "Numerator":
   from
     "Group A Streptococcus Lab Test With Result" GroupAStreptococcusTest,
-    "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+    "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode EncounterWithPharyngitis
     where  GroupAStreptococcusTest.effective.toInterval() starts during day of Interval[( end of EncounterWithPharyngitis.period ) - 3 days, ( end of EncounterWithPharyngitis.period ) + 3 days]
     return EncounterWithPharyngitis
 
@@ -104,16 +104,18 @@ define "Age In Measurement Period":
 
 define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
   from
-    "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
+    "Encounter With Antibiotic Ordered Within Three Days".episode VisitWithAntibiotic,
     "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
     where EndOfDay(AcutePharyngitisTonsillitis.onset) during VisitWithAntibiotic.period.toInterval()
-    return VisitWithAntibiotic
+    return {episode: VisitWithAntibiotic, "Diagnosis of Pharyngitis or Tonsillitis": AcutePharyngitisTonsillitis}
 
 define "Encounter With Antibiotic Ordered Within Three Days":
-  "Qualifying Encounter" EDOrAmbulatoryVisit
-    with (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
+  from
+    "Qualifying Encounter" EDOrAmbulatoryVisit,
+    (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
     union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]).isActiveCompletedStoppedMedicationOrder() ) AntibioticOrdered
-    such that EDOrAmbulatoryVisit.period.toInterval() starts 3 days or less on or before AntibioticOrdered.authoredOn
+    where EDOrAmbulatoryVisit.period.toInterval() starts 3 days or less on or before AntibioticOrdered.authoredOn
+    return {episode: EDOrAmbulatoryVisit, "Antibiotic Medication": AntibioticOrdered}
 
 define "Pharyngitis or Tonsillitis":
   ( [Condition: "Acute Pharyngitis"]
@@ -205,7 +207,7 @@ define "Debug Pharyngitis Intervals":
 
 // Get the encounter visit interval
 define "Debug Visit Intervals":
-  from "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic
+  from "Encounter With Antibiotic Ordered Within Three Days".episode VisitWithAntibiotic
   return  VisitWithAntibiotic.period.toInterval()
 
 // Get the list of active/completed/stopped antibiotic medication requests for this patient
@@ -232,7 +234,7 @@ define "In Hospice":
 // Previous antibiotic medication history check
 define "Debug Antibiotic Medication History":
   Antibiotic."Has Antibiotic Medication History"(
-    "Encounter With Pharyngitis or Tonsillitis With Antibiotic",
+    "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode,
     [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
   )
 
@@ -242,7 +244,7 @@ define "Debug Antibiotic Medications List":
 
 // Get the list of pharyngitis or tonsilitis encounters for debugging
 define "Debug Pharyngitis Encounters":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic"
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode
 
 // Check antibiotics with appropriate timing - returns the filtered medications that match
 define "Debug Antibiotics With Valid Timing":
@@ -259,7 +261,7 @@ define "Debug Antibiotics With Valid Timing":
 // Competing diagnosis check
 define "Debug Competing Diagnosis":
   "Enhanced Has Competing Diagnosis History" ( 
-    "Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
+    "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode,
     ( 
       [Condition: "Competing Conditions for Respiratory Conditions - Part 1"]
         union [Condition: "Competing Conditions for Respiratory Conditions - Part 2"]
@@ -285,7 +287,7 @@ define "Debug Competing Conditions With Valid Timing":
 // Comorbid condition check
 define "Debug Comorbid Conditions":
   Antibiotic."Has Comorbid Condition History" ( 
-    "Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
+    "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode,
     ( [Condition: "Comorbid Conditions for Respiratory Conditions - Part 1"]
       union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 2"]
       union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 3"]
