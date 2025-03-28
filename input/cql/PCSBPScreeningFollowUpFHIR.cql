@@ -249,8 +249,8 @@ define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 8
         EncounterLastSystolicBP.systolicReading() >= 140 'mm[Hg]'
         or EncounterLastDiastolicBP.diastolicReading() >= 90 'mm[Hg]'
       )
-      and LastPreviousHyperTensiveSystolicBP is not null
-      and LastPreviousHyperTensiveDiastolicBP is not null
+      and (LastPreviousHyperTensiveSystolicBP is not null
+      or LastPreviousHyperTensiveDiastolicBP is not null)
   return {episode: QualifyingEncounter, systolicBP: EncounterLastSystolicBP, diastolicBP: EncounterLastDiastolicBP}
 
 // Second Hypertensive 140
@@ -302,8 +302,8 @@ define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 
         EncounterLastSystolicBP.systolicReading() >= 140 'mm[Hg]'
         or EncounterLastDiastolicBP.diastolicReading() >= 90 'mm[Hg]'
       )
-      and LastPreviousHyperTensiveSystolicBP is not null
-      and LastPreviousHyperTensiveDiastolicBP is not null
+      and (LastPreviousHyperTensiveSystolicBP is not null
+      or LastPreviousHyperTensiveDiastolicBP is not null)
   return {episode: QualifyingEncounter, systolicBP: EncounterLastSystolicBP, diastolicBP: EncounterLastDiastolicBP}
 
 // Common
