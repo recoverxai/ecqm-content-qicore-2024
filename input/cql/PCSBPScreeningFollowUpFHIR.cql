@@ -100,7 +100,7 @@ define "Encounter after Diagnosis of Hypertension":
     "Qualifying Encounter" QualifyingEncounter,
     "Earliest Diagnosis of Hypertension" Hypertension
   where Coalesce( Hypertension.onset, Hypertension.recordedDate ) before QualifyingEncounter.period
-  return {episode: QualifyingEncounter, "Diagnosis of Hypertension": Hypertension}
+  return {episode: QualifyingEncounter, "1_Diagnosis of Hypertension": Hypertension}
 
 define "Earliest Diagnosis of Hypertension":
   First(([Condition: "Diagnosis of Hypertension"]) Hypertension
@@ -121,7 +121,7 @@ define "Encounter with Normal Blood Pressure Reading":
     )
     where EncounterLastSystolicBP.systolicReading() in Interval[1 'mm[Hg]', 120 'mm[Hg]' )
       and EncounterLastDiastolicBP.diastolicReading() in Interval[1 'mm[Hg]', 80 'mm[Hg]' )
-    return {episode: QualifyingEncounter, "Systolic BP": EncounterLastSystolicBP, "Diastolic BP": EncounterLastDiastolicBP}
+    return {episode: QualifyingEncounter, "1_Systolic BP": EncounterLastSystolicBP, "2_Diastolic BP": EncounterLastDiastolicBP}
 
 // Elevated BP 120-129
 define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Followup":
@@ -131,14 +131,14 @@ define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP le
     "NonPharmacological Interventions" NonPharmInterventions
   where Twoto6MonthRescreen.authoredOn during day of ElevatedEncounter.episode.period
       and NonPharmInterventions.authoredOn during day of ElevatedEncounter.episode.period
-  return {episode: ElevatedEncounter.episode, "Systolic BP": ElevatedEncounter.systolicBP, "Diastolic BP": ElevatedEncounter.diastolicBP, "Follow-up": Twoto6MonthRescreen, "Recommendation": NonPharmInterventions }
+  return {episode: ElevatedEncounter.episode, "1_Systolic BP": ElevatedEncounter.systolicBP, "2_Diastolic BP": ElevatedEncounter.diastolicBP, "3_Follow-up": Twoto6MonthRescreen, "4_Recommendation": NonPharmInterventions }
 
 define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Referral":
   from
     "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedEncounter,
     "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
   where Referral.authoredOn during day of ElevatedEncounter.episode.period
-  return {episode: ElevatedEncounter.episode, "Systolic BP": ElevatedEncounter.systolicBP, "Diastolic BP": ElevatedEncounter.diastolicBP, "Referral": Referral}
+  return {episode: ElevatedEncounter.episode, "1_Systolic BP": ElevatedEncounter.systolicBP, "2_Diastolic BP": ElevatedEncounter.diastolicBP, "3_Referral": Referral}
 
 define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80":
   "Qualifying Encounter" QualifyingEncounter
@@ -163,14 +163,14 @@ define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 1
    where FourWeekRescreen.authoredOn during day of FirstHTNEncounter.episode.period
      and FourWeekRescreen.intent ~ 'order'
      and NonPharmInterventions.authoredOn during day of FirstHTNEncounter.episode.period
-  return {episode: FirstHTNEncounter.episode, "Systolic BP": FirstHTNEncounter.systolicBP, "Diastolic BP": FirstHTNEncounter.diastolicBP, "Follow-up": FourWeekRescreen, "Recommendation": NonPharmInterventions }
+  return {episode: FirstHTNEncounter.episode, "1_Systolic BP": FirstHTNEncounter.systolicBP, "2_Diastolic BP": FirstHTNEncounter.diastolicBP, "3_Follow-up": FourWeekRescreen, "4_Recommendation": NonPharmInterventions }
 
 define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80 and Referral":
   from
     "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter,
     "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
   where Referral.authoredOn during day of FirstHTNEncounter.episode.period
-  return {episode: FirstHTNEncounter.episode, "Systolic BP": FirstHTNEncounter.systolicBP, "Diastolic BP": FirstHTNEncounter.diastolicBP, "Referral": Referral}
+  return {episode: FirstHTNEncounter.episode, "1_Systolic BP": FirstHTNEncounter.systolicBP, "2_Diastolic BP": FirstHTNEncounter.diastolicBP, "3_Referral": Referral}
 
 define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80":
   "Qualifying Encounter" QualifyingEncounter
@@ -212,14 +212,14 @@ define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 8
    where Rescreen2to6.authoredOn during day of SecondHTNEncounter.episode.period
      and LabECGIntervention.authoredOn during day of SecondHTNEncounter.episode.period
      and NonPharmInterventions.authoredOn during day of SecondHTNEncounter.episode.period
-  return {episode: SecondHTNEncounter.episode, "Systolic BP": SecondHTNEncounter.systolicBP, "Diastolic BP": SecondHTNEncounter.diastolicBP, "Follow-up": Rescreen2to6, "Recommendation": NonPharmInterventions, "ECG": LabECGIntervention }
+  return {episode: SecondHTNEncounter.episode, "1_Systolic BP": SecondHTNEncounter.systolicBP, "2_Diastolic BP": SecondHTNEncounter.diastolicBP, "3_Follow-up": Rescreen2to6, "4_Recommendation": NonPharmInterventions, "5_ECG": LabECGIntervention }
 
 define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Referral":
   from
     "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89" SecondHTNEncounter,
     "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
   where Referral.authoredOn during day of SecondHTNEncounter.episode.period
-  return {episode: SecondHTNEncounter.episode, "Systolic BP": SecondHTNEncounter.systolicBP, "Diastolic BP": SecondHTNEncounter.diastolicBP, "Referral": Referral}
+  return {episode: SecondHTNEncounter.episode, "1_Systolic BP": SecondHTNEncounter.systolicBP, "2_Diastolic BP": SecondHTNEncounter.diastolicBP, "3_Referral": Referral}
 
 define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89":
   "Qualifying Encounter" QualifyingEncounter
@@ -267,14 +267,14 @@ define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 
      and NonPharmInterventions.authoredOn during day of SecondHTN140Encounter.episode.period
      and Medications.authoredOn during day of SecondHTN140Encounter.episode.period
      and Medications.status ~ 'active'
-  return {episode: SecondHTN140Encounter.episode, "Systolic BP": SecondHTN140Encounter.systolicBP, "Diastolic BP": SecondHTN140Encounter.diastolicBP, "Follow-up": WeeksRescreen, "Recommendation": NonPharmInterventions, "ECG": LabECGIntervention, "Medication": Medications }
+  return {episode: SecondHTN140Encounter.episode, "1_Systolic BP": SecondHTN140Encounter.systolicBP, "2_Diastolic BP": SecondHTN140Encounter.diastolicBP, "3_Follow-up": WeeksRescreen, "4_Recommendation": NonPharmInterventions, "5_ECG": LabECGIntervention, "6_Medication": Medications }
 
 define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Referral":
   from
     "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90" SecondHTN140Encounter,
     "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
   where Referral.authoredOn during day of SecondHTN140Encounter.episode.period
-  return {episode: SecondHTN140Encounter.episode, "Systolic BP": SecondHTN140Encounter.systolicBP, "Diastolic BP": SecondHTN140Encounter.diastolicBP, "Referral": Referral}
+  return {episode: SecondHTN140Encounter.episode, "1_Systolic BP": SecondHTN140Encounter.systolicBP, "2_Diastolic BP": SecondHTN140Encounter.diastolicBP, "3_Referral": Referral}
 
 define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90":
   "Qualifying Encounter" QualifyingEncounter
