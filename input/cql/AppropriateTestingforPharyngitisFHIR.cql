@@ -94,7 +94,7 @@ define "Numerator":
     "Group A Streptococcus Lab Test With Result" GroupAStreptococcusTest,
     "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode EncounterWithPharyngitis
     where  GroupAStreptococcusTest.effective.toInterval() starts during day of Interval[( end of EncounterWithPharyngitis.period ) - 3 days, ( end of EncounterWithPharyngitis.period ) + 3 days]
-    return EncounterWithPharyngitis
+    return {episode: EncounterWithPharyngitis, "Strep Test": GroupAStreptococcusTest}
 
 // IP Conditions
 define "Age In Measurement Period":
