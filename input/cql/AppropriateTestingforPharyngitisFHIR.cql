@@ -60,49 +60,13 @@ parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 
-define "Age In Measurement Period":
-  AgeInYearsAt(date from
-    end of "Measurement Period"
-  )
-define "SDE Ethnicity":
-  SDE."SDE Ethnicity"
-
-define "SDE Payer":
-  SDE."SDE Payer"
-
-define "SDE Race":
-  SDE."SDE Race"
-
-define "SDE Sex":
-  SDE."SDE Sex"
-
+/**
+Base Expressions
+*/
 define "Initial Population":
   "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
-    where AgeInYearsAt(date from start of "Measurement Period") >= 3
+    where "Age In Measurement Period" >= 3
     return EncounterWithPharyngitis
-
-define function EndOfDay(dateValue DateTime):
-  if dateValue is null then null
-  else DateTime(year from dateValue, month from dateValue, day from dateValue, 23, 59, 59, 999, 0)
-
-define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
-  from
-    "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
-    "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
-    where EndOfDay(AcutePharyngitisTonsillitis.onset) during VisitWithAntibiotic.period.toInterval()
-    return VisitWithAntibiotic
-
-define "Debug Pharyngitis Intervals":
-  from "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
-  return AcutePharyngitisTonsillitis.prevalenceInterval()
-
-define "Debug Visit Intervals":
-  from "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic
-  return  VisitWithAntibiotic.period.toInterval()
-
-define "Pharyngitis or Tonsillitis":
-  ( [Condition: "Acute Pharyngitis"]
-      union [Condition: "Acute Tonsillitis"] )
 
 define "Denominator":
   "Initial Population"
@@ -125,15 +89,89 @@ define "Denominator Exclusions":
       union [Condition: "Comorbid Conditions for Respiratory Conditions - Part 7"]
       ) )
 
-define function "Enhanced Has Competing Diagnosis History"(episodeDate List<Encounter>, competingConditions List<Condition>):
-  episodeDate eDate
-      with competingConditions competcondition
-        such that (
-          competcondition.prevalenceInterval ( )  starts 3 days or less on or after day of start of eDate.period
-          or (competcondition.prevalenceInterval ( ) is null
-            and competcondition.recordedDate.toInterval() starts 3 days or less on or after day of start of eDate.period)
-        ) 
-      return eDate
+define "Numerator":
+  from
+    "Group A Streptococcus Lab Test With Result" GroupAStreptococcusTest,
+    "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+    where  GroupAStreptococcusTest.effective.toInterval() starts during day of Interval[( end of EncounterWithPharyngitis.period ) - 3 days, ( end of EncounterWithPharyngitis.period ) + 3 days]
+    return EncounterWithPharyngitis
+
+// IP Conditions
+define "Age In Measurement Period":
+  AgeInYearsAt(date from
+    start of "Measurement Period"
+  )
+
+define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
+  from
+    "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic,
+    "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
+    where EndOfDay(AcutePharyngitisTonsillitis.onset) during VisitWithAntibiotic.period.toInterval()
+    return VisitWithAntibiotic
+
+define "Encounter With Antibiotic Ordered Within Three Days":
+  "Qualifying Encounter" EDOrAmbulatoryVisit
+    with (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
+    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]).isActiveCompletedStoppedMedicationOrder() ) AntibioticOrdered
+    such that EDOrAmbulatoryVisit.period.toInterval() starts 3 days or less on or before AntibioticOrdered.authoredOn
+
+define "Pharyngitis or Tonsillitis":
+  ( [Condition: "Acute Pharyngitis"]
+      union [Condition: "Acute Tonsillitis"] )
+
+define "Qualifying Encounter":
+  ( ([Encounter: "Emergency Department Visit"]
+    union ([Encounter] E where exists ((E.type) T where T ~ "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])"))
+    union [Encounter: "Clinic"]
+    union [Encounter: "Home Healthcare Services"]
+    union [Encounter: "Initial Hospital Observation Care"]
+    union [Encounter: "Medical Disability Exam"]
+    union [Encounter: "Observation"]
+    union [Encounter: "Office Visit"]
+    union [Encounter: "Telephone Visits"]
+    union [Encounter: "Online Assessments"]
+    union [Encounter: "Outpatient Consultation"]
+    union [Encounter: "Preventive Care Services Established Office Visit, 18 and Up"]
+    union [Encounter: "Preventive Care Services Group Counseling"]
+    union ([Encounter] E where exists ((E.type) T where T ~ "Unlisted preventive medicine service"))
+    union [Encounter: "Preventive Care Services, Initial Office Visit, 0 to 17"]
+    union [Encounter: "Preventive Care Services Individual Counseling"]
+    union [Encounter: "Preventive Care Services Initial Office Visit, 18 and Up"]
+    union [Encounter: "Preventive Care, Established Office Visit, 0 to 17"] ).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() during "Measurement Period"
+
+// Numerator Conditions
+define "Group A Streptococcus Lab Test With Result":
+  (( [Observation: "Group A Streptococcus Test"] ).isLaboratoryTestPerformed() ) GroupAStreptococcusTest
+    where GroupAStreptococcusTest.value is not null
+
+// Stratifications
+define "Stratification 1":
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+    where AgeInYearsAt(date from start of "Measurement Period") in Interval[3, 17]
+    return EncounterWithPharyngitis
+
+define "Stratification 2":
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+    where AgeInYearsAt(date from start of "Measurement Period") in Interval[18, 64]
+    return EncounterWithPharyngitis
+
+define "Stratification 3":
+  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
+    where AgeInYearsAt(date from start of "Measurement Period") >= 65
+    return EncounterWithPharyngitis
+
+/**
+Helper Functions
+*/
+define fluent function isActiveCompletedStoppedMedicationOrder(MedicationRequest List<MedicationRequest>):
+  MedicationRequest M
+    where M.status in { 'active', 'completed', 'stopped' }
+      and M.intent = 'order'
+
+define function EndOfDay(dateValue DateTime):
+  if dateValue is null then null
+  else DateTime(year from dateValue, month from dateValue, day from dateValue, 23, 59, 59, 999, 0)
 
 define function "Enhanced Has Competing Diagnosis History"(episodeDate List<Encounter>, competingConditions List<Condition>):
   episodeDate eDate
@@ -145,12 +183,53 @@ define function "Enhanced Has Competing Diagnosis History"(episodeDate List<Enco
         ) 
       return eDate
 
-// Check 1: Hospice status check
+define "SDE Ethnicity":
+  SDE."SDE Ethnicity"
+
+define "SDE Payer":
+  SDE."SDE Payer"
+
+define "SDE Race":
+  SDE."SDE Race"
+
+define "SDE Sex":
+  SDE."SDE Sex"
+
+/**
+Debug Functions - Initial Population
+*/
+// Get the onset interval of the pharyngitis or tonsillitis condition
+define "Debug Pharyngitis Intervals":
+  from "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
+  return EndOfDay(AcutePharyngitisTonsillitis.onset)
+
+// Get the encounter visit interval
+define "Debug Visit Intervals":
+  from "Encounter With Antibiotic Ordered Within Three Days" VisitWithAntibiotic
+  return  VisitWithAntibiotic.period.toInterval()
+
+// Get the list of active/completed/stopped antibiotic medication requests for this patient
+define "Debug Medication Requests":
+  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
+    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
+  ).isActiveCompletedStoppedMedicationOrder()
+
+// Get the authored dates of the antibiotic medication requests
+define "Debug Medication Authored Dates":
+  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
+    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
+  ).isActiveCompletedStoppedMedicationOrder().authoredOn
+
+
+/**
+Debug Functions - Denominator Exclusion
+*/
+// Hospice status check
 define "In Hospice":
   "Initial Population" EligibleEncounters
     where Hospice."Has Hospice Services"
 
-// Check 2: Previous antibiotic medication history check
+// Previous antibiotic medication history check
 define "Debug Antibiotic Medication History":
   Antibiotic."Has Antibiotic Medication History"(
     "Encounter With Pharyngitis or Tonsillitis With Antibiotic",
@@ -161,7 +240,7 @@ define "Debug Antibiotic Medication History":
 define "Debug Antibiotic Medications List":
   [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
 
-// Get the list of pharyngitis encounters for debugging
+// Get the list of pharyngitis or tonsilitis encounters for debugging
 define "Debug Pharyngitis Encounters":
   "Encounter With Pharyngitis or Tonsillitis With Antibiotic"
 
@@ -177,7 +256,7 @@ define "Debug Antibiotics With Valid Timing":
             ]
       )
 
-// Check 3: Competing diagnosis check
+// Competing diagnosis check
 define "Debug Competing Diagnosis":
   "Enhanced Has Competing Diagnosis History" ( 
     "Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
@@ -203,7 +282,7 @@ define "Debug Competing Conditions With Valid Timing":
       such that ( QICoreCommon."ToPrevalenceInterval" ( CompetingCondition ) ) 
           starts 3 days or less on or after day of start of Encounter.period
 
-// Check 4: Comorbid condition check
+// Comorbid condition check
 define "Debug Comorbid Conditions":
   Antibiotic."Has Comorbid Condition History" ( 
     "Encounter With Pharyngitis or Tonsillitis With Antibiotic", 
@@ -238,73 +317,8 @@ define "Debug Comorbid Conditions With Valid Timing":
             date from start of QICoreCommon."ToInterval" ( Encounter.period )
           ]
 
-define "Encounter With Antibiotic Ordered Within Three Days":
-  "Qualifying Encounter" EDOrAmbulatoryVisit
-    with (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
-    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]).isActiveCompletedStoppedMedicationOrder() ) AntibioticOrdered
-    such that EDOrAmbulatoryVisit.period.toInterval() starts 3 days or less on or before AntibioticOrdered.authoredOn
-
-define "Debug Medication Requests":
-  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
-    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
-  ).isActiveCompletedStoppedMedicationOrder()
-
-define "Debug Medication Authored Dates":
-  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
-    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
-  ).isActiveCompletedStoppedMedicationOrder().authoredOn
-
-define "Qualifying Encounter":
-  ( ([Encounter: "Emergency Department Visit"]
-    union ([Encounter] E where exists ((E.type) T where T ~ "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])"))
-    union [Encounter: "Clinic"]
-    union [Encounter: "Home Healthcare Services"]
-    union [Encounter: "Initial Hospital Observation Care"]
-    union [Encounter: "Medical Disability Exam"]
-    union [Encounter: "Observation"]
-    union [Encounter: "Office Visit"]
-    union [Encounter: "Telephone Visits"]
-    union [Encounter: "Online Assessments"]
-    union [Encounter: "Outpatient Consultation"]
-    union [Encounter: "Preventive Care Services Established Office Visit, 18 and Up"]
-    union [Encounter: "Preventive Care Services Group Counseling"]
-    union ([Encounter] E where exists ((E.type) T where T ~ "Unlisted preventive medicine service"))
-    union [Encounter: "Preventive Care Services, Initial Office Visit, 0 to 17"]
-    union [Encounter: "Preventive Care Services Individual Counseling"]
-    union [Encounter: "Preventive Care Services Initial Office Visit, 18 and Up"]
-    union [Encounter: "Preventive Care, Established Office Visit, 0 to 17"] ).isEncounterPerformed()) ValidEncounter
-    where ValidEncounter.period.toInterval() during "Measurement Period"
-
-define "Numerator":
-  from
-    "Group A Streptococcus Lab Test With Result" GroupAStreptococcusTest,
-    "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
-    where  GroupAStreptococcusTest.effective.toInterval() starts during day of Interval[( end of EncounterWithPharyngitis.period ) - 3 days, ( end of EncounterWithPharyngitis.period ) + 3 days]
-    return EncounterWithPharyngitis
-
-define "Group A Streptococcus Lab Test With Result":
-  (( [Observation: "Group A Streptococcus Test"] ).isLaboratoryTestPerformed() ) GroupAStreptococcusTest
-    where GroupAStreptococcusTest.value is not null
-
+/**
+Debug Functions - Numerator
+*/
 define "Debug Group A Streptococcus Lab Test With Result":
-  ( [Observation: "Group A Streptococcus Test"] )
-
-define "Stratification 1":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
-    where AgeInYearsAt(date from start of "Measurement Period") in Interval[3, 17]
-    return EncounterWithPharyngitis
-
-define "Stratification 2":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
-    where AgeInYearsAt(date from start of "Measurement Period") in Interval[18, 64]
-    return EncounterWithPharyngitis
-
-define "Stratification 3":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterWithPharyngitis
-    where AgeInYearsAt(date from start of "Measurement Period") >= 65
-    return EncounterWithPharyngitis
-
-define fluent function isActiveCompletedStoppedMedicationOrder(MedicationRequest List<MedicationRequest>):
-  MedicationRequest M
-    where M.status in { 'active', 'completed', 'stopped' }
-      and M.intent = 'order'
+  ( [Observation: "Group A Streptococcus Test"] ).isLaboratoryTestPerformed()
