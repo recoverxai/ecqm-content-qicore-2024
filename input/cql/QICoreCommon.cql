@@ -417,7 +417,7 @@ if condition.clinicalStatus ~ "active"
 else
    (end of ToAbatementInterval(condition)) abatementDate
     return if abatementDate is null then
-      Interval[start of ToInterval(condition.onset), abatementDate)
+      Interval[start of ToInterval(condition.onset), abatementDate]
     else
       Interval[start of ToInterval(condition.onset), abatementDate]
 
