@@ -1,0 +1,4038 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.102.12.1017.1",
+  "meta": {
+    "versionId": "37",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2021-02-20"
+    }
+  ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1017.1",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.102.12.1017.1"
+    }
+  ],
+  "version": "20210220",
+  "name": "CompetingConditionsForRespiratoryConditionsPart1",
+  "title": "Competing Conditions for Respiratory Conditions - Part 1",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "NCQA PHEMUR",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1010615002",
+            "display": "Late syphilis of lung (disorder)"
+          },
+          {
+            "code": "1010626008",
+            "display": "Recurrent peritonsillar abscess (disorder)"
+          },
+          {
+            "code": "1010634002",
+            "display": "Pneumonia caused by Acinetobacter (disorder)"
+          },
+          {
+            "code": "1010650005",
+            "display": "Acute endogenous lipoid pneumonitis (disorder)"
+          },
+          {
+            "code": "1010670004",
+            "display": "Chronic endogenous lipoid pneumonitis (disorder)"
+          },
+          {
+            "code": "102361000119104",
+            "display": "Chronic pneumonia (disorder)"
+          },
+          {
+            "code": "102453009",
+            "display": "Peritonsillar cellulitis (disorder)"
+          },
+          {
+            "code": "10271000175107",
+            "display": "Pneumonia caused by Enterococcus faecium (disorder)"
+          },
+          {
+            "code": "10281000175105",
+            "display": "Pneumonia caused by Enterococcus faecalis (disorder)"
+          },
+          {
+            "code": "10291000175108",
+            "display": "Pneumonia caused by Enterococcus (disorder)"
+          },
+          {
+            "code": "10301000175109",
+            "display": "Pneumonia caused by Serratia (disorder)"
+          },
+          {
+            "code": "10345003",
+            "display": "Primary syphilis of tonsils (disorder)"
+          },
+          {
+            "code": "1052300001",
+            "display": "Proctocolitis due to secondary syphilis (disorder)"
+          },
+          {
+            "code": "1052319006",
+            "display": "Secondary syphilis of nervous system (disorder)"
+          },
+          {
+            "code": "1052321001",
+            "display": "Secondary syphilis of digestive system (disorder)"
+          },
+          {
+            "code": "1052322008",
+            "display": "Secondary syphilis of eye (disorder)"
+          },
+          {
+            "code": "1052323003",
+            "display": "Secondary syphilis of musculoskeletal system (disorder)"
+          },
+          {
+            "code": "105645003",
+            "display": "Disease caused by Acanthamoebidae (disorder)"
+          },
+          {
+            "code": "10624991000119103",
+            "display": "Bronchopneumonia caused by Achromobacter (disorder)"
+          },
+          {
+            "code": "10625031000119102",
+            "display": "Bronchopneumonia caused by anaerobic bacteria (disorder)"
+          },
+          {
+            "code": "10625071000119104",
+            "display": "Bronchopneumonia caused by bacteria (disorder)"
+          },
+          {
+            "code": "10625111000119106",
+            "display": "Bronchopneumonia caused by Escherichia coli (disorder)"
+          },
+          {
+            "code": "10625151000119107",
+            "display": "Bronchopneumonia caused by Group A Streptococcus (disorder)"
+          },
+          {
+            "code": "10625191000119102",
+            "display": "Bronchopneumonia caused by Group B Streptococcus (disorder)"
+          },
+          {
+            "code": "10625231000119106",
+            "display": "Bronchopneumonia caused by Haemophilus influenzae (disorder)"
+          },
+          {
+            "code": "10625311000119109",
+            "display": "Bronchopneumonia caused by Klebsiella pneumoniae (disorder)"
+          },
+          {
+            "code": "10625351000119105",
+            "display": "Bronchopneumonia caused by methicillin resistant Staphylococcus aureus (disorder)"
+          },
+          {
+            "code": "10625391000119100",
+            "display": "Bronchopneumonia caused by methicillin susceptible Staphylococcus aureus (disorder)"
+          },
+          {
+            "code": "10625431000119105",
+            "display": "Bronchopneumonia caused by Mycoplasma pneumoniae (disorder)"
+          },
+          {
+            "code": "10625471000119108",
+            "display": "Bronchopneumonia caused by Proteus mirabilis (disorder)"
+          },
+          {
+            "code": "10625511000119104",
+            "display": "Bronchopneumonia caused by Pseudomonas (disorder)"
+          },
+          {
+            "code": "10625591000119108",
+            "display": "Bronchopneumonia caused by Staphylococcus (disorder)"
+          },
+          {
+            "code": "10625631000119108",
+            "display": "Bronchopneumonia caused by Staphylococcus aureus (disorder)"
+          },
+          {
+            "code": "10625671000119106",
+            "display": "Bronchopneumonia caused by Streptococcus (disorder)"
+          },
+          {
+            "code": "10625711000119105",
+            "display": "Bronchopneumonia caused by Streptococcus pneumoniae (disorder)"
+          },
+          {
+            "code": "10628871000119101",
+            "display": "Gastroenteritis caused by Influenza virus (disorder)"
+          },
+          {
+            "code": "10628911000119103",
+            "display": "Gastroenteritis caused by Influenza A virus (disorder)"
+          },
+          {
+            "code": "106371000119109",
+            "display": "Osteopathy co-occurrent and due to non active poliomyelitis of lower leg (disorder)"
+          },
+          {
+            "code": "10662001",
+            "display": "Nonvenomous insect bite of face with infection (disorder)"
+          },
+          {
+            "code": "10671005",
+            "display": "Blister of scapular region with infection (disorder)"
+          },
+          {
+            "code": "10679007",
+            "display": "Infection caused by Giardia lamblia (disorder)"
+          },
+          {
+            "code": "10754031000119105",
+            "display": "Gonorrhea in mother complicating childbirth (disorder)"
+          },
+          {
+            "code": "10759841000119105",
+            "display": "Sexually transmitted infectious disease in mother complicating childbirth (disorder)"
+          },
+          {
+            "code": "10759921000119107",
+            "display": "Syphilis in mother complicating childbirth (disorder)"
+          },
+          {
+            "code": "1077931000119106",
+            "display": "Osteolysis of right distal clavicle (disorder)"
+          },
+          {
+            "code": "1077941000119102",
+            "display": "Osteolysis of left distal clavicle (disorder)"
+          },
+          {
+            "code": "1082561000119104",
+            "display": "Recurrent acute suppurative otitis media with spontaneous rupture of ear drum (disorder)"
+          },
+          {
+            "code": "1082721000119101",
+            "display": "Pneumonia caused by Ascaris (disorder)"
+          },
+          {
+            "code": "1082731000119103",
+            "display": "Enteritis caused by Astrovirus (disorder)"
+          },
+          {
+            "code": "1082841000119101",
+            "display": "Acquired deformity of bilateral pierced ear lobes (disorder)"
+          },
+          {
+            "code": "1082931000119101",
+            "display": "Acute inflammation of bilateral mastoids (disorder)"
+          },
+          {
+            "code": "1083061000119100",
+            "display": "Spontaneous rupture of tympanic membranes of bilateral ears co-occurrent and due to recurrent acute suppurative otitis media (disorder)"
+          },
+          {
+            "code": "1083101000119102",
+            "display": "Acute suppurative otitis media of bilateral ears (disorder)"
+          },
+          {
+            "code": "1083111000119104",
+            "display": "Spontaneous rupture of bilateral tympanic membranes co-occurrent and due to acute suppurative otitis media (disorder)"
+          },
+          {
+            "code": "1083321000119108",
+            "display": "Chronic inflammation of bilateral mastoids (disorder)"
+          },
+          {
+            "code": "108365000",
+            "display": "Infection of skin (disorder)"
+          },
+          {
+            "code": "1084011000119100",
+            "display": "Inflammation of bilateral mastoids (disorder)"
+          },
+          {
+            "code": "1084821000119103",
+            "display": "Cystitis caused by Chlamydia (disorder)"
+          },
+          {
+            "code": "1085006",
+            "display": "Candidiasis of vulva (disorder)"
+          },
+          {
+            "code": "1086071000119103",
+            "display": "Diphtheria tubulointerstitial nephropathy (disorder)"
+          },
+          {
+            "code": "1087001000119105",
+            "display": "Infection of anus and rectum caused by Neisseria gonorrhoeae (disorder)"
+          },
+          {
+            "code": "1087021000119101",
+            "display": "Periurethral abscess caused by Neisseria gonorrhoeae (disorder)"
+          },
+          {
+            "code": "1087041000119107",
+            "display": "Infection of kidney and ureter caused by Neisseria gonorrhoeae (disorder)"
+          },
+          {
+            "code": "1087051000119109",
+            "display": "Gonococcal osteomyelitis (disorder)"
+          },
+          {
+            "code": "1087061000119106",
+            "display": "Gonococcal pneumonia (disorder)"
+          },
+          {
+            "code": "1087951000119105",
+            "display": "Acquired deformity of left pierced ear lobe (disorder)"
+          },
+          {
+            "code": "1088041000119106",
+            "display": "Acute inflammation of left mastoid (disorder)"
+          },
+          {
+            "code": "1088181000119100",
+            "display": "Spontaneous rupture of tympanic membrane of left ear co-occurrent and due to recurrent acute suppurative otitis media (disorder)"
+          },
+          {
+            "code": "1088221000119108",
+            "display": "Acute suppurative otitis media of left ear (disorder)"
+          },
+          {
+            "code": "1088231000119106",
+            "display": "Spontaneous rupture of left tympanic membrane co-occurrent and due to acute suppurative otitis media (disorder)"
+          },
+          {
+            "code": "1088451000119104",
+            "display": "Chronic inflammation of left mastoid (disorder)"
+          },
+          {
+            "code": "1088811000119102",
+            "display": "Stenosis of left external auditory canal due to and following procedure (disorder)"
+          },
+          {
+            "code": "1089071000119109",
+            "display": "Inflammation of left mastoid (disorder)"
+          },
+          {
+            "code": "1090571000119108",
+            "display": "Acquired deformity of right pierced ear lobe (disorder)"
+          },
+          {
+            "code": "1090661000119101",
+            "display": "Acute inflammation of right mastoid (disorder)"
+          },
+          {
+            "code": "1090791000119102",
+            "display": "Spontaneous rupture of tympanic membrane of right ear co-occurrent and due to recurrent acute suppurative otitis media (disorder)"
+          },
+          {
+            "code": "1090831000119108",
+            "display": "Acute suppurative otitis media of right ear (disorder)"
+          },
+          {
+            "code": "1091061000119103",
+            "display": "Chronic inflammation of right mastoid (disorder)"
+          },
+          {
+            "code": "1091421000119101",
+            "display": "Stenosis of right external auditory canal due to and following procedure (disorder)"
+          },
+          {
+            "code": "1091681000119104",
+            "display": "Inflammation of right mastoid (disorder)"
+          },
+          {
+            "code": "10920005",
+            "display": "Abrasion and/or friction burn of lip with infection (disorder)"
+          },
+          {
+            "code": "1092371000119103",
+            "display": "Salmonella pyelonephritis (disorder)"
+          },
+          {
+            "code": "1092831000119109",
+            "display": "Toxoplasma tubulointerstitial nephropathy (disorder)"
+          },
+          {
+            "code": "1092951000119106",
+            "display": "Pneumonia caused by Bordetella parapertussis (disorder)"
+          },
+          {
+            "code": "109362006",
+            "display": "Cellulitis of parapharyngeal space (disorder)"
+          },
+          {
+            "code": "109436001",
+            "display": "Moon molar teeth (disorder)"
+          },
+          {
+            "code": "109802000",
+            "display": "Abscess of uvula of palate (disorder)"
+          },
+          {
+            "code": "109909008",
+            "display": "Acute suppurative mastoiditis (disorder)"
+          },
+          {
+            "code": "109910003",
+            "display": "Chronic suppurative mastoiditis (disorder)"
+          },
+          {
+            "code": "10995009",
+            "display": "Abrasion and/or friction burn of scapular region with infection (disorder)"
+          },
+          {
+            "code": "110081000119109",
+            "display": "Bacterial vaginosis in pregnancy (disorder)"
+          },
+          {
+            "code": "110091000119107",
+            "display": "Candidiasis of vagina in pregnancy (disorder)"
+          },
+          {
+            "code": "1102005",
+            "display": "Intraerythrocytic parasitosis caused by Nuttallia (disorder)"
+          },
+          {
+            "code": "1107004",
+            "display": "Early latent syphilis, positive serology, negative cerebrospinal fluid, with relapse after treatment (disorder)"
+          },
+          {
+            "code": "111003001",
+            "display": "Sporotrichotic gumma (disorder)"
+          },
+          {
+            "code": "111347003",
+            "display": "Exostosis of jaw (disorder)"
+          },
+          {
+            "code": "111409009",
+            "display": "Ulcerative cystitis (disorder)"
+          },
+          {
+            "code": "111538005",
+            "display": "Acute mastoiditis with complication (disorder)"
+          },
+          {
+            "code": "111705004",
+            "display": "Blister of trunk with infection (disorder)"
+          },
+          {
+            "code": "111707007",
+            "display": "Abrasion and/or friction burn of chest wall with infection (disorder)"
+          },
+          {
+            "code": "111711001",
+            "display": "Blister of shoulder with infection (disorder)"
+          },
+          {
+            "code": "111712008",
+            "display": "Abrasion and/or friction burn of elbow with infection (disorder)"
+          },
+          {
+            "code": "111796005",
+            "display": "Madura foot caused by Streptomyces somaliensis (disorder)"
+          },
+          {
+            "code": "111806005",
+            "display": "Acute gonococcal prostatitis (disorder)"
+          },
+          {
+            "code": "111807001",
+            "display": "Gonococcal endophthalmia (disorder)"
+          },
+          {
+            "code": "111839008",
+            "display": "Intestinal infection caused by Escherichia coli (disorder)"
+          },
+          {
+            "code": "111843007",
+            "display": "Viral gastroenteritis (disorder)"
+          },
+          {
+            "code": "111852003",
+            "display": "Vaccinia (disorder)"
+          },
+          {
+            "code": "111898002",
+            "display": "Chronic mycotic otitis externa (disorder)"
+          },
+          {
+            "code": "111899005",
+            "display": "Cutaneous aspergillosis (disorder)"
+          },
+          {
+            "code": "111900000",
+            "display": "Pneumonia in aspergillosis (disorder)"
+          },
+          {
+            "code": "111901001",
+            "display": "Bronchocentric granulomatosis (disorder)"
+          },
+          {
+            "code": "111911008",
+            "display": "Chronic intestinal amebiasis without abscess (disorder)"
+          },
+          {
+            "code": "111912001",
+            "display": "Acute amebic dysentery without abscess (disorder)"
+          },
+          {
+            "code": "111921000",
+            "display": "Trichobilharzia cercarial dermatitis (disorder)"
+          },
+          {
+            "code": "111923002",
+            "display": "Gastrodiscoidiasis (disorder)"
+          },
+          {
+            "code": "112121000119105",
+            "display": "Venereal disease caused by Chlamydia trachomatis (disorder)"
+          },
+          {
+            "code": "11251000",
+            "display": "Cystitis caused by radiation (disorder)"
+          },
+          {
+            "code": "11258006",
+            "display": "Tinea barbae caused by Trichophyton mentagrophytes (disorder)"
+          },
+          {
+            "code": "113271000119106",
+            "display": "Enostosis of talus (disorder)"
+          },
+          {
+            "code": "113281000119109",
+            "display": "Enostosis of fibula (disorder)"
+          },
+          {
+            "code": "113301000119108",
+            "display": "Enostosis of femur (disorder)"
+          },
+          {
+            "code": "113311000119106",
+            "display": "Enostosis of tibia (disorder)"
+          },
+          {
+            "code": "113321000119104",
+            "display": "Enostosis of ulna (disorder)"
+          },
+          {
+            "code": "113341000119105",
+            "display": "Enostosis of radius (disorder)"
+          },
+          {
+            "code": "113351000119107",
+            "display": "Enostosis of vertebra (disorder)"
+          },
+          {
+            "code": "11338007",
+            "display": "Syphilitic episcleritis (disorder)"
+          },
+          {
+            "code": "1141788003",
+            "display": "Bacillary peliosis caused by Bartonella quintana (disorder)"
+          },
+          {
+            "code": "1141789006",
+            "display": "Bacillary peliosis caused by Bartonella henselae (disorder)"
+          },
+          {
+            "code": "1142031005",
+            "display": "Optic atrophy due to late congenital syphilis (disorder)"
+          },
+          {
+            "code": "1142036000",
+            "display": "Neonatal infection of skin caused by Pseudomonas (disorder)"
+          },
+          {
+            "code": "1142043006",
+            "display": "Regurgitation of pulmonary valve due to late syphilis (disorder)"
+          },
+          {
+            "code": "1142053007",
+            "display": "Neonatal cephalic pustulosis caused by Malassezia (disorder)"
+          },
+          {
+            "code": "1142055000",
+            "display": "Human immunodeficiency virus modified skin disease (disorder)"
+          },
+          {
+            "code": "1142092000",
+            "display": "Late congenital syphilitic osteochondropathy (disorder)"
+          },
+          {
+            "code": "1142095003",
+            "display": "Late congenital syphilis of cardiovascular system (disorder)"
+          },
+          {
+            "code": "1142099009",
+            "display": "Secondary syphilis of synovium (disorder)"
+          },
+          {
+            "code": "1142226000",
+            "display": "Infection of intestine caused by Salmonella group O:2 (disorder)"
+          },
+          {
+            "code": "1142227009",
+            "display": "Arthritis of knee joint caused by Borrelia burgdorferi (disorder)"
+          },
+          {
+            "code": "1144504001",
+            "display": "Poliomyelitis osteopathy of pelvis and femur (disorder)"
+          },
+          {
+            "code": "1144976006",
+            "display": "Asymptomatic prostatitis (disorder)"
+          },
+          {
+            "code": "1148585008",
+            "display": "Infection of intestine caused by Vibrio parahaemolyticus (disorder)"
+          },
+          {
+            "code": "1148699004",
+            "display": "Inflammation of small intestine caused by Calicivirus (disorder)"
+          },
+          {
+            "code": "114881000119108",
+            "display": "Maternal gonorrhea during pregnancy (disorder)"
+          },
+          {
+            "code": "1148932007",
+            "display": "Cystitis caused by virus (disorder)"
+          },
+          {
+            "code": "1149093006",
+            "display": "Pneumonia caused by vancomycin resistant Enterococcus (disorder)"
+          },
+          {
+            "code": "1153389005",
+            "display": "Epiphyseal arrest due to disorder of endocrine system (disorder)"
+          },
+          {
+            "code": "1153390001",
+            "display": "Epiphyseal arrest due to kidney disease (disorder)"
+          },
+          {
+            "code": "11625007",
+            "display": "Torus mandibularis (disorder)"
+          },
+          {
+            "code": "11673571000119101",
+            "display": "Exostosis of skull (disorder)"
+          },
+          {
+            "code": "11773411000119102",
+            "display": "Infected abrasion of skin of right thumb (disorder)"
+          },
+          {
+            "code": "11773491000119106",
+            "display": "Infected abrasion of skin of left thumb (disorder)"
+          },
+          {
+            "code": "11773571000119109",
+            "display": "Infected wound of right elbow due to non venomous insect bite (disorder)"
+          },
+          {
+            "code": "11773651000119104",
+            "display": "Infected wound of left elbow due to non venomous insect bite (disorder)"
+          },
+          {
+            "code": "11779241000119101",
+            "display": "Infected abrasion of skin of right forearm (disorder)"
+          },
+          {
+            "code": "11779281000119106",
+            "display": "Infected abrasion of skin of left forearm (disorder)"
+          },
+          {
+            "code": "11779481000119105",
+            "display": "Infected abrasion of skin of right elbow region (disorder)"
+          },
+          {
+            "code": "11779521000119105",
+            "display": "Infected abrasion of skin of left elbow region (disorder)"
+          },
+          {
+            "code": "11779561000119100",
+            "display": "Infected wound of right forearm due to non venomous insect bite (disorder)"
+          },
+          {
+            "code": "11779601000119100",
+            "display": "Infected wound of left forearm due to non venomous insect bite (disorder)"
+          },
+          {
+            "code": "11779641000119103",
+            "display": "Infected abrasion of skin of lesser toe of right foot (disorder)"
+          },
+          {
+            "code": "11783401000119109",
+            "display": "Infected wound of right hip due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11783441000119106",
+            "display": "Infected wound of left hip due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11783641000119108",
+            "display": "Infected abrasion of skin of lesser toe of left foot (disorder)"
+          },
+          {
+            "code": "11783881000119104",
+            "display": "Nonvenomous insect bite of right hand with infection (disorder)"
+          },
+          {
+            "code": "11783921000119106",
+            "display": "Nonvenomous insect bite of left hand with infection (disorder)"
+          },
+          {
+            "code": "11783961000119101",
+            "display": "Infected wound of right thigh due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11784001000119100",
+            "display": "Infected wound of left thigh due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11784041000119103",
+            "display": "Infected wound of right wrist due to non venomous insect bite (disorder)"
+          },
+          {
+            "code": "11784081000119108",
+            "display": "Infected wound of left wrist due to non venomous insect bite (disorder)"
+          },
+          {
+            "code": "11784121000119105",
+            "display": "Infected abrasion of skin of finger of right hand (disorder)"
+          },
+          {
+            "code": "11784161000119100",
+            "display": "Infected abrasion of skin of right index finger (disorder)"
+          },
+          {
+            "code": "11784201000119105",
+            "display": "Infected abrasion of skin of right little finger (disorder)"
+          },
+          {
+            "code": "11784241000119107",
+            "display": "Infected abrasion of skin of right middle finger (disorder)"
+          },
+          {
+            "code": "11784281000119102",
+            "display": "Infected abrasion of skin of right ring finger (disorder)"
+          },
+          {
+            "code": "11784321000119107",
+            "display": "Infected abrasion of skin of finger of left hand (disorder)"
+          },
+          {
+            "code": "11784361000119102",
+            "display": "Infected abrasion of skin of left index finger (disorder)"
+          },
+          {
+            "code": "11784401000119106",
+            "display": "Infected abrasion of skin of left little finger (disorder)"
+          },
+          {
+            "code": "11784441000119108",
+            "display": "Infected abrasion of skin of left middle finger (disorder)"
+          },
+          {
+            "code": "11784481000119103",
+            "display": "Infected abrasion of skin of left ring finger (disorder)"
+          },
+          {
+            "code": "11784521000119103",
+            "display": "Infected abrasion of skin of right hand (disorder)"
+          },
+          {
+            "code": "11784561000119108",
+            "display": "Infected abrasion of skin of left hand (disorder)"
+          },
+          {
+            "code": "11784601000119108",
+            "display": "Infected abrasion of skin of right wrist region (disorder)"
+          },
+          {
+            "code": "11784641000119105",
+            "display": "Infected abrasion of skin of left wrist region (disorder)"
+          },
+          {
+            "code": "11793501000119109",
+            "display": "Infected abrasion of skin of left foot (disorder)"
+          },
+          {
+            "code": "11797701000119109",
+            "display": "Infected abrasion of skin of sacral region (disorder)"
+          },
+          {
+            "code": "11808821000119105",
+            "display": "Infected abrasion of skin of right hip region (disorder)"
+          },
+          {
+            "code": "11808861000119100",
+            "display": "Infected abrasion of skin of left hip region (disorder)"
+          },
+          {
+            "code": "11809221000119101",
+            "display": "Infected wound of low back due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11809421000119102",
+            "display": "Infected abrasion of skin of right lower leg (disorder)"
+          },
+          {
+            "code": "11809461000119107",
+            "display": "Infected abrasion of skin of left lower leg (disorder)"
+          },
+          {
+            "code": "11809501000119107",
+            "display": "Infected abrasion of skin of right knee region (disorder)"
+          },
+          {
+            "code": "11809541000119109",
+            "display": "Infected abrasion of skin of left knee region (disorder)"
+          },
+          {
+            "code": "11809581000119104",
+            "display": "Infected abrasion of skin of right thigh (disorder)"
+          },
+          {
+            "code": "11809621000119104",
+            "display": "Infected abrasion of skin of left thigh (disorder)"
+          },
+          {
+            "code": "11809661000119109",
+            "display": "Infected wound of right knee due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11809701000119102",
+            "display": "Infected wound of left knee due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11822921000119105",
+            "display": "Infected abrasion of skin of right upper arm (disorder)"
+          },
+          {
+            "code": "11822961000119100",
+            "display": "Infected abrasion of skin of left upper arm (disorder)"
+          },
+          {
+            "code": "11823161000119108",
+            "display": "Infected abrasion of skin of right shoulder region (disorder)"
+          },
+          {
+            "code": "11823201000119103",
+            "display": "Infected abrasion of skin of left shoulder region (disorder)"
+          },
+          {
+            "code": "11823321000119101",
+            "display": "Infected wound of right upper arm due to non venomous insect bite (disorder)"
+          },
+          {
+            "code": "11823361000119106",
+            "display": "Infected wound of left upper arm due to non venomous insect bite (disorder)"
+          },
+          {
+            "code": "11837001000119102",
+            "display": "Infected wound of right lower leg due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11837041000119100",
+            "display": "Infected wound of left lower leg due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11840006",
+            "display": "Traveler's diarrhea (disorder)"
+          },
+          {
+            "code": "11843951000119105",
+            "display": "Infected abrasion of skin of right ear (disorder)"
+          },
+          {
+            "code": "11843991000119100",
+            "display": "Infected abrasion of skin of left ear (disorder)"
+          },
+          {
+            "code": "11848301000119100",
+            "display": "Infected wound of right eyelid due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11848381000119108",
+            "display": "Infected wound of left eyelid due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11848501000119109",
+            "display": "Infected abrasion of skin of right eyelid (disorder)"
+          },
+          {
+            "code": "11848581000119101",
+            "display": "Infected abrasion of skin of left eyelid (disorder)"
+          },
+          {
+            "code": "11848981000119109",
+            "display": "Infected abrasion of skin of right breast (disorder)"
+          },
+          {
+            "code": "11849021000119103",
+            "display": "Infected abrasion of skin of left breast (disorder)"
+          },
+          {
+            "code": "11862161000119109",
+            "display": "Infected abrasion of skin of right ankle region (disorder)"
+          },
+          {
+            "code": "11862201000119104",
+            "display": "Infected abrasion of skin of left ankle region (disorder)"
+          },
+          {
+            "code": "11862241000119102",
+            "display": "Infected abrasion of skin of right great toe (disorder)"
+          },
+          {
+            "code": "11862281000119107",
+            "display": "Infected abrasion of skin of left great toe (disorder)"
+          },
+          {
+            "code": "11862321000119102",
+            "display": "Infected abrasion of skin of right foot (disorder)"
+          },
+          {
+            "code": "11862521000119106",
+            "display": "Infected wound of right foot due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11862561000119101",
+            "display": "Infected wound of left foot due to nonvenomous insect bite (disorder)"
+          },
+          {
+            "code": "11906007",
+            "display": "Chronic gonococcal vulvovaginitis (disorder)"
+          },
+          {
+            "code": "12008008",
+            "display": "Palmar papilloma of yaws (disorder)"
+          },
+          {
+            "code": "120639003",
+            "display": "Hantavirus pulmonary syndrome (disorder)"
+          },
+          {
+            "code": "12232008",
+            "display": "Syphilitic aneurysm of aorta (disorder)"
+          },
+          {
+            "code": "12241911000119102",
+            "display": "Plantar wart of left foot (disorder)"
+          },
+          {
+            "code": "12241951000119101",
+            "display": "Plantar wart of right foot (disorder)"
+          },
+          {
+            "code": "12277551000119101",
+            "display": "Bilateral plantar wart (disorder)"
+          },
+          {
+            "code": "123587001",
+            "display": "Acute bronchopneumonia (disorder)"
+          },
+          {
+            "code": "123588006",
+            "display": "Confluent bronchopneumonia with abscess formation (disorder)"
+          },
+          {
+            "code": "123589003",
+            "display": "Necrotizing bronchopneumonia (disorder)"
+          },
+          {
+            "code": "123590007",
+            "display": "Focal pneumonia (disorder)"
+          },
+          {
+            "code": "123591006",
+            "display": "Confluent pneumonia (disorder)"
+          },
+          {
+            "code": "123611003",
+            "display": "Subacute pyelonephritis (disorder)"
+          },
+          {
+            "code": "12373006",
+            "display": "Chronic gonococcal bartholinitis (disorder)"
+          },
+          {
+            "code": "123754002",
+            "display": "Focal pyelonephritis (disorder)"
+          },
+          {
+            "code": "123755001",
+            "display": "Diffuse pyelonephritis (disorder)"
+          },
+          {
+            "code": "123812008",
+            "display": "Zinc excess (disorder)"
+          },
+          {
+            "code": "12435008",
+            "display": "Abrasion and/or friction burn of anus with infection (disorder)"
+          },
+          {
+            "code": "12463005",
+            "display": "Infectious gastroenteritis (disorder)"
+          },
+          {
+            "code": "124691000119101",
+            "display": "Pneumonia caused by methicillin resistant Staphylococcus aureus (disorder)"
+          },
+          {
+            "code": "12602008",
+            "display": "Non-hereditary acrodermatitis enteropathica (disorder)"
+          },
+          {
+            "code": "127601000119103",
+            "display": "Disseminated Acanthamoeba infection (disorder)"
+          },
+          {
+            "code": "12804006",
+            "display": "Tinea cruris caused by Trichophyton rubrum (disorder)"
+          },
+          {
+            "code": "1282001",
+            "display": "Perichondritis of larynx (disorder)"
+          },
+          {
+            "code": "128711000119106",
+            "display": "Pneumonia caused by methicillin susceptible Staphylococcus aureus (disorder)"
+          },
+          {
+            "code": "128936008",
+            "display": "Bacterial infection of skin (disorder)"
+          },
+          {
+            "code": "128937004",
+            "display": "Viral infection of skin (disorder)"
+          },
+          {
+            "code": "128938009",
+            "display": "Parasitic infection of skin (disorder)"
+          },
+          {
+            "code": "128939001",
+            "display": "Infection of subcutaneous tissue (disorder)"
+          },
+          {
+            "code": "129451001",
+            "display": "Respiratory bronchiolitis associated interstitial lung disease (disorder)"
+          },
+          {
+            "code": "129452008",
+            "display": "Nonspecific interstitial pneumonitis (disorder)"
+          },
+          {
+            "code": "129668006",
+            "display": "Ulcer caused by Treponema vincentii (disorder)"
+          },
+          {
+            "code": "13087006",
+            "display": "Necrosis of larynx (disorder)"
+          },
+          {
+            "code": "13125003",
+            "display": "Chronic myometritis (disorder)"
+          },
+          {
+            "code": "13177009",
+            "display": "Cellulitis of nasopharynx (disorder)"
+          },
+          {
+            "code": "13285005",
+            "display": "Cystitis cystica (disorder)"
+          },
+          {
+            "code": "13310005",
+            "display": "Taboparesis (disorder)"
+          },
+          {
+            "code": "133211000119107",
+            "display": "Acquired deformity of pierced ear lobe (disorder)"
+          },
+          {
+            "code": "13338002",
+            "display": "Verruca palmaris (disorder)"
+          },
+          {
+            "code": "13471002",
+            "display": "Infection caused by Trichuris ovis (disorder)"
+          },
+          {
+            "code": "13641000119106",
+            "display": "Viral colitis (disorder)"
+          },
+          {
+            "code": "14096004",
+            "display": "Nonvenomous insect bite of scapular region with infection (disorder)"
+          },
+          {
+            "code": "142961000119108",
+            "display": "Gastroenteritis caused by Influenza A virus subtype H1N1 (disorder)"
+          },
+          {
+            "code": "14386001",
+            "display": "Indeterminate leprosy (disorder)"
+          },
+          {
+            "code": "14560005",
+            "display": "Dermal mycosis (disorder)"
+          },
+          {
+            "code": "14948001",
+            "display": "Acute suppurative otitis media without spontaneous rupture of ear drum (disorder)"
+          },
+          {
+            "code": "15033003",
+            "display": "Peritonsillar abscess (disorder)"
+          },
+          {
+            "code": "15034009",
+            "display": "Nonvenomous insect bite of breast with infection (disorder)"
+          },
+          {
+            "code": "151004",
+            "display": "Gonococcal meningitis (disorder)"
+          },
+          {
+            "code": "1515008",
+            "display": "Gorham's disease (disorder)"
+          },
+          {
+            "code": "15207003",
+            "display": "Zoonotic form of cutaneous leishmaniasis (disorder)"
+          },
+          {
+            "code": "15470004",
+            "display": "Toxic diffuse goiter with acropachy (disorder)"
+          },
+          {
+            "code": "15628003",
+            "display": "Gonorrhea (disorder)"
+          },
+          {
+            "code": "15634005",
+            "display": "Palmar hyperkeratosis of yaws (disorder)"
+          },
+          {
+            "code": "15640081000119104",
+            "display": "Bilateral bone spur of calcaneum (disorder)"
+          },
+          {
+            "code": "15677801000119103",
+            "display": "Chorioretinitis of right eye due to secondary syphilis (disorder)"
+          },
+          {
+            "code": "15677841000119101",
+            "display": "Chorioretinitis of bilateral eyes due to secondary syphilis (disorder)"
+          },
+          {
+            "code": "15677881000119106",
+            "display": "Chorioretinitis of left eye due to secondary syphilis (disorder)"
+          },
+          {
+            "code": "15679481000119104",
+            "display": "Iritis of right eye caused by Treponema pallidum (disorder)"
+          },
+          {
+            "code": "15679561000119109",
+            "display": "Iritis of left eye caused by Treponema pallidum (disorder)"
+          },
+          {
+            "code": "15679681000119101",
+            "display": "Iritis of bilateral eyes caused by Treponema pallidum (disorder)"
+          },
+          {
+            "code": "15681361000119105",
+            "display": "Infection of skin of bilateral eyelids due to herpes zoster (disorder)"
+          },
+          {
+            "code": "15685441000119102",
+            "display": "Retinitis of bilateral eyes caused by Treponema pallidum (disorder)"
+          },
+          {
+            "code": "15693201000119102",
+            "display": "Keratitis of bilateral eyes caused by Acanthamoeba (disorder)"
+          },
+          {
+            "code": "15693241000119100",
+            "display": "Keratitis of left eye caused by Acanthamoeba (disorder)"
+          },
+          {
+            "code": "15693281000119105",
+            "display": "Keratitis of right eye caused by Acanthamoeba (disorder)"
+          },
+          {
+            "code": "15698841000119105",
+            "display": "Ulcer of right cornea caused by Acanthamoeba (disorder)"
+          },
+          {
+            "code": "15698881000119100",
+            "display": "Ulcer of left cornea caused by Acanthamoeba (disorder)"
+          },
+          {
+            "code": "15715841000119107",
+            "display": "Enostosis of left tibia (disorder)"
+          },
+          {
+            "code": "15715881000119102",
+            "display": "Enostosis of right tibia (disorder)"
+          },
+          {
+            "code": "15716561000119104",
+            "display": "Bone island of right femur (disorder)"
+          },
+          {
+            "code": "15716601000119104",
+            "display": "Bone island of left femur (disorder)"
+          },
+          {
+            "code": "15845006",
+            "display": "Buruli ulcer (disorder)"
+          },
+          {
+            "code": "15936661000119103",
+            "display": "Erysipelas of bilateral lower limbs (disorder)"
+          },
+          {
+            "code": "15936701000119105",
+            "display": "Erysipelas of right lower limb (disorder)"
+          },
+          {
+            "code": "15936741000119107",
+            "display": "Erysipelas of left lower limb (disorder)"
+          },
+          {
+            "code": "15965501000119100",
+            "display": "Abscess of right greater vestibular gland (disorder)"
+          },
+          {
+            "code": "15965541000119103",
+            "display": "Abscess of left greater vestibular gland (disorder)"
+          },
+          {
+            "code": "15981911000119105",
+            "display": "Chronic bilateral maxillary sinusitis (disorder)"
+          },
+          {
+            "code": "15981951000119106",
+            "display": "Chronic right maxillary sinusitis (disorder)"
+          },
+          {
+            "code": "15981991000119101",
+            "display": "Chronic left maxillary sinusitis (disorder)"
+          },
+          {
+            "code": "15993391000119102",
+            "display": "Retinitis of bilateral eyes due to secondary syphilis (disorder)"
+          },
+          {
+            "code": "16015471000119102",
+            "display": "Osteopathy of right foot following poliomyelitis (disorder)"
+          },
+          {
+            "code": "16015551000119107",
+            "display": "Osteopathy of bilateral feet following poliomyelitis (disorder)"
+          },
+          {
+            "code": "16015631000119102",
+            "display": "Osteopathy of left foot following poliomyelitis (disorder)"
+          },
+          {
+            "code": "16035631000119105",
+            "display": "Osteolysis of left foot (disorder)"
+          },
+          {
+            "code": "16035831000119109",
+            "display": "Osteolysis of right ankle (disorder)"
+          },
+          {
+            "code": "16035991000119101",
+            "display": "Osteolysis of bilateral hands (disorder)"
+          },
+          {
+            "code": "16036000",
+            "display": "Acute empyema of frontal sinus (disorder)"
+          },
+          {
+            "code": "16036071000119105",
+            "display": "Osteolysis of left ankle (disorder)"
+          },
+          {
+            "code": "16036111000119103",
+            "display": "Osteolysis of right foot (disorder)"
+          },
+          {
+            "code": "16070004",
+            "display": "Syphilitic cirrhosis (disorder)"
+          },
+          {
+            "code": "1621000119101",
+            "display": "Chlamydia trachomatis infection in pregnancy (disorder)"
+          },
+          {
+            "code": "16217981000119107",
+            "display": "Infection of upper genitourinary tract caused by Neisseria gonorrheae (disorder)"
+          },
+          {
+            "code": "16271000119108",
+            "display": "Pyelonephritis in pregnancy (disorder)"
+          },
+          {
+            "code": "16291381000119103",
+            "display": "Infection of subungual skin of toe of bilateral feet due to ingrown toenail (disorder)"
+          },
+          {
+            "code": "16314371000119109",
+            "display": "Steroid-modified tinea infection of lower limb (disorder)"
+          },
+          {
+            "code": "16314421000119103",
+            "display": "Steroid-modified tinea infection of groin (disorder)"
+          },
+          {
+            "code": "16314471000119102",
+            "display": "Steroid-modified tinea infection of foot (disorder)"
+          },
+          {
+            "code": "16358007",
+            "display": "Chronic disease of tonsils AND/OR adenoids (disorder)"
+          },
+          {
+            "code": "16429005",
+            "display": "Cutaneous larva migrans caused by Ancylostoma braziliense (disorder)"
+          },
+          {
+            "code": "16442005",
+            "display": "Leontiasis ossium (disorder)"
+          },
+          {
+            "code": "16681000",
+            "display": "Candidal otitis externa (disorder)"
+          },
+          {
+            "code": "17039000",
+            "display": "Blister of abdominal wall with infection (disorder)"
+          },
+          {
+            "code": "17198008",
+            "display": "Nonvenomous insect bite of ear with infection (disorder)"
+          },
+          {
+            "code": "17250009",
+            "display": "Blister of interscapular region with infection (disorder)"
+          },
+          {
+            "code": "17273001",
+            "display": "Mucocutaneous cryptococcosis (disorder)"
+          },
+          {
+            "code": "17305005",
+            "display": "Acute gonorrhea of genitourinary tract (disorder)"
+          },
+          {
+            "code": "17384006",
+            "display": "Nonvenomous insect bite of toe with infection (disorder)"
+          },
+          {
+            "code": "17723000",
+            "display": "Infection caused by Naegleria (disorder)"
+          },
+          {
+            "code": "17794004",
+            "display": "Recurrent cutaneous leishmaniasis (disorder)"
+          },
+          {
+            "code": "18081009",
+            "display": "Enteric campylobacteriosis (disorder)"
+          },
+          {
+            "code": "18099001",
+            "display": "Retropharyngeal abscess (disorder)"
+          },
+          {
+            "code": "181007",
+            "display": "Hemorrhagic bronchopneumonia (disorder)"
+          },
+          {
+            "code": "18229003",
+            "display": "Suppurative colitis (disorder)"
+          },
+          {
+            "code": "185367005",
+            "display": "Microsporosis nigra (disorder)"
+          },
+          {
+            "code": "186116005",
+            "display": "Acute amebic dysentery (disorder)"
+          },
+          {
+            "code": "186150001",
+            "display": "Enteritis caused by rotavirus (disorder)"
+          },
+          {
+            "code": "186289000",
+            "display": "Tinea nigra (disorder)"
+          },
+          {
+            "code": "186357007",
+            "display": "Streptococcal sore throat with scarlatina (disorder)"
+          },
+          {
+            "code": "186394003",
+            "display": "Actinomycosis of cecum (disorder)"
+          },
+          {
+            "code": "186397005",
+            "display": "Madura foot - actinomycotic (disorder)"
+          },
+          {
+            "code": "186431008",
+            "display": "Infection caused by Clostridioides difficile (disorder)"
+          },
+          {
+            "code": "186535001",
+            "display": "Eczema herpeticum (disorder)"
+          },
+          {
+            "code": "186668002",
+            "display": "Gammaherpesviral mononucleosis (disorder)"
+          },
+          {
+            "code": "186807008",
+            "display": "Asian desert cutaneous leishmaniasis (disorder)"
+          },
+          {
+            "code": "186825001",
+            "display": "Systemic bartonellosis (disorder)"
+          },
+          {
+            "code": "186826000",
+            "display": "Cutaneous and mucocutaneous bartonellosis (disorder)"
+          },
+          {
+            "code": "186833000",
+            "display": "Early congenital syphilis - latent (disorder)"
+          },
+          {
+            "code": "186842007",
+            "display": "Late congenital syphilitic oculopathy (disorder)"
+          },
+          {
+            "code": "186846005",
+            "display": "Early symptomatic syphilis (disorder)"
+          },
+          {
+            "code": "186847001",
+            "display": "Primary genital syphilis (disorder)"
+          },
+          {
+            "code": "186850003",
+            "display": "Secondary syphilis of skin and mucous membrane (disorder)"
+          },
+          {
+            "code": "186854007",
+            "display": "Uveitis due to secondary syphilis (disorder)"
+          },
+          {
+            "code": "186861006",
+            "display": "Secondary syphilis relapse (disorder)"
+          },
+          {
+            "code": "186863009",
+            "display": "Acute secondary syphilitic meningitis (disorder)"
+          },
+          {
+            "code": "186867005",
+            "display": "Latent early syphilis (disorder)"
+          },
+          {
+            "code": "186868000",
+            "display": "Serological relapse after treatment of latent early syphilis (disorder)"
+          },
+          {
+            "code": "186875004",
+            "display": "Syphilitic endocarditis of mitral valve (disorder)"
+          },
+          {
+            "code": "186877007",
+            "display": "Syphilitic endocarditis of tricuspid valve (disorder)"
+          },
+          {
+            "code": "186878002",
+            "display": "Syphilitic endocarditis of pulmonary valve (disorder)"
+          },
+          {
+            "code": "186893003",
+            "display": "Rupture of syphilitic cerebral aneurysm (disorder)"
+          },
+          {
+            "code": "186903006",
+            "display": "Late latent syphilis (disorder)"
+          },
+          {
+            "code": "186915005",
+            "display": "Chronic gonorrhea lower genitourinary tract (disorder)"
+          },
+          {
+            "code": "186931002",
+            "display": "Gonococcal anal infection (disorder)"
+          },
+          {
+            "code": "186939000",
+            "display": "Gonococcal peritonitis (disorder)"
+          },
+          {
+            "code": "186946009",
+            "display": "Lymphogranuloma venereum (disorder)"
+          },
+          {
+            "code": "187052004",
+            "display": "Pulmonary African histoplasmosis (disorder)"
+          },
+          {
+            "code": "187065008",
+            "display": "Cutaneous blastomycosis (disorder)"
+          },
+          {
+            "code": "187081003",
+            "display": "Subcutaneous pheohyphomycotic abscess and cyst (disorder)"
+          },
+          {
+            "code": "187089001",
+            "display": "Actinomycotic mycetoma (disorder)"
+          },
+          {
+            "code": "187115002",
+            "display": "Cutaneous schistosomiasis (disorder)"
+          },
+          {
+            "code": "187171000",
+            "display": "Ascariasis with intestinal complications (disorder)"
+          },
+          {
+            "code": "187174008",
+            "display": "Intestinal strongyloidiasis (disorder)"
+          },
+          {
+            "code": "187187002",
+            "display": "Intestinal angiostrongyliasis (disorder)"
+          },
+          {
+            "code": "188463006",
+            "display": "Chlamydial pelvic inflammatory disease (disorder)"
+          },
+          {
+            "code": "18849004",
+            "display": "Infection caused by Trichostrongylus axei (disorder)"
+          },
+          {
+            "code": "18900005",
+            "display": "Periporitis (disorder)"
+          },
+          {
+            "code": "18901009",
+            "display": "Cutaneous diphtheria (disorder)"
+          },
+          {
+            "code": "19108007",
+            "display": "Nonvenomous insect bite of trunk with infection (disorder)"
+          },
+          {
+            "code": "19138001",
+            "display": "Epidermodysplasia verruciformis (disorder)"
+          },
+          {
+            "code": "191727003",
+            "display": "Post measles pneumonia (disorder)"
+          },
+          {
+            "code": "192008",
+            "display": "Congenital syphilitic hepatomegaly (disorder)"
+          },
+          {
+            "code": "19206003",
+            "display": "Syphilitic acoustic neuritis (disorder)"
+          },
+          {
+            "code": "19213003",
+            "display": "Infectious diarrheal disease (disorder)"
+          },
+          {
+            "code": "192647003",
+            "display": "Secondary syphilitic meningitis (disorder)"
+          },
+          {
+            "code": "19290004",
+            "display": "Clutton's joints (disorder)"
+          },
+          {
+            "code": "19362000",
+            "display": "Cutaneous larva migrans (disorder)"
+          },
+          {
+            "code": "193786000",
+            "display": "Keratitis due to syphilis (disorder)"
+          },
+          {
+            "code": "193922006",
+            "display": "Parasitic eyelid infestation (disorder)"
+          },
+          {
+            "code": "194202008",
+            "display": "Infective otitis externa due to erysipelas (disorder)"
+          },
+          {
+            "code": "194203003",
+            "display": "Infective otitis externa due to impetigo (disorder)"
+          },
+          {
+            "code": "194208007",
+            "display": "Chronic otitis externa due to moniliasis (disorder)"
+          },
+          {
+            "code": "194281003",
+            "display": "Acute suppurative otitis media (disorder)"
+          },
+          {
+            "code": "194907008",
+            "display": "Acute syphilitic pericarditis (disorder)"
+          },
+          {
+            "code": "194910001",
+            "display": "Acute gonococcal pericarditis (disorder)"
+          },
+          {
+            "code": "194947001",
+            "display": "Acute myocarditis caused by Treponema pallidum (disorder)"
+          },
+          {
+            "code": "195720006",
+            "display": "Acute streptococcal bronchitis (disorder)"
+          },
+          {
+            "code": "195721005",
+            "display": "Acute bronchitis caused by Haemophilus influenzae (disorder)"
+          },
+          {
+            "code": "195798007",
+            "display": "Chronic adenotonsillitis (disorder)"
+          },
+          {
+            "code": "195834004",
+            "display": "Pharynx or nasopharynx edema (disorder)"
+          },
+          {
+            "code": "195866009",
+            "display": "Laryngeal pachydermia (disorder)"
+          },
+          {
+            "code": "195878008",
+            "display": "Pneumonia and influenza (disorder)"
+          },
+          {
+            "code": "195886008",
+            "display": "Group B streptococcal pneumonia (disorder)"
+          },
+          {
+            "code": "195888009",
+            "display": "Proteus pneumonia (disorder)"
+          },
+          {
+            "code": "195889001",
+            "display": "Legionella pneumonia (disorder)"
+          },
+          {
+            "code": "195896004",
+            "display": "Pneumonia caused by pleuropneumonia-like organism (disorder)"
+          },
+          {
+            "code": "195902009",
+            "display": "Anthrax pneumonia (disorder)"
+          },
+          {
+            "code": "195904005",
+            "display": "Pneumonia with coccidioidomycosis (disorder)"
+          },
+          {
+            "code": "195908008",
+            "display": "Actinomycotic pneumonia (disorder)"
+          },
+          {
+            "code": "195909000",
+            "display": "Nocardial pneumonia (disorder)"
+          },
+          {
+            "code": "197143009",
+            "display": "Megacolon in Chagas' disease (disorder)"
+          },
+          {
+            "code": "197305002",
+            "display": "Syphilitic portal cirrhosis (disorder)"
+          },
+          {
+            "code": "197347003",
+            "display": "Hepatitis in late syphilis (disorder)"
+          },
+          {
+            "code": "197348008",
+            "display": "Hepatitis in secondary syphilis (disorder)"
+          },
+          {
+            "code": "197757004",
+            "display": "Late syphilis of kidney (disorder)"
+          },
+          {
+            "code": "197761005",
+            "display": "Chronic pyelonephritis with medullary necrosis (disorder)"
+          },
+          {
+            "code": "197763008",
+            "display": "Chronic pyonephrosis (disorder)"
+          },
+          {
+            "code": "197764002",
+            "display": "Non-obstructive reflux-associated chronic pyelonephritis (disorder)"
+          },
+          {
+            "code": "197768004",
+            "display": "Acute pyelonephritis without medullary necrosis (disorder)"
+          },
+          {
+            "code": "197769007",
+            "display": "Acute pyelonephritis with medullary necrosis (disorder)"
+          },
+          {
+            "code": "197770008",
+            "display": "Acute pyonephrosis (disorder)"
+          },
+          {
+            "code": "197782004",
+            "display": "Pyelonephritis associated with another disorder (disorder)"
+          },
+          {
+            "code": "197834003",
+            "display": "Chronic interstitial cystitis (disorder)"
+          },
+          {
+            "code": "197837005",
+            "display": "Submucous cystitis (disorder)"
+          },
+          {
+            "code": "197845000",
+            "display": "Cystitis associated with another disorder (disorder)"
+          },
+          {
+            "code": "197848003",
+            "display": "Gonococcal cystitis (disorder)"
+          },
+          {
+            "code": "197849006",
+            "display": "Cystitis caused by Candida (disorder)"
+          },
+          {
+            "code": "197850006",
+            "display": "Trichomonal cystitis (disorder)"
+          },
+          {
+            "code": "197853008",
+            "display": "Recurrent cystitis (disorder)"
+          },
+          {
+            "code": "197963001",
+            "display": "Prostatitis associated with another disorder (disorder)"
+          },
+          {
+            "code": "197964007",
+            "display": "Actinomycotic prostatitis (disorder)"
+          },
+          {
+            "code": "197965008",
+            "display": "Blastomycotic prostatitis (disorder)"
+          },
+          {
+            "code": "197966009",
+            "display": "Syphilitic prostatitis (disorder)"
+          },
+          {
+            "code": "197967000",
+            "display": "Gonococcal prostatitis (disorder)"
+          },
+          {
+            "code": "197968005",
+            "display": "Prostatitis caused by Candida (disorder)"
+          },
+          {
+            "code": "198130006",
+            "display": "Female pelvic inflammatory disease (disorder)"
+          },
+          {
+            "code": "198141008",
+            "display": "Chronic perioophoritis (disorder)"
+          },
+          {
+            "code": "198159006",
+            "display": "Chronic parametritis and pelvic cellulitis (disorder)"
+          },
+          {
+            "code": "198175009",
+            "display": "Female syphilitic pelvic inflammatory disease (disorder)"
+          },
+          {
+            "code": "198186006",
+            "display": "Subacute pyometra (disorder)"
+          },
+          {
+            "code": "198189004",
+            "display": "Chronic pyometra (disorder)"
+          },
+          {
+            "code": "198235009",
+            "display": "Carbuncle of vagina (disorder)"
+          },
+          {
+            "code": "19824006",
+            "display": "Infection of skin and/or subcutaneous tissue (disorder)"
+          },
+          {
+            "code": "198242009",
+            "display": "Female gonococcal pelvic inflammatory disease (disorder)"
+          },
+          {
+            "code": "19905009",
+            "display": "Chronic prostatitis (disorder)"
+          },
+          {
+            "code": "199154009",
+            "display": "Maternal syphilis during pregnancy, childbirth and the puerperium (disorder)"
+          },
+          {
+            "code": "199161008",
+            "display": "Maternal gonorrhea during pregnancy, childbirth and the puerperium (disorder)"
+          },
+          {
+            "code": "200635001",
+            "display": "Finger web space infection (disorder)"
+          },
+          {
+            "code": "200649005",
+            "display": "Cellulitis and abscess of submandibular region (disorder)"
+          },
+          {
+            "code": "200721005",
+            "display": "Pyogenic progressive granuloma (disorder)"
+          },
+          {
+            "code": "200722003",
+            "display": "Pyogenic granuloma (disorder)"
+          },
+          {
+            "code": "201060008",
+            "display": "Disorder of upper respiratory system (disorder)"
+          },
+          {
+            "code": "201517005",
+            "display": "Seronegative arthritis secondary to Whipple's disease (disorder)"
+          },
+          {
+            "code": "202756004",
+            "display": "Infection of intervertebral disc - pyogenic (disorder)"
+          },
+          {
+            "code": "202883008",
+            "display": "Posterior calcaneal exostosis (disorder)"
+          },
+          {
+            "code": "202933002",
+            "display": "Bursitis caused by Treponema pallidum (disorder)"
+          },
+          {
+            "code": "203157008",
+            "display": "Acute osteomyelitis of cervical spine (disorder)"
+          },
+          {
+            "code": "203158003",
+            "display": "Acute osteomyelitis of thoracic spine (disorder)"
+          },
+          {
+            "code": "203159006",
+            "display": "Acute osteomyelitis of lumbar spine (disorder)"
+          },
+          {
+            "code": "203193005",
+            "display": "Chronic osteomyelitis of cervical spine (disorder)"
+          },
+          {
+            "code": "203194004",
+            "display": "Chronic osteomyelitis of thoracic spine (disorder)"
+          },
+          {
+            "code": "203195003",
+            "display": "Chronic osteomyelitis of lumbar spine (disorder)"
+          },
+          {
+            "code": "203198001",
+            "display": "Brodie's abscess of cervical spine (disorder)"
+          },
+          {
+            "code": "203199009",
+            "display": "Brodie's abscess of thoracic spine (disorder)"
+          },
+          {
+            "code": "203200007",
+            "display": "Brodie's abscess of lumbar spine (disorder)"
+          },
+          {
+            "code": "203241002",
+            "display": "Osteomyelitis of vertebra (disorder)"
+          },
+          {
+            "code": "20325007",
+            "display": "Tinea barbae caused by Microsporum (disorder)"
+          },
+          {
+            "code": "203284001",
+            "display": "Osteopathy from poliomyelitis (disorder)"
+          },
+          {
+            "code": "203286004",
+            "display": "Poliomyelitis osteopathy of the shoulder region (disorder)"
+          },
+          {
+            "code": "203287008",
+            "display": "Poliomyelitis osteopathy of the upper arm (disorder)"
+          },
+          {
+            "code": "203288003",
+            "display": "Poliomyelitis osteopathy of the forearm (disorder)"
+          },
+          {
+            "code": "203289006",
+            "display": "Poliomyelitis osteopathy of the hand (disorder)"
+          },
+          {
+            "code": "203291003",
+            "display": "Poliomyelitis osteopathy of the lower leg (disorder)"
+          },
+          {
+            "code": "203292005",
+            "display": "Poliomyelitis osteopathy of the ankle and/or foot (disorder)"
+          },
+          {
+            "code": "203294006",
+            "display": "Poliomyelitis osteopathy of multiple sites (disorder)"
+          },
+          {
+            "code": "203296008",
+            "display": "Subacute osteomyelitis of cervical spine (disorder)"
+          },
+          {
+            "code": "203297004",
+            "display": "Subacute osteomyelitis of thoracic spine (disorder)"
+          },
+          {
+            "code": "203298009",
+            "display": "Subacute osteomyelitis of lumbar spine (disorder)"
+          },
+          {
+            "code": "203517001",
+            "display": "Complete epiphyseal arrest (disorder)"
+          },
+          {
+            "code": "203518006",
+            "display": "Partial epiphyseal arrest (disorder)"
+          },
+          {
+            "code": "203522001",
+            "display": "Osteolysis (disorder)"
+          },
+          {
+            "code": "204919003",
+            "display": "Erythematous pinta plaque (disorder)"
+          },
+          {
+            "code": "206283000",
+            "display": "Congenital staphylococcal pneumonia (disorder)"
+          },
+          {
+            "code": "206284006",
+            "display": "Congenital group A hemolytic streptococcal pneumonia (disorder)"
+          },
+          {
+            "code": "206285007",
+            "display": "Congenital group B hemolytic streptococcal pneumonia (disorder)"
+          },
+          {
+            "code": "206286008",
+            "display": "Congenital Escherichia coli pneumonia (disorder)"
+          },
+          {
+            "code": "206287004",
+            "display": "Congenital pseudomonal pneumonia (disorder)"
+          },
+          {
+            "code": "206289001",
+            "display": "Congenital chlamydial pneumonia (disorder)"
+          },
+          {
+            "code": "206356004",
+            "display": "Neonatal candidiasis of perineum (disorder)"
+          },
+          {
+            "code": "206358003",
+            "display": "Neonatal candidiasis of intestine (disorder)"
+          },
+          {
+            "code": "206445003",
+            "display": "Malarial pigment deposition (disorder)"
+          },
+          {
+            "code": "206554002",
+            "display": "Neonatal skin infection (disorder)"
+          },
+          {
+            "code": "206598002",
+            "display": "Relapsing fever of Southwest United States AND/OR Mexico (disorder)"
+          },
+          {
+            "code": "20735004",
+            "display": "Syphilitic aortitis (disorder)"
+          },
+          {
+            "code": "20860008",
+            "display": "Infestation of intestine caused by fly larvae (disorder)"
+          },
+          {
+            "code": "20943002",
+            "display": "Acute inflammation of cervix uteri caused by Neisseria gonorrhoeae (disorder)"
+          },
+          {
+            "code": "209516003",
+            "display": "Relapsing fever of North Africa (disorder)"
+          },
+          {
+            "code": "21061004",
+            "display": "Babesiosis (disorder)"
+          },
+          {
+            "code": "210992005",
+            "display": "Infected abrasion of skin of face (disorder)"
+          },
+          {
+            "code": "210993000",
+            "display": "Infected abrasion of skin of neck (disorder)"
+          },
+          {
+            "code": "210994006",
+            "display": "Infected abrasion of scalp (disorder)"
+          },
+          {
+            "code": "211012003",
+            "display": "Insect bite, nonvenomous, of head, infected (disorder)"
+          },
+          {
+            "code": "211053006",
+            "display": "Abrasion and/or friction burn of trunk, infected (disorder)"
+          },
+          {
+            "code": "211054000",
+            "display": "Infected abrasion of skin of interscapular region of back (disorder)"
+          },
+          {
+            "code": "211055004",
+            "display": "Infected abrasion of skin of chest (disorder)"
+          },
+          {
+            "code": "211056003",
+            "display": "Infected abrasion of skin of breast (disorder)"
+          },
+          {
+            "code": "211057007",
+            "display": "Infected abrasion of skin of anterior abdominal wall (disorder)"
+          },
+          {
+            "code": "211058002",
+            "display": "Infected abrasion of skin of back (disorder)"
+          },
+          {
+            "code": "211059005",
+            "display": "Infected abrasion of skin of buttock (disorder)"
+          },
+          {
+            "code": "211060000",
+            "display": "Infected abrasion of anus (disorder)"
+          },
+          {
+            "code": "211061001",
+            "display": "Infected abrasion of skin of flank (disorder)"
+          },
+          {
+            "code": "211062008",
+            "display": "Infected abrasion of skin of groin (disorder)"
+          },
+          {
+            "code": "211063003",
+            "display": "Infected abrasion of perineum (disorder)"
+          },
+          {
+            "code": "211064009",
+            "display": "Infected abrasion of skin of penis (disorder)"
+          },
+          {
+            "code": "211145001",
+            "display": "Splinter of flank without major open wound, infected (disorder)"
+          },
+          {
+            "code": "211196004",
+            "display": "Abrasion and/or friction burn of shoulder and/or upper arm, infected (disorder)"
+          },
+          {
+            "code": "211197008",
+            "display": "Infected abrasion of skin of shoulder (disorder)"
+          },
+          {
+            "code": "211198003",
+            "display": "Infected abrasion of skin of scapular region of back (disorder)"
+          },
+          {
+            "code": "211199006",
+            "display": "Infected abrasion of skin of axilla (disorder)"
+          },
+          {
+            "code": "211200009",
+            "display": "Infected abrasion of skin of upper arm (disorder)"
+          },
+          {
+            "code": "211220005",
+            "display": "Insect bite, nonvenomous, of shoulder and upper arm, infected (disorder)"
+          },
+          {
+            "code": "211256008",
+            "display": "Abrasion and/or friction burn of forearm, infected (disorder)"
+          },
+          {
+            "code": "211257004",
+            "display": "Infected abrasion of skin of elbow (disorder)"
+          },
+          {
+            "code": "211258009",
+            "display": "Infected abrasion of skin of forearm (disorder)"
+          },
+          {
+            "code": "211259001",
+            "display": "Infected abrasion of skin of wrist (disorder)"
+          },
+          {
+            "code": "211306000",
+            "display": "Abrasion and/or friction burn of hand, infected (disorder)"
+          },
+          {
+            "code": "211320007",
+            "display": "Abrasion and/or friction burn of finger, infected (disorder)"
+          },
+          {
+            "code": "211336009",
+            "display": "Abrasion and/or friction burn of lower limb, infected (disorder)"
+          },
+          {
+            "code": "211337000",
+            "display": "Infected abrasion of skin of hip (disorder)"
+          },
+          {
+            "code": "211338005",
+            "display": "Infected abrasion of skin of thigh (disorder)"
+          },
+          {
+            "code": "211339002",
+            "display": "Infected abrasion of skin of knee (disorder)"
+          },
+          {
+            "code": "211340000",
+            "display": "Infected abrasion of skin of lower leg (disorder)"
+          },
+          {
+            "code": "211341001",
+            "display": "Infected abrasion of skin of ankle (disorder)"
+          },
+          {
+            "code": "211364004",
+            "display": "Insect bite, nonvenomous, of lower limb, infected (disorder)"
+          },
+          {
+            "code": "211365003",
+            "display": "Insect bite, nonvenomous, of knee, infected (disorder)"
+          },
+          {
+            "code": "211406001",
+            "display": "Infected abrasion of skin of foot (disorder)"
+          },
+          {
+            "code": "211407005",
+            "display": "Infected abrasion of skin of toe (disorder)"
+          },
+          {
+            "code": "2129002",
+            "display": "Edema of pharynx (disorder)"
+          },
+          {
+            "code": "214600002",
+            "display": "Tinea profunda (disorder)"
+          },
+          {
+            "code": "21523006",
+            "display": "Syphilitic gumma of central nervous system (disorder)"
+          },
+          {
+            "code": "21560005",
+            "display": "Lepromatous leprosy (disorder)"
+          },
+          {
+            "code": "21955004",
+            "display": "Trichomonal cervicitis (disorder)"
+          },
+          {
+            "code": "22064009",
+            "display": "Pinta (disorder)"
+          },
+          {
+            "code": "22277006",
+            "display": "Blister of groin with infection (disorder)"
+          },
+          {
+            "code": "22386003",
+            "display": "Syphilitic optic atrophy (disorder)"
+          },
+          {
+            "code": "22500005",
+            "display": "Infection by Oesophagostomum (disorder)"
+          },
+          {
+            "code": "22557000",
+            "display": "Bullous cystitis (disorder)"
+          },
+          {
+            "code": "22754005",
+            "display": "Staphylococcal pneumonia (disorder)"
+          },
+          {
+            "code": "22905009",
+            "display": "Infection caused by Heterophyes heterophyes (disorder)"
+          },
+          {
+            "code": "22922006",
+            "display": "Infection caused by Physaloptera (disorder)"
+          },
+          {
+            "code": "22999005",
+            "display": "Blister of thigh with infection (disorder)"
+          },
+          {
+            "code": "230150008",
+            "display": "Meningitis in Lyme disease (disorder)"
+          },
+          {
+            "code": "230152000",
+            "display": "Late congenital syphilitic meningitis (disorder)"
+          },
+          {
+            "code": "230182006",
+            "display": "Late syphilitic encephalitis (disorder)"
+          },
+          {
+            "code": "230194002",
+            "display": "Neuro - Whipple's disease (disorder)"
+          },
+          {
+            "code": "230402000",
+            "display": "Panmural cystitis (disorder)"
+          },
+          {
+            "code": "230563005",
+            "display": "Late congenital syphilitic polyneuropathy (disorder)"
+          },
+          {
+            "code": "230605007",
+            "display": "Lyme mononeuritis multiplex (disorder)"
+          },
+          {
+            "code": "230735006",
+            "display": "Syphilitic cerebral arteritis (disorder)"
+          },
+          {
+            "code": "23166004",
+            "display": "Cellulitis of pharynx (disorder)"
+          },
+          {
+            "code": "231801008",
+            "display": "Bacterial dermatitis of eyelid (disorder)"
+          },
+          {
+            "code": "231803006",
+            "display": "Viral dermatitis of eyelid (disorder)"
+          },
+          {
+            "code": "231804000",
+            "display": "Fungal dermatitis of eyelid (disorder)"
+          },
+          {
+            "code": "231858009",
+            "display": "Gonococcal conjunctivitis (disorder)"
+          },
+          {
+            "code": "231896005",
+            "display": "Acanthamoeba keratitis (disorder)"
+          },
+          {
+            "code": "23191004",
+            "display": "Early yaws (disorder)"
+          },
+          {
+            "code": "23196009",
+            "display": "Frambeside of early yaws (disorder)"
+          },
+          {
+            "code": "232222008",
+            "display": "Acute viral otitis externa (disorder)"
+          },
+          {
+            "code": "232223003",
+            "display": "Acute fungal otitis externa (disorder)"
+          },
+          {
+            "code": "232224009",
+            "display": "Chronic infective otitis externa (disorder)"
+          },
+          {
+            "code": "232226006",
+            "display": "Chronic viral otitis externa (disorder)"
+          },
+          {
+            "code": "232251007",
+            "display": "Recurrent acute suppurative otitis media (disorder)"
+          },
+          {
+            "code": "232268006",
+            "display": "Acute mastoiditis with neck abscess (disorder)"
+          },
+          {
+            "code": "232269003",
+            "display": "Acute mastoiditis with facial paralysis (disorder)"
+          },
+          {
+            "code": "232270002",
+            "display": "Acute mastoiditis with labyrinthitis (disorder)"
+          },
+          {
+            "code": "232271003",
+            "display": "Intracranial disorder due to and following acute mastoiditis (disorder)"
+          },
+          {
+            "code": "232313005",
+            "display": "Endocochlear syphilis (disorder)"
+          },
+          {
+            "code": "232314004",
+            "display": "Lyme disease of inner ear (disorder)"
+          },
+          {
+            "code": "232367004",
+            "display": "Nasal syphilis (disorder)"
+          },
+          {
+            "code": "232369001",
+            "display": "Granulomatosis with polyangiitis of nose (disorder)"
+          },
+          {
+            "code": "232393006",
+            "display": "Chronic anterior ethmoidal sinusitis (disorder)"
+          },
+          {
+            "code": "232394000",
+            "display": "Chronic posterior ethmoidal sinusitis (disorder)"
+          },
+          {
+            "code": "232395004",
+            "display": "Chronic panethmoidal sinusitis (disorder)"
+          },
+          {
+            "code": "232396003",
+            "display": "Chronic osteomeatal disease (disorder)"
+          },
+          {
+            "code": "232397007",
+            "display": "Chronic frontoethmoidal sinusitis (disorder)"
+          },
+          {
+            "code": "232404007",
+            "display": "Acute pharyngeal candidiasis (disorder)"
+          },
+          {
+            "code": "232410007",
+            "display": "Vallecular cyst (disorder)"
+          },
+          {
+            "code": "232411006",
+            "display": "Edema of uvula (disorder)"
+          },
+          {
+            "code": "232418000",
+            "display": "Acute infection of tonsillar remnant (disorder)"
+          },
+          {
+            "code": "232420002",
+            "display": "Chronic adenoiditis (disorder)"
+          },
+          {
+            "code": "232423000",
+            "display": "Tonsillar retention cyst (disorder)"
+          },
+          {
+            "code": "232460001",
+            "display": "Granulomatosis with polyangiitis of larynx (disorder)"
+          },
+          {
+            "code": "233599001",
+            "display": "Acute mycoplasmal bronchitis (disorder)"
+          },
+          {
+            "code": "233604007",
+            "display": "Pneumonia (disorder)"
+          },
+          {
+            "code": "233607000",
+            "display": "Pneumococcal pneumonia (disorder)"
+          },
+          {
+            "code": "233608005",
+            "display": "Meningococcal pneumonia (disorder)"
+          },
+          {
+            "code": "233609002",
+            "display": "Pneumonia caused by Chlamydiaceae (disorder)"
+          },
+          {
+            "code": "233610007",
+            "display": "Neonatal chlamydial pneumonia (disorder)"
+          },
+          {
+            "code": "233613009",
+            "display": "Fungal pneumonia (disorder)"
+          },
+          {
+            "code": "233614003",
+            "display": "Pulmonary mucormycosis (disorder)"
+          },
+          {
+            "code": "233617005",
+            "display": "Hemorrhagic pneumonia (disorder)"
+          },
+          {
+            "code": "233618000",
+            "display": "Mycobacterial pneumonia (disorder)"
+          },
+          {
+            "code": "233619008",
+            "display": "Neonatal pneumonia (disorder)"
+          },
+          {
+            "code": "233620002",
+            "display": "Pneumonia due to parasitic infestation (disorder)"
+          },
+          {
+            "code": "233621003",
+            "display": "Rickettsial pneumonia (disorder)"
+          },
+          {
+            "code": "233713004",
+            "display": "Seasonal cryptogenic organizing pneumonia with biochemical cholestasis (disorder)"
+          },
+          {
+            "code": "233728004",
+            "display": "Cholesterol pneumonitis (disorder)"
+          },
+          {
+            "code": "233730002",
+            "display": "Lupus pneumonitis (disorder)"
+          },
+          {
+            "code": "233731003",
+            "display": "Traumatic pneumonitis (disorder)"
+          },
+          {
+            "code": "233849007",
+            "display": "Syphilitic valve disease (disorder)"
+          },
+          {
+            "code": "234998009",
+            "display": "Orofacial granulomatosis of gingivae (disorder)"
+          },
+          {
+            "code": "235000001",
+            "display": "Granulomatosis with polyangiitis of gingiva (disorder)"
+          },
+          {
+            "code": "235002009",
+            "display": "Gingival pyogenic granuloma (disorder)"
+          },
+          {
+            "code": "23502006",
+            "display": "Lyme disease (disorder)"
+          },
+          {
+            "code": "235032001",
+            "display": "Syphilitic oral leukoplakia (disorder)"
+          },
+          {
+            "code": "235062007",
+            "display": "Oral syphilis (disorder)"
+          },
+          {
+            "code": "235064008",
+            "display": "Syphilitic gumma of oral cavity (disorder)"
+          },
+          {
+            "code": "235065009",
+            "display": "Syphilitic oral snail track ulcer (disorder)"
+          },
+          {
+            "code": "235231000119100",
+            "display": "Osteophyte of bone (disorder)"
+          },
+          {
+            "code": "235604009",
+            "display": "Protozoal esophagitis (disorder)"
+          },
+          {
+            "code": "235612001",
+            "display": "Protozoal ulcer of esophagus (disorder)"
+          },
+          {
+            "code": "235726002",
+            "display": "Human immunodeficiency virus enteropathy (disorder)"
+          },
+          {
+            "code": "235747003",
+            "display": "Amebic colitis (disorder)"
+          },
+          {
+            "code": "235748008",
+            "display": "Fulminant amebic colitis (disorder)"
+          },
+          {
+            "code": "235749000",
+            "display": "Cytomegaloviral colitis (disorder)"
+          },
+          {
+            "code": "235764000",
+            "display": "Infective proctitis (disorder)"
+          },
+          {
+            "code": "235770006",
+            "display": "Acute suppurative appendicitis (disorder)"
+          },
+          {
+            "code": "235834001",
+            "display": "Infection-induced ileus (disorder)"
+          },
+          {
+            "code": "235861001",
+            "display": "Abscess gonococcal (disorder)"
+          },
+          {
+            "code": "235863003",
+            "display": "Gonococcal hepatitis (disorder)"
+          },
+          {
+            "code": "236063005",
+            "display": "Adenoviral gastroenteritis (disorder)"
+          },
+          {
+            "code": "236066002",
+            "display": "Prototheca diarrhea (disorder)"
+          },
+          {
+            "code": "236302005",
+            "display": "Acute interstitial pneumonitis (disorder)"
+          },
+          {
+            "code": "236373001",
+            "display": "Emphysematous pyelonephritis (disorder)"
+          },
+          {
+            "code": "236374007",
+            "display": "Chronic infective interstitial nephritis (disorder)"
+          },
+          {
+            "code": "236375008",
+            "display": "Emphysematous pyelitis (disorder)"
+          },
+          {
+            "code": "236378005",
+            "display": "Candida pyelonephritis (disorder)"
+          },
+          {
+            "code": "236590008",
+            "display": "Cytomegalovirus-induced glomerulonephritis (disorder)"
+          },
+          {
+            "code": "236599009",
+            "display": "Schistosomiasis of ureter (disorder)"
+          },
+          {
+            "code": "236600007",
+            "display": "Candida ureteritis (disorder)"
+          },
+          {
+            "code": "236620008",
+            "display": "Infective cystitis (disorder)"
+          },
+          {
+            "code": "236622000",
+            "display": "Chronic infective cystitis (disorder)"
+          },
+          {
+            "code": "236624004",
+            "display": "Acute cystitis - culture-negative (disorder)"
+          },
+          {
+            "code": "236625003",
+            "display": "Recurrent cystitis - culture-negative (disorder)"
+          },
+          {
+            "code": "236628001",
+            "display": "Acute radiation cystitis (disorder)"
+          },
+          {
+            "code": "236629009",
+            "display": "Chronic radiation cystitis (disorder)"
+          },
+          {
+            "code": "236630004",
+            "display": "Chemical cystitis (disorder)"
+          },
+          {
+            "code": "236672003",
+            "display": "Chlamydial prostatitis (disorder)"
+          },
+          {
+            "code": "236673008",
+            "display": "Non-bacterial prostatitis (disorder)"
+          },
+          {
+            "code": "236682002",
+            "display": "Inflammation of urethra caused by Neisseria gonorrhoeae (disorder)"
+          },
+          {
+            "code": "236687008",
+            "display": "Gonococcal urethral abscess (disorder)"
+          },
+          {
+            "code": "236702008",
+            "display": "Acute culture positive cystitis (disorder)"
+          },
+          {
+            "code": "236703003",
+            "display": "Recurrent infective cystitis (disorder)"
+          },
+          {
+            "code": "236766009",
+            "display": "Gonococcal epididymitis (disorder)"
+          },
+          {
+            "code": "236772009",
+            "display": "Gonococcal epididymo-orchitis (disorder)"
+          },
+          {
+            "code": "237037006",
+            "display": "Acute pelvic inflammatory disease (disorder)"
+          },
+          {
+            "code": "237038001",
+            "display": "Gonococcal salpingitis (disorder)"
+          },
+          {
+            "code": "237039009",
+            "display": "Chlamydial salpingitis (disorder)"
+          },
+          {
+            "code": "237042003",
+            "display": "Gonococcal perihepatitis (disorder)"
+          },
+          {
+            "code": "237044002",
+            "display": "Chronic pelvic inflammatory disease (disorder)"
+          },
+          {
+            "code": "237045001",
+            "display": "Chronic parametritis (disorder)"
+          },
+          {
+            "code": "237046000",
+            "display": "Gonococcal tubo-ovarian abscess (disorder)"
+          },
+          {
+            "code": "237069002",
+            "display": "Gonococcal endometritis (disorder)"
+          },
+          {
+            "code": "237070001",
+            "display": "Uterine candidiasis (disorder)"
+          },
+          {
+            "code": "237083000",
+            "display": "Inflammation of cervix uteri caused by Neisseria gonorrhoeae (disorder)"
+          },
+          {
+            "code": "237084006",
+            "display": "Inflammation of cervix uteri caused by Chlamydia (disorder)"
+          },
+          {
+            "code": "237085007",
+            "display": "Actinomycotic cervicitis (disorder)"
+          },
+          {
+            "code": "237091009",
+            "display": "Infective vaginitis (disorder)"
+          },
+          {
+            "code": "237094001",
+            "display": "Streptococcal vulvovaginitis (disorder)"
+          },
+          {
+            "code": "237095000",
+            "display": "Gonococcal vulvovaginitis (disorder)"
+          },
+          {
+            "code": "237096004",
+            "display": "Neonatal gonococcal vulvovaginitis (disorder)"
+          },
+          {
+            "code": "237097008",
+            "display": "Chlamydial vulvovaginitis (disorder)"
+          },
+          {
+            "code": "237104007",
+            "display": "Trichomonal vulvitis (disorder)"
+          },
+          {
+            "code": "237106009",
+            "display": "Chlamydial bartholinitis (disorder)"
+          },
+          {
+            "code": "237109002",
+            "display": "Vulval warts (disorder)"
+          },
+          {
+            "code": "237110007",
+            "display": "Condyloma acuminata of vulva (disorder)"
+          },
+          {
+            "code": "237124006",
+            "display": "Hematopyometra (disorder)"
+          },
+          {
+            "code": "237446005",
+            "display": "Syphilis of breast (disorder)"
+          },
+          {
+            "code": "237447001",
+            "display": "Primary syphilis of nipple (disorder)"
+          },
+          {
+            "code": "237461006",
+            "display": "Infected gland of Montgomery (disorder)"
+          },
+          {
+            "code": "23754003",
+            "display": "Pyelonephritis due to kidney stone (disorder)"
+          },
+          {
+            "code": "237826006",
+            "display": "Thyroid acropachy (disorder)"
+          },
+          {
+            "code": "238367006",
+            "display": "Pox virus infection of skin (disorder)"
+          },
+          {
+            "code": "238368001",
+            "display": "Eczema vaccinatum (disorder)"
+          },
+          {
+            "code": "238370005",
+            "display": "Infectious mononucleosis exanthem (disorder)"
+          },
+          {
+            "code": "238372002",
+            "display": "Chlamydial dermatological disorders (disorder)"
+          },
+          {
+            "code": "238379006",
+            "display": "Staphylococcal folliculitis of scalp (disorder)"
+          },
+          {
+            "code": "238380009",
+            "display": "Gram-negative folliculitis (disorder)"
+          },
+          {
+            "code": "238381008",
+            "display": "Staphylococcal granuloma (disorder)"
+          },
+          {
+            "code": "238392009",
+            "display": "Sycosis cruris (disorder)"
+          },
+          {
+            "code": "238409008",
+            "display": "Infection of toe web (disorder)"
+          },
+          {
+            "code": "238410003",
+            "display": "Staphylococcal intertrigo (disorder)"
+          },
+          {
+            "code": "238411004",
+            "display": "Streptococcal intertrigo (disorder)"
+          },
+          {
+            "code": "238414007",
+            "display": "Staphylococcal botryomycosis (disorder)"
+          },
+          {
+            "code": "238415008",
+            "display": "Cutaneous botryomycosis (disorder)"
+          },
+          {
+            "code": "238417000",
+            "display": "Non-pyogenic bacterial infection of skin (disorder)"
+          },
+          {
+            "code": "238418005",
+            "display": "Erythrasma (disorder)"
+          },
+          {
+            "code": "238419002",
+            "display": "Gonococcal lymphangitis of penis (disorder)"
+          },
+          {
+            "code": "238421007",
+            "display": "Fusobacterium infection of skin (disorder)"
+          },
+          {
+            "code": "238423005",
+            "display": "Desert sore (disorder)"
+          },
+          {
+            "code": "238424004",
+            "display": "Arcanobacterium pyogenes infection of skin (disorder)"
+          },
+          {
+            "code": "238425003",
+            "display": "Meningococcal rash (disorder)"
+          },
+          {
+            "code": "238426002",
+            "display": "Moraxella infection of skin (disorder)"
+          },
+          {
+            "code": "238435009",
+            "display": "Steroid-modified tinea infection (disorder)"
+          },
+          {
+            "code": "238436005",
+            "display": "Cutaneous alternariosis (disorder)"
+          },
+          {
+            "code": "238438006",
+            "display": "Scytalidium hyalinum infection of skin (disorder)"
+          },
+          {
+            "code": "238440001",
+            "display": "Primary cutaneous blastomycosis (disorder)"
+          },
+          {
+            "code": "238442009",
+            "display": "Subcutaneous zygomycosis (disorder)"
+          },
+          {
+            "code": "238447003",
+            "display": "Nematode infestation of skin (disorder)"
+          },
+          {
+            "code": "238448008",
+            "display": "Streptocerciasis (disorder)"
+          },
+          {
+            "code": "238449000",
+            "display": "Amebiasis of skin (disorder)"
+          },
+          {
+            "code": "238450000",
+            "display": "Protozoal infestation of skin (disorder)"
+          },
+          {
+            "code": "23874000",
+            "display": "Chronic amebiasis (disorder)"
+          },
+          {
+            "code": "238815002",
+            "display": "Infectious mononucleosis ampicillin reaction (disorder)"
+          },
+          {
+            "code": "238931006",
+            "display": "Eosinophilic cellulitis (disorder)"
+          },
+          {
+            "code": "238985006",
+            "display": "Bullous pyoderma gangrenosum (disorder)"
+          },
+          {
+            "code": "2390000",
+            "display": "Acute gonococcal vulvovaginitis (disorder)"
+          },
+          {
+            "code": "239187005",
+            "display": "Skin graft infection (disorder)"
+          },
+          {
+            "code": "239190004",
+            "display": "Infection of skin donor site (disorder)"
+          },
+          {
+            "code": "239297008",
+            "display": "Lymphomatoid granulomatosis of lung (disorder)"
+          },
+          {
+            "code": "23949002",
+            "display": "Capillaria philippinensis infection (disorder)"
+          },
+          {
+            "code": "23975003",
+            "display": "Chronic gonococcal seminal vesiculitis (disorder)"
+          },
+          {
+            "code": "239825002",
+            "display": "Tabetic joint (disorder)"
+          },
+          {
+            "code": "239940004",
+            "display": "Lymphomatoid granulomatosis (disorder)"
+          },
+          {
+            "code": "240039005",
+            "display": "Gonococcal tenosynovitis (disorder)"
+          },
+          {
+            "code": "240040007",
+            "display": "Infective panniculitis (disorder)"
+          },
+          {
+            "code": "240349003",
+            "display": "Cholera caused by Vibrio cholerae O1 Classical biotype (disorder)"
+          },
+          {
+            "code": "240350003",
+            "display": "Cholera - non-O1 group vibrio (disorder)"
+          },
+          {
+            "code": "240351004",
+            "display": "Cholera - O139 group Vibrio cholerae (disorder)"
+          },
+          {
+            "code": "240357000",
+            "display": "Clostridial enteric disease (disorder)"
+          },
+          {
+            "code": "240363009",
+            "display": "Toxic megacolon due to amebic infection (disorder)"
+          },
+          {
+            "code": "240365002",
+            "display": "Intestinal flagellate infection (disorder)"
+          },
+          {
+            "code": "240367005",
+            "display": "Dientamoeba fragilis infection (disorder)"
+          },
+          {
+            "code": "240368000",
+            "display": "Retortamonas intestinalis infection (disorder)"
+          },
+          {
+            "code": "240369008",
+            "display": "Intestinal ciliate infection (disorder)"
+          },
+          {
+            "code": "240370009",
+            "display": "Cryptosporidiosis (disorder)"
+          },
+          {
+            "code": "240371008",
+            "display": "Chronic intestinal cryptosporidiasis (disorder)"
+          },
+          {
+            "code": "240372001",
+            "display": "Cyclosporiasis (disorder)"
+          },
+          {
+            "code": "240374000",
+            "display": "Chronic intestinal isosporiasis (disorder)"
+          },
+          {
+            "code": "240375004",
+            "display": "Intestinal microsporidiosis (disorder)"
+          },
+          {
+            "code": "240387006",
+            "display": "Pulmonary glanders (disorder)"
+          },
+          {
+            "code": "240391001",
+            "display": "Pulmonary melioidosis (disorder)"
+          },
+          {
+            "code": "240394009",
+            "display": "Cutaneous erysipeloid (disorder)"
+          },
+          {
+            "code": "240395005",
+            "display": "Localized cutaneous erysipeloid (disorder)"
+          },
+          {
+            "code": "240396006",
+            "display": "Disseminated cutaneous erysipeloid (disorder)"
+          },
+          {
+            "code": "240397002",
+            "display": "Cutaneous pasteurellosis (disorder)"
+          },
+          {
+            "code": "240401005",
+            "display": "Neural type tuberculoid leprosy (disorder)"
+          },
+          {
+            "code": "240404002",
+            "display": "Diffuse lepromatous leprosy (disorder)"
+          },
+          {
+            "code": "240416008",
+            "display": "Cutaneous mycobacterium marinum infection (disorder)"
+          },
+          {
+            "code": "240417004",
+            "display": "Fish tank granuloma (disorder)"
+          },
+          {
+            "code": "240418009",
+            "display": "Cutaneous mycobacterium haemophilium infection (disorder)"
+          },
+          {
+            "code": "240419001",
+            "display": "Hyperimmune cutaneous reaction caused by atypical mycobacteria (disorder)"
+          },
+          {
+            "code": "240420007",
+            "display": "Hyperimmune cutaneous reaction caused by mycobacterium avium-intracellulare (disorder)"
+          },
+          {
+            "code": "240421006",
+            "display": "Hyperimmune cutaneous reaction caused by mycobacterium kansasii (disorder)"
+          },
+          {
+            "code": "240424003",
+            "display": "Cutaneous streptococcal ulcer (disorder)"
+          },
+          {
+            "code": "240425002",
+            "display": "Facial erysipelas (disorder)"
+          },
+          {
+            "code": "240435008",
+            "display": "Gas gangrene of skin (disorder)"
+          },
+          {
+            "code": "240438005",
+            "display": "Primary cutaneous actinomycosis (disorder)"
+          },
+          {
+            "code": "240449004",
+            "display": "Cutaneous involvement legionellosis (disorder)"
+          },
+          {
+            "code": "240452007",
+            "display": "Asymptomatic bartonellosis (disorder)"
+          },
+          {
+            "code": "240453002",
+            "display": "Oroya fever (disorder)"
+          },
+          {
+            "code": "240455009",
+            "display": "Verruga peruana (disorder)"
+          },
+          {
+            "code": "240456005",
+            "display": "Miliary bartonellosis (disorder)"
+          },
+          {
+            "code": "240457001",
+            "display": "Nodular bartonellosis (disorder)"
+          },
+          {
+            "code": "240458006",
+            "display": "Neurobartonellosis (disorder)"
+          },
+          {
+            "code": "240467006",
+            "display": "Infection of skin of genitalia caused by Molluscum contagiosum (disorder)"
+          },
+          {
+            "code": "240482001",
+            "display": "Enteroviral exanthem (disorder)"
+          },
+          {
+            "code": "240533004",
+            "display": "Facial wart (disorder)"
+          },
+          {
+            "code": "240534005",
+            "display": "Hand wart (disorder)"
+          },
+          {
+            "code": "240535006",
+            "display": "Subungual wart (disorder)"
+          },
+          {
+            "code": "240537003",
+            "display": "Digitate wart (disorder)"
+          },
+          {
+            "code": "240538008",
+            "display": "Butcher's wart (disorder)"
+          },
+          {
+            "code": "240539000",
+            "display": "Plane wart (disorder)"
+          },
+          {
+            "code": "240540003",
+            "display": "Mosaic plantar wart (disorder)"
+          },
+          {
+            "code": "240541004",
+            "display": "Myrmecia plantar wart (disorder)"
+          },
+          {
+            "code": "240542006",
+            "display": "Anogenital warts (disorder)"
+          },
+          {
+            "code": "240545008",
+            "display": "Anogenital papillomaviral intraepithelial neoplasia (disorder)"
+          },
+          {
+            "code": "240546009",
+            "display": "Coxsackie virus exanthem (disorder)"
+          },
+          {
+            "code": "240552005",
+            "display": "Juvenile tabes dorsalis (disorder)"
+          },
+          {
+            "code": "240554006",
+            "display": "Hutchinson's triad (disorder)"
+          },
+          {
+            "code": "240555007",
+            "display": "Acquired syphilis (disorder)"
+          },
+          {
+            "code": "240556008",
+            "display": "Primary extragenital syphilis (disorder)"
+          },
+          {
+            "code": "240557004",
+            "display": "Secondary syphilis (disorder)"
+          },
+          {
+            "code": "240558009",
+            "display": "Macular syphilide (disorder)"
+          },
+          {
+            "code": "240560006",
+            "display": "Papular syphilide (disorder)"
+          },
+          {
+            "code": "240561005",
+            "display": "Corona veneris (disorder)"
+          },
+          {
+            "code": "240562003",
+            "display": "Pustular syphilide (disorder)"
+          },
+          {
+            "code": "240563008",
+            "display": "Syphilitic mucosal ulceration (disorder)"
+          },
+          {
+            "code": "240564002",
+            "display": "Secondary neurosyphilis (disorder)"
+          },
+          {
+            "code": "240565001",
+            "display": "Asymptomatic secondary neurosyphilis (disorder)"
+          },
+          {
+            "code": "240566000",
+            "display": "Gummatous neurosyphilis (disorder)"
+          },
+          {
+            "code": "240567009",
+            "display": "Syphilitic coronary artery disease (disorder)"
+          },
+          {
+            "code": "240568004",
+            "display": "Meningovascular syphilis - quaternary stage (disorder)"
+          },
+          {
+            "code": "240569007",
+            "display": "Syphilitic polyneuropathy (disorder)"
+          },
+          {
+            "code": "240571007",
+            "display": "Neonatal gonococcal infection (disorder)"
+          },
+          {
+            "code": "240572000",
+            "display": "Gonorrhea with local complication (disorder)"
+          },
+          {
+            "code": "240573005",
+            "display": "Gonococcal Bartholin's gland abscess (disorder)"
+          },
+          {
+            "code": "240574004",
+            "display": "Inflammation of paraurethral gland caused by Neisseria gonorrhoeae (disorder)"
+          },
+          {
+            "code": "240575003",
+            "display": "Gonococcal Tysonitis (disorder)"
+          },
+          {
+            "code": "240576002",
+            "display": "Inflammation of bulbourethral gland caused by Neisseria gonorrhoeae (disorder)"
+          },
+          {
+            "code": "240577006",
+            "display": "Inflammation of Littre gland caused by Neisseria gonorrhoeae (disorder)"
+          },
+          {
+            "code": "240578001",
+            "display": "Gonococcal Littr\u00e9 gland abscess (disorder)"
+          },
+          {
+            "code": "240579009",
+            "display": "Gonococcal paraurethral gland abscess (disorder)"
+          },
+          {
+            "code": "240581006",
+            "display": "Gonococcal female pelvic infection (disorder)"
+          },
+          {
+            "code": "240582004",
+            "display": "Gonococcal synovitis (disorder)"
+          },
+          {
+            "code": "240583009",
+            "display": "Cutaneous gonorrhea (disorder)"
+          },
+          {
+            "code": "240584003",
+            "display": "Gonococcal cellulitis (disorder)"
+          },
+          {
+            "code": "240585002",
+            "display": "Chancroid - anogenital ulcer (disorder)"
+          },
+          {
+            "code": "240586001",
+            "display": "Chancroid - extragenital ulcer (disorder)"
+          },
+          {
+            "code": "240587005",
+            "display": "Chancroid - latent infection (disorder)"
+          },
+          {
+            "code": "240597001",
+            "display": "Anal warts (disorder)"
+          },
+          {
+            "code": "240598006",
+            "display": "Penile warts (disorder)"
+          },
+          {
+            "code": "240602008",
+            "display": "Early lymphogranuloma venereum (disorder)"
+          },
+          {
+            "code": "240603003",
+            "display": "Late lymphogranuloma venereum (disorder)"
+          },
+          {
+            "code": "240604009",
+            "display": "Latent lymphogranuloma venereum (disorder)"
+          },
+          {
+            "code": "240606006",
+            "display": "Donovanosis - anogenital ulcer (disorder)"
+          },
+          {
+            "code": "240608007",
+            "display": "Donovanosis - non-genital lesion (disorder)"
+          },
+          {
+            "code": "240624008",
+            "display": "Bacillary peliosis caused by Bartonella (disorder)"
+          },
+          {
+            "code": "240635003",
+            "display": "Pneumonia caused by Leishmania (disorder)"
+          },
+          {
+            "code": "240637006",
+            "display": "Cutaneous leishmaniasis (disorder)"
+          },
+          {
+            "code": "240638001",
+            "display": "Leishmania recidiva (disorder)"
+          },
+          {
+            "code": "240639009",
+            "display": "Indian anthroponotic cutaneous leishmaniasis (disorder)"
+          },
+          {
+            "code": "240641005",
+            "display": "Classical zoonotic cutaneous leishmaniasis (disorder)"
+          },
+          {
+            "code": "240642003",
+            "display": "Middle Eastern zoonotic cutaneous leishmaniasis (disorder)"
+          },
+          {
+            "code": "240643008",
+            "display": "Indian zoonotic cutaneous leishmaniasis (disorder)"
+          },
+          {
+            "code": "240644002",
+            "display": "Sahelian zoonotic cutaneous leishmaniasis (disorder)"
+          },
+          {
+            "code": "240645001",
+            "display": "Diffuse cutaneous New World leishmaniasis (disorder)"
+          },
+          {
+            "code": "240648004",
+            "display": "Bush yaws (disorder)"
+          },
+          {
+            "code": "240650007",
+            "display": "Lupoid leishmaniasis (disorder)"
+          },
+          {
+            "code": "240654003",
+            "display": "Chagoma (disorder)"
+          },
+          {
+            "code": "240656001",
+            "display": "Chagas' exanthem (disorder)"
+          },
+          {
+            "code": "240657005",
+            "display": "Subcutaneous lipochagoma (disorder)"
+          },
+          {
+            "code": "240659008",
+            "display": "Chagas' mega disease (disorder)"
+          },
+          {
+            "code": "240664007",
+            "display": "Amebic abscess of skin (disorder)"
+          },
+          {
+            "code": "240666009",
+            "display": "Cutaneous toxoplasmosis (disorder)"
+          },
+          {
+            "code": "240669002",
+            "display": "Congenital Lyme disease (disorder)"
+          },
+          {
+            "code": "240670001",
+            "display": "Skeletal Lyme disease (disorder)"
+          },
+          {
+            "code": "240671002",
+            "display": "Lyme erosive synovitis (disorder)"
+          },
+          {
+            "code": "240673004",
+            "display": "Leptospiral rash (disorder)"
+          },
+          {
+            "code": "240676007",
+            "display": "Macular yaws (disorder)"
+          },
+          {
+            "code": "240677003",
+            "display": "Maculopapular yaws (disorder)"
+          },
+          {
+            "code": "240678008",
+            "display": "Micropapular yaws (disorder)"
+          },
+          {
+            "code": "240679000",
+            "display": "Papular yaws (disorder)"
+          },
+          {
+            "code": "240685007",
+            "display": "Mixed cutaneous pinta lesion (disorder)"
+          },
+          {
+            "code": "240696004",
+            "display": "Tinea faciei (disorder)"
+          },
+          {
+            "code": "240700007",
+            "display": "Fungal infection of hair (disorder)"
+          },
+          {
+            "code": "240708000",
+            "display": "Penile candidiasis (disorder)"
+          },
+          {
+            "code": "240709008",
+            "display": "Perineal candidiasis (disorder)"
+          },
+          {
+            "code": "240710003",
+            "display": "Granuloma gluteale infantum (disorder)"
+          },
+          {
+            "code": "240711004",
+            "display": "Diaper candidiasis (disorder)"
+          },
+          {
+            "code": "240713001",
+            "display": "Candidiasis of finger web (disorder)"
+          },
+          {
+            "code": "240724004",
+            "display": "Cutaneous cryptococcosis (disorder)"
+          },
+          {
+            "code": "240727006",
+            "display": "Cutaneous coccidioidomycosis (disorder)"
+          },
+          {
+            "code": "240728001",
+            "display": "Subcutaneous coccidioidomycosis (disorder)"
+          },
+          {
+            "code": "240736005",
+            "display": "Classical histoplasmosis intestinal ulceration (disorder)"
+          },
+          {
+            "code": "240741002",
+            "display": "Acute pulmonary African histoplasmosis (disorder)"
+          },
+          {
+            "code": "240742009",
+            "display": "Chronic pulmonary African histoplasmosis (disorder)"
+          },
+          {
+            "code": "240744005",
+            "display": "Cutaneous histoplasmosis (disorder)"
+          },
+          {
+            "code": "240745006",
+            "display": "Primary cutaneous histoplasmosis (disorder)"
+          },
+          {
+            "code": "240746007",
+            "display": "Disseminated cutaneous histoplasmosis (disorder)"
+          },
+          {
+            "code": "240747003",
+            "display": "Chronic pulmonary blastomycosis (disorder)"
+          },
+          {
+            "code": "240748008",
+            "display": "Disseminated cutaneous blastomycosis (disorder)"
+          },
+          {
+            "code": "240750000",
+            "display": "Primary lobomycotic nodule (disorder)"
+          },
+          {
+            "code": "240751001",
+            "display": "Chronic coalescent cutaneous lobomycosis (disorder)"
+          },
+          {
+            "code": "240753003",
+            "display": "Cutaneous rhinosporidiosis (disorder)"
+          },
+          {
+            "code": "240755005",
+            "display": "Polypoid cutaneous rhinosporidiosis (disorder)"
+          },
+          {
+            "code": "240756006",
+            "display": "Ulcerated cutaneous rhinosporidiosis (disorder)"
+          },
+          {
+            "code": "240758007",
+            "display": "Primary cutaneous sporotrichoid nodule (disorder)"
+          },
+          {
+            "code": "240759004",
+            "display": "Disseminated cutaneous sporotrichosis (disorder)"
+          },
+          {
+            "code": "240765004",
+            "display": "Cutaneous chromoblastomycosis (disorder)"
+          },
+          {
+            "code": "240766003",
+            "display": "Primary chromoblastomycotic nodule (disorder)"
+          },
+          {
+            "code": "240767007",
+            "display": "Cutaneous chromoblastomycotic abscess (disorder)"
+          },
+          {
+            "code": "240768002",
+            "display": "Lymphocutaneous chromoblastomycosis (disorder)"
+          },
+          {
+            "code": "240769005",
+            "display": "Carcinomatous transformation of chromoblastomycosis (disorder)"
+          },
+          {
+            "code": "240770006",
+            "display": "Phaeohyphomycosis of skin (disorder)"
+          },
+          {
+            "code": "240771005",
+            "display": "Cyst of subcutaneous tissue caused by Dematiaceae (disorder)"
+          },
+          {
+            "code": "240774002",
+            "display": "Cutaneous hyalohyphomycosis (disorder)"
+          },
+          {
+            "code": "240776000",
+            "display": "Subcutaneous pseudallescheriosis (disorder)"
+          },
+          {
+            "code": "240778004",
+            "display": "Cutaneous mucormycosis (disorder)"
+          },
+          {
+            "code": "240779007",
+            "display": "Necrotizing cutaneous mucormycosis (disorder)"
+          },
+          {
+            "code": "240786004",
+            "display": "Cutaneous basidiobolomycosis (disorder)"
+          },
+          {
+            "code": "240796008",
+            "display": "Intestinal schistosomiasis (disorder)"
+          },
+          {
+            "code": "240802005",
+            "display": "Intestinal fluke infection (disorder)"
+          },
+          {
+            "code": "240803000",
+            "display": "Haplorchiasis (disorder)"
+          },
+          {
+            "code": "240804006",
+            "display": "Fibricoliasis (disorder)"
+          },
+          {
+            "code": "240806008",
+            "display": "Phaneropsuliasis (disorder)"
+          },
+          {
+            "code": "240813008",
+            "display": "Cutaneous fluke infection (disorder)"
+          },
+          {
+            "code": "240814002",
+            "display": "Poikilorchiasis (disorder)"
+          },
+          {
+            "code": "240835000",
+            "display": "Subcutaneous filariasis (disorder)"
+          },
+          {
+            "code": "240836004",
+            "display": "Onchodermatitis (disorder)"
+          },
+          {
+            "code": "240838003",
+            "display": "Onchocercal subcutaneous nodule (disorder)"
+          },
+          {
+            "code": "240839006",
+            "display": "Onchocercal depigmentation (disorder)"
+          },
+          {
+            "code": "240840008",
+            "display": "Onchocercal lichenification (disorder)"
+          },
+          {
+            "code": "240841007",
+            "display": "Sowda (disorder)"
+          },
+          {
+            "code": "240843005",
+            "display": "Calabar swelling (disorder)"
+          },
+          {
+            "code": "240847006",
+            "display": "Guinea-worm ulcer (disorder)"
+          },
+          {
+            "code": "240851008",
+            "display": "Subcutaneous dirofilariasis (disorder)"
+          },
+          {
+            "code": "240854000",
+            "display": "Ancylostomal cutaneous larva migrans (disorder)"
+          },
+          {
+            "code": "240855004",
+            "display": "Strongyloides cutaneous larva currens (disorder)"
+          },
+          {
+            "code": "240856003",
+            "display": "Strongyloidal ground itch (disorder)"
+          },
+          {
+            "code": "240857007",
+            "display": "Strongyloidal cutaneous larva migrans (disorder)"
+          },
+          {
+            "code": "240860000",
+            "display": "Gnathostomal cutaneous larva migrans (disorder)"
+          },
+          {
+            "code": "240861001",
+            "display": "Larval ascariasis (disorder)"
+          },
+          {
+            "code": "240863003",
+            "display": "Migratory ascariasis (disorder)"
+          },
+          {
+            "code": "240864009",
+            "display": "Biliary ascariasis (disorder)"
+          },
+          {
+            "code": "240865005",
+            "display": "Ascaris peritoneal granuloma (disorder)"
+          },
+          {
+            "code": "240869004",
+            "display": "Capillaria hepatica hepatitis (disorder)"
+          },
+          {
+            "code": "240870003",
+            "display": "Capillaria aerophila infection (disorder)"
+          },
+          {
+            "code": "240871004",
+            "display": "Capillaria aerophila chest infection (disorder)"
+          },
+          {
+            "code": "240872006",
+            "display": "Ternideniasis (disorder)"
+          },
+          {
+            "code": "240877000",
+            "display": "Infestation of skin caused by fly larvae (disorder)"
+          },
+          {
+            "code": "240879002",
+            "display": "Infestation of subcutaneous tissue caused by fly larvae (disorder)"
+          },
+          {
+            "code": "240894003",
+            "display": "Demodex folliculitis (disorder)"
+          },
+          {
+            "code": "240897005",
+            "display": "Dermatitis due to Cheyletiella infestation (disorder)"
+          },
+          {
+            "code": "24347001",
+            "display": "Cellulitis of vocal cords (disorder)"
+          },
+          {
+            "code": "2435008",
+            "display": "Ascariasis (disorder)"
+          },
+          {
+            "code": "24620004",
+            "display": "Hemolytic anemia due to babesiosis (disorder)"
+          },
+          {
+            "code": "24752008",
+            "display": "Infantile cortical hyperostosis (disorder)"
+          },
+          {
+            "code": "24789006",
+            "display": "Viral gastroenteritis caused by Norwalk-like agent (disorder)"
+          },
+          {
+            "code": "24868007",
+            "display": "Acute gonococcal cystitis (disorder)"
+          },
+          {
+            "code": "249457005",
+            "display": "Supraglottic ulcer (disorder)"
+          },
+          {
+            "code": "249458000",
+            "display": "Supraglottic abscess (disorder)"
+          },
+          {
+            "code": "249463001",
+            "display": "Subglottic abscess (disorder)"
+          },
+          {
+            "code": "249464007",
+            "display": "Subglottic ulcer (disorder)"
+          },
+          {
+            "code": "249465008",
+            "display": "Subglottic necrosis (disorder)"
+          },
+          {
+            "code": "2513003",
+            "display": "Tinea capitis caused by Trichophyton (disorder)"
+          },
+          {
+            "code": "25188002",
+            "display": "Pediculosis corporis (disorder)"
+          },
+          {
+            "code": "2523007",
+            "display": "Salmonella pneumonia (disorder)"
+          },
+          {
+            "code": "254044004",
+            "display": "Multiple congenital exostosis (disorder)"
+          },
+          {
+            "code": "254147009",
+            "display": "Idiopathic osteolyses (disorder)"
+          },
+          {
+            "code": "254149007",
+            "display": "Carpal-tarsal osteolysis with nephropathy (disorder)"
+          },
+          {
+            "code": "254151006",
+            "display": "Winchester syndrome (disorder)"
+          },
+          {
+            "code": "254152004",
+            "display": "Torg type osteolysis (disorder)"
+          },
+          {
+            "code": "254153009",
+            "display": "Familial expansile osteolysis (disorder)"
+          },
+          {
+            "code": "254671003",
+            "display": "Infection of sebaceous cyst (disorder)"
+          },
+          {
+            "code": "254676008",
+            "display": "Warty dyskeratoma (disorder)"
+          },
+          {
+            "code": "254899009",
+            "display": "Cutaneous glanders (disorder)"
+          },
+          {
+            "code": "25626000",
+            "display": "Cutaneous infectious disease caused by Mycobacteria (disorder)"
+          },
+          {
+            "code": "25726008",
+            "display": "Nonvenomous insect bite of groin with infection (disorder)"
+          },
+          {
+            "code": "25956006",
+            "display": "Tinea pedis caused by Trichophyton (disorder)"
+          },
+          {
+            "code": "26039008",
+            "display": "Neurosyphilis (disorder)"
+          },
+          {
+            "code": "26067004",
+            "display": "Madura foot caused by Streptomyces (disorder)"
+          },
+          {
+            "code": "26135000",
+            "display": "Syphilitic encephalitis (disorder)"
+          },
+          {
+            "code": "26151008",
+            "display": "Graves' disease with acropachy AND with thyrotoxic crisis (disorder)"
+          },
+          {
+            "code": "2622007",
+            "display": "Infected ulcer of skin (disorder)"
+          },
+          {
+            "code": "262461007",
+            "display": "Infection caused by Bartonella bacilliformis (disorder)"
+          },
+          {
+            "code": "26249004",
+            "display": "Intestinal infection caused by Cestoda and/or Trematoda and/or Phylum Nemata (disorder)"
+          },
+          {
+            "code": "262781009",
+            "display": "Kaposi's varicelliform eruption caused by vaccinia virus (disorder)"
+          },
+          {
+            "code": "26535009",
+            "display": "Carbuncle of vulva (disorder)"
+          },
+          {
+            "code": "266071000",
+            "display": "Intestinal infectious disease (disorder)"
+          },
+          {
+            "code": "266077001",
+            "display": "Staphylococcal gastrointestinal tract infection (disorder)"
+          },
+          {
+            "code": "266090008",
+            "display": "Ileocecal actinomycosis (disorder)"
+          },
+          {
+            "code": "266108008",
+            "display": "Enteroviral vesicular stomatitis with exanthem (disorder)"
+          },
+          {
+            "code": "266113007",
+            "display": "Genital warts (disorder)"
+          },
+          {
+            "code": "266114001",
+            "display": "Perianal warts (disorder)"
+          },
+          {
+            "code": "266123003",
+            "display": "Bartonellosis (disorder)"
+          },
+          {
+            "code": "266125005",
+            "display": "Early congenital syphilis with symptoms (disorder)"
+          },
+          {
+            "code": "266126006",
+            "display": "Late congenital neurosyphilis (disorder)"
+          },
+          {
+            "code": "266127002",
+            "display": "Primary syphilis (disorder)"
+          },
+          {
+            "code": "266128007",
+            "display": "Rash of secondary syphilis (disorder)"
+          },
+          {
+            "code": "266130009",
+            "display": "Acquired syphilis - early latent (disorder)"
+          },
+          {
+            "code": "266133006",
+            "display": "Late quaternary neurosyphilis (disorder)"
+          },
+          {
+            "code": "266136003",
+            "display": "Acquired syphilis - late latent (disorder)"
+          },
+          {
+            "code": "266143009",
+            "display": "Chancroid (disorder)"
+          },
+          {
+            "code": "266152000",
+            "display": "Deep seated dermatophytosis (disorder)"
+          },
+          {
+            "code": "266157006",
+            "display": "Perianal candidiasis (disorder)"
+          },
+          {
+            "code": "266158001",
+            "display": "Candida intertrigo (disorder)"
+          },
+          {
+            "code": "266160004",
+            "display": "Intestinal taenia solium infection (disorder)"
+          },
+          {
+            "code": "266162007",
+            "display": "Enterobiasis (disorder)"
+          },
+          {
+            "code": "266350000",
+            "display": "Pneumococcal lobar pneumonia (disorder)"
+          },
+          {
+            "code": "266404004",
+            "display": "Chronic chemical respiratory disease (disorder)"
+          },
+          {
+            "code": "26652002",
+            "display": "Abrasion and/or friction burn of scalp with infection (disorder)"
+          },
+          {
+            "code": "267665002",
+            "display": "Acute infective otitis externa (disorder)"
+          },
+          {
+            "code": "26826005",
+            "display": "Amebic appendicitis (disorder)"
+          },
+          {
+            "code": "268276007",
+            "display": "Congenital exostosis (disorder)"
+          },
+          {
+            "code": "269202001",
+            "display": "Abrasion and/or friction burn of foot and/or toe, infected (disorder)"
+          },
+          {
+            "code": "269206003",
+            "display": "Insect bite, nonvenomous, of foot and toe, infected (disorder)"
+          },
+          {
+            "code": "27023008",
+            "display": "Infective dermatitis of eyelid (disorder)"
+          },
+          {
+            "code": "270550006",
+            "display": "Pelvic inflammatory disease caused by Metamycoplasma hominis (disorder)"
+          },
+          {
+            "code": "27075004",
+            "display": "Venereal disease in mother complicating pregnancy, childbirth AND/OR puerperium (disorder)"
+          },
+          {
+            "code": "271111006",
+            "display": "Traumatic blister of head, infected (disorder)"
+          },
+          {
+            "code": "271112004",
+            "display": "Traumatic blister of face, infected (disorder)"
+          },
+          {
+            "code": "271113009",
+            "display": "Traumatic blister of neck, infected (disorder)"
+          },
+          {
+            "code": "271114003",
+            "display": "Traumatic blister of scalp, infected (disorder)"
+          },
+          {
+            "code": "271132003",
+            "display": "Traumatic blister of interscapular region, infected (disorder)"
+          },
+          {
+            "code": "271133008",
+            "display": "Traumatic blister of chest wall, infected (disorder)"
+          },
+          {
+            "code": "271134002",
+            "display": "Traumatic blister of breast, infected (disorder)"
+          },
+          {
+            "code": "271135001",
+            "display": "Traumatic blister of abdominal wall, infected (disorder)"
+          },
+          {
+            "code": "271136000",
+            "display": "Traumatic blister of back, infected (disorder)"
+          },
+          {
+            "code": "271138004",
+            "display": "Traumatic blister of buttock, infected (disorder)"
+          },
+          {
+            "code": "271139007",
+            "display": "Traumatic blister of anus, infected (disorder)"
+          },
+          {
+            "code": "271140009",
+            "display": "Traumatic blister of flank, infected (disorder)"
+          },
+          {
+            "code": "271141008",
+            "display": "Traumatic blister of groin, infected (disorder)"
+          },
+          {
+            "code": "271142001",
+            "display": "Traumatic blister of perineum, infected (disorder)"
+          },
+          {
+            "code": "271143006",
+            "display": "Traumatic blister of penis, infected (disorder)"
+          },
+          {
+            "code": "271153007",
+            "display": "Traumatic blister of shoulder and upper arm, infected (disorder)"
+          },
+          {
+            "code": "271154001",
+            "display": "Traumatic blister of shoulder, infected (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}
