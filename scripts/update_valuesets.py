@@ -15,7 +15,7 @@ encoded_api_key = base64.b64encode(API_KEY.encode()).decode()
 # Define the base URL for VSAC API
 VSAC_URL = "https://vsac.nlm.nih.gov/vsac/svs"
 
-VALUESET_PATH = "/Users/matt/dev/recoverx/ecqm-content-qicore-2024/input/vocabulary/valueset/external"
+VALUESET_PATH = "/Users/Abhi/Documents/rx-dev/ECQM/ECQM-20240225/ecqm-content-qicore-2024/input/vocabulary/valueset/external"
 
 # Function to fetch value set concepts from VSAC
 def fetch_value_set(value_set_oid):
