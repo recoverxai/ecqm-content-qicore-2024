@@ -7,6 +7,10 @@ include FHIRHelpers version '4.3.000' called FHIRHelpers
 include QICoreCommon version '2.0.000' called QICoreCommon
 include SupplementalDataElements version '3.4.000' called SDE
 
+codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
+codesystem "CERNER-ServiceType": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/34'
+codesystem "CERNER-SR": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/200'
+
 codesystem "ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 codesystem "LOINC": 'http://loinc.org'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
@@ -33,6 +37,11 @@ code "Follow-up 2-3 months (finding)": '183624006' from "SNOMEDCT" display 'Foll
 code "Follow-up 4-6 months (finding)": '183625007' from "SNOMEDCT" display 'Follow-up 4-6 months (finding)'
 code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pressure'
 code "virtual": 'VR' from "ActCode" display 'virtual'
+code "Clinic": '22282402' from "CERNER" display 'Clinic'
+code "Referral Management": '4659041987' from "CERNER-SR" display 'Referral Management'
+code "Equimed": '12888890229' from "CERNER-ServiceType" display 'Equimed'
+code "Lab": '2554653267' from "CERNER-ServiceType" display 'Lab'
+code "Telehealth": '2709938661' from "CERNER-ServiceType" display 'Telehealth'
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -40,31 +49,274 @@ parameter "Measurement Period" Interval<DateTime>
 context Patient
 
 define "Initial Population":
-  "Qualifying Encounter during Measurement Period" QualifyingEncounter
-    where AgeInYearsAt(start of "Measurement Period") >= 18
+  "Qualifying Encounter" QualifyingEncounter
+    where "Age In Measurement Period" >= 18
 
 define "Denominator":
   "Initial Population"
 
 define "Denominator Exclusions":
-  "Qualifying Encounter during Measurement Period" QualifyingEncounter
-    with [Condition: "Diagnosis of Hypertension"] Hypertension
-      such that ( Hypertension.isProblemListItem ( )
-          or Hypertension.isHealthConcern ( )
-      )
-        and Hypertension.isActive ( )
-        and Hypertension.prevalenceInterval ( ) starts before or on day of QualifyingEncounter.period
+  "Encounter after Diagnosis of Hypertension".episode
 
 define "Numerator":
-  "Encounter with Normal Blood Pressure Reading"
-    union ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Interventions" )
-    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80 and Interventions" )
-    union ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Interventions" )
-    union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Interventions" )
+  "Encounter with Normal Blood Pressure Reading".episode
+    union ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Followup".episode )
+    union ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Referral".episode )
+    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80 and Followup".episode )
+    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80 and Referral".episode )
+    union ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Followup".episode )
+    union ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Referral".episode )
+    union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Followup".episode )
+    union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Referral".episode )
 
 define "Denominator Exceptions":
   "Encounter with Medical Reason for Not Obtaining or Patient Declined Blood Pressure Measurement"
     union "Encounter with Order for Hypertension Follow Up Declined by Patient"
+
+define "Potential Denominator Exceptions":
+  "Qualifying Encounter Without Blood Pressure"
+
+// Potential Denominator Exceptions conditions
+define "Qualifying Encounter Without Blood Pressure":
+  "Qualifying Encounter" QualifyingEncounter
+    let EncounterLastSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    EncounterLastDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    )
+    where EncounterLastSystolicBP is null
+      or EncounterLastDiastolicBP is null
+
+// Initial Population conditions
+define "Age In Measurement Period":
+  AgeInYearsAt(start of "Measurement Period")
+
+// Denominator Exclusions conditions
+define "Encounter after Diagnosis of Hypertension":
+  from
+    "Qualifying Encounter" QualifyingEncounter,
+    "Earliest Diagnosis of Hypertension" Hypertension
+  where Coalesce( Hypertension.onset, Hypertension.recordedDate ) before QualifyingEncounter.period
+  return {episode: QualifyingEncounter, "1_Diagnosis of Hypertension": Hypertension}
+
+define "Earliest Diagnosis of Hypertension":
+  First(([Condition: "Diagnosis of Hypertension"]) Hypertension
+    where Hypertension.isActive ( )
+    sort by Coalesce( onset, recordedDate ))
+
+// Numerator conditions
+// Normal BP
+define "Encounter with Normal Blood Pressure Reading":
+  "Qualifying Encounter" QualifyingEncounter
+    let EncounterLastSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    EncounterLastDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    )
+    where EncounterLastSystolicBP.systolicReading() in Interval[1 'mm[Hg]', 120 'mm[Hg]' )
+      and EncounterLastDiastolicBP.diastolicReading() in Interval[1 'mm[Hg]', 80 'mm[Hg]' )
+    return {episode: QualifyingEncounter, "1_Systolic BP": EncounterLastSystolicBP, "2_Diastolic BP": EncounterLastDiastolicBP}
+
+// Elevated BP 120-129
+define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Followup":
+  from 
+    "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedEncounter,
+    "Follow up with Rescreen in 2 to 6 Months" Twoto6MonthRescreen,
+    "NonPharmacological Interventions" NonPharmInterventions
+  where Twoto6MonthRescreen.authoredOn during day of ElevatedEncounter.episode.period
+      and NonPharmInterventions.authoredOn during day of ElevatedEncounter.episode.period
+  return {episode: ElevatedEncounter.episode, "1_Systolic BP": ElevatedEncounter.systolicBP, "2_Diastolic BP": ElevatedEncounter.diastolicBP, "3_Follow-up": Twoto6MonthRescreen, "4_Recommendation": NonPharmInterventions }
+
+define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Referral":
+  from
+    "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedEncounter,
+    "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
+  where Referral.authoredOn during day of ElevatedEncounter.episode.period
+  return {episode: ElevatedEncounter.episode, "1_Systolic BP": ElevatedEncounter.systolicBP, "2_Diastolic BP": ElevatedEncounter.diastolicBP, "3_Referral": Referral}
+
+define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80":
+  "Qualifying Encounter" QualifyingEncounter
+    let EncounterLastSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    EncounterLastDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    )
+    where EncounterLastSystolicBP.systolicReading() in Interval[120 'mm[Hg]', 129 'mm[Hg]' )
+      and EncounterLastDiastolicBP.diastolicReading() in Interval[1 'mm[Hg]', 80 'mm[Hg]' )
+    return {episode: QualifyingEncounter, systolicBP: EncounterLastSystolicBP, diastolicBP: EncounterLastDiastolicBP}
+
+// First Hypertensive 
+define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80 and Followup":
+  from
+    "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter,
+    [ServiceRequest: "Follow Up Within 4 Weeks"] FourWeekRescreen,
+    "NonPharmacological Interventions" NonPharmInterventions
+   where FourWeekRescreen.authoredOn during day of FirstHTNEncounter.episode.period
+     and FourWeekRescreen.intent ~ 'order'
+     and NonPharmInterventions.authoredOn during day of FirstHTNEncounter.episode.period
+  return {episode: FirstHTNEncounter.episode, "1_Systolic BP": FirstHTNEncounter.systolicBP, "2_Diastolic BP": FirstHTNEncounter.diastolicBP, "3_Follow-up": FourWeekRescreen, "4_Recommendation": NonPharmInterventions }
+
+define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80 and Referral":
+  from
+    "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter,
+    "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
+  where Referral.authoredOn during day of FirstHTNEncounter.episode.period
+  return {episode: FirstHTNEncounter.episode, "1_Systolic BP": FirstHTNEncounter.systolicBP, "2_Diastolic BP": FirstHTNEncounter.diastolicBP, "3_Referral": Referral}
+
+define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80":
+  "Qualifying Encounter" QualifyingEncounter
+    let EncounterLastSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    EncounterLastDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    LastPreviousHyperTensiveSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.systolicReading() >= 130 'mm[Hg]'
+          and BloodPressure.effective.toInterval() ends 1 year or less before start of QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    LastPreviousHyperTensiveDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.diastolicReading() >= 80 'mm[Hg]'
+          and BloodPressure.effective.toInterval() ends 1 year or less before start of QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    )
+    where EncounterLastSystolicBP is not null
+      and EncounterLastDiastolicBP is not null
+      and (
+        EncounterLastSystolicBP.systolicReading() >= 130 'mm[Hg]'
+        or EncounterLastDiastolicBP.diastolicReading() >= 80 'mm[Hg]'
+      )
+      and LastPreviousHyperTensiveSystolicBP is null
+      and LastPreviousHyperTensiveDiastolicBP is null
+  return {episode: QualifyingEncounter, systolicBP: EncounterLastSystolicBP, diastolicBP: EncounterLastDiastolicBP}
+
+// Second Hypertensive 130
+define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Followup":
+  from
+    "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89" SecondHTNEncounter,
+    "Follow up with Rescreen in 2 to 6 Months" Rescreen2to6,
+    "Laboratory Test or ECG for Hypertension" LabECGIntervention,
+    "NonPharmacological Interventions" NonPharmInterventions
+   where Rescreen2to6.authoredOn during day of SecondHTNEncounter.episode.period
+     and LabECGIntervention.authoredOn during day of SecondHTNEncounter.episode.period
+     and NonPharmInterventions.authoredOn during day of SecondHTNEncounter.episode.period
+  return {episode: SecondHTNEncounter.episode, "1_Systolic BP": SecondHTNEncounter.systolicBP, "2_Diastolic BP": SecondHTNEncounter.diastolicBP, "3_Follow-up": Rescreen2to6, "4_Recommendation": NonPharmInterventions, "5_ECG": LabECGIntervention }
+
+define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Referral":
+  from
+    "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89" SecondHTNEncounter,
+    "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
+  where Referral.authoredOn during day of SecondHTNEncounter.episode.period
+  return {episode: SecondHTNEncounter.episode, "1_Systolic BP": SecondHTNEncounter.systolicBP, "2_Diastolic BP": SecondHTNEncounter.diastolicBP, "3_Referral": Referral}
+
+define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89":
+  "Qualifying Encounter" QualifyingEncounter
+    let EncounterLastSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    EncounterLastDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    LastPreviousHyperTensiveSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.systolicReading() >= 130 'mm[Hg]'
+          and BloodPressure.effective.toInterval() ends 1 year or less before start of QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    LastPreviousHyperTensiveDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.diastolicReading() >= 80 'mm[Hg]'
+          and BloodPressure.effective.toInterval() ends 1 year or less before start of QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    )
+    where (
+        EncounterLastSystolicBP.systolicReading() in Interval[130 'mm[Hg]', 139 'mm[Hg]']
+        or EncounterLastDiastolicBP.diastolicReading() in Interval[80 'mm[Hg]', 89 'mm[Hg]']
+      )
+      and not (
+        EncounterLastSystolicBP.systolicReading() >= 140 'mm[Hg]'
+        or EncounterLastDiastolicBP.diastolicReading() >= 90 'mm[Hg]'
+      )
+      and (LastPreviousHyperTensiveSystolicBP is not null
+      or LastPreviousHyperTensiveDiastolicBP is not null)
+  return {episode: QualifyingEncounter, systolicBP: EncounterLastSystolicBP, diastolicBP: EncounterLastDiastolicBP}
+
+// Second Hypertensive 140
+define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Followup":
+  from
+    "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90" SecondHTN140Encounter,
+    [ServiceRequest: "Follow Up Within 4 Weeks"] WeeksRescreen,
+    "Laboratory Test or ECG for Hypertension" LabECGIntervention,
+    "NonPharmacological Interventions" NonPharmInterventions,
+    ["MedicationRequest": "Pharmacologic Therapy for Hypertension"] Medications
+   where WeeksRescreen.authoredOn during day of SecondHTN140Encounter.episode.period
+     and WeeksRescreen.intent ~ 'order'
+     and LabECGIntervention.authoredOn during day of SecondHTN140Encounter.episode.period
+     and NonPharmInterventions.authoredOn during day of SecondHTN140Encounter.episode.period
+     and Medications.authoredOn during day of SecondHTN140Encounter.episode.period
+     and Medications.status ~ 'active'
+  return {episode: SecondHTN140Encounter.episode, "1_Systolic BP": SecondHTN140Encounter.systolicBP, "2_Diastolic BP": SecondHTN140Encounter.diastolicBP, "3_Follow-up": WeeksRescreen, "4_Recommendation": NonPharmInterventions, "5_ECG": LabECGIntervention, "6_Medication": Medications }
+
+define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Referral":
+  from
+    "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90" SecondHTN140Encounter,
+    "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
+  where Referral.authoredOn during day of SecondHTN140Encounter.episode.period
+  return {episode: SecondHTN140Encounter.episode, "1_Systolic BP": SecondHTN140Encounter.systolicBP, "2_Diastolic BP": SecondHTN140Encounter.diastolicBP, "3_Referral": Referral}
+
+define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90":
+  "Qualifying Encounter" QualifyingEncounter
+    let EncounterLastSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    EncounterLastDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    LastPreviousHyperTensiveSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.systolicReading() >= 130 'mm[Hg]'
+          and BloodPressure.effective.toInterval() ends 1 year or less before start of QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    LastPreviousHyperTensiveDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.diastolicReading() >= 80 'mm[Hg]'
+          and BloodPressure.effective.toInterval() ends 1 year or less before start of QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    )
+    where EncounterLastSystolicBP is not null
+      and EncounterLastDiastolicBP is not null
+      and (
+        EncounterLastSystolicBP.systolicReading() >= 140 'mm[Hg]'
+        or EncounterLastDiastolicBP.diastolicReading() >= 90 'mm[Hg]'
+      )
+      and (LastPreviousHyperTensiveSystolicBP is not null
+      or LastPreviousHyperTensiveDiastolicBP is not null)
+  return {episode: QualifyingEncounter, systolicBP: EncounterLastSystolicBP, diastolicBP: EncounterLastDiastolicBP}
+
+// Common
+define "Qualifying Encounter":
+  ([Encounter: "Encounter to Screen for Blood Pressure"]
+    union ["Encounter": "Clinic"]
+  ) ValidEncounter
+    where ValidEncounter.period.toInterval ( ) during day of "Measurement Period"
+      and ValidEncounter.status ~ 'finished'
+      and ValidEncounter.class !~ "virtual"
+      and ValidEncounter.serviceType !~ "Equimed"
+      and ValidEncounter.serviceType !~ "Lab"
+      and ValidEncounter.serviceType !~ "Telehealth"
 
 define "Follow up with Rescreen in 2 to 6 Months":
   ( [ServiceRequest: "Follow-up 2-3 months (finding)"]
@@ -85,168 +337,12 @@ define "NonPharmacological Interventions":
     union [ServiceRequest: "Referral or Counseling for Alcohol Consumption"] ) NonPharmaInterventions
     where NonPharmaInterventions.intent ~ 'order'
 
-define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80 and Interventions":
-  "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter
-    with "First Hypertensive Reading Interventions or Referral to Alternate Professional" FirstHTNIntervention
-      such that FirstHTNIntervention.authoredOn during day of FirstHTNEncounter.period
-
-define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Interventions":
-  ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89" SecondHTNEncounterReading
-      with "Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Interventions" EncounterInterventions
-        such that EncounterInterventions.authoredOn during day of SecondHTNEncounterReading.period
-  )
-    union ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89" SecondHTNEncounterReading
-        with "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" ReferralForHTN
-          such that ReferralForHTN.authoredOn during day of SecondHTNEncounterReading.period
-    )
-
-define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Interventions":
-  ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90" SecondHTNEncounterReading140Over90
-      with "Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 Interventions" SecondHTN140Over90Interventions
-        such that SecondHTN140Over90Interventions.authoredOn during day of SecondHTNEncounterReading140Over90.period
-  )
-    union "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90" SecondHTNEncounterReading140Over90
-      with "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" ReferralToProfessional
-        such that ReferralToProfessional.authoredOn during day of SecondHTNEncounterReading140Over90.period
-
-define "First Hypertensive Reading Interventions or Referral to Alternate Professional":
-  ( [ServiceRequest: "Follow Up Within 4 Weeks"] FourWeekRescreen
-      with "NonPharmacological Interventions" NonPharmInterventionsHTN
-        such that FourWeekRescreen.authoredOn during day of "Measurement Period"
-          and NonPharmInterventionsHTN.authoredOn during day of "Measurement Period"
-          and FourWeekRescreen.intent ~ 'order'
-  )
-    union ( "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" )
-
 define "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading":
-  [ServiceRequest: "Referral to Primary Care or Alternate Provider"] Referral
-    where Referral.reasonCode in "Finding of Elevated Blood Pressure or Hypertension"
+  ([ServiceRequest: "Referral to Primary Care or Alternate Provider"]
+    union [ServiceRequest: code = "Referral Management"]) Referral
+    where (Referral.reasonCode in "Finding of Elevated Blood Pressure or Hypertension"
+      or Referral.reasonCode in "Diagnosis of Hypertension")
       and Referral.intent ~ 'order'
-
-define "Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 Interventions":
-  ( [ServiceRequest: "Follow Up Within 4 Weeks"] WeeksRescreen
-      with "Laboratory Test or ECG for Hypertension" ECGLabTest
-        such that WeeksRescreen.authoredOn during day of "Measurement Period"
-          and ECGLabTest.authoredOn during day of "Measurement Period"
-          and WeeksRescreen.intent ~ 'order'
-          and ECGLabTest.intent ~ 'order'
-      with "NonPharmacological Interventions" HTNInterventions
-        such that HTNInterventions.authoredOn during day of "Measurement Period"
-      with ["MedicationRequest": "Pharmacologic Therapy for Hypertension"] Medications
-        such that Medications.authoredOn during day of "Measurement Period"
-          and Medications.status ~ 'active'
-  )
-
-define "Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Interventions":
-  "Follow up with Rescreen in 2 to 6 Months" Rescreen2to6
-    with "Laboratory Test or ECG for Hypertension" LabECGIntervention
-      such that Rescreen2to6.authoredOn during day of "Measurement Period"
-        and LabECGIntervention.authoredOn during day of "Measurement Period"
-    with "NonPharmacological Interventions" NonPharmSecondIntervention
-      such that NonPharmSecondIntervention.authoredOn during day of "Measurement Period"
-
-define "Qualifying Encounter during Measurement Period":
-  [Encounter: "Encounter to Screen for Blood Pressure"] ValidEncounter
-    where ValidEncounter.period during day of "Measurement Period"
-      and ValidEncounter.status ~ 'finished'
-      and ValidEncounter.class !~ "virtual"
-
-define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Interventions":
-  ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedEncounter
-      with "Follow up with Rescreen in 2 to 6 Months" Twoto6MonthRescreen
-        such that Twoto6MonthRescreen.authoredOn during day of ElevatedEncounter.period
-      with "NonPharmacological Interventions" NonPharmInterventions
-        such that NonPharmInterventions.authoredOn during day of ElevatedEncounter.period
-  )
-    union ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedEncounter
-        with "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
-          such that Referral.authoredOn during day of ElevatedEncounter.period
-    )
-
-define "Encounter with Normal Blood Pressure Reading":
-  "Qualifying Encounter during Measurement Period" QualifyingEncounter
-    let EncounterLastBP: Last(["observation-bp"] BloodPressure
-        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
-          and BloodPressure.status in { 'final', 'amended', 'corrected' }
-        sort by start of effective.toInterval()
-    )
-    where EncounterLastBP.SystolicBP.value in Interval[1 'mm[Hg]', 120 'mm[Hg]' )
-      and EncounterLastBP.DiastolicBP.value in Interval[1 'mm[Hg]', 80 'mm[Hg]' )
-
-define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80":
-  "Qualifying Encounter during Measurement Period" QualifyingEncounter
-    let EncounterLastBP: Last(["observation-bp"] BloodPressure
-        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
-          and BloodPressure.status in { 'final', 'amended', 'corrected' }
-        sort by start of effective.toInterval()
-    )
-    where ( EncounterLastBP.SystolicBP.value in Interval[120 'mm[Hg]', 129 'mm[Hg]']
-        and EncounterLastBP.DiastolicBP.value in Interval[1 'mm[Hg]', 80 'mm[Hg]' )
-    )
-
-define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90":
-  ( "Qualifying Encounter during Measurement Period" QualifyingEncounter
-      let EncounterLastBP: Last(["observation-bp"] BloodPressure
-          where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
-            and BloodPressure.status in { 'final', 'amended', 'corrected' }
-          sort by start of effective.toInterval()
-      )
-      where ( EncounterLastBP.SystolicBP.value > 0 'mm[Hg]'
-          and EncounterLastBP.DiastolicBP.value > 0 'mm[Hg]'
-          and ( EncounterLastBP.SystolicBP.value >= 140 'mm[Hg]'
-              or EncounterLastBP.DiastolicBP.value >= 90 'mm[Hg]'
-          )
-      )
-        and ( exists "Encounter with Hypertensive Reading Within Year Prior" )
-  )
-
-define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89":
-  ( "Qualifying Encounter during Measurement Period" QualifyingEncounter
-      let EncounterLastBP: Last(["observation-bp"] BloodPressure
-          where BloodPressure.effective.toInterval() ends during day of QualifyingEncounter.period
-            and BloodPressure.status in { 'final', 'amended', 'corrected' }
-          sort by start of effective.toInterval()
-      )
-      where ( ( EncounterLastBP.SystolicBP.value in Interval[130 'mm[Hg]', 139 'mm[Hg]']
-            or EncounterLastBP.DiastolicBP.value in Interval[80 'mm[Hg]', 89 'mm[Hg]']
-        )
-          and not ( EncounterLastBP.SystolicBP.value >= 140 'mm[Hg]'
-              or EncounterLastBP.DiastolicBP.value >= 90 'mm[Hg]'
-          )
-      )
-        and ( exists "Encounter with Hypertensive Reading Within Year Prior" )
-  )
-
-define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80":
-  ( "Qualifying Encounter during Measurement Period" QualifyingEncounter
-      let EncounterLastBP: Last(["observation-bp"] BloodPressure
-          where BloodPressure.effective.toInterval() ends during day of QualifyingEncounter.period
-          sort by start of effective.toInterval()
-      )
-      where ( ( EncounterLastBP.SystolicBP.value > 0 'mm[Hg]'
-            and EncounterLastBP.DiastolicBP.value > 0 'mm[Hg]'
-        )
-          and ( EncounterLastBP.SystolicBP.value >= 130 'mm[Hg]'
-              or EncounterLastBP.DiastolicBP.value >= 80 'mm[Hg]'
-          )
-      )
-  )
-    except "Encounter with Hypertensive Reading Within Year Prior"
-
-define "Encounter with Hypertensive Reading Within Year Prior":
-  ( "Qualifying Encounter during Measurement Period" QualifyingEncounter
-      let EncounterLastBP: Last(["observation-bp"] BloodPressure
-          where BloodPressure.effective.toInterval() ends 1 year or less before or on start of QualifyingEncounter.period
-            and BloodPressure.status in { 'final', 'amended', 'corrected' }
-          sort by start of effective.toInterval()
-      )
-      where ( EncounterLastBP.SystolicBP.value > 0 'mm[Hg]'
-          and EncounterLastBP.DiastolicBP.value > 0 'mm[Hg]'
-          and ( EncounterLastBP.SystolicBP.value >= 130 'mm[Hg]'
-              or EncounterLastBP.DiastolicBP.value >= 80 'mm[Hg]'
-          )
-      )
-  )
 
 define "NonPharmacological Intervention Not Ordered":
   ( [ServiceNotRequested: "Lifestyle Recommendation"]
@@ -257,8 +353,24 @@ define "NonPharmacological Intervention Not Ordered":
     where NonPharmIntervention.reasonRefused in "Patient Declined"
       and NonPharmIntervention.status = 'completed'
 
+define "Encounter with Hypertensive Reading Within Year Prior":
+  "Qualifying Encounter" QualifyingEncounter
+    let LastPreviousHyperTensiveSystolicBP: Last(( ( ["observation-bp"] ).isObservationSystolicBP ( ) ) BloodPressure
+        where BloodPressure.systolicReading() >= 130 'mm[Hg]'
+          and BloodPressure.effective.toInterval() ends 1 year or less before start of QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    ),
+    LastPreviousHyperTensiveDiastolicBP: Last(( ( ["observation-bp"] ).isObservationDiastolicBP ( ) ) BloodPressure
+        where BloodPressure.diastolicReading() >= 80 'mm[Hg]'
+          and BloodPressure.effective.toInterval() ends 1 year or less before start of QualifyingEncounter.period
+        sort by start of effective.toInterval()
+    )
+    where LastPreviousHyperTensiveSystolicBP is not null
+      and LastPreviousHyperTensiveDiastolicBP is not null
+
+// Denominator Exceptions conditions
 define "Encounter with Medical Reason for Not Obtaining or Patient Declined Blood Pressure Measurement":
-  "Qualifying Encounter during Measurement Period" QualifyingEncounter
+  "Qualifying Encounter" QualifyingEncounter
     with ( [ObservationNotDone: code ~ "Systolic blood pressure"]
       union [ObservationNotDone: code ~ "Diastolic blood pressure"] ) NoBPScreen
       such that NoBPScreen.issued during day of QualifyingEncounter.period
@@ -268,40 +380,43 @@ define "Encounter with Medical Reason for Not Obtaining or Patient Declined Bloo
         and NoBPScreen.status = 'cancelled'
 
 define "Encounter with Order for Hypertension Follow Up Declined by Patient":
-  ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedBPEncounter
+  ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80".episode ElevatedBPEncounter
       with ( [ServiceNotRequested: "Referral to Primary Care or Alternate Provider"]
+        union [ServiceNotRequested: code = "Referral Management"]
         union [ServiceNotRequested: code = "Follow-up 2-3 months (finding)"]
         union [ServiceNotRequested: code = "Follow-up 4-6 months (finding)"] ) ElevatedBPDeclinedInterventions
         such that ElevatedBPDeclinedInterventions.reasonRefused in "Patient Declined"
           and ElevatedBPDeclinedInterventions.authoredOn during day of ElevatedBPEncounter.period
           and ElevatedBPDeclinedInterventions.status = 'completed'
   )
-    union ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedBPEncounter
+    union ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80".episode ElevatedBPEncounter
         with "NonPharmacological Intervention Not Ordered" NotOrdered
           such that NotOrdered.authoredOn during day of ElevatedBPEncounter.period
     )
-    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter
+    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80".episode FirstHTNEncounter
         with ( [ServiceNotRequested: "Follow Up Within 4 Weeks"]
-          union [ServiceNotRequested: "Referral to Primary Care or Alternate Provider"] ) FirstHTNDeclinedInterventions
+          union [ServiceNotRequested: "Referral to Primary Care or Alternate Provider"]
+          union [ServiceNotRequested: code = "Referral Management"] ) FirstHTNDeclinedInterventions
           such that FirstHTNDeclinedInterventions.reasonRefused in "Patient Declined"
             and FirstHTNDeclinedInterventions.authoredOn during day of FirstHTNEncounter.period
             and FirstHTNDeclinedInterventions.status = 'completed'
     )
-    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter
+    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80".episode FirstHTNEncounter
         with "NonPharmacological Intervention Not Ordered" NoNonPharm
           such that NoNonPharm.authoredOn during day of FirstHTNEncounter.period
     )
-    union ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89" SecondHTNEncounter
+    union ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89".episode SecondHTNEncounter
         with "Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 Interventions Declined" SecondHTNDeclinedInterventions
           such that SecondHTNDeclinedInterventions.authoredOn during day of SecondHTNEncounter.period
     )
-    union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90" SecondHTN140Over90Encounter
+    union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90".episode SecondHTN140Over90Encounter
         with "Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 Interventions Declined" SecondHTN140Over90DeclinedInterventions
           such that SecondHTN140Over90DeclinedInterventions.authoredOn during day of SecondHTN140Over90Encounter.period
     )
 
 define "Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 Interventions Declined":
   ( ( ( [ServiceNotRequested: "Referral to Primary Care or Alternate Provider"]
+        union [ServiceNotRequested: code = "Referral Management"]
         union [ServiceNotRequested: code = "Follow-up 2-3 months (finding)"]
         union [ServiceNotRequested: code = "Follow-up 4-6 months (finding)"] ) SecondHTNDeclinedReferralAndFollowUp
         where SecondHTNDeclinedReferralAndFollowUp.reasonRefused in "Patient Declined"
@@ -313,6 +428,7 @@ define "Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 Interventions
 
 define "Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 Interventions Declined":
   ( ( ( [ServiceNotRequested: "Referral to Primary Care or Alternate Provider"]
+        union [ServiceNotRequested: code = "Referral Management"]
         union [ServiceNotRequested: "Follow Up Within 4 Weeks"] ) SecondHTN140Over90ReferralFollowUpNotDone
         where SecondHTN140Over90ReferralFollowUpNotDone.reasonRefused in "Patient Declined"
           and SecondHTN140Over90ReferralFollowUpNotDone.status = 'completed'
@@ -341,3 +457,21 @@ define "SDE Race":
 
 define "SDE Sex":
   SDE."SDE Sex"
+
+define fluent function isObservationSystolicBP(Obs List<"QICore.observation-bp">):
+  Obs O
+    where O.status in { 'final', 'amended', 'corrected' }
+      and O.component is not null
+      and Last(O.component C where C.code ~ "Systolic blood pressure" return C.value as Quantity) > 0 'mm[Hg]'
+
+define fluent function isObservationDiastolicBP(Obs List<"QICore.observation-bp">):
+  Obs O
+    where O.status in { 'final', 'amended', 'corrected' }
+      and O.component is not null
+      and Last(O.component C where C.code ~ "Diastolic blood pressure" return C.value as Quantity) > 0 'mm[Hg]'
+
+define fluent function systolicReading(Ob "QICore.observation-bp"):
+  Last(Ob.component C where C.code ~ "Systolic blood pressure" return C.value as Quantity)
+
+define fluent function diastolicReading(Ob "QICore.observation-bp"):
+  Last(Ob.component C where C.code ~ "Diastolic blood pressure" return C.value as Quantity)

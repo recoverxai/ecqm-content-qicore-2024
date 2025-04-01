@@ -3,3 +3,4 @@ input/tests/measure/*/tests-*bundle.json
 input/tests/measure/*/Group-*.json
 input-cache
 scripts/output
+.vscode
