@@ -8,3 +8,5 @@ scripts/output
 __pycache__/
 *.py[cod]
 *$py.class
+# Ignore macOS Finder metadata files
+.DS_Store
