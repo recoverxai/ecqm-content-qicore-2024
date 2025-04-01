@@ -4,3 +4,7 @@ input/tests/measure/*/Group-*.json
 input-cache
 scripts/output
 .vscode
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
