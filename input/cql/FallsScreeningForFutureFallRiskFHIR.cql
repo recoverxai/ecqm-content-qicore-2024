@@ -115,9 +115,15 @@ define "Denominator Exclusions":
      Hospice."Has Hospice Services"
 
 define "Numerator":
- exists(( ["Observation": "Falls Screening"]).isAssessmentPerformed() ) FallsScreening
-          where FallsScreening.effective.toInterval() during day of "Measurement Period"
+  exists "Falls Screening Assessment Performed"
 
+define "Falls Screening Assessment Performed":
+  (( ["Observation": "Falls Screening"]).isAssessmentPerformed()) FallsScreening
+  where FallsScreening.effective.toInterval() during day of "Measurement Period"
+
+/**
+Debug methods for Numerator
+*/
 define "Raw Falls Screening Observations":
   ["Observation": "Falls Screening"]
 
@@ -128,26 +134,14 @@ define "Falls Screening Time":
   from "Falls Screening Passed Assessment Check" FallsScreening
   return FallsScreening.effective
 
-// potential numerator where the observation category coding is missing
-define "Potential Numerator Missing Category":
-  exists (
-    ["Observation": "Falls Screening"] O
-      where O.status in { 'final', 'amended', 'corrected' }
-        and exists (O.category ObservationCategory
-            where ( ObservationCategory ) !~ "survey"
-              and ObservationCategory !~ "social-history"
-              and ObservationCategory !~ "vital-signs"
-              and ObservationCategory !~ "imaging"
-              and ObservationCategory !~ "laboratory"
-              and ObservationCategory !~ "procedure"
-              and ObservationCategory !~ "exam"
-              and ObservationCategory !~ "therapy"
-              and ObservationCategory !~ "activity"
-          )
-        and O.effective.toInterval() during day of "Measurement Period"
-  )
+/**
+Potential numerator - When the observation category coding is missing
+*/
+define "Potential Numerator":
+  exists "Falls Screening Assessment Missing Category"
+  and not "Numerator"
 
-define "Debug Potential Numerator Missing Category":
+define "Falls Screening Assessment Missing Category":
   from ["Observation": "Falls Screening"] O
   where (O.status in { 'final', 'amended', 'corrected' }
         and exists ( O.category ObservationCategory
