@@ -1,0 +1,4038 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.102.12.1025.2",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-09-28"
+    }
+  ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025.2",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.102.12.1025.2"
+    }
+  ],
+  "version": "20220928",
+  "name": "ComorbidConditionsForRespiratoryConditionsPart2",
+  "title": "Comorbid Conditions for Respiratory Conditions - Part 2",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-09-28T01:02:08-04:00",
+  "publisher": "NCQA PHEMUR",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "188582000",
+            "display": "Hodgkin's disease, mixed cellularity of lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "188586002",
+            "display": "Hodgkin's disease, lymphocytic depletion of intrathoracic lymph nodes (disorder)"
+          },
+          {
+            "code": "188587006",
+            "display": "Hodgkin's disease, lymphocytic depletion of intra-abdominal lymph nodes (disorder)"
+          },
+          {
+            "code": "188591001",
+            "display": "Hodgkin's disease, lymphocytic depletion of intrapelvic lymph nodes (disorder)"
+          },
+          {
+            "code": "188592008",
+            "display": "Hodgkin's disease, lymphocytic depletion of spleen (disorder)"
+          },
+          {
+            "code": "188593003",
+            "display": "Hodgkin's disease, lymphocytic depletion of lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "188609000",
+            "display": "Nodular lymphoma of lymph nodes of head, face and neck (disorder)"
+          },
+          {
+            "code": "188612002",
+            "display": "Nodular lymphoma of lymph nodes of axilla and upper limb (disorder)"
+          },
+          {
+            "code": "188613007",
+            "display": "Nodular lymphoma of lymph nodes of inguinal region and lower limb (disorder)"
+          },
+          {
+            "code": "188627002",
+            "display": "Mycosis fungoides of lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "188631008",
+            "display": "S\u00e9zary's disease of intrathoracic lymph nodes (disorder)"
+          },
+          {
+            "code": "188632001",
+            "display": "S\u00e9zary's disease of intra-abdominal lymph nodes (disorder)"
+          },
+          {
+            "code": "188633006",
+            "display": "S\u00e9zary's disease of lymph nodes of axilla and upper limb (disorder)"
+          },
+          {
+            "code": "188634000",
+            "display": "S\u00e9zary's disease of lymph nodes of inguinal region and lower limb (disorder)"
+          },
+          {
+            "code": "188635004",
+            "display": "S\u00e9zary's disease of intrapelvic lymph nodes (disorder)"
+          },
+          {
+            "code": "188637007",
+            "display": "S\u00e9zary's disease of lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "188641006",
+            "display": "Malignant histiocytosis of lymph nodes of axilla and upper limb (disorder)"
+          },
+          {
+            "code": "188645002",
+            "display": "Leukemic reticuloendotheliosis of lymph nodes of head, face and neck (disorder)"
+          },
+          {
+            "code": "188648000",
+            "display": "Leukemic reticuloendotheliosis of lymph nodes of axilla and upper limb (disorder)"
+          },
+          {
+            "code": "188649008",
+            "display": "Leukemic reticuloendotheliosis of lymph nodes of inguinal region and lower limb (disorder)"
+          },
+          {
+            "code": "188662007",
+            "display": "Mast cell malignancy of lymph nodes of head and neck (disorder)"
+          },
+          {
+            "code": "188668006",
+            "display": "Malignant mast cell sarcoma of spleen (disorder)"
+          },
+          {
+            "code": "188669003",
+            "display": "Mast cell malignancy of lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "188672005",
+            "display": "Follicular non-Hodgkin's mixed small cleaved and large cell lymphoma (disorder)"
+          },
+          {
+            "code": "188674006",
+            "display": "Diffuse malignant lymphoma - small non-cleaved cell (disorder)"
+          },
+          {
+            "code": "188675007",
+            "display": "Malignant lymphoma - small cleaved cell (disorder)"
+          },
+          {
+            "code": "188676008",
+            "display": "Malignant lymphoma - mixed small and large cell (disorder)"
+          },
+          {
+            "code": "188718006",
+            "display": "Malignant plasma cell neoplasm, extramedullary plasmacytoma (disorder)"
+          },
+          {
+            "code": "188725004",
+            "display": "Lymphoid leukemia (disorder)"
+          },
+          {
+            "code": "188726003",
+            "display": "Subacute lymphoid leukemia (disorder)"
+          },
+          {
+            "code": "188728002",
+            "display": "Aleukemic lymphoid leukemia (disorder)"
+          },
+          {
+            "code": "188732008",
+            "display": "Myeloid leukemia (disorder)"
+          },
+          {
+            "code": "188733003",
+            "display": "Chronic eosinophilic leukemia (disorder)"
+          },
+          {
+            "code": "188734009",
+            "display": "Chronic neutrophilic leukemia (disorder)"
+          },
+          {
+            "code": "188737002",
+            "display": "Chloroma (disorder)"
+          },
+          {
+            "code": "188744006",
+            "display": "Monocytic leukemia (disorder)"
+          },
+          {
+            "code": "188754005",
+            "display": "Megakaryocytic leukemia (disorder)"
+          },
+          {
+            "code": "188768003",
+            "display": "Myelomonocytic leukemia (disorder)"
+          },
+          {
+            "code": "188770007",
+            "display": "Subacute myelomonocytic leukemia (disorder)"
+          },
+          {
+            "code": "189814006",
+            "display": "Pancreatoblastoma (disorder)"
+          },
+          {
+            "code": "189815007",
+            "display": "Pulmonary blastoma (disorder)"
+          },
+          {
+            "code": "189847002",
+            "display": "Malignant teratoma (disorder)"
+          },
+          {
+            "code": "189924002",
+            "display": "Pleomorphic xanthoastrocytoma (disorder)"
+          },
+          {
+            "code": "190030009",
+            "display": "Compound leukemias (disorder)"
+          },
+          {
+            "code": "190710003",
+            "display": "Tuberculous arthritis (disorder)"
+          },
+          {
+            "code": "190818004",
+            "display": "Waldenstr\u00f6m macroglobulinemia (disorder)"
+          },
+          {
+            "code": "19090001000004101",
+            "display": "Metastatic neoplasm of left basal ganglion (disorder)"
+          },
+          {
+            "code": "192681000119104",
+            "display": "Malignant carcinoid tumor of appendix (disorder)"
+          },
+          {
+            "code": "192701000119101",
+            "display": "Malignant carcinoid tumor of ileum (disorder)"
+          },
+          {
+            "code": "192745001",
+            "display": "Tuberculous intracranial abscess (disorder)"
+          },
+          {
+            "code": "194908003",
+            "display": "Acute tuberculous pericarditis (disorder)"
+          },
+          {
+            "code": "194949003",
+            "display": "Acute myocarditis - tuberculous (disorder)"
+          },
+          {
+            "code": "195953005",
+            "display": "Mixed simple and mucopurulent chronic bronchitis (disorder)"
+          },
+          {
+            "code": "195985008",
+            "display": "Post-infective bronchiectasis (disorder)"
+          },
+          {
+            "code": "196017002",
+            "display": "Pneumoconiosis associated with tuberculosis (disorder)"
+          },
+          {
+            "code": "196067009",
+            "display": "Loculated empyema (disorder)"
+          },
+          {
+            "code": "196102003",
+            "display": "Spontaneous tension pneumothorax (disorder)"
+          },
+          {
+            "code": "196107009",
+            "display": "Abscess of lung and mediastinum (disorder)"
+          },
+          {
+            "code": "196112005",
+            "display": "Abscess of lung with pneumonia (disorder)"
+          },
+          {
+            "code": "196133001",
+            "display": "Lung disease with systemic sclerosis (disorder)"
+          },
+          {
+            "code": "196136009",
+            "display": "Lung disease co-occurrent with polymyositis (disorder)"
+          },
+          {
+            "code": "196138005",
+            "display": "Lung disease with systemic lupus erythematosus (disorder)"
+          },
+          {
+            "code": "196143003",
+            "display": "Postoperative atelectasis (disorder)"
+          },
+          {
+            "code": "196188002",
+            "display": "Acute pulmonary insufficiency following thoracic surgery (disorder)"
+          },
+          {
+            "code": "196189005",
+            "display": "Acute pulmonary insufficiency following nonthoracic surgery (disorder)"
+          },
+          {
+            "code": "196190001",
+            "display": "Chronic pulmonary insufficiency following surgery (disorder)"
+          },
+          {
+            "code": "196191002",
+            "display": "Postprocedural subglottic stenosis (disorder)"
+          },
+          {
+            "code": "198241002",
+            "display": "Female tuberculous pelvic inflammatory disease (disorder)"
+          },
+          {
+            "code": "202994006",
+            "display": "Tuberculous infection of tendon sheath (disorder)"
+          },
+          {
+            "code": "203263006",
+            "display": "Tuberculosis of cervical spine (disorder)"
+          },
+          {
+            "code": "203264000",
+            "display": "Tuberculosis of thoracic spine (disorder)"
+          },
+          {
+            "code": "203265004",
+            "display": "Tuberculosis of lumbar spine (disorder)"
+          },
+          {
+            "code": "203267007",
+            "display": "Tuberculosis of limb bones (disorder)"
+          },
+          {
+            "code": "203269005",
+            "display": "Tuberculosis of the upper arm bone (disorder)"
+          },
+          {
+            "code": "203270006",
+            "display": "Tuberculosis of the forearm bone (disorder)"
+          },
+          {
+            "code": "203272003",
+            "display": "Tuberculosis of the lower leg bone (disorder)"
+          },
+          {
+            "code": "203274002",
+            "display": "Tuberculosis of multiple limb bones (disorder)"
+          },
+          {
+            "code": "203278004",
+            "display": "Tuberculosis of bones of shoulder region (disorder)"
+          },
+          {
+            "code": "203279007",
+            "display": "Tuberculosis of the bones of the hand (disorder)"
+          },
+          {
+            "code": "203280005",
+            "display": "Tuberculosis of the bones of the ankle and/or foot (disorder)"
+          },
+          {
+            "code": "203282002",
+            "display": "Tuberculosis of the bones of multiple sites (disorder)"
+          },
+          {
+            "code": "20372007",
+            "display": "Tuberculosis of prostate (disorder)"
+          },
+          {
+            "code": "208041000119100",
+            "display": "Primary adenocarcinoma of endocervix (disorder)"
+          },
+          {
+            "code": "213580002",
+            "display": "Caseating tuberculoid granuloma (disorder)"
+          },
+          {
+            "code": "21851000119103",
+            "display": "Malignant pheochromocytoma (disorder)"
+          },
+          {
+            "code": "22607003",
+            "display": "Asbestosis (disorder)"
+          },
+          {
+            "code": "226521000119108",
+            "display": "Primary malignant neoplasm of nasopharynx (disorder)"
+          },
+          {
+            "code": "22990009",
+            "display": "Chronic tuberculosis (disorder)"
+          },
+          {
+            "code": "230156002",
+            "display": "Malignant meningitis (disorder)"
+          },
+          {
+            "code": "23022004",
+            "display": "Tuberculous bronchiectasis (disorder)"
+          },
+          {
+            "code": "231829006",
+            "display": "Malignant neoplasm of eyelid (disorder)"
+          },
+          {
+            "code": "231831002",
+            "display": "Squamous cell carcinoma of eyelid (disorder)"
+          },
+          {
+            "code": "231832009",
+            "display": "Basal cell carcinoma of eyelid (disorder)"
+          },
+          {
+            "code": "231833004",
+            "display": "Sebaceous adenocarcinoma of eyelid (disorder)"
+          },
+          {
+            "code": "231834005",
+            "display": "Malignant melanoma of eyelid (disorder)"
+          },
+          {
+            "code": "231835006",
+            "display": "Kaposi's sarcoma of eyelid (disorder)"
+          },
+          {
+            "code": "232075002",
+            "display": "Lymphoma of retina (disorder)"
+          },
+          {
+            "code": "233628009",
+            "display": "Acquired bronchiectasis (disorder)"
+          },
+          {
+            "code": "233629001",
+            "display": "Idiopathic bronchiectasis (disorder)"
+          },
+          {
+            "code": "233631005",
+            "display": "Toxin-induced bronchiectasis (disorder)"
+          },
+          {
+            "code": "233634002",
+            "display": "Post-lung transplantation bronchiectasis (disorder)"
+          },
+          {
+            "code": "233649005",
+            "display": "Tuberculous chylothorax (disorder)"
+          },
+          {
+            "code": "233658003",
+            "display": "Pleural plaque (disorder)"
+          },
+          {
+            "code": "233659006",
+            "display": "Asbestos-induced pleural plaque (disorder)"
+          },
+          {
+            "code": "233749003",
+            "display": "Complicated pneumoconiosis (disorder)"
+          },
+          {
+            "code": "233751004",
+            "display": "Metal pneumoconiosis (disorder)"
+          },
+          {
+            "code": "233754007",
+            "display": "Cerium pneumoconiosis (disorder)"
+          },
+          {
+            "code": "233755008",
+            "display": "Nickel pneumoconiosis (disorder)"
+          },
+          {
+            "code": "233756009",
+            "display": "Thorium pneumoconiosis (disorder)"
+          },
+          {
+            "code": "233757000",
+            "display": "Zirconium pneumoconiosis (disorder)"
+          },
+          {
+            "code": "233758005",
+            "display": "Mica pneumoconiosis (disorder)"
+          },
+          {
+            "code": "233759002",
+            "display": "Mixed mineral dust pneumoconiosis (disorder)"
+          },
+          {
+            "code": "233760007",
+            "display": "Acute silicosis (disorder)"
+          },
+          {
+            "code": "233761006",
+            "display": "Subacute silicosis (disorder)"
+          },
+          {
+            "code": "233762004",
+            "display": "Chronic silicosis (disorder)"
+          },
+          {
+            "code": "233763009",
+            "display": "Silicotuberculosis (disorder)"
+          },
+          {
+            "code": "233794009",
+            "display": "Tuberculous bronchopleural fistula (disorder)"
+          },
+          {
+            "code": "233940007",
+            "display": "Pulmonary tumor embolism (disorder)"
+          },
+          {
+            "code": "234090004",
+            "display": "Tuberculous mesenteric adenitis (disorder)"
+          },
+          {
+            "code": "234941000119100",
+            "display": "Malignant glioma of eye (disorder)"
+          },
+          {
+            "code": "235067001",
+            "display": "Oral tuberculosis (disorder)"
+          },
+          {
+            "code": "235694001",
+            "display": "Tuberculous duodenitis (disorder)"
+          },
+          {
+            "code": "235966007",
+            "display": "Cystadenocarcinoma of pancreas (disorder)"
+          },
+          {
+            "code": "236512004",
+            "display": "Leukemic infiltrate of kidney (disorder)"
+          },
+          {
+            "code": "236513009",
+            "display": "Lymphoma of kidney (disorder)"
+          },
+          {
+            "code": "236602004",
+            "display": "Tuberculous stricture of ureter (disorder)"
+          },
+          {
+            "code": "236684001",
+            "display": "Tuberculous urethritis (disorder)"
+          },
+          {
+            "code": "236770001",
+            "display": "Tuberculous epididymo-orchitis (disorder)"
+          },
+          {
+            "code": "236811000119101",
+            "display": "Paget disease of anal canal (disorder)"
+          },
+          {
+            "code": "237445009",
+            "display": "Tuberculosis of breast (disorder)"
+          },
+          {
+            "code": "237832001",
+            "display": "Gastrointestinal hormone-secreting endocrine tumor (disorder)"
+          },
+          {
+            "code": "237833006",
+            "display": "Carcinoid crisis (disorder)"
+          },
+          {
+            "code": "238430004",
+            "display": "Cutaneous complication of bacillus Calmette-Guerin immunization (disorder)"
+          },
+          {
+            "code": "238431000",
+            "display": "Bacillus Calmette-Guerin granuloma (disorder)"
+          },
+          {
+            "code": "238432007",
+            "display": "Bacillus Calmette-Guerin ulcer (disorder)"
+          },
+          {
+            "code": "238636003",
+            "display": "Malignant acanthosis nigricans (disorder)"
+          },
+          {
+            "code": "238637007",
+            "display": "Acanthosis palmaris (disorder)"
+          },
+          {
+            "code": "240163000",
+            "display": "Malignant neoplasm of nasopharyngeal wall (disorder)"
+          },
+          {
+            "code": "240376003",
+            "display": "Tuberculosis of gastrointestinal tract (disorder)"
+          },
+          {
+            "code": "240379005",
+            "display": "Tuberculosis of male genital organs (disorder)"
+          },
+          {
+            "code": "240380008",
+            "display": "Acute tuberculous ulcer (disorder)"
+          },
+          {
+            "code": "240381007",
+            "display": "Acute miliary cutaneous tuberculosis (disorder)"
+          },
+          {
+            "code": "240382000",
+            "display": "Cutaneous tuberculous gumma (disorder)"
+          },
+          {
+            "code": "240531002",
+            "display": "African Burkitt's lymphoma (disorder)"
+          },
+          {
+            "code": "24111000119105",
+            "display": "Primary squamous cell carcinoma of upper limb (disorder)"
+          },
+          {
+            "code": "241861008",
+            "display": "Metastatic malignant neoplasm to nasopharynx (disorder)"
+          },
+          {
+            "code": "24235005",
+            "display": "Tuberculous hydrothorax (disorder)"
+          },
+          {
+            "code": "242862004",
+            "display": "Metastatic malignant neoplasm to nasopharyngeal wall (disorder)"
+          },
+          {
+            "code": "242951000119108",
+            "display": "Primary squamous cell carcinoma of vermilion border of lip (disorder)"
+          },
+          {
+            "code": "24810006",
+            "display": "Tuberculosis orificialis of mouth (disorder)"
+          },
+          {
+            "code": "25050002",
+            "display": "Alpha heavy chain disease, respiratory form (disorder)"
+          },
+          {
+            "code": "253000007",
+            "display": "Neuroendocrine carcinoma (disorder)"
+          },
+          {
+            "code": "253001006",
+            "display": "Merkel cell carcinoma (disorder)"
+          },
+          {
+            "code": "253005002",
+            "display": "Vasoactive intestinal peptide-secreting tumor (disorder)"
+          },
+          {
+            "code": "253017000",
+            "display": "Klatskin's tumor (disorder)"
+          },
+          {
+            "code": "253018005",
+            "display": "Fibrolamellar hepatocellular carcinoma (disorder)"
+          },
+          {
+            "code": "253042009",
+            "display": "Myxoid dermatofibrosarcoma protuberans (disorder)"
+          },
+          {
+            "code": "253096008",
+            "display": "Peripheral neuroectodermal tumor (disorder)"
+          },
+          {
+            "code": "254389005",
+            "display": "Carcinoma of vermilion border of upper lip (disorder)"
+          },
+          {
+            "code": "254390001",
+            "display": "Carcinoma of vermilion border of lower lip (disorder)"
+          },
+          {
+            "code": "254393004",
+            "display": "Carcinoma of frenum of lip (disorder)"
+          },
+          {
+            "code": "254398008",
+            "display": "Carcinoma of frenum of upper lip (disorder)"
+          },
+          {
+            "code": "254402004",
+            "display": "Carcinoma of frenum of lower lip (disorder)"
+          },
+          {
+            "code": "254404003",
+            "display": "Carcinoma of commissure of lip (disorder)"
+          },
+          {
+            "code": "254408000",
+            "display": "Malignant tumor of anterior two-thirds of tongue - lateral margin (disorder)"
+          },
+          {
+            "code": "254412006",
+            "display": "Malignant tumor of tip of tongue (disorder)"
+          },
+          {
+            "code": "254417000",
+            "display": "Carcinoma of frenum linguae (disorder)"
+          },
+          {
+            "code": "254423005",
+            "display": "Carcinoma of lingual tonsil (disorder)"
+          },
+          {
+            "code": "254424004",
+            "display": "Carcinoma of upper gum (disorder)"
+          },
+          {
+            "code": "254425003",
+            "display": "Carcinoma of lower gum (disorder)"
+          },
+          {
+            "code": "254427006",
+            "display": "Carcinoma of anterior part of floor of mouth (disorder)"
+          },
+          {
+            "code": "254431000",
+            "display": "Carcinoma of lateral part of floor of mouth (disorder)"
+          },
+          {
+            "code": "254434008",
+            "display": "Carcinoma of hard palate (disorder)"
+          },
+          {
+            "code": "254435009",
+            "display": "Carcinoma of soft palate (disorder)"
+          },
+          {
+            "code": "254436005",
+            "display": "Carcinoma of uvula (disorder)"
+          },
+          {
+            "code": "254437001",
+            "display": "Squamous cell carcinoma of buccal mucosa (disorder)"
+          },
+          {
+            "code": "254441002",
+            "display": "Carcinoma of upper buccal sulcus (disorder)"
+          },
+          {
+            "code": "254445006",
+            "display": "Carcinoma of lower buccal sulcus (disorder)"
+          },
+          {
+            "code": "254450000",
+            "display": "Carcinoma of upper labial sulcus (disorder)"
+          },
+          {
+            "code": "254454009",
+            "display": "Carcinoma of lower labial sulcus (disorder)"
+          },
+          {
+            "code": "254457002",
+            "display": "Carcinoma of retromolar area (disorder)"
+          },
+          {
+            "code": "254459004",
+            "display": "Malignant tumor of anterior pillar of fauces (disorder)"
+          },
+          {
+            "code": "254462001",
+            "display": "Carcinoma of parotid gland (disorder)"
+          },
+          {
+            "code": "254465004",
+            "display": "Carcinoma of submandibular gland (disorder)"
+          },
+          {
+            "code": "254466003",
+            "display": "Carcinoma of sublingual gland (disorder)"
+          },
+          {
+            "code": "254474002",
+            "display": "Malignant tumor of nasal skeleton (disorder)"
+          },
+          {
+            "code": "254478004",
+            "display": "Malignant tumor of inferior turbinate (disorder)"
+          },
+          {
+            "code": "254481009",
+            "display": "Malignant tumor of middle turbinate (disorder)"
+          },
+          {
+            "code": "254484001",
+            "display": "Malignant tumor of posterior margin of nasal septum and choanae (disorder)"
+          },
+          {
+            "code": "254503007",
+            "display": "Malignant tumor of inferior surface of soft palate (disorder)"
+          },
+          {
+            "code": "254509006",
+            "display": "Malignant tumor of anterior commissure (disorder)"
+          },
+          {
+            "code": "254513004",
+            "display": "Malignant tumor of posterior commissure (disorder)"
+          },
+          {
+            "code": "254517003",
+            "display": "Malignant tumor of suprahyoid epiglottis (disorder)"
+          },
+          {
+            "code": "254520006",
+            "display": "Malignant tumor of infrahyoid epiglottis (disorder)"
+          },
+          {
+            "code": "254526000",
+            "display": "Malignant tumor of laryngeal ventricle (disorder)"
+          },
+          {
+            "code": "254530002",
+            "display": "Malignant tumor of parapharyngeal space (disorder)"
+          },
+          {
+            "code": "254535007",
+            "display": "Carcinoma of cervical part of esophagus (disorder)"
+          },
+          {
+            "code": "254539001",
+            "display": "Carcinoma of thoracic part of esophagus (disorder)"
+          },
+          {
+            "code": "254543002",
+            "display": "Carcinoma of abdominal part of esophagus (disorder)"
+          },
+          {
+            "code": "254547001",
+            "display": "Carcinoma of upper third of esophagus (disorder)"
+          },
+          {
+            "code": "254549003",
+            "display": "Carcinoma of middle third of esophagus (disorder)"
+          },
+          {
+            "code": "254551004",
+            "display": "Carcinoma of lower third of esophagus (disorder)"
+          },
+          {
+            "code": "254553001",
+            "display": "Carcinoma of cardia (disorder)"
+          },
+          {
+            "code": "254555008",
+            "display": "Carcinoma of fundus of stomach (disorder)"
+          },
+          {
+            "code": "254557000",
+            "display": "Carcinoma of body of stomach (disorder)"
+          },
+          {
+            "code": "254559002",
+            "display": "Carcinoma of pyloric antrum (disorder)"
+          },
+          {
+            "code": "254561006",
+            "display": "Carcinoma of pylorus (disorder)"
+          },
+          {
+            "code": "254563009",
+            "display": "Carcinoma of lesser curve of stomach (disorder)"
+          },
+          {
+            "code": "254567005",
+            "display": "Carcinoma of greater curve of stomach (disorder)"
+          },
+          {
+            "code": "254570009",
+            "display": "Carcinoma of duodenum (disorder)"
+          },
+          {
+            "code": "254582000",
+            "display": "Adenocarcinoma of rectum (disorder)"
+          },
+          {
+            "code": "254586002",
+            "display": "Malignant tumor of anorectal junction (disorder)"
+          },
+          {
+            "code": "254601002",
+            "display": "Sarcoma of liver (disorder)"
+          },
+          {
+            "code": "254609000",
+            "display": "Carcinoma of ampulla of Vater (disorder)"
+          },
+          {
+            "code": "254611009",
+            "display": "Malignant tumor of endocrine pancreas (disorder)"
+          },
+          {
+            "code": "254612002",
+            "display": "Carcinoma of endocrine pancreas (disorder)"
+          },
+          {
+            "code": "254619006",
+            "display": "Adenoid cystic carcinoma of trachea (disorder)"
+          },
+          {
+            "code": "254620000",
+            "display": "Squamous cell carcinoma of trachea (disorder)"
+          },
+          {
+            "code": "254622008",
+            "display": "Squamous cell carcinoma of bronchus (disorder)"
+          },
+          {
+            "code": "254625005",
+            "display": "Malignant tumor of lung parenchyma (disorder)"
+          },
+          {
+            "code": "254626006",
+            "display": "Adenocarcinoma of lung (disorder)"
+          },
+          {
+            "code": "254629004",
+            "display": "Large cell carcinoma of lung (disorder)"
+          },
+          {
+            "code": "254631008",
+            "display": "Giant cell carcinoma of lung (disorder)"
+          },
+          {
+            "code": "254632001",
+            "display": "Small cell carcinoma of lung (disorder)"
+          },
+          {
+            "code": "254634000",
+            "display": "Squamous cell carcinoma of lung (disorder)"
+          },
+          {
+            "code": "254635004",
+            "display": "Epithelioid hemangioendothelioma of lung (disorder)"
+          },
+          {
+            "code": "254637007",
+            "display": "Non-small cell lung cancer (disorder)"
+          },
+          {
+            "code": "254638002",
+            "display": "Pancoast tumor (disorder)"
+          },
+          {
+            "code": "254645002",
+            "display": "Malignant mesothelioma of pleura (disorder)"
+          },
+          {
+            "code": "254650008",
+            "display": "Malignant epithelial neoplasm of skin (disorder)"
+          },
+          {
+            "code": "254651007",
+            "display": "Squamous cell carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254652000",
+            "display": "Clear cell squamous cell carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254653005",
+            "display": "Spindle cell squamous carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254654004",
+            "display": "Acantholytic squamous cell carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254655003",
+            "display": "Plantar verrucous carcinoma (disorder)"
+          },
+          {
+            "code": "254701007",
+            "display": "Basal cell carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254702000",
+            "display": "Basosquamous carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254703005",
+            "display": "Fibroepithelioma of Pinkus (disorder)"
+          },
+          {
+            "code": "254707006",
+            "display": "Malignant skin tumor with eccrine differentiation (disorder)"
+          },
+          {
+            "code": "254708001",
+            "display": "Eccrine porocarcinoma of skin (disorder)"
+          },
+          {
+            "code": "254709009",
+            "display": "Digital papillary eccrine carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254710004",
+            "display": "Basal cell carcinoma with eccrine differentiation (disorder)"
+          },
+          {
+            "code": "254711000",
+            "display": "Adenoid cystic eccrine carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254712007",
+            "display": "Microcystic adnexal carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254713002",
+            "display": "Mucoepidermoid carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254714008",
+            "display": "Mucinous eccrine carcinoma of skin (disorder)"
+          },
+          {
+            "code": "254726003",
+            "display": "Malignant skin tumor with apocrine differentiation (disorder)"
+          },
+          {
+            "code": "254727007",
+            "display": "Extramammary Paget's disease of skin (disorder)"
+          },
+          {
+            "code": "254748009",
+            "display": "Cutaneous fibrosarcoma (disorder)"
+          },
+          {
+            "code": "254764001",
+            "display": "Peripheral neuroepithelioma (disorder)"
+          },
+          {
+            "code": "254771006",
+            "display": "Cutaneous leiomyosarcoma (disorder)"
+          },
+          {
+            "code": "254792006",
+            "display": "Proliferating angioendotheliomatosis (disorder)"
+          },
+          {
+            "code": "254794007",
+            "display": "Angiosarcoma of skin (disorder)"
+          },
+          {
+            "code": "254797000",
+            "display": "Malignant hemangiopericytoma of skin (disorder)"
+          },
+          {
+            "code": "254800003",
+            "display": "Epithelioid cell sarcoma of skin (disorder)"
+          },
+          {
+            "code": "254820002",
+            "display": "Follicular atrophoderma and basal cell epitheliomata (disorder)"
+          },
+          {
+            "code": "254824006",
+            "display": "Malignant tumor of mesothelial tissue (disorder)"
+          },
+          {
+            "code": "254829001",
+            "display": "Liposarcoma (disorder)"
+          },
+          {
+            "code": "254837009",
+            "display": "Malignant neoplasm of breast (disorder)"
+          },
+          {
+            "code": "254838004",
+            "display": "Carcinoma of breast (disorder)"
+          },
+          {
+            "code": "254839007",
+            "display": "Scirrhous carcinoma of breast (disorder)"
+          },
+          {
+            "code": "254840009",
+            "display": "Inflammatory carcinoma of breast (disorder)"
+          },
+          {
+            "code": "254841008",
+            "display": "Cancer en cuirasse (disorder)"
+          },
+          {
+            "code": "254843006",
+            "display": "Familial cancer of breast (disorder)"
+          },
+          {
+            "code": "254844000",
+            "display": "Malignant phyllodes tumor of breast (disorder)"
+          },
+          {
+            "code": "254849005",
+            "display": "Malignant epithelial tumor of ovary (disorder)"
+          },
+          {
+            "code": "254850005",
+            "display": "Serous papillary cystadenocarcinoma ovary (disorder)"
+          },
+          {
+            "code": "254851009",
+            "display": "Mucinous cystadenocarcinoma of ovary (disorder)"
+          },
+          {
+            "code": "254852002",
+            "display": "Endometrioid carcinoma ovary (disorder)"
+          },
+          {
+            "code": "254856004",
+            "display": "Undifferentiated carcinoma of ovary (disorder)"
+          },
+          {
+            "code": "254860001",
+            "display": "Malignant sex cord tumor of ovary (disorder)"
+          },
+          {
+            "code": "254863004",
+            "display": "Malignant granulosa cell tumour of ovary (disorder)"
+          },
+          {
+            "code": "254869000",
+            "display": "Malignant germ cell tumor of ovary (disorder)"
+          },
+          {
+            "code": "254870004",
+            "display": "Choriocarcinoma of ovary (disorder)"
+          },
+          {
+            "code": "254872007",
+            "display": "Embryonal carcinoma of ovary (disorder)"
+          },
+          {
+            "code": "254874008",
+            "display": "Malignant dysgerminoma of ovary (disorder)"
+          },
+          {
+            "code": "254876005",
+            "display": "Endodermal sinus tumor of ovary (disorder)"
+          },
+          {
+            "code": "254877001",
+            "display": "Sarcoma of uterus (disorder)"
+          },
+          {
+            "code": "254878006",
+            "display": "Endometrial carcinoma (disorder)"
+          },
+          {
+            "code": "254886006",
+            "display": "Squamous cell carcinoma of cervix (disorder)"
+          },
+          {
+            "code": "254887002",
+            "display": "Adenocarcinoma of cervix (disorder)"
+          },
+          {
+            "code": "254888007",
+            "display": "Adenosquamous carcinoma of cervix (disorder)"
+          },
+          {
+            "code": "254893005",
+            "display": "Carcinoma of vagina (disorder)"
+          },
+          {
+            "code": "254895003",
+            "display": "Squamous cell carcinoma of vulva (disorder)"
+          },
+          {
+            "code": "254896002",
+            "display": "Malignant melanoma of vulva (disorder)"
+          },
+          {
+            "code": "254897006",
+            "display": "Sarcoma of vulva (disorder)"
+          },
+          {
+            "code": "254898001",
+            "display": "Paget's disease of vulva (disorder)"
+          },
+          {
+            "code": "254900004",
+            "display": "Carcinoma of prostate (disorder)"
+          },
+          {
+            "code": "254904008",
+            "display": "Carcinoma of glans penis (disorder)"
+          },
+          {
+            "code": "254908006",
+            "display": "Malignant tumor of skin of penis (disorder)"
+          },
+          {
+            "code": "254909003",
+            "display": "Carcinoma of foreskin (disorder)"
+          },
+          {
+            "code": "254912000",
+            "display": "Regressed malignant testicular tumor (disorder)"
+          },
+          {
+            "code": "254915003",
+            "display": "Clear cell carcinoma of kidney (disorder)"
+          },
+          {
+            "code": "254916002",
+            "display": "Cystadenocarcinoma of kidney (disorder)"
+          },
+          {
+            "code": "254917006",
+            "display": "Papillary cystadenocarcinoma of kidney (disorder)"
+          },
+          {
+            "code": "254918001",
+            "display": "Sarcoma of kidney (disorder)"
+          },
+          {
+            "code": "254934003",
+            "display": "Malignant tumor of urethral stump (disorder)"
+          },
+          {
+            "code": "254938000",
+            "display": "Astrocytoma of brain (disorder)"
+          },
+          {
+            "code": "254940005",
+            "display": "Oligodendroglioma of brain (disorder)"
+          },
+          {
+            "code": "254948003",
+            "display": "Astrocytoma of spinal cord (disorder)"
+          },
+          {
+            "code": "254950006",
+            "display": "Oligodendroglioma of spinal cord (disorder)"
+          },
+          {
+            "code": "254955001",
+            "display": "Pituitary carcinoma (disorder)"
+          },
+          {
+            "code": "254969001",
+            "display": "Malignant tumor of olfactory tract (disorder)"
+          },
+          {
+            "code": "254972008",
+            "display": "Malignant tumor of optic nerve and sheath (disorder)"
+          },
+          {
+            "code": "254973003",
+            "display": "Malignant astrocytoma of optic nerve (disorder)"
+          },
+          {
+            "code": "254974009",
+            "display": "Malignant tumor of optic nerve sheath (disorder)"
+          },
+          {
+            "code": "254975005",
+            "display": "Malignant meningioma of optic nerve sheath (disorder)"
+          },
+          {
+            "code": "254983004",
+            "display": "Malignant tumor of spinal nerve and sheath (disorder)"
+          },
+          {
+            "code": "254986007",
+            "display": "Malignant tumor of peripheral nerve (disorder)"
+          },
+          {
+            "code": "254987003",
+            "display": "Adenoid cystic carcinoma of lacrimal gland (disorder)"
+          },
+          {
+            "code": "254988008",
+            "display": "Adenocarcinoma of lacrimal gland (disorder)"
+          },
+          {
+            "code": "254989000",
+            "display": "Carcinoma ex pleomorphic adenoma of lacrimal gland (disorder)"
+          },
+          {
+            "code": "254990009",
+            "display": "Mucoepidermoid tumor of lacrimal gland (disorder)"
+          },
+          {
+            "code": "254993006",
+            "display": "Liposarcoma of orbit (disorder)"
+          },
+          {
+            "code": "254994000",
+            "display": "Rhabdomyosarcoma of orbit (disorder)"
+          },
+          {
+            "code": "254995004",
+            "display": "Malignant hemangiopericytoma of orbit (disorder)"
+          },
+          {
+            "code": "254996003",
+            "display": "Malignant fibrous histiocytoma of orbit (disorder)"
+          },
+          {
+            "code": "255003007",
+            "display": "Squamous cell carcinoma of conjunctiva (disorder)"
+          },
+          {
+            "code": "255004001",
+            "display": "Malignant melanoma of conjunctiva (disorder)"
+          },
+          {
+            "code": "255008003",
+            "display": "Squamous cell carcinoma of cornea (disorder)"
+          },
+          {
+            "code": "255012009",
+            "display": "Malignant melanoma of iris (disorder)"
+          },
+          {
+            "code": "255015006",
+            "display": "Malignant melanoma of ciliary body (disorder)"
+          },
+          {
+            "code": "255016007",
+            "display": "Adenocarcinoma of pigmented epithelium of ciliary body (disorder)"
+          },
+          {
+            "code": "255017003",
+            "display": "Adenocarcinoma of non-pigmented epithelium of ciliary body (disorder)"
+          },
+          {
+            "code": "255021005",
+            "display": "Malignant melanoma of choroid (disorder)"
+          },
+          {
+            "code": "255028004",
+            "display": "Follicular thyroid carcinoma (disorder)"
+          },
+          {
+            "code": "255029007",
+            "display": "Papillary thyroid carcinoma (disorder)"
+          },
+          {
+            "code": "255030002",
+            "display": "Mixed follicular and papillary thyroid carcinoma (disorder)"
+          },
+          {
+            "code": "255031003",
+            "display": "Anaplastic thyroid carcinoma (disorder)"
+          },
+          {
+            "code": "255032005",
+            "display": "Medullary thyroid carcinoma (disorder)"
+          },
+          {
+            "code": "255035007",
+            "display": "Adrenal carcinoma (disorder)"
+          },
+          {
+            "code": "255037004",
+            "display": "Parathyroid carcinoma (disorder)"
+          },
+          {
+            "code": "255039001",
+            "display": "Pancreatic polypeptidoma (disorder)"
+          },
+          {
+            "code": "255052006",
+            "display": "Malignant neoplasm of unknown origin (disorder)"
+          },
+          {
+            "code": "255056009",
+            "display": "Malignant tumor of head and/or neck (disorder)"
+          },
+          {
+            "code": "255066001",
+            "display": "Carcinoma of genitourinary organ (disorder)"
+          },
+          {
+            "code": "255067005",
+            "display": "Sarcoma of bone and connective tissue (disorder)"
+          },
+          {
+            "code": "255068000",
+            "display": "Carcinoma of bone, connective tissue, skin and breast (disorder)"
+          },
+          {
+            "code": "255069008",
+            "display": "Carcinoma of lip, oral cavity and/or pharynx (disorder)"
+          },
+          {
+            "code": "255070009",
+            "display": "Overlapping malignant neoplasm of oral cavity and lip and salivary gland (disorder)"
+          },
+          {
+            "code": "255071008",
+            "display": "Squamous cell carcinoma of lip (disorder)"
+          },
+          {
+            "code": "255072001",
+            "display": "Malignant tumor of salivary gland (disorder)"
+          },
+          {
+            "code": "255073006",
+            "display": "Malignant tumor of ear, nose and throat (disorder)"
+          },
+          {
+            "code": "255074000",
+            "display": "Malignant tumor of nasal cavity and nasopharynx (disorder)"
+          },
+          {
+            "code": "255075004",
+            "display": "Malignant tumor of lateral nasal wall (disorder)"
+          },
+          {
+            "code": "255077007",
+            "display": "Malignant tumor of digestive organ (disorder)"
+          },
+          {
+            "code": "255078002",
+            "display": "Malignant tumor of esophagus, stomach and duodenum (disorder)"
+          },
+          {
+            "code": "255081007",
+            "display": "Carcinoma of cecum (disorder)"
+          },
+          {
+            "code": "255084004",
+            "display": "Squamous cell carcinoma of anal margin (disorder)"
+          },
+          {
+            "code": "255086002",
+            "display": "Carcinoma common bile duct (disorder)"
+          },
+          {
+            "code": "255087006",
+            "display": "Malignant polyp of biliary tract (disorder)"
+          },
+          {
+            "code": "255088001",
+            "display": "Malignant tumor of exocrine pancreas (disorder)"
+          },
+          {
+            "code": "255090000",
+            "display": "Malignant neoplasm of carpal bones (disorder)"
+          },
+          {
+            "code": "255091001",
+            "display": "Malignant neoplasm of metacarpal bones (disorder)"
+          },
+          {
+            "code": "255093003",
+            "display": "Malignant skin tumor with adnexal differentiation (disorder)"
+          },
+          {
+            "code": "255096006",
+            "display": "Malignant tumor of dermis (disorder)"
+          },
+          {
+            "code": "255107005",
+            "display": "Seminoma of testis (disorder)"
+          },
+          {
+            "code": "255108000",
+            "display": "Carcinoma of urinary bladder (disorder)"
+          },
+          {
+            "code": "255109008",
+            "display": "Transitional cell carcinoma of urinary bladder (disorder)"
+          },
+          {
+            "code": "255110003",
+            "display": "Adenocarcinoma of urinary bladder (disorder)"
+          },
+          {
+            "code": "255111004",
+            "display": "Squamous cell carcinoma of urinary bladder (disorder)"
+          },
+          {
+            "code": "255112006",
+            "display": "Malignant tumor of pituitary and hypothalamus (disorder)"
+          },
+          {
+            "code": "255114007",
+            "display": "Kaposi's sarcoma of conjunctiva (disorder)"
+          },
+          {
+            "code": "255115008",
+            "display": "Kaposi's sarcoma of cornea (disorder)"
+          },
+          {
+            "code": "255118005",
+            "display": "Metastatic lymphangitic carcinoma (disorder)"
+          },
+          {
+            "code": "255119002",
+            "display": "Lymphangitis carcinomatosa (disorder)"
+          },
+          {
+            "code": "255121007",
+            "display": "Carcinomatosis of peritoneal cavity (disorder)"
+          },
+          {
+            "code": "255123005",
+            "display": "Metastasis to nervous system and eye (disorder)"
+          },
+          {
+            "code": "255124004",
+            "display": "Metastasis to peripheral nerve (disorder)"
+          },
+          {
+            "code": "255128001",
+            "display": "Malignant infiltration of peripheral nerve (disorder)"
+          },
+          {
+            "code": "255129009",
+            "display": "Malignant infiltration of peripheral nerve plexus (disorder)"
+          },
+          {
+            "code": "255191003",
+            "display": "Localized malignant reticulohistiocytoma (disorder)"
+          },
+          {
+            "code": "25629007",
+            "display": "Acute tuberculosis (disorder)"
+          },
+          {
+            "code": "25738004",
+            "display": "Tuberculous synovitis (disorder)"
+          },
+          {
+            "code": "25831001",
+            "display": "Tuberculosis of nasal septum (disorder)"
+          },
+          {
+            "code": "266366003",
+            "display": "Lung disease due to external agents (disorder)"
+          },
+          {
+            "code": "267317007",
+            "display": "Tuberculosis in pregnancy (disorder)"
+          },
+          {
+            "code": "26935004",
+            "display": "Tuberculosis of thyroid gland (disorder)"
+          },
+          {
+            "code": "269459004",
+            "display": "Malignant tumor of lesser curve of stomach (disorder)"
+          },
+          {
+            "code": "269460009",
+            "display": "Malignant tumor of greater curve of stomach (disorder)"
+          },
+          {
+            "code": "269463006",
+            "display": "Malignant tumor of middle ear and mastoid (disorder)"
+          },
+          {
+            "code": "269464000",
+            "display": "Malignant neoplasm of upper lobe, bronchus or lung (disorder)"
+          },
+          {
+            "code": "269467007",
+            "display": "Malignant neoplasm of hand bones (disorder)"
+          },
+          {
+            "code": "269469005",
+            "display": "Malignant neoplasm of soft tissue (disorder)"
+          },
+          {
+            "code": "269473008",
+            "display": "Metastatic malignant neoplasm to respiratory and digestive systems (disorder)"
+          },
+          {
+            "code": "269475001",
+            "display": "Malignant tumor of lymphoid, hemopoietic AND/OR related tissue (disorder)"
+          },
+          {
+            "code": "269476000",
+            "display": "Nodular lymphoma (disorder)"
+          },
+          {
+            "code": "269515006",
+            "display": "Carcinoma of lip (disorder)"
+          },
+          {
+            "code": "269516007",
+            "display": "Tongue carcinoma (disorder)"
+          },
+          {
+            "code": "269533000",
+            "display": "Carcinoma of colon (disorder)"
+          },
+          {
+            "code": "269544008",
+            "display": "Carcinoma of rectosigmoid junction (disorder)"
+          },
+          {
+            "code": "269578002",
+            "display": "Malignant melanoma of head and neck (disorder)"
+          },
+          {
+            "code": "269579005",
+            "display": "Malignant melanoma of trunk (disorder)"
+          },
+          {
+            "code": "269580008",
+            "display": "Malignant melanoma of upper limb (disorder)"
+          },
+          {
+            "code": "269581007",
+            "display": "Malignant melanoma of lower limb (disorder)"
+          },
+          {
+            "code": "271323007",
+            "display": "Malignant neoplasm of lip, oral cavity and/or pharynx (disorder)"
+          },
+          {
+            "code": "271423008",
+            "display": "Tuberculosis of skin and subcutaneous tissue (disorder)"
+          },
+          {
+            "code": "271467005",
+            "display": "Malignant neoplasm of bone, connective tissue, skin and breast (disorder)"
+          },
+          {
+            "code": "271468000",
+            "display": "Malignant neoplasm of genitourinary organ (disorder)"
+          },
+          {
+            "code": "271503005",
+            "display": "Pleural empyema with fistula (disorder)"
+          },
+          {
+            "code": "271504004",
+            "display": "Pleural empyema with no fistula (disorder)"
+          },
+          {
+            "code": "271568003",
+            "display": "Malignant tumor of lower labial mucosa (disorder)"
+          },
+          {
+            "code": "271943005",
+            "display": "Carcinoma of base of tongue (disorder)"
+          },
+          {
+            "code": "274084007",
+            "display": "Palate carcinoma (disorder)"
+          },
+          {
+            "code": "274085008",
+            "display": "Tonsil carcinoma (disorder)"
+          },
+          {
+            "code": "274087000",
+            "display": "Malignant melanoma of eye (disorder)"
+          },
+          {
+            "code": "274088005",
+            "display": "Metastatic malignant neoplasm to unknown site (disorder)"
+          },
+          {
+            "code": "274902006",
+            "display": "Combined hepatocellular carcinoma and cholangiocarcinoma (disorder)"
+          },
+          {
+            "code": "274905008",
+            "display": "Malignant lymphoma - lymphocytic, intermediate differentiation (disorder)"
+          },
+          {
+            "code": "275266006",
+            "display": "Metastasis to digestive organs (disorder)"
+          },
+          {
+            "code": "275394001",
+            "display": "Carcinoma ventral surface of tongue (disorder)"
+          },
+          {
+            "code": "275395000",
+            "display": "Carcinoma anterior 2/3 tongue ventrum (disorder)"
+          },
+          {
+            "code": "275396004",
+            "display": "Carcinoma of anterior two-thirds of tongue - dorsal surface (disorder)"
+          },
+          {
+            "code": "275397008",
+            "display": "Carcinoma of midline of tongue (disorder)"
+          },
+          {
+            "code": "275399006",
+            "display": "Malignant tumor of lipstick area of lip (disorder)"
+          },
+          {
+            "code": "275490009",
+            "display": "Carcinoma of tongue base - dorsal surface (disorder)"
+          },
+          {
+            "code": "276419004",
+            "display": "Malignant tumor of corpus spongiosum (disorder)"
+          },
+          {
+            "code": "276420005",
+            "display": "Malignant tumor of corpus cavernosum (disorder)"
+          },
+          {
+            "code": "276738009",
+            "display": "Primary signet ring cell carcinoma of skin (disorder)"
+          },
+          {
+            "code": "276750003",
+            "display": "Malignant tumor of skin with pilar differentiation (disorder)"
+          },
+          {
+            "code": "276797002",
+            "display": "Malignant tumor of fibrous tissue (disorder)"
+          },
+          {
+            "code": "276799004",
+            "display": "Dermatofibrosarcoma protuberans (disorder)"
+          },
+          {
+            "code": "276803003",
+            "display": "Adenocarcinoma of esophagus (disorder)"
+          },
+          {
+            "code": "276804009",
+            "display": "Squamous cell carcinoma of esophagus (disorder)"
+          },
+          {
+            "code": "276809004",
+            "display": "Early gastric cancer (disorder)"
+          },
+          {
+            "code": "276810009",
+            "display": "Late gastric cancer (disorder)"
+          },
+          {
+            "code": "276811008",
+            "display": "Gastric lymphoma (disorder)"
+          },
+          {
+            "code": "276815004",
+            "display": "Lymphoma of intestine (disorder)"
+          },
+          {
+            "code": "276821000",
+            "display": "Malignant melanoma of anus (disorder)"
+          },
+          {
+            "code": "276822007",
+            "display": "Malignant melanoma of rectum (disorder)"
+          },
+          {
+            "code": "276826005",
+            "display": "Malignant glioma of brain (disorder)"
+          },
+          {
+            "code": "276827001",
+            "display": "Malignant glioma of spinal cord (disorder)"
+          },
+          {
+            "code": "276828006",
+            "display": "Glioblastoma multiforme of brain (disorder)"
+          },
+          {
+            "code": "276829003",
+            "display": "Glioblastoma multiforme of spinal cord (disorder)"
+          },
+          {
+            "code": "276836002",
+            "display": "Primary cerebral lymphoma (disorder)"
+          },
+          {
+            "code": "276860003",
+            "display": "Squamous cell carcinoma of scrotum (disorder)"
+          },
+          {
+            "code": "276870001",
+            "display": "Carcinoma of fallopian tube (disorder)"
+          },
+          {
+            "code": "276876007",
+            "display": "Carcinoma of Bartholin's gland (disorder)"
+          },
+          {
+            "code": "276952000",
+            "display": "Squamous cell carcinoma of tongue (disorder)"
+          },
+          {
+            "code": "276953005",
+            "display": "Squamous cell carcinoma of gum (disorder)"
+          },
+          {
+            "code": "276954004",
+            "display": "Squamous cell carcinoma of floor of mouth (disorder)"
+          },
+          {
+            "code": "276962007",
+            "display": "Squamous cell carcinoma of palate (disorder)"
+          },
+          {
+            "code": "276975007",
+            "display": "Carcinoma of larynx (disorder)"
+          },
+          {
+            "code": "277156006",
+            "display": "Malignant tumor of external ear (disorder)"
+          },
+          {
+            "code": "277461004",
+            "display": "Anaplastic astrocytoma of brain (disorder)"
+          },
+          {
+            "code": "277474005",
+            "display": "B-cell chronic lymphocytic leukemia variant (disorder)"
+          },
+          {
+            "code": "277505007",
+            "display": "Medulloblastoma of cerebellum (disorder)"
+          },
+          {
+            "code": "277530005",
+            "display": "Malignant melanoma of meninges (disorder)"
+          },
+          {
+            "code": "277543005",
+            "display": "Malignant white blood cell disorder (disorder)"
+          },
+          {
+            "code": "277545003",
+            "display": "T-cell chronic lymphocytic leukemia (disorder)"
+          },
+          {
+            "code": "277549009",
+            "display": "Chronic lymphocytic prolymphocytic leukemia syndrome (disorder)"
+          },
+          {
+            "code": "277550009",
+            "display": "Richter's syndrome (disorder)"
+          },
+          {
+            "code": "277551008",
+            "display": "Splenic lymphoma with villous lymphocytes (disorder)"
+          },
+          {
+            "code": "277567002",
+            "display": "T-cell prolymphocytic leukemia (disorder)"
+          },
+          {
+            "code": "277568007",
+            "display": "Hairy cell leukemia variant (disorder)"
+          },
+          {
+            "code": "277569004",
+            "display": "Large granular lymphocytic leukemia (disorder)"
+          },
+          {
+            "code": "277570003",
+            "display": "Lymphoma with spill (disorder)"
+          },
+          {
+            "code": "277571004",
+            "display": "B-cell acute lymphoblastic leukemia (disorder)"
+          },
+          {
+            "code": "277572006",
+            "display": "Precursor B-cell acute lymphoblastic leukemia (disorder)"
+          },
+          {
+            "code": "277573001",
+            "display": "Common acute lymphoblastic leukemia (disorder)"
+          },
+          {
+            "code": "277574007",
+            "display": "Null cell acute lymphoblastic leukemia (disorder)"
+          },
+          {
+            "code": "277575008",
+            "display": "T-lymphoblastic leukemia (disorder)"
+          },
+          {
+            "code": "277579002",
+            "display": "Light chain myeloma (disorder)"
+          },
+          {
+            "code": "277580004",
+            "display": "Non-secretory myeloma (disorder)"
+          },
+          {
+            "code": "277587001",
+            "display": "Juvenile chronic myeloid leukemia (disorder)"
+          },
+          {
+            "code": "277589003",
+            "display": "Myelodysplastic-myeloproliferative neoplasm with neutrophilia (disorder)"
+          },
+          {
+            "code": "277597005",
+            "display": "Myelodysplastic syndrome with isolated del(5q) (disorder)"
+          },
+          {
+            "code": "277602003",
+            "display": "Acute megakaryoblastic leukemia (disorder)"
+          },
+          {
+            "code": "277604002",
+            "display": "Malignant myeloid-lymphoid neoplasm (disorder)"
+          },
+          {
+            "code": "277609007",
+            "display": "Hodgkin's disease, lymphocytic predominance - diffuse (disorder)"
+          },
+          {
+            "code": "277610002",
+            "display": "Hodgkin's disease, nodular sclerosis - lymphocytic predominance (disorder)"
+          },
+          {
+            "code": "277611003",
+            "display": "Hodgkin's disease, nodular sclerosis - mixed cellularity (disorder)"
+          },
+          {
+            "code": "277612005",
+            "display": "Hodgkin's disease, nodular sclerosis - lymphocytic depletion (disorder)"
+          },
+          {
+            "code": "277613000",
+            "display": "Cutaneous/peripheral T-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277614006",
+            "display": "Prethymic and thymic T-cell lymphoma/leukemia (disorder)"
+          },
+          {
+            "code": "277615007",
+            "display": "Low grade B-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277616008",
+            "display": "Diffuse low grade B-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277617004",
+            "display": "High grade B-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277618009",
+            "display": "Follicular low grade B-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277619001",
+            "display": "B-cell prolymphocytic leukemia (disorder)"
+          },
+          {
+            "code": "277622004",
+            "display": "Mucosa-associated lymphoma (disorder)"
+          },
+          {
+            "code": "277623009",
+            "display": "Monocytoid B-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277624003",
+            "display": "Follicular malignant lymphoma - mixed cell type (disorder)"
+          },
+          {
+            "code": "277625002",
+            "display": "Follicular malignant lymphoma - small cleaved cell (disorder)"
+          },
+          {
+            "code": "277626001",
+            "display": "Diffuse high grade B-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277627005",
+            "display": "Nodular high grade B-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277628000",
+            "display": "Diffuse malignant lymphoma - large cleaved cell (disorder)"
+          },
+          {
+            "code": "277629008",
+            "display": "Diffuse malignant lymphoma - large non-cleaved cell (disorder)"
+          },
+          {
+            "code": "277632006",
+            "display": "Diffuse malignant lymphoma - centroblastic polymorphic (disorder)"
+          },
+          {
+            "code": "277642008",
+            "display": "Low grade T-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277643003",
+            "display": "High grade T-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277654008",
+            "display": "Enteropathy-associated T-cell lymphoma (disorder)"
+          },
+          {
+            "code": "277664004",
+            "display": "Malignant lymphoma of testis (disorder)"
+          },
+          {
+            "code": "277782009",
+            "display": "Local recurrence of malignant neoplasm of peritoneum (disorder)"
+          },
+          {
+            "code": "278024000",
+            "display": "Rhabdomyosarcoma of urinary bladder (disorder)"
+          },
+          {
+            "code": "278042005",
+            "display": "Malignant teratoma of mediastinum (disorder)"
+          },
+          {
+            "code": "278043000",
+            "display": "Malignant seminoma of mediastinum (disorder)"
+          },
+          {
+            "code": "278044006",
+            "display": "Malignant neuroma of mediastinum (disorder)"
+          },
+          {
+            "code": "278046008",
+            "display": "Sarcoma of urinary bladder (disorder)"
+          },
+          {
+            "code": "278050001",
+            "display": "Sarcoma of breast (disorder)"
+          },
+          {
+            "code": "278051002",
+            "display": "Malignant lymphoma of thyroid gland (disorder)"
+          },
+          {
+            "code": "278052009",
+            "display": "Malignant lymphoma of breast (disorder)"
+          },
+          {
+            "code": "278054005",
+            "display": "Lobular carcinoma of breast (disorder)"
+          },
+          {
+            "code": "278055006",
+            "display": "Malignant Leydig cell tumor of testis (disorder)"
+          },
+          {
+            "code": "278060005",
+            "display": "Endometrioid carcinoma of prostate (disorder)"
+          },
+          {
+            "code": "278189009",
+            "display": "Hypergranular promyelocytic leukemia (disorder)"
+          },
+          {
+            "code": "278433008",
+            "display": "Malignant infiltration of soft tissue (disorder)"
+          },
+          {
+            "code": "278453007",
+            "display": "Acute biphenotypic leukemia (disorder)"
+          },
+          {
+            "code": "278491007",
+            "display": "Mixed seminoma teratoma of testis (disorder)"
+          },
+          {
+            "code": "28085001",
+            "display": "Empyema with bronchopleural fistula (disorder)"
+          },
+          {
+            "code": "280959007",
+            "display": "Malignant tumor of lacrimal drainage structure (disorder)"
+          },
+          {
+            "code": "281560004",
+            "display": "Neuroblastoma of brain (disorder)"
+          },
+          {
+            "code": "281562007",
+            "display": "Adrenal neuroblastoma (disorder)"
+          },
+          {
+            "code": "281563002",
+            "display": "Thoracic neuroblastoma (disorder)"
+          },
+          {
+            "code": "281564008",
+            "display": "Pelvic neuroblastoma (disorder)"
+          },
+          {
+            "code": "281565009",
+            "display": "Paraspinal neuroblastoma (disorder)"
+          },
+          {
+            "code": "281566005",
+            "display": "Abdominothoracic neuroblastoma (disorder)"
+          },
+          {
+            "code": "281623008",
+            "display": "Genital tuberculosis (disorder)"
+          },
+          {
+            "code": "281702006",
+            "display": "Tibial adamantinoma (disorder)"
+          },
+          {
+            "code": "28295001",
+            "display": "Middle lobe syndrome (disorder)"
+          },
+          {
+            "code": "28399005",
+            "display": "Tuberculosis of spleen (disorder)"
+          },
+          {
+            "code": "285307007",
+            "display": "Squamous cell carcinoma of skin of upper lip (disorder)"
+          },
+          {
+            "code": "285308002",
+            "display": "Squamous cell carcinoma of skin of lower lip (disorder)"
+          },
+          {
+            "code": "285309005",
+            "display": "Squamous cell carcinoma of skin of cheek (disorder)"
+          },
+          {
+            "code": "285310000",
+            "display": "Carcinoma of anal canal (disorder)"
+          },
+          {
+            "code": "285312008",
+            "display": "Carcinoma of sigmoid colon (disorder)"
+          },
+          {
+            "code": "285420006",
+            "display": "Immunoglobulin A myeloma (disorder)"
+          },
+          {
+            "code": "285421005",
+            "display": "Immunoglobulin G myeloma (disorder)"
+          },
+          {
+            "code": "285422003",
+            "display": "Immunoglobulin D myeloma (disorder)"
+          },
+          {
+            "code": "285432005",
+            "display": "Carcinoma of cervix (disorder)"
+          },
+          {
+            "code": "285769009",
+            "display": "Acute promyelocytic leukemia - hypogranular variant (disorder)"
+          },
+          {
+            "code": "285776004",
+            "display": "Intermediate grade B-cell lymphoma (disorder)"
+          },
+          {
+            "code": "286887005",
+            "display": "Carcinoma liver and/or biliary system (disorder)"
+          },
+          {
+            "code": "286889008",
+            "display": "Carcinoma of upper limb bones/scapula (disorder)"
+          },
+          {
+            "code": "286890004",
+            "display": "Carcinoma of lower limb bones (disorder)"
+          },
+          {
+            "code": "286891000",
+            "display": "Carcinoma of skin of head/neck (disorder)"
+          },
+          {
+            "code": "286893002",
+            "display": "Carcinoma of breast - upper, inner quadrant (disorder)"
+          },
+          {
+            "code": "286894008",
+            "display": "Carcinoma of breast - lower, inner quadrant (disorder)"
+          },
+          {
+            "code": "286895009",
+            "display": "Carcinoma of upper outer quadrant of breast (disorder)"
+          },
+          {
+            "code": "286896005",
+            "display": "Carcinoma breast - lower, outer quadrant (disorder)"
+          },
+          {
+            "code": "286897001",
+            "display": "Carcinoma of breast - axillary tail (disorder)"
+          },
+          {
+            "code": "286899003",
+            "display": "Carcinoma of genital organ (disorder)"
+          },
+          {
+            "code": "286902000",
+            "display": "Secondary carcinoma of gastrointestinal tract (disorder)"
+          },
+          {
+            "code": "29421000119105",
+            "display": "Adenocarcinoma in adenomatous polyp (disorder)"
+          },
+          {
+            "code": "29422001",
+            "display": "Coal workers' pneumoconiosis (disorder)"
+          },
+          {
+            "code": "29431000119108",
+            "display": "Adenocarcinoma in villous adenoma (disorder)"
+          },
+          {
+            "code": "297188009",
+            "display": "Clotted hemothorax (disorder)"
+          },
+          {
+            "code": "29731002",
+            "display": "Tuberculous pneumothorax (disorder)"
+          },
+          {
+            "code": "300988009",
+            "display": "Transitional cell carcinoma of ureter (disorder)"
+          },
+          {
+            "code": "301756000",
+            "display": "Adenocarcinoma of sigmoid colon (disorder)"
+          },
+          {
+            "code": "301836007",
+            "display": "Tuberculosis of colon (disorder)"
+          },
+          {
+            "code": "302131003",
+            "display": "Tuberculosis of heart (disorder)"
+          },
+          {
+            "code": "302815008",
+            "display": "Malignant tumor of frenum of lip (disorder)"
+          },
+          {
+            "code": "302816009",
+            "display": "Malignant tumor of soft tissue of head, face and neck (disorder)"
+          },
+          {
+            "code": "302841002",
+            "display": "Malignant lymphoma - small lymphocytic (disorder)"
+          },
+          {
+            "code": "302842009",
+            "display": "Diffuse malignant lymphoma - centroblastic (disorder)"
+          },
+          {
+            "code": "302845006",
+            "display": "Nodular malignant lymphoma, lymphocytic - well differentiated (disorder)"
+          },
+          {
+            "code": "302847003",
+            "display": "Rhabdomyosarcoma (disorder)"
+          },
+          {
+            "code": "302848008",
+            "display": "Nodular malignant lymphoma, lymphocytic - intermediate differentiation (disorder)"
+          },
+          {
+            "code": "302849000",
+            "display": "Nephroblastoma (disorder)"
+          },
+          {
+            "code": "302851001",
+            "display": "Synovial sarcoma (disorder)"
+          },
+          {
+            "code": "302855005",
+            "display": "Subacute leukemia (disorder)"
+          },
+          {
+            "code": "302856006",
+            "display": "Aleukemic leukemia (disorder)"
+          },
+          {
+            "code": "303012000",
+            "display": "Malignant tumor of posterior wall of hypopharynx (disorder)"
+          },
+          {
+            "code": "303055001",
+            "display": "Malignant lymphoma, follicular center cell (disorder)"
+          },
+          {
+            "code": "303056000",
+            "display": "Malignant lymphoma, follicular center cell, cleaved (disorder)"
+          },
+          {
+            "code": "303057009",
+            "display": "Malignant lymphoma, follicular center cell, non-cleaved (disorder)"
+          },
+          {
+            "code": "303194003",
+            "display": "Metastasis to head and neck lymph node (disorder)"
+          },
+          {
+            "code": "303201005",
+            "display": "Metastatic malignant neoplasm to multiple lymph nodes (disorder)"
+          },
+          {
+            "code": "30437004",
+            "display": "Empyema with bronchocutaneous fistula (disorder)"
+          },
+          {
+            "code": "304545002",
+            "display": "Adenocarcinoma of ileum (disorder)"
+          },
+          {
+            "code": "307202004",
+            "display": "Hemorrhagic pleural effusion (disorder)"
+          },
+          {
+            "code": "307216009",
+            "display": "Perforated carcinoma of esophagus (disorder)"
+          },
+          {
+            "code": "307219002",
+            "display": "Retroperitoneal sarcoma (disorder)"
+          },
+          {
+            "code": "307226002",
+            "display": "Metastatic adenocarcinoma of unknown origin (disorder)"
+          },
+          {
+            "code": "307340003",
+            "display": "Monosomy 7 syndrome (disorder)"
+          },
+          {
+            "code": "307341004",
+            "display": "Atypical hairy cell leukemia (disorder)"
+          },
+          {
+            "code": "307502000",
+            "display": "Squamous cell carcinoma of mouth (disorder)"
+          },
+          {
+            "code": "307576001",
+            "display": "Osteosarcoma of bone (disorder)"
+          },
+          {
+            "code": "307591004",
+            "display": "Malignant mastocytosis (disorder)"
+          },
+          {
+            "code": "307592006",
+            "display": "Basophilic leukemia (disorder)"
+          },
+          {
+            "code": "307593001",
+            "display": "Carcinomatosis (disorder)"
+          },
+          {
+            "code": "307599002",
+            "display": "Sebaceous adenocarcinoma (disorder)"
+          },
+          {
+            "code": "307601000",
+            "display": "Pseudomyxoma peritonei (disorder)"
+          },
+          {
+            "code": "307608006",
+            "display": "Ewing's sarcoma of bone (disorder)"
+          },
+          {
+            "code": "307609003",
+            "display": "Adamantinoma of long bone (disorder)"
+          },
+          {
+            "code": "307610008",
+            "display": "Pilomatrix carcinoma of skin (disorder)"
+          },
+          {
+            "code": "307617006",
+            "display": "Neutrophilic leukemia (disorder)"
+          },
+          {
+            "code": "307622006",
+            "display": "Prolymphocytic lymphosarcoma (disorder)"
+          },
+          {
+            "code": "307623001",
+            "display": "Malignant lymphoma - lymphoplasmacytic (disorder)"
+          },
+          {
+            "code": "307624007",
+            "display": "Diffuse malignant lymphoma - centroblastic-centrocytic (disorder)"
+          },
+          {
+            "code": "307625008",
+            "display": "Malignant lymphoma - centrocytic (disorder)"
+          },
+          {
+            "code": "307633009",
+            "display": "Hodgkin's disease, lymphocytic depletion, diffuse fibrosis (disorder)"
+          },
+          {
+            "code": "307634003",
+            "display": "Hodgkin's disease, lymphocytic depletion, reticular type (disorder)"
+          },
+          {
+            "code": "307635002",
+            "display": "Hodgkin's disease, nodular sclerosis - cellular phase (disorder)"
+          },
+          {
+            "code": "307636001",
+            "display": "Malignant lymphoma, mixed lymphocytic-histiocytic, nodular (disorder)"
+          },
+          {
+            "code": "307637005",
+            "display": "Malignant lymphoma, centroblastic-centrocytic, follicular (disorder)"
+          },
+          {
+            "code": "307646004",
+            "display": "Malignant lymphoma, lymphocytic, poorly differentiated, nodular (disorder)"
+          },
+          {
+            "code": "307647008",
+            "display": "Malignant lymphoma, centroblastic type, follicular (disorder)"
+          },
+          {
+            "code": "307649006",
+            "display": "Microglioma (disorder)"
+          },
+          {
+            "code": "307650006",
+            "display": "Histiocytic medullary reticulosis (disorder)"
+          },
+          {
+            "code": "307651005",
+            "display": "Primary myelofibrosis (disorder)"
+          },
+          {
+            "code": "308121000",
+            "display": "Follicular lymphoma (disorder)"
+          },
+          {
+            "code": "309245001",
+            "display": "Adenocarcinoma of uterus (disorder)"
+          },
+          {
+            "code": "31047003",
+            "display": "Lymphomatoid papulosis (disorder)"
+          },
+          {
+            "code": "310498001",
+            "display": "Malignant melanoma of back (disorder)"
+          },
+          {
+            "code": "310504009",
+            "display": "Primary malignant neoplasm of unknown site (disorder)"
+          },
+          {
+            "code": "310526005",
+            "display": "Malignant tumor of soft tissue of back (disorder)"
+          },
+          {
+            "code": "310599006",
+            "display": "Malignant neoplasm of canthus (disorder)"
+          },
+          {
+            "code": "31112008",
+            "display": "Tuberculous meningoencephalitis (disorder)"
+          },
+          {
+            "code": "311671000119100",
+            "display": "Juvenile dermatomyositis co-occurrent with respiratory involvement (disorder)"
+          },
+          {
+            "code": "311779007",
+            "display": "Malignant neoplasm of skin of scapular region (disorder)"
+          },
+          {
+            "code": "312104005",
+            "display": "Cholangiocarcinoma of biliary tract (disorder)"
+          },
+          {
+            "code": "312111009",
+            "display": "Carcinoma of ascending colon (disorder)"
+          },
+          {
+            "code": "312112002",
+            "display": "Carcinoma of transverse colon (disorder)"
+          },
+          {
+            "code": "312113007",
+            "display": "Carcinoma of descending colon (disorder)"
+          },
+          {
+            "code": "312114001",
+            "display": "Carcinoma of hepatic flexure (disorder)"
+          },
+          {
+            "code": "312115000",
+            "display": "Carcinoma of splenic flexure (disorder)"
+          },
+          {
+            "code": "312949007",
+            "display": "Retinal pigment epithelial adenocarcinoma (disorder)"
+          },
+          {
+            "code": "313248004",
+            "display": "Malignant melanoma of chest wall (disorder)"
+          },
+          {
+            "code": "313249007",
+            "display": "Malignant neoplasm of upper eyelid (disorder)"
+          },
+          {
+            "code": "313250007",
+            "display": "Malignant neoplasm of lower eyelid (disorder)"
+          },
+          {
+            "code": "313353007",
+            "display": "Squamous cell carcinoma of bronchus in left lower lobe (disorder)"
+          },
+          {
+            "code": "313354001",
+            "display": "Squamous cell carcinoma of bronchus in left upper lobe (disorder)"
+          },
+          {
+            "code": "313355000",
+            "display": "Squamous cell carcinoma of bronchus in right lower lobe (disorder)"
+          },
+          {
+            "code": "313356004",
+            "display": "Squamous cell carcinoma of bronchus of middle lobe of right lung (disorder)"
+          },
+          {
+            "code": "313357008",
+            "display": "Squamous cell carcinoma of bronchus in right upper lobe (disorder)"
+          },
+          {
+            "code": "313427003",
+            "display": "Lambda light chain myeloma (disorder)"
+          },
+          {
+            "code": "313428008",
+            "display": "Seminoma of undescended testis (disorder)"
+          },
+          {
+            "code": "313429000",
+            "display": "Seminoma of descended testis (disorder)"
+          },
+          {
+            "code": "314029000",
+            "display": "Tuberculous uveitis (disorder)"
+          },
+          {
+            "code": "314191009",
+            "display": "Cystadenocarcinoma of ovary (disorder)"
+          },
+          {
+            "code": "314408000",
+            "display": "Leukemic infiltrate of choroid (disorder)"
+          },
+          {
+            "code": "314418005",
+            "display": "Leukemic infiltrate of retina (disorder)"
+          },
+          {
+            "code": "314951005",
+            "display": "Local recurrence of malignant tumor of tongue (disorder)"
+          },
+          {
+            "code": "314952003",
+            "display": "Local recurrence of malignant tumor of buccal cavity (disorder)"
+          },
+          {
+            "code": "314953008",
+            "display": "Local recurrence of malignant tumor of thyroid gland (disorder)"
+          },
+          {
+            "code": "314954002",
+            "display": "Local recurrence of malignant tumor of lung (disorder)"
+          },
+          {
+            "code": "314955001",
+            "display": "Local recurrence of malignant tumor of breast (disorder)"
+          },
+          {
+            "code": "314960002",
+            "display": "Local recurrence of malignant tumor of esophagus (disorder)"
+          },
+          {
+            "code": "314961003",
+            "display": "Local recurrence of malignant tumor of stomach (disorder)"
+          },
+          {
+            "code": "314962005",
+            "display": "Local recurrence of malignant tumor of gallbladder (disorder)"
+          },
+          {
+            "code": "314963000",
+            "display": "Local recurrence of malignant tumor of liver (disorder)"
+          },
+          {
+            "code": "314964006",
+            "display": "Local recurrence of malignant tumor of pancreas (disorder)"
+          },
+          {
+            "code": "314965007",
+            "display": "Local recurrence of malignant tumor of colon (disorder)"
+          },
+          {
+            "code": "314966008",
+            "display": "Local recurrence of malignant tumor of rectum (disorder)"
+          },
+          {
+            "code": "314967004",
+            "display": "Local recurrence of malignant tumor of kidney (disorder)"
+          },
+          {
+            "code": "314968009",
+            "display": "Local recurrence of malignant tumor of urinary bladder (disorder)"
+          },
+          {
+            "code": "314969001",
+            "display": "Local recurrence of malignant tumor of prostate (disorder)"
+          },
+          {
+            "code": "314970000",
+            "display": "Local recurrence of malignant tumor of cervix (disorder)"
+          },
+          {
+            "code": "314973003",
+            "display": "Local recurrence of malignant tumor of bone (disorder)"
+          },
+          {
+            "code": "314974009",
+            "display": "Local recurrence of malignant tumor of soft tissue (disorder)"
+          },
+          {
+            "code": "314975005",
+            "display": "Local recurrence of malignant tumor of skin (disorder)"
+          },
+          {
+            "code": "315058005",
+            "display": "Hereditary nonpolyposis colon cancer (disorder)"
+          },
+          {
+            "code": "31892009",
+            "display": "Hemothorax (disorder)"
+          },
+          {
+            "code": "32139003",
+            "display": "Mixed dust pneumoconiosis (disorder)"
+          },
+          {
+            "code": "32268008",
+            "display": "Tuberculosis of urinary bladder (disorder)"
+          },
+          {
+            "code": "326072005",
+            "display": "Carcinoma of head of pancreas (disorder)"
+          },
+          {
+            "code": "326542006",
+            "display": "Traumatic atelectasis (disorder)"
+          },
+          {
+            "code": "328561000119107",
+            "display": "Primary spontaneous pneumothorax (disorder)"
+          },
+          {
+            "code": "328571000119101",
+            "display": "Secondary spontaneous pneumothorax (disorder)"
+          },
+          {
+            "code": "33072005",
+            "display": "Traumatic hemothorax with open wound into thorax (disorder)"
+          },
+          {
+            "code": "33325001",
+            "display": "Compensatory emphysema (disorder)"
+          },
+          {
+            "code": "33548005",
+            "display": "Anthracosilicosis (disorder)"
+          },
+          {
+            "code": "33581000119109",
+            "display": "Primary malignant neoplasm of extradural spinal cord (disorder)"
+          },
+          {
+            "code": "33631007",
+            "display": "Pyopneumothorax (disorder)"
+          },
+          {
+            "code": "33893009",
+            "display": "Tuberculosis verrucosa cutis (disorder)"
+          },
+          {
+            "code": "34004002",
+            "display": "Siderosilicosis (disorder)"
+          },
+          {
+            "code": "34286007",
+            "display": "Empyema with hepatopleural fistula (disorder)"
+          },
+          {
+            "code": "350621000119100",
+            "display": "Primary malignant neoplasm of right vestibulocochlear nerve (disorder)"
+          },
+          {
+            "code": "350631000119102",
+            "display": "Primary malignant neoplasm of left vestibulocochlear nerve (disorder)"
+          },
+          {
+            "code": "350681000119101",
+            "display": "Primary malignant neoplasm of adrenal medulla of right adrenal gland (disorder)"
+          },
+          {
+            "code": "350801000119105",
+            "display": "Primary malignant neoplasm of left adrenal cortex (disorder)"
+          },
+          {
+            "code": "350851000119109",
+            "display": "Primary malignant neoplasm of adrenal medulla of left adrenal gland (disorder)"
+          },
+          {
+            "code": "350861000119106",
+            "display": "Primary malignant neoplasm of right adrenal gland (disorder)"
+          },
+          {
+            "code": "350881000119102",
+            "display": "Primary malignant neoplasm of right adrenal cortex (disorder)"
+          },
+          {
+            "code": "350921000119109",
+            "display": "Primary malignant neoplasm of left adrenal gland (disorder)"
+          },
+          {
+            "code": "350951000119101",
+            "display": "B-cell lymphoma of intra-abdominal lymph nodes (disorder)"
+          },
+          {
+            "code": "351041000119109",
+            "display": "Primary malignant neoplasm of left upper limb (disorder)"
+          },
+          {
+            "code": "351051000119106",
+            "display": "Primary malignant neoplasm of right upper limb (disorder)"
+          },
+          {
+            "code": "351211000119104",
+            "display": "B-cell lymphoma of lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "352231000119103",
+            "display": "Primary malignant neoplasm of soft tissue of left upper extremity (disorder)"
+          },
+          {
+            "code": "352251000119109",
+            "display": "Small lymphocytic B-cell lymphoma of lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "352301000119103",
+            "display": "Primary malignant neoplasm of soft tissue of right upper extremity (disorder)"
+          },
+          {
+            "code": "352311000119100",
+            "display": "Primary malignant neoplasm of soft tissue of right lower limb (disorder)"
+          },
+          {
+            "code": "352321000119107",
+            "display": "Primary malignant neoplasm of soft tissue of left lower limb (disorder)"
+          },
+          {
+            "code": "352331000119105",
+            "display": "Primary malignant neoplasm of left spermatic cord (disorder)"
+          },
+          {
+            "code": "352341000119101",
+            "display": "Primary malignant neoplasm of right spermatic cord (disorder)"
+          },
+          {
+            "code": "352381000119106",
+            "display": "Primary malignant neoplasm of skin of left upper limb (disorder)"
+          },
+          {
+            "code": "352391000119109",
+            "display": "Primary malignant neoplasm of skin of left ear (disorder)"
+          },
+          {
+            "code": "352411000119109",
+            "display": "Small lymphocytic B-cell lymphoma of intra-abdominal lymph nodes (disorder)"
+          },
+          {
+            "code": "352421000119102",
+            "display": "Primary malignant neoplasm of skin of left shoulder (disorder)"
+          },
+          {
+            "code": "352431000119104",
+            "display": "Primary malignant neoplasm of skin of right ear (disorder)"
+          },
+          {
+            "code": "352461000119107",
+            "display": "Primary malignant neoplasm of skin of right lower limb (disorder)"
+          },
+          {
+            "code": "352471000119101",
+            "display": "Primary malignant neoplasm of skin of right shoulder (disorder)"
+          },
+          {
+            "code": "352481000119103",
+            "display": "Primary malignant neoplasm of skin of left lower limb (disorder)"
+          },
+          {
+            "code": "352701000119102",
+            "display": "Primary malignant neoplasm of neck of pancreas (disorder)"
+          },
+          {
+            "code": "352731000119109",
+            "display": "Primary malignant neoplasm of peripheral nerves of left lower limb (disorder)"
+          },
+          {
+            "code": "352751000119103",
+            "display": "Primary malignant neoplasm of peripheral nerves of right upper limb (disorder)"
+          },
+          {
+            "code": "352771000119107",
+            "display": "Primary malignant neoplasm of peripheral nerves of right lower limb (disorder)"
+          },
+          {
+            "code": "352791000119108",
+            "display": "Non-Hodgkin's lymphoma of lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "352911000119101",
+            "display": "Primary malignant neoplasm of left optic nerve (disorder)"
+          },
+          {
+            "code": "352921000119108",
+            "display": "Primary malignant neoplasm of right optic nerve (disorder)"
+          },
+          {
+            "code": "352961000119103",
+            "display": "Primary malignant neoplasm of right renal pelvis (disorder)"
+          },
+          {
+            "code": "353061000119107",
+            "display": "Primary malignant neoplasm of retina of right eye (disorder)"
+          },
+          {
+            "code": "353081000119103",
+            "display": "Primary malignant neoplasm of retina of left eye (disorder)"
+          },
+          {
+            "code": "353111000119108",
+            "display": "Primary malignant neoplasm of left renal pelvis (disorder)"
+          },
+          {
+            "code": "353561000119103",
+            "display": "Metastatic malignant neoplasm to right lung (disorder)"
+          },
+          {
+            "code": "353571000119109",
+            "display": "Metastatic malignant neoplasm to right adrenal gland (disorder)"
+          },
+          {
+            "code": "353661000119102",
+            "display": "Overlapping primary malignant neoplasm of bone and articular cartilage of lower limb (disorder)"
+          },
+          {
+            "code": "353671000119108",
+            "display": "Overlapping primary malignant neoplasm of bone and articular cartilage of right upper limb (disorder)"
+          },
+          {
+            "code": "353721000119100",
+            "display": "Metastatic malignant neoplasm to left adrenal gland (disorder)"
+          },
+          {
+            "code": "353741000119106",
+            "display": "Metastatic malignant neoplasm to left lung (disorder)"
+          },
+          {
+            "code": "353761000119105",
+            "display": "Primary malignant neoplasm of cornea of left eye (disorder)"
+          },
+          {
+            "code": "353791000119103",
+            "display": "Primary malignant neoplasm of conjunctiva of right eye (disorder)"
+          },
+          {
+            "code": "353801000119102",
+            "display": "Primary malignant neoplasm of choroid of right eye (disorder)"
+          },
+          {
+            "code": "353811000119104",
+            "display": "Primary malignant neoplasm of cornea of right eye (disorder)"
+          },
+          {
+            "code": "353841000119100",
+            "display": "Primary malignant neoplasm of conjunctiva of left eye (disorder)"
+          },
+          {
+            "code": "354081000119101",
+            "display": "Metastatic adenocarcinoma (disorder)"
+          },
+          {
+            "code": "354301000119106",
+            "display": "Primary malignant neoplasm of choroid of left eye (disorder)"
+          },
+          {
+            "code": "354331000119104",
+            "display": "Primary malignant neoplasm of left lower limb (disorder)"
+          },
+          {
+            "code": "354351000119105",
+            "display": "Primary malignant neoplasm of left kidney (disorder)"
+          },
+          {
+            "code": "354361000119107",
+            "display": "Primary malignant neoplasm of right kidney (disorder)"
+          },
+          {
+            "code": "354391000119100",
+            "display": "Kaposi sarcoma of left lung (disorder)"
+          },
+          {
+            "code": "354421000119107",
+            "display": "Primary malignant neoplasm of right lower limb (disorder)"
+          },
+          {
+            "code": "354461000119102",
+            "display": "Kaposi sarcoma of right lung (disorder)"
+          },
+          {
+            "code": "354621000119105",
+            "display": "Overlapping primary malignant neoplasm of bone and articular cartilage of left upper limb (disorder)"
+          },
+          {
+            "code": "354641000119104",
+            "display": "Primary malignant neoplasm of bone of left upper limb (disorder)"
+          },
+          {
+            "code": "354651000119102",
+            "display": "Primary malignant neoplasm of bone of left lower limb (disorder)"
+          },
+          {
+            "code": "354671000119106",
+            "display": "Primary malignant neoplasm of bone of right upper limb (disorder)"
+          },
+          {
+            "code": "354681000119109",
+            "display": "Primary malignant neoplasm of bone of right lower limb (disorder)"
+          },
+          {
+            "code": "354721000119103",
+            "display": "Primary malignant neoplasm of left main bronchus (disorder)"
+          },
+          {
+            "code": "354731000119100",
+            "display": "Primary malignant neoplasm of right main bronchus (disorder)"
+          },
+          {
+            "code": "354851000119101",
+            "display": "Follicular non-Hodgkin's lymphoma of lymph nodes of multiple sites (disorder)"
+          },
+          {
+            "code": "355141000119106",
+            "display": "Primary malignant neoplasm of skin of right upper limb (disorder)"
+          },
+          {
+            "code": "35585004",
+            "display": "Tuberculous endometritis (disorder)"
+          },
+          {
+            "code": "35786001",
+            "display": "Tuberculoma of meninges (disorder)"
+          },
+          {
+            "code": "35868009",
+            "display": "Carcinoid syndrome (disorder)"
+          },
+          {
+            "code": "359631009",
+            "display": "Acute myeloid leukemia, minimal differentiation, FAB M0 (disorder)"
+          },
+          {
+            "code": "359640008",
+            "display": "Acute myeloid leukemia without maturation, FAB M1 (disorder)"
+          },
+          {
+            "code": "359648001",
+            "display": "Acute myeloid leukemia with maturation, FAB M2 (disorder)"
+          },
+          {
+            "code": "359780007",
+            "display": "Metastatic malignant neoplasm to lateral axillary lymph nodes (disorder)"
+          },
+          {
+            "code": "359782004",
+            "display": "Metastatic malignant neoplasm to apex of urinary bladder (disorder)"
+          },
+          {
+            "code": "359785002",
+            "display": "Metastatic malignant neoplasm to dome of urinary bladder (disorder)"
+          },
+          {
+            "code": "35984006",
+            "display": "Tuberculosis of vertebral column (disorder)"
+          },
+          {
+            "code": "359987004",
+            "display": "Krukenberg tumor (disorder)"
+          },
+          {
+            "code": "36222008",
+            "display": "Carcinoid heart disease (disorder)"
+          },
+          {
+            "code": "363346000",
+            "display": "Malignant neoplastic disease (disorder)"
+          },
+          {
+            "code": "363348004",
+            "display": "Malignant tumor of lip (disorder)"
+          },
+          {
+            "code": "363349007",
+            "display": "Malignant tumor of stomach (disorder)"
+          },
+          {
+            "code": "363350007",
+            "display": "Malignant tumor of cecum (disorder)"
+          },
+          {
+            "code": "363351006",
+            "display": "Malignant tumor of rectum (disorder)"
+          },
+          {
+            "code": "363352004",
+            "display": "Malignant tumor of anal canal (disorder)"
+          },
+          {
+            "code": "363353009",
+            "display": "Malignant tumor of gallbladder (disorder)"
+          },
+          {
+            "code": "363354003",
+            "display": "Malignant tumor of cervix (disorder)"
+          },
+          {
+            "code": "363355002",
+            "display": "Malignant tumor of adrenal gland (disorder)"
+          },
+          {
+            "code": "363358000",
+            "display": "Malignant tumor of lung (disorder)"
+          },
+          {
+            "code": "363359008",
+            "display": "Malignant tumor of middle ear (disorder)"
+          },
+          {
+            "code": "363360003",
+            "display": "Malignant tumor of anterior two-thirds of tongue (disorder)"
+          },
+          {
+            "code": "363363001",
+            "display": "Malignant tumor of soft tissue of shoulder (disorder)"
+          },
+          {
+            "code": "363364007",
+            "display": "Malignant tumor of soft tissue of hip (disorder)"
+          },
+          {
+            "code": "363365008",
+            "display": "Malignant tumor of soft tissue of thorax (disorder)"
+          },
+          {
+            "code": "363366009",
+            "display": "Malignant tumor of soft tissue of pelvis (disorder)"
+          },
+          {
+            "code": "363367000",
+            "display": "Malignant tumor of vulva (disorder)"
+          },
+          {
+            "code": "363368005",
+            "display": "Carcinoma of body of pancreas (disorder)"
+          },
+          {
+            "code": "363369002",
+            "display": "Carcinoma of tail of pancreas (disorder)"
+          },
+          {
+            "code": "363370001",
+            "display": "Malignant neoplasm of mesentery (disorder)"
+          },
+          {
+            "code": "363372009",
+            "display": "Malignant tumor of vermilion border of upper lip (disorder)"
+          },
+          {
+            "code": "363373004",
+            "display": "Malignant tumor of vermilion border of lower lip (disorder)"
+          },
+          {
+            "code": "363374005",
+            "display": "Malignant tumor of commissure of lip (disorder)"
+          },
+          {
+            "code": "363375006",
+            "display": "Malignant tumor of tongue (disorder)"
+          },
+          {
+            "code": "363376007",
+            "display": "Malignant tumor of base of tongue (disorder)"
+          },
+          {
+            "code": "363377003",
+            "display": "Malignant tumor of lingual tonsil (disorder)"
+          },
+          {
+            "code": "363378008",
+            "display": "Malignant tumor of major salivary gland (disorder)"
+          },
+          {
+            "code": "363379000",
+            "display": "Malignant tumor of parotid gland (disorder)"
+          },
+          {
+            "code": "363380002",
+            "display": "Malignant tumor of submandibular gland (disorder)"
+          },
+          {
+            "code": "363381003",
+            "display": "Malignant tumor of sublingual gland (disorder)"
+          },
+          {
+            "code": "363382005",
+            "display": "Malignant tumor of gum (disorder)"
+          },
+          {
+            "code": "363383000",
+            "display": "Malignant tumor of upper gingiva (disorder)"
+          },
+          {
+            "code": "363384006",
+            "display": "Malignant tumor of lower gingiva (disorder)"
+          },
+          {
+            "code": "363385007",
+            "display": "Malignant tumor of floor of mouth (disorder)"
+          },
+          {
+            "code": "363386008",
+            "display": "Malignant tumor of buccal mucosa (disorder)"
+          },
+          {
+            "code": "363387004",
+            "display": "Malignant tumor of hard palate (disorder)"
+          },
+          {
+            "code": "363388009",
+            "display": "Malignant tumor of soft palate (disorder)"
+          },
+          {
+            "code": "363389001",
+            "display": "Malignant tumor of uvula (disorder)"
+          },
+          {
+            "code": "363390005",
+            "display": "Malignant tumor of palate (disorder)"
+          },
+          {
+            "code": "363391009",
+            "display": "Malignant tumor of retromolar area (disorder)"
+          },
+          {
+            "code": "363392002",
+            "display": "Malignant tumor of oropharynx (disorder)"
+          },
+          {
+            "code": "363393007",
+            "display": "Malignant tumor of tonsil (disorder)"
+          },
+          {
+            "code": "363394001",
+            "display": "Malignant tumor of tonsillar fossa (disorder)"
+          },
+          {
+            "code": "363395000",
+            "display": "Malignant tumor of vallecula (disorder)"
+          },
+          {
+            "code": "363396004",
+            "display": "Malignant tumor of branchial cleft (disorder)"
+          },
+          {
+            "code": "363398003",
+            "display": "Malignant tumor of lateral wall of nasopharynx (disorder)"
+          },
+          {
+            "code": "363399006",
+            "display": "Malignant tumor of hypopharynx (disorder)"
+          },
+          {
+            "code": "363400004",
+            "display": "Malignant tumor of postcricoid region (disorder)"
+          },
+          {
+            "code": "363401000",
+            "display": "Malignant tumor of pyriform fossa (disorder)"
+          },
+          {
+            "code": "363402007",
+            "display": "Malignant tumor of esophagus (disorder)"
+          },
+          {
+            "code": "363403002",
+            "display": "Malignant tumor of duodenum (disorder)"
+          },
+          {
+            "code": "363404008",
+            "display": "Malignant tumor of jejunum (disorder)"
+          },
+          {
+            "code": "363405009",
+            "display": "Malignant tumor of ileum (disorder)"
+          },
+          {
+            "code": "363406005",
+            "display": "Malignant neoplasm of colon (disorder)"
+          },
+          {
+            "code": "363407001",
+            "display": "Malignant tumor of hepatic flexure (disorder)"
+          },
+          {
+            "code": "363408006",
+            "display": "Malignant tumor of transverse colon (disorder)"
+          },
+          {
+            "code": "363409003",
+            "display": "Malignant tumor of descending colon (disorder)"
+          },
+          {
+            "code": "363410008",
+            "display": "Malignant tumor of sigmoid colon (disorder)"
+          },
+          {
+            "code": "363411007",
+            "display": "Malignant neoplasm of appendix (disorder)"
+          },
+          {
+            "code": "363412000",
+            "display": "Malignant tumor of ascending colon (disorder)"
+          },
+          {
+            "code": "363413005",
+            "display": "Malignant tumor of splenic flexure (disorder)"
+          },
+          {
+            "code": "363414004",
+            "display": "Malignant tumor of rectosigmoid junction (disorder)"
+          },
+          {
+            "code": "363415003",
+            "display": "Malignant tumor of biliary tract (disorder)"
+          },
+          {
+            "code": "363416002",
+            "display": "Malignant tumor of extrahepatic bile duct (disorder)"
+          },
+          {
+            "code": "363417006",
+            "display": "Malignant tumor of ampulla of Vater (disorder)"
+          },
+          {
+            "code": "363418001",
+            "display": "Malignant tumor of pancreas (disorder)"
+          },
+          {
+            "code": "363419009",
+            "display": "Malignant tumor of head of pancreas (disorder)"
+          },
+          {
+            "code": "363420003",
+            "display": "Malignant retroperitoneal tumor (disorder)"
+          },
+          {
+            "code": "363421004",
+            "display": "Malignant neoplasm of omentum (disorder)"
+          },
+          {
+            "code": "363422006",
+            "display": "Malignant tumor of nasal cavity (disorder)"
+          },
+          {
+            "code": "363423001",
+            "display": "Malignant tumor of nasal septum (disorder)"
+          },
+          {
+            "code": "363424007",
+            "display": "Malignant tumor of mastoid air cells (disorder)"
+          },
+          {
+            "code": "363425008",
+            "display": "Malignant tumor of maxillary sinus (disorder)"
+          },
+          {
+            "code": "363426009",
+            "display": "Malignant tumor of ethmoid sinus (disorder)"
+          },
+          {
+            "code": "363427000",
+            "display": "Malignant tumor of frontal sinus (disorder)"
+          },
+          {
+            "code": "363428005",
+            "display": "Malignant tumor of sphenoid sinus (disorder)"
+          },
+          {
+            "code": "363429002",
+            "display": "Malignant tumor of larynx (disorder)"
+          },
+          {
+            "code": "363430007",
+            "display": "Malignant tumor of subglottis (disorder)"
+          },
+          {
+            "code": "363431006",
+            "display": "Malignant tumor of laryngeal cartilage (disorder)"
+          },
+          {
+            "code": "363432004",
+            "display": "Malignant tumor of trachea (disorder)"
+          },
+          {
+            "code": "363433009",
+            "display": "Malignant tumor of pleura (disorder)"
+          },
+          {
+            "code": "363434003",
+            "display": "Malignant tumor of thymus (disorder)"
+          },
+          {
+            "code": "363435002",
+            "display": "Malignant tumor of heart (disorder)"
+          },
+          {
+            "code": "363436001",
+            "display": "Malignant tumor of endocardium (disorder)"
+          },
+          {
+            "code": "363437005",
+            "display": "Malignant tumor of myocardium (disorder)"
+          },
+          {
+            "code": "363438000",
+            "display": "Malignant neoplasm of vertebral column (disorder)"
+          },
+          {
+            "code": "363439008",
+            "display": "Malignant tumor of soft tissue of head (disorder)"
+          },
+          {
+            "code": "363440005",
+            "display": "Malignant tumor of soft tissue of face (disorder)"
+          },
+          {
+            "code": "363441009",
+            "display": "Malignant tumor of soft tissue of neck (disorder)"
+          },
+          {
+            "code": "363443007",
+            "display": "Malignant tumor of ovary (disorder)"
+          },
+          {
+            "code": "363444001",
+            "display": "Malignant tumor of fallopian tube (disorder)"
+          },
+          {
+            "code": "363445000",
+            "display": "Malignant tumor of vagina (disorder)"
+          },
+          {
+            "code": "363446004",
+            "display": "Malignant neoplasm of labia majora (disorder)"
+          },
+          {
+            "code": "363447008",
+            "display": "Malignant neoplasm of labia minora (disorder)"
+          },
+          {
+            "code": "363449006",
+            "display": "Malignant tumor of testis (disorder)"
+          },
+          {
+            "code": "363450006",
+            "display": "Malignant tumor of foreskin (disorder)"
+          },
+          {
+            "code": "363451005",
+            "display": "Malignant tumor of glans penis (disorder)"
+          },
+          {
+            "code": "363452003",
+            "display": "Malignant tumor of epididymis (disorder)"
+          },
+          {
+            "code": "363453008",
+            "display": "Malignant tumor of spermatic cord (disorder)"
+          },
+          {
+            "code": "363454002",
+            "display": "Malignant tumor of scrotum (disorder)"
+          },
+          {
+            "code": "363456000",
+            "display": "Malignant tumor of urachus (disorder)"
+          },
+          {
+            "code": "363457009",
+            "display": "Malignant tumor of renal pelvis (disorder)"
+          },
+          {
+            "code": "363458004",
+            "display": "Malignant tumor of ureter (disorder)"
+          },
+          {
+            "code": "363459007",
+            "display": "Malignant tumor of urethra (disorder)"
+          },
+          {
+            "code": "363460002",
+            "display": "Malignant tumor of paraurethral gland (disorder)"
+          },
+          {
+            "code": "363461003",
+            "display": "Malignant tumor of eye (disorder)"
+          },
+          {
+            "code": "363462005",
+            "display": "Malignant tumor of orbit (disorder)"
+          },
+          {
+            "code": "363463000",
+            "display": "Malignant tumor of conjunctiva (disorder)"
+          },
+          {
+            "code": "363464006",
+            "display": "Malignant tumor of cornea (disorder)"
+          },
+          {
+            "code": "363465007",
+            "display": "Malignant tumor of retina (disorder)"
+          },
+          {
+            "code": "363466008",
+            "display": "Malignant tumor of choroid (disorder)"
+          },
+          {
+            "code": "363467004",
+            "display": "Malignant neoplasm of frontal lobe (disorder)"
+          },
+          {
+            "code": "363468009",
+            "display": "Malignant neoplasm of temporal lobe (disorder)"
+          },
+          {
+            "code": "363469001",
+            "display": "Malignant neoplasm of parietal lobe (disorder)"
+          },
+          {
+            "code": "363470000",
+            "display": "Malignant neoplasm of occipital lobe (disorder)"
+          },
+          {
+            "code": "363471001",
+            "display": "Malignant neoplasm of cerebral ventricles (disorder)"
+          },
+          {
+            "code": "363473003",
+            "display": "Malignant neoplasm of brainstem (disorder)"
+          },
+          {
+            "code": "363474009",
+            "display": "Malignant neoplasm of cerebral meninges (disorder)"
+          },
+          {
+            "code": "363475005",
+            "display": "Malignant tumor of spinal cord (disorder)"
+          },
+          {
+            "code": "363476006",
+            "display": "Malignant neoplasm of spinal meninges (disorder)"
+          },
+          {
+            "code": "363477002",
+            "display": "Malignant neoplasm of cauda equina (disorder)"
+          },
+          {
+            "code": "363478007",
+            "display": "Malignant tumor of thyroid gland (disorder)"
+          },
+          {
+            "code": "363481002",
+            "display": "Malignant tumor of parathyroid gland (disorder)"
+          },
+          {
+            "code": "363482009",
+            "display": "Malignant tumor of pituitary gland (disorder)"
+          },
+          {
+            "code": "363483004",
+            "display": "Malignant tumor of pineal gland (disorder)"
+          },
+          {
+            "code": "363484005",
+            "display": "Malignant tumor of pelvis (disorder)"
+          },
+          {
+            "code": "363485006",
+            "display": "Malignant tumor of minor salivary gland (disorder)"
+          },
+          {
+            "code": "363486007",
+            "display": "Malignant tumor of vocal cord (disorder)"
+          },
+          {
+            "code": "363487003",
+            "display": "Malignant tumor of aryepiglottic fold - laryngeal aspect (disorder)"
+          },
+          {
+            "code": "363488008",
+            "display": "Malignant tumor of false cord (disorder)"
+          },
+          {
+            "code": "363489000",
+            "display": "Malignant tumor of neck (disorder)"
+          },
+          {
+            "code": "363490009",
+            "display": "Malignant tumor of anus (disorder)"
+          },
+          {
+            "code": "363491008",
+            "display": "Malignant tumor of cloacogenic zone (disorder)"
+          },
+          {
+            "code": "363492001",
+            "display": "Malignant tumor of peritoneum (disorder)"
+          },
+          {
+            "code": "363493006",
+            "display": "Malignant tumor of bronchus (disorder)"
+          },
+          {
+            "code": "363494000",
+            "display": "Malignant tumor of mediastinum (disorder)"
+          },
+          {
+            "code": "363495004",
+            "display": "Malignant tumor of muscle (disorder)"
+          },
+          {
+            "code": "363496003",
+            "display": "Malignant tumor of soft tissue of abdomen (disorder)"
+          },
+          {
+            "code": "363497007",
+            "display": "Malignant tumor of meninges (disorder)"
+          },
+          {
+            "code": "363498002",
+            "display": "Malignant tumor of optic nerve (disorder)"
+          },
+          {
+            "code": "363499005",
+            "display": "Malignant tumor of spleen (disorder)"
+          },
+          {
+            "code": "363500001",
+            "display": "Multiple malignancy (disorder)"
+          },
+          {
+            "code": "363501002",
+            "display": "Malignant tumor of face (disorder)"
+          },
+          {
+            "code": "363502009",
+            "display": "Malignant tumor of axilla (disorder)"
+          },
+          {
+            "code": "363503004",
+            "display": "Malignant tumor of upper limb (disorder)"
+          },
+          {
+            "code": "363504005",
+            "display": "Malignant tumor of lower limb (disorder)"
+          },
+          {
+            "code": "363505006",
+            "display": "Malignant tumor of oral cavity (disorder)"
+          },
+          {
+            "code": "363506007",
+            "display": "Malignant tumor of nasal sinuses (disorder)"
+          },
+          {
+            "code": "363507003",
+            "display": "Malignant neoplasm of pharynx (disorder)"
+          },
+          {
+            "code": "363508008",
+            "display": "Malignant tumor of intestine (disorder)"
+          },
+          {
+            "code": "363509000",
+            "display": "Malignant tumor of small intestine (disorder)"
+          },
+          {
+            "code": "363510005",
+            "display": "Malignant tumor of large intestine (disorder)"
+          },
+          {
+            "code": "363514001",
+            "display": "Malignant tumor of female genital organ (disorder)"
+          },
+          {
+            "code": "363515000",
+            "display": "Malignant tumor of male genital organ (disorder)"
+          },
+          {
+            "code": "363516004",
+            "display": "Malignant tumor of penis (disorder)"
+          },
+          {
+            "code": "363517008",
+            "display": "Malignant tumor of urinary tract proper (disorder)"
+          },
+          {
+            "code": "363518003",
+            "display": "Malignant tumor of kidney (disorder)"
+          },
+          {
+            "code": "363745004",
+            "display": "Primary malignant neoplasm of gastrointestinal tract (disorder)"
+          },
+          {
+            "code": "36696005",
+            "display": "Kaolinosis (disorder)"
+          },
+          {
+            "code": "369448007",
+            "display": "Malignant tumor involving rectum by direct extension from endometrium (disorder)"
+          },
+          {
+            "code": "369449004",
+            "display": "Malignant tumor involving rectum by direct extension from fallopian tube (disorder)"
+          },
+          {
+            "code": "369450004",
+            "display": "Malignant tumor involving rectum by direct extension from ovary (disorder)"
+          },
+          {
+            "code": "369451000",
+            "display": "Malignant tumor involving rectum by direct extension from prostate (disorder)"
+          },
+          {
+            "code": "369452007",
+            "display": "Malignant tumor involving rectum by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369453002",
+            "display": "Malignant tumor involving rectum by direct extension from uterus (disorder)"
+          },
+          {
+            "code": "369454008",
+            "display": "Malignant tumor involving rectum by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "369463005",
+            "display": "Malignant tumor involving ureter by direct extension from bladder (disorder)"
+          },
+          {
+            "code": "369465003",
+            "display": "Malignant tumor involving urethra by direct extension from bladder (disorder)"
+          },
+          {
+            "code": "369466002",
+            "display": "Malignant tumor involving urethra by direct extension from prostate (disorder)"
+          },
+          {
+            "code": "369469009",
+            "display": "Malignant neoplasm involving urinary bladder by direct extension from endometrium (disorder)"
+          },
+          {
+            "code": "369470005",
+            "display": "Malignant neoplasm involving urinary bladder by direct extension from fallopian tube (disorder)"
+          },
+          {
+            "code": "369471009",
+            "display": "Malignant neoplasm involving urinary bladder by direct extension from ovary (disorder)"
+          },
+          {
+            "code": "369472002",
+            "display": "Malignant neoplasm involving urinary bladder by direct extension from prostate (disorder)"
+          },
+          {
+            "code": "369473007",
+            "display": "Malignant neoplasm involving urinary bladder by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369474001",
+            "display": "Malignant neoplasm involving urinary bladder by direct extension from uterus (disorder)"
+          },
+          {
+            "code": "369475000",
+            "display": "Malignant neoplasm involving urinary bladder by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "369483006",
+            "display": "Malignant tumor involving vasa deferentia by direct extension from prostate (disorder)"
+          },
+          {
+            "code": "369485004",
+            "display": "Malignant tumor involving prostate by direct extension from bladder (disorder)"
+          },
+          {
+            "code": "369487007",
+            "display": "Primary malignant neoplasm of seminal vesicle (disorder)"
+          },
+          {
+            "code": "369488002",
+            "display": "Metastatic malignant neoplasm to seminal vesicle (disorder)"
+          },
+          {
+            "code": "369489005",
+            "display": "Malignant tumor involving seminal vesicle by direct extension from bladder (disorder)"
+          },
+          {
+            "code": "369490001",
+            "display": "Malignant tumor involving seminal vesicle by direct extension from prostate (disorder)"
+          },
+          {
+            "code": "369493004",
+            "display": "Malignant tumor involving uterine corpus by direct extension from bladder (disorder)"
+          },
+          {
+            "code": "369494005",
+            "display": "Malignant tumor involving uterine corpus by direct extension from ovary (disorder)"
+          },
+          {
+            "code": "369495006",
+            "display": "Malignant tumor involving uterine corpus by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369496007",
+            "display": "Malignant tumor involving uterine corpus by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "369497003",
+            "display": "Malignant tumor involving uterine cervix by direct extension from fallopian tube (disorder)"
+          },
+          {
+            "code": "369498008",
+            "display": "Malignant tumor involving uterine cervix by direct extension from ovary (disorder)"
+          },
+          {
+            "code": "369499000",
+            "display": "Malignant tumor involving uterine cervix by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "369503006",
+            "display": "Malignant tumor involving vagina by direct extension from uterus (disorder)"
+          },
+          {
+            "code": "369504000",
+            "display": "Malignant tumor involving vagina by direct extension from bladder (disorder)"
+          },
+          {
+            "code": "369505004",
+            "display": "Malignant tumor involving vagina by direct extension from endometrium (disorder)"
+          },
+          {
+            "code": "369506003",
+            "display": "Malignant tumor involving vagina by direct extension from fallopian tube (disorder)"
+          },
+          {
+            "code": "369507007",
+            "display": "Malignant tumor involving vulva by direct extension from endometrium (disorder)"
+          },
+          {
+            "code": "369508002",
+            "display": "Malignant tumor involving vulva by direct extension from fallopian tube (disorder)"
+          },
+          {
+            "code": "369509005",
+            "display": "Malignant tumor involving vulva by direct extension from ovary (disorder)"
+          },
+          {
+            "code": "369510000",
+            "display": "Malignant tumor involving vulva by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369511001",
+            "display": "Malignant tumor involving vulva by direct extension from uterus (disorder)"
+          },
+          {
+            "code": "369512008",
+            "display": "Malignant tumor involving vagina by direct extension from ovary (disorder)"
+          },
+          {
+            "code": "369513003",
+            "display": "Primary malignant neoplasm of left fallopian tube (disorder)"
+          },
+          {
+            "code": "369514009",
+            "display": "Metastatic malignant neoplasm to left fallopian tube (disorder)"
+          },
+          {
+            "code": "369515005",
+            "display": "Malignant tumor involving left fallopian tube by direct extension from endometrium (disorder)"
+          },
+          {
+            "code": "369516006",
+            "display": "Malignant tumor involving left fallopian tube by direct extension from ovary (disorder)"
+          },
+          {
+            "code": "369517002",
+            "display": "Malignant tumor involving left fallopian tube by direct extension from right fallopian tube (disorder)"
+          },
+          {
+            "code": "369518007",
+            "display": "Malignant tumor involving left fallopian tube by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369519004",
+            "display": "Malignant tumor involving left fallopian tube by direct extension from uterus (disorder)"
+          },
+          {
+            "code": "369520005",
+            "display": "Primary malignant neoplasm of right fallopian tube (disorder)"
+          },
+          {
+            "code": "369521009",
+            "display": "Metastatic malignant neoplasm to right fallopian tube (disorder)"
+          },
+          {
+            "code": "369522002",
+            "display": "Primary malignant neoplasm of left ovary (disorder)"
+          },
+          {
+            "code": "369523007",
+            "display": "Metastatic malignant neoplasm to left ovary (disorder)"
+          },
+          {
+            "code": "369524001",
+            "display": "Malignant tumor involving left ovary by direct extension from endometrium (disorder)"
+          },
+          {
+            "code": "369525000",
+            "display": "Malignant tumor involving left ovary by direct extension from fallopian tube (disorder)"
+          },
+          {
+            "code": "369526004",
+            "display": "Malignant tumor involving left ovary by direct extension from right ovary (disorder)"
+          },
+          {
+            "code": "369527008",
+            "display": "Malignant tumor involving left ovary by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369528003",
+            "display": "Malignant tumor involving left ovary by direct extension from uterus (disorder)"
+          },
+          {
+            "code": "369529006",
+            "display": "Primary malignant neoplasm of right ovary (disorder)"
+          },
+          {
+            "code": "369530001",
+            "display": "Metastatic malignant neoplasm to right ovary (disorder)"
+          },
+          {
+            "code": "369531002",
+            "display": "Malignant tumor involving right ovary by direct extension from endometrium (disorder)"
+          },
+          {
+            "code": "369532009",
+            "display": "Malignant tumor involving right ovary by direct extension from fallopian tube (disorder)"
+          },
+          {
+            "code": "369533004",
+            "display": "Malignant tumor involving right ovary by direct extension from left ovary (disorder)"
+          },
+          {
+            "code": "369534005",
+            "display": "Malignant tumor involving right ovary by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369535006",
+            "display": "Metastatic neoplasm of left broad ligament (disorder)"
+          },
+          {
+            "code": "369536007",
+            "display": "Metastatic neoplasm of right broad ligament (disorder)"
+          },
+          {
+            "code": "369541004",
+            "display": "Malignant tumor involving left fallopian tube by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "369547000",
+            "display": "Malignant tumor involving right fallopian tube by direct extension from endometrium (disorder)"
+          },
+          {
+            "code": "369548005",
+            "display": "Malignant tumor involving right fallopian tube by direct extension from left fallopian tube (disorder)"
+          },
+          {
+            "code": "369549002",
+            "display": "Malignant tumor involving right fallopian tube by direct extension from ovary (disorder)"
+          },
+          {
+            "code": "369550002",
+            "display": "Malignant tumor involving right fallopian tube by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369551003",
+            "display": "Malignant tumor involving right fallopian tube by direct extension from uterus (disorder)"
+          },
+          {
+            "code": "369552005",
+            "display": "Malignant tumor involving right fallopian tube by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "369559001",
+            "display": "Malignant tumor involving left ovary by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "369566000",
+            "display": "Malignant tumor involving right ovary by direct extension from uterus (disorder)"
+          },
+          {
+            "code": "369567009",
+            "display": "Malignant tumor involving right ovary by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "369579009",
+            "display": "Malignant tumor involving uterine corpus by direct extension from fallopian tube (disorder)"
+          },
+          {
+            "code": "369580007",
+            "display": "Malignant tumor involving vagina by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369587005",
+            "display": "Malignant tumor involving vulva by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "369594008",
+            "display": "Malignant tumor involving an organ by direct extension from bladder (disorder)"
+          },
+          {
+            "code": "369595009",
+            "display": "Malignant tumor involving an organ by direct extension from endometrium (disorder)"
+          },
+          {
+            "code": "369596005",
+            "display": "Malignant tumor involving an organ by direct extension from fallopian tube (disorder)"
+          },
+          {
+            "code": "369597001",
+            "display": "Malignant tumor involving an organ by direct extension from ovary (disorder)"
+          },
+          {
+            "code": "369598006",
+            "display": "Malignant tumor involving an organ by direct extension from prostate (disorder)"
+          },
+          {
+            "code": "369599003",
+            "display": "Malignant tumor involving an organ by direct extension from uterine cervix (disorder)"
+          },
+          {
+            "code": "369600000",
+            "display": "Malignant tumor involving an organ by direct extension from uterus (disorder)"
+          },
+          {
+            "code": "369601001",
+            "display": "Malignant tumor involving an organ by direct extension from vagina (disorder)"
+          },
+          {
+            "code": "370511006",
+            "display": "Vaccine-induced fibrosarcoma (disorder)"
+          },
+          {
+            "code": "370967009",
+            "display": "Retinoblastoma (disorder)"
+          },
+          {
+            "code": "370987005",
+            "display": "Anaplastic astrocytoma of spinal cord (disorder)"
+          },
+          {
+            "code": "371012000",
+            "display": "Acute lymphoblastic leukemia, transitional pre-B-cell (disorder)"
+          },
+          {
+            "code": "371134001",
+            "display": "Malignant lymphoma, large cell, polymorphous, immunoblastic (disorder)"
+          },
+          {
+            "code": "37133005",
+            "display": "Tuberculous pyelitis (disorder)"
+          },
+          {
+            "code": "371962007",
+            "display": "Primary malignant neoplasm of abdominal esophagus (disorder)"
+          },
+          {
+            "code": "371963002",
+            "display": "Primary malignant neoplasm of adrenal cortex (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}
