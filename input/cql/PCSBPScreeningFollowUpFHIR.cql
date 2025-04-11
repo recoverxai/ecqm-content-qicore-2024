@@ -43,7 +43,7 @@ code "Referral Management": '4659041987' from "CERNER-SR" display 'Referral Mana
 code "Equimed": '12888890229' from "CERNER-ServiceType" display 'Equimed'
 code "Lab": '2554653267' from "CERNER-ServiceType" display 'Lab'
 code "Telehealth": '2709938661' from "CERNER-ServiceType" display 'Telehealth'
-code "Evaluation and Management": '636067' from "CERNER-SR-CATEGORY" display 'Evaluation and Management'
+// code "Evaluation and Management": '636067' from "CERNER-SR-CATEGORY" display 'Evaluation and Management'
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -323,10 +323,11 @@ define "Qualifying Encounter":
       and ValidEncounter.serviceType !~ "Equimed"
       and ValidEncounter.serviceType !~ "Lab"
       and ValidEncounter.serviceType !~ "Telehealth"
-      and exists ("Evaluation and Management Service Request" VC where VC.encounter.reference = 'Encounter/' + ValidEncounter.id)
+      // Don't use visit charge service request filter because it's not reliable
+      // and exists ("Evaluation and Management Service Request" VC where VC.encounter.reference = 'Encounter/' + ValidEncounter.id)
 
-define "Evaluation and Management Service Request":
-  ([ServiceRequest]).isEvaluationAndManagement()
+// define "Evaluation and Management Service Request":
+//   ([ServiceRequest]).isEvaluationAndManagement()
 
 // define "Follow up with Rescreen in 2 to 6 Months":
 //   ( [ServiceRequest: "Follow-up 2-3 months (finding)"]
@@ -486,8 +487,8 @@ define fluent function systolicReading(Ob "QICore.observation-bp"):
 define fluent function diastolicReading(Ob "QICore.observation-bp"):
   Last(Ob.component C where C.code ~ "Diastolic blood pressure" return C.value as Quantity)
 
-define fluent function isEvaluationAndManagement(serviceRequests List<ServiceRequest>):
-  serviceRequests SR
-    where exists (SR.category C
-      where C ~ "Evaluation and Management"
-    )
+// define fluent function isEvaluationAndManagement(serviceRequests List<ServiceRequest>):
+//   serviceRequests SR
+//     where exists (SR.category C
+//       where C ~ "Evaluation and Management"
+//     )
