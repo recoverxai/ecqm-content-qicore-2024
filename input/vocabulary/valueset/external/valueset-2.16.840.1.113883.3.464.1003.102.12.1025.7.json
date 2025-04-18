@@ -1,0 +1,2339 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.102.12.1025.7",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+      "valueDate": "2022-09-28"
+    }
+  ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1025.7",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.464.1003.102.12.1025.7"
+    }
+  ],
+  "version": "20220928",
+  "name": "ComorbidConditionsForRespiratoryConditionsPart7",
+  "title": "Comorbid Conditions for Respiratory Conditions - Part 7",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-09-28T01:02:08-04:00",
+  "publisher": "NCQA PHEMUR",
+  "expansion": {
+    "identifier": "urn:uuid:4950e2bc-471e-4a76-860f-c85eedd08a07",
+    "timestamp": "2025-03-27T09:18:02-04:00",
+    "total": 383,
+    "offset": 0,
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C90.30",
+        "display": "Solitary plasmacytoma not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C90.31",
+        "display": "Solitary plasmacytoma in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C90.32",
+        "display": "Solitary plasmacytoma in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.00",
+        "display": "Acute lymphoblastic leukemia not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.01",
+        "display": "Acute lymphoblastic leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.02",
+        "display": "Acute lymphoblastic leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.10",
+        "display": "Chronic lymphocytic leukemia of B-cell type not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.11",
+        "display": "Chronic lymphocytic leukemia of B-cell type in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.12",
+        "display": "Chronic lymphocytic leukemia of B-cell type in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.30",
+        "display": "Prolymphocytic leukemia of B-cell type not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.31",
+        "display": "Prolymphocytic leukemia of B-cell type, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.32",
+        "display": "Prolymphocytic leukemia of B-cell type, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.40",
+        "display": "Hairy cell leukemia not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.41",
+        "display": "Hairy cell leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.42",
+        "display": "Hairy cell leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.50",
+        "display": "Adult T-cell lymphoma/leukemia (HTLV-1-associated) not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.51",
+        "display": "Adult T-cell lymphoma/leukemia (HTLV-1-associated), in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.52",
+        "display": "Adult T-cell lymphoma/leukemia (HTLV-1-associated), in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.60",
+        "display": "Prolymphocytic leukemia of T-cell type not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.61",
+        "display": "Prolymphocytic leukemia of T-cell type, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.62",
+        "display": "Prolymphocytic leukemia of T-cell type, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.90",
+        "display": "Lymphoid leukemia, unspecified not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.91",
+        "display": "Lymphoid leukemia, unspecified, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.92",
+        "display": "Lymphoid leukemia, unspecified, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.A0",
+        "display": "Mature B-cell leukemia Burkitt-type not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.A1",
+        "display": "Mature B-cell leukemia Burkitt-type, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.A2",
+        "display": "Mature B-cell leukemia Burkitt-type, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.Z0",
+        "display": "Other lymphoid leukemia not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.Z1",
+        "display": "Other lymphoid leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C91.Z2",
+        "display": "Other lymphoid leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.00",
+        "display": "Acute myeloblastic leukemia, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.01",
+        "display": "Acute myeloblastic leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.02",
+        "display": "Acute myeloblastic leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.10",
+        "display": "Chronic myeloid leukemia, BCR/ABL-positive, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.11",
+        "display": "Chronic myeloid leukemia, BCR/ABL-positive, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.12",
+        "display": "Chronic myeloid leukemia, BCR/ABL-positive, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.20",
+        "display": "Atypical chronic myeloid leukemia, BCR/ABL-negative, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.21",
+        "display": "Atypical chronic myeloid leukemia, BCR/ABL-negative, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.22",
+        "display": "Atypical chronic myeloid leukemia, BCR/ABL-negative, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.30",
+        "display": "Myeloid sarcoma, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.31",
+        "display": "Myeloid sarcoma, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.32",
+        "display": "Myeloid sarcoma, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.40",
+        "display": "Acute promyelocytic leukemia, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.41",
+        "display": "Acute promyelocytic leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.42",
+        "display": "Acute promyelocytic leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.50",
+        "display": "Acute myelomonocytic leukemia, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.51",
+        "display": "Acute myelomonocytic leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.52",
+        "display": "Acute myelomonocytic leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.60",
+        "display": "Acute myeloid leukemia with 11q23-abnormality not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.61",
+        "display": "Acute myeloid leukemia with 11q23-abnormality in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.62",
+        "display": "Acute myeloid leukemia with 11q23-abnormality in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.90",
+        "display": "Myeloid leukemia, unspecified, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.91",
+        "display": "Myeloid leukemia, unspecified in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.92",
+        "display": "Myeloid leukemia, unspecified in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.A0",
+        "display": "Acute myeloid leukemia with multilineage dysplasia, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.A1",
+        "display": "Acute myeloid leukemia with multilineage dysplasia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.A2",
+        "display": "Acute myeloid leukemia with multilineage dysplasia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.Z0",
+        "display": "Other myeloid leukemia not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.Z1",
+        "display": "Other myeloid leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C92.Z2",
+        "display": "Other myeloid leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.00",
+        "display": "Acute monoblastic/monocytic leukemia, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.01",
+        "display": "Acute monoblastic/monocytic leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.02",
+        "display": "Acute monoblastic/monocytic leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.10",
+        "display": "Chronic myelomonocytic leukemia not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.11",
+        "display": "Chronic myelomonocytic leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.12",
+        "display": "Chronic myelomonocytic leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.30",
+        "display": "Juvenile myelomonocytic leukemia, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.31",
+        "display": "Juvenile myelomonocytic leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.32",
+        "display": "Juvenile myelomonocytic leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.90",
+        "display": "Monocytic leukemia, unspecified, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.91",
+        "display": "Monocytic leukemia, unspecified in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.92",
+        "display": "Monocytic leukemia, unspecified in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.Z0",
+        "display": "Other monocytic leukemia, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.Z1",
+        "display": "Other monocytic leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C93.Z2",
+        "display": "Other monocytic leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.00",
+        "display": "Acute erythroid leukemia, not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.01",
+        "display": "Acute erythroid leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.02",
+        "display": "Acute erythroid leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.20",
+        "display": "Acute megakaryoblastic leukemia not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.21",
+        "display": "Acute megakaryoblastic leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.22",
+        "display": "Acute megakaryoblastic leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.30",
+        "display": "Mast cell leukemia not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.31",
+        "display": "Mast cell leukemia, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.32",
+        "display": "Mast cell leukemia, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.40",
+        "display": "Acute panmyelosis with myelofibrosis not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.41",
+        "display": "Acute panmyelosis with myelofibrosis, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.42",
+        "display": "Acute panmyelosis with myelofibrosis, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.6",
+        "display": "Myelodysplastic disease, not elsewhere classified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.80",
+        "display": "Other specified leukemias not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.81",
+        "display": "Other specified leukemias, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C94.82",
+        "display": "Other specified leukemias, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C95.00",
+        "display": "Acute leukemia of unspecified cell type not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C95.01",
+        "display": "Acute leukemia of unspecified cell type, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C95.02",
+        "display": "Acute leukemia of unspecified cell type, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C95.10",
+        "display": "Chronic leukemia of unspecified cell type not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C95.11",
+        "display": "Chronic leukemia of unspecified cell type, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C95.12",
+        "display": "Chronic leukemia of unspecified cell type, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C95.90",
+        "display": "Leukemia, unspecified not having achieved remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C95.91",
+        "display": "Leukemia, unspecified, in remission"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C95.92",
+        "display": "Leukemia, unspecified, in relapse"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.0",
+        "display": "Multifocal and multisystemic (disseminated) Langerhans-cell histiocytosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.2",
+        "display": "Malignant mast cell neoplasm"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.20",
+        "display": "Malignant mast cell neoplasm, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.21",
+        "display": "Aggressive systemic mastocytosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.22",
+        "display": "Mast cell sarcoma"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.29",
+        "display": "Other malignant mast cell neoplasm"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.4",
+        "display": "Sarcoma of dendritic cells (accessory cells)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.5",
+        "display": "Multifocal and unisystemic Langerhans-cell histiocytosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.6",
+        "display": "Unifocal Langerhans-cell histiocytosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.9",
+        "display": "Malignant neoplasm of lymphoid, hematopoietic and related tissue, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.A",
+        "display": "Histiocytic sarcoma"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "C96.Z",
+        "display": "Other specified malignant neoplasms of lymphoid, hematopoietic and related tissue"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.01",
+        "display": "Hb-SS disease with acute chest syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.03",
+        "display": "Hb-SS disease with cerebral vascular involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.09",
+        "display": "Hb-SS disease with crisis with other specified complication"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.211",
+        "display": "Sickle-cell/Hb-C disease with acute chest syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.213",
+        "display": "Sickle-cell/Hb-C disease with cerebral vascular involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.218",
+        "display": "Sickle-cell/Hb-C disease with crisis with other specified complication"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.411",
+        "display": "Sickle-cell thalassemia, unspecified, with acute chest syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.413",
+        "display": "Sickle-cell thalassemia, unspecified, with cerebral vascular involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.418",
+        "display": "Sickle-cell thalassemia, unspecified, with crisis with other specified complication"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.811",
+        "display": "Other sickle-cell disorders with acute chest syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.813",
+        "display": "Other sickle-cell disorders with cerebral vascular involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D57.818",
+        "display": "Other sickle-cell disorders with crisis with other specified complication"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D61.810",
+        "display": "Antineoplastic chemotherapy induced pancytopenia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D61.811",
+        "display": "Other drug-induced pancytopenia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D61.818",
+        "display": "Other pancytopenia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D70.0",
+        "display": "Congenital agranulocytosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D70.1",
+        "display": "Agranulocytosis secondary to cancer chemotherapy"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D70.2",
+        "display": "Other drug-induced agranulocytosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D70.3",
+        "display": "Neutropenia due to infection"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D70.4",
+        "display": "Cyclic neutropenia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D70.8",
+        "display": "Other neutropenia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D70.9",
+        "display": "Neutropenia, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D71",
+        "display": "Functional disorders of polymorphonuclear neutrophils"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D72.0",
+        "display": "Genetic anomalies of leukocytes"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D75.81",
+        "display": "Myelofibrosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D76.1",
+        "display": "Hemophagocytic lymphohistiocytosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D76.2",
+        "display": "Hemophagocytic syndrome, infection-associated"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D76.3",
+        "display": "Other histiocytosis syndromes"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D86.0",
+        "display": "Sarcoidosis of lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D86.1",
+        "display": "Sarcoidosis of lymph nodes"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "D86.2",
+        "display": "Sarcoidosis of lung with sarcoidosis of lymph nodes"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E84.0",
+        "display": "Cystic fibrosis with pulmonary manifestations"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E84.11",
+        "display": "Meconium ileus in cystic fibrosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E84.19",
+        "display": "Cystic fibrosis with other intestinal manifestations"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E84.8",
+        "display": "Cystic fibrosis with other manifestations"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "E84.9",
+        "display": "Cystic fibrosis, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J22",
+        "display": "Unspecified acute lower respiratory infection"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J41.0",
+        "display": "Simple chronic bronchitis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J41.1",
+        "display": "Mucopurulent chronic bronchitis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J41.8",
+        "display": "Mixed simple and mucopurulent chronic bronchitis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J42",
+        "display": "Unspecified chronic bronchitis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J47.0",
+        "display": "Bronchiectasis with acute lower respiratory infection"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J47.1",
+        "display": "Bronchiectasis with (acute) exacerbation"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J47.9",
+        "display": "Bronchiectasis, uncomplicated"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J60",
+        "display": "Coalworker's pneumoconiosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J61",
+        "display": "Pneumoconiosis due to asbestos and other mineral fibers"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J62.0",
+        "display": "Pneumoconiosis due to talc dust"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J62.8",
+        "display": "Pneumoconiosis due to other dust containing silica"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J63.0",
+        "display": "Aluminosis (of lung)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J63.1",
+        "display": "Bauxite fibrosis (of lung)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J63.2",
+        "display": "Berylliosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J63.3",
+        "display": "Graphite fibrosis (of lung)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J63.4",
+        "display": "Siderosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J63.5",
+        "display": "Stannosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J63.6",
+        "display": "Pneumoconiosis due to other specified inorganic dusts"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J64",
+        "display": "Unspecified pneumoconiosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J65",
+        "display": "Pneumoconiosis associated with tuberculosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J66.0",
+        "display": "Byssinosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J66.1",
+        "display": "Flax-dressers' disease"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J66.2",
+        "display": "Cannabinosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J66.8",
+        "display": "Airway disease due to other specific organic dusts"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.0",
+        "display": "Farmer's lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.1",
+        "display": "Bagassosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.2",
+        "display": "Bird fancier's lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.3",
+        "display": "Suberosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.4",
+        "display": "Maltworker's lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.5",
+        "display": "Mushroom-worker's lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.6",
+        "display": "Maple-bark-stripper's lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.7",
+        "display": "Air conditioner and humidifier lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.8",
+        "display": "Hypersensitivity pneumonitis due to other organic dusts"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J67.9",
+        "display": "Hypersensitivity pneumonitis due to unspecified organic dust"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J68.0",
+        "display": "Bronchitis and pneumonitis due to chemicals, gases, fumes and vapors"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J68.1",
+        "display": "Pulmonary edema due to chemicals, gases, fumes and vapors"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J68.2",
+        "display": "Upper respiratory inflammation due to chemicals, gases, fumes and vapors, not elsewhere classified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J68.3",
+        "display": "Other acute and subacute respiratory conditions due to chemicals, gases, fumes and vapors"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J68.9",
+        "display": "Unspecified respiratory condition due to chemicals, gases, fumes and vapors"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J69.0",
+        "display": "Pneumonitis due to inhalation of food and vomit"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J69.1",
+        "display": "Pneumonitis due to inhalation of oils and essences"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J69.8",
+        "display": "Pneumonitis due to inhalation of other solids and liquids"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J70.0",
+        "display": "Acute pulmonary manifestations due to radiation"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J70.1",
+        "display": "Chronic and other pulmonary manifestations due to radiation"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J70.2",
+        "display": "Acute drug-induced interstitial lung disorders"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J70.3",
+        "display": "Chronic drug-induced interstitial lung disorders"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J70.4",
+        "display": "Drug-induced interstitial lung disorders, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J70.5",
+        "display": "Respiratory conditions due to smoke inhalation"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J70.8",
+        "display": "Respiratory conditions due to other specified external agents"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J70.9",
+        "display": "Respiratory conditions due to unspecified external agent"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J80",
+        "display": "Acute respiratory distress syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J81.0",
+        "display": "Acute pulmonary edema"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J81.1",
+        "display": "Chronic pulmonary edema"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J82",
+        "display": "Pulmonary eosinophilia, not elsewhere classified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J82.81",
+        "display": "Chronic eosinophilic pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J82.82",
+        "display": "Acute eosinophilic pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J82.83",
+        "display": "Eosinophilic asthma"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J82.89",
+        "display": "Other pulmonary eosinophilia, not elsewhere classified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.01",
+        "display": "Alveolar proteinosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.02",
+        "display": "Pulmonary alveolar microlithiasis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.03",
+        "display": "Idiopathic pulmonary hemosiderosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.09",
+        "display": "Other alveolar and parieto-alveolar conditions"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.10",
+        "display": "Pulmonary fibrosis, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.111",
+        "display": "Idiopathic interstitial pneumonia, not otherwise specified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.112",
+        "display": "Idiopathic pulmonary fibrosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.113",
+        "display": "Idiopathic non-specific interstitial pneumonitis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.114",
+        "display": "Acute interstitial pneumonitis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.115",
+        "display": "Respiratory bronchiolitis interstitial lung disease"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.116",
+        "display": "Cryptogenic organizing pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.117",
+        "display": "Desquamative interstitial pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.17",
+        "display": "Other interstitial pulmonary diseases with fibrosis in diseases classified elsewhere"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.170",
+        "display": "Interstitial lung disease with progressive fibrotic phenotype in diseases classified elsewhere"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.178",
+        "display": "Other interstitial pulmonary diseases with fibrosis in diseases classified elsewhere"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.2",
+        "display": "Lymphoid interstitial pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.81",
+        "display": "Lymphangioleiomyomatosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.82",
+        "display": "Adult pulmonary Langerhans cell histiocytosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.83",
+        "display": "Surfactant mutations of the lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.841",
+        "display": "Neuroendocrine cell hyperplasia of infancy"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.842",
+        "display": "Pulmonary interstitial glycogenosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.843",
+        "display": "Alveolar capillary dysplasia with vein misalignment"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.848",
+        "display": "Other interstitial lung diseases of childhood"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.89",
+        "display": "Other specified interstitial pulmonary diseases"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J84.9",
+        "display": "Interstitial pulmonary disease, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J85.0",
+        "display": "Gangrene and necrosis of lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J85.1",
+        "display": "Abscess of lung with pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J85.2",
+        "display": "Abscess of lung without pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J85.3",
+        "display": "Abscess of mediastinum"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J86.0",
+        "display": "Pyothorax with fistula"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J86.9",
+        "display": "Pyothorax without fistula"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J90",
+        "display": "Pleural effusion, not elsewhere classified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J91.0",
+        "display": "Malignant pleural effusion"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J91.8",
+        "display": "Pleural effusion in other conditions classified elsewhere"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J92.0",
+        "display": "Pleural plaque with presence of asbestos"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J92.9",
+        "display": "Pleural plaque without asbestos"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J93.0",
+        "display": "Spontaneous tension pneumothorax"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J93.11",
+        "display": "Primary spontaneous pneumothorax"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J93.12",
+        "display": "Secondary spontaneous pneumothorax"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J93.81",
+        "display": "Chronic pneumothorax"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J93.82",
+        "display": "Other air leak"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J93.83",
+        "display": "Other pneumothorax"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J93.9",
+        "display": "Pneumothorax, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J94.0",
+        "display": "Chylous effusion"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J94.1",
+        "display": "Fibrothorax"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J94.2",
+        "display": "Hemothorax"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J94.8",
+        "display": "Other specified pleural conditions"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J94.9",
+        "display": "Pleural condition, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.00",
+        "display": "Unspecified tracheostomy complication"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.01",
+        "display": "Hemorrhage from tracheostomy stoma"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.02",
+        "display": "Infection of tracheostomy stoma"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.03",
+        "display": "Malfunction of tracheostomy stoma"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.04",
+        "display": "Tracheo-esophageal fistula following tracheostomy"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.09",
+        "display": "Other tracheostomy complication"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.1",
+        "display": "Acute pulmonary insufficiency following thoracic surgery"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.2",
+        "display": "Acute pulmonary insufficiency following nonthoracic surgery"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.3",
+        "display": "Chronic pulmonary insufficiency following surgery"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.4",
+        "display": "Chemical pneumonitis due to anesthesia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.5",
+        "display": "Postprocedural subglottic stenosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.61",
+        "display": "Intraoperative hemorrhage and hematoma of a respiratory system organ or structure complicating a respiratory system procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.62",
+        "display": "Intraoperative hemorrhage and hematoma of a respiratory system organ or structure complicating other procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.71",
+        "display": "Accidental puncture and laceration of a respiratory system organ or structure during a respiratory system procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.72",
+        "display": "Accidental puncture and laceration of a respiratory system organ or structure during other procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.811",
+        "display": "Postprocedural pneumothorax"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.812",
+        "display": "Postprocedural air leak"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.821",
+        "display": "Acute postprocedural respiratory failure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.822",
+        "display": "Acute and chronic postprocedural respiratory failure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.830",
+        "display": "Postprocedural hemorrhage of a respiratory system organ or structure following a respiratory system procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.831",
+        "display": "Postprocedural hemorrhage of a respiratory system organ or structure following other procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.84",
+        "display": "Transfusion-related acute lung injury (TRALI)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.850",
+        "display": "Mechanical complication of respirator"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.851",
+        "display": "Ventilator associated pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.859",
+        "display": "Other complication of respirator [ventilator]"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.860",
+        "display": "Postprocedural hematoma of a respiratory system organ or structure following a respiratory system procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.861",
+        "display": "Postprocedural hematoma of a respiratory system organ or structure following other procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.862",
+        "display": "Postprocedural seroma of a respiratory system organ or structure following a respiratory system procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.863",
+        "display": "Postprocedural seroma of a respiratory system organ or structure following other procedure"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.88",
+        "display": "Other intraoperative complications of respiratory system, not elsewhere classified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J95.89",
+        "display": "Other postprocedural complications and disorders of respiratory system, not elsewhere classified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.00",
+        "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.01",
+        "display": "Acute respiratory failure with hypoxia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.02",
+        "display": "Acute respiratory failure with hypercapnia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.10",
+        "display": "Chronic respiratory failure, unspecified whether with hypoxia or hypercapnia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.11",
+        "display": "Chronic respiratory failure with hypoxia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.12",
+        "display": "Chronic respiratory failure with hypercapnia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.20",
+        "display": "Acute and chronic respiratory failure, unspecified whether with hypoxia or hypercapnia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.21",
+        "display": "Acute and chronic respiratory failure with hypoxia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.22",
+        "display": "Acute and chronic respiratory failure with hypercapnia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.90",
+        "display": "Respiratory failure, unspecified, unspecified whether with hypoxia or hypercapnia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.91",
+        "display": "Respiratory failure, unspecified with hypoxia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J96.92",
+        "display": "Respiratory failure, unspecified with hypercapnia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J98.51",
+        "display": "Mediastinitis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J98.6",
+        "display": "Disorders of diaphragm"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "J99",
+        "display": "Respiratory disorders in diseases classified elsewhere"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.10",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of unspecified site"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.111",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of right shoulder"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.112",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of left shoulder"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.119",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of unspecified shoulder"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.121",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of right elbow"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.122",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of left elbow"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.129",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of unspecified elbow"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.131",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of right wrist"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.132",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of left wrist"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.139",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of unspecified wrist"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.141",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of right hand"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.142",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of left hand"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.149",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of unspecified hand"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.151",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of right hip"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.152",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of left hip"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.159",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of unspecified hip"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.161",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of right knee"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.162",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of left knee"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.169",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of unspecified knee"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.171",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of right ankle and foot"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.172",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of left ankle and foot"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.179",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of unspecified ankle and foot"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M05.19",
+        "display": "Rheumatoid lung disease with rheumatoid arthritis of multiple sites"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M30.1",
+        "display": "Polyarteritis with lung involvement [Churg-Strauss]"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M32.13",
+        "display": "Lung involvement in systemic lupus erythematosus"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M33.01",
+        "display": "Juvenile dermatomyositis with respiratory involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M33.11",
+        "display": "Other dermatomyositis with respiratory involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M33.21",
+        "display": "Polymyositis with respiratory involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M33.91",
+        "display": "Dermatopolymyositis, unspecified with respiratory involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M34.81",
+        "display": "Systemic sclerosis with lung involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "M35.02",
+        "display": "Sj\u00f6gren syndrome with lung involvement"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.011",
+        "display": "Tuberculosis complicating pregnancy, first trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.012",
+        "display": "Tuberculosis complicating pregnancy, second trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.013",
+        "display": "Tuberculosis complicating pregnancy, third trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.019",
+        "display": "Tuberculosis complicating pregnancy, unspecified trimester"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.02",
+        "display": "Tuberculosis complicating childbirth"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "O98.03",
+        "display": "Tuberculosis complicating the puerperium"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "P27.0",
+        "display": "Wilson-Mikity syndrome"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "P27.1",
+        "display": "Bronchopulmonary dysplasia originating in the perinatal period"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "P27.8",
+        "display": "Other chronic respiratory diseases originating in the perinatal period"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "P27.9",
+        "display": "Unspecified chronic respiratory disease originating in the perinatal period"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q25.45",
+        "display": "Double aortic arch"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q25.47",
+        "display": "Right aortic arch"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q25.48",
+        "display": "Anomalous origin of subclavian artery"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q30.0",
+        "display": "Choanal atresia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q30.1",
+        "display": "Agenesis and underdevelopment of nose"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q30.2",
+        "display": "Fissured, notched and cleft nose"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q30.3",
+        "display": "Congenital perforated nasal septum"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q30.8",
+        "display": "Other congenital malformations of nose"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q30.9",
+        "display": "Congenital malformation of nose, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q31.0",
+        "display": "Web of larynx"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q31.1",
+        "display": "Congenital subglottic stenosis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q31.2",
+        "display": "Laryngeal hypoplasia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q31.3",
+        "display": "Laryngocele"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q31.5",
+        "display": "Congenital laryngomalacia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q31.8",
+        "display": "Other congenital malformations of larynx"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q31.9",
+        "display": "Congenital malformation of larynx, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q32.0",
+        "display": "Congenital tracheomalacia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q32.1",
+        "display": "Other congenital malformations of trachea"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q32.2",
+        "display": "Congenital bronchomalacia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q32.3",
+        "display": "Congenital stenosis of bronchus"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q32.4",
+        "display": "Other congenital malformations of bronchus"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q33.0",
+        "display": "Congenital cystic lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q33.1",
+        "display": "Accessory lobe of lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q33.2",
+        "display": "Sequestration of lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q33.3",
+        "display": "Agenesis of lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q33.4",
+        "display": "Congenital bronchiectasis"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q33.5",
+        "display": "Ectopic tissue in lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q33.6",
+        "display": "Congenital hypoplasia and dysplasia of lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q33.8",
+        "display": "Other congenital malformations of lung"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q33.9",
+        "display": "Congenital malformation of lung, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q34.0",
+        "display": "Anomaly of pleura"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q34.1",
+        "display": "Congenital cyst of mediastinum"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q34.8",
+        "display": "Other specified congenital malformations of respiratory system"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q34.9",
+        "display": "Congenital malformation of respiratory system, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q39.0",
+        "display": "Atresia of esophagus without fistula"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q39.1",
+        "display": "Atresia of esophagus with tracheo-esophageal fistula"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q39.2",
+        "display": "Congenital tracheo-esophageal fistula without atresia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q39.3",
+        "display": "Congenital stenosis and stricture of esophagus"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q39.4",
+        "display": "Esophageal web"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q89.01",
+        "display": "Asplenia (congenital)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2025",
+        "code": "Q89.3",
+        "display": "Situs inversus"
+      }
+    ]
+  }
+}
