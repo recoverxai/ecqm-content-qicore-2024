@@ -11,6 +11,7 @@ include Status version '1.6.000' called Status
 
 codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "CERNER-72": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/72'
+codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
 
 valueset "Congenital or Acquired Absence of Cervix": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.111.12.1016'
 valueset "Home Healthcare Services": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016'
@@ -35,6 +36,13 @@ code "Date of Last HPV Exam, Pt Stated": '14256783065' from "CERNER-72" display 
 code "Last HPV Result Comments": '14256783147' from "CERNER-72" display 'Last HPV Result Comments'
 code "Last HPV Result, Pt Stated": '14256783109' from "CERNER-72" display 'Last HPV Result, Pt Stated'
 
+// HCPCS codes from Online Assessments value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
+code "G0071": 'G0071' from "HCPCS" display 'G0071'
+code "G2010": 'G2010' from "HCPCS" display 'G2010'
+code "G2250": 'G2250' from "HCPCS" display 'G2250'
+code "G2251": 'G2251' from "HCPCS" display 'G2251'
+code "G2252": 'G2252' from "HCPCS" display 'G2252'
+
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
 context Patient
@@ -53,15 +61,26 @@ define "Initial Population":
     and exists "Qualifying Encounters"
 
 define "Qualifying Encounters":
-  ( ( ["Encounter": "Office Visit"]
-      union ["Encounter": "Preventive Care Services Established Office Visit, 18 and Up"]
-      union ["Encounter": "Preventive Care Services Initial Office Visit, 18 and Up"]
-      union ["Encounter": "Home Healthcare Services"]
-      union ["Encounter": "Telephone Visits"]
-      union ["Encounter": "Online Assessments"]
-      union ["Encounter": "Clinic"]
+  ( ( ["Encounter": "Clinic"]
   ).isEncounterPerformed ( ) ) ValidEncounters
     where ValidEncounters.period.toInterval ( ) during day of "Measurement Period"
+      and exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + ValidEncounters.id)
+
+define "Qualifying Visit Charge":
+  ([ServiceRequest: "Office Visit"]
+    union [ServiceRequest: "Preventive Care Services Established Office Visit, 18 and Up"]
+      union [ServiceRequest: "Preventive Care Services Initial Office Visit, 18 and Up"]
+      union [ServiceRequest: "Home Healthcare Services"]
+      union [ServiceRequest: "Telephone Visits"]
+      union [ServiceRequest: "Online Assessments"]
+      union [ServiceRequest: "G0071"]
+      union [ServiceRequest: "G2010"]
+      union [ServiceRequest: "G2250"]
+      union [ServiceRequest: "G2251"]
+      union [ServiceRequest: "G2252"] )
+
+define "Debug ServiceRequest Office Visit":
+  ([ServiceRequest: "Office Visit"])
 
 define "Denominator":
   "Initial Population"
