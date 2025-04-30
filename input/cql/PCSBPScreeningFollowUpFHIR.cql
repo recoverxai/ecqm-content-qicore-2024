@@ -10,11 +10,11 @@ include SupplementalDataElements version '3.4.000' called SDE
 codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "CERNER-ServiceType": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/34'
 codesystem "CERNER-SR": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/200'
-codesystem "CERNER-SR-CATEGORY": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
 
 codesystem "ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 codesystem "LOINC": 'http://loinc.org'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
+codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
 
 valueset "Diagnosis of Hypertension": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.263'
 valueset "Dietary Recommendations": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1515'
@@ -43,7 +43,13 @@ code "Referral Management": '4659041987' from "CERNER-SR" display 'Referral Mana
 code "Equimed": '12888890229' from "CERNER-ServiceType" display 'Equimed'
 code "Lab": '2554653267' from "CERNER-ServiceType" display 'Lab'
 code "Telehealth": '2709938661' from "CERNER-ServiceType" display 'Telehealth'
-// code "Evaluation and Management": '636067' from "CERNER-SR-CATEGORY" display 'Evaluation and Management'
+
+// HCPCS codes from Encounter to Screen for Blood Pressure value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
+code "G0101": 'G0101' from "HCPCS" display 'G0101'
+code "G0270": 'G0270' from "HCPCS" display 'G0270'
+code "G0402": 'G0402' from "HCPCS" display 'G0402'
+code "G0438": 'G0438' from "HCPCS" display 'G0438'
+code "G0439": 'G0439' from "HCPCS" display 'G0439'
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -314,20 +320,22 @@ define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 
 
 // Common
 define "Qualifying Encounter":
-  ([Encounter: "Encounter to Screen for Blood Pressure"]
-    union ["Encounter": "Clinic"]
-  ) ValidEncounter
+  ["Encounter": "Clinic"] ValidEncounter
     where ValidEncounter.period.toInterval ( ) during day of "Measurement Period"
       and ValidEncounter.status ~ 'finished'
       and ValidEncounter.class !~ "virtual"
       and ValidEncounter.serviceType !~ "Equimed"
       and ValidEncounter.serviceType !~ "Lab"
       and ValidEncounter.serviceType !~ "Telehealth"
-      // Don't use visit charge service request filter because it's not reliable
-      // and exists ("Evaluation and Management Service Request" VC where VC.encounter.reference = 'Encounter/' + ValidEncounter.id)
+      and exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + ValidEncounter.id)
 
-// define "Evaluation and Management Service Request":
-//   ([ServiceRequest]).isEvaluationAndManagement()
+define "Qualifying Visit Charge":
+  ([ServiceRequest: "Encounter to Screen for Blood Pressure"]
+    union [ServiceRequest: "G0101"]
+    union [ServiceRequest: "G0270"]
+    union [ServiceRequest: "G0402"]
+    union [ServiceRequest: "G0438"]
+    union [ServiceRequest: "G0439"])
 
 // define "Follow up with Rescreen in 2 to 6 Months":
 //   ( [ServiceRequest: "Follow-up 2-3 months (finding)"]
@@ -486,9 +494,3 @@ define fluent function systolicReading(Ob "QICore.observation-bp"):
 
 define fluent function diastolicReading(Ob "QICore.observation-bp"):
   Last(Ob.component C where C.code ~ "Diastolic blood pressure" return C.value as Quantity)
-
-// define fluent function isEvaluationAndManagement(serviceRequests List<ServiceRequest>):
-//   serviceRequests SR
-//     where exists (SR.category C
-//       where C ~ "Evaluation and Management"
-//     )

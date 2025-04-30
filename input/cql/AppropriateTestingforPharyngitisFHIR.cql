@@ -15,6 +15,7 @@ codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e841
 codesystem "CERNER_SYNONYM": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/synonym'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "ICD": 'http://hl7.org/fhir/sid/icd-10-cm'
+codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
 
 valueset "Acute Pharyngitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011'
 valueset "Acute Tonsillitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1012'
@@ -55,6 +56,13 @@ code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unliste
 code "Clinic": '22282402' from "CERNER" display 'Clinic'
 code "Azithromycin 5 Day Dose Pack 250 mg oral tablet": '4144756' from "CERNER_SYNONYM" display 'Azithromycin 5 Day Dose Pack 250 mg oral tablet'
 code "Sinusitis (disorder)": '36971009' from "SNOMEDCT" display 'Sinusitis (disorder)'
+
+// HCPCS codes from Online Assessments value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
+code "G0071": 'G0071' from "HCPCS" display 'G0071'
+code "G2010": 'G2010' from "HCPCS" display 'G2010'
+code "G2250": 'G2250' from "HCPCS" display 'G2250'
+code "G2251": 'G2251' from "HCPCS" display 'G2251'
+code "G2252": 'G2252' from "HCPCS" display 'G2252'
 
 parameter "Measurement Period" Interval<DateTime>
 
@@ -112,25 +120,34 @@ define "Pharyngitis or Tonsillitis":
       union [Condition: "Acute Tonsillitis"] )
 
 define "Qualifying Encounter":
-  ( ([Encounter: "Emergency Department Visit"]
-    union ([Encounter] E where exists ((E.type) T where T ~ "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])"))
-    union [Encounter: "Clinic"]
-    union [Encounter: "Home Healthcare Services"]
-    union [Encounter: "Initial Hospital Observation Care"]
-    union [Encounter: "Medical Disability Exam"]
-    union [Encounter: "Observation"]
-    union [Encounter: "Office Visit"]
-    union [Encounter: "Telephone Visits"]
-    union [Encounter: "Online Assessments"]
-    union [Encounter: "Outpatient Consultation"]
-    union [Encounter: "Preventive Care Services Established Office Visit, 18 and Up"]
-    union [Encounter: "Preventive Care Services Group Counseling"]
+  ( (([Encounter] E where exists ((E.type) T where T ~ "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])"))
     union ([Encounter] E where exists ((E.type) T where T ~ "Unlisted preventive medicine service"))
-    union [Encounter: "Preventive Care Services, Initial Office Visit, 0 to 17"]
-    union [Encounter: "Preventive Care Services Individual Counseling"]
-    union [Encounter: "Preventive Care Services Initial Office Visit, 18 and Up"]
-    union [Encounter: "Preventive Care, Established Office Visit, 0 to 17"] ).isEncounterPerformed()) ValidEncounter
+    union ([Encounter: "Clinic"] Clinic
+      where exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + Clinic.id))
+    ).isEncounterPerformed()) ValidEncounter
     where ValidEncounter.period.toInterval() during "Measurement Period"
+
+define "Qualifying Visit Charge":
+  ([ServiceRequest: "Emergency Department Visit"]
+    union [ServiceRequest: "Home Healthcare Services"]
+    union [ServiceRequest: "Initial Hospital Observation Care"]
+    union [ServiceRequest: "Medical Disability Exam"]
+    union [ServiceRequest: "Observation"]
+    union [ServiceRequest: "Office Visit"]
+    union [ServiceRequest: "Telephone Visits"]
+    union [ServiceRequest: "Online Assessments"]
+    union [ServiceRequest: "Outpatient Consultation"]
+    union [ServiceRequest: "Preventive Care Services Established Office Visit, 18 and Up"]
+    union [ServiceRequest: "Preventive Care Services Group Counseling"]
+    union [ServiceRequest: "Preventive Care Services, Initial Office Visit, 0 to 17"]
+    union [ServiceRequest: "Preventive Care Services Individual Counseling"]
+    union [ServiceRequest: "Preventive Care Services Initial Office Visit, 18 and Up"]
+    union [ServiceRequest: "Preventive Care, Established Office Visit, 0 to 17"]
+    union [ServiceRequest: "G0071"]
+    union [ServiceRequest: "G2010"]
+    union [ServiceRequest: "G2250"]
+    union [ServiceRequest: "G2251"]
+    union [ServiceRequest: "G2252"] )
 
 /**
 Denominator Exclusion Conditions
