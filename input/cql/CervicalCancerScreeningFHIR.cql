@@ -9,7 +9,6 @@ include Hospice version '6.9.000' called Hospice
 include PalliativeCare version '1.9.000' called PalliativeCare
 include Status version '1.6.000' called Status
 
-codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "CERNER-72": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/72'
 codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
 
@@ -25,7 +24,6 @@ valueset "Preventive Care Services Initial Office Visit, 18 and Up": 'http://cts
 valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080'
 valueset "Hysterectomy": 'ValueSet/evdm-hysterectomy'
 
-code "Clinic": '22282402' from "CERNER" display 'Clinic'
 code "Last Pap Result, Pt Stated": '3819002389' from "CERNER-72" display 'Last Pap Result, Pt Stated'
 code "Last Pap Result Comment": '3819002413' from "CERNER-72" display 'Last Pap Result Comment'
 code "Pap Smear Abnormal Result Comment": '2556342625' from "CERNER-72" display 'Pap Smear Abnormal Result Comment'
@@ -61,9 +59,8 @@ define "Initial Population":
     and exists "Qualifying Encounters"
 
 define "Qualifying Encounters":
-  ( ( ["Encounter": "Clinic"]
-  ).isEncounterPerformed ( ) ) ValidEncounters
-    where ValidEncounters.period.toInterval ( ) during day of "Measurement Period"
+  ( ( ["Encounter"]).isEncounterPerformed ( ) ) ValidEncounters
+    where ValidEncounters.period.toInterval ( ) starts during day of "Measurement Period"
       and exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + ValidEncounters.id)
 
 define "Qualifying Visit Charge":
@@ -174,3 +171,14 @@ define "SDE Race":
 
 define "SDE Sex":
   SDE."SDE Sex"
+
+// Debug All Encounters in Period
+define "Debug Encounter":
+  ( ([Encounter]).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during "Measurement Period"
+
+// Debug All Encounters in Period and their organizations
+define "Debug Encounter Organization":
+  from "Debug Encounter" E
+    let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
+    return {encounter: E.identifier, organization: Org.name}
