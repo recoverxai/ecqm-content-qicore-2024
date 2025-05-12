@@ -170,4 +170,4 @@ define "Debug Encounter":
 define "Debug Encounter Organization":
   from "Debug Encounter" E
     let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
-    return {encounter: E, organization: Org.name}
+    return {period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}
