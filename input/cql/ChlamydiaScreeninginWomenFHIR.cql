@@ -14,7 +14,6 @@ codesystem "AdministrativeGender": 'http://terminology.hl7.org/CodeSystem/v3-Adm
 codesystem "LOINC": 'http://loinc.org'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "RXNORM": 'http://www.nlm.nih.gov/research/umls/rxnorm'
-codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
 
 valueset "Chlamydia Screening": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1052'
@@ -42,7 +41,6 @@ valueset "XRay Study": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3
 code "Female": 'F' from "AdministrativeGender" display 'Female'
 code "Have you ever had vaginal intercourse [PhenX]": '64728-9' from "LOINC" display 'Have you ever had vaginal intercourse [PhenX]'
 code "Yes (qualifier value)": '373066001' from "SNOMEDCT" display 'Yes (qualifier value)'
-code "Clinic": '22282402' from "CERNER" display 'Clinic'
 code "{3 (168 HR ethinyl estradiol 0.00125 MG/HR / levonorgestrel 0.005 MG/HR Transdermal System) } Pack": '2396253' from "RXNORM" display '{3 (168 HR ethinyl estradiol 0.00125 MG/HR / levonorgestrel 0.005 MG/HR Transdermal System) } Pack'
 
 // HCPCS codes from Online Assessments value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
@@ -91,8 +89,8 @@ define "Initial Population":
     )
 
 define "Qualifying Encounters":
-  ( ( Status."Finished Encounter" ( [Encounter: "Clinic"] ) ) ValidEncounters
-      where QICoreCommon."ToInterval" ( ValidEncounters.period ) during day of "Measurement Period"
+  ( ( Status."Finished Encounter" ( [Encounter] ) ) ValidEncounters
+      where QICoreCommon."ToInterval" ( ValidEncounters.period ) starts during day of "Measurement Period"
         and exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + ValidEncounters.id)
   )
 
@@ -211,3 +209,14 @@ define "Assessments Identifying Sexual Activity":
   ( Status."Final Survey Observation" ( [Observation: "Have you ever had vaginal intercourse [PhenX]"] ) ) SexualActivityAssessment
       where SexualActivityAssessment.value ~ "Yes (qualifier value)"
         and QICoreCommon."ToInterval" ( SexualActivityAssessment.effective ) on or before end of "Measurement Period"
+
+// Debug All Encounters in Period
+define "Debug Encounter":
+  ( ([Encounter]).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during "Measurement Period"
+
+// Debug Encounters with typ and their organizations
+define "Debug Encounter Organization":
+  from "Debug Encounter" E
+    let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
+    return {encounter: E.identifier, organization: Org.name}

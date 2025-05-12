@@ -9,7 +9,6 @@ include CQMCommon version '2.0.000' called CQMCommon
 include Hospice version '6.9.000' called Hospice
 include Status version '1.6.000' called Status
 
-codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "ObservationCategoryCodes": 'http://terminology.hl7.org/CodeSystem/observation-category'
 codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
 
@@ -30,7 +29,6 @@ valueset "Preventive Care Services Initial Office Visit, 18 and Up": 'http://cts
 valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080'
 valueset "Virtual Encounter": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1089'
 
-code "Clinic": '22282402' from "CERNER" display 'Clinic'
 code "survey": 'survey' from "ObservationCategoryCodes" display 'survey'
 code "social-history": 'social-history' from "ObservationCategoryCodes" display 'social-history'
 code "vital-signs": 'vital-signs' from "ObservationCategoryCodes" display 'vital-signs'
@@ -85,8 +83,8 @@ define "Debug Valid Encounters":
   "Qualifying Encounter"
 
 define "Qualifying Encounter":
-  (( [Encounter: "Clinic"] ).isEncounterPerformed()) ValidEncounter
-    where ValidEncounter.period.toInterval() during day of "Measurement Period"
+  (( [Encounter] ).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during day of "Measurement Period"
       and exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + ValidEncounter.id)
 
 define "Qualifying Visit Charge":
@@ -113,24 +111,6 @@ define "Qualifying Visit Charge":
     union [ServiceRequest: "G0402"]
     union [ServiceRequest: "G0438"]
     union [ServiceRequest: "G0439"] )
-
-define "Raw Matching Encounters":
-  ["Encounter": "Office Visit"]
-    union [Encounter: "Clinic"]
-    union ["Encounter": "Annual Wellness Visit"]
-    union ["Encounter": "Preventive Care Services Established Office Visit, 18 and Up"]
-    union ["Encounter": "Preventive Care Services Initial Office Visit, 18 and Up"]
-    union ["Encounter": "Home Healthcare Services"]
-    union ["Encounter": "Ophthalmological Services"]
-    union ["Encounter": "Preventive Care Services Individual Counseling"]
-    union ["Encounter": "Discharge Services Nursing Facility"]
-    union ["Encounter": "Nursing Facility Visit"]
-    union ["Encounter": "Care Services in Long Term Residential Facility"]
-    union ["Encounter": "Audiology Visit"]
-    union ["Encounter": "Telephone Visits"]
-    union ["Encounter": "Virtual Encounter"]
-    union ["Encounter": "Physical Therapy Evaluation"]
-    union ["Encounter": "Occupational Therapy Evaluation"]
 
 define "Denominator":
      "Initial Population"
@@ -180,3 +160,14 @@ define "Falls Screening Assessment Missing Category":
           and ( ObservationCategory ) !~ "activity" )
         and O.effective.toInterval() during day of "Measurement Period")
   return O
+
+// Debug All Encounters in Period
+define "Debug Encounter":
+  ( ([Encounter]).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during day of "Measurement Period"
+
+// Debug All Encounters in Period and their organizations
+define "Debug Encounter Organization":
+  from "Debug Encounter" E
+    let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
+    return {period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}

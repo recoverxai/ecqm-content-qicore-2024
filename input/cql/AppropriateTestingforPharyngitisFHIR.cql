@@ -11,7 +11,6 @@ include Status version '1.6.000' called Status
 include QICoreCommon version '2.0.000' called QICoreCommon
 
 codesystem "CPT": 'http://www.ama-assn.org/go/cpt'
-codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "CERNER_SYNONYM": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/synonym'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "ICD": 'http://hl7.org/fhir/sid/icd-10-cm'
@@ -53,7 +52,6 @@ valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.11
 
 code "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])": '99217' from "CPT" display 'Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])'
 code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unlisted preventive medicine service'
-code "Clinic": '22282402' from "CERNER" display 'Clinic'
 code "Azithromycin 5 Day Dose Pack 250 mg oral tablet": '4144756' from "CERNER_SYNONYM" display 'Azithromycin 5 Day Dose Pack 250 mg oral tablet'
 code "Sinusitis (disorder)": '36971009' from "SNOMEDCT" display 'Sinusitis (disorder)'
 
@@ -122,10 +120,10 @@ define "Pharyngitis or Tonsillitis":
 define "Qualifying Encounter":
   ( (([Encounter] E where exists ((E.type) T where T ~ "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])"))
     union ([Encounter] E where exists ((E.type) T where T ~ "Unlisted preventive medicine service"))
-    union ([Encounter: "Clinic"] Clinic
-      where exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + Clinic.id))
+    union ([Encounter] AllEncounters
+      where exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + AllEncounters.id))
     ).isEncounterPerformed()) ValidEncounter
-    where ValidEncounter.period.toInterval() during "Measurement Period"
+    where ValidEncounter.period.toInterval() starts during "Measurement Period"
 
 define "Qualifying Visit Charge":
   ([ServiceRequest: "Emergency Department Visit"]
@@ -291,3 +289,14 @@ Debug Functions - Numerator
 */
 define "Debug Group A Streptococcus Lab Test With Result":
   ( [Observation: "Group A Streptococcus Test"] ).isLaboratoryTestPerformed()
+
+// Debug All Encounters in Period
+define "Debug Encounter":
+  ( ([Encounter]).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during "Measurement Period"
+
+// Debug All Encounters in Period and their organizations
+define "Debug Encounter Organization":
+  from "Debug Encounter" E
+    let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
+    return {encounter: E.identifier, organization: Org.name}

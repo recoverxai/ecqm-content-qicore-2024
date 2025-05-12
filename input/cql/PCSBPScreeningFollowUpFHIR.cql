@@ -7,7 +7,6 @@ include FHIRHelpers version '4.3.000' called FHIRHelpers
 include QICoreCommon version '2.0.000' called QICoreCommon
 include SupplementalDataElements version '3.4.000' called SDE
 
-codesystem "CERNER": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "CERNER-ServiceType": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/34'
 codesystem "CERNER-SR": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/200'
 
@@ -38,7 +37,6 @@ code "Follow-up 2-3 months (finding)": '183624006' from "SNOMEDCT" display 'Foll
 code "Follow-up 4-6 months (finding)": '183625007' from "SNOMEDCT" display 'Follow-up 4-6 months (finding)'
 code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pressure'
 code "virtual": 'VR' from "ActCode" display 'virtual'
-code "Clinic": '22282402' from "CERNER" display 'Clinic'
 code "Referral Management": '4659041987' from "CERNER-SR" display 'Referral Management'
 code "Equimed": '12888890229' from "CERNER-ServiceType" display 'Equimed'
 code "Lab": '2554653267' from "CERNER-ServiceType" display 'Lab'
@@ -320,7 +318,7 @@ define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 
 
 // Common
 define "Qualifying Encounter":
-  ["Encounter": "Clinic"] ValidEncounter
+  ["Encounter"] ValidEncounter
     where ValidEncounter.period.toInterval ( ) during day of "Measurement Period"
       and ValidEncounter.status ~ 'finished'
       and ValidEncounter.class !~ "virtual"
@@ -494,3 +492,19 @@ define fluent function systolicReading(Ob "QICore.observation-bp"):
 
 define fluent function diastolicReading(Ob "QICore.observation-bp"):
   Last(Ob.component C where C.code ~ "Diastolic blood pressure" return C.value as Quantity)
+
+// Debug All Encounters in Period
+define "Debug Encounter":
+  ["Encounter"] ValidEncounter
+    where ValidEncounter.period.toInterval ( ) starts during day of "Measurement Period"
+      and ValidEncounter.status ~ 'finished'
+      and ValidEncounter.class !~ "virtual"
+      and ValidEncounter.serviceType !~ "Equimed"
+      and ValidEncounter.serviceType !~ "Lab"
+      and ValidEncounter.serviceType !~ "Telehealth"
+
+// Debug All Encounters in Period and their organizations
+define "Debug Encounter Organization":
+  from "Debug Encounter" E
+    let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
+    return {encounter: E.identifier, organization: Org.name}
