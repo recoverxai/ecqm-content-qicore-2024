@@ -42,8 +42,10 @@ code "therapy": 'therapy' from "ObservationCategoryCodes" display 'therapy'
 code "activity": 'activity' from "ObservationCategoryCodes" display 'activity'
 code "Conley fall risk assessment score (observable entity)": '25761000175109' from "SNOMEDCT" display 'Conley fall risk assessment score (observable entity)'
 code "History of Falls in Last 3 Months Conley": '703936' from "CERNER-72" display 'History of Falls in Last 3 Months Conley'
+code "Incontinence Fall Risk Conley": '703951' from "CERNER-72" display 'Incontinence Fall Risk Conley'
 code "KINDER1FRA Fall Interventions Initiated": '4885145437' from "CERNER-72" display 'KINDER1FRA Fall Interventions Initiated'
 code "Get Up & Go - Interpretation": '2553716393' from "CERNER-72" display 'Get Up & Go - Interpretation'
+code "Mental Status Fall Risk Morse": '34701717' from "CERNER-72" display 'Mental Status Fall Risk Morse'
 
 // HCPCS codes from Virtual Encounter value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
 code "G0071": 'G0071' from "HCPCS" display 'G0071'
@@ -132,7 +134,9 @@ define "Falls Screening Assessment Performed":
     union ["Observation": "Conley fall risk assessment score (observable entity)"]
     union ["Observation": "KINDER1FRA Fall Interventions Initiated"]
     union ["Observation": "Get Up & Go - Interpretation"]
-    union ["Observation": "History of Falls in Last 3 Months Conley"]) FallsScreening
+    union ["Observation": "History of Falls in Last 3 Months Conley"]
+    union ["Observation": "Incontinence Fall Risk Conley"]
+    union ["Observation": "Mental Status Fall Risk Morse"]) FallsScreening
   where FallsScreening.status in {'final', 'amended', 'corrected' }
     and FallsScreening.effective.toInterval() during day of "Measurement Period"
 
