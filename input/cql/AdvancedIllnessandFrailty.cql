@@ -34,8 +34,7 @@ context Patient
 define "Is Age 66 or Older with Advanced Illness and Frailty":
    AgeInYearsAt(date from end of "Measurement Period")>= 66
     and "Has Criteria Indicating Frailty"
-    and ( "Has Two Outpatient Encounters with Advanced Illness on Different Dates of Service"
-        or "Has Inpatient Encounter with Advanced Illness"
+    and ( "Has Advanced Illness in Year Before or During Measurement Period"
         or "Has Dementia Medications in Year Before or During Measurement Period"
     )
 
@@ -70,6 +69,40 @@ define "Has Criteria Indicating Frailty":
         where FrailtySymptom.effective.toInterval() overlaps day of "Measurement Period"
     )
 
+define "Debug1 Has Criteria Indicating Frailty":
+  (([DeviceRequest: "Frailty Device"]).isDeviceOrder()) FrailtyDeviceOrder
+      where FrailtyDeviceOrder.doNotPerform() is not true
+      and FrailtyDeviceOrder.authoredOn.toInterval() during day of "Measurement Period"
+
+define "Debug2 Has Criteria Indicating Frailty":
+  (([Observation: "Medical equipment used"]).isAssessmentPerformed()) EquipmentUsed
+        where EquipmentUsed.value as Concept in "Frailty Device" 
+        and EquipmentUsed.effective.toInterval() ends during day of "Measurement Period"
+
+define "Debug3 Has Criteria Indicating Frailty":
+  ([Condition: "Frailty Diagnosis"]) FrailtyDiagnosis
+        where FrailtyDiagnosis.prevalenceInterval() overlaps day of "Measurement Period"
+
+define "Debug4 Has Criteria Indicating Frailty":
+  (([Encounter: "Frailty Encounter"]).isEncounterPerformed()) FrailtyEncounter
+        where FrailtyEncounter.period.toInterval() overlaps day of "Measurement Period"
+
+define "Debug5 Has Criteria Indicating Frailty":
+  (([Observation: "Frailty Symptom"]).isSymptom()) FrailtySymptom
+        where FrailtySymptom.effective.toInterval() overlaps day of "Measurement Period"
+
+define "Has Advanced Illness in Year Before or During Measurement Period":
+  exists ( ["Condition": "Advanced Illness"] AdvancedIllnessDiagnosis
+      where AdvancedIllnessDiagnosis.prevalenceInterval() starts during day of Interval[start of "Measurement Period" - 1 year, end of "Measurement Period"]
+  )
+
+define "Debug1 Advanced Illness in Year Before or During Measurement Period":
+  ["Condition": "Advanced Illness"] AdvancedIllnessDiagnosis
+      where AdvancedIllnessDiagnosis.prevalenceInterval() starts during day of Interval[start of "Measurement Period" - 1 year, end of "Measurement Period"]
+
+define "Debug2 Advanced Illness in Year Before or During Measurement Period":
+  ["Condition": "Advanced Illness"] 
+
 define "Has Two Outpatient Encounters with Advanced Illness on Different Dates of Service":
   exists ( from
       "Outpatient Encounters with Advanced Illness" OutpatientEncounter1,
@@ -102,6 +135,12 @@ define "Has Dementia Medications in Year Before or During Measurement Period":
         end of "Measurement Period"]
   )
 
+define "Debug Dementia Medications in Year Before or During Measurement Period":
+  ( ([MedicationRequest: "Dementia Medications"]).isMedicationActive()) DementiaMedication
+      where DementiaMedication.doNotPerform is not true and
+      CMD."MedicationRequestPeriod" ( DementiaMedication ) overlaps day of Interval[start of "Measurement Period" - 1 year, 
+        end of "Measurement Period"]
+
 define "Is Age 66 or Older Living Long Term in a Nursing Home":
   AgeInYearsAt(date from 
      end of "Measurement Period"
@@ -114,3 +153,6 @@ define "Is Age 66 or Older Living Long Term in a Nursing Home":
       )) LastHousingStatus
         where LastHousingStatus.value ~ "Lives in a nursing home (finding)"
     ) is not null
+
+define "Debug Age In Years At End of Measurement Period":
+  AgeInYearsAt(date from end of "Measurement Period")
