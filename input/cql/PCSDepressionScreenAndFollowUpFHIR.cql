@@ -10,6 +10,8 @@ include Status version '1.6.000' called Status
 codesystem "LOINC": 'http://loinc.org'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
+codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
 
 valueset "Adolescent Depression Medications": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1567'
 valueset "Adult Depression Medications": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1566'
@@ -28,9 +30,10 @@ code "Adult depression screening assessment": '73832-8' from "LOINC" display 'Ad
 code "Depression screening declined (situation)": '720834000' from "SNOMEDCT" display 'Depression screening declined (situation)'
 code "Depression screening negative (finding)": '428171000124102' from "SNOMEDCT" display 'Depression screening negative (finding)'
 code "Depression screening positive (finding)": '428181000124104' from "SNOMEDCT" display 'Depression screening positive (finding)'
-
+code "Bipolar (qualifier value)": '260994008' from "SNOMEDCT" display 'Bipolar (qualifier value)'
 code "PHQ-2": '55758-7' from "LOINC" display 'Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]'
 code "Wound Care": '3661000175108' from "SNOMEDCT" display 'Wound care service (qualifier value)'
+code "confirmed": 'confirmed' from ConditionVerificationStatusCodes display 'Confirmed'
 
 // HCPCS codes from Encounter to Screen for Depression value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
 code "G0101": 'G0101' from "HCPCS" display 'G0101'
@@ -40,6 +43,9 @@ code "G0402": 'G0402' from "HCPCS" display 'G0402'
 code "G0438": 'G0438' from "HCPCS" display 'G0438'
 code "G0439": 'G0439' from "HCPCS" display 'G0439'
 code "G0444": 'G0444' from "HCPCS" display 'G0444'
+
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -56,30 +62,30 @@ define "Denominator Exclusions":
   exists "History of Bipolar Diagnosis Before Qualifying Encounter"
 
 define "Numerator":
-  ( "Patient Age 12 to 16 Years at Start of Measurement Period"
-      and ( "Has Most Recent Adolescent Screening Negative"
+  ( "Patient Age 12 to 16 Years at Start of Measurement Period" is not null
+      and ( "Most Recent Adolescent Depression Screening Negative" is not null
           or exists "Most Recent Adolescent Depression Screening Positive and Follow Up Provided"
       )
   )
-    or ( "Patient Age 17 Years at Start of Measurement Period"
-        and ( "Has Most Recent Adolescent Screening Negative"
+    or ( "Patient Age 17 Years at Start of Measurement Period" is not null
+        and ( "Most Recent Adolescent Depression Screening Negative"  is not null
             or exists "Most Recent Adolescent Depression Screening Positive and Follow Up Provided"
-            or "Has Most Recent Adult Screening Negative"
+            or "Most Recent Adult Depression Screening Negative"  is not null
             or exists "Most Recent Adult Depression Screening Positive and Follow Up Provided"
         )
     )
-    or ( "Patient Age 18 Years or Older at Start of Measurement Period"
-        and ( "Has Most Recent Adult Screening Negative"
+    or ( "Patient Age 18 Years or Older at Start of Measurement Period" is not null
+        and ( "Most Recent Adult Depression Screening Negative"  is not null
             or exists "Most Recent Adult Depression Screening Positive and Follow Up Provided"
         )
     )
 
 define "Denominator Exceptions":
   ( exists "Medical or Patient Reason for Not Screening Adolescent for Depression"
-      and not "Has Adolescent Depression Screening"
+      and not exists "Adolescent Depression Screening"
   )
     or ( exists "Medical or Patient Reason for Not Screening Adult for Depression"
-        and not "Has Adult Depression Screening"
+        and not exists "Adult Depression Screening"
     )
 
 define "Follow Up Intervention for Positive Adolescent Depression Screening":
@@ -121,52 +127,34 @@ define "Follow Up Intervention for Positive Adult Depression Screening":
     [Procedure: "Follow Up for Adult Depression"] AdultFollowUp
           where AdultFollowUp.status = 'completed'
 
-define "Has Adolescent Depression Screening":
-  exists ( [Observation: "Adolescent depression screening assessment"] AdolescentScreening
+define "Adolescent Depression Screening":
+  [Observation: "Adolescent depression screening assessment"] AdolescentScreening
       with "Qualifying Encounters" QualifyingEncounter
         such that AdolescentScreening.effective.toInterval ( ) 14 days or less on or before day of start of QualifyingEncounter.period
           and AdolescentScreening.value is not null
           and AdolescentScreening.status = 'final'
-  )
 
-define "Has Adult Depression Screening":
-  exists ( [Observation: "Adult depression screening assessment"] AdultScreening
+define "Adult Depression Screening":
+  [Observation: "Adult depression screening assessment"] AdultScreening
       with "Qualifying Encounters" QualifyingEncounter
         such that AdultScreening.effective.toInterval ( ) 14 days or less on or before day of start of QualifyingEncounter.period
           and AdultScreening.value is not null
           and AdultScreening.status = 'final'
-  )
 
-// define "Has Most Recent Adolescent Screening Negative":
-//   ( "Most Recent Adolescent Depression Screening" AdolescentScreen
-//       where AdolescentScreen.value ~ "Depression screening negative (finding)"
-//   ) is not null
-
-define "Has Most Recent Adolescent Screening Negative":
-  ( "Most Recent Depression Screening" AdolescentScreen
+define "Most Recent Adolescent Depression Screening Negative":
+  "Most Recent Depression Screening" AdolescentScreen
       where AdolescentScreen.value as Quantity < 3 '{score}'
-  ) is not null
 
-// define "Has Most Recent Adult Screening Negative":
-//   ( "Most Recent Adult Depression Screening" AdultScreen
-//       where AdultScreen.value ~ "Depression screening negative (finding)"
-//   ) is not null
-
-define "Has Most Recent Adult Screening Negative":
-  ( "Most Recent Depression Screening" AdultScreen
+define "Most Recent Adult Depression Screening Negative":
+  "Most Recent Depression Screening" AdultScreen
       where AdultScreen.value as Quantity < 3 '{score}'
-  ) is not null
 
 define "History of Bipolar Diagnosis Before Qualifying Encounter":
-  [Condition: "Bipolar Disorder"] BipolarDiagnosis
+  ([Condition: "Bipolar Disorder"]
+    union [Condition: "Bipolar (qualifier value)"]) BipolarDiagnosis
     with "Qualifying Encounters" QualifyingEncounter
-      such that ( BipolarDiagnosis.isProblemListItem ( )
-          or BipolarDiagnosis.isHealthConcern ( )
-      )
+      such that BipolarDiagnosis.verificationStatus ~ "confirmed"
         and Coalesce( BipolarDiagnosis.onset, BipolarDiagnosis.recordedDate ) before QualifyingEncounter.period
-        and ( BipolarDiagnosis.isActive ( )
-            or BipolarDiagnosis.clinicalStatus ~ QICoreCommon."remission"
-        )
 
 define "Debug Bipolar Disorder":
   [Condition: "Bipolar Disorder"] BipolarDiagnosis
@@ -188,24 +176,6 @@ define "Medical or Patient Reason for Not Screening Adult for Depression":
         or NoAdultScreen.notDoneReason in "Medical Reason"
     )
       and NoAdultScreen.status = 'cancelled'
-
-// define "Most Recent Adolescent Depression Screening":
-//   Last([Observation: "Adolescent depression screening assessment"] AdolescentDepressionScreening
-//       with "Qualifying Encounters" QualifyingEncounter
-//         such that AdolescentDepressionScreening.effective.toInterval() 14 days or less on or before day of start of QualifyingEncounter.period
-//           and AdolescentDepressionScreening.value is not null
-//           and AdolescentDepressionScreening.status = 'final'
-//       sort by start of effective.toInterval()
-//   )
-
-// define "Most Recent Adult Depression Screening":
-//   Last([Observation: "Adult depression screening assessment"] AdultDepressionScreening
-//       with "Qualifying Encounters" QualifyingEncounter
-//         such that AdultDepressionScreening.effective.toInterval() 14 days or less on or before day of start of QualifyingEncounter.period
-//           and AdultDepressionScreening.value is not null
-//           and AdultDepressionScreening.status = 'final'
-//       sort by start of effective.toInterval()
-//   )
 
 define "Most Recent Depression Screening":
   Last([Observation: "PHQ-2"] InitialDepressionScreening
@@ -283,13 +253,19 @@ define "Age In Measurement Period":
   )
 
 define "Patient Age 12 to 16 Years at Start of Measurement Period":
-  "Age In Measurement Period" in Interval[12, 16]
+  from "Age In Measurement Period" age 
+    where age in Interval[12, 16]
+  return age
 
 define "Patient Age 17 Years at Start of Measurement Period":
-  "Age In Measurement Period" = 17
+  from "Age In Measurement Period" age 
+      where age = 17
+    return age
 
 define "Patient Age 18 Years or Older at Start of Measurement Period":
-  "Age In Measurement Period" >= 18
+  from "Age In Measurement Period" age 
+      where age >= 18
+    return age
 
 define "Qualifying Encounters":
   (( [Encounter] ).isEncounterPerformed()) ValidEncounter
@@ -306,7 +282,11 @@ define "Qualifying Visit Charge":
     union [ServiceRequest: "G0402"]
     union [ServiceRequest: "G0438"]
     union [ServiceRequest: "G0439"]
-    union [ServiceRequest: "G0444"] )
+    union [ServiceRequest: "G0444"] ) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
 
 define "SDE Ethnicity":
   SDE."SDE Ethnicity"
