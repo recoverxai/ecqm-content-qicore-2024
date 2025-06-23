@@ -15,6 +15,7 @@ codesystem "LOINC": 'http://loinc.org'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "RXNORM": 'http://www.nlm.nih.gov/research/umls/rxnorm'
 codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
 
 valueset "Chlamydia Screening": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1052'
 valueset "Complications of Pregnancy, Childbirth and the Puerperium": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.111.12.1012'
@@ -49,6 +50,9 @@ code "G2010": 'G2010' from "HCPCS" display 'G2010'
 code "G2250": 'G2250' from "HCPCS" display 'G2250'
 code "G2251": 'G2251' from "HCPCS" display 'G2251'
 code "G2252": 'G2252' from "HCPCS" display 'G2252'
+
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -107,7 +111,11 @@ define "Qualifying Visit Charge":
       union [ServiceRequest: "G2010"]
       union [ServiceRequest: "G2250"]
       union [ServiceRequest: "G2251"]
-      union [ServiceRequest: "G2252"] )
+      union [ServiceRequest: "G2252"] ) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
 
 define "Diagnoses Identifying Sexual Activity":
   ( [Condition: "Diagnoses Used to Indicate Sexual Activity"]
