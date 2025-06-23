@@ -15,6 +15,7 @@ codesystem "CERNER_SYNONYM": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e3
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "ICD": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
 
 valueset "Acute Pharyngitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011'
 valueset "Acute Tonsillitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1012'
@@ -62,6 +63,9 @@ code "G2250": 'G2250' from "HCPCS" display 'G2250'
 code "G2251": 'G2251' from "HCPCS" display 'G2251'
 code "G2252": 'G2252' from "HCPCS" display 'G2252'
 
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
+
 parameter "Measurement Period" Interval<DateTime>
 
 context Patient
@@ -70,9 +74,9 @@ context Patient
 Base Expressions
 */
 define "Initial Population":
-  "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode EncounterWithPharyngitis
-    where "Age In Measurement Period" >= 3
-    return EncounterWithPharyngitis
+  from "Encounter With Pharyngitis or Tonsillitis With Antibiotic And Age at Start of Measurement Period" Info
+    where Info.Age >= 3
+  return Info.episode
 
 define "Denominator":
   "Initial Population"
@@ -89,8 +93,16 @@ define "Numerator":
 /**
 IP Conditions
 */
+define "Encounter With Pharyngitis or Tonsillitis With Antibiotic And Age at Start of Measurement Period":
+  from "Encounter With Pharyngitis or Tonsillitis With Antibiotic" EncounterDiagnosis,
+    "Age at Start of Measurement Period" Age
+  return {episode: EncounterDiagnosis.episode,
+    "Qualifying Encounter": EncounterDiagnosis.episode,
+    "Diagnosis of Pharyngitis or Tonsillitis": EncounterDiagnosis.diagnosis,
+    Age: Age}
+
 // Age
-define "Age In Measurement Period":
+define "Age at Start of Measurement Period":
   AgeInYearsAt(date from
     start of "Measurement Period"
   )
@@ -101,7 +113,7 @@ define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
     "Encounter With Antibiotic Ordered Within Three Days".episode VisitWithAntibiotic,
     "Pharyngitis or Tonsillitis" AcutePharyngitisTonsillitis
     where EndOfDay(AcutePharyngitisTonsillitis.onset) during VisitWithAntibiotic.period.toInterval()
-    return {episode: VisitWithAntibiotic, "Diagnosis of Pharyngitis or Tonsillitis": AcutePharyngitisTonsillitis}
+    return {episode: VisitWithAntibiotic, diagnosis: AcutePharyngitisTonsillitis}
 
 // Encounter with pharyngitis or tonsillitis and an antibiotic ordered within three days of the encounter
 define "Encounter With Antibiotic Ordered Within Three Days":
@@ -145,7 +157,11 @@ define "Qualifying Visit Charge":
     union [ServiceRequest: "G2010"]
     union [ServiceRequest: "G2250"]
     union [ServiceRequest: "G2251"]
-    union [ServiceRequest: "G2252"] )
+    union [ServiceRequest: "G2252"] ) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
 
 /**
 Denominator Exclusion Conditions
@@ -154,9 +170,10 @@ Denominator Exclusion Conditions
 // Hospice Check
 define "In Hospice":
   from
-    "Initial Population" EligibleEncounters
-    where Hospice."Has Hospice Services"
-    return {episode: EligibleEncounters}
+    "Initial Population" EligibleEncounters,
+    (Last(Hospice."Hospice Services")) LastHospice
+    where LastHospice is not null
+    return {episode: EligibleEncounters, Hospice: LastHospice}
 
 // Has an Antibiotic Medication History within 30 days prior to the encounter date for pharyngitis or tonsillitis
 define "Has Antibiotic Medication History":

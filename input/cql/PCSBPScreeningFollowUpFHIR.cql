@@ -9,6 +9,7 @@ include SupplementalDataElements version '3.4.000' called SDE
 
 codesystem "CERNER-ServiceType": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/34'
 codesystem "CERNER-SR": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/200'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
 
 codesystem "ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 codesystem "LOINC": 'http://loinc.org'
@@ -49,14 +50,18 @@ code "G0402": 'G0402' from "HCPCS" display 'G0402'
 code "G0438": 'G0438' from "HCPCS" display 'G0438'
 code "G0439": 'G0439' from "HCPCS" display 'G0439'
 
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
+
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
 
 context Patient
 
 define "Initial Population":
-  "Qualifying Encounter" QualifyingEncounter
-    where "Age In Measurement Period" >= 18
+  from "Qualifying Encounter And Age at Start of Measurement Period" EncounterAndAge
+    where EncounterAndAge.Age >= 18
+  return EncounterAndAge.episode
 
 define "Denominator":
   "Initial Population"
@@ -101,7 +106,12 @@ define "Denominator Exceptions":
 //       or EncounterLastDiastolicBP is null
 
 // Initial Population conditions
-define "Age In Measurement Period":
+define "Qualifying Encounter And Age at Start of Measurement Period":
+  from "Qualifying Encounter" QualifyingEncounter,
+    "Age at Start of Measurement Period" Age
+  return {episode: QualifyingEncounter, "Qualifying Encounter": QualifyingEncounter, Age: Age}
+
+define "Age at Start of Measurement Period":
   AgeInYearsAt(start of "Measurement Period")
 
 // Denominator Exclusions conditions
@@ -333,7 +343,11 @@ define "Qualifying Visit Charge":
     union [ServiceRequest: "G0270"]
     union [ServiceRequest: "G0402"]
     union [ServiceRequest: "G0438"]
-    union [ServiceRequest: "G0439"])
+    union [ServiceRequest: "G0439"]) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
 
 // define "Follow up with Rescreen in 2 to 6 Months":
 //   ( [ServiceRequest: "Follow-up 2-3 months (finding)"]

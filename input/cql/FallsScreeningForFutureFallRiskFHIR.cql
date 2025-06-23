@@ -13,6 +13,7 @@ codesystem "ObservationCategoryCodes": 'http://terminology.hl7.org/CodeSystem/ob
 codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "CERNER-72": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/72'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
 
 valueset "Annual Wellness Visit": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240'
 valueset "Audiology Visit": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1066'
@@ -59,6 +60,9 @@ code "G0402": 'G0402' from "HCPCS" display 'G0402'
 code "G0438": 'G0438' from "HCPCS" display 'G0438'
 code "G0439": 'G0439' from "HCPCS" display 'G0439'
 
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
+
 parameter "Measurement Period" Interval<DateTime>
 
 context Patient
@@ -83,12 +87,6 @@ define "Age In Measurement Period":
 define "Initial Population":
   "Age In Measurement Period" >= 65
   and exists "Qualifying Encounter"
-
-define "Debug Patients Over 65":
-  "Age In Measurement Period" >= 65
-
-define "Debug Valid Encounters":
-  "Qualifying Encounter"
 
 define "Qualifying Encounter":
   (( [Encounter] ).isEncounterPerformed()) ValidEncounter
@@ -118,13 +116,17 @@ define "Qualifying Visit Charge":
     union [ServiceRequest: "G2252"]
     union [ServiceRequest: "G0402"]
     union [ServiceRequest: "G0438"]
-    union [ServiceRequest: "G0439"] )
+    union [ServiceRequest: "G0439"] ) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
 
 define "Denominator":
      "Initial Population"
 
 define "Denominator Exclusions":
-     Hospice."Has Hospice Services"
+     exists Hospice."Hospice Services"
 
 define "Numerator":
   exists "Falls Screening Assessment Performed"
@@ -139,42 +141,6 @@ define "Falls Screening Assessment Performed":
     union ["Observation": "Mental Status Fall Risk Morse"]) FallsScreening
   where FallsScreening.status in {'final', 'amended', 'corrected' }
     and FallsScreening.effective.toInterval() during day of "Measurement Period"
-
-/**
-Debug methods for Numerator
-*/
-define "Raw Falls Screening Observations":
-  ["Observation": "Falls Screening"]
-
-define "Falls Screening Passed Assessment Check":
-  (["Observation": "Falls Screening"]).isAssessmentPerformed()
-
-define "Falls Screening Time":
-  from "Falls Screening Passed Assessment Check" FallsScreening
-  return FallsScreening.effective
-
-/**
-Potential numerator - When the observation category coding is missing
-*/
-define "Potential Numerator":
-  exists "Falls Screening Assessment Missing Category"
-  and not "Numerator"
-
-define "Falls Screening Assessment Missing Category":
-  from ["Observation": "Falls Screening"] O
-  where (O.status in { 'final', 'amended', 'corrected' }
-        and exists ( O.category ObservationCategory
-          where ( ObservationCategory ) !~ "survey"
-          and ( ObservationCategory ) !~ "social-history"
-          and ( ObservationCategory ) !~ "vital-signs"
-          and ( ObservationCategory ) !~ "imaging"
-          and ( ObservationCategory ) !~ "laboratory"
-          and ( ObservationCategory ) !~ "procedure"
-          and ( ObservationCategory ) !~ "exam"
-          and ( ObservationCategory ) !~ "therapy"
-          and ( ObservationCategory ) !~ "activity" )
-        and O.effective.toInterval() during day of "Measurement Period")
-  return O
 
 // Debug All Encounters in Period
 define "Debug Encounter":
