@@ -14,6 +14,7 @@ include PalliativeCare version '1.9.000' called PalliativeCare
 
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
 
 valueset "Diabetes": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001'
 valueset "HbA1c Laboratory Test": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1013'
@@ -39,13 +40,15 @@ code "S9452": 'S9452' from "HCPCS" display 'S9452'
 code "S9470": 'S9470' from "HCPCS" display 'S9470'
 
 code "Wound Care": '3661000175108' from "SNOMEDCT" display 'Wound care service (qualifier value)'
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
 
 parameter "Measurement Period" Interval<DateTime>default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0 )
 
 context Patient
 
 define "Initial Population":
-  "Age At Start Of Measurement Period" in Interval[18, 75]
+  "Age at Start of Measurement Period" in Interval[18, 75]
     and exists "Qualifying Encounters"
     and exists "Diabetes Overlaps Measurement Period"
 
@@ -54,16 +57,36 @@ define "Denominator":
 
 define "Denominator Exclusions":
   exists Hospice."Hospice Services"
-    or AdvancedIllnessandFrailty."Is Age 66 or Older with Advanced Illness and Frailty"
-    or AdvancedIllnessandFrailty."Is Age 66 or Older Living Long Term in a Nursing Home"
-    or PalliativeCare."Has Palliative Care in the Measurement Period"
+    or (
+      AdvancedIllnessandFrailty."Patient Age 66 or Older at End of Measurement Period" is not null
+      and 
+      (
+        (
+          exists (AdvancedIllnessandFrailty."Criteria Indicating Frailty")
+          and (
+            exists (AdvancedIllnessandFrailty."Advanced Illness in Year Before or During Measurement Period")
+            or exists (AdvancedIllnessandFrailty."Dementia Medications in Year Before or During Measurement Period")
+          )
+        )
+        or
+        AdvancedIllnessandFrailty."Living Long Term in a Nursing Home" is not null
+        or
+        exists (AdvancedIllnessandFrailty."Discharged to a Nursing Home")
+      )
+    )
+    or exists PalliativeCare."Palliative Care in the Measurement Period"
 
 define "Numerator":
-  "Has Most Recent HbA1c Without Result"
-    or "Has Most Recent Elevated HbA1c"
+  (
+    "Most Recent HbA1c" is not null
+    and (
+      "Has Most Recent HbA1c Without Result"
+      or "Has Most Recent Elevated HbA1c"
+    )
+  )
     or "Has No Record Of HbA1c"
 
-define "Age At Start Of Measurement Period":
+define "Age at Start of Measurement Period":
   AgeInYearsAt(date from start of "Measurement Period")
 
 define "Diabetes Overlaps Measurement Period":
@@ -71,15 +94,15 @@ define "Diabetes Overlaps Measurement Period":
     where QICoreCommon."ToPrevalenceInterval" ( Diabetes ) overlaps "Measurement Period"
       or (Diabetes.onset is null and Diabetes.isActive() and Diabetes.recordedDate before end of "Measurement Period")
 
-define "Has Most Recent HbA1c Without Result":
-  "Most Recent HbA1c" is not null
-    and "Most Recent HbA1c".value is null
-
 define "Most Recent HbA1c":
   Last((([Observation: "HbA1c Laboratory Test"]).isLaboratoryTestPerformed()) RecentHbA1c
       where QICoreCommon."Latest"(RecentHbA1c.effective) during day of "Measurement Period"
       sort by start of QICoreCommon."ToInterval"(effective)
   )
+
+define "Has Most Recent HbA1c Without Result":
+  "Most Recent HbA1c" is not null 
+    and "Most Recent HbA1c".value is null
 
 define "Has Most Recent Elevated HbA1c":
   ( "Most Recent HbA1c".value as Quantity ) > 9 '%'
@@ -109,7 +132,11 @@ define "Qualifying Visit Charge":
     union [ServiceRequest: "G0447"]
     union [ServiceRequest: "S9449"]
     union [ServiceRequest: "S9452"]
-    union [ServiceRequest: "S9470"] )
+    union [ServiceRequest: "S9470"] ) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
 
 // Debug All Encounters in Period
 define "Debug Encounter":
