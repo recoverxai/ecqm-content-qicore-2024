@@ -102,7 +102,7 @@ define "Most Recent HbA1c":
 
 define "Has Most Recent HbA1c Without Result":
   "Most Recent HbA1c" is not null 
-    and "Most Recent HbA1c".value is null
+    and "Most Recent HbA1c".value as Quantity is null
 
 define "Has Most Recent Elevated HbA1c":
   ( "Most Recent HbA1c".value as Quantity ) > 9 '%'

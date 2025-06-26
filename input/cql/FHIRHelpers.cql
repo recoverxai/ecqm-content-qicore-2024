@@ -49,8 +49,9 @@ define function ToQuantity(quantity FHIR.Quantity):
     case
         when quantity is null then null
         when quantity.value is null then null
-        when quantity.comparator is not null then
-            Message(null, true, 'FHIRHelpers.ToQuantity.ComparatorQuantityNotSupported', 'Error', 'FHIR Quantity value has a comparator and cannot be converted to a System.Quantity value.')
+        // For CMS122 - some HbA1C values come with comparator
+        // when quantity.comparator is not null then
+        //     Message(null, true, 'FHIRHelpers.ToQuantity.ComparatorQuantityNotSupported', 'Error', 'FHIR Quantity value has a comparator and cannot be converted to a System.Quantity value.')
         when quantity.system is null or quantity.system.value = 'http://unitsofmeasure.org'
               or quantity.system.value = 'http://hl7.org/fhirpath/CodeSystem/calendar-units' then
             System.Quantity { value: quantity.value.value, unit: ToCalendarUnit(Coalesce(quantity.code.value, quantity.unit.value, '1')) }
