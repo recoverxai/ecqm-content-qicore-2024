@@ -1,6 +1,6 @@
 {
   "resourceType": "Measure",
-  "id": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR",
+  "id": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR",
   "meta": {
     "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm" ]
   },
@@ -8,6 +8,13 @@
     "resourceType": "Library",
     "id": "effective-data-requirements",
     "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71",
+        "code": "309308",
+        "display": "Inpatient"
+      }
+    }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
       "valueCoding": {
         "system": "http://snomed.info/sct",
@@ -20,6 +27,27 @@
         "system": "http://snomed.info/sct",
         "code": "428371000124100",
         "display": "Discharge to healthcare facility for hospice care (procedure)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+        "code": "hosp",
+        "display": "Hospice"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71",
+        "code": "309314",
+        "display": "Recurring"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "3231000175100",
+        "display": "hospice service (qualifier value)"
       }
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
@@ -52,7 +80,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Stratifaction 1"
@@ -67,7 +95,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Numerator 3"
@@ -82,7 +110,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Stratifaction 2"
@@ -97,7 +125,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Qualifying Encounter"
@@ -112,7 +140,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Initial Population"
@@ -127,7 +155,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Denominator"
@@ -142,7 +170,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "BMI Percentile in Measurement Period"
@@ -157,7 +185,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Height in Measurement Period"
@@ -172,7 +200,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Weight in Measurement Period"
@@ -187,7 +215,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Numerator 1"
@@ -202,7 +230,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Numerator 2"
@@ -223,7 +251,7 @@
         "valueString": "Has Hospice Services"
       }, {
         "url": "statement",
-        "valueString": "define \"Has Hospice Services\":\n  exists ((([Encounter: \"Encounter Inpatient\"]).isEncounterPerformed()) InpatientEncounter\n      where (InpatientEncounter.hospitalization.dischargeDisposition ~ \"Discharge to home for hospice care (procedure)\"\n          or InpatientEncounter.hospitalization.dischargeDisposition ~ \"Discharge to healthcare facility for hospice care (procedure)\"\n      )\n        and InpatientEncounter.period.toInterval() ends during day of \"Measurement Period\"\n  )\n    or exists ((([Encounter: \"Hospice Encounter\"]).isEncounterPerformed()) HospiceEncounter\n        where HospiceEncounter.period.toInterval() overlaps day of \"Measurement Period\"\n    )\n    or exists ((([Observation: \"Hospice care [Minimum Data Set]\"]).isAssessmentPerformed()) HospiceAssessment\n        where HospiceAssessment.value ~ \"Yes (qualifier value)\"\n          and HospiceAssessment.effective.toInterval() overlaps day of \"Measurement Period\"\n    )\n    or exists ((([ServiceRequest: \"Hospice Care Ambulatory\"]).isInterventionOrder()) HospiceOrder\n        where HospiceOrder.authoredOn.toInterval() during day of \"Measurement Period\"\n    )\n    or exists ((([Procedure: \"Hospice Care Ambulatory\"]).isInterventionPerformed()) HospicePerformed\n        where HospicePerformed.performed.toInterval() overlaps day of \"Measurement Period\"\n    )\n    or exists (([Condition: \"Hospice Diagnosis\"]) HospiceCareDiagnosis\n        where HospiceCareDiagnosis.prevalenceInterval() overlaps day of \"Measurement Period\"\n    )"
+        "valueString": "define \"Has Hospice Services\":\n  exists ((([Encounter: \"Encounter Inpatient\"] \n        union [Encounter: \"Inpatient\"]).isEncounterPerformed()) InpatientEncounter\n        where (InpatientEncounter.hospitalization.dischargeDisposition ~ \"Discharge to home for hospice care (procedure)\"\n            or InpatientEncounter.hospitalization.dischargeDisposition ~ \"Discharge to healthcare facility for hospice care (procedure)\"\n            or InpatientEncounter.hospitalization.dischargeDisposition ~ \"Hospice\"\n        )\n            and InpatientEncounter.period.toInterval() ends during day of \"Measurement Period\"\n    )\n    or exists ((([Encounter: \"Hospice Encounter\"]).isEncounterPerformed()) HospiceEncounter\n        where HospiceEncounter.period.toInterval() overlaps day of \"Measurement Period\"\n    )\n    or exists  ((([Encounter: \"Recurring\"]).isEncounterPerformed()) PerformedEncounter\n        where PerformedEncounter.serviceType ~ \"hospice service (qualifier value)\"\n          and PerformedEncounter.period.toInterval() overlaps day of \"Measurement Period\"\n    )\n    or exists ((([Observation: \"Hospice care [Minimum Data Set]\"]).isAssessmentPerformed()) HospiceAssessment\n        where HospiceAssessment.value ~ \"Yes (qualifier value)\"\n          and HospiceAssessment.effective.toInterval() overlaps day of \"Measurement Period\"\n    )\n    or exists ((([ServiceRequest: \"Hospice Care Ambulatory\"]).isInterventionOrder()) HospiceOrder\n        where HospiceOrder.authoredOn.toInterval() during day of \"Measurement Period\"\n    )\n    or exists ((([Procedure: \"Hospice Care Ambulatory\"]).isInterventionPerformed()) HospicePerformed\n        where HospicePerformed.performed.toInterval() overlaps day of \"Measurement Period\"\n    )\n    or exists (([Condition: \"Hospice Diagnosis\"]) HospiceCareDiagnosis\n        where HospiceCareDiagnosis.prevalenceInterval() overlaps day of \"Measurement Period\"\n    )"
       }, {
         "url": "displaySequence",
         "valueInteger": 11
@@ -232,7 +260,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Pregnancy Diagnosis Which Overlaps Measurement Period"
@@ -247,7 +275,7 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR"
+        "valueString": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR"
       }, {
         "url": "name",
         "valueString": "Denominator Exclusions"
@@ -478,7 +506,7 @@
         "valueString": "ToPrevalenceInterval"
       }, {
         "url": "statement",
-        "valueString": "/*\n@description: Returns an interval representing the normalized prevalence period of a given Condition.\n@comment: Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from\nonset to abatement as specified in the given Condition. If the condition is active, or has an abatement date the resulting \ninterval will have a closed ending boundary. Otherwise, the resulting interval will have an open ending boundary.\n@deprecated: This function is deprecated. Use the `prevalenceInterval()` fluent function instead\n*/\ndefine function ToPrevalenceInterval(condition Condition):\nif condition.clinicalStatus ~ \"active\"\n  or condition.clinicalStatus ~ \"recurrence\"\n  or condition.clinicalStatus ~ \"relapse\" then\n  Interval[start of ToInterval(condition.onset), end of ToAbatementInterval(condition)]\nelse\n   (end of ToAbatementInterval(condition)) abatementDate\n    return if abatementDate is null then\n      Interval[start of ToInterval(condition.onset), abatementDate)\n    else\n      Interval[start of ToInterval(condition.onset), abatementDate]"
+        "valueString": "/*\n@description: Returns an interval representing the normalized prevalence period of a given Condition.\n@comment: Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from\nonset to abatement as specified in the given Condition. If the condition is active, or has an abatement date the resulting \ninterval will have a closed ending boundary. Otherwise, the resulting interval will have an open ending boundary.\n@deprecated: This function is deprecated. Use the `prevalenceInterval()` fluent function instead\n*/\ndefine function ToPrevalenceInterval(condition Condition):\nif condition.clinicalStatus ~ \"active\"\n  or condition.clinicalStatus ~ \"recurrence\"\n  or condition.clinicalStatus ~ \"relapse\" then\n  Interval[start of ToInterval(condition.onset), end of ToAbatementInterval(condition)]\nelse\n   (end of ToAbatementInterval(condition)) abatementDate\n    return if abatementDate is null then\n      Interval[start of ToInterval(condition.onset), abatementDate]\n    else\n      Interval[start of ToInterval(condition.onset), abatementDate]"
       }, {
         "url": "displaySequence",
         "valueInteger": 28
@@ -509,8 +537,16 @@
       "resource": "Library/Hospice|6.9.000"
     }, {
       "type": "depends-on",
+      "display": "Code system CERNER-71",
+      "resource": "https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71"
+    }, {
+      "type": "depends-on",
       "display": "Code system SNOMEDCT",
       "resource": "http://snomed.info/sct"
+    }, {
+      "type": "depends-on",
+      "display": "Code system HL7-DD",
+      "resource": "http://terminology.hl7.org/CodeSystem/discharge-disposition"
     }, {
       "type": "depends-on",
       "display": "Code system ObservationCategoryCodes",
@@ -665,7 +701,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "status", "status.value", "period" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "hospitalization", "hospitalization.dischargeDisposition" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
@@ -673,7 +709,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "status", "status.value", "period" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "hospitalization", "hospitalization.dischargeDisposition" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1026"
@@ -681,7 +717,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "status", "status.value", "period" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "hospitalization", "hospitalization.dischargeDisposition" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1022"
@@ -689,7 +725,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "status", "status.value", "period" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "hospitalization", "hospitalization.dischargeDisposition" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1024"
@@ -697,7 +733,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "status", "status.value", "period" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "hospitalization", "hospitalization.dischargeDisposition" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1027"
@@ -705,7 +741,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "status", "status.value", "period" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "hospitalization", "hospitalization.dischargeDisposition" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
@@ -713,7 +749,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "status", "status.value", "period" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "hospitalization", "hospitalization.dischargeDisposition" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080"
@@ -721,7 +757,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "hospitalization", "hospitalization.dischargeDisposition", "period", "status", "status.value" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "hospitalization", "hospitalization.dischargeDisposition" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"
@@ -729,10 +765,36 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "hospitalization", "hospitalization.dischargeDisposition" ],
+      "codeFilter": [ {
+        "path": "type",
+        "code": [ {
+          "system": "https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71",
+          "code": "309308",
+          "display": "Inpatient"
+        } ]
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value", "hospitalization", "hospitalization.dischargeDisposition" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "serviceType", "period", "status", "status.value", "hospitalization", "hospitalization.dischargeDisposition" ],
+      "codeFilter": [ {
+        "path": "type",
+        "code": [ {
+          "system": "https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71",
+          "code": "309314",
+          "display": "Recurring"
+        } ]
+      }, {
+        "path": "serviceType"
       } ]
     }, {
       "type": "Observation",
@@ -798,7 +860,7 @@
       "reference": "#effective-data-requirements"
     }
   } ],
-  "url": "https://madie.cms.gov/Measure/WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR",
+  "url": "https://madie.cms.gov/Measure/WeightNutritionPhysicalActivityChildrenAdolescentsFHIR",
   "identifier": [ {
     "use": "usual",
     "type": {
@@ -844,11 +906,11 @@
     }
   } ],
   "version": "0.1.000",
-  "name": "WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR",
+  "name": "WeightNutritionPhysicalActivityChildrenAdolescentsFHIR",
   "title": "Weight Assessment and Counseling for Nutrition and Physical Activity for Children/AdolescentsFHIR",
   "status": "draft",
   "experimental": false,
-  "date": "2023-12-21T19:53:16+00:00",
+  "date": "2025-07-01T19:17:20+00:00",
   "publisher": "National Committee for Quality Assurance",
   "contact": [ {
     "telecom": [ {
@@ -873,7 +935,7 @@
       "value": "https://www.ncqa.org/"
     } ]
   } ],
-  "library": [ "https://madie.cms.gov/Library/WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR" ],
+  "library": [ "https://madie.cms.gov/Library/WeightNutritionPhysicalActivityChildrenAdolescentsFHIR" ],
   "disclaimer": "The performance Measure is not a clinical guideline and does not establish a standard of medical care, and has not been tested for all potential applications. THE MEASURE AND SPECIFICATIONS ARE PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND.\n \nDue to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].",
   "scoring": {
     "coding": [ {
