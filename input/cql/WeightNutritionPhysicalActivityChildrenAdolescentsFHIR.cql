@@ -11,6 +11,8 @@ include Status version '1.6.000' called Status
 codesystem "UCUM": 'http://unitsofmeasure.org'
 codesystem "LOINC": 'http://loinc.org'
 codesystem "ObservationCategoryCodes": 'http://terminology.hl7.org/CodeSystem/observation-category'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
+codesystem "SNOMEDCT": 'http://snomed.info/sct'
 
 valueset "BMI percentile": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.121.12.1012'
 valueset "Counseling for Nutrition": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.195.12.1003'
@@ -41,6 +43,13 @@ code "exam": 'exam' from "ObservationCategoryCodes" display 'exam'
 code "g": 'g' from "UCUM" display 'gram'
 code "kg": 'kg' from "UCUM" display 'kilogram'
 code "vital-signs": 'vital-signs' from "ObservationCategoryCodes" display 'Vital Signs'
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
+code "Wound Care": '3661000175108' from "SNOMEDCT" display 'Wound care service (qualifier value)'
+code "Patient Counseled": '129441002' from "SNOMEDCT" display 'Counseling - action (qualifier value)'
+code "Nutrition": '300893006' from "SNOMEDCT" display 'Nutritional finding (finding)'
+code "Physical activity": '129861002' from "SNOMEDCT" display 'Physical activity finding (finding)'
+
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -60,16 +69,14 @@ define "SDE Sex":
   SDE."SDE Sex"
 
 define "Initial Population":
-  AgeInYearsAt(date from 
-    end of "Measurement Period"
-  ) in Interval[3, 17]
+  "Age at End of Measurement Period" in Interval[3, 17]
     and exists ( "Qualifying Encounter" )
 
 define "Denominator":
   "Initial Population"
 
 define "Denominator Exclusions":
-  Hospice."Has Hospice Services"
+  exists Hospice."Hospice Services"
     or exists ( "Pregnancy Diagnosis Which Overlaps Measurement Period" )
 
 define "Pregnancy Diagnosis Which Overlaps Measurement Period":
@@ -82,45 +89,114 @@ define "Numerator 1":
     and exists ( "Weight in Measurement Period" )
 
 define "Numerator 2":
-  exists ( Status."Completed Procedure" ( [Procedure: "Counseling for Nutrition"] ) ) NutritionCounseling
-    where QICoreCommon."ToInterval" ( NutritionCounseling.performed ) during day of "Measurement Period"
+  exists ( "Nutrition Counseling" )
 
 define "Numerator 3":
-  exists ( Status."Completed Procedure" ( [Procedure: "Counseling for Physical Activity"] ) ) ActivityCounseling
-    where QICoreCommon."ToInterval" ( ActivityCounseling.performed ) during day of "Measurement Period"
+  exists ( "Physical Activity Counseling" )
 
 define "Stratifaction 1":
-  AgeInYearsAt(date from 
-    end of "Measurement Period"
-  ) in Interval[3, 11]
+  "Patient Age 3 to 11 Years at End of Measurement Period" is not null
 
 define "Stratifaction 2":
-  AgeInYearsAt(date from 
-    end of "Measurement Period"
-  ) in Interval[12, 17]
+  "Patient Age 12 to 17 Years at End of Measurement Period" is not null
+
+define "Age at End of Measurement Period":
+  AgeInYearsAt(date from end of "Measurement Period")
+
+define "Patient Age 3 to 11 Years at End of Measurement Period":
+  from "Age at End of Measurement Period" age 
+    where age in Interval[3, 11]
+  return age
+
+define "Patient Age 12 to 17 Years at End of Measurement Period":
+  from "Age at End of Measurement Period" age 
+    where age in Interval[12, 17]
+  return age
 
 define "Qualifying Encounter":
-  ( Status."Finished Encounter" ( ( [Encounter: "Office Visit"]
-      union [Encounter: "Preventive Care Services-Individual Counseling"]
-      union [Encounter: "Preventive Care Services, Initial Office Visit, 0 to 17"]
-      union [Encounter: "Preventive Care, Established Office Visit, 0 to 17"]
-      union [Encounter: "Preventive Care Services - Group Counseling"]
-      union [Encounter: "Home Healthcare Services"]
-      union [Encounter: "Telephone Visits"]
-  ) ) ) ValidEncounters
-    where QICoreCommon."ToInterval" ( ValidEncounters.period ) during "Measurement Period"
+  (( [Encounter] ).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during day of "Measurement Period"
+      and exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + ValidEncounter.id)
+
+define "Qualifying Visit Charge":
+  (["ServiceRequest": "Office Visit"]
+    union ["ServiceRequest": "Preventive Care Services-Individual Counseling"]
+    union ["ServiceRequest": "Preventive Care Services, Initial Office Visit, 0 to 17"]
+    union ["ServiceRequest": "Preventive Care, Established Office Visit, 0 to 17"]
+    union ["ServiceRequest": "Preventive Care Services - Group Counseling"]
+    union ["ServiceRequest": "Home Healthcare Services"]
+    union ["ServiceRequest": "Telephone Visits"]
+    ) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management"))
 
 define "Height in Measurement Period":
-  ( Status."BodyHeight" ( ["observation-bodyheight"] ) ) Height
-    where QICoreCommon."ToInterval" ( Height.effective ) during day of "Measurement Period"
+  [Observation: "Body height"] Height
+    where Height.status in { 'final', 'amended', 'corrected' }
+      and QICoreCommon."ToInterval" ( Height.effective ) during day of "Measurement Period"
       and Height.value is not null
 
 define "Weight in Measurement Period":
-  ( Status."BodyWeight" ( ["observation-bodyweight"] ) ) Weight
-    where QICoreCommon."ToInterval" ( Weight.effective ) during day of "Measurement Period"
+  [Observation: "Body weight"] Weight
+    where Weight.status in { 'final', 'amended', 'corrected' }
+      and QICoreCommon."ToInterval" ( Weight.effective ) during day of "Measurement Period"
       and Weight.value is not null
 
 define "BMI Percentile in Measurement Period":
-  ( Status."BMI" ( ["observation-bmi"] ) ) BMIPercentile
-    where QICoreCommon."ToInterval" ( BMIPercentile.effective ) during day of "Measurement Period"
+  [Observation: "Body mass index (BMI) [Ratio]"] BMIPercentile
+    where BMIPercentile.status in { 'final', 'amended', 'corrected' }
+      and QICoreCommon."ToInterval" ( BMIPercentile.effective ) during day of "Measurement Period"
       and BMIPercentile.value is not null
+
+define "Nutrition Counseling":
+  (( Status."Completed Procedure" ( [Procedure: "Counseling for Nutrition"] ) ) NutritionCounseling
+    where QICoreCommon."ToInterval" ( NutritionCounseling.performed ) during day of "Measurement Period")
+  union
+  (
+    (([Observation: "Patient Counseled"]).isNutritionCouncel()) PatientCounsel
+    where QICoreCommon."ToInterval" ( PatientCounsel.effective ) during day of "Measurement Period"
+  )
+
+define "Physical Activity Counseling":
+  (( Status."Completed Procedure" ( [Procedure: "Counseling for Physical Activity"] ) ) ActivityCounseling
+    where QICoreCommon."ToInterval" ( ActivityCounseling.performed ) during day of "Measurement Period")
+  union
+  (
+    (([Observation: "Patient Counseled"]).isPhysicalActivityCouncel()) PatientCounsel
+    where QICoreCommon."ToInterval" ( PatientCounsel.effective ) during day of "Measurement Period"
+  )
+
+define fluent function isNutritionCouncel(Obs List<Observation>):
+  Obs O
+    where O.status in { 'final', 'amended', 'corrected' }
+      and O.component is not null
+      and exists (O.component C where C.value ~ "Nutrition")
+
+define fluent function isPhysicalActivityCouncel(Obs List<Observation>):
+  Obs O
+    where O.status in { 'final', 'amended', 'corrected' }
+      and O.component is not null
+      and exists (O.component C where C.value ~ "Physical activity")
+
+// Debug All Encounters in Period
+define "Debug Encounter":
+  ( ([Encounter]).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during day of "Measurement Period"
+
+// Debug All Encounters in Period and their organizations
+define "Debug Encounter Organization":
+  from "Debug Encounter" E
+    let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
+    return {period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}
+
+// Debug All Encounters in Period in TJS Sleep Clinic
+define "Debug Encounter TJS Sleep Clinic":
+  "Debug Encounter" ValidEncounter
+    where ValidEncounter.serviceProvider.reference = 'Organization/73ddf3b469d972df9e6afc0ddd7dcaacc28a89a25a4c941c90d277b4e27a57d7'
+
+// Debug All Encounters in Period in Wound Care
+define "Debug Encounter Wound Care":
+  "Debug Encounter" ValidEncounter
+    where ValidEncounter.serviceProvider.reference = 'Organization/a795b0138bef574c34b011fc05a91188a9d6011d9981596e16025d0eb1d26799'
+      and ValidEncounter.serviceType ~ "Wound Care"
