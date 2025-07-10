@@ -49,6 +49,7 @@ code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unliste
 code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
 code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
 code "Smokeless Tobacco Use Screening": '88031-0' from "LOINC" display 'SHX Smokeless Tobacco use'
+code "Never": 'LA6270-8' from "LOINC" display 'Never'
 
 // HCPCS codes from Annual Wellness Visit value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
 code "G0402": 'G0402' from "HCPCS" display 'G0402'
@@ -73,11 +74,7 @@ define "Denominator 1":
 define "Denominator 2":
   "Initial Population"
     and 
-    (
-      "Most Recent Tobacco Use Screening Indicates Tobacco User" is not null
-      or
-      "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco User" is not null
-    )
+    exists ("Most Recent Tobacco Use Screenings Indicates Tobacco User")
 
 define "Denominator 3":
   "Initial Population"
@@ -89,10 +86,9 @@ define "Initial Population":
     )
 
 define "Numerator 1":
-  "Most Recent Tobacco Use Screening Indicates Tobacco Non User" is not null
-    or "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco Non User" is not null
-    or "Most Recent Tobacco Use Screening Indicates Tobacco User" is not null
-    or "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco User" is not null
+  exists ("Most Recent Tobacco Use Screenings Indicates Tobacco Non User")
+  or
+  exists ("Most Recent Tobacco Use Screenings Indicates Tobacco User")
 
 define "Numerator 2":
   exists "Tobacco Cessation Counseling Given"
@@ -100,18 +96,10 @@ define "Numerator 2":
     or exists "Active Pharmacotherapy for Tobacco Cessation"
 
 define "Numerator 3":
-  (
-    "Most Recent Tobacco Use Screening Indicates Tobacco Non User" is not null
-    and 
-    "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco Non User" is not null
-  )
+  exists ("Most Recent Tobacco Use Screenings Indicates Tobacco Non User")
   or
   (
-    (
-      "Most Recent Tobacco Use Screening Indicates Tobacco User" is not null
-      or
-      "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco User" is not null
-    )
+    exists ("Most Recent Tobacco Use Screenings Indicates Tobacco User")
     and
     ( 
       exists "Tobacco Cessation Counseling Given"
@@ -123,76 +111,82 @@ define "Numerator 3":
 define "Age at Start of Measurement Period":
   AgeInYearsAt(date from start of "Measurement Period")
 
+define "Most Recent Tobacco Use Screening":
+  { Last(([Observation: "Tobacco Use Screening"]) Screening
+      where Screening.status in { 'final', 'amended', 'corrected' }
+        and Screening.effective.toInterval() during day of "Measurement Period"
+      sort by start of effective.toInterval()
+  ) }
+
 define "Most Recent Tobacco Use Screening Indicates Tobacco Non User":
-  ( Last(([Observation: "Tobacco Use Screening"]) TobaccoUseScreening
-      where TobaccoUseScreening.status in { 'final', 'amended', 'corrected' }
-        and TobaccoUseScreening.effective.toInterval() during day of "Measurement Period"
-      sort by start of effective.toInterval()
-  ) ) MostRecentTobaccoUseScreening
-    where MostRecentTobaccoUseScreening.value as Concept in "Tobacco Non User"
-
-define "Debug Most Recent Tobacco Use Screening":
-  ( Last(([Observation: "Tobacco Use Screening"]) TobaccoUseScreening
-      where TobaccoUseScreening.status in { 'final', 'amended', 'corrected' }
-        and TobaccoUseScreening.effective.toInterval() during day of "Measurement Period"
-      sort by start of effective.toInterval()
-  ) )
-
-define "Debug Tobacco Use Screening":
-  ([Observation: "Tobacco Use Screening"]) TobaccoUseScreening
-      where TobaccoUseScreening.status in { 'final', 'amended', 'corrected' }
-        and TobaccoUseScreening.effective.toInterval() during day of "Measurement Period"
-      sort by start of effective.toInterval()
-
-define "Debug2 Tobacco Use Screening":
-  (([Observation: "Tobacco Use Screening"])) TobaccoUseScreening
-
-define "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco Non User":
-  ( Last(([Observation: "Smokeless Tobacco Use Screening"]) TobaccoUseScreening
-      where TobaccoUseScreening.status in { 'final', 'amended', 'corrected' }
-        and TobaccoUseScreening.effective.toInterval() during day of "Measurement Period"
-      sort by start of effective.toInterval()
-  ) ) MostRecentTobaccoUseScreening
-    where MostRecentTobaccoUseScreening.value as Concept in "Tobacco Non User"
-
-define "Debug Most Recent Smokeless Tobacco Use Screening":
-  ( Last(([Observation: "Smokeless Tobacco Use Screening"]) TobaccoUseScreening
-      where TobaccoUseScreening.status in { 'final', 'amended', 'corrected' }
-        and TobaccoUseScreening.effective.toInterval() during day of "Measurement Period"
-      sort by start of effective.toInterval()
-  ) )
-
-define "Debug Smokeless Tobacco Use Screening":
-  ([Observation: "Smokeless Tobacco Use Screening"]) TobaccoUseScreening
-      where TobaccoUseScreening.status in { 'final', 'amended', 'corrected' }
-        and TobaccoUseScreening.effective.toInterval() during day of "Measurement Period"
-      sort by start of effective.toInterval()
-
-define "Debug2 Smokeless Tobacco Use Screening":
-  ([Observation: "Smokeless Tobacco Use Screening"]) TobaccoUseScreening
+  "Most Recent Tobacco Use Screening" Screening
+      where Screening is not null
+        and Screening.value as Concept in "Tobacco Non User" or Screening.value ~ "Never"
 
 define "Most Recent Tobacco Use Screening Indicates Tobacco User":
-  ( Last(([Observation: "Tobacco Use Screening"]) TobaccoUseScreening
-      where TobaccoUseScreening.status in { 'final', 'amended', 'corrected' }
-        and TobaccoUseScreening.effective.toInterval() during day of "Measurement Period"
+  "Most Recent Tobacco Use Screening" Screening
+      where Screening is not null
+        and (Screening.value as Concept in "Tobacco Non User") is false 
+        and Screening.value !~ "Never"
+
+define "Most Recent Smokeless Tobacco Use Screening":
+  { Last(([Observation: "Smokeless Tobacco Use Screening"]) Screening
+      where Screening.status in { 'final', 'amended', 'corrected' }
+        and Screening.effective.toInterval() during day of "Measurement Period"
       sort by start of effective.toInterval()
-  ) ) MostRecentTobaccoUseScreening
-    where MostRecentTobaccoUseScreening.value as Concept in "Tobacco User"
+  ) }
+
+define "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco Non User":
+  "Most Recent Smokeless Tobacco Use Screening" Screening
+      where Screening is not null
+        and Screening.value as Concept in "Tobacco Non User" or Screening.value ~ "Never"
 
 define "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco User":
-  ( Last(([Observation: "Smokeless Tobacco Use Screening"]) TobaccoUseScreening
-     where TobaccoUseScreening.status in { 'final', 'amended', 'corrected' }
-        and TobaccoUseScreening.effective.toInterval() during day of "Measurement Period"
+  "Most Recent Smokeless Tobacco Use Screening" Screening
+      where Screening is not null
+        and (Screening.value as Concept in "Tobacco Non User") is false 
+        and Screening.value !~ "Never"
+
+define "Most Recent Electronic Cigarette/Vaping Screening":
+  { Last(([Observation]) Screening
+      where Screening.code.display = 'SHX Electronic Cigarette Use'
+        and Screening.status in { 'final', 'amended', 'corrected' }
+        and Screening.effective.toInterval() during day of "Measurement Period"
       sort by start of effective.toInterval()
-  ) ) MostRecentTobaccoUseScreening
-    where MostRecentTobaccoUseScreening.value as Concept in "Tobacco User"
+  ) }
+
+define "Most Recent Electronic Cigarette/Vaping Screening Indicates Tobacco Non User":
+  "Most Recent Electronic Cigarette/Vaping Screening" Screening
+      where Screening.value as Concept in "Tobacco Non User" or Screening.value ~ "Never"
+
+define "Most Recent Electronic Cigarette/Vaping Screening Indicates Tobacco User":
+  "Most Recent Tobacco Use Screening" Screening
+      where Screening is not null
+        and (Screening.value as Concept in "Tobacco Non User") is false 
+        and Screening.value !~ "Never"
+
+define "Most Recent Tobacco Use Screenings Indicates Tobacco Non User":
+  ("Most Recent Tobacco Use Screening Indicates Tobacco Non User" union
+    "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco Non User" union
+    "Most Recent Electronic Cigarette/Vaping Screening Indicates Tobacco Non User") ScreeningNonUser
+    where not exists "Most Recent Electronic Cigarette/Vaping Screening Indicates Tobacco User"
+      and not exists "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco User"
+
+define "Most Recent Tobacco Use Screenings Indicates Tobacco User":
+  "Most Recent Tobacco Use Screening Indicates Tobacco User" union
+    "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco User" union
+    "Most Recent Electronic Cigarette/Vaping Screening Indicates Tobacco User"
 
 define "Tobacco Cessation Counseling Given":
-  ( ( ( [Procedure: "Tobacco Use Cessation Counseling"] ).isInterventionPerformed ( ) ) TobaccoCessationCounseling
-      where TobaccoCessationCounseling.performed.toInterval ( ) during day of Interval[start of "Measurement Period" - 6 months, end of "Measurement Period"]
-  )
-    union ( ( [Condition: "Tobacco abuse counseling"] ) TobaccoCounseling
-        where TobaccoCounseling.prevalenceInterval ( ) starts during day of Interval[start of "Measurement Period" - 6 months, end of "Measurement Period"]
+   (( [Observation: "Tobacco Use Cessation Counseling"]) ObservationTabaccoCounseling
+      where exists ("Most Recent Tobacco Use Screening Indicates Tobacco User"
+        union "Most Recent Smokeless Tobacco Use Screening Indicates Tobacco User")
+        and ObservationTabaccoCounseling.effective.toInterval() starts during day of Interval[start of "Measurement Period" - 6 months, end of "Measurement Period"]
+    )
+    union (( [Observation]) ECigaretteCounseling
+      where exists "Most Recent Electronic Cigarette/Vaping Screening Indicates Tobacco User"
+        and ECigaretteCounseling.code.display = 'SHX Electronic Cigarette Ready to Change'
+        and ECigaretteCounseling.effective.toInterval() starts during day of Interval[start of "Measurement Period" - 6 months, end of "Measurement Period"]
     )
 
 define "Tobacco Cessation Pharmacotherapy Ordered":
