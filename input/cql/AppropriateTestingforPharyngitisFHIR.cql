@@ -226,7 +226,7 @@ define "Encounter With Pharyngitis or Tonsillitis With Antibiotic and Step Test 
 from
     "Group A Streptococcus Lab Test With Result" GroupAStreptococcusTest,
     "Encounter With Pharyngitis or Tonsillitis With Antibiotic".episode EncounterWithPharyngitis
-    where  GroupAStreptococcusTest.effective.toInterval() starts during day of Interval[( end of EncounterWithPharyngitis.period ) - 3 days, ( end of EncounterWithPharyngitis.period ) + 3 days]
+    where  GroupAStreptococcusTest.effective.toInterval() starts during day of Interval[( start of EncounterWithPharyngitis.period ) - 3 days, ( start of EncounterWithPharyngitis.period ) + 3 days]
     return {episode: EncounterWithPharyngitis, "Strep Test": GroupAStreptococcusTest}
 
 define "Group A Streptococcus Lab Test With Result":
