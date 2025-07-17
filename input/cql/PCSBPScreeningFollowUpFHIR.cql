@@ -118,14 +118,16 @@ define "Age at Start of Measurement Period":
 define "Encounter after Diagnosis of Hypertension":
   from
     "Qualifying Encounter" QualifyingEncounter,
-    "Earliest Diagnosis of Hypertension" Hypertension
+    [Condition: "Diagnosis of Hypertension"] Hypertension
   where Coalesce( Hypertension.onset, Hypertension.recordedDate ) before QualifyingEncounter.period
+    and Hypertension.isActive ( ) and 
+    not exists (
+      [Condition: "Diagnosis of Hypertension"] InactiveHypertension
+        where InactiveHypertension.isInActive() 
+        and Coalesce( Hypertension.onset, Hypertension.recordedDate ) before Coalesce( InactiveHypertension.onset, InactiveHypertension.recordedDate )
+        and Coalesce( InactiveHypertension.onset, InactiveHypertension.recordedDate ) before QualifyingEncounter.period
+    )
   return {episode: QualifyingEncounter, "1_Diagnosis of Hypertension": Hypertension}
-
-define "Earliest Diagnosis of Hypertension":
-  First(([Condition: "Diagnosis of Hypertension"]) Hypertension
-    where Hypertension.isActive ( )
-    sort by Coalesce( onset, recordedDate ))
 
 // Numerator conditions
 // Normal BP

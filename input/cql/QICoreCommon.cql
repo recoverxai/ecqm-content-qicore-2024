@@ -117,6 +117,14 @@ define fluent function isActive(condition Condition):
     or condition.clinicalStatus ~ "relapse"
 
 /*
+@description: Returns true if the given condition has a clinical status of inactive, remission, or resolved
+*/
+define fluent function isInActive(condition Condition):
+  condition.clinicalStatus ~ "inactive"
+    or condition.clinicalStatus ~ "remission"
+    or condition.clinicalStatus ~ "resolved"
+
+/*
 @description: Returns true if the given condition has the given category
 */
 define fluent function hasCategory(condition Condition, category Code):
