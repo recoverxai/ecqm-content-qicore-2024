@@ -81,7 +81,7 @@ define "Denominator Exclusions":
 
 define "Pregnancy Diagnosis Which Overlaps Measurement Period":
   ( Status."Active Condition" ( [Condition: "Pregnancy"] ) ) Pregnancy
-    where QICoreCommon."ToPrevalenceInterval" ( Pregnancy ) overlaps "Measurement Period"
+    where Coalesce( Pregnancy.onset, Pregnancy.recordedDate ) during day of "Measurement Period"
 
 define "Numerator 1":
   exists ( "BMI Percentile in Measurement Period" )
