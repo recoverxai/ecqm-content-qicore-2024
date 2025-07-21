@@ -236,7 +236,7 @@
       } ],
       "status": "complete",
       "type": "individual",
-      "measure": "https://madie.cms.gov/Measure/WeightAssessmentandCounselingforNutritionandPhysicalActivityforChildrenandAdolescentsFHIR",
+      "measure": "https://madie.cms.gov/Measure/WeightNutritionPhysicalActivityChildrenAdolescentsFHIR",
       "period": {
         "start": "2025-01-01",
         "end": "2025-12-31"
