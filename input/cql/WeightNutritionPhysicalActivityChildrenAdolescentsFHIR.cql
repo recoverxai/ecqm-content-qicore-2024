@@ -170,14 +170,16 @@ define "Physical Activity Counseling":
 define fluent function isNutritionCouncel(Obs List<Observation>):
   Obs O
     where O.status in { 'final', 'amended', 'corrected' }
-      and O.component is not null
+      and (O.component is not null
       and exists (O.component C where C.value ~ "Nutrition")
+      or O.component is null and O.value ~ "Nutrition")
 
 define fluent function isPhysicalActivityCouncel(Obs List<Observation>):
   Obs O
     where O.status in { 'final', 'amended', 'corrected' }
-      and O.component is not null
+      and (O.component is not null
       and exists (O.component C where C.value ~ "Physical activity")
+      or O.component is null and O.value ~ "Physical activity")
 
 // Debug All Encounters in Period
 define "Debug Encounter":
