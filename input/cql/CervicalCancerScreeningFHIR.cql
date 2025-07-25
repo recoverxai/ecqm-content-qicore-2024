@@ -84,16 +84,13 @@ define "Qualifying Visit Charge":
           where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
         )
 
-define "Debug ServiceRequest Office Visit":
-  ([ServiceRequest: "Office Visit"])
-
 define "Denominator":
   "Initial Population"
 
 define "Denominator Exclusions":
-  Hospice."Has Hospice Services"
+  exists Hospice."Hospice Services"
     or exists "Absence of Cervix"
-    or PalliativeCare."Has Palliative Care in the Measurement Period"
+    or exists PalliativeCare."Palliative Care in the Measurement Period"
 
 define "Potential Denominator Exclusion":
   (exists "No Cervix No Date"
@@ -183,10 +180,25 @@ define "SDE Sex":
 // Debug All Encounters in Period
 define "Debug Encounter":
   ( ([Encounter]).isEncounterPerformed()) ValidEncounter
-    where ValidEncounter.period.toInterval() starts during "Measurement Period"
+    where ValidEncounter.period.toInterval() starts during day of "Measurement Period"
 
 // Debug All Encounters in Period and their organizations
 define "Debug Encounter Organization":
   from "Debug Encounter" E
     let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
-    return {encounter: E.identifier, organization: Org.name}
+    return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}
+
+// Debug All Visit Charges
+define "Debug Visit Charge":
+  (["ServiceRequest"]) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
+
+// Debug All Encounters in Period and their charges
+define "Debug Encounter Visit Charge":
+  from "Debug Visit Charge" VC,
+    "Debug Encounter" E
+  where VC.encounter.reference = 'Encounter/' + E.id
+  return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, visitCharge: VC.code}
