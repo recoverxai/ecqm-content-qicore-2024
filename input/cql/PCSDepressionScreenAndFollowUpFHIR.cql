@@ -168,24 +168,6 @@ define "History of Bipolar Diagnosis Before Qualifying Encounter":
         and (BipolarDiagnosis.onset before (start of QualifyingEncounter.period)
         or (BipolarDiagnosis.onset is null and BipolarDiagnosis.recordedDate before or on day of QualifyingEncounter.period))
 
-define "Debug History of Bipolar Diagnosis Before Qualifying Encounter":
-  ([Condition: "Bipolar Disorder"]
-    union [Condition: "Bipolar (qualifier value)"]) BipolarDiagnosis
-    with "Qualifying Encounters" QualifyingEncounter
-      such that BipolarDiagnosis.verificationStatus ~ "confirmed"
-        and Coalesce(BipolarDiagnosis.onset, BipolarDiagnosis.recordedDate) before or on day of (start of QualifyingEncounter.period)
-
-define "Debug Bipolar Disorder":
-  from ([Condition: "Bipolar Disorder"]
-    union [Condition: "Bipolar (qualifier value)"]) BipolarDiagnosis
-  return {onset: BipolarDiagnosis.onset, recorded: BipolarDiagnosis.recordedDate}
-
-define "Debug Qualifying Encounters":
-  from "Qualifying Encounters" Encounter
-  return {period: Encounter.period, 
-  start: start of Encounter.period
-  }
-
 define "Medical or Patient Reason for Not Screening for Depression":
   [ObservationNotDone: code ~ "PHQ-2"] NoScreen
     with "Qualifying Encounters" QualifyingEncounter
@@ -205,10 +187,6 @@ define "Depression Screening":
           and InitialDepressionScreening.value is not null
           and InitialDepressionScreening.status = 'final'
       sort by start of effective.toInterval()
-
-define "Debug Cancelled Adult Depression Screening":
-  [Observation: "PHQ-2"] InitialDepressionScreening
-      where InitialDepressionScreening.status = 'cancelled'
 
 define "Most Recent Adolescent Depression Screening Positive and Follow Up Provided":
   from
@@ -301,15 +279,19 @@ define "Debug Encounter":
 define "Debug Encounter Organization":
   from "Debug Encounter" E
     let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
-    return {period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}
+    return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}
 
-// Debug All Encounters in Period in TJS Sleep Clinic
-define "Debug Encounter TJS Sleep Clinic":
-  "Debug Encounter" ValidEncounter
-    where ValidEncounter.serviceProvider.reference = 'Organization/73ddf3b469d972df9e6afc0ddd7dcaacc28a89a25a4c941c90d277b4e27a57d7'
+// Debug All Visit Charges
+define "Debug Visit Charge":
+  (["ServiceRequest"]) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
 
-// Debug All Encounters in Period in Wound Care
-define "Debug Encounter Wound Care":
-  "Debug Encounter" ValidEncounter
-    where ValidEncounter.serviceProvider.reference = 'Organization/a795b0138bef574c34b011fc05a91188a9d6011d9981596e16025d0eb1d26799'
-      and ValidEncounter.serviceType ~ "Wound Care"
+// Debug All Encounters in Period and their charges
+define "Debug Encounter Visit Charge":
+  from "Debug Visit Charge" VC,
+    "Debug Encounter" E
+  where VC.encounter.reference = 'Encounter/' + E.id
+  return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, visitCharge: VC.code}

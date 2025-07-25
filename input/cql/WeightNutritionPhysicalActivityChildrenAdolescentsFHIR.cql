@@ -190,15 +190,19 @@ define "Debug Encounter":
 define "Debug Encounter Organization":
   from "Debug Encounter" E
     let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
-    return {period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}
+    return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}
 
-// Debug All Encounters in Period in TJS Sleep Clinic
-define "Debug Encounter TJS Sleep Clinic":
-  "Debug Encounter" ValidEncounter
-    where ValidEncounter.serviceProvider.reference = 'Organization/73ddf3b469d972df9e6afc0ddd7dcaacc28a89a25a4c941c90d277b4e27a57d7'
+// Debug All Visit Charges
+define "Debug Visit Charge":
+  (["ServiceRequest"]) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
 
-// Debug All Encounters in Period in Wound Care
-define "Debug Encounter Wound Care":
-  "Debug Encounter" ValidEncounter
-    where ValidEncounter.serviceProvider.reference = 'Organization/a795b0138bef574c34b011fc05a91188a9d6011d9981596e16025d0eb1d26799'
-      and ValidEncounter.serviceType ~ "Wound Care"
+// Debug All Encounters in Period and their charges
+define "Debug Encounter Visit Charge":
+  from "Debug Visit Charge" VC,
+    "Debug Encounter" E
+  where VC.encounter.reference = 'Encounter/' + E.id
+  return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, visitCharge: VC.code}
