@@ -177,6 +177,7 @@ define "SDE Race":
 define "SDE Sex":
   SDE."SDE Sex"
 
+// Debug functions for encounters and charges
 // Debug All Encounters in Period
 define "Debug Encounter":
   ( ([Encounter]).isEncounterPerformed()) ValidEncounter
