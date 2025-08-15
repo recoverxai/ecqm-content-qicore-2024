@@ -303,11 +303,11 @@ define "Encounter with Blood Pressure Reading":
   "Qualifying Encounter" QualifyingEncounter
     let EncounterLastSystolicBP: Last("Systolic Blood Pressure" BloodPressure
         where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
-        sort by start of effective.toInterval()
+        sort by issued
     ),
     EncounterLastDiastolicBP: Last("Diastolic Blood Pressure" BloodPressure
         where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
-        sort by start of effective.toInterval()
+        sort by issued
     )
   return {episode: QualifyingEncounter, systolicBP: EncounterLastSystolicBP, diastolicBP: EncounterLastDiastolicBP}
 
