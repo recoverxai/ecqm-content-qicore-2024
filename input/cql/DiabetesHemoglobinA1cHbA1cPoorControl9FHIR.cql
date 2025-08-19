@@ -72,6 +72,8 @@ define "Denominator Exclusions":
         AdvancedIllnessandFrailty."Living Long Term in a Nursing Home" is not null
         or
         exists (AdvancedIllnessandFrailty."Discharged to a Nursing Home")
+        or
+        exists (AdvancedIllnessandFrailty."Encounter in a Nursing Home")
       )
     )
     or exists PalliativeCare."Palliative Care in the Measurement Period"
@@ -90,9 +92,9 @@ define "Age at Start of Measurement Period":
   AgeInYearsAt(date from start of "Measurement Period")
 
 define "Diabetes Overlaps Measurement Period":
-  [Condition: "Diabetes"] Diabetes
-    where QICoreCommon."ToPrevalenceInterval" ( Diabetes ) overlaps "Measurement Period"
-      or (Diabetes.onset is null and Diabetes.isActive() and Diabetes.recordedDate before end of "Measurement Period")
+  [Condition: "Diabetes"] DiabetesDiagnosis
+    where QICoreCommon."ToPrevalenceInterval" ( DiabetesDiagnosis ) overlaps "Measurement Period"
+      or (DiabetesDiagnosis.onset is null and DiabetesDiagnosis.isActive() and DiabetesDiagnosis.recordedDate before end of "Measurement Period")
 
 define "Most Recent HbA1c":
   Last((([Observation: "HbA1c Laboratory Test"]).isLaboratoryTestPerformed()) RecentHbA1c

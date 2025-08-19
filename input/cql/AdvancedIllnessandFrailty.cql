@@ -13,6 +13,8 @@ codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "RXNORM": 'http://www.nlm.nih.gov/research/umls/rxnorm'
 codesystem "CERNER-71": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/71'
 codesystem "HL7-DD": 'http://terminology.hl7.org/CodeSystem/discharge-disposition'
+codesystem "HL7-RoleCode": 'http://terminology.hl7.org/CodeSystem/v3-RoleCode'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
 
 valueset "Acute Inpatient": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1083'
 valueset "Advanced Illness": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1082'
@@ -30,9 +32,13 @@ valueset "Encounter Inpatient": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1
 code "Housing status": '71802-3' from "LOINC" display 'Housing status'
 code "Lives in a nursing home (finding)": '160734000' from "SNOMEDCT" display 'Lives in a nursing home (finding)'
 code "Medical equipment used": '98181-1' from "LOINC" display 'Medical equipment used'
+code "Equipment observable": '364697006' from "SNOMEDCT" display 'Equipment observable (observable entity)'
 code "donepezil": '135447' from "RXNORM" display 'donepezil'
 code "Inpatient": '309308' from "CERNER-71" display 'Inpatient'
 code "Skilled nursing facility": 'snf' from "HL7-DD" display 'Skilled nursing facility'
+code "NCCF": 'NCCF' from "HL7-RoleCode" display 'Nursing or custodial care facility'
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
 
 parameter "Measurement Period" Interval<DateTime>
 
@@ -62,52 +68,74 @@ define "Criteria Indicating Frailty":
       where FrailtyDeviceOrder.doNotPerform() is not true
       and FrailtyDeviceOrder.authoredOn.toInterval() during day of "Measurement Period"
   )
-    union ( (([Observation: "Medical equipment used"]).isAssessmentPerformed()) EquipmentUsed
-        where EquipmentUsed.value as Concept in "Frailty Device" 
+    union ( (([Observation: "Medical equipment used"] 
+      union [Observation: "Equipment observable"]) O 
+      where O.status in { 'final', 'amended', 'corrected' }) EquipmentUsed
+        where (EquipmentUsed.value as Concept in "Frailty Device" 
+          or exists (EquipmentUsed.component C where C.value as Concept in "Frailty Device"))
         and EquipmentUsed.effective.toInterval() ends during day of "Measurement Period"
     )
-    union ( ([Condition: "Frailty Diagnosis"]) FrailtyDiagnosis
+    union ( ([Condition: "Frailty Diagnosis"] union [Condition: "Frailty Symptom"]) FrailtyDiagnosis
         where FrailtyDiagnosis.prevalenceInterval() overlaps day of "Measurement Period"
+          or (FrailtyDiagnosis.onset is null 
+            and FrailtyDiagnosis.recordedDate during day of "Measurement Period")
     )
-    union ( (([Encounter: "Frailty Encounter"]).isEncounterPerformed()) FrailtyEncounter
+    union ( (( [Encounter] ).isEncounterPerformed()) FrailtyEncounter
         where FrailtyEncounter.period.toInterval() overlaps day of "Measurement Period"
+          and exists ("Frailty Encounter Charge" VC where VC.encounter.reference = 'Encounter/' + FrailtyEncounter.id)
     )
     union ( (([Observation: "Frailty Symptom"]).isSymptom()) FrailtySymptom
         where FrailtySymptom.effective.toInterval() overlaps day of "Measurement Period"
     )
 
-define "Debug1 Has Criteria Indicating Frailty":
+define "Frailty Encounter Charge":
+  (["ServiceRequest": "Frailty Encounter"]) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
+
+define "Debug Frailty DeviceRequest":
   (([DeviceRequest: "Frailty Device"]).isDeviceOrder()) FrailtyDeviceOrder
       where FrailtyDeviceOrder.doNotPerform() is not true
       and FrailtyDeviceOrder.authoredOn.toInterval() during day of "Measurement Period"
 
-define "Debug2 Has Criteria Indicating Frailty":
-  (([Observation: "Medical equipment used"]).isAssessmentPerformed()) EquipmentUsed
-        where EquipmentUsed.value as Concept in "Frailty Device" 
+define "Debug Frailty Observation Equipment":
+  (([Observation: "Medical equipment used"] 
+    union [Observation: "Equipment observable"]) O 
+    where O.status in { 'final', 'amended', 'corrected' }) EquipmentUsed
+        where (EquipmentUsed.value as Concept in "Frailty Device" 
+          or exists (EquipmentUsed.component C where C.value as Concept in "Frailty Device"))
         and EquipmentUsed.effective.toInterval() ends during day of "Measurement Period"
 
-define "Debug3 Has Criteria Indicating Frailty":
-  ([Condition: "Frailty Diagnosis"]) FrailtyDiagnosis
+define "Debug2 Frailty Observation Equipment":
+  (([Observation: "Medical equipment used"] 
+    union [Observation: "Equipment observable"]) O 
+    where O.status in { 'final', 'amended', 'corrected' }) EquipmentUsed
+
+define "Debug Frailty Condition":
+  ([Condition: "Frailty Diagnosis"] union [Condition: "Frailty Symptom"]) FrailtyDiagnosis
         where FrailtyDiagnosis.prevalenceInterval() overlaps day of "Measurement Period"
+          or (FrailtyDiagnosis.onset is null 
+            and FrailtyDiagnosis.recordedDate during day of "Measurement Period")
 
-define "Debug4 Has Criteria Indicating Frailty":
-  (([Encounter: "Frailty Encounter"]).isEncounterPerformed()) FrailtyEncounter
+define "Debug Frailty Encounter":
+  (( [Encounter] ).isEncounterPerformed()) FrailtyEncounter
         where FrailtyEncounter.period.toInterval() overlaps day of "Measurement Period"
+          and exists ("Frailty Encounter Charge" VC where VC.encounter.reference = 'Encounter/' + FrailtyEncounter.id)
 
-define "Debug5 Has Criteria Indicating Frailty":
+define "Debug Frailty Observation Symptom":
   (([Observation: "Frailty Symptom"]).isSymptom()) FrailtySymptom
         where FrailtySymptom.effective.toInterval() overlaps day of "Measurement Period"
 
 define "Advanced Illness in Year Before or During Measurement Period":
   ["Condition": "Advanced Illness"] AdvancedIllnessDiagnosis
       where AdvancedIllnessDiagnosis.prevalenceInterval() starts during day of Interval[start of "Measurement Period" - 1 year, end of "Measurement Period"]
+        or (AdvancedIllnessDiagnosis.onset is null 
+          and AdvancedIllnessDiagnosis.recordedDate during day of Interval[start of "Measurement Period" - 1 year, end of "Measurement Period"])
 
-define "Debug1 Advanced Illness in Year Before or During Measurement Period":
-  ["Condition": "Advanced Illness"] AdvancedIllnessDiagnosis
-      where AdvancedIllnessDiagnosis.prevalenceInterval() starts during day of Interval[start of "Measurement Period" - 1 year, end of "Measurement Period"]
-
-define "Debug2 Advanced Illness in Year Before or During Measurement Period":
-  ["Condition": "Advanced Illness"] 
+define "Debug Advanced Illness":
+  ["Condition": "Advanced Illness"]
 
 define "Has Two Outpatient Encounters with Advanced Illness on Different Dates of Service":
   exists ( from
@@ -167,6 +195,18 @@ define "Discharged to a Nursing Home":
     union [Encounter: "Inpatient"]).isEncounterPerformed()) InpatientEncounter
     where InpatientEncounter.hospitalization.dischargeDisposition ~ "Skilled nursing facility"
         and InpatientEncounter.period.toInterval() ends during day of "Measurement Period"
+
+define "Encounter Locations in Contained":
+  flatten ((([Encounter]).isEncounterPerformed()) NursingHomeEncounter
+    where exists (NursingHomeEncounter.contained C where C is Location)
+        and NursingHomeEncounter.period.toInterval() ends during day of "Measurement Period"
+  return NursingHomeEncounter.contained C where C is Location return {encounter: NursingHomeEncounter, location: C as Location}
+  )
+
+define "Encounter in a Nursing Home":
+  "Encounter Locations in Contained" L
+    where exists (L.location.type t where t ~ "NCCF")
+  return L.encounter
 
 define "Patient Age 66 or Older at End of Measurement Period":
   from (AgeInYearsAt(date from end of "Measurement Period")) age 
