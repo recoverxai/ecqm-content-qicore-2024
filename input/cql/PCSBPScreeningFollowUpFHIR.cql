@@ -118,16 +118,39 @@ define "Age at Start of Measurement Period":
 define "Encounter after Diagnosis of Hypertension":
   from
     "Qualifying Encounter" QualifyingEncounter,
-    [Condition: "Diagnosis of Hypertension"] Hypertension
-  where Coalesce( Hypertension.onset, Hypertension.recordedDate ) before QualifyingEncounter.period
-    and Hypertension.isActive ( ) and 
+    "Active Hypertension With Date" Hypertension
+  where 
+    Hypertension.date before QualifyingEncounter.period
+    and
     not exists (
-      [Condition: "Diagnosis of Hypertension"] InactiveHypertension
-        where InactiveHypertension.isInActive() 
-        and Coalesce( Hypertension.onset, Hypertension.recordedDate ) before Coalesce( InactiveHypertension.onset, InactiveHypertension.recordedDate )
-        and Coalesce( InactiveHypertension.onset, InactiveHypertension.recordedDate ) before QualifyingEncounter.period
+      "Inactive Hypertension With Date" InactiveHypertension
+        where
+          Hypertension.date before InactiveHypertension.date
+          and InactiveHypertension.date before QualifyingEncounter.period
     )
-  return {episode: QualifyingEncounter, "1_Diagnosis of Hypertension": Hypertension}
+  return {episode: QualifyingEncounter, "1_Diagnosis of Hypertension": Hypertension.activeHypertension}
+
+define "Active Hypertension With Date":
+  from
+    [Condition: "Diagnosis of Hypertension"] Hypertension,
+    [Encounter] HypertensionEncounter
+  where (
+        Hypertension.encounter.reference = 'Encounter/' & HypertensionEncounter.id
+    )
+    and Hypertension.isActive ( )
+  return {
+    activeHypertension: Hypertension,
+    date: Min ({ start of HypertensionEncounter.period.toInterval(), Coalesce( Hypertension.onset.toDate().toDateTime(), Hypertension.recordedDate ) })
+  }
+
+define "Inactive Hypertension With Date":
+  from
+    [Condition: "Diagnosis of Hypertension"] InactiveHypertension
+  where InactiveHypertension.isInActive ( )
+  return {
+    activeHypertension: InactiveHypertension,
+    date: Coalesce( InactiveHypertension.onset.toDate().toDateTime(), InactiveHypertension.recordedDate )
+  }
 
 // Numerator conditions
 // Normal BP
