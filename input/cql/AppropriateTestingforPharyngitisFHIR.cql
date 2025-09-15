@@ -54,7 +54,7 @@ valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.11
 code "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])": '99217' from "CPT" display 'Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])'
 code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unlisted preventive medicine service'
 code "Azithromycin 5 Day Dose Pack 250 mg oral tablet": '4144756' from "CERNER_SYNONYM" display 'Azithromycin 5 Day Dose Pack 250 mg oral tablet'
-code "Sinusitis (disorder)": '36971009' from "SNOMEDCT" display 'Sinusitis (disorder)'
+code "Candidiasis of mouth (disorder)": '79740000' from "SNOMEDCT" display 'Candidiasis of mouth (disorder)'
 
 // HCPCS codes from Online Assessments value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
 code "G0071": 'G0071' from "HCPCS" display 'G0071'
@@ -200,7 +200,8 @@ define "Has Competing Diagnosis History":
 define "Competing Diagnosis for Respiratory Conditions":
   ([Condition: "Competing Conditions for Respiratory Conditions - Part 1"]
     union [Condition: "Competing Conditions for Respiratory Conditions - Part 2"]
-    union [Condition: "Competing Conditions for Respiratory Conditions - Part 3"]) 
+    union [Condition: "Competing Conditions for Respiratory Conditions - Part 3"]
+    union [Condition: "Candidiasis of mouth (disorder)"]) 
 
 // Has Comorbid Condition History within 1 year prior to the encounter date for pharyngitis or tonsillitis
 define "Has Comorbid Condition History":
