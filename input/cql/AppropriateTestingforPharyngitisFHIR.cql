@@ -11,7 +11,6 @@ include Status version '1.6.000' called Status
 include QICoreCommon version '2.0.000' called QICoreCommon
 
 codesystem "CPT": 'http://www.ama-assn.org/go/cpt'
-codesystem "CERNER_SYNONYM": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/synonym'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "ICD": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
@@ -53,7 +52,6 @@ valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.11
 
 code "Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])": '99217' from "CPT" display 'Observation care discharge day management (This code is to be utilized to report all services provided to a patient on discharge from outpatient hospital observation status if the discharge is on other than the initial date of observation status. To report services to a patient designated as observation status or inpatient status and discharged on the same date, use the codes for Observation or Inpatient Care Services [including Admission and Discharge Services, 99234-99236 as appropriate.])'
 code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unlisted preventive medicine service'
-code "Azithromycin 5 Day Dose Pack 250 mg oral tablet": '4144756' from "CERNER_SYNONYM" display 'Azithromycin 5 Day Dose Pack 250 mg oral tablet'
 code "Candidiasis of mouth (disorder)": '79740000' from "SNOMEDCT" display 'Candidiasis of mouth (disorder)'
 
 // HCPCS codes from Online Assessments value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
@@ -119,8 +117,7 @@ define "Encounter With Pharyngitis or Tonsillitis With Antibiotic":
 define "Encounter With Antibiotic Ordered Within Three Days":
   from
     "Qualifying Encounter" EDOrAmbulatoryVisit,
-    (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
-    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]).isActiveCompletedStoppedMedicationOrder() ) AntibioticOrdered
+    (( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]).isActiveCompletedStoppedMedicationOrder() ) AntibioticOrdered
     where EDOrAmbulatoryVisit.period.toInterval() starts 3 days or less on or before AntibioticOrdered.authoredOn
     return {episode: EDOrAmbulatoryVisit, "Antibiotic Medication": AntibioticOrdered}
 
@@ -291,15 +288,11 @@ define "Debug Visit Intervals":
 
 // Get the list of active/completed/stopped antibiotic medication requests for this patient
 define "Debug Medication Requests":
-  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
-    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
-  ).isActiveCompletedStoppedMedicationOrder()
+  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]).isActiveCompletedStoppedMedicationOrder()
 
 // Get the authored dates of the antibiotic medication requests
 define "Debug Medication Authored Dates":
-  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]
-    union [MedicationRequest: "Azithromycin 5 Day Dose Pack 250 mg oral tablet"]
-  ).isActiveCompletedStoppedMedicationOrder().authoredOn
+  ( [MedicationRequest: "Antibiotic Medications for Pharyngitis"]).isActiveCompletedStoppedMedicationOrder().authoredOn
 
 
 /**
