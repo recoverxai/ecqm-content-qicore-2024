@@ -39,7 +39,6 @@ code "Follow-up 4-6 months (finding)": '183625007' from "SNOMEDCT" display 'Foll
 code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pressure'
 code "virtual": 'VR' from "ActCode" display 'virtual'
 code "Referral Management": '4659041987' from "CERNER-SR" display 'Referral Management'
-code "Equimed": '12888890229' from "CERNER-ServiceType" display 'Equimed'
 code "Lab": '2554653267' from "CERNER-ServiceType" display 'Lab'
 code "Telehealth": '2709938661' from "CERNER-ServiceType" display 'Telehealth'
 
@@ -120,13 +119,13 @@ define "Encounter after Diagnosis of Hypertension":
     "Qualifying Encounter" QualifyingEncounter,
     "Active Hypertension With Date" Hypertension
   where 
-    Hypertension.date before QualifyingEncounter.period
+    Hypertension.date before day of QualifyingEncounter.period
     and
     not exists (
       "Inactive Hypertension With Date" InactiveHypertension
         where
           Hypertension.date before InactiveHypertension.date
-          and InactiveHypertension.date before QualifyingEncounter.period
+          and InactiveHypertension.date before day of QualifyingEncounter.period
     )
   return {episode: QualifyingEncounter, "1_Diagnosis of Hypertension": Hypertension.activeHypertension}
 
@@ -151,6 +150,9 @@ define "Inactive Hypertension With Date":
     activeHypertension: InactiveHypertension,
     date: Coalesce( InactiveHypertension.onset.toDate().toDateTime(), InactiveHypertension.recordedDate )
   }
+
+define "Debug Hypertension":
+  [Condition: "Diagnosis of Hypertension"]
 
 // Numerator conditions
 // Normal BP
@@ -299,7 +301,6 @@ define "Qualifying Encounter":
     where ValidEncounter.period.toInterval ( ) during day of "Measurement Period"
       and ValidEncounter.status ~ 'finished'
       and ValidEncounter.class !~ "virtual"
-      and ValidEncounter.serviceType !~ "Equimed"
       and ValidEncounter.serviceType !~ "Lab"
       and ValidEncounter.serviceType !~ "Telehealth"
       and exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + ValidEncounter.id)
@@ -498,7 +499,6 @@ define "Debug Encounter":
     where ValidEncounter.period.toInterval ( ) starts during day of "Measurement Period"
       and ValidEncounter.status ~ 'finished'
       and ValidEncounter.class !~ "virtual"
-      and ValidEncounter.serviceType !~ "Equimed"
       and ValidEncounter.serviceType !~ "Lab"
       and ValidEncounter.serviceType !~ "Telehealth"
 
