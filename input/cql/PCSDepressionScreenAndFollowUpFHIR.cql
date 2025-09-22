@@ -229,6 +229,11 @@ define "Initial Depression Screening":
           and InitialDepressionScreening.status = 'final'
       sort by start of effective.toInterval()
 
+define "Debug All Initial Depression Screening":
+  [Observation: "PHQ-2"] InitialDepressionScreening
+      where InitialDepressionScreening.value is not null and InitialDepressionScreening.status = 'final'
+      sort by start of effective.toInterval()
+
 define "Most Recent Detailed Depression Screening":
   Last([Observation: "PHQ-9"] DetailedDepressionScreening
       with "Most Recent Initial Depression Screening" InitialDepressionScreening
