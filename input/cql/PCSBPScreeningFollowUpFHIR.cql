@@ -79,6 +79,12 @@ define "Numerator":
     // union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Followup".episode )
     union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Referral".episode )
 
+define "Potential Numerator":
+  ( "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Referral without Hypertensive Reason".episode )
+    union ( "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80 and Referral without Hypertensive Reason".episode )
+    union ( "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Referral without Hypertensive Reason".episode )
+    union ( "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Referral without Hypertensive Reason".episode )
+
 // define "Denominator Exceptions":
 //   "Encounter with Medical Reason for Not Obtaining or Patient Declined Blood Pressure Measurement"
 //     union "Encounter with Order for Hypertension Follow Up Declined by Patient"
@@ -179,6 +185,13 @@ define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP le
   where Referral.authoredOn during day of ElevatedEncounter.episode.period
   return {episode: ElevatedEncounter.episode, "1_Systolic BP": ElevatedEncounter.systolicBP, "2_Diastolic BP": ElevatedEncounter.diastolicBP, "3_Referral": Referral}
 
+define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80 and Referral without Hypertensive Reason":
+  from
+    "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80" ElevatedEncounter,
+    "Referral to Alternate or Primary Healthcare Professional not for Hypertensive Reading" Referral
+  where Referral.authoredOn during day of ElevatedEncounter.episode.period
+  return {episode: ElevatedEncounter.episode, "1_Systolic BP": ElevatedEncounter.systolicBP, "2_Diastolic BP": ElevatedEncounter.diastolicBP, "3_Referral": Referral}
+
 define "Encounter with Elevated Blood Pressure Reading SBP 120 to 129 AND DBP less than 80":
   "Encounter with Blood Pressure Reading" EncounterBP
     where EncounterBP.systolicBP.systolicReading() in Interval[120 'mm[Hg]', 129 'mm[Hg]' )
@@ -200,6 +213,13 @@ define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 1
   from
     "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter,
     "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
+  where Referral.authoredOn during day of FirstHTNEncounter.episode.period
+  return {episode: FirstHTNEncounter.episode, "1_Systolic BP": FirstHTNEncounter.systolicBP, "2_Diastolic BP": FirstHTNEncounter.diastolicBP, "3_Referral": Referral}
+
+define "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80 and Referral without Hypertensive Reason":
+  from
+    "Encounter with First Hypertensive Reading SBP Greater than or Equal to 130 OR DBP Greater than or Equal to 80" FirstHTNEncounter,
+    "Referral to Alternate or Primary Healthcare Professional not for Hypertensive Reading" Referral
   where Referral.authoredOn during day of FirstHTNEncounter.episode.period
   return {episode: FirstHTNEncounter.episode, "1_Systolic BP": FirstHTNEncounter.systolicBP, "2_Diastolic BP": FirstHTNEncounter.diastolicBP, "3_Referral": Referral}
 
@@ -235,6 +255,13 @@ define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 8
   from
     "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89" SecondHTNEncounter,
     "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
+  where Referral.authoredOn during day of SecondHTNEncounter.episode.period
+  return {episode: SecondHTNEncounter.episode, "1_Systolic BP": SecondHTNEncounter.systolicBP, "2_Diastolic BP": SecondHTNEncounter.diastolicBP, "3_Referral": Referral}
+
+define "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89 and Referral without Hypertensive Reason":
+  from
+    "Encounter with Second Hypertensive Reading SBP 130 to 139 OR DBP 80 to 89" SecondHTNEncounter,
+    "Referral to Alternate or Primary Healthcare Professional not for Hypertensive Reading" Referral
   where Referral.authoredOn during day of SecondHTNEncounter.episode.period
   return {episode: SecondHTNEncounter.episode, "1_Systolic BP": SecondHTNEncounter.systolicBP, "2_Diastolic BP": SecondHTNEncounter.diastolicBP, "3_Referral": Referral}
 
@@ -276,6 +303,13 @@ define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 
   from
     "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90" SecondHTN140Encounter,
     "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading" Referral
+  where Referral.authoredOn during day of SecondHTN140Encounter.episode.period
+  return {episode: SecondHTN140Encounter.episode, "1_Systolic BP": SecondHTN140Encounter.systolicBP, "2_Diastolic BP": SecondHTN140Encounter.diastolicBP, "3_Referral": Referral}
+
+define "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90 and Referral without Hypertensive Reason":
+  from
+    "Encounter with Second Hypertensive Reading SBP Greater than or Equal to 140 OR DBP Greater than or Equal to 90" SecondHTN140Encounter,
+    "Referral to Alternate or Primary Healthcare Professional not for Hypertensive Reading" Referral
   where Referral.authoredOn during day of SecondHTN140Encounter.episode.period
   return {episode: SecondHTN140Encounter.episode, "1_Systolic BP": SecondHTN140Encounter.systolicBP, "2_Diastolic BP": SecondHTN140Encounter.diastolicBP, "3_Referral": Referral}
 
@@ -326,11 +360,11 @@ define "Diastolic Blood Pressure":
 define "Encounter with Blood Pressure Reading":
   "Qualifying Encounter" QualifyingEncounter
     let EncounterLastSystolicBP: Last("Systolic Blood Pressure" BloodPressure
-        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        where BloodPressure.encounter.reference = 'Encounter/' + QualifyingEncounter.id
         sort by issued
     ),
     EncounterLastDiastolicBP: Last("Diastolic Blood Pressure" BloodPressure
-        where BloodPressure.effective.toInterval() ends during QualifyingEncounter.period
+        where BloodPressure.encounter.reference = 'Encounter/' + QualifyingEncounter.id
         sort by issued
     )
   return {episode: QualifyingEncounter, systolicBP: EncounterLastSystolicBP, diastolicBP: EncounterLastDiastolicBP}
@@ -355,11 +389,19 @@ define "Encounter with Blood Pressure Reading":
 //     where NonPharmaInterventions.intent ~ 'order'
 
 define "Referral to Alternate or Primary Healthcare Professional for Hypertensive Reading":
-  ([ServiceRequest: "Referral to Primary Care or Alternate Provider"]
-    union [ServiceRequest: code = "Referral Management"]) Referral
+  "Referral to Alternate or Primary Healthcare Professional" Referral
     where (Referral.reasonCode in "Finding of Elevated Blood Pressure or Hypertension"
       or Referral.reasonCode in "Diagnosis of Hypertension")
-      and Referral.intent ~ 'order'
+
+define "Referral to Alternate or Primary Healthcare Professional not for Hypertensive Reading":
+  "Referral to Alternate or Primary Healthcare Professional" Referral
+    where not ((Referral.reasonCode in "Finding of Elevated Blood Pressure or Hypertension"
+      or Referral.reasonCode in "Diagnosis of Hypertension"))
+
+define "Referral to Alternate or Primary Healthcare Professional":
+  ([ServiceRequest: "Referral to Primary Care or Alternate Provider"]
+    union [ServiceRequest: code = "Referral Management"]) Referral
+    where Referral.intent ~ 'order'
 
 // define "NonPharmacological Intervention Not Ordered":
 //   ( [ServiceNotRequested: "Lifestyle Recommendation"]
