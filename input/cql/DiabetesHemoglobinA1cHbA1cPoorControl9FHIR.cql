@@ -48,7 +48,7 @@ parameter "Measurement Period" Interval<DateTime>default Interval[@2025-01-01T00
 context Patient
 
 define "Initial Population":
-  "Age at Start of Measurement Period" in Interval[18, 75]
+  "Age at End of Measurement Period" in Interval[18, 75]
     and exists "Qualifying Encounters"
     and exists "Diabetes Overlaps Measurement Period"
 
@@ -88,8 +88,8 @@ define "Numerator":
   )
     or "Has No Record Of HbA1c"
 
-define "Age at Start of Measurement Period":
-  AgeInYearsAt(date from start of "Measurement Period")
+define "Age at End of Measurement Period":
+  AgeInYearsAt(date from end of "Measurement Period")
 
 define "Diabetes Overlaps Measurement Period":
   [Condition: "Diabetes"] DiabetesDiagnosis
