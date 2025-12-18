@@ -448,6 +448,28 @@ else
       Interval[start of ToInterval(condition.onset), abatementDate]
 
 /*
+@description: Safely returns prevalenceInterval
+*/
+define fluent function safePrevalenceInterval(condition Condition):
+if condition.clinicalStatus ~ "active"
+  or condition.clinicalStatus ~ "recurrence"
+  or condition.clinicalStatus ~ "relapse" then
+  if (start of condition.onset.toInterval()) is not null and 
+    (end of condition.abatementInterval()) is not null and
+    (start of condition.onset.toInterval()) > (end of condition.abatementInterval()) then
+    Interval[start of condition.onset.toInterval(), null)
+  else
+    Interval[start of condition.onset.toInterval(), end of condition.abatementInterval()]
+else
+    (end of ToAbatementInterval(condition)) abatementDate
+    return if abatementDate is null then
+      Interval[start of ToInterval(condition.onset), abatementDate)
+    else if (start of ToInterval(condition.onset)) > abatementDate then
+      Interval[null, abatementDate]
+    else
+      Interval[start of ToInterval(condition.onset), abatementDate]
+
+/*
 @description: Returns the tail of the given uri (i.e. everything after the last slash in the URI).
 @comment: This function can be used to determine the logical id of a given resource. It can be used in
 a single-server environment to trace references. However, this function does not attempt to resolve

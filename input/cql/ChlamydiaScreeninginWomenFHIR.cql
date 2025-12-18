@@ -121,7 +121,7 @@ define "Diagnoses Identifying Sexual Activity":
   ( [Condition: "Diagnoses Used to Indicate Sexual Activity"]
       union [Condition: "HIV"]
       union [Condition: "Complications of Pregnancy, Childbirth and the Puerperium"] ) SexualActivityDiagnosis
-      where QICoreCommon."ToPrevalenceInterval" ( SexualActivityDiagnosis ) overlaps "Measurement Period"
+      where SexualActivityDiagnosis.safePrevalenceInterval() overlaps "Measurement Period"
 
 define "Active Contraceptive Medications":
   ( "Active Medication Plan" ( ["MedicationRequest": "Contraceptive Medications"]
@@ -166,7 +166,7 @@ define "Procedures Identifying Sexual Activity":
       where QICoreCommon."ToInterval" ( ProceduresForSexualActivity.performed ) during day of "Measurement Period")
   union
   (( [Condition: "Procedures Used to Indicate Sexual Activity"] ) SexualActivityDiagnosis
-      where QICoreCommon."ToPrevalenceInterval" ( SexualActivityDiagnosis ) overlaps "Measurement Period")
+      where SexualActivityDiagnosis.safePrevalenceInterval() overlaps "Measurement Period")
 
 define "Denominator":
   "Initial Population"
