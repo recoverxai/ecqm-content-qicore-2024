@@ -30,6 +30,7 @@ code "AMB": 'AMB' from "ActCode" display 'Ambulatory'
 code "C-SSRS-1": '2551882259' from "Cerner72" display 'C-SSRS-1'
 code "C-SSRS-2": '2816973581' from "Cerner72" display 'C-SSRS-2'
 code "C-SSRS-6": '2816973685' from "Cerner72" display 'C-SSRS-6'
+code "PHQ-9 Question 9": '4316176' from "Cerner72" display 'Thoughts Better Off Dead or Hurting Self'
 
 code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
 code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
@@ -61,6 +62,8 @@ define "Denominator":
 
 define "Numerator":
   "Encounter with Suicide Risk Assessment".episode
+  union
+  "Encounter with PHQ9 Question 9".episode
 
 define "Encounter with Suicide Risk Assessment":
   from "Qualifying Encounter" MDDEncounter,
@@ -78,6 +81,16 @@ define "Encounter with Suicide Risk Assessment":
     "1_C-SSRS-1": CSSRS1,
     "2_C-SSRS-2": CSSRS2,
     "3_C-SSRS-6": CSSRS6
+  }
+
+define "Encounter with PHQ9 Question 9":
+  from "Qualifying Encounter" MDDEncounter,
+       ["Observation": "PHQ-9 Question 9"] PHQ9Q9
+    where PHQ9Q9.status = 'final'
+      and QICoreCommon."ToInterval"(PHQ9Q9.effective) during MDDEncounter.period
+  return {
+    episode: MDDEncounter,
+    "1_PHQ-9 Question 9": PHQ9Q9
   }
 
 define "Qualifying Encounter And Age at Start of Measurement Period":
