@@ -158,20 +158,32 @@ define "Lowest Diastolic BP and Value on Most Recent Blood Pressure Day":
   )
 
 define "Qualifying Systolic Blood Pressure Reading":
-  "Systolic Blood Pressure" BloodPressure
-    where ( not ( ( BloodPressure.encounter.getEncounter ( ) ).class.code in { 'EMER', 'IMP', 'ACUTE', 'NONAC', 'PRENC', 'SS' } ) )
-      and BloodPressure.effective.latest ( ) during day of "Measurement Period"
+  from
+    "Systolic Blood Pressure in Measurement Period" BloodPressure,
+    "Non-emergency Non-inpatient Encounters" EncounterWithBP
+  where BloodPressure.encounter.reference = 'Encounter/' + EncounterWithBP.id
+  return BloodPressure
 
 define "Qualifying Diastolic Blood Pressure Reading":
-  "Diastolic Blood Pressure" BloodPressure
-    where ( not ( ( BloodPressure.encounter.getEncounter ( ) ).class.code in { 'EMER', 'IMP', 'ACUTE', 'NONAC', 'PRENC', 'SS' } ) )
-      and BloodPressure.effective.latest ( ) during day of "Measurement Period"
+  from
+    "Diastolic Blood Pressure in Measurement Period" BloodPressure,
+    "Non-emergency Non-inpatient Encounters" EncounterWithBP
+  where BloodPressure.encounter.reference = 'Encounter/' + EncounterWithBP.id
+  return BloodPressure
 
-define "Systolic Blood Pressure":
-  (["observation-bp"]).isObservationSystolicBP ( )
+define "Systolic Blood Pressure in Measurement Period":
+  ((["observation-bp"]).isObservationSystolicBP ( )) BloodPressure
+    where BloodPressure.effective.latest ( ) during day of "Measurement Period"
 
-define "Diastolic Blood Pressure":
-  (["observation-bp"]).isObservationDiastolicBP ( )
+define "Diastolic Blood Pressure in Measurement Period":
+  ((["observation-bp"]).isObservationDiastolicBP ( )) BloodPressure
+    where BloodPressure.effective.latest ( ) during day of "Measurement Period"
+
+define "Non-emergency Non-inpatient Encounters":
+  ( ["Encounter"] E
+      where E.period overlaps "Measurement Period"
+        and not (E.class.code in { 'EMER', 'IMP', 'ACUTE', 'NONAC', 'PRENC', 'SS' })
+  ) EncounterWithBP
 
 define fluent function getEncounter(reference Reference):
   singleton from ( [Encounter] E
