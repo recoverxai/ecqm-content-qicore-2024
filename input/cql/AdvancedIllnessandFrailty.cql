@@ -163,7 +163,7 @@ define "Has Inpatient Encounter with Advanced Illness":
 
 define "Dementia Medications in Year Before or During Measurement Period":
   ( ([MedicationRequest: "Dementia Medications"]
-    union [MedicationRequest: "donepezil"]).isMedicationActive()) DementiaMedication
+    union [MedicationRequest: "donepezil"]).isMedicationOrder()) DementiaMedication
       where DementiaMedication.doNotPerform is not true and
       CMD."MedicationRequestPeriod" ( DementiaMedication ) overlaps day of Interval[start of "Measurement Period" - 1 year, 
         end of "Measurement Period"]
