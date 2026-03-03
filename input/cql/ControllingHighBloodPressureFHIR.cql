@@ -7,12 +7,14 @@ include QICoreCommon version '2.0.000' called QICoreCommon
 include CQMCommon version '2.0.000' called CQMCommon
 include SupplementalDataElements version '3.4.000' called SDE
 include Status version '1.6.000' called Status
-include AdvancedIllnessandFrailty version '1.8.000' called AIFrailLTCF
+include AdvancedIllnessandFrailty version '1.8.000' called AdvancedIllnessandFrailty
 include AdultOutpatientEncounters version '4.8.000' called AdultOutpatientEncounters
 include Hospice version '6.9.000' called Hospice
 include PalliativeCare version '1.9.000' called PalliativeCare
 
 codesystem "LOINC": 'http://loinc.org'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
+codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 
 valueset "Chronic Kidney Disease, Stage 5": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1002'
 valueset "Dialysis Services": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.109.12.1013'
@@ -28,40 +30,88 @@ valueset "Pregnancy": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.
 code "Diastolic blood pressure": '8462-4' from "LOINC" display 'Diastolic blood pressure'
 code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pressure'
 
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
+
+code "I12.9 Hypertensive CKD": 'I12.9' from "ICD-10-CM" display 'Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease'
+
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
 
 context Patient
 
 define "Initial Population":
-  AgeInYearsAt(date from 
-    end of "Measurement Period"
-  ) in Interval[18, 85]
+  "Age at End of Measurement Period" in Interval[18, 85]
     and exists "Essential Hypertension Diagnosis"
-    and exists AdultOutpatientEncounters."Qualifying Encounters"
+    and exists "Qualifying Encounters"
+
+define "Age at End of Measurement Period":
+  AgeInYearsAt(date from end of "Measurement Period")
+
+define "Qualifying Encounters":
+  AdultOutpatientEncounters."Qualifying Encounters"
 
 define "Essential Hypertension Diagnosis":
   ( [Condition: "Essential Hypertension"] ) Hypertension
     where Hypertension.prevalenceInterval ( ) overlaps Interval[start of "Measurement Period", start of "Measurement Period" + 6 months )
+      or (Hypertension.onset is null 
+            and Hypertension.recordedDate before (start of "Measurement Period" + 6 months) )
+
+define "Debug Essential Hypertension Diagnosis":
+  ( [Condition: "Essential Hypertension"] ) Hypertension
 
 define "Denominator":
   "Initial Population"
 
 define "Denominator Exclusions":
-  Hospice."Has Hospice Services"
-    or exists ( "Pregnancy or Renal Diagnosis" )
+  exists Hospice."Hospice Services"
+    or exists ( "Pregnancy Diagnosis Which Overlaps Measurement Period" ) 
+    or exists ( "Renal Diagnosis" )
     or exists ( "End Stage Renal Disease Procedures" )
     or exists ( "End Stage Renal Disease Encounter" )
-    or AIFrailLTCF."Is Age 66 to 80 with Advanced Illness and Frailty or Is Age 81 or Older with Frailty"
-    or AIFrailLTCF."Is Age 66 or Older Living Long Term in a Nursing Home"
-    or PalliativeCare."Has Palliative Care in the Measurement Period"
+    or ( 
+      AdvancedIllnessandFrailty."Patient Age 66 to 80 at End of Measurement Period" is not null
+      and exists (AdvancedIllnessandFrailty."Criteria Indicating Frailty")
+      and ( exists (AdvancedIllnessandFrailty."Advanced Illness in Year Before or During Measurement Period")
+        or exists (AdvancedIllnessandFrailty."Dementia Medications in Year Before or During Measurement Period")
+      )
+    )
+    or ( 
+      AdvancedIllnessandFrailty."Patient Age 81 or Older at End of Measurement Period" is not null
+        and exists (AdvancedIllnessandFrailty."Criteria Indicating Frailty")
+    )
+    or (
+      AdvancedIllnessandFrailty."Patient Age 66 or Older at End of Measurement Period" is not null
+      and 
+      (
+        AdvancedIllnessandFrailty."Living Long Term in a Nursing Home" is not null
+        or
+        exists (AdvancedIllnessandFrailty."Discharged to a Nursing Home")
+        or
+        exists (AdvancedIllnessandFrailty."Encounter in a Nursing Home")
+      )
+    )
+    or exists PalliativeCare."Palliative Care in the Measurement Period"
 
-define "Pregnancy or Renal Diagnosis":
-  ( [Condition: "Pregnancy"]
-    union [Condition: "End Stage Renal Disease"]
+define "Potential Denominator Exclusion":
+  exists "Hypertensive CKD"
+  and not "Denominator Exclusions"
+
+define "Hypertensive CKD":
+  ( [Condition: "I12.9 Hypertensive CKD"] ) HypertensiveCKD
+    where HypertensiveCKD.prevalenceInterval ( ) overlaps "Measurement Period"
+      or (HypertensiveCKD.onset is null 
+            and HypertensiveCKD.recordedDate before end of "Measurement Period")
+
+define "Renal Diagnosis":
+  ( [Condition: "End Stage Renal Disease"]
     union [Condition: "Kidney Transplant Recipient"]
     union [Condition: "Chronic Kidney Disease, Stage 5"] ) PregnancyESRDDiagnosis
     where PregnancyESRDDiagnosis.prevalenceInterval ( ) overlaps "Measurement Period"
+
+define "Pregnancy Diagnosis Which Overlaps Measurement Period":
+  ( Status."Active Condition" ( [Condition: "Pregnancy"] ) ) PregnancyCondition
+    where Coalesce( PregnancyCondition.onset, PregnancyCondition.recordedDate ) during day of "Measurement Period"
 
 define "End Stage Renal Disease Procedures":
   ( ( [Procedure: "Kidney Transplant"]
@@ -74,44 +124,84 @@ define "End Stage Renal Disease Encounter":
     where ESRDEncounter.period.toInterval ( ) starts on or before end of "Measurement Period"
 
 define "Numerator":
-  "Has Systolic Blood Pressure Less Than 140"
-    and "Has Diastolic Blood Pressure Less Than 90"
+  "Lowest Systolic Reading on Most Recent Blood Pressure Day" is not null
+      and "Lowest Diastolic Reading on Most Recent Blood Pressure Day" is not null
+      and "Has Systolic Blood Pressure Less Than 140"
+      and "Has Diastolic Blood Pressure Less Than 90"
 
 define "Has Systolic Blood Pressure Less Than 140":
-  "Lowest Systolic Reading on Most Recent Blood Pressure Day" < 140 'mm[Hg]'
+  "Lowest Systolic BP and Value on Most Recent Blood Pressure Day".sbp < 140 'mm[Hg]'
 
 define "Has Diastolic Blood Pressure Less Than 90":
-  "Lowest Diastolic Reading on Most Recent Blood Pressure Day" < 90 'mm[Hg]'
+  "Lowest Diastolic BP and Value on Most Recent Blood Pressure Day".dbp < 90 'mm[Hg]'
 
 define "Lowest Systolic Reading on Most Recent Blood Pressure Day":
-  First("Qualifying Systolic Blood Pressure Reading" SBPReading
-      where SBPReading.effective.latest() same day as "Most Recent Blood Pressure Day"
-      return singleton from(SBPReading.component SBPComponent
-          where SBPComponent.code ~ "Systolic blood pressure"
-          return SBPComponent.value as Quantity
-      )
-      sort asc
+  "Lowest Systolic BP and Value on Most Recent Blood Pressure Day".observation
+
+define "Lowest Systolic BP and Value on Most Recent Blood Pressure Day":
+  First(
+    (
+      "Qualifying Systolic Blood Pressure Reading" BP
+        where BP.effective.latest() same day as "Most Recent Blood Pressure Day"
+        return {
+          observation: BP,
+          sbp: singleton from (
+            BP.component C
+              where C.code ~ "Systolic blood pressure"
+              return (C.value as Quantity)
+          )
+        }
+    ) tuple
+    sort by sbp.value asc
   )
 
 define "Lowest Diastolic Reading on Most Recent Blood Pressure Day":
-  First("Qualifying Diastolic Blood Pressure Reading" DBPReading
-      where DBPReading.effective.latest() same day as "Most Recent Blood Pressure Day"
-      return singleton from(DBPReading.component DBPComponent
-          where DBPComponent.code ~ "Diastolic blood pressure"
-          return DBPComponent.value as Quantity
-      )
-      sort asc
+  "Lowest Diastolic BP and Value on Most Recent Blood Pressure Day".observation
+
+define "Lowest Diastolic BP and Value on Most Recent Blood Pressure Day":
+  First(
+    (
+      "Qualifying Diastolic Blood Pressure Reading" BP
+        where BP.effective.latest() same day as "Most Recent Blood Pressure Day"
+        return {
+          observation: BP,
+          dbp: singleton from (
+            BP.component C
+              where C.code ~ "Diastolic blood pressure"
+              return (C.value as Quantity)
+          )
+        }
+    ) tuple
+    sort by dbp.value asc
   )
 
 define "Qualifying Systolic Blood Pressure Reading":
-  ( ( ["observation-bp"] ).isObservationBP ( ) ) BloodPressure
-    where ( not ( ( BloodPressure.encounter.getEncounter ( ) ).class.code in { 'EMER', 'IMP', 'ACUTE', 'NONAC', 'PRENC', 'SS' } ) )
-      and BloodPressure.effective.latest ( ) during day of "Measurement Period"
+  from
+    "Systolic Blood Pressure in Measurement Period" BloodPressure,
+    "Non-emergency Non-inpatient Encounters" EncounterWithBP
+  where BloodPressure.encounter.reference = 'Encounter/' + EncounterWithBP.id
+  return BloodPressure
 
 define "Qualifying Diastolic Blood Pressure Reading":
-  ( ( ["observation-bp"] ).isObservationBP ( ) ) BloodPressure
-    where ( not ( ( BloodPressure.encounter.getEncounter ( ) ).class.code in { 'EMER', 'IMP', 'ACUTE', 'NONAC', 'PRENC', 'SS' } ) )
-      and BloodPressure.effective.latest ( ) during day of "Measurement Period"
+  from
+    "Diastolic Blood Pressure in Measurement Period" BloodPressure,
+    "Non-emergency Non-inpatient Encounters" EncounterWithBP
+  where BloodPressure.encounter.reference = 'Encounter/' + EncounterWithBP.id
+  return BloodPressure
+
+define "Systolic Blood Pressure in Measurement Period":
+  ((["observation-bp"]).isObservationSystolicBP ( )) BloodPressure
+    where BloodPressure.effective.latest ( ) during day of "Measurement Period"
+
+define "Diastolic Blood Pressure in Measurement Period":
+  ((["observation-bp"]).isObservationDiastolicBP ( )) BloodPressure
+    where BloodPressure.effective.latest ( ) during day of "Measurement Period"
+
+define "Non-emergency Non-inpatient Encounters":
+  ( ["Encounter"] E
+      where E.period overlaps "Measurement Period"
+        and not (E.class.code in { 'EMER', 'IMP', 'ACUTE', 'NONAC', 'PRENC', 'SS' })
+  ) EncounterWithBP
 
 define fluent function getEncounter(reference Reference):
   singleton from ( [Encounter] E
@@ -142,3 +232,47 @@ define "SDE Race":
 
 define "SDE Sex":
   SDE."SDE Sex"
+
+define fluent function isObservationSystolicBP(Obs List<"QICore.observation-bp">):
+  Obs O
+    where O.status in { 'final', 'amended', 'corrected' }
+      and O.component is not null
+      and Last(O.component C where C.code ~ "Systolic blood pressure" return C.value as Quantity) > 0 'mm[Hg]'
+
+define fluent function isObservationDiastolicBP(Obs List<"QICore.observation-bp">):
+  Obs O
+    where O.status in { 'final', 'amended', 'corrected' }
+      and O.component is not null
+      and Last(O.component C where C.code ~ "Diastolic blood pressure" return C.value as Quantity) > 0 'mm[Hg]'
+
+define fluent function systolicReading(Ob "QICore.observation-bp"):
+  Last(Ob.component C where C.code ~ "Systolic blood pressure" return C.value as Quantity)
+
+define fluent function diastolicReading(Ob "QICore.observation-bp"):
+  Last(Ob.component C where C.code ~ "Diastolic blood pressure" return C.value as Quantity)
+
+// Debug All Encounters in Period
+define "Debug Encounter":
+  ( ([Encounter]).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during day of "Measurement Period"
+
+// Debug All Encounters in Period and their organizations
+define "Debug Encounter Organization":
+  from "Debug Encounter" E
+    let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
+    return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}
+
+// Debug All Visit Charges
+define "Debug Visit Charge":
+  (["ServiceRequest"]) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
+
+// Debug All Encounters in Period and their charges
+define "Debug Encounter Visit Charge":
+  from "Debug Visit Charge" VC,
+    "Debug Encounter" E
+  where VC.encounter.reference = 'Encounter/' + E.id
+  return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, visitCharge: VC.code}

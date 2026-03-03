@@ -52,14 +52,13 @@ define "Is Age 66 or Older with Advanced Illness and Frailty":
     )
 
 define "Is Age 66 to 80 with Advanced Illness and Frailty or Is Age 81 or Older with Frailty":
-  ( AgeInYearsAt(date from end of "Measurement Period")in Interval[66, 80]
+  ( "Patient Age 66 to 80 at End of Measurement Period" is not null
       and exists ("Criteria Indicating Frailty")
-      and ( "Has Two Outpatient Encounters with Advanced Illness on Different Dates of Service"
-          or "Has Inpatient Encounter with Advanced Illness"
-          or exists ("Dementia Medications in Year Before or During Measurement Period")
+      and ( exists ("Advanced Illness in Year Before or During Measurement Period")
+        or exists ("Dementia Medications in Year Before or During Measurement Period")
       )
   )
-    or ( AgeInYearsAt(date from end of "Measurement Period")>= 81
+    or ( "Patient Age 81 or Older at End of Measurement Period" is not null
         and exists ("Criteria Indicating Frailty")
     )
 
@@ -164,7 +163,7 @@ define "Has Inpatient Encounter with Advanced Illness":
 
 define "Dementia Medications in Year Before or During Measurement Period":
   ( ([MedicationRequest: "Dementia Medications"]
-    union [MedicationRequest: "donepezil"]).isMedicationActive()) DementiaMedication
+    union [MedicationRequest: "donepezil"]).isMedicationOrder()) DementiaMedication
       where DementiaMedication.doNotPerform is not true and
       CMD."MedicationRequestPeriod" ( DementiaMedication ) overlaps day of Interval[start of "Measurement Period" - 1 year, 
         end of "Measurement Period"]
@@ -211,4 +210,14 @@ define "Encounter in a Nursing Home":
 define "Patient Age 66 or Older at End of Measurement Period":
   from (AgeInYearsAt(date from end of "Measurement Period")) age 
     where age >= 66
+  return age
+
+define "Patient Age 66 to 80 at End of Measurement Period":
+  from (AgeInYearsAt(date from end of "Measurement Period")) age 
+    where age >= 66 and age <= 80
+  return age
+
+define "Patient Age 81 or Older at End of Measurement Period":
+  from (AgeInYearsAt(date from end of "Measurement Period")) age 
+    where age >= 81
   return age
