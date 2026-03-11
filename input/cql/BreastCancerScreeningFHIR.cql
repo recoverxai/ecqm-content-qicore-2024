@@ -32,6 +32,8 @@ code "Right (qualifier value)": '24028007' from "SNOMEDCT" display 'Right (quali
 code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
 code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
 
+code "Mammography Report": '36625-2' from "LOINC" display 'Mammography Report'
+
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.000Z, @2025-12-31T23:59:59.999Z]
 
@@ -80,6 +82,7 @@ define "Denominator Exclusions":
 define "Numerator":
   exists ("Mammogram Observation since October 1 Two Years Prior to the Measurement Period")
     or exists ("Mammogram Service Request since October 1 Two Years Prior to the Measurement Period")
+    or exists ("Mammography Report since October 1 Two Years Prior to the Measurement Period")
 
 define "Age at End of Measurement Period":
   AgeInYearsAt(date from end of "Measurement Period")
@@ -131,6 +134,10 @@ define "Mammogram Observation since October 1 Two Years Prior to the Measurement
 define "Mammogram Service Request since October 1 Two Years Prior to the Measurement Period":
   ( ( [ServiceRequest: "Mammography"] ).isDiagnosticStudyOrder ( ) ) MammogramRequest
       where MammogramRequest.occurrence.toInterval ( ) ends during day of Interval["October 1 Two Years Prior to the Measurement Period", end of "Measurement Period"]
+
+define "Mammography Report since October 1 Two Years Prior to the Measurement Period":
+  ( [DiagnosticReportNote: "Mammography Report"] ) Report
+      where Report.effective.toInterval ( ) ends during day of Interval["October 1 Two Years Prior to the Measurement Period", end of "Measurement Period"]
 
 define "Debug Mammogram Service Request":
   ( ( [ServiceRequest: "Mammography"] ) ) MammogramRequest
