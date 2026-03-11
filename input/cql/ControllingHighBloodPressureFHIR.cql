@@ -186,7 +186,7 @@ define "Diastolic Blood Pressure in Measurement Period":
 
 define "Non-emergency Non-inpatient Encounters":
   ( ["Encounter"] E
-      where E.period overlaps "Measurement Period"
+      where E.period overlaps day of "Measurement Period"
         and not (E.class.code in { 'EMER', 'IMP', 'ACUTE', 'NONAC', 'PRENC', 'SS' })
   ) EncounterWithBP
 
