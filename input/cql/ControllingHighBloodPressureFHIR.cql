@@ -14,7 +14,6 @@ include PalliativeCare version '1.9.000' called PalliativeCare
 
 codesystem "LOINC": 'http://loinc.org'
 codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
-codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 
 valueset "Chronic Kidney Disease, Stage 5": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1002'
 valueset "Dialysis Services": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.109.12.1013'
@@ -32,8 +31,6 @@ code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pr
 
 code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
 code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
-
-code "I12.9 Hypertensive CKD": 'I12.9' from "ICD-10-CM" display 'Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease'
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -92,16 +89,6 @@ define "Denominator Exclusions":
       )
     )
     or exists PalliativeCare."Palliative Care in the Measurement Period"
-
-define "Potential Denominator Exclusion":
-  exists "Hypertensive CKD"
-  and not "Denominator Exclusions"
-
-define "Hypertensive CKD":
-  ( [Condition: "I12.9 Hypertensive CKD"] ) HypertensiveCKD
-    where HypertensiveCKD.prevalenceInterval ( ) overlaps "Measurement Period"
-      or (HypertensiveCKD.onset is null 
-            and HypertensiveCKD.recordedDate before end of "Measurement Period")
 
 define "Renal Diagnosis":
   ( [Condition: "End Stage Renal Disease"]
