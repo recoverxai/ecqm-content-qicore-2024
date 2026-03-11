@@ -14,6 +14,7 @@ include QICoreCommon version '2.0.000' called QICoreCommon
 
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
+codesystem "Cerner72": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/72'
 
 valueset "Colonoscopy": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.108.12.1020'
 valueset "CT Colonography": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.108.12.1038'
@@ -28,6 +29,9 @@ code "Colonoscopy abnormal": '313172000' from "SNOMEDCT" display 'Colonoscopy ab
 
 code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
 code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
+
+code "Outside - Cologuard": '2775203073' from "Cerner72" display 'Outside - Cologuard'
+code "Colonoscopy Doc": '2820646' from "Cerner72" display 'Colonoscopy'
 
 parameter "Measurement Period" Interval<DateTime>
   default Interval[@2025-01-01T00:00:00.0, @2026-01-01T00:00:00.0)
@@ -84,6 +88,7 @@ define "Numerator":
     or exists "Flexible Sigmoidoscopy Performed"
     or exists "CT Colonography Performed"
     or exists "Colonoscopy Performed"
+    or exists "Colonoscopy Report"
 
 define "Age at End of Measurement Period":
   AgeInYearsAt(date from end of "Measurement Period")
@@ -127,6 +132,11 @@ define "Debug Colonoscopy Performed":
     union ["Procedure": "Colonoscope, device"]
     union ["Procedure": "Colonoscopy abnormal"] 
   ) ) Colscopy
+
+define "Colonoscopy Report":
+  ( [DiagnosticReportNote: "Outside - Cologuard"] 
+  union [DiagnosticReportNote: "Colonoscopy Doc"] ) Report
+    where Report.effective.toInterval ( ) ends during day of Interval[start of "Measurement Period" - 9 years, end of "Measurement Period"]
 
 define "Malignant Neoplasm":
   ( Status."Active Condition" ( ["Condition": "Malignant Neoplasm of Colon"] ) ) ColorectalCancer
