@@ -141,6 +141,7 @@ define "Colonoscopy Report":
 define "Malignant Neoplasm":
   ( Status."Active Condition" ( ["Condition": "Malignant Neoplasm of Colon"] ) ) ColorectalCancer
     where QICoreCommon."ToPrevalenceInterval" ( ColorectalCancer ) starts on or before day of end of "Measurement Period"
+    or (ColorectalCancer.onset is null and ColorectalCancer.recordedDate on or before day of end of "Measurement Period")
 
 define "Total Colectomy Performed":
   ( Status."Completed Procedure" ( ["Procedure": "Total Colectomy"] ) ) Colectomy
