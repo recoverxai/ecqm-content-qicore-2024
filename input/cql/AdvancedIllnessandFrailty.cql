@@ -66,7 +66,10 @@ define "Criteria Indicating Frailty":
   ( (([DeviceRequest: "Frailty Device"]).isDeviceOrder()) FrailtyDeviceOrder
       where FrailtyDeviceOrder.doNotPerform() is not true
       and FrailtyDeviceOrder.authoredOn.toInterval() during day of "Measurement Period"
-  )
+  ) 
+    union ( (([MedicationRequest: "Frailty Device"]).isMedicationOrder()) FrailtyDeviceMedicationOrder
+        where FrailtyDeviceMedicationOrder.authoredOn.toInterval() during day of "Measurement Period"
+    )
     union ( (([Observation: "Medical equipment used"] 
       union [Observation: "Equipment observable"]) O 
       where O.status in { 'final', 'amended', 'corrected' }) EquipmentUsed

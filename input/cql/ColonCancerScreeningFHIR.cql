@@ -90,6 +90,10 @@ define "Numerator":
     or exists "Colonoscopy Performed"
     or exists "Colonoscopy Report"
 
+define "Potential Numerator":
+  exists "Colonoscopy Performed With No Date"
+  and not "Numerator"
+
 define "Age at End of Measurement Period":
   AgeInYearsAt(date from end of "Measurement Period")
 
@@ -120,18 +124,15 @@ define "Colonoscopy Performed":
     union ["Procedure": "Colonoscope, device"] 
     union ["Procedure": "Colonoscopy abnormal"] 
   ) ) Colscopy
-    with [Encounter] ColscopyEncounter
-    such that QICoreCommon."ToInterval" ( Colscopy.performed ) ends during day of Interval[start of "Measurement Period" - 9 years, end of "Measurement Period"]
-      or 
-      (Colscopy.encounter.reference = 'Encounter/' + ColscopyEncounter.id 
-      and ColscopyEncounter.period.toInterval() ends during day of Interval[start of "Measurement Period" - 9 years, end of "Measurement Period"])
+    where QICoreCommon."ToInterval" ( Colscopy.performed ) ends during day of Interval[start of "Measurement Period" - 9 years, end of "Measurement Period"]
 
-define "Debug Colonoscopy Performed":
+define "Colonoscopy Performed With No Date":
   ( Status."Completed Procedure" ( 
     ["Procedure": "Colonoscopy"] 
     union ["Procedure": "Colonoscope, device"]
     union ["Procedure": "Colonoscopy abnormal"] 
   ) ) Colscopy
+    where Colscopy.performed is null
 
 define "Colonoscopy Report":
   ( [DiagnosticReportNote: "Outside - Cologuard"] 
