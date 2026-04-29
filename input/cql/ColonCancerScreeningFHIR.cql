@@ -89,6 +89,7 @@ define "Numerator":
     or exists "CT Colonography Performed"
     or exists "Colonoscopy Performed"
     or exists "Colonoscopy Report"
+    or exists "Cologuard Report"
 
 define "Potential Numerator":
   exists "Colonoscopy Performed With No Date"
@@ -135,9 +136,12 @@ define "Colonoscopy Performed With No Date":
     where Colscopy.performed is null
 
 define "Colonoscopy Report":
-  ( [DiagnosticReportNote: "Outside - Cologuard"] 
-  union [DiagnosticReportNote: "Colonoscopy Doc"] ) Report
+  [DiagnosticReportNote: "Colonoscopy Doc"] Report
     where Report.effective.toInterval ( ) ends during day of Interval[start of "Measurement Period" - 9 years, end of "Measurement Period"]
+
+define "Cologuard Report":
+  [DiagnosticReportNote: "Outside - Cologuard"] Report
+    where Report.effective.toInterval ( ) ends during day of Interval[start of "Measurement Period" - 2 years, end of "Measurement Period"]
 
 define "Malignant Neoplasm":
   ( Status."Active Condition" ( ["Condition": "Malignant Neoplasm of Colon"] ) ) ColorectalCancer
