@@ -78,7 +78,7 @@ define "Criteria Indicating Frailty":
         and EquipmentUsed.effective.toInterval() ends during day of "Measurement Period"
     )
     union ( ([Condition: "Frailty Diagnosis"] union [Condition: "Frailty Symptom"]) FrailtyDiagnosis
-        where FrailtyDiagnosis.prevalenceInterval() overlaps day of "Measurement Period"
+        where FrailtyDiagnosis.onset during day of "Measurement Period"
           or (FrailtyDiagnosis.onset is null 
             and FrailtyDiagnosis.recordedDate during day of "Measurement Period")
     )
