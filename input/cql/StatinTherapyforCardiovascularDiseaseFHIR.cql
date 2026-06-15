@@ -7,12 +7,15 @@ include Hospice version '6.9.000' called Hospice
 include PalliativeCare version '1.9.000' called PalliativeCare
 include QICoreCommon version '2.0.000' called QICoreCommon
 include SupplementalDataElements version '3.4.000' called SDE
+include Status version '1.6.000' called Status
 
 codesystem "CPT": 'http://www.ama-assn.org/go/cpt'
 codesystem "LOINC": 'http://loinc.org'
 codesystem "ObservationCategoryCodes": 'http://terminology.hl7.org/CodeSystem/observation-category'
 codesystem "RxNorm": 'https://www.nlm.nih.gov/research/umls/rxnorm/index.html'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
+codesystem "HCPCS": 'http://www.nlm.nih.gov/research/umls/hcpcs'
+codesystem "Cerner6000": 'https://fhir.cerner.com/24e03c9a-e2fd-45f4-8243-e38cc7e8418d/codeSet/6000'
 
 valueset "Annual Wellness Visit": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240'
 valueset "Atherosclerosis and Peripheral Arterial Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.21'
@@ -47,6 +50,13 @@ valueset "Statin Allergen": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113
 valueset "Statin Associated Muscle Symptoms": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.85'
 valueset "Preventive Care Services Other": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.11.1150'
 
+// HCPCS codes from Annual Wellness Visit value set, but with system http://www.nlm.nih.gov/research/umls/hcpcs
+code "G0402": 'G0402' from "HCPCS" display 'G0402'
+code "G0438": 'G0438' from "HCPCS" display 'G0438'
+code "G0439": 'G0439' from "HCPCS" display 'G0439'
+code "Ambulatory Procedures": '20460012' from "Cerner6000" display 'Ambulatory Procedures'
+code "Evaluation and Management": '636067' from "Cerner6000" display 'Evaluation and Management'
+
 code "Cardiovascular disease 10Y risk [Likelihood]": '99055-6' from "LOINC" display 'Cardiovascular disease 10Y risk [Likelihood]'
 code "Cardiovascular disease 10Y risk [Likelihood] ACC-AHA Pooled Cohort by Goff 2013": '79423-0' from "LOINC" display 'Cardiovascular disease 10Y risk [Likelihood] ACC-AHA Pooled Cohort by Goff 2013'
 
@@ -56,19 +66,33 @@ context Patient
 
 define "Initial Population 1":
   exists "ASVCD Diagnosis or Procedure before End of Measurement Period"
-    and exists "Qualifying Encounter during day of Measurement Period"
+    and exists "Qualifying Encounter"
 
 define "Initial Population 2":
-  "Patients Aged 20 to 75 with LDL Cholesterol Result Greater than or Equal to 190 or Hypercholesterolemia without ASCVD"
-    and exists "Qualifying Encounter during day of Measurement Period"
+  "Age at Start of Measurement Period" in Interval[20, 75]
+    and (
+      exists "LDL Result Greater Than or Equal To 190"
+      or exists "Hypercholesterolemia Diagnosis"
+    )
+    and not exists ( "ASVCD Diagnosis or Procedure before End of Measurement Period" )
+    and exists "Qualifying Encounter"
 
 define "Initial Population 3":
-  "Patients Aged 40 to 75 Years with Diabetes without ASCVD or LDL Greater than 190 or Hypercholesterolemia"
-    and exists "Qualifying Encounter during day of Measurement Period"
+  "Age at Start of Measurement Period" in Interval[40, 75]
+    and exists "Diabetes Diagnosis"
+    and not exists "ASVCD Diagnosis or Procedure before End of Measurement Period"
+    and not exists "LDL Result Greater Than or Equal To 190"
+    and not exists "Hypercholesterolemia Diagnosis"
+    and exists "Qualifying Encounter"
 
 define "Initial Population 4":
-  "Patients Age 40 to 75 Years and have a 10 Year CVD Risk of High without ASCVD and High LDL and Diabetes"
-    and exists "Qualifying Encounter during day of Measurement Period"
+  "Age at Start of Measurement Period" in Interval[40, 75]
+    and exists "Ten Year CVD Risk is High"
+    and not exists "ASVCD Diagnosis or Procedure before End of Measurement Period"
+    and not exists "Hypercholesterolemia Diagnosis"
+    and not exists "LDL Result Greater Than or Equal To 190"
+    and not exists "Diabetes Diagnosis"
+    and exists "Qualifying Encounter"
 
 define "Denominator 1":
   "Initial Population 1"
@@ -83,24 +107,23 @@ define "Denominator 4":
   "Initial Population 4"
 
 define "Denominator Exclusions":
-  exists ( ( [Condition: "Breastfeeding"]
+  exists "Exclusion Diagnosis"
+
+define "Exclusion Diagnosis":
+  ( [Condition: "Breastfeeding"]
       union [Condition: "Rhabdomyolysis"] ) ExclusionDiagnosis
-      where ( ExclusionDiagnosis.isProblemListItem ( )
-          or ExclusionDiagnosis.isHealthConcern ( )
-      )
-        and ExclusionDiagnosis.prevalenceInterval ( ) overlaps day of "Measurement Period"
+      where ExclusionDiagnosis.prevalenceInterval ( ) overlaps day of "Measurement Period"
         and ExclusionDiagnosis.isActive ( )
-  )
 
 define "Denominator Exceptions":
-  "Has Allergy to Statin"
-    or Hospice."Has Hospice Services"
-    or PalliativeCare."Has Palliative Care in the Measurement Period"
-    or "Has Hepatitis or Liver Disease Diagnosis"
-    or "Has Statin Associated Muscle Symptoms"
-    or "Has ESRD Diagnosis"
-    or "Has Adverse Reaction to Statin"
-    or "Has Medical Reason for Not Ordering Statin Therapy"
+  exists "Allergy to Statin"
+    or exists Hospice."Hospice Services"
+    or exists PalliativeCare."Palliative Care in the Measurement Period"
+    or exists "Hepatitis or Liver Disease Diagnosis"
+    or exists "Statin Associated Muscle Symptoms Diagnosis"
+    or exists "ESRD Diagnosis"
+    or exists "Adverse Reaction to Statin"
+    or exists "Medical Reason for Not Ordering Statin Therapy"
 
 define "Numerator":
   exists "Statin Therapy Prescribed Anytime during day of Measurement Period"
@@ -111,10 +134,7 @@ define "ASVCD Diagnosis or Procedure before End of Measurement Period":
       union [Condition: "Atherosclerosis and Peripheral Arterial Disease"]
       union [Condition: "Ischemic Heart Disease or Other Related Diagnoses"]
       union [Condition: "Stable and Unstable Angina"] ) ASCVDDiagnosis
-      where ( ASCVDDiagnosis.isProblemListItem ( )
-          or ASCVDDiagnosis.isHealthConcern ( )
-      )
-        and ASCVDDiagnosis.prevalenceInterval ( ) starts on or before day of end of "Measurement Period"
+      where ASCVDDiagnosis.prevalenceInterval ( ) starts on or before day of end of "Measurement Period"
         and ASCVDDiagnosis.isActive ( )
   )
     union ( ( [Procedure: "PCI"]
@@ -125,71 +145,49 @@ define "ASVCD Diagnosis or Procedure before End of Measurement Period":
           and ASCVDProcedure.status = 'completed'
     )
 
-define "Has Adverse Reaction to Statin":
-  exists ( [AdverseEvent: event in "Statin Allergen"] StatinReaction
+define "Adverse Reaction to Statin":
+  [AdverseEvent: event in "Statin Allergen"] StatinReaction
       where StatinReaction.recordedDate during day of "Measurement Period"
-  )
 
-define "Has Allergy to Statin":
-  exists ( [AllergyIntolerance: "Statin Allergen"] StatinAllergy
+define "Allergy to Statin":
+  [AllergyIntolerance: "Statin Allergen"] StatinAllergy
       where StatinAllergy.onset.toInterval ( ) overlaps day of "Measurement Period"
         and StatinAllergy.clinicalStatus ~ QICoreCommon."allergy-active"
-  )
 
-define "Has Diabetes Diagnosis":
-  exists ( [Condition: "Diabetes"] Diabetes
-      where ( Diabetes.isProblemListItem ( )
-          or Diabetes.isHealthConcern ( )
-      )
-        and Diabetes.prevalenceInterval ( ) overlaps day of "Measurement Period"
+define "Diabetes Diagnosis":
+  [Condition: "Diabetes"] Diabetes
+      where Diabetes.prevalenceInterval ( ) overlaps day of "Measurement Period"
         and Diabetes.isActive ( )
-  )
 
-define "Has ESRD Diagnosis":
-  exists ( [Condition: "End Stage Renal Disease"] ESRD
-      where ( ESRD.isProblemListItem ( )
-          or ESRD.isHealthConcern ( )
-      )
-        and ESRD.prevalenceInterval ( ) overlaps day of "Measurement Period"
+define "ESRD Diagnosis":
+  [Condition: "End Stage Renal Disease"] ESRD
+      where ESRD.prevalenceInterval ( ) overlaps day of "Measurement Period"
         and ESRD.isActive ( )
-  )
 
-define "Has Hepatitis or Liver Disease Diagnosis":
-  exists ( ( [Condition: "Hepatitis A"]
+define "Hepatitis or Liver Disease Diagnosis":
+  ( [Condition: "Hepatitis A"]
       union [Condition: "Hepatitis B"]
       union [Condition: "Liver Disease"] ) HepatitisLiverDisease
-      where ( HepatitisLiverDisease.isProblemListItem ( )
-          or HepatitisLiverDisease.isHealthConcern ( )
-      )
-        and HepatitisLiverDisease.prevalenceInterval ( ) overlaps day of "Measurement Period"
+      where HepatitisLiverDisease.prevalenceInterval ( ) overlaps day of "Measurement Period"
         and HepatitisLiverDisease.isActive ( )
-  )
 
-define "Has Medical Reason for Not Ordering Statin Therapy":
-  exists ( ( [MedicationNotRequested: "Low Intensity Statin Therapy"]
+define "Medical Reason for Not Ordering Statin Therapy":
+  ( [MedicationNotRequested: "Low Intensity Statin Therapy"]
       union [MedicationNotRequested: "Moderate Intensity Statin Therapy"]
       union [MedicationNotRequested: "High Intensity Statin Therapy"] ) NoStatinTherapyOrdered
-      with "Qualifying Encounter during day of Measurement Period" QualifyingEncounter
+      with "Qualifying Encounter" QualifyingEncounter
         such that NoStatinTherapyOrdered.authoredOn during QualifyingEncounter.period
           and NoStatinTherapyOrdered.status = 'completed'
           and NoStatinTherapyOrdered.reasonCode in "Medical Reason"
-  )
 
-define "Has Statin Associated Muscle Symptoms":
-  exists ( [Condition: "Statin Associated Muscle Symptoms"] StatinMuscleSymptom
-      where ( StatinMuscleSymptom.isProblemListItem ( )
-          or StatinMuscleSymptom.isHealthConcern ( )
-      )
-        and StatinMuscleSymptom.prevalenceInterval ( ) overlaps day of "Measurement Period"
+define "Statin Associated Muscle Symptoms Diagnosis":
+  [Condition: "Statin Associated Muscle Symptoms"] StatinMuscleSymptom
+      where StatinMuscleSymptom.prevalenceInterval ( ) overlaps day of "Measurement Period"
         and StatinMuscleSymptom.isActive ( )
-  )
 
 define "Hypercholesterolemia Diagnosis":
   ( [Condition: "Familial Hypercholesterolemia"] Hypercholesterolemia
-      where ( Hypercholesterolemia.isProblemListItem ( )
-          or Hypercholesterolemia.isHealthConcern ( )
-      )
-        and Hypercholesterolemia.prevalenceInterval ( ) starts on or before day of end of "Measurement Period"
+      where Hypercholesterolemia.prevalenceInterval ( ) starts on or before day of end of "Measurement Period"
         and Hypercholesterolemia.isActive ( )
   )
 
@@ -199,33 +197,8 @@ define "LDL Result Greater Than or Equal To 190":
       and LDL190.effective.toInterval ( ) starts on or before day of end of "Measurement Period"
       and LDL190.status in { 'final', 'amended', 'corrected', 'appended' }
 
-define "Patients Aged 20 to 75 with LDL Cholesterol Result Greater than or Equal to 190 or Hypercholesterolemia without ASCVD":
-  "Patients Aged 20 to 75 at Start of Measurement Period"
-    and exists ( "LDL Result Greater Than or Equal To 190"
-        union "Hypercholesterolemia Diagnosis"
-    )
-    and not exists ( "ASVCD Diagnosis or Procedure before End of Measurement Period" )
-
-define "Patients Aged 20 to 75 at Start of Measurement Period":
-  AgeInYearsAt(date from start of "Measurement Period") in Interval[20, 75]
-
-define "Patients Aged 40 to 75 Years with Diabetes without ASCVD or LDL Greater than 190 or Hypercholesterolemia":
-  AgeInYearsAt(date from start of "Measurement Period") >= 40
-    and AgeInYearsAt(date from start of "Measurement Period") <= 75
-    and "Has Diabetes Diagnosis"
-    and ( not exists "ASVCD Diagnosis or Procedure before End of Measurement Period"
-        and not exists "LDL Result Greater Than or Equal To 190"
-        and not exists "Hypercholesterolemia Diagnosis"
-    )
-
-define "Patients Age 40 to 75 Years and have a 10 Year CVD Risk of High without ASCVD and High LDL and Diabetes":
-  AgeInYearsAt(date from start of "Measurement Period") in Interval[40, 75]
-    and "Ten Year CVD Risk is High"
-    and not ( exists "ASVCD Diagnosis or Procedure before End of Measurement Period"
-        or exists "Hypercholesterolemia Diagnosis"
-        or exists "LDL Result Greater Than or Equal To 190"
-        or "Has Diabetes Diagnosis"
-    )
+define "Age at Start of Measurement Period":
+  AgeInYearsAt(date from start of "Measurement Period")
 
 define "Statin Therapy Prescribed Anytime during day of Measurement Period":
   ( [MedicationRequest: "Low Intensity Statin Therapy"]
@@ -239,24 +212,33 @@ define "Statin Therapy Prescribed Anytime during day of Measurement Period":
           )
       )
 
-define "Qualifying Encounter during day of Measurement Period":
-  ( [Encounter: "Annual Wellness Visit"]
-    union [Encounter: "Office Visit"]
-    union [Encounter: "Outpatient Consultation"]
-    union [Encounter: "Outpatient Encounters for Preventive Care"]
-    union [Encounter: "Preventive Care Services Established Office Visit, 18 and Up"]
-    union [Encounter: "Preventive Care Services Individual Counseling"]
-    union [Encounter: "Preventive Care Services Initial Office Visit, 18 and Up"]
-    union [Encounter: "Preventive Care Services Other"] ) QualifyingEncounter
-    where QualifyingEncounter.period during day of "Measurement Period"
-      and QualifyingEncounter.status = 'finished'
+define "Qualifying Encounter":
+  (( [Encounter] ).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during day of "Measurement Period"
+      and exists ("Qualifying Visit Charge" VC where VC.encounter.reference = 'Encounter/' + ValidEncounter.id)
+
+define "Qualifying Visit Charge":
+  (["ServiceRequest": "Annual Wellness Visit"]
+    union ["ServiceRequest": "Office Visit"]
+    union ["ServiceRequest": "Outpatient Consultation"]
+    union ["ServiceRequest": "Outpatient Encounters for Preventive Care"]
+    union ["ServiceRequest": "Preventive Care Services Established Office Visit, 18 and Up"]
+    union ["ServiceRequest": "Preventive Care Services Individual Counseling"]
+    union ["ServiceRequest": "Preventive Care Services Initial Office Visit, 18 and Up"]
+    union ["ServiceRequest": "Preventive Care Services Other"]
+    union ["ServiceRequest": "G0402"]
+    union ["ServiceRequest": "G0438"]
+    union ["ServiceRequest": "G0439"] ) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
 
 define "Ten Year CVD Risk is High":
-  ( exists ( [Observation: "Cardiovascular disease 10Y risk [Likelihood]"]
+   ( [Observation: "Cardiovascular disease 10Y risk [Likelihood]"]
       union [Observation: "Cardiovascular disease 10Y risk [Likelihood] ACC-AHA Pooled Cohort by Goff 2013"] ) AtRiskCVD
       where AtRiskCVD.value as Quantity >= 20 '%'
         and AtRiskCVD.effective.toInterval ( ) during day of "Measurement Period"
-  )
 
 define "SDE Ethnicity":
   SDE."SDE Ethnicity"
@@ -269,3 +251,29 @@ define "SDE Race":
 
 define "SDE Sex":
   SDE."SDE Sex"
+
+// Debug All Encounters in Period
+define "Debug Encounter":
+  ( ([Encounter]).isEncounterPerformed()) ValidEncounter
+    where ValidEncounter.period.toInterval() starts during day of "Measurement Period"
+
+// Debug All Encounters in Period and their organizations
+define "Debug Encounter Organization":
+  from "Debug Encounter" E
+    let Org: singleton from ([Organization] O where E.serviceProvider.reference = 'Organization/' + O.id)
+    return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, organization: Org.name}
+
+// Debug All Visit Charges
+define "Debug Visit Charge":
+  (["ServiceRequest"]) ValidCharge
+      where ValidCharge.status = 'completed'
+        and (exists (ValidCharge.category C
+          where C ~ "Ambulatory Procedures" or C ~ "Evaluation and Management")
+        )
+
+// Debug All Encounters in Period and their charges
+define "Debug Encounter Visit Charge":
+  from "Debug Visit Charge" VC,
+    "Debug Encounter" E
+  where VC.encounter.reference = 'Encounter/' + E.id
+  return {id: E.id, period: E.period, type: E.type, serviceType: E.serviceType, visitCharge: VC.code}
